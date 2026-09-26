@@ -1,0 +1,3401 @@
+{
+  "format": "tellme-mage-vl-fourport-group-major-v1",
+  "build_id": "M90-VISION-W4-FOURPORT-20260831",
+  "classification": "exact byte-slice compaction of verified M89-P; no requantization",
+  "source": {
+    "layout_manifest": "deployment/mage_vl4b/artifacts/m89p_m56_fourport_full/SIXPORT_LAYOUT_MANIFEST.json",
+    "layout_manifest_sha256": "f5470865e141fab81ed8569ecb4e28c22293ce4c6c8fb83adc0f0fd35825ee7d",
+    "m56_manifest_sha256": "3e2cdcbc492dd709974aac28cfa1fe5fef5f08003f5cedefd9c71c74afe05170",
+    "m56_blob_sha256": "24774ce383eb8261257942bb2a7a565d75fa3961754905973759d8e58ac24e4f"
+  },
+  "parameters": {
+    "shard_count": 4,
+    "group_size": 64,
+    "row_block": 8,
+    "min_rows_per_shard": 16,
+    "max_rows_per_shard": 512,
+    "record_alignment": 4096,
+    "orientation_encoding": "FP16 scale sign bit; kernel masks bit 15"
+  },
+  "selection_pattern": "^model\\.visual\\.",
+  "module_count": 98,
+  "files": [
+    {
+      "path": "weights0.bin",
+      "bytes": 43728896,
+      "sha256": "2e902f5f4ddec7165da4a873c713045fbb74bf0551d9dbda5fb0ce036776718e"
+    },
+    {
+      "path": "weights1.bin",
+      "bytes": 43728896,
+      "sha256": "ed7618c3337da91fcf52d1d3a1b153d828b7ef19ded48c4f149647cfa474b3fd"
+    },
+    {
+      "path": "weights2.bin",
+      "bytes": 43728896,
+      "sha256": "98c518e426d8bca035220d6a59bee13879d23f5f70eb4b6a3080921457588346"
+    },
+    {
+      "path": "weights3.bin",
+      "bytes": 43728896,
+      "sha256": "5b9ce87baab34a7b43df4ed436e09200635866d71a154a6e598b26a44ac08b2a"
+    }
+  ],
+  "modules": [
+    {
+      "module": "model.visual.encoder.layers.0.self_attn.qkv",
+      "source_name": "model.visual.encoder.layers.0.self_attn.qkv.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            278528,
+            278528,
+            278528,
+            278528
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.0.self_attn.proj",
+      "source_name": "model.visual.encoder.layers.0.self_attn.proj.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            417792,
+            417792,
+            417792,
+            417792
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.0.mlp.fc1",
+      "source_name": "model.visual.encoder.layers.0.mlp.fc1.weight",
+      "shape": [
+        4096,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            557056,
+            557056,
+            557056,
+            557056
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            835584,
+            835584,
+            835584,
+            835584
+          ],
+          "record_bytes_per_shard": 278528
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.0.mlp.fc2",
+      "source_name": "model.visual.encoder.layers.0.mlp.fc2.weight",
+      "shape": [
+        1024,
+        4096
+      ],
+      "padded_columns": 4096,
+      "input_groups": 64,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            1114112,
+            1114112,
+            1114112,
+            1114112
+          ],
+          "record_bytes_per_shard": 557056
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.1.self_attn.qkv",
+      "source_name": "model.visual.encoder.layers.1.self_attn.qkv.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            1671168,
+            1671168,
+            1671168,
+            1671168
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            1949696,
+            1949696,
+            1949696,
+            1949696
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.1.self_attn.proj",
+      "source_name": "model.visual.encoder.layers.1.self_attn.proj.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            2088960,
+            2088960,
+            2088960,
+            2088960
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.1.mlp.fc1",
+      "source_name": "model.visual.encoder.layers.1.mlp.fc1.weight",
+      "shape": [
+        4096,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            2228224,
+            2228224,
+            2228224,
+            2228224
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            2506752,
+            2506752,
+            2506752,
+            2506752
+          ],
+          "record_bytes_per_shard": 278528
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.1.mlp.fc2",
+      "source_name": "model.visual.encoder.layers.1.mlp.fc2.weight",
+      "shape": [
+        1024,
+        4096
+      ],
+      "padded_columns": 4096,
+      "input_groups": 64,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            2785280,
+            2785280,
+            2785280,
+            2785280
+          ],
+          "record_bytes_per_shard": 557056
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.2.self_attn.qkv",
+      "source_name": "model.visual.encoder.layers.2.self_attn.qkv.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            3342336,
+            3342336,
+            3342336,
+            3342336
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            3620864,
+            3620864,
+            3620864,
+            3620864
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.2.self_attn.proj",
+      "source_name": "model.visual.encoder.layers.2.self_attn.proj.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            3760128,
+            3760128,
+            3760128,
+            3760128
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.2.mlp.fc1",
+      "source_name": "model.visual.encoder.layers.2.mlp.fc1.weight",
+      "shape": [
+        4096,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            3899392,
+            3899392,
+            3899392,
+            3899392
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            4177920,
+            4177920,
+            4177920,
+            4177920
+          ],
+          "record_bytes_per_shard": 278528
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.2.mlp.fc2",
+      "source_name": "model.visual.encoder.layers.2.mlp.fc2.weight",
+      "shape": [
+        1024,
+        4096
+      ],
+      "padded_columns": 4096,
+      "input_groups": 64,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            4456448,
+            4456448,
+            4456448,
+            4456448
+          ],
+          "record_bytes_per_shard": 557056
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.3.self_attn.qkv",
+      "source_name": "model.visual.encoder.layers.3.self_attn.qkv.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            5013504,
+            5013504,
+            5013504,
+            5013504
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            5292032,
+            5292032,
+            5292032,
+            5292032
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.3.self_attn.proj",
+      "source_name": "model.visual.encoder.layers.3.self_attn.proj.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            5431296,
+            5431296,
+            5431296,
+            5431296
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.3.mlp.fc1",
+      "source_name": "model.visual.encoder.layers.3.mlp.fc1.weight",
+      "shape": [
+        4096,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            5570560,
+            5570560,
+            5570560,
+            5570560
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            5849088,
+            5849088,
+            5849088,
+            5849088
+          ],
+          "record_bytes_per_shard": 278528
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.3.mlp.fc2",
+      "source_name": "model.visual.encoder.layers.3.mlp.fc2.weight",
+      "shape": [
+        1024,
+        4096
+      ],
+      "padded_columns": 4096,
+      "input_groups": 64,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            6127616,
+            6127616,
+            6127616,
+            6127616
+          ],
+          "record_bytes_per_shard": 557056
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.4.self_attn.qkv",
+      "source_name": "model.visual.encoder.layers.4.self_attn.qkv.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            6684672,
+            6684672,
+            6684672,
+            6684672
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            6963200,
+            6963200,
+            6963200,
+            6963200
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.4.self_attn.proj",
+      "source_name": "model.visual.encoder.layers.4.self_attn.proj.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            7102464,
+            7102464,
+            7102464,
+            7102464
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.4.mlp.fc1",
+      "source_name": "model.visual.encoder.layers.4.mlp.fc1.weight",
+      "shape": [
+        4096,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            7241728,
+            7241728,
+            7241728,
+            7241728
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            7520256,
+            7520256,
+            7520256,
+            7520256
+          ],
+          "record_bytes_per_shard": 278528
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.4.mlp.fc2",
+      "source_name": "model.visual.encoder.layers.4.mlp.fc2.weight",
+      "shape": [
+        1024,
+        4096
+      ],
+      "padded_columns": 4096,
+      "input_groups": 64,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            7798784,
+            7798784,
+            7798784,
+            7798784
+          ],
+          "record_bytes_per_shard": 557056
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.5.self_attn.qkv",
+      "source_name": "model.visual.encoder.layers.5.self_attn.qkv.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            8355840,
+            8355840,
+            8355840,
+            8355840
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            8634368,
+            8634368,
+            8634368,
+            8634368
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.5.self_attn.proj",
+      "source_name": "model.visual.encoder.layers.5.self_attn.proj.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            8773632,
+            8773632,
+            8773632,
+            8773632
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.5.mlp.fc1",
+      "source_name": "model.visual.encoder.layers.5.mlp.fc1.weight",
+      "shape": [
+        4096,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            8912896,
+            8912896,
+            8912896,
+            8912896
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            9191424,
+            9191424,
+            9191424,
+            9191424
+          ],
+          "record_bytes_per_shard": 278528
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.5.mlp.fc2",
+      "source_name": "model.visual.encoder.layers.5.mlp.fc2.weight",
+      "shape": [
+        1024,
+        4096
+      ],
+      "padded_columns": 4096,
+      "input_groups": 64,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            9469952,
+            9469952,
+            9469952,
+            9469952
+          ],
+          "record_bytes_per_shard": 557056
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.6.self_attn.qkv",
+      "source_name": "model.visual.encoder.layers.6.self_attn.qkv.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            10027008,
+            10027008,
+            10027008,
+            10027008
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            10305536,
+            10305536,
+            10305536,
+            10305536
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.6.self_attn.proj",
+      "source_name": "model.visual.encoder.layers.6.self_attn.proj.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            10444800,
+            10444800,
+            10444800,
+            10444800
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.6.mlp.fc1",
+      "source_name": "model.visual.encoder.layers.6.mlp.fc1.weight",
+      "shape": [
+        4096,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            10584064,
+            10584064,
+            10584064,
+            10584064
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            10862592,
+            10862592,
+            10862592,
+            10862592
+          ],
+          "record_bytes_per_shard": 278528
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.6.mlp.fc2",
+      "source_name": "model.visual.encoder.layers.6.mlp.fc2.weight",
+      "shape": [
+        1024,
+        4096
+      ],
+      "padded_columns": 4096,
+      "input_groups": 64,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            11141120,
+            11141120,
+            11141120,
+            11141120
+          ],
+          "record_bytes_per_shard": 557056
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.7.self_attn.qkv",
+      "source_name": "model.visual.encoder.layers.7.self_attn.qkv.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            11698176,
+            11698176,
+            11698176,
+            11698176
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            11976704,
+            11976704,
+            11976704,
+            11976704
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.7.self_attn.proj",
+      "source_name": "model.visual.encoder.layers.7.self_attn.proj.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            12115968,
+            12115968,
+            12115968,
+            12115968
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.7.mlp.fc1",
+      "source_name": "model.visual.encoder.layers.7.mlp.fc1.weight",
+      "shape": [
+        4096,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            12255232,
+            12255232,
+            12255232,
+            12255232
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            12533760,
+            12533760,
+            12533760,
+            12533760
+          ],
+          "record_bytes_per_shard": 278528
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.7.mlp.fc2",
+      "source_name": "model.visual.encoder.layers.7.mlp.fc2.weight",
+      "shape": [
+        1024,
+        4096
+      ],
+      "padded_columns": 4096,
+      "input_groups": 64,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            12812288,
+            12812288,
+            12812288,
+            12812288
+          ],
+          "record_bytes_per_shard": 557056
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.8.self_attn.qkv",
+      "source_name": "model.visual.encoder.layers.8.self_attn.qkv.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            13369344,
+            13369344,
+            13369344,
+            13369344
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            13647872,
+            13647872,
+            13647872,
+            13647872
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.8.self_attn.proj",
+      "source_name": "model.visual.encoder.layers.8.self_attn.proj.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            13787136,
+            13787136,
+            13787136,
+            13787136
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.8.mlp.fc1",
+      "source_name": "model.visual.encoder.layers.8.mlp.fc1.weight",
+      "shape": [
+        4096,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            13926400,
+            13926400,
+            13926400,
+            13926400
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            14204928,
+            14204928,
+            14204928,
+            14204928
+          ],
+          "record_bytes_per_shard": 278528
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.8.mlp.fc2",
+      "source_name": "model.visual.encoder.layers.8.mlp.fc2.weight",
+      "shape": [
+        1024,
+        4096
+      ],
+      "padded_columns": 4096,
+      "input_groups": 64,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            14483456,
+            14483456,
+            14483456,
+            14483456
+          ],
+          "record_bytes_per_shard": 557056
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.9.self_attn.qkv",
+      "source_name": "model.visual.encoder.layers.9.self_attn.qkv.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            15040512,
+            15040512,
+            15040512,
+            15040512
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            15319040,
+            15319040,
+            15319040,
+            15319040
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.9.self_attn.proj",
+      "source_name": "model.visual.encoder.layers.9.self_attn.proj.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            15458304,
+            15458304,
+            15458304,
+            15458304
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.9.mlp.fc1",
+      "source_name": "model.visual.encoder.layers.9.mlp.fc1.weight",
+      "shape": [
+        4096,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            15597568,
+            15597568,
+            15597568,
+            15597568
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            15876096,
+            15876096,
+            15876096,
+            15876096
+          ],
+          "record_bytes_per_shard": 278528
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.9.mlp.fc2",
+      "source_name": "model.visual.encoder.layers.9.mlp.fc2.weight",
+      "shape": [
+        1024,
+        4096
+      ],
+      "padded_columns": 4096,
+      "input_groups": 64,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            16154624,
+            16154624,
+            16154624,
+            16154624
+          ],
+          "record_bytes_per_shard": 557056
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.10.self_attn.qkv",
+      "source_name": "model.visual.encoder.layers.10.self_attn.qkv.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            16711680,
+            16711680,
+            16711680,
+            16711680
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            16990208,
+            16990208,
+            16990208,
+            16990208
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.10.self_attn.proj",
+      "source_name": "model.visual.encoder.layers.10.self_attn.proj.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            17129472,
+            17129472,
+            17129472,
+            17129472
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.10.mlp.fc1",
+      "source_name": "model.visual.encoder.layers.10.mlp.fc1.weight",
+      "shape": [
+        4096,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            17268736,
+            17268736,
+            17268736,
+            17268736
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            17547264,
+            17547264,
+            17547264,
+            17547264
+          ],
+          "record_bytes_per_shard": 278528
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.10.mlp.fc2",
+      "source_name": "model.visual.encoder.layers.10.mlp.fc2.weight",
+      "shape": [
+        1024,
+        4096
+      ],
+      "padded_columns": 4096,
+      "input_groups": 64,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            17825792,
+            17825792,
+            17825792,
+            17825792
+          ],
+          "record_bytes_per_shard": 557056
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.11.self_attn.qkv",
+      "source_name": "model.visual.encoder.layers.11.self_attn.qkv.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            18382848,
+            18382848,
+            18382848,
+            18382848
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            18661376,
+            18661376,
+            18661376,
+            18661376
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.11.self_attn.proj",
+      "source_name": "model.visual.encoder.layers.11.self_attn.proj.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            18800640,
+            18800640,
+            18800640,
+            18800640
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.11.mlp.fc1",
+      "source_name": "model.visual.encoder.layers.11.mlp.fc1.weight",
+      "shape": [
+        4096,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            18939904,
+            18939904,
+            18939904,
+            18939904
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            19218432,
+            19218432,
+            19218432,
+            19218432
+          ],
+          "record_bytes_per_shard": 278528
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.11.mlp.fc2",
+      "source_name": "model.visual.encoder.layers.11.mlp.fc2.weight",
+      "shape": [
+        1024,
+        4096
+      ],
+      "padded_columns": 4096,
+      "input_groups": 64,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            19496960,
+            19496960,
+            19496960,
+            19496960
+          ],
+          "record_bytes_per_shard": 557056
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.12.self_attn.qkv",
+      "source_name": "model.visual.encoder.layers.12.self_attn.qkv.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            20054016,
+            20054016,
+            20054016,
+            20054016
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            20332544,
+            20332544,
+            20332544,
+            20332544
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.12.self_attn.proj",
+      "source_name": "model.visual.encoder.layers.12.self_attn.proj.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            20471808,
+            20471808,
+            20471808,
+            20471808
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.12.mlp.fc1",
+      "source_name": "model.visual.encoder.layers.12.mlp.fc1.weight",
+      "shape": [
+        4096,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            20611072,
+            20611072,
+            20611072,
+            20611072
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            20889600,
+            20889600,
+            20889600,
+            20889600
+          ],
+          "record_bytes_per_shard": 278528
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.12.mlp.fc2",
+      "source_name": "model.visual.encoder.layers.12.mlp.fc2.weight",
+      "shape": [
+        1024,
+        4096
+      ],
+      "padded_columns": 4096,
+      "input_groups": 64,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            21168128,
+            21168128,
+            21168128,
+            21168128
+          ],
+          "record_bytes_per_shard": 557056
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.13.self_attn.qkv",
+      "source_name": "model.visual.encoder.layers.13.self_attn.qkv.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            21725184,
+            21725184,
+            21725184,
+            21725184
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            22003712,
+            22003712,
+            22003712,
+            22003712
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.13.self_attn.proj",
+      "source_name": "model.visual.encoder.layers.13.self_attn.proj.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            22142976,
+            22142976,
+            22142976,
+            22142976
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.13.mlp.fc1",
+      "source_name": "model.visual.encoder.layers.13.mlp.fc1.weight",
+      "shape": [
+        4096,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            22282240,
+            22282240,
+            22282240,
+            22282240
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            22560768,
+            22560768,
+            22560768,
+            22560768
+          ],
+          "record_bytes_per_shard": 278528
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.13.mlp.fc2",
+      "source_name": "model.visual.encoder.layers.13.mlp.fc2.weight",
+      "shape": [
+        1024,
+        4096
+      ],
+      "padded_columns": 4096,
+      "input_groups": 64,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            22839296,
+            22839296,
+            22839296,
+            22839296
+          ],
+          "record_bytes_per_shard": 557056
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.14.self_attn.qkv",
+      "source_name": "model.visual.encoder.layers.14.self_attn.qkv.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            23396352,
+            23396352,
+            23396352,
+            23396352
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            23674880,
+            23674880,
+            23674880,
+            23674880
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.14.self_attn.proj",
+      "source_name": "model.visual.encoder.layers.14.self_attn.proj.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            23814144,
+            23814144,
+            23814144,
+            23814144
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.14.mlp.fc1",
+      "source_name": "model.visual.encoder.layers.14.mlp.fc1.weight",
+      "shape": [
+        4096,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            23953408,
+            23953408,
+            23953408,
+            23953408
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            24231936,
+            24231936,
+            24231936,
+            24231936
+          ],
+          "record_bytes_per_shard": 278528
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.14.mlp.fc2",
+      "source_name": "model.visual.encoder.layers.14.mlp.fc2.weight",
+      "shape": [
+        1024,
+        4096
+      ],
+      "padded_columns": 4096,
+      "input_groups": 64,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            24510464,
+            24510464,
+            24510464,
+            24510464
+          ],
+          "record_bytes_per_shard": 557056
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.15.self_attn.qkv",
+      "source_name": "model.visual.encoder.layers.15.self_attn.qkv.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            25067520,
+            25067520,
+            25067520,
+            25067520
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            25346048,
+            25346048,
+            25346048,
+            25346048
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.15.self_attn.proj",
+      "source_name": "model.visual.encoder.layers.15.self_attn.proj.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            25485312,
+            25485312,
+            25485312,
+            25485312
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.15.mlp.fc1",
+      "source_name": "model.visual.encoder.layers.15.mlp.fc1.weight",
+      "shape": [
+        4096,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            25624576,
+            25624576,
+            25624576,
+            25624576
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            25903104,
+            25903104,
+            25903104,
+            25903104
+          ],
+          "record_bytes_per_shard": 278528
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.15.mlp.fc2",
+      "source_name": "model.visual.encoder.layers.15.mlp.fc2.weight",
+      "shape": [
+        1024,
+        4096
+      ],
+      "padded_columns": 4096,
+      "input_groups": 64,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            26181632,
+            26181632,
+            26181632,
+            26181632
+          ],
+          "record_bytes_per_shard": 557056
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.16.self_attn.qkv",
+      "source_name": "model.visual.encoder.layers.16.self_attn.qkv.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            26738688,
+            26738688,
+            26738688,
+            26738688
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            27017216,
+            27017216,
+            27017216,
+            27017216
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.16.self_attn.proj",
+      "source_name": "model.visual.encoder.layers.16.self_attn.proj.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            27156480,
+            27156480,
+            27156480,
+            27156480
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.16.mlp.fc1",
+      "source_name": "model.visual.encoder.layers.16.mlp.fc1.weight",
+      "shape": [
+        4096,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            27295744,
+            27295744,
+            27295744,
+            27295744
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            27574272,
+            27574272,
+            27574272,
+            27574272
+          ],
+          "record_bytes_per_shard": 278528
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.16.mlp.fc2",
+      "source_name": "model.visual.encoder.layers.16.mlp.fc2.weight",
+      "shape": [
+        1024,
+        4096
+      ],
+      "padded_columns": 4096,
+      "input_groups": 64,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            27852800,
+            27852800,
+            27852800,
+            27852800
+          ],
+          "record_bytes_per_shard": 557056
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.17.self_attn.qkv",
+      "source_name": "model.visual.encoder.layers.17.self_attn.qkv.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            28409856,
+            28409856,
+            28409856,
+            28409856
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            28688384,
+            28688384,
+            28688384,
+            28688384
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.17.self_attn.proj",
+      "source_name": "model.visual.encoder.layers.17.self_attn.proj.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            28827648,
+            28827648,
+            28827648,
+            28827648
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.17.mlp.fc1",
+      "source_name": "model.visual.encoder.layers.17.mlp.fc1.weight",
+      "shape": [
+        4096,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            28966912,
+            28966912,
+            28966912,
+            28966912
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            29245440,
+            29245440,
+            29245440,
+            29245440
+          ],
+          "record_bytes_per_shard": 278528
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.17.mlp.fc2",
+      "source_name": "model.visual.encoder.layers.17.mlp.fc2.weight",
+      "shape": [
+        1024,
+        4096
+      ],
+      "padded_columns": 4096,
+      "input_groups": 64,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            29523968,
+            29523968,
+            29523968,
+            29523968
+          ],
+          "record_bytes_per_shard": 557056
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.18.self_attn.qkv",
+      "source_name": "model.visual.encoder.layers.18.self_attn.qkv.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            30081024,
+            30081024,
+            30081024,
+            30081024
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            30359552,
+            30359552,
+            30359552,
+            30359552
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.18.self_attn.proj",
+      "source_name": "model.visual.encoder.layers.18.self_attn.proj.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            30498816,
+            30498816,
+            30498816,
+            30498816
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.18.mlp.fc1",
+      "source_name": "model.visual.encoder.layers.18.mlp.fc1.weight",
+      "shape": [
+        4096,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            30638080,
+            30638080,
+            30638080,
+            30638080
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            30916608,
+            30916608,
+            30916608,
+            30916608
+          ],
+          "record_bytes_per_shard": 278528
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.18.mlp.fc2",
+      "source_name": "model.visual.encoder.layers.18.mlp.fc2.weight",
+      "shape": [
+        1024,
+        4096
+      ],
+      "padded_columns": 4096,
+      "input_groups": 64,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            31195136,
+            31195136,
+            31195136,
+            31195136
+          ],
+          "record_bytes_per_shard": 557056
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.19.self_attn.qkv",
+      "source_name": "model.visual.encoder.layers.19.self_attn.qkv.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            31752192,
+            31752192,
+            31752192,
+            31752192
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            32030720,
+            32030720,
+            32030720,
+            32030720
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.19.self_attn.proj",
+      "source_name": "model.visual.encoder.layers.19.self_attn.proj.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            32169984,
+            32169984,
+            32169984,
+            32169984
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.19.mlp.fc1",
+      "source_name": "model.visual.encoder.layers.19.mlp.fc1.weight",
+      "shape": [
+        4096,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            32309248,
+            32309248,
+            32309248,
+            32309248
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            32587776,
+            32587776,
+            32587776,
+            32587776
+          ],
+          "record_bytes_per_shard": 278528
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.19.mlp.fc2",
+      "source_name": "model.visual.encoder.layers.19.mlp.fc2.weight",
+      "shape": [
+        1024,
+        4096
+      ],
+      "padded_columns": 4096,
+      "input_groups": 64,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            32866304,
+            32866304,
+            32866304,
+            32866304
+          ],
+          "record_bytes_per_shard": 557056
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.20.self_attn.qkv",
+      "source_name": "model.visual.encoder.layers.20.self_attn.qkv.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            33423360,
+            33423360,
+            33423360,
+            33423360
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            33701888,
+            33701888,
+            33701888,
+            33701888
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.20.self_attn.proj",
+      "source_name": "model.visual.encoder.layers.20.self_attn.proj.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            33841152,
+            33841152,
+            33841152,
+            33841152
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.20.mlp.fc1",
+      "source_name": "model.visual.encoder.layers.20.mlp.fc1.weight",
+      "shape": [
+        4096,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            33980416,
+            33980416,
+            33980416,
+            33980416
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            34258944,
+            34258944,
+            34258944,
+            34258944
+          ],
+          "record_bytes_per_shard": 278528
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.20.mlp.fc2",
+      "source_name": "model.visual.encoder.layers.20.mlp.fc2.weight",
+      "shape": [
+        1024,
+        4096
+      ],
+      "padded_columns": 4096,
+      "input_groups": 64,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            34537472,
+            34537472,
+            34537472,
+            34537472
+          ],
+          "record_bytes_per_shard": 557056
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.21.self_attn.qkv",
+      "source_name": "model.visual.encoder.layers.21.self_attn.qkv.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            35094528,
+            35094528,
+            35094528,
+            35094528
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            35373056,
+            35373056,
+            35373056,
+            35373056
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.21.self_attn.proj",
+      "source_name": "model.visual.encoder.layers.21.self_attn.proj.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            35512320,
+            35512320,
+            35512320,
+            35512320
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.21.mlp.fc1",
+      "source_name": "model.visual.encoder.layers.21.mlp.fc1.weight",
+      "shape": [
+        4096,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            35651584,
+            35651584,
+            35651584,
+            35651584
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            35930112,
+            35930112,
+            35930112,
+            35930112
+          ],
+          "record_bytes_per_shard": 278528
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.21.mlp.fc2",
+      "source_name": "model.visual.encoder.layers.21.mlp.fc2.weight",
+      "shape": [
+        1024,
+        4096
+      ],
+      "padded_columns": 4096,
+      "input_groups": 64,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            36208640,
+            36208640,
+            36208640,
+            36208640
+          ],
+          "record_bytes_per_shard": 557056
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.22.self_attn.qkv",
+      "source_name": "model.visual.encoder.layers.22.self_attn.qkv.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            36765696,
+            36765696,
+            36765696,
+            36765696
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            37044224,
+            37044224,
+            37044224,
+            37044224
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.22.self_attn.proj",
+      "source_name": "model.visual.encoder.layers.22.self_attn.proj.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            37183488,
+            37183488,
+            37183488,
+            37183488
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.22.mlp.fc1",
+      "source_name": "model.visual.encoder.layers.22.mlp.fc1.weight",
+      "shape": [
+        4096,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            37322752,
+            37322752,
+            37322752,
+            37322752
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            37601280,
+            37601280,
+            37601280,
+            37601280
+          ],
+          "record_bytes_per_shard": 278528
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.22.mlp.fc2",
+      "source_name": "model.visual.encoder.layers.22.mlp.fc2.weight",
+      "shape": [
+        1024,
+        4096
+      ],
+      "padded_columns": 4096,
+      "input_groups": 64,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            37879808,
+            37879808,
+            37879808,
+            37879808
+          ],
+          "record_bytes_per_shard": 557056
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.23.self_attn.qkv",
+      "source_name": "model.visual.encoder.layers.23.self_attn.qkv.weight",
+      "shape": [
+        3072,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            38436864,
+            38436864,
+            38436864,
+            38436864
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            38715392,
+            38715392,
+            38715392,
+            38715392
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.23.self_attn.proj",
+      "source_name": "model.visual.encoder.layers.23.self_attn.proj.weight",
+      "shape": [
+        1024,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            38854656,
+            38854656,
+            38854656,
+            38854656
+          ],
+          "record_bytes_per_shard": 139264
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.23.mlp.fc1",
+      "source_name": "model.visual.encoder.layers.23.mlp.fc1.weight",
+      "shape": [
+        4096,
+        1024
+      ],
+      "padded_columns": 1024,
+      "input_groups": 16,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            38993920,
+            38993920,
+            38993920,
+            38993920
+          ],
+          "record_bytes_per_shard": 278528
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            39272448,
+            39272448,
+            39272448,
+            39272448
+          ],
+          "record_bytes_per_shard": 278528
+        }
+      ]
+    },
+    {
+      "module": "model.visual.encoder.layers.23.mlp.fc2",
+      "source_name": "model.visual.encoder.layers.23.mlp.fc2.weight",
+      "shape": [
+        1024,
+        4096
+      ],
+      "padded_columns": 4096,
+      "input_groups": 64,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "padded_rows": 1024,
+          "shard_offsets": [
+            39550976,
+            39550976,
+            39550976,
+            39550976
+          ],
+          "record_bytes_per_shard": 557056
+        }
+      ]
+    },
+    {
+      "module": "model.visual.merger.mlp.0",
+      "source_name": "model.visual.merger.mlp.0.weight",
+      "shape": [
+        4096,
+        4096
+      ],
+      "padded_columns": 4096,
+      "input_groups": 64,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            40108032,
+            40108032,
+            40108032,
+            40108032
+          ],
+          "record_bytes_per_shard": 1114112
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            41222144,
+            41222144,
+            41222144,
+            41222144
+          ],
+          "record_bytes_per_shard": 1114112
+        }
+      ]
+    },
+    {
+      "module": "model.visual.merger.mlp.2",
+      "source_name": "model.visual.merger.mlp.2.weight",
+      "shape": [
+        2560,
+        4096
+      ],
+      "padded_columns": 4096,
+      "input_groups": 64,
+      "bits": 4,
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "padded_rows": 2048,
+          "shard_offsets": [
+            42336256,
+            42336256,
+            42336256,
+            42336256
+          ],
+          "record_bytes_per_shard": 1114112
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 512,
+          "rows_per_shard": 128,
+          "padded_rows": 512,
+          "shard_offsets": [
+            43450368,
+            43450368,
+            43450368,
+            43450368
+          ],
+          "record_bytes_per_shard": 278528
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "status": "PASS_EXACT_TILE_BYTE_COPY",
+    "requantized": false,
+    "copied_payload_bytes_across_shards": 174915584,
+    "file_hashes_verified": true,
+    "pool_bytes": 838860800,
+    "mapped_bytes": 174915584,
+    "headroom_bytes": 663945216
+  }
+}

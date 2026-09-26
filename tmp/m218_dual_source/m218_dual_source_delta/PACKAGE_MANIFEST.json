@@ -1,0 +1,85 @@
+{
+  "date": "2026-09-01",
+  "gate": "M218-dual-source-service-board-delta",
+  "status": "PASS",
+  "build_id": "0x4D395832",
+  "input_modes": [
+    "browser-camera",
+    "uploaded-file-loop"
+  ],
+  "m208_formal_result_sha256": "2ff1d5823b97e349613abd15199e9db37630314a2d2c9b60fb4964658d47b23a",
+  "m212_formal_result_sha256": "60b739b83ab1730132a0517142164113e8ceb53b4508045d55c294a1bda0fafc",
+  "m218_offline_result_sha256": "990c39fc9b8a1e62c195c8203b863d5c0bc5ff9429d8e94899a277b2b037bfbd",
+  "files": [
+    {
+      "path": "live_stream_core.py",
+      "bytes": 9805,
+      "sha256": "947d8cb44ce623b1f907d8d771993a143464f4ddbd3b30c7a3a50d553c646535"
+    },
+    {
+      "path": "m206_ps_vision_runtime.py",
+      "bytes": 5348,
+      "sha256": "1f67ba6fe8628096919bb8f150d7e67a168dbf675aa7715f68074bd6792c2582"
+    },
+    {
+      "path": "m207_ps_vision_runtime.py",
+      "bytes": 3946,
+      "sha256": "cc58d6554c127d9fd111e05e9dbfadc7082e3bccfeda907cb67b2059f29a750c"
+    },
+    {
+      "path": "m218_board_preflight_and_restart.sh",
+      "bytes": 4169,
+      "sha256": "54a3a5b1cc32dbceb7fdf9e3e098c3e2ccf5d74a26c8145efdd219dd2c594445"
+    },
+    {
+      "path": "M218_DUAL_SOURCE_FILE_REPLAY_OFFLINE_RESULT.json",
+      "bytes": 6115,
+      "sha256": "990c39fc9b8a1e62c195c8203b863d5c0bc5ff9429d8e94899a277b2b037bfbd"
+    },
+    {
+      "path": "m218_health_probe.py",
+      "bytes": 3009,
+      "sha256": "dc0883af8acd4d4b68e0dd5cc9ecc14b34074334e35824bdcf9cdc1959e3a657"
+    },
+    {
+      "path": "M218_PREDECESSOR_SUMMARY.json",
+      "bytes": 2085,
+      "sha256": "aeb78f7c2cca96d2df95160b752a802f39ea603bdbb3097a5ae230ffb4a122ff"
+    },
+    {
+      "path": "m218_verify_board_delta.py",
+      "bytes": 1502,
+      "sha256": "da409c63f1de165781dd032e27af6f3953048fd103ff5ea64cafc5ce685fec02"
+    },
+    {
+      "path": "static/app.js",
+      "bytes": 7604,
+      "sha256": "bb9a7452417410a94d4a6e30717aa290bf8536bb9bc23ae7bf02d0c6012c1924"
+    },
+    {
+      "path": "static/index.html",
+      "bytes": 4584,
+      "sha256": "2c9c8e8625bdfa93eb79fd7f986083729b557f99bcbd2155e7dd7e760c504823"
+    },
+    {
+      "path": "static/style.css",
+      "bytes": 5823,
+      "sha256": "63ef46a9830e8a0ee6d500222d094a95bf0e525785ec7e035f7d2abbe90ca132"
+    },
+    {
+      "path": "video_server.py",
+      "bytes": 24781,
+      "sha256": "6b6655e29c13fee8f805a102d8f4ac9d89988067930e0ae187a9e2d860d88b74"
+    }
+  ],
+  "file_count": 12,
+  "total_bytes": 78771,
+  "excluded_patterns": [
+    "__pycache__",
+    "*.pyc",
+    "*.log",
+    "*.partial"
+  ],
+  "board_state_changed": false,
+  "stable_rollback_preserved": true
+}

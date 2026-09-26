@@ -1,0 +1,234 @@
+{
+  "date": "2026-09-02",
+  "gate": "M269-exact-runtime-view-official-gpu-binary-semantic",
+  "status": "PASS_EXACT_RUNTIME_VIEW_SMALL_BINARY_SUITE_BOARD_PENDING",
+  "classification": "Exact NumPy-only M269 view-construction small official GPU regression screen; not calibrated accuracy, KV260 semantics, FPGA speed or board promotion.",
+  "predecessor": "/mnt/c/Users/30429/Desktop/TeLLMe_FPGA_2026/deployment/mage_vl4b/M268_GPU_FAST_ROI_BINARY_RESULT.json",
+  "predecessor_sha256": "ddfbd30a64ae9c0157662b2f1ab6cf3c9678946fcd79cf36847e05ab64a4fb5d",
+  "view_contract": {
+    "source_keyframes": 2,
+    "per_keyframe": [
+      "448-to-224 exact 2x2 area average",
+      "exact centered 224 crop"
+    ],
+    "processor_views": 4,
+    "visual_tokens": 196,
+    "new_board_runtime_dependencies": [
+      "numpy"
+    ],
+    "cv2_required_on_board": false
+  },
+  "source_files": [
+    {
+      "path": "M269_BOUNDARY.md",
+      "bytes": 961,
+      "sha256": "a1773d3344988ad6bfc0b44fe9f199fafc43e17f9943970b66d9df9dd2d72da2"
+    },
+    {
+      "path": "m269_m254_video_server.py",
+      "bytes": 310,
+      "sha256": "871c645c12d28c7b0e83c896f6804ecd4bc6e3c0959ce4f1b82431068168484d"
+    },
+    {
+      "path": "m269_multiscale_contract.py",
+      "bytes": 4505,
+      "sha256": "059e1d83e6b83d34ed623ad408810c77f5dc1c65de6e3e3567ff2e4e36d72563"
+    },
+    {
+      "path": "m269_multiscale_vision_runtime.py",
+      "bytes": 2531,
+      "sha256": "704789015f10e6740d6c5f85cea7dd273e642fb463b61a92e18a82f776d82cc3"
+    },
+    {
+      "path": "m269_video_runtime.py",
+      "bytes": 6675,
+      "sha256": "3669a63ff5404d3eeb65662fd293bce7397f6fceab3a34de145d723ec8641573"
+    }
+  ],
+  "records": [
+    {
+      "name": "motorcycle_person_no_knife",
+      "expected": 0,
+      "decision": 0,
+      "pass": true,
+      "no_logit": 19.5,
+      "yes_logit": 16.625,
+      "margin_yes_minus_no": -2.875,
+      "score_calibrated": false,
+      "prompt_tokens": 284,
+      "tensor_shapes": {
+        "pixel_values": [
+          784,
+          768
+        ],
+        "image_grid_thw": [
+          4,
+          3
+        ],
+        "patch_positions": [
+          784,
+          3
+        ],
+        "input_ids": [
+          1,
+          284
+        ],
+        "attention_mask": [
+          1,
+          284
+        ]
+      },
+      "view_shape": [
+        4,
+        224,
+        224,
+        3
+      ],
+      "forward_ms": 950.0136360000013
+    },
+    {
+      "name": "soccer_people_no_knife",
+      "expected": 0,
+      "decision": 0,
+      "pass": true,
+      "no_logit": 19.25,
+      "yes_logit": 17.75,
+      "margin_yes_minus_no": -1.5,
+      "score_calibrated": false,
+      "prompt_tokens": 284,
+      "tensor_shapes": {
+        "pixel_values": [
+          784,
+          768
+        ],
+        "image_grid_thw": [
+          4,
+          3
+        ],
+        "patch_positions": [
+          784,
+          3
+        ],
+        "input_ids": [
+          1,
+          284
+        ],
+        "attention_mask": [
+          1,
+          284
+        ]
+      },
+      "view_shape": [
+        4,
+        224,
+        224,
+        3
+      ],
+      "forward_ms": 98.43492799999609
+    },
+    {
+      "name": "dog_no_person_no_knife",
+      "expected": 0,
+      "decision": 0,
+      "pass": true,
+      "no_logit": 18.75,
+      "yes_logit": 16.0,
+      "margin_yes_minus_no": -2.75,
+      "score_calibrated": false,
+      "prompt_tokens": 284,
+      "tensor_shapes": {
+        "pixel_values": [
+          784,
+          768
+        ],
+        "image_grid_thw": [
+          4,
+          3
+        ],
+        "patch_positions": [
+          784,
+          3
+        ],
+        "input_ids": [
+          1,
+          284
+        ],
+        "attention_mask": [
+          1,
+          284
+        ]
+      },
+      "view_shape": [
+        4,
+        224,
+        224,
+        3
+      ],
+      "forward_ms": 100.71635199999918
+    },
+    {
+      "name": "businesswoman_knife_positive",
+      "expected": 1,
+      "decision": 1,
+      "pass": true,
+      "no_logit": 17.0,
+      "yes_logit": 20.25,
+      "margin_yes_minus_no": 3.25,
+      "score_calibrated": false,
+      "prompt_tokens": 284,
+      "tensor_shapes": {
+        "pixel_values": [
+          784,
+          768
+        ],
+        "image_grid_thw": [
+          4,
+          3
+        ],
+        "patch_positions": [
+          784,
+          3
+        ],
+        "input_ids": [
+          1,
+          284
+        ],
+        "attention_mask": [
+          1,
+          284
+        ]
+      },
+      "view_shape": [
+        4,
+        224,
+        224,
+        3
+      ],
+      "forward_ms": 101.19119000000154
+    }
+  ],
+  "suite_pass": true,
+  "projected_schedule": {
+    "official_processor_prompt_tokens": 284,
+    "t32_batches_from_official_prompt": 9,
+    "logical_calls_from_official_prompt": 1394,
+    "call_reduction_vs_M264_official_448_prompt_percent": 39.86194995685936,
+    "not_board_measurement": true
+  },
+  "model": "microsoft/Mage-VL",
+  "checkpoint": "/home/lyy/models/Mage-VL",
+  "checkpoint_config_sha256": "fd4621212569e893ce2caa110431fde73f3cc1a1d92e1b8320bb4e0cfbcad34a",
+  "backend": "WSL local CUDA GPU; not KV260",
+  "quantization": "bitsandbytes NF4 4-bit; BF16 compute",
+  "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "load_ms": 5793.504235999997,
+  "gpu_peak_allocated_bytes": 3852295680,
+  "threshold_calibrated": false,
+  "semantic_accuracy_passed": false,
+  "semantic_accuracy_reason": "Four examples are a regression screen; M252 held-out metrics remain required.",
+  "host_gpu_timing_is_board_evidence": false,
+  "active_board_service_changed": false,
+  "stable_rollback_preserved": true,
+  "source_sha256": "f3ca73131f3962181f68dcac728e511ec0db34c7869e831ffccfdd2d0a3ab27b",
+  "next_gate": "Run offline geometry/import/package closure, create a clean delta, then wait for COM3 for isolated KV260 memory, exact identity, binary semantics and complete TTFT."
+}

@@ -1,0 +1,13 @@
+{
+  "gate": "M222-live-worker-event-loop-regression",
+  "status": "PASS",
+  "checks": {
+    "event_loop_created_in_worker": true,
+    "ready_state_visible": true,
+    "runtime_loaded_once": true,
+    "worker_failure_visible": true,
+    "worker_error_preserved": true,
+    "failed_runtime_closed": true
+  },
+  "board_state_changed": false
+}

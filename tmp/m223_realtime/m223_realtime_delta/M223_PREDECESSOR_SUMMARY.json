@@ -1,0 +1,1984 @@
+{
+  "date": "2026-09-01",
+  "gate": "M218-dual-source-predecessor-summary",
+  "status": "PASS",
+  "source_board_gate_sha256": "c36cce484b7ee963bc7680483ea34c85c1affdc50b95bb250f36483bb30e9387",
+  "stable_rollback_preserved": true,
+  "m179": {
+    "gate": "M120-fixed-text-E2E",
+    "status": "PASS",
+    "classification": "fixed-reference first board gate; not arbitrary Web chat",
+    "generated_token_id": 17,
+    "expected_token_id": 17,
+    "reference_match": true,
+    "fpga_execution_proved": true,
+    "cpu_linear_fallback": false,
+    "evidence": {
+      "build_id": "0x4d395832",
+      "host_calls": 165,
+      "expected_macros": 2048491520,
+      "logical_calls": 162,
+      "logical_expected_macros": 2011136000,
+      "weight_mode": "staged-low-cma",
+      "stage_bytes": 2034890752,
+      "stage_ms": 3108.051797898952,
+      "activation_scale_policy": "adaptive-power-of-two-finite-retry-v1",
+      "maximum_activation_scale_shift": 6,
+      "minimum_activation_scale_shift": 0,
+      "maximum_transmitted_active_scale": 512.0,
+      "scale_retry_count": 3,
+      "scale_shift_counts": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 1,
+        "4": 1,
+        "5": 0,
+        "6": 160
+      },
+      "scale_attempts": [
+        {
+          "chain_index": 0,
+          "layer": 0,
+          "family": "q",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 1.0597772598266602
+        },
+        {
+          "chain_index": 1,
+          "layer": 0,
+          "family": "kv",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 1.0597772598266602
+        },
+        {
+          "chain_index": 2,
+          "layer": 0,
+          "family": "attention_out",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 0.6211105585098267
+        },
+        {
+          "chain_index": 3,
+          "layer": 0,
+          "family": "gate_up",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 1.7065231800079346
+        },
+        {
+          "chain_index": 4,
+          "layer": 0,
+          "family": "mlp_down",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 5.838980674743652
+        },
+        {
+          "chain_index": 5,
+          "layer": 1,
+          "family": "q",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 1.1710338592529297
+        },
+        {
+          "chain_index": 6,
+          "layer": 1,
+          "family": "kv",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 1.1710338592529297
+        },
+        {
+          "chain_index": 7,
+          "layer": 1,
+          "family": "attention_out",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 0.3292555510997772
+        },
+        {
+          "chain_index": 8,
+          "layer": 1,
+          "family": "gate_up",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 46.78266906738281
+        },
+        {
+          "chain_index": 9,
+          "layer": 1,
+          "family": "mlp_down",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 55.27199935913086
+        },
+        {
+          "chain_index": 10,
+          "layer": 2,
+          "family": "q",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 1.3179181814193726
+        },
+        {
+          "chain_index": 11,
+          "layer": 2,
+          "family": "kv",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 1.3179181814193726
+        },
+        {
+          "chain_index": 12,
+          "layer": 2,
+          "family": "attention_out",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 0.39211270213127136
+        },
+        {
+          "chain_index": 13,
+          "layer": 2,
+          "family": "gate_up",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 81.75975036621094
+        },
+        {
+          "chain_index": 14,
+          "layer": 2,
+          "family": "mlp_down",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 3.754199504852295
+        },
+        {
+          "chain_index": 15,
+          "layer": 3,
+          "family": "q",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 2.5424885749816895
+        },
+        {
+          "chain_index": 16,
+          "layer": 3,
+          "family": "kv",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 2.5424885749816895
+        },
+        {
+          "chain_index": 17,
+          "layer": 3,
+          "family": "attention_out",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 0.42966708540916443
+        },
+        {
+          "chain_index": 18,
+          "layer": 3,
+          "family": "gate_up",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 61.36404037475586
+        },
+        {
+          "chain_index": 19,
+          "layer": 3,
+          "family": "mlp_down",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 13.562701225280762
+        },
+        {
+          "chain_index": 20,
+          "layer": 4,
+          "family": "q",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 1.686536431312561
+        },
+        {
+          "chain_index": 21,
+          "layer": 4,
+          "family": "kv",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 1.686536431312561
+        },
+        {
+          "chain_index": 22,
+          "layer": 4,
+          "family": "attention_out",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 0.5945003032684326
+        },
+        {
+          "chain_index": 23,
+          "layer": 4,
+          "family": "gate_up",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 33.97471618652344
+        },
+        {
+          "chain_index": 24,
+          "layer": 4,
+          "family": "mlp_down",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 7.167365074157715
+        },
+        {
+          "chain_index": 25,
+          "layer": 5,
+          "family": "q",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 1.8871841430664062
+        },
+        {
+          "chain_index": 26,
+          "layer": 5,
+          "family": "kv",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 1.8871841430664062
+        },
+        {
+          "chain_index": 27,
+          "layer": 5,
+          "family": "attention_out",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 0.6565916538238525
+        },
+        {
+          "chain_index": 28,
+          "layer": 5,
+          "family": "gate_up",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 15.440045356750488
+        },
+        {
+          "chain_index": 29,
+          "layer": 5,
+          "family": "mlp_down",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 6.602576732635498
+        },
+        {
+          "chain_index": 30,
+          "layer": 6,
+          "family": "q",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 2.564711570739746
+        },
+        {
+          "chain_index": 31,
+          "layer": 6,
+          "family": "kv",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 2.564711570739746
+        },
+        {
+          "chain_index": 32,
+          "layer": 6,
+          "family": "attention_out",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 0.8732794523239136
+        },
+        {
+          "chain_index": 33,
+          "layer": 6,
+          "family": "gate_up",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 98.02301788330078
+        },
+        {
+          "chain_index": 34,
+          "layer": 6,
+          "family": "mlp_down",
+          "initial_shift": 4,
+          "attempted_shifts": [
+            4,
+            3
+          ],
+          "selected_shift": 3,
+          "input_max_abs": 2439.43359375
+        },
+        {
+          "chain_index": 35,
+          "layer": 7,
+          "family": "q",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 7.8686981201171875
+        },
+        {
+          "chain_index": 36,
+          "layer": 7,
+          "family": "kv",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 7.8686981201171875
+        },
+        {
+          "chain_index": 37,
+          "layer": 7,
+          "family": "attention_out",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 1.2466071844100952
+        },
+        {
+          "chain_index": 38,
+          "layer": 7,
+          "family": "gate_up",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 26.17290496826172
+        },
+        {
+          "chain_index": 39,
+          "layer": 7,
+          "family": "mlp_down",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 7.07955265045166
+        },
+        {
+          "chain_index": 40,
+          "layer": 8,
+          "family": "q",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 8.293878555297852
+        },
+        {
+          "chain_index": 41,
+          "layer": 8,
+          "family": "kv",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 8.293878555297852
+        },
+        {
+          "chain_index": 42,
+          "layer": 8,
+          "family": "attention_out",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 1.63558030128479
+        },
+        {
+          "chain_index": 43,
+          "layer": 8,
+          "family": "gate_up",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 11.544187545776367
+        },
+        {
+          "chain_index": 44,
+          "layer": 8,
+          "family": "mlp_down",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 9.92159652709961
+        },
+        {
+          "chain_index": 45,
+          "layer": 9,
+          "family": "q",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 7.975118160247803
+        },
+        {
+          "chain_index": 46,
+          "layer": 9,
+          "family": "kv",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 7.975118160247803
+        },
+        {
+          "chain_index": 47,
+          "layer": 9,
+          "family": "attention_out",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 1.8099219799041748
+        },
+        {
+          "chain_index": 48,
+          "layer": 9,
+          "family": "gate_up",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 12.412814140319824
+        },
+        {
+          "chain_index": 49,
+          "layer": 9,
+          "family": "mlp_down",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 9.348570823669434
+        },
+        {
+          "chain_index": 50,
+          "layer": 10,
+          "family": "qkv",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 13.368331909179688
+        },
+        {
+          "chain_index": 51,
+          "layer": 10,
+          "family": "attention_out",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 1.490788459777832
+        },
+        {
+          "chain_index": 52,
+          "layer": 10,
+          "family": "gate_up",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 11.801423072814941
+        },
+        {
+          "chain_index": 53,
+          "layer": 10,
+          "family": "mlp_down",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 26.802461624145508
+        },
+        {
+          "chain_index": 54,
+          "layer": 11,
+          "family": "qkv",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 9.511850357055664
+        },
+        {
+          "chain_index": 55,
+          "layer": 11,
+          "family": "attention_out",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 1.4499295949935913
+        },
+        {
+          "chain_index": 56,
+          "layer": 11,
+          "family": "gate_up",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 13.140645980834961
+        },
+        {
+          "chain_index": 57,
+          "layer": 11,
+          "family": "mlp_down",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 7.83256196975708
+        },
+        {
+          "chain_index": 58,
+          "layer": 12,
+          "family": "qkv",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 10.067976951599121
+        },
+        {
+          "chain_index": 59,
+          "layer": 12,
+          "family": "attention_out",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 1.6256537437438965
+        },
+        {
+          "chain_index": 60,
+          "layer": 12,
+          "family": "gate_up",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 13.517600059509277
+        },
+        {
+          "chain_index": 61,
+          "layer": 12,
+          "family": "mlp_down",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 36.225215911865234
+        },
+        {
+          "chain_index": 62,
+          "layer": 13,
+          "family": "qkv",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 9.194485664367676
+        },
+        {
+          "chain_index": 63,
+          "layer": 13,
+          "family": "attention_out",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 15.172253608703613
+        },
+        {
+          "chain_index": 64,
+          "layer": 13,
+          "family": "gate_up",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 15.794960975646973
+        },
+        {
+          "chain_index": 65,
+          "layer": 13,
+          "family": "mlp_down",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 9.163169860839844
+        },
+        {
+          "chain_index": 66,
+          "layer": 14,
+          "family": "qkv",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 13.440893173217773
+        },
+        {
+          "chain_index": 67,
+          "layer": 14,
+          "family": "attention_out",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 9.572661399841309
+        },
+        {
+          "chain_index": 68,
+          "layer": 14,
+          "family": "gate_up",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 17.906526565551758
+        },
+        {
+          "chain_index": 69,
+          "layer": 14,
+          "family": "mlp_down",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 41.29555130004883
+        },
+        {
+          "chain_index": 70,
+          "layer": 15,
+          "family": "qkv",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 17.845090866088867
+        },
+        {
+          "chain_index": 71,
+          "layer": 15,
+          "family": "attention_out",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 20.195301055908203
+        },
+        {
+          "chain_index": 72,
+          "layer": 15,
+          "family": "gate_up",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 20.397323608398438
+        },
+        {
+          "chain_index": 73,
+          "layer": 15,
+          "family": "mlp_down",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 37.199249267578125
+        },
+        {
+          "chain_index": 74,
+          "layer": 16,
+          "family": "qkv",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 21.35096549987793
+        },
+        {
+          "chain_index": 75,
+          "layer": 16,
+          "family": "attention_out",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 14.653219223022461
+        },
+        {
+          "chain_index": 76,
+          "layer": 16,
+          "family": "gate_up",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 35.38420486450195
+        },
+        {
+          "chain_index": 77,
+          "layer": 16,
+          "family": "mlp_down",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 79.57128143310547
+        },
+        {
+          "chain_index": 78,
+          "layer": 17,
+          "family": "qkv",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 20.597129821777344
+        },
+        {
+          "chain_index": 79,
+          "layer": 17,
+          "family": "attention_out",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 2.6072421073913574
+        },
+        {
+          "chain_index": 80,
+          "layer": 17,
+          "family": "gate_up",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 15.405044555664062
+        },
+        {
+          "chain_index": 81,
+          "layer": 17,
+          "family": "mlp_down",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 3.110232353210449
+        },
+        {
+          "chain_index": 82,
+          "layer": 18,
+          "family": "qkv",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 26.908588409423828
+        },
+        {
+          "chain_index": 83,
+          "layer": 18,
+          "family": "attention_out",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 1.9616724252700806
+        },
+        {
+          "chain_index": 84,
+          "layer": 18,
+          "family": "gate_up",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 14.899198532104492
+        },
+        {
+          "chain_index": 85,
+          "layer": 18,
+          "family": "mlp_down",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 57.74504089355469
+        },
+        {
+          "chain_index": 86,
+          "layer": 19,
+          "family": "qkv",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 33.00724792480469
+        },
+        {
+          "chain_index": 87,
+          "layer": 19,
+          "family": "attention_out",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 2.2958996295928955
+        },
+        {
+          "chain_index": 88,
+          "layer": 19,
+          "family": "gate_up",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 14.017723083496094
+        },
+        {
+          "chain_index": 89,
+          "layer": 19,
+          "family": "mlp_down",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 11.19891357421875
+        },
+        {
+          "chain_index": 90,
+          "layer": 20,
+          "family": "qkv",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 32.31094741821289
+        },
+        {
+          "chain_index": 91,
+          "layer": 20,
+          "family": "attention_out",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 2.6120259761810303
+        },
+        {
+          "chain_index": 92,
+          "layer": 20,
+          "family": "gate_up",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 15.256011009216309
+        },
+        {
+          "chain_index": 93,
+          "layer": 20,
+          "family": "mlp_down",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 5.905127048492432
+        },
+        {
+          "chain_index": 94,
+          "layer": 21,
+          "family": "qkv",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 39.720924377441406
+        },
+        {
+          "chain_index": 95,
+          "layer": 21,
+          "family": "attention_out",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 2.6203887462615967
+        },
+        {
+          "chain_index": 96,
+          "layer": 21,
+          "family": "gate_up",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 14.08480167388916
+        },
+        {
+          "chain_index": 97,
+          "layer": 21,
+          "family": "mlp_down",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 9.935165405273438
+        },
+        {
+          "chain_index": 98,
+          "layer": 22,
+          "family": "qkv",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 45.62874221801758
+        },
+        {
+          "chain_index": 99,
+          "layer": 22,
+          "family": "attention_out",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 3.6990363597869873
+        },
+        {
+          "chain_index": 100,
+          "layer": 22,
+          "family": "gate_up",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 12.73188304901123
+        },
+        {
+          "chain_index": 101,
+          "layer": 22,
+          "family": "mlp_down",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 14.830940246582031
+        },
+        {
+          "chain_index": 102,
+          "layer": 23,
+          "family": "qkv",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 41.11433029174805
+        },
+        {
+          "chain_index": 103,
+          "layer": 23,
+          "family": "attention_out",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 4.211911678314209
+        },
+        {
+          "chain_index": 104,
+          "layer": 23,
+          "family": "gate_up",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 11.768871307373047
+        },
+        {
+          "chain_index": 105,
+          "layer": 23,
+          "family": "mlp_down",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 24.423004150390625
+        },
+        {
+          "chain_index": 106,
+          "layer": 24,
+          "family": "qkv",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 45.563663482666016
+        },
+        {
+          "chain_index": 107,
+          "layer": 24,
+          "family": "attention_out",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 4.192532539367676
+        },
+        {
+          "chain_index": 108,
+          "layer": 24,
+          "family": "gate_up",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 12.990900039672852
+        },
+        {
+          "chain_index": 109,
+          "layer": 24,
+          "family": "mlp_down",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 31.120437622070312
+        },
+        {
+          "chain_index": 110,
+          "layer": 25,
+          "family": "qkv",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 38.191932678222656
+        },
+        {
+          "chain_index": 111,
+          "layer": 25,
+          "family": "attention_out",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 3.995060443878174
+        },
+        {
+          "chain_index": 112,
+          "layer": 25,
+          "family": "gate_up",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 14.665336608886719
+        },
+        {
+          "chain_index": 113,
+          "layer": 25,
+          "family": "mlp_down",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 24.809938430786133
+        },
+        {
+          "chain_index": 114,
+          "layer": 26,
+          "family": "qkv",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 41.576255798339844
+        },
+        {
+          "chain_index": 115,
+          "layer": 26,
+          "family": "attention_out",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 4.798827171325684
+        },
+        {
+          "chain_index": 116,
+          "layer": 26,
+          "family": "gate_up",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 15.066896438598633
+        },
+        {
+          "chain_index": 117,
+          "layer": 26,
+          "family": "mlp_down",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 25.538244247436523
+        },
+        {
+          "chain_index": 118,
+          "layer": 27,
+          "family": "qkv",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 41.88081741333008
+        },
+        {
+          "chain_index": 119,
+          "layer": 27,
+          "family": "attention_out",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 4.021685600280762
+        },
+        {
+          "chain_index": 120,
+          "layer": 27,
+          "family": "gate_up",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 15.5022611618042
+        },
+        {
+          "chain_index": 121,
+          "layer": 27,
+          "family": "mlp_down",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 24.73994255065918
+        },
+        {
+          "chain_index": 122,
+          "layer": 28,
+          "family": "qkv",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 45.59894561767578
+        },
+        {
+          "chain_index": 123,
+          "layer": 28,
+          "family": "attention_out",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 5.560392379760742
+        },
+        {
+          "chain_index": 124,
+          "layer": 28,
+          "family": "gate_up",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 16.0258846282959
+        },
+        {
+          "chain_index": 125,
+          "layer": 28,
+          "family": "mlp_down",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 36.77264404296875
+        },
+        {
+          "chain_index": 126,
+          "layer": 29,
+          "family": "qkv",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 55.99321365356445
+        },
+        {
+          "chain_index": 127,
+          "layer": 29,
+          "family": "attention_out",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 5.528800010681152
+        },
+        {
+          "chain_index": 128,
+          "layer": 29,
+          "family": "gate_up",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 17.506423950195312
+        },
+        {
+          "chain_index": 129,
+          "layer": 29,
+          "family": "mlp_down",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 30.755762100219727
+        },
+        {
+          "chain_index": 130,
+          "layer": 30,
+          "family": "qkv",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 59.61323547363281
+        },
+        {
+          "chain_index": 131,
+          "layer": 30,
+          "family": "attention_out",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 8.353983879089355
+        },
+        {
+          "chain_index": 132,
+          "layer": 30,
+          "family": "gate_up",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 17.287548065185547
+        },
+        {
+          "chain_index": 133,
+          "layer": 30,
+          "family": "mlp_down",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 31.46843147277832
+        },
+        {
+          "chain_index": 134,
+          "layer": 31,
+          "family": "qkv",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 78.9101333618164
+        },
+        {
+          "chain_index": 135,
+          "layer": 31,
+          "family": "attention_out",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 7.918776035308838
+        },
+        {
+          "chain_index": 136,
+          "layer": 31,
+          "family": "gate_up",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 16.15291404724121
+        },
+        {
+          "chain_index": 137,
+          "layer": 31,
+          "family": "mlp_down",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 62.00912857055664
+        },
+        {
+          "chain_index": 138,
+          "layer": 32,
+          "family": "qkv",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 90.97124481201172
+        },
+        {
+          "chain_index": 139,
+          "layer": 32,
+          "family": "attention_out",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 9.216828346252441
+        },
+        {
+          "chain_index": 140,
+          "layer": 32,
+          "family": "gate_up",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 15.521760940551758
+        },
+        {
+          "chain_index": 141,
+          "layer": 32,
+          "family": "mlp_down",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 32.74605178833008
+        },
+        {
+          "chain_index": 142,
+          "layer": 33,
+          "family": "qkv",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 122.0885238647461
+        },
+        {
+          "chain_index": 143,
+          "layer": 33,
+          "family": "attention_out",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 14.825531959533691
+        },
+        {
+          "chain_index": 144,
+          "layer": 33,
+          "family": "gate_up",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 24.65876579284668
+        },
+        {
+          "chain_index": 145,
+          "layer": 33,
+          "family": "mlp_down",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 52.05428695678711
+        },
+        {
+          "chain_index": 146,
+          "layer": 34,
+          "family": "qkv",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 120.02792358398438
+        },
+        {
+          "chain_index": 147,
+          "layer": 34,
+          "family": "attention_out",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 30.845722198486328
+        },
+        {
+          "chain_index": 148,
+          "layer": 34,
+          "family": "gate_up",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 77.56358337402344
+        },
+        {
+          "chain_index": 149,
+          "layer": 34,
+          "family": "mlp_down",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 144.87928771972656
+        },
+        {
+          "chain_index": 150,
+          "layer": 35,
+          "family": "qkv",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 120.79669952392578
+        },
+        {
+          "chain_index": 151,
+          "layer": 35,
+          "family": "attention_out",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 31.410913467407227
+        },
+        {
+          "chain_index": 152,
+          "layer": 35,
+          "family": "gate_up",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 324.1353759765625
+        },
+        {
+          "chain_index": 153,
+          "layer": 35,
+          "family": "mlp_down",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6,
+            5,
+            4
+          ],
+          "selected_shift": 4,
+          "input_max_abs": 521.5438232421875
+        },
+        {
+          "chain_index": 0,
+          "layer": null,
+          "family": "lm_head",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 34.731685638427734
+        },
+        {
+          "chain_index": 1,
+          "layer": null,
+          "family": "lm_head",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 34.731685638427734
+        },
+        {
+          "chain_index": 2,
+          "layer": null,
+          "family": "lm_head",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 34.731685638427734
+        },
+        {
+          "chain_index": 3,
+          "layer": null,
+          "family": "lm_head",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 34.731685638427734
+        },
+        {
+          "chain_index": 4,
+          "layer": null,
+          "family": "lm_head",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 34.731685638427734
+        },
+        {
+          "chain_index": 5,
+          "layer": null,
+          "family": "lm_head",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 34.731685638427734
+        },
+        {
+          "chain_index": 6,
+          "layer": null,
+          "family": "lm_head",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 34.731685638427734
+        },
+        {
+          "chain_index": 7,
+          "layer": null,
+          "family": "lm_head",
+          "initial_shift": 6,
+          "attempted_shifts": [
+            6
+          ],
+          "selected_shift": 6,
+          "input_max_abs": 34.731685638427734
+        }
+      ],
+      "maximum_weight_window_bytes_per_shard": 6963200
+    },
+    "expected_calls": 162,
+    "expected_macros": 2011136000,
+    "timing": {
+      "layer_ms": [
+        1216.4622959971894,
+        1202.4716869927943,
+        1202.7112189971376,
+        1154.8240400006762,
+        1202.7986800094368,
+        1099.2726240074262,
+        1290.6831190048251,
+        1152.3804259923054,
+        1098.7854300037725,
+        1203.5538170021027,
+        1239.6663789986633,
+        1240.5230170115829,
+        1240.0037619954674,
+        1239.1300430026604,
+        1240.3651860076934,
+        1252.4540869926568,
+        1238.9935219980543,
+        1239.586926996708,
+        1239.9388710036874,
+        1243.8873010105453,
+        1239.2872350028483,
+        1254.6664280089317,
+        1238.1526839890284,
+        1239.2008339957101,
+        1239.2531739897095,
+        1239.1967630101135,
+        1239.284455004963,
+        1240.4437369987136,
+        1241.4300560049014,
+        1239.6518889872823,
+        1240.086881996831,
+        1240.671209001448,
+        1239.5708780095447,
+        1241.0152119991835,
+        1240.6265580066247,
+        1626.0831340041477
+      ],
+      "language_ms": 44477.11356103537,
+      "total_ms": 60710.39329899941,
+      "argmax_logit": 20.6875
+    },
+    "candidate_build_id": "0x4D395832",
+    "package_manifest_sha256": "406dcca340e4604baeb761445795391c43ec26bd99fa06ffae893d597b17414f",
+    "m167_formal_result": "C:/Users/30429/Desktop/TeLLMe_FPGA_2026/deployment/mage_vl4b/M167_M120_CORRECTED_LAYER0_BOARD_RESULT_01.json",
+    "m167_formal_result_sha256": "a618e049fd0b11283b4af1a8b073451b14f8ed704c3ba9671b30a41a85c44ea3",
+    "m176_stage_result": "C:/Users/30429/Desktop/TeLLMe_FPGA_2026/deployment/mage_vl4b/M176_M120_LMHEAD_OPTIONAL_LAYER_BOARD_STAGE_RESULT_01.json",
+    "m176_stage_result_sha256": "7fbc5d79b0c64cbed8807520ca3fec962c4b4dc4ca1f9d2380fece10d5f7685e",
+    "uart_log": "C:/Users/30429/Desktop/TeLLMe_FPGA_2026/tmp/m179_fixed_text/run_01_uart.log",
+    "uart_log_sha256": "614ffe10dff5f3d957ab016c8f2aae7ecc3d3d0478d36e949ec5db1338fd7614",
+    "evidence_level": "L5 fixed-reference M120 text E2E; not arbitrary prompt/Web",
+    "formal_result": "deployment/mage_vl4b/M179_M120_FIXED_TEXT_BOARD_RESULT_01.json",
+    "formal_result_sha256": "3a798eafd2e66974774dcdcac39de86243830a6a4771eb182cd535220b4aacd3",
+    "scope_boundary": "L5 fixed-reference complete 36-layer plus LM-head E2E; not arbitrary prompt, general deployment, video or Web evidence."
+  },
+  "m198": {
+    "status": "PASS",
+    "attempt": "01",
+    "classification": "Real-KV260 PS vision numerical gate only; not FPGA video-language E2E, performance or Web evidence.",
+    "candidate_build_id": "0x4D395832",
+    "compute_policy": "layers 0-5 BF16; layers 6-23 FP32; each FP32 block returns BF16 state",
+    "fp32_encoder_layers": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "metrics": {
+      "cosine_similarity": 0.9990799868677557,
+      "max_abs_error": 0.66015625,
+      "mean_abs_error": 0.011939267328632144,
+      "rmse": 0.023277597055246062
+    },
+    "vision_wall_ms": 1127359.043767996,
+    "speedup_vs_m192": 1.628659518335193,
+    "error": null,
+    "formal_result": "deployment/mage_vl4b/M198_M197_PS_VISION_BOARD_RESULT_01.json",
+    "formal_result_sha256": "b05671184eddb853c30091f3f0cb4718f5a96be9080dee210387bd483cce3209",
+    "uart_log": "tmp/m198_ps_vision/run_01.log",
+    "uart_log_sha256": "f874365330a3e8b69316eb53da0adc95827c77e64aec98d853d31c7073d07287",
+    "boot_dtb_cma_partitions_services_changed": false,
+    "stable_rollback_preserved": true,
+    "next_gate": "Run fixed four-frame video-language E2E with the inherited M120 FPGA language/head path."
+  },
+  "m208": {
+    "date": "2026-09-01",
+    "gate": "M208-M207-fixed-four-frame-PS-vision-FP32-W4-GEMM",
+    "status": "PASS",
+    "classification": "Real-KV260 fixed-four-frame PS-vision numerical/performance gate; not complete video-language, continuous stream or Web evidence.",
+    "candidate_build_id": "0x4D395832",
+    "compute_policy": "all W4 Linear GEMMs use FP32; operands for BF16 blocks are first rounded to BF16 then promoted; M198 L0-5 BF16/L6-23 FP32/BF16-boundary topology retained",
+    "metrics": {
+      "cosine_similarity": 0.9991173106764643,
+      "max_abs_error": 0.6259765625,
+      "mean_abs_error": 0.011580251454170696,
+      "rmse": 0.022790040042836874
+    },
+    "vision_forward_ms": 1006043.7134259992,
+    "m198_forward_ms": 1072673.0626030038,
+    "speedup_vs_m198_forward": 1.066229079599438,
+    "process_max_rss_kib": 1043912,
+    "bf16_gemm_warning_count": 0,
+    "fpga_language_executed": false,
+    "continuous_stream_executed": false,
+    "web_deployed": false,
+    "boot_dtb_cma_partitions_services_changed": false,
+    "stable_rollback_preserved": true,
+    "formal_result": "deployment/mage_vl4b/M208_M207_PS_VISION_BOARD_RESULT_01.json",
+    "formal_result_sha256": "2ff1d5823b97e349613abd15199e9db37630314a2d2c9b60fb4964658d47b23a",
+    "uart_log": "tmp/m208_ps_vision/run_01.log",
+    "uart_log_sha256": "954878d1dc7e298d551b264163d7661d8a5f014c512a5e3ab90dc033098c4d22",
+    "next_gate": "M209 true latest-only continuous ingress/SSE integrated with the selected M207 backend; do not rerun M204."
+  },
+  "m209": {
+    "status": "OFFLINE_PASS_BOARD_NOT_EXECUTED",
+    "mode": "unbounded input; capacity-16 ring; newest-four selection; one-window backlog; stale frames overwritten",
+    "accepted_frames": 64,
+    "overwritten_frames": 48,
+    "last_window_sequences": [
+      60,
+      61,
+      62,
+      63
+    ],
+    "runtime_load_count": 1,
+    "formal_result": "deployment/mage_vl4b/M209_CONTINUOUS_LATEST_ONLY_CORE_RESULT.json",
+    "formal_result_sha256": "a38db7fd6e22da15fa0e5021e014a59624478b10f1408e7cd2616161695ada90",
+    "classification": "Offline scheduler pressure proof only; no camera/RTSP, KV260 inference, HTTP/SSE or latency acceptance is claimed.",
+    "next_gate": "Connect the selected M207 real-board backend to browser-camera/RTSP ingress and SSE; first run a bounded live smoke, not M204."
+  },
+  "m212": {
+    "status": "PUBLIC_HTTPS_CONTROL_PLANE_PASS_REAL_FRAMES_PENDING",
+    "package_manifest_sha256": "6deb7d763f7fce80716ea41b3e155044c4098d33d636f57d64c157d11dda16ab",
+    "formal_result_sha256": "1a80b752edcbe0cee056f39fd1ceddcef9b7ea68f742a079d26e048960473686",
+    "public_https_result_sha256": "61714942c670e8158e64b61a6bce4be43feba107b551383c6667b94e872c446d"
+  },
+  "m222_arm64_decoder_result_sha256": "49b7f7ba221346499147b1b73d2cfc1b9aed6018f9d13e48e0ec0015743498bd",
+  "m222_offline_vision_result_sha256": "195be3f23d9ca3b4a43265dbfcddfdc9f3a3c13b395695ec491fb9864fa0c982",
+  "m222_worker_result_sha256": "4247a2f4899a8a2a06e1a9093b14ae744393bcb1fa64bbf8fd32281bce9c392f"
+}

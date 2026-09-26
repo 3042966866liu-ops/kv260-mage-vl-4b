@@ -1,0 +1,267 @@
+{
+  "date": "2026-09-02",
+  "gate": "M275-official-GPU-exact-two-view-prompt-sweep",
+  "status": "PASS_SCREEN_HAS_SHORT_PROMPT",
+  "classification": "Exact M273 views with small official-GPU prompt regression only; not calibrated accuracy, KV260 TTFT or promotion.",
+  "predecessor_m273_sha256": "23e53a0e020c169e5dcaf4a191835bc0f37dba7e58026495b5c37cb23eea36c7",
+  "candidates": [
+    {
+      "name": "m273_v2_baseline",
+      "prompt": "[TELLME_KNIFE_BINARY_V2] Inspect these video views. Answer exactly 1 if a knife is visible, otherwise 0:",
+      "records": [
+        {
+          "name": "motorcycle_person_no_knife",
+          "expected": 0,
+          "decision": 0,
+          "pass": true,
+          "no_logit": 19.5,
+          "yes_logit": 16.875,
+          "margin_yes_minus_no": -2.625,
+          "absolute_decision_margin": 2.625,
+          "prompt_tokens": 164,
+          "forward_ms": 1116.4246939999955
+        },
+        {
+          "name": "soccer_people_no_knife",
+          "expected": 0,
+          "decision": 0,
+          "pass": true,
+          "no_logit": 19.125,
+          "yes_logit": 17.5,
+          "margin_yes_minus_no": -1.625,
+          "absolute_decision_margin": 1.625,
+          "prompt_tokens": 164,
+          "forward_ms": 142.83525400000485
+        },
+        {
+          "name": "dog_no_person_no_knife",
+          "expected": 0,
+          "decision": 0,
+          "pass": true,
+          "no_logit": 19.75,
+          "yes_logit": 16.75,
+          "margin_yes_minus_no": -3.0,
+          "absolute_decision_margin": 3.0,
+          "prompt_tokens": 164,
+          "forward_ms": 135.28647399999727
+        },
+        {
+          "name": "businesswoman_knife_positive",
+          "expected": 1,
+          "decision": 1,
+          "pass": true,
+          "no_logit": 17.0,
+          "yes_logit": 19.125,
+          "margin_yes_minus_no": 2.125,
+          "absolute_decision_margin": 2.125,
+          "prompt_tokens": 164,
+          "forward_ms": 102.68364699999921
+        }
+      ],
+      "suite_pass": true,
+      "minimum_absolute_margin": 1.625,
+      "prompt_tokens": 164,
+      "visual_tokens": 98,
+      "t32_batches": 6,
+      "logical_calls": 932,
+      "call_reduction_vs_m273_percent": 0.0
+    },
+    {
+      "name": "tagged_short",
+      "prompt": "[TELLME_KNIFE_BINARY_V3] Knife visible? Reply exactly 1 for yes or 0 for no:",
+      "records": [
+        {
+          "name": "motorcycle_person_no_knife",
+          "expected": 0,
+          "decision": 0,
+          "pass": true,
+          "no_logit": 19.125,
+          "yes_logit": 16.625,
+          "margin_yes_minus_no": -2.5,
+          "absolute_decision_margin": 2.5,
+          "prompt_tokens": 159,
+          "forward_ms": 103.54793600000534
+        },
+        {
+          "name": "soccer_people_no_knife",
+          "expected": 0,
+          "decision": 0,
+          "pass": true,
+          "no_logit": 19.0,
+          "yes_logit": 16.375,
+          "margin_yes_minus_no": -2.625,
+          "absolute_decision_margin": 2.625,
+          "prompt_tokens": 159,
+          "forward_ms": 103.30141800000092
+        },
+        {
+          "name": "dog_no_person_no_knife",
+          "expected": 0,
+          "decision": 0,
+          "pass": true,
+          "no_logit": 19.0,
+          "yes_logit": 15.6875,
+          "margin_yes_minus_no": -3.3125,
+          "absolute_decision_margin": 3.3125,
+          "prompt_tokens": 159,
+          "forward_ms": 121.79130399999849
+        },
+        {
+          "name": "businesswoman_knife_positive",
+          "expected": 1,
+          "decision": 1,
+          "pass": true,
+          "no_logit": 15.6875,
+          "yes_logit": 18.5,
+          "margin_yes_minus_no": 2.8125,
+          "absolute_decision_margin": 2.8125,
+          "prompt_tokens": 159,
+          "forward_ms": 126.78652499999998
+        }
+      ],
+      "suite_pass": true,
+      "minimum_absolute_margin": 2.5,
+      "prompt_tokens": 159,
+      "visual_tokens": 98,
+      "t32_batches": 5,
+      "logical_calls": 778,
+      "call_reduction_vs_m273_percent": 16.523605150214593
+    },
+    {
+      "name": "plain_exact",
+      "prompt": "Is a knife visible? Reply with exactly 1 for yes or 0 for no:",
+      "records": [
+        {
+          "name": "motorcycle_person_no_knife",
+          "expected": 0,
+          "decision": 0,
+          "pass": true,
+          "no_logit": 20.375,
+          "yes_logit": 16.625,
+          "margin_yes_minus_no": -3.75,
+          "absolute_decision_margin": 3.75,
+          "prompt_tokens": 151,
+          "forward_ms": 101.05462699999634
+        },
+        {
+          "name": "soccer_people_no_knife",
+          "expected": 0,
+          "decision": 0,
+          "pass": true,
+          "no_logit": 20.25,
+          "yes_logit": 18.0,
+          "margin_yes_minus_no": -2.25,
+          "absolute_decision_margin": 2.25,
+          "prompt_tokens": 151,
+          "forward_ms": 118.57649000000237
+        },
+        {
+          "name": "dog_no_person_no_knife",
+          "expected": 0,
+          "decision": 0,
+          "pass": true,
+          "no_logit": 21.25,
+          "yes_logit": 16.5,
+          "margin_yes_minus_no": -4.75,
+          "absolute_decision_margin": 4.75,
+          "prompt_tokens": 151,
+          "forward_ms": 122.01925399999425
+        },
+        {
+          "name": "businesswoman_knife_positive",
+          "expected": 1,
+          "decision": 1,
+          "pass": true,
+          "no_logit": 16.875,
+          "yes_logit": 21.125,
+          "margin_yes_minus_no": 4.25,
+          "absolute_decision_margin": 4.25,
+          "prompt_tokens": 151,
+          "forward_ms": 119.88283200000183
+        }
+      ],
+      "suite_pass": true,
+      "minimum_absolute_margin": 2.25,
+      "prompt_tokens": 151,
+      "visual_tokens": 98,
+      "t32_batches": 5,
+      "logical_calls": 778,
+      "call_reduction_vs_m273_percent": 16.523605150214593
+    },
+    {
+      "name": "plain_minimal",
+      "prompt": "Knife visible? Answer only 1 or 0:",
+      "records": [
+        {
+          "name": "motorcycle_person_no_knife",
+          "expected": 0,
+          "decision": 0,
+          "pass": true,
+          "no_logit": 20.5,
+          "yes_logit": 18.5,
+          "margin_yes_minus_no": -2.0,
+          "absolute_decision_margin": 2.0,
+          "prompt_tokens": 144,
+          "forward_ms": 117.74879899999746
+        },
+        {
+          "name": "soccer_people_no_knife",
+          "expected": 0,
+          "decision": 0,
+          "pass": true,
+          "no_logit": 20.0,
+          "yes_logit": 18.375,
+          "margin_yes_minus_no": -1.625,
+          "absolute_decision_margin": 1.625,
+          "prompt_tokens": 144,
+          "forward_ms": 101.94805399999751
+        },
+        {
+          "name": "dog_no_person_no_knife",
+          "expected": 0,
+          "decision": 0,
+          "pass": true,
+          "no_logit": 21.375,
+          "yes_logit": 18.25,
+          "margin_yes_minus_no": -3.125,
+          "absolute_decision_margin": 3.125,
+          "prompt_tokens": 144,
+          "forward_ms": 101.22755199999744
+        },
+        {
+          "name": "businesswoman_knife_positive",
+          "expected": 1,
+          "decision": 1,
+          "pass": true,
+          "no_logit": 18.5,
+          "yes_logit": 20.375,
+          "margin_yes_minus_no": 1.875,
+          "absolute_decision_margin": 1.875,
+          "prompt_tokens": 144,
+          "forward_ms": 108.66429200000027
+        }
+      ],
+      "suite_pass": true,
+      "minimum_absolute_margin": 1.625,
+      "prompt_tokens": 144,
+      "visual_tokens": 98,
+      "t32_batches": 5,
+      "logical_calls": 778,
+      "call_reduction_vs_m273_percent": 16.523605150214593
+    }
+  ],
+  "selected_for_further_validation": "tagged_short",
+  "selection_rule": "Fewest calls among 4/4 passes, then largest minimum absolute two-token margin.",
+  "model": "microsoft/Mage-VL",
+  "checkpoint_config_sha256": "fd4621212569e893ce2caa110431fde73f3cc1a1d92e1b8320bb4e0cfbcad34a",
+  "backend": "WSL local CUDA GPU; not KV260",
+  "quantization": "bitsandbytes NF4 4-bit; BF16 compute",
+  "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "load_ms": 6001.147873000001,
+  "semantic_accuracy_passed": false,
+  "threshold_calibrated": false,
+  "active_board_service_changed": false,
+  "stable_rollback_preserved": true,
+  "source_sha256": "082501c2d8874717cc9f781139aa251a8c94547066d17be2e82a076df8d26133",
+  "next_gate": "Only a 4/4 candidate may be frozen into an exact tokenizer/runtime and rerun through full closure before board use."
+}

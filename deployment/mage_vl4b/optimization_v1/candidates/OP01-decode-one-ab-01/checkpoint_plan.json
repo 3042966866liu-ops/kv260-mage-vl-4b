@@ -1,0 +1,12 @@
+{
+  "source_sha256": "8f129498432be2bc11c087aca60c763c6fbf1012dd47b1ba411bcc0a9bc279b1",
+  "checkpoint_manifest_sha256": "bee367481e65c79b9578bd40d6ea8e3776a98db440a14b9283b61e36882ca27e",
+  "identity": {
+    "package_manifest_sha256": "a6028ce4b6da1f9b5e94b3e121a070b3f17c3f1d299c52f90a73b71e5bee2a2b",
+    "video_sha256": "a859467a06d77a075f54d02bb3a612b404e660abfc0592971116abe3edfa7333",
+    "question": "In which direction does the red circle move, left to right or right to left?",
+    "build_id": "0x4D395832"
+  },
+  "next_token": 1291,
+  "package_manifest_sha256": "a6028ce4b6da1f9b5e94b3e121a070b3f17c3f1d299c52f90a73b71e5bee2a2b"
+}

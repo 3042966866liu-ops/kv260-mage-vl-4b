@@ -1,0 +1,61 @@
+{
+  "date": "2026-09-02",
+  "gate": "M249-KV260-A53-SSDLite-person-knife-speed-candidate",
+  "status": "PASS",
+  "classification": "Hash-locked board speed candidate only; not executed and not accuracy, action, Web, FPGA or real-time evidence.",
+  "destination": "/home/ubuntu/tellme_m120_m89x2_20260901/m249_ssdlite_board_candidate",
+  "file_count": 10,
+  "total_bytes": 18688559,
+  "files": [
+    {
+      "path": "fixtures/FIXTURE_MANIFEST.json",
+      "bytes": 1517,
+      "sha256": "9917fdfb8c8aca372264b616f9e3f1ff5663807109feee94d6ac3b0d59ed493c"
+    },
+    {
+      "path": "fixtures/frame_00_0068_rgb448.npy",
+      "bytes": 602240,
+      "sha256": "efbd192266329db17ab9b233b854fa4086a16ccf8faf8aace75462c164844e8f"
+    },
+    {
+      "path": "fixtures/frame_01_0102_rgb448.npy",
+      "bytes": 602240,
+      "sha256": "e334ea6bdeb142a42a443afe27fa8af551895d568149ab8aca92a181fdc69243"
+    },
+    {
+      "path": "fixtures/frame_02_0137_rgb448.npy",
+      "bytes": 602240,
+      "sha256": "81ddb1f5358e44bf9263c71f1cd64c68e888c5233f0fe8ab017e6011277d9527"
+    },
+    {
+      "path": "fixtures/frame_03_0171_rgb448.npy",
+      "bytes": 602240,
+      "sha256": "7bf716a4f68defdb85066a0afeed955c61305628a2f43563b0b14ee539644b13"
+    },
+    {
+      "path": "M249_PREDECESSOR_SUMMARY.json",
+      "bytes": 1189,
+      "sha256": "bfa09ab1e6280261fee5f24d6c61ee7e8721805376029fcda4781e90f4537dca"
+    },
+    {
+      "path": "model/ssdlite320_mobilenet_v3_large_coco-a79551df.pth",
+      "bytes": 14069355,
+      "sha256": "a79551df90c79834bcd3bb3845ef9d966b5449a3a9b2833ae8404778ca5d65d2"
+    },
+    {
+      "path": "run_m249_board_gate.sh",
+      "bytes": 964,
+      "sha256": "fc4f176f8a79cf249267751c80d952e106126e55d897f996a8aacaef8115ec78"
+    },
+    {
+      "path": "runtime/m249_board_probe.py",
+      "bytes": 9616,
+      "sha256": "f396996c4f9cccce418e15b5538095829d582c49936cb4c759faf654d7b1d3b7"
+    },
+    {
+      "path": "wheels/torchvision-0.27.1+cpu-cp310-cp310-manylinux_2_28_aarch64.whl",
+      "bytes": 2196958,
+      "sha256": "3323edb900ca46d29dba267ee809e55fe5fe09cd3d9f54124a7c5ed33a6a2dbe"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "date": "2026-09-01",
+  "gate": "M223-realtime-service-board-delta",
+  "status": "PASS",
+  "build_id": "0x4D395832",
+  "kernel": "mage_m120_m89x2_0",
+  "input_modes": [
+    "browser-camera",
+    "uploaded-file-loop"
+  ],
+  "arm64_decoder_result_sha256": "49b7f7ba221346499147b1b73d2cfc1b9aed6018f9d13e48e0ec0015743498bd",
+  "offline_vision_result_sha256": "195be3f23d9ca3b4a43265dbfcddfdc9f3a3c13b395695ec491fb9864fa0c982",
+  "worker_regression_result_sha256": "4247a2f4899a8a2a06e1a9093b14ae744393bcb1fa64bbf8fd32281bce9c392f",
+  "files": [
+    {
+      "path": "live_stream_core.py",
+      "bytes": 9805,
+      "sha256": "947d8cb44ce623b1f907d8d771993a143464f4ddbd3b30c7a3a50d553c646535"
+    },
+    {
+      "path": "m206_ps_vision_runtime.py",
+      "bytes": 5348,
+      "sha256": "1f67ba6fe8628096919bb8f150d7e67a168dbf675aa7715f68074bd6792c2582"
+    },
+    {
+      "path": "m207_ps_vision_runtime.py",
+      "bytes": 3946,
+      "sha256": "cc58d6554c127d9fd111e05e9dbfadc7082e3bccfeda907cb67b2059f29a750c"
+    },
+    {
+      "path": "M222_ARM64_DECODER_BOARD_RESULT_02.json",
+      "bytes": 913,
+      "sha256": "49b7f7ba221346499147b1b73d2cfc1b9aed6018f9d13e48e0ec0015743498bd"
+    },
+    {
+      "path": "m222_live_stream_core.py",
+      "bytes": 2352,
+      "sha256": "4b1c4d78ccdb7cdca49a7c45393ff465560fe84f7997e220ea4ad2061d610326"
+    },
+    {
+      "path": "M222_LIVE_WORKER_EVENT_LOOP_OFFLINE_RESULT.json",
+      "bytes": 353,
+      "sha256": "4247a2f4899a8a2a06e1a9093b14ae744393bcb1fa64bbf8fd32281bce9c392f"
+    },
+    {
+      "path": "M222_PS_VISION_OFFLINE_RESULT.json",
+      "bytes": 1282,
+      "sha256": "195be3f23d9ca3b4a43265dbfcddfdc9f3a3c13b395695ec491fb9864fa0c982"
+    },
+    {
+      "path": "M222_SECONDS_LEVEL_TARGET.md",
+      "bytes": 3240,
+      "sha256": "c3d74c4a9b29e9deb1532afa6218d570d2791d269923bd7494e6414e30ffe986"
+    },
+    {
+      "path": "m222_vectorized_w4_runtime.py",
+      "bytes": 4959,
+      "sha256": "48f9144f14d58bf57202ed32b7aab34a84430906bbe857a568b4f4f00faacf7d"
+    },
+    {
+      "path": "m222_video_server.py",
+      "bytes": 1787,
+      "sha256": "8b9e34ec0445267591a283f76a2ae9dc46650adda1d00ad85c4947c13f3ec02a"
+    },
+    {
+      "path": "m223_board_preflight_and_restart.sh",
+      "bytes": 4195,
+      "sha256": "4071d4e58f55e763ae37f6cba5b2dfb70a611ccd8859e4964cc8ee2124601bce"
+    },
+    {
+      "path": "m223_health_probe.py",
+      "bytes": 2902,
+      "sha256": "fd570796419ada2c137b25d70ff4fcf8d72bcb152800c4412ecbb18162e0f48b"
+    },
+    {
+      "path": "M223_PREDECESSOR_SUMMARY.json",
+      "bytes": 53903,
+      "sha256": "b7e56ef7fa9e6bbf4ab733f34511c80e96cbf9f54107c9a3f13180a75dd246d1"
+    },
+    {
+      "path": "m223_verify_board_delta.py",
+      "bytes": 1314,
+      "sha256": "5df7f7b88f1adbcc5e178304ad072ad272877122f5388e5e9c3d2cb35e69d5ba"
+    },
+    {
+      "path": "static/app.js",
+      "bytes": 8422,
+      "sha256": "8cdbf73ba276224b8902288818b37adfd7c373d959a8f5e921194ab951724268"
+    },
+    {
+      "path": "static/index.html",
+      "bytes": 4584,
+      "sha256": "2c9c8e8625bdfa93eb79fd7f986083729b557f99bcbd2155e7dd7e760c504823"
+    },
+    {
+      "path": "static/style.css",
+      "bytes": 5823,
+      "sha256": "63ef46a9830e8a0ee6d500222d094a95bf0e525785ec7e035f7d2abbe90ca132"
+    },
+    {
+      "path": "video_server.py",
+      "bytes": 24781,
+      "sha256": "6b6655e29c13fee8f805a102d8f4ac9d89988067930e0ae187a9e2d860d88b74"
+    }
+  ],
+  "file_count": 18,
+  "total_bytes": 139909,
+  "excluded_patterns": [
+    "__pycache__",
+    "*.pyc",
+    "*.log",
+    "*.partial"
+  ],
+  "persistent_boot_dtb_cma_partitions_services_changed": false,
+  "stable_rollback_preserved": true
+}

@@ -1,0 +1,10 @@
+{
+  "date": "2026-09-01",
+  "gate": "M242-M241-exact-board-predecessor",
+  "status": "PASS",
+  "m241_formal_result_sha256": "c500ba03232044a6ab9bcab3b4e57783f9980d96596f37a0b0a6929fdb0afc1f",
+  "prefill_gate_canonical_sha256": "6ffce3cf16615e25333e76eb268353d6712bc9e420498d7e3a3dfde5177f5ca2",
+  "build_id": "0x4D395832",
+  "tokens": 849,
+  "generated_token_id": 40183
+}

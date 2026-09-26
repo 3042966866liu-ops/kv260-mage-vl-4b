@@ -1,0 +1,112 @@
+{
+  "active_board_service_changed": false,
+  "baseline_cost_identities": {
+    "bact-159": {
+      "direct_point_in_27_record_board_sweep": true,
+      "logical_calls": 778,
+      "t32_batches": 5,
+      "total_tokens": 159,
+      "view_count": 2,
+      "visual_tokens": 98
+    },
+    "count-144": {
+      "direct_point_in_27_record_board_sweep": false,
+      "logical_calls": 778,
+      "t32_batches": 5,
+      "total_tokens": 144,
+      "view_count": 2,
+      "visual_tokens": 98
+    },
+    "ratio-164": {
+      "direct_point_in_27_record_board_sweep": false,
+      "logical_calls": 932,
+      "t32_batches": 6,
+      "total_tokens": 164,
+      "view_count": 2,
+      "visual_tokens": 98
+    }
+  },
+  "boot_dtb_cma_partitions_changed": false,
+  "classification": "Hash-bound reuse of an existing real-KV260 27-point T32 boundary study. It proves the exact logical-call staircase for unchanged Build/Kernel geometry and supports descriptive pilot timing only; it is not a new board run or a quality, power, real-time or causal speed result.",
+  "contrasts": {
+    "cross_boundary": {
+      "causal_latency_claim_allowed": false,
+      "comparison": [
+        "ratio-164",
+        "bact-159"
+      ],
+      "removed_batches": 1,
+      "removed_logical_calls": 154,
+      "removed_tokens": 5
+    },
+    "same_cost_more_information": {
+      "batch_delta": 0,
+      "comparison": [
+        "bact-159",
+        "count-144"
+      ],
+      "logical_call_delta": 0,
+      "quality_advantage_claim_allowed": false,
+      "retained_token_delta": 15
+    }
+  },
+  "date": "2026-09-03",
+  "existing_board_evidence": {
+    "all_observed_calls_equal_formula": true,
+    "measurements_verified": 27,
+    "path": "deployment/mage_vl4b/M294R3_COUNTERBALANCED_BOUNDARY_BOARD_RESULT_05.json",
+    "repeats_per_point": 3,
+    "runtime_load_count": 1,
+    "sha256": "1a8138f92fc9340b1e5c660f886729cd725280d29877863af54cdd12aef895d1",
+    "unique_token_points": [
+      127,
+      128,
+      129,
+      159,
+      160,
+      161,
+      191,
+      192,
+      193
+    ],
+    "vision_execution_count": 1
+  },
+  "gate": "M314-BACT-V2-unchanged-geometry-KV260-cost-evidence-binding",
+  "identity": {
+    "board": "AMD Kria KV260",
+    "build_id": "0x4D395832",
+    "formula": "Calls(N)=154*ceil(N/32)+8",
+    "geometry_or_runtime_changed_since_source": false,
+    "kernel": "mage_m120_m89x2_0"
+  },
+  "inputs": {
+    "board": {
+      "path": "deployment/mage_vl4b/M294R3_COUNTERBALANCED_BOUNDARY_BOARD_RESULT_05.json",
+      "sha256": "1a8138f92fc9340b1e5c660f886729cd725280d29877863af54cdd12aef895d1"
+    },
+    "cost_model": {
+      "path": "deployment/mage_vl4b/M297_BACT_STAIRCASE_COST_MODEL_RESULT.json",
+      "sha256": "74b2205f532ab63caf623c1da5af2dbf0cb7e24214bdc9650a487f794debfbb2"
+    },
+    "geometry": {
+      "path": "deployment/mage_vl4b/M306_FOUR_BASELINE_PREDICTION_GEOMETRY_RESULT.json",
+      "sha256": "65cf52d411b84a5f7f5e42e6add71adc27b9e80bfe8e192f5f07b173c5483c54"
+    },
+    "protocol": {
+      "path": "bact/bact_v2_protocol.json",
+      "sha256": "d150949718fa52f5e487104cac2008ea150b8f329a6a217d325670ed3af4b961"
+    },
+    "selector": {
+      "path": "deployment/mage_vl4b/M313_BACT_V2_SELECTOR_RESULT.json",
+      "sha256": "a4e48fecd388e76a8cf5c89f825c85bb582c5fe062e3c049daa468e4357d9412"
+    }
+  },
+  "next_gate": "M315 current-stage evidence and claim pack.",
+  "rerun_decision": {
+    "existing_27_point_sweep_repeated": false,
+    "new_board_run_required": false,
+    "reason": "Selector preserves the exact Build, Kernel, T32 granularity and language-chain formula already covered by 27 real-KV260 records."
+  },
+  "stable_rollback_preserved": true,
+  "status": "PASS_EXISTING_BOARD_EVIDENCE_BOUND_NO_RERUN_REQUIRED"
+}

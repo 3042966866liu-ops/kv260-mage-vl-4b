@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TeLLMe · M120 Mage-VL 4B 视频推理</title>
+  <meta name="description" content="KV260 M120 混合精度 Mage-VL 4B 四帧流式视频交互">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div><p class="eyebrow">TeLLMe / KV260 / M120</p><h1>Mage-VL 4B 视频推理</h1></div>
+    <div id="health" class="health cold"><span></span><b>候选未加载</b></div>
+  </header>
+  <main>
+    <section class="workspace">
+      <div class="panel input-panel">
+        <div class="panel-title"><div><span>01</span><h2>视频与问题</h2></div><p>浏览器固定采样 0 / 1 / 2 / 3 秒四帧，板端执行可复现预处理。</p></div>
+        <label class="upload" for="video-file"><strong>选择至少 3 秒的视频</strong><span>本地解码，不把压缩视频交给开发板</span><input id="video-file" type="file" accept="video/*"></label>
+        <video id="source-video" controls muted playsinline></video>
+        <div id="frames" class="frames" aria-label="采样帧预览"></div>
+        <form id="prompt-form">
+          <label for="prompt">向模型提问</label>
+          <textarea id="prompt" maxlength="3000" required>请用一句话描述视频中物体的颜色和运动方向。</textarea>
+          <div class="form-row"><label for="max-tokens">最大生成 token</label><select id="max-tokens"><option>32</option><option selected>64</option><option>96</option><option>128</option></select><button id="run" type="submit">开始 FPGA 视频推理</button></div>
+        </form>
+      </div>
+      <div class="panel output-panel">
+        <div class="panel-title"><div><span>02</span><h2>流式回答</h2></div><p>首个 token 到达后立即显示。</p></div>
+        <div id="answer" class="answer" aria-live="polite">等待视频与问题。</div>
+        <ol id="stages" class="stages">
+          <li data-stage="capture"><i></i><div><b>浏览器采样</b><span>等待</span></div></li>
+          <li data-stage="preprocess"><i></i><div><b>四帧预处理</b><span>等待</span></div></li>
+          <li data-stage="vision"><i></i><div><b>PS 视觉塔</b><span>BF16 激活 / W4 权重</span></div></li>
+          <li data-stage="prefill"><i></i><div><b>FPGA M120 T32 Prefill</b><span>等待</span></div></li>
+          <li data-stage="decode"><i></i><div><b>流式 Decode</b><span>等待</span></div></li>
+        </ol>
+      </div>
+    </section>
+    <section class="proof panel">
+      <div class="panel-title proof-heading"><div><span>03</span><h2>本次请求的 FPGA 证据</h2></div><strong id="proof-badge" class="badge pending">等待运行</strong></div>
+      <dl id="proof-grid">
+        <div><dt>候选 Build ID</dt><dd>0x4D395832（M120/M89X2）</dd></div>
+        <div><dt>语言侧 CPU Linear fallback</dt><dd>false（运行后校验）</dd></div>
+        <div><dt>视觉路线</dt><dd>PS BF16 激活 / immutable W4 权重</dd></div>
+        <div><dt>板端状态</dt><dd>仅真实请求证据通过后显示 PASS</dd></div>
+      </dl>
+      <p class="boundary">证据边界：视觉塔在 Cortex-A53 PS；36 层语言 Linear 与真 W4 LM Head 使用 M120/M89X2 FPGA 核。页面不会把离线候选、GPU 或 CPU 回答标成板端 FPGA PASS。</p>
+    </section>
+  </main>
+</body>
+</html>

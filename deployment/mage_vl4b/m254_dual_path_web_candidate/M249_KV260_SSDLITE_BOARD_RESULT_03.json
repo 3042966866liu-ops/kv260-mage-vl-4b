@@ -1,0 +1,97 @@
+{
+  "date": "2026-09-02",
+  "gate": "M249-KV260-A53-SSDLite-person-knife-speed-board",
+  "status": "PASS",
+  "classification": "Real KV260 A53 fixed-frame detector speed and functional sanity evidence; not target-scene accuracy, action recognition, FPGA detector, Web or continuous-stream PASS.",
+  "package_manifest_sha256": "0b631d5bd50fa1eeec42d2340a7f8af2b773da4b2df06c8f5204cd1309ee6ea2",
+  "import": {
+    "date": "2026-09-02",
+    "gate": "M249-KV260-SSDLite-direct-Ethernet-import",
+    "status": "PASS",
+    "classification": "Hash-verified candidate import only; not detector speed, accuracy, action, Web, FPGA or real-time evidence.",
+    "boot_dtb_cma_partitions_services_changed": false,
+    "stable_t32_overlay_preserved": true,
+    "transport": "direct-Ethernet-PC-outbound-push",
+    "destination": "/home/ubuntu/tellme_m120_m89x2_20260901/m249_ssdlite_board_candidate",
+    "peer": "192.168.0.10",
+    "package_manifest_sha256": "0b631d5bd50fa1eeec42d2340a7f8af2b773da4b2df06c8f5204cd1309ee6ea2",
+    "file_count": 12,
+    "total_bytes": 18690985,
+    "free_bytes_before": 1395265536,
+    "next_gate": "Run only the M249 fixed-frame A53 detector speed gate.",
+    "total_ms": 42730.32434901688
+  },
+  "measurement": {
+    "date": "2026-09-02",
+    "gate": "M249-KV260-A53-SSDLite-person-knife-speed",
+    "status": "PASS",
+    "classification": "Fixed-frame KV260 A53 detector speed and functional sanity evidence only; not target-scene accuracy, action recognition, FPGA execution, Web or continuous-stream PASS.",
+    "board_state_changed": false,
+    "stable_t32_overlay_preserved": true,
+    "architecture": "aarch64",
+    "python": "3.10.12",
+    "torch": "2.12.1+cpu",
+    "torchvision": "0.27.1+cpu",
+    "threads": 4,
+    "model_checkpoint_sha256": "a79551df90c79834bcd3bb3845ef9d966b5449a3a9b2833ae8404778ca5d65d2",
+    "fixture_manifest_sha256": "9917fdfb8c8aca372264b616f9e3f1ff5663807109feee94d6ac3b0d59ed493c",
+    "model_load_ms": 2928.000874002464,
+    "warmup_ms": 845.0581119977869,
+    "timing": {
+      "median_frame_ms": 616.6204125038348,
+      "maximum_frame_ms": 621.0032309754752,
+      "fast_path_target_ms": 5000.0,
+      "deadline_pass": true
+    },
+    "functional_sanity": {
+      "person_frames_score_ge_0_50": 4,
+      "required_person_frames": 3,
+      "pass": true,
+      "thresholds_calibrated": false
+    },
+    "records": [
+      {
+        "frame_index": 68,
+        "fixture_sha256": "efbd192266329db17ab9b233b854fa4086a16ccf8faf8aace75462c164844e8f",
+        "inference_ms": 615.8831500215456,
+        "person_top_score": 0.9811058640480042,
+        "person_count_score_ge_0_50": 1,
+        "knife_top_score": null,
+        "knife_count_score_ge_0_20": 0
+      },
+      {
+        "frame_index": 102,
+        "fixture_sha256": "e334ea6bdeb142a42a443afe27fa8af551895d568149ab8aca92a181fdc69243",
+        "inference_ms": 595.2420629910193,
+        "person_top_score": 0.9856370091438293,
+        "person_count_score_ge_0_50": 1,
+        "knife_top_score": null,
+        "knife_count_score_ge_0_20": 0
+      },
+      {
+        "frame_index": 137,
+        "fixture_sha256": "81ddb1f5358e44bf9263c71f1cd64c68e888c5233f0fe8ab017e6011277d9527",
+        "inference_ms": 621.0032309754752,
+        "person_top_score": 0.9797164797782898,
+        "person_count_score_ge_0_50": 1,
+        "knife_top_score": null,
+        "knife_count_score_ge_0_20": 0
+      },
+      {
+        "frame_index": 171,
+        "fixture_sha256": "7bf716a4f68defdb85066a0afeed955c61305628a2f43563b0b14ee539644b13",
+        "inference_ms": 617.357674986124,
+        "person_top_score": 0.9726529121398926,
+        "person_count_score_ge_0_50": 1,
+        "knife_top_score": null,
+        "knife_count_score_ge_0_20": 0
+      }
+    ],
+    "peak_rss_mib": 394.3515625,
+    "next_gate": "Connect detector events to the M248 safety contract and measure a latest-only continuous stream.",
+    "total_ms": 45530.34774499247
+  },
+  "uart_log_sha256": "13c5af2c80172202aab6b8e337e13103cfd0d457b1e82108e74a7365dc7bc1bf",
+  "stable_t32_overlay_preserved": true,
+  "next_gate": "Connect M249 detections to M248 and measure a latest-only continuous stream."
+}

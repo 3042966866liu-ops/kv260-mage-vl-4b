@@ -1,0 +1,314 @@
+{
+  "classification": "Exact M276 short-prompt runtime plus stage-timed real-board gate and retrying exact M254 restore; not yet board-executed or Web-promoted.",
+  "decode_calls": 0,
+  "excluded": [
+    "__pycache__",
+    "*.pyc",
+    "temporary logs"
+  ],
+  "expected_t32_calls": 778,
+  "file_count": 58,
+  "files": [
+    {
+      "bytes": 19355,
+      "path": "M244_M243_FIXED_FOUR_FRAME_BOARD_RESULT_02.json",
+      "sha256": "b134fc00f7e2be60d9444f0e81203561972455d78907cdb6515462a98243e392"
+    },
+    {
+      "bytes": 5020,
+      "path": "M258_VISION_STATE_POLICY_OFFLINE_RESULT.json",
+      "sha256": "75bf19c245598617ad866bee7677154c5008c9d1bb7b14f626263ab3269ec5d7"
+    },
+    {
+      "bytes": 867,
+      "path": "M259_BOUNDARY.md",
+      "sha256": "08c39e76f3f4b5c5fb26eea599d406b6b3004626bf872b83af8c25a2d71c8d1a"
+    },
+    {
+      "bytes": 3849,
+      "path": "M259_PREVISION_KEYFRAME_OFFLINE_RESULT.json",
+      "sha256": "8570095c883469fb3e6394016b2887003af5756ef105fe54c02d1677c1b622a9"
+    },
+    {
+      "bytes": 951,
+      "path": "M260_BOUNDARY.md",
+      "sha256": "5ec0c2573f14ab53b65fc15d78456dcafdd4597d10092a6ab1c014c35eda56e3"
+    },
+    {
+      "bytes": 2674,
+      "path": "M260_CACHED_W4_OFFLINE_RESULT.json",
+      "sha256": "f6e19ed38c0a2d3a269f401bef809b2c6dfaae9e522776c7f7d0e8ae6a639f26"
+    },
+    {
+      "bytes": 999,
+      "path": "M261_BOUNDARY.md",
+      "sha256": "c4e912824038946e9d55ebb012855568bd946b7489099edfd0d16f7ec28749e7"
+    },
+    {
+      "bytes": 3169,
+      "path": "M261_BOUNDED_CACHE_OFFLINE_RESULT.json",
+      "sha256": "7449aef6e0f86a9041a1171d5c6959a211bdf62f9da6ae12c5ff151f1edafdf1"
+    },
+    {
+      "bytes": 14604,
+      "path": "M261_CACHE_BUDGET_OFFLINE_RESULT.json",
+      "sha256": "d2c81dd173f6d5979413b04f283c05d4baf949902e2854eee88c40e1d4491380"
+    },
+    {
+      "bytes": 1381,
+      "path": "M261_CACHE_POLICY.json",
+      "sha256": "601ee0f0577952bbe685cbfaed4fd6e3cf27957d3b11305f1e0c7ce884664811"
+    },
+    {
+      "bytes": 14161,
+      "path": "M264_GPU_RESOLUTION_SEMANTIC_SUITE_RESULT.json",
+      "sha256": "dbd2de884d393f9ee6c48f3d33ca35801eeab8b9c2f63c3446e8bd63bc1d31dd"
+    },
+    {
+      "bytes": 12688,
+      "path": "M265_GPU_RESOLUTION_SWEEP_RESULT.json",
+      "sha256": "dbc1dc9d7b2cb23b8ca24580f9a2a5a80cd19d3c1550bcb780fa189de34f2585"
+    },
+    {
+      "bytes": 9041,
+      "path": "M266_GPU_MULTISCALE_SEMANTIC_RESULT.json",
+      "sha256": "eb9f3a8efc4f49992cf57cac5bfafaaa57e7fe05d321e8befd0626cc4dcd124b"
+    },
+    {
+      "bytes": 6006,
+      "path": "M267_GPU_BINARY_MULTISCALE_RESULT.json",
+      "sha256": "4e4da9ab407cffb4ef3e544bfac159bff93f17422fda318c95ef205252339f47"
+    },
+    {
+      "bytes": 9292,
+      "path": "M268_GPU_FAST_ROI_BINARY_RESULT.json",
+      "sha256": "ddfbd30a64ae9c0157662b2f1ab6cf3c9678946fcd79cf36847e05ab64a4fb5d"
+    },
+    {
+      "bytes": 961,
+      "path": "M269_BOUNDARY.md",
+      "sha256": "a1773d3344988ad6bfc0b44fe9f199fafc43e17f9943970b66d9df9dd2d72da2"
+    },
+    {
+      "bytes": 3797,
+      "path": "M269_EXACT_RUNTIME_OFFLINE_RESULT.json",
+      "sha256": "dd57dc4cc603213fd1332a8ff060768c46119dbfb156339a4d6f3a2be916e055"
+    },
+    {
+      "bytes": 5923,
+      "path": "M269_GPU_EXACT_RUNTIME_SEMANTIC_RESULT.json",
+      "sha256": "af7ce05bb59e96885f0e59140d88f935626d50896e9c2cadb292c72c7bac4130"
+    },
+    {
+      "bytes": 1827,
+      "path": "M270_M269_MEMORY_HEADROOM_BOARD_RESULT_01.json",
+      "sha256": "8e768b513664ab1b3a6caaf5dfe00bb39ba1e186ee1d8f27780d2a91e96f18d9"
+    },
+    {
+      "bytes": 652,
+      "path": "M273_BOUNDARY.md",
+      "sha256": "7c0139cfc301ca5e5d9fbcaf9909a383f7761d1c93684ad3283fbbe073780fa1"
+    },
+    {
+      "bytes": 3758,
+      "path": "M273_EXACT_RUNTIME_OFFLINE_RESULT.json",
+      "sha256": "c656fcdd20b93ee6fa6811a50c4857c0932d112bcb84d407813b0c8518b31b7c"
+    },
+    {
+      "bytes": 2731,
+      "path": "M273_GPU_EXACT_LATEST_BINARY_RESULT.json",
+      "sha256": "23e53a0e020c169e5dcaf4a191835bc0f37dba7e58026495b5c37cb23eea36c7"
+    },
+    {
+      "bytes": 8542,
+      "path": "M275_GPU_EXACT_PROMPT_SWEEP_RESULT.json",
+      "sha256": "234bba1a9b2796a2a231efd539427d39435715bda69a4f401b87f9273defb5bd"
+    },
+    {
+      "bytes": 340,
+      "path": "M276_BOUNDARY.md",
+      "sha256": "fe0b22a28e96d4c401286e6879350cb5aca64597db6a8c66853a90a09304dfc9"
+    },
+    {
+      "bytes": 2045,
+      "path": "M276_EXACT_PROMPT_RUNTIME_OFFLINE_RESULT.json",
+      "sha256": "5987ae3c517197f791c5afe3ad78f0f902d4ba8fc528c4a4e216aaf2b7adc844"
+    },
+    {
+      "bytes": 321,
+      "path": "M277_BOUNDARY.md",
+      "sha256": "329263a11a2941ac2714eb4b26ca45f2af2022981a5e94cad2b1bb558c9a968e"
+    },
+    {
+      "bytes": 3845,
+      "path": "keyframe_reducer.py",
+      "sha256": "f55b0798c775bd6312a4e35d3286790f842cb77e386f506c464d4c5aa2eaee92"
+    },
+    {
+      "bytes": 2136,
+      "path": "m246_knife_binary.py",
+      "sha256": "ddf55a13a29719cd57aecb99405a5f939f4439c38a4be72793644f2b6901da4d"
+    },
+    {
+      "bytes": 3670,
+      "path": "m258_vectorized_w4_runtime.py",
+      "sha256": "b8b973f5355504dfc7b3d1cb21c16a9756831947396dc536c5b8f99478004e8a"
+    },
+    {
+      "bytes": 311,
+      "path": "m259_m254_video_server.py",
+      "sha256": "753afaa95e1e5a217e852bd51d9d722b40ca0ce2dd0d7d19e2d15bc4322f83f0"
+    },
+    {
+      "bytes": 2536,
+      "path": "m259_variable_vision_runtime.py",
+      "sha256": "d5e3888479ecb19b99c4ca6c1055953a12845030d9477620dc2c863a9b677429"
+    },
+    {
+      "bytes": 2993,
+      "path": "m259_verify_candidate.py",
+      "sha256": "868f7c94b123e5992ac0c0e36b701796cbb58707872fd943a1194e70d4be80fd"
+    },
+    {
+      "bytes": 6844,
+      "path": "m259_video_runtime.py",
+      "sha256": "d79c7b6d477bdfda2a56693d5d2d2757aef05410b11739d10f2e51cdea3a257b"
+    },
+    {
+      "bytes": 6034,
+      "path": "m260_cached_w4_runtime.py",
+      "sha256": "065c5ce58ec52dac3ee327a06228e99ff08c9d0e98bec1a2d8cf171238f076d7"
+    },
+    {
+      "bytes": 320,
+      "path": "m260_m254_video_server.py",
+      "sha256": "1abd23bfae28506ca7c05df7ddeb525eab1eed7391276f73f684b3a292eb433d"
+    },
+    {
+      "bytes": 3441,
+      "path": "m260_verify_candidate.py",
+      "sha256": "d5794bf3d19bed084349dcedf6b02e14d50cfcaec8cf7e99022c42a037a28b9d"
+    },
+    {
+      "bytes": 807,
+      "path": "m260_video_runtime.py",
+      "sha256": "1d87d109b343fce07f7ded493dcd934bb7e1e73b1ad8772abe20af570628a30d"
+    },
+    {
+      "bytes": 2690,
+      "path": "m261_budgeted_w4_runtime.py",
+      "sha256": "24be172d8366884bc1d4ca9917cf53382773e6b8f4b8a040991ccf18aecdae9a"
+    },
+    {
+      "bytes": 314,
+      "path": "m261_m254_video_server.py",
+      "sha256": "13a550606be8ee3b9e51ff0c1a5280273db9d955bdd290b2f9e63342a7b5193a"
+    },
+    {
+      "bytes": 3598,
+      "path": "m261_verify_candidate.py",
+      "sha256": "ebe2cd9591e75da0cc643dae220bd6b158e73927fe6eaec986b7fde7c8891ab7"
+    },
+    {
+      "bytes": 830,
+      "path": "m261_video_runtime.py",
+      "sha256": "2f228a8753dc6777be1d3b20c0971bc514a228809afb5f6ae66b45c09f9cd69f"
+    },
+    {
+      "bytes": 310,
+      "path": "m269_m254_video_server.py",
+      "sha256": "871c645c12d28c7b0e83c896f6804ecd4bc6e3c0959ce4f1b82431068168484d"
+    },
+    {
+      "bytes": 4505,
+      "path": "m269_multiscale_contract.py",
+      "sha256": "059e1d83e6b83d34ed623ad408810c77f5dc1c65de6e3e3567ff2e4e36d72563"
+    },
+    {
+      "bytes": 2531,
+      "path": "m269_multiscale_vision_runtime.py",
+      "sha256": "704789015f10e6740d6c5f85cea7dd273e642fb463b61a92e18a82f776d82cc3"
+    },
+    {
+      "bytes": 4606,
+      "path": "m269_verify_candidate.py",
+      "sha256": "7424cf19aa6537e5c8b2acca6056579e2a86b4aa722e377fa988e7e9c391cf81"
+    },
+    {
+      "bytes": 6675,
+      "path": "m269_video_runtime.py",
+      "sha256": "3669a63ff5404d3eeb65662fd293bce7397f6fceab3a34de145d723ec8641573"
+    },
+    {
+      "bytes": 4044,
+      "path": "m273_latest_multiscale_contract.py",
+      "sha256": "c5826f77f95f4b3d6fbf1c406d9f341650316958ba5cfa1ba2467605eef3273a"
+    },
+    {
+      "bytes": 2319,
+      "path": "m273_latest_vision_runtime.py",
+      "sha256": "a7ecdf6d60791c35cd33c2526f56696ee6d4ab32e79e9cc5ed391745263d492f"
+    },
+    {
+      "bytes": 312,
+      "path": "m273_m254_video_server.py",
+      "sha256": "8ff4701b5f7eb15317241ab4ff73d14ff715c118331fffd58552800b485a61a7"
+    },
+    {
+      "bytes": 6158,
+      "path": "m273_video_runtime.py",
+      "sha256": "e00af3420c6f82091ad4794e001812a6d5bdacc393fedd7874c0ff8ee067c097"
+    },
+    {
+      "bytes": 276,
+      "path": "m276_m254_video_server.py",
+      "sha256": "b0ffc2750fb28587b8d51909f59e2c0a367c6dfd0183c784743e945356f9346a"
+    },
+    {
+      "bytes": 1314,
+      "path": "m276_prompt_contract.py",
+      "sha256": "fc46f457e7eec1fb044dcb5f9bb6e416f74596ba44ee3f321038ecaf4674bc39"
+    },
+    {
+      "bytes": 5459,
+      "path": "m276_video_runtime.py",
+      "sha256": "7dc39257361179d8e2ddcf91380e4ce73e96c69fc2e23b411a337b47896f8386"
+    },
+    {
+      "bytes": 9360,
+      "path": "m277_fixed_window_gate.py",
+      "sha256": "dc2430b6e68fb54a6157d5ee317ac747e70b66156bf8307eedf58b9f65795b5d"
+    },
+    {
+      "bytes": 3025,
+      "path": "m277_stage_archive.py",
+      "sha256": "408b31344252fbf2da26394d3a07ea7798d65e863e41843aeb43f4b944f5bbeb"
+    },
+    {
+      "bytes": 4331,
+      "path": "m277_verify_package.py",
+      "sha256": "4e03e94c56670bd68590d07f49c09f82dbe66c9bdf5449c3aacc8618821b9146"
+    },
+    {
+      "bytes": 5967,
+      "path": "run_m277_m276_fixed_window_gate.sh",
+      "sha256": "0f33119f6c753b70d87b54fa3a9bf682585d2794508f9acd5bbfd906299e77d3"
+    },
+    {
+      "bytes": 3522,
+      "path": "variable_video_contract.py",
+      "sha256": "7f0a366e282ddea204c62bc9131e13be366c459c1fd1aca9af6f12b92299a268"
+    }
+  ],
+  "per_stage_timing": true,
+  "predecessor_m269_manifest_sha256": "9213111ac31effbaf1c1775fe0e254249f11bf4c3d88396ac29eb81172e240fc",
+  "prompt_tokens": 159,
+  "schema": "tellme-m277-m276-fixed-window-v1",
+  "source_frames": 1,
+  "stable_restore_attempts": 2,
+  "stable_rollback_preserved": true,
+  "status": "PASS_OFFLINE_READY_FOR_M277_BOARD_GATE",
+  "total_bytes": 240037,
+  "view_count": 2,
+  "visual_tokens": 98
+}

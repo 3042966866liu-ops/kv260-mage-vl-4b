@@ -1,0 +1,388 @@
+{
+  "active_m254_m256_changed": false,
+  "board_execution_run": false,
+  "board_identity": {
+    "build_id": "0x4d395832",
+    "kernel": "mage_m120_m89x2_0"
+  },
+  "boot_dtb_cma_partitions_changed": false,
+  "boundary_contrasts": [
+    {
+      "boundary": 128,
+      "cross_boundary_step_ms": 20141.517876530997,
+      "same_batch_delta_ms": 12.426664994563907,
+      "same_batch_mad_noise_floor_ms": 56.55915499664843,
+      "same_batch_plateau_centre_ms": 107872.93680748553,
+      "step_exceeds_same_batch_mad": true,
+      "step_to_noise_ratio": 356.1141936742962
+    },
+    {
+      "boundary": 160,
+      "cross_boundary_step_ms": 19955.47016998171,
+      "same_batch_delta_ms": -6.774017994757742,
+      "same_batch_mad_noise_floor_ms": 76.68530600494705,
+      "same_batch_plateau_centre_ms": 131520.6510470016,
+      "step_exceeds_same_batch_mad": true,
+      "step_to_noise_ratio": 260.2254748607818
+    },
+    {
+      "boundary": 192,
+      "cross_boundary_step_ms": 20269.36417950492,
+      "same_batch_delta_ms": 104.04227100661956,
+      "same_batch_mad_noise_floor_ms": 28.402723983163014,
+      "same_batch_plateau_centre_ms": 154993.26917949656,
+      "step_exceeds_same_batch_mad": true,
+      "step_to_noise_ratio": 713.6415574619002
+    }
+  ],
+  "candidate_estimates": [
+    {
+      "inside_measured_range": true,
+      "logical_fpga_calls": 624,
+      "predicted_prefill_ms_descriptive": 107824.14227787753,
+      "prompt_tokens": 127,
+      "t32_batches": 4
+    },
+    {
+      "inside_measured_range": true,
+      "logical_fpga_calls": 624,
+      "predicted_prefill_ms_descriptive": 107937.48127176179,
+      "prompt_tokens": 128,
+      "t32_batches": 4
+    },
+    {
+      "inside_measured_range": true,
+      "logical_fpga_calls": 778,
+      "predicted_prefill_ms_descriptive": 128004.81706925972,
+      "prompt_tokens": 129,
+      "t32_batches": 5
+    },
+    {
+      "inside_measured_range": true,
+      "logical_fpga_calls": 778,
+      "predicted_prefill_ms_descriptive": 129704.90197752367,
+      "prompt_tokens": 144,
+      "t32_batches": 5
+    },
+    {
+      "inside_measured_range": true,
+      "logical_fpga_calls": 778,
+      "predicted_prefill_ms_descriptive": 130498.27493471351,
+      "prompt_tokens": 151,
+      "t32_batches": 5
+    },
+    {
+      "inside_measured_range": true,
+      "logical_fpga_calls": 778,
+      "predicted_prefill_ms_descriptive": 131404.9868857876,
+      "prompt_tokens": 159,
+      "t32_batches": 5
+    },
+    {
+      "inside_measured_range": true,
+      "logical_fpga_calls": 778,
+      "predicted_prefill_ms_descriptive": 131518.32587967187,
+      "prompt_tokens": 160,
+      "t32_batches": 5
+    },
+    {
+      "inside_measured_range": true,
+      "logical_fpga_calls": 932,
+      "predicted_prefill_ms_descriptive": 151585.66167716982,
+      "prompt_tokens": 161,
+      "t32_batches": 6
+    },
+    {
+      "inside_measured_range": true,
+      "logical_fpga_calls": 932,
+      "predicted_prefill_ms_descriptive": 152605.71262212817,
+      "prompt_tokens": 170,
+      "t32_batches": 6
+    },
+    {
+      "inside_measured_range": true,
+      "logical_fpga_calls": 932,
+      "predicted_prefill_ms_descriptive": 154985.83149369768,
+      "prompt_tokens": 191,
+      "t32_batches": 6
+    },
+    {
+      "inside_measured_range": true,
+      "logical_fpga_calls": 932,
+      "predicted_prefill_ms_descriptive": 155099.17048758196,
+      "prompt_tokens": 192,
+      "t32_batches": 6
+    },
+    {
+      "inside_measured_range": true,
+      "logical_fpga_calls": 1086,
+      "predicted_prefill_ms_descriptive": 175166.50628507993,
+      "prompt_tokens": 193,
+      "t32_batches": 7
+    }
+  ],
+  "claim_policy": {
+    "causal_speed_claim_allowed": false,
+    "pilot_latency_step_claim_allowed": true,
+    "real_time_claim_allowed": false,
+    "reason": "Only three repeats per token from one board session; human-labelled target-scene evaluation is still pending.",
+    "semantic_accuracy_claim_allowed": false,
+    "structural_staircase_claim_allowed": true
+  },
+  "classification": "Hash-locked structural and descriptive empirical cost model from one real KV260 M294R3 run. It proves the T32 logical-call staircase and quantifies a pilot latency step; it is not a powered causal speed, semantic accuracy, power, resource, Web, or real-time result.",
+  "cross_boundary_step_summary": {
+    "descriptive_t_interval_95_ms_not_powered": [
+      19730.01182424493,
+      20514.22299310015
+    ],
+    "mean_ms": 20122.11740867254,
+    "median_ms": 20141.517876530997,
+    "sample_standard_deviation_ms": 157.84373892709368,
+    "values_ms": [
+      20141.517876530997,
+      19955.47016998171,
+      20269.36417950492
+    ]
+  },
+  "date": "2026-09-03",
+  "empirical_latency_model": {
+    "beta0_ms": 13614.102840121426,
+    "beta_batch_equivalent_ms_per_logical_call_descriptive_only": 129.57140781567324,
+    "beta_batch_ms": 19953.996803613678,
+    "beta_token_ms": 113.33899388426289,
+    "causal_speed_claim_allowed": false,
+    "descriptive_coefficient_ci95": {
+      "beta0_ms": [
+        13171.132291439055,
+        14057.073388803798
+      ],
+      "beta_batch_ms": [
+        19795.72572979251,
+        20112.267877434846
+      ],
+      "beta_token_ms": [
+        107.63066503183269,
+        119.04732273669309
+      ]
+    },
+    "extrapolation_allowed": false,
+    "formula": "prefill_ms_hat = beta0_ms + beta_batch_ms * ceil(prompt_tokens/32) + beta_token_ms * prompt_tokens",
+    "r_squared_on_nine_token_medians": 0.9999889992120109,
+    "rank": 3,
+    "residuals_by_token_ms": {
+      "127": 42.58119711071777,
+      "128": -58.33113177897758,
+      "129": 9.637614756808034,
+      "159": 119.05117021137266,
+      "160": -1.0618416676588822,
+      "161": -109.5404601865157,
+      "191": -44.58344970442704,
+      "192": -53.880172582081286,
+      "193": 96.12707392155426
+    },
+    "rmse_ms_on_nine_token_medians": 71.19078848046979,
+    "singular_values": [
+      486.6425126961555,
+      1.3539453042362295,
+      0.4813199405475093
+    ],
+    "valid_prompt_token_range_inclusive": [
+      127,
+      193
+    ]
+  },
+  "gate": "M297-BACT-T32-staircase-cost-model",
+  "leave_one_boundary_out": {
+    "folds": [
+      {
+        "held_boundary": 128,
+        "records": [
+          {
+            "error_ms": 30.793582865197095,
+            "observed_ms": 107866.72347498825,
+            "predicted_ms": 107835.92989212305,
+            "prompt_tokens": 127
+          },
+          {
+            "error_ms": -70.28202404090553,
+            "observed_ms": 107879.15013998281,
+            "predicted_ms": 107949.43216402372,
+            "prompt_tokens": 128
+          },
+          {
+            "error_ms": 7.761362870427547,
+            "observed_ms": 128014.45468401653,
+            "predicted_ms": 128006.6933211461,
+            "prompt_tokens": 129
+          }
+        ]
+      },
+      {
+        "held_boundary": 160,
+        "records": [
+          {
+            "error_ms": 146.68358145517414,
+            "observed_ms": 131524.03805599897,
+            "predicted_ms": 131377.3544745438,
+            "prompt_tokens": 159
+          },
+          {
+            "error_ms": 29.271599306870485,
+            "observed_ms": 131517.2640380042,
+            "predicted_ms": 131487.99243869734,
+            "prompt_tokens": 160
+          },
+          {
+            "error_ms": -163.28187821627944,
+            "observed_ms": 151476.1212169833,
+            "predicted_ms": 151639.40309519958,
+            "prompt_tokens": 161
+          }
+        ]
+      },
+      {
+        "held_boundary": 192,
+        "records": [
+          {
+            "error_ms": -71.56231277430197,
+            "observed_ms": 154941.24804399326,
+            "predicted_ms": 155012.81035676756,
+            "prompt_tokens": 191
+          },
+          {
+            "error_ms": -83.32190459873527,
+            "observed_ms": 155045.29031499987,
+            "predicted_ms": 155128.6122195986,
+            "prompt_tokens": 192
+          },
+          {
+            "error_ms": 140.6499605293502,
+            "observed_ms": 175262.63335900148,
+            "predicted_ms": 175121.98339847213,
+            "prompt_tokens": 193
+          }
+        ]
+      }
+    ],
+    "mae_ms": 82.62313407302685,
+    "note": "Leave-one-boundary-out is a descriptive transport check across only three measured boundary neighbourhoods.",
+    "rmse_ms": 98.22198981184223
+  },
+  "next_gate": "Complete M296 whole-clip human review, freeze four-baseline calibration thresholds, and run held-out accuracy once. For a powered causal latency claim, pre-register a larger repeated counterbalanced board run.",
+  "sample_count": 27,
+  "sample_count_per_token": 3,
+  "source": "C:/Users/30429/Desktop/TeLLMe_FPGA_2026/deployment/mage_vl4b/M294R3_COUNTERBALANCED_BOUNDARY_BOARD_RESULT_05.json",
+  "source_sha256": "1a8138f92fc9340b1e5c660f886729cd725280d29877863af54cdd12aef895d1",
+  "stable_rollback_preserved": true,
+  "status": "PASS_REPRODUCIBLE_DESCRIPTIVE_MODEL_NOT_CAUSAL",
+  "structural_cost_model": {
+    "batch_formula": "B(N)=ceil(N/32)",
+    "fixed_logical_calls": 8,
+    "identity_passed_for_all_27_records": true,
+    "logical_call_formula": "Calls(N)=154*B(N)+8",
+    "logical_calls_per_batch": 154,
+    "scope": "M120/M89X2 frozen language Prefill chain only; not total system latency or power.",
+    "t32_granularity": 32
+  },
+  "token_summary": {
+    "127": {
+      "logical_fpga_calls": 624,
+      "mad_ms": 56.55915499664843,
+      "median_ms": 107866.72347498825,
+      "t32_batches": 4,
+      "values_ms": [
+        138884.7274039872,
+        107866.72347498825,
+        107810.1643199916
+      ]
+    },
+    "128": {
+      "logical_fpga_calls": 624,
+      "mad_ms": 43.01881996798329,
+      "median_ms": 107879.15013998281,
+      "t32_batches": 4,
+      "values_ms": [
+        111304.80386200361,
+        107879.15013998281,
+        107836.13132001483
+      ]
+    },
+    "129": {
+      "logical_fpga_calls": 778,
+      "mad_ms": 30.387954000616446,
+      "median_ms": 128014.45468401653,
+      "t32_batches": 5,
+      "values_ms": [
+        128280.11182098999,
+        127984.06673001591,
+        128014.45468401653
+      ]
+    },
+    "159": {
+      "logical_fpga_calls": 778,
+      "mad_ms": 4.670625989092514,
+      "median_ms": 131524.03805599897,
+      "t32_batches": 5,
+      "values_ms": [
+        131528.70868198806,
+        131524.03805599897,
+        131375.59098098427
+      ]
+    },
+    "160": {
+      "logical_fpga_calls": 778,
+      "mad_ms": 76.68530600494705,
+      "median_ms": 131517.2640380042,
+      "t32_batches": 5,
+      "values_ms": [
+        131593.94934400916,
+        131517.2640380042,
+        131411.49528999813
+      ]
+    },
+    "161": {
+      "logical_fpga_calls": 932,
+      "mad_ms": 44.787768041715026,
+      "median_ms": 151476.1212169833,
+      "t32_batches": 6,
+      "values_ms": [
+        151476.1212169833,
+        151520.90898502502,
+        151387.97772600083
+      ]
+    },
+    "191": {
+      "logical_fpga_calls": 932,
+      "mad_ms": 5.689166981028393,
+      "median_ms": 154941.24804399326,
+      "t32_batches": 6,
+      "values_ms": [
+        155150.1447930059,
+        154941.24804399326,
+        154935.55887701223
+      ]
+    },
+    "192": {
+      "logical_fpga_calls": 932,
+      "mad_ms": 28.402723983163014,
+      "median_ms": 155045.29031499987,
+      "t32_batches": 6,
+      "values_ms": [
+        155045.29031499987,
+        155194.95620101225,
+        155016.8875910167
+      ]
+    },
+    "193": {
+      "logical_fpga_calls": 1086,
+      "mad_ms": 97.11255200090818,
+      "median_ms": 175262.63335900148,
+      "t32_batches": 7,
+      "values_ms": [
+        175262.63335900148,
+        175359.7459110024,
+        175159.82077101944
+      ]
+    }
+  }
+}

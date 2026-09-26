@@ -1,0 +1,35 @@
+{
+  "previous_board_result_sha256": "c3651718d893eaa09f14111b6327e16c0b61e98f60e3e3cea343c5c0829e879c",
+  "python_path": [
+    "optimization_v1/dependencies/opencv411_arm64_v1/site",
+    "m190_mage_runtime",
+    "m227_runtime_base_patch",
+    "m242_m241_fixed_text_delta",
+    "m223_realtime_delta",
+    "m218_dual_source_delta",
+    "m181_m120_video_board_candidate",
+    "m175_m120_fixed_text_candidate/runtime",
+    "m175_m120_fixed_text_candidate/runtime/support"
+  ],
+  "imports": [
+    "numpy",
+    "tokenizers",
+    "torch",
+    "transformers",
+    "PIL",
+    "m238_prefill_runtime",
+    "m241_video_language_runtime",
+    "m222_vectorized_w4_runtime"
+  ],
+  "video_sha256": "a859467a06d77a075f54d02bb3a612b404e660abfc0592971116abe3edfa7333",
+  "question": "In which direction does the red circle move, left to right or right to left?",
+  "package_manifest_hashes": {
+    "m175_m120_fixed_text_candidate": "406dcca340e4604baeb761445795391c43ec26bd99fa06ffae893d597b17414f",
+    "m181_m120_video_board_candidate": "1596536bfe6865cb7eab5c038d8b4da8b666afc7cbd629ddc4559781727151d6",
+    "m242_m241_fixed_text_delta": "ef94f50608dcda4ae33d3d133434429304bb72dbeb6def90666d7613aadfe510",
+    "m227_runtime_base_patch": "0bab466470fe09ef1b548921235a365ac3832c6264bf2e3a16ee19a6a3aad13c",
+    "m223_realtime_delta": "debc3f1d1b783af028ad47a5a7c3bdb3c9012ee8febdecef39367c4bcc25b53f",
+    "m218_dual_source_delta": "6deb7d763f7fce80716ea41b3e155044c4098d33d636f57d64c157d11dda16ab"
+  },
+  "classification": "SYS2 development diagnostic only; no numerical or performance acceptance"
+}

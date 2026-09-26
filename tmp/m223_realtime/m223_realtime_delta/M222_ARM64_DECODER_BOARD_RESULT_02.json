@@ -1,0 +1,21 @@
+{
+  "arm64_decode_speedup": 98.57492306143341,
+  "bit_exact": true,
+  "classification": "Real-KV260 ARM64 decoder equivalence/timing only; not full vision, FPGA E2E, continuous-stream, or seconds-level performance evidence.",
+  "date": "2026-09-01",
+  "expected_module_count": 98,
+  "gate": "M222-ARM64-vectorized-visual-W4-decoder",
+  "legacy_decode_ms": 709364.0029379458,
+  "mismatch": null,
+  "model_math_changed": false,
+  "module_count": 98,
+  "next_gate": "Only after PASS, stage M222 service delta; then run one fixed four-frame board numerical/performance gate before any speed claim.",
+  "persistent_boot_dtb_cma_partitions_services_changed": false,
+  "process_max_rss_kib": 764392,
+  "quantization_changed": false,
+  "stable_rollback_preserved": true,
+  "status": "PASS",
+  "total_elements": 329252864,
+  "vectorized_decode_ms": 7196.191291935975,
+  "wall_ms": 743663.3290619939
+}

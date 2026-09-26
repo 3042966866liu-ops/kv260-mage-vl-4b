@@ -1,0 +1,355 @@
+{
+  "date": "2026-09-02",
+  "gate": "M268-hash-locked-M253-ROI-constrained-4B-knife-review",
+  "status": "PASS_HASH_LOCKED_FAST_ROI_BINARY_SUITE_BOARD_PENDING",
+  "classification": "Small labelled official Mage-VL NF4/BF16 binary regression screen with real M253 detector ROI logic; not calibrated accuracy, KV260 semantics, or FPGA speed.",
+  "predecessor": "/mnt/c/Users/30429/Desktop/TeLLMe_FPGA_2026/deployment/mage_vl4b/M267_GPU_BINARY_MULTISCALE_RESULT.json",
+  "predecessor_sha256": "4e4da9ab407cffb4ef3e544bfac159bff93f17422fda318c95ef205252339f47",
+  "detector": {
+    "name": "SSDLite320 MobileNetV3 Large COCO_V1",
+    "checkpoint": "/mnt/c/Users/30429/Desktop/TeLLMe_FPGA_2026/deployment/mage_vl4b/m249_ssdlite_board_candidate/model/ssdlite320_mobilenet_v3_large_coco-a79551df.pth",
+    "checkpoint_sha256": "a79551df90c79834bcd3bb3845ef9d966b5449a3a9b2833ae8404778ca5d65d2",
+    "torchvision": "0.27.1+cu130",
+    "person_roi_threshold": 0.5,
+    "knife_roi_threshold": 0.05,
+    "roi_priority": [
+      "knife-person-union",
+      "person",
+      "center-fallback"
+    ],
+    "minimum_crop_side_pixels": 224.0
+  },
+  "architecture_decision": "The bounded fast path remains responsible for person/action updates and immediate alarm. The 4B path is alarm-only semantic knife review and must not block or revoke it.",
+  "prompt": "[TELLME_KNIFE_BINARY_V1] Inspect the four video frames. Output exactly one character: 1 if any knife is visible, otherwise 0. Answer:",
+  "visual_tokens": 196,
+  "records": [
+    {
+      "name": "motorcycle_person_no_knife",
+      "expected": 0,
+      "decision": 0,
+      "pass": true,
+      "no_logit": 19.5,
+      "yes_logit": 16.25,
+      "margin_yes_minus_no": -3.25,
+      "score_calibrated": false,
+      "prompt_tokens": 284,
+      "tensor_shapes": {
+        "pixel_values": [
+          784,
+          768
+        ],
+        "image_grid_thw": [
+          4,
+          3
+        ],
+        "patch_positions": [
+          784,
+          3
+        ],
+        "input_ids": [
+          1,
+          284
+        ],
+        "attention_mask": [
+          1,
+          284
+        ]
+      },
+      "roi_evidence": [
+        {
+          "source": "person",
+          "crop_xyxy_pixels": [
+            0,
+            0,
+            448,
+            448
+          ],
+          "detections": [
+            {
+              "label": "person",
+              "score": 0.9811057448387146,
+              "box": [
+                137.88258361816406,
+                0.0,
+                340.4320983886719,
+                417.4418029785156
+              ]
+            }
+          ]
+        },
+        {
+          "source": "person",
+          "crop_xyxy_pixels": [
+            0,
+            0,
+            448,
+            448
+          ],
+          "detections": [
+            {
+              "label": "person",
+              "score": 0.9726529121398926,
+              "box": [
+                128.97413635253906,
+                38.42044448852539,
+                308.12957763671875,
+                442.51446533203125
+              ]
+            }
+          ]
+        }
+      ],
+      "preprocess_ms": 13.94537699999887,
+      "forward_ms": 973.2976029999988
+    },
+    {
+      "name": "soccer_people_no_knife",
+      "expected": 0,
+      "decision": 0,
+      "pass": true,
+      "no_logit": 19.25,
+      "yes_logit": 17.375,
+      "margin_yes_minus_no": -1.875,
+      "score_calibrated": false,
+      "prompt_tokens": 284,
+      "tensor_shapes": {
+        "pixel_values": [
+          784,
+          768
+        ],
+        "image_grid_thw": [
+          4,
+          3
+        ],
+        "patch_positions": [
+          784,
+          3
+        ],
+        "input_ids": [
+          1,
+          284
+        ],
+        "attention_mask": [
+          1,
+          284
+        ]
+      },
+      "roi_evidence": [
+        {
+          "source": "person",
+          "crop_xyxy_pixels": [
+            0,
+            0,
+            448,
+            448
+          ],
+          "detections": [
+            {
+              "label": "person",
+              "score": 0.9743666648864746,
+              "box": [
+                10.216842651367188,
+                25.773727416992188,
+                445.2938232421875,
+                446.31878662109375
+              ]
+            }
+          ]
+        },
+        {
+          "source": "person",
+          "crop_xyxy_pixels": [
+            29,
+            44,
+            309,
+            324
+          ],
+          "detections": [
+            {
+              "label": "person",
+              "score": 0.9830046892166138,
+              "box": [
+                107.94639587402344,
+                91.55178833007812,
+                230.02487182617188,
+                275.72198486328125
+              ]
+            },
+            {
+              "label": "person",
+              "score": 0.9810416102409363,
+              "box": [
+                263.33197021484375,
+                62.76287841796875,
+                387.0670471191406,
+                273.39056396484375
+              ]
+            }
+          ]
+        }
+      ],
+      "preprocess_ms": 6.190472000000113,
+      "forward_ms": 113.49779599999721
+    },
+    {
+      "name": "dog_no_person_no_knife",
+      "expected": 0,
+      "decision": 0,
+      "pass": true,
+      "no_logit": 18.75,
+      "yes_logit": 15.625,
+      "margin_yes_minus_no": -3.125,
+      "score_calibrated": false,
+      "prompt_tokens": 284,
+      "tensor_shapes": {
+        "pixel_values": [
+          784,
+          768
+        ],
+        "image_grid_thw": [
+          4,
+          3
+        ],
+        "patch_positions": [
+          784,
+          3
+        ],
+        "input_ids": [
+          1,
+          284
+        ],
+        "attention_mask": [
+          1,
+          284
+        ]
+      },
+      "roi_evidence": [
+        {
+          "source": "center-fallback",
+          "crop_xyxy_pixels": [
+            24,
+            24,
+            424,
+            424
+          ],
+          "detections": []
+        },
+        {
+          "source": "center-fallback",
+          "crop_xyxy_pixels": [
+            24,
+            24,
+            424,
+            424
+          ],
+          "detections": []
+        }
+      ],
+      "preprocess_ms": 2.771058000000437,
+      "forward_ms": 95.65655400000139
+    },
+    {
+      "name": "businesswoman_knife_positive",
+      "expected": 1,
+      "decision": 1,
+      "pass": true,
+      "no_logit": 17.75,
+      "yes_logit": 19.625,
+      "margin_yes_minus_no": 1.875,
+      "score_calibrated": false,
+      "prompt_tokens": 284,
+      "tensor_shapes": {
+        "pixel_values": [
+          784,
+          768
+        ],
+        "image_grid_thw": [
+          4,
+          3
+        ],
+        "patch_positions": [
+          784,
+          3
+        ],
+        "input_ids": [
+          1,
+          284
+        ],
+        "attention_mask": [
+          1,
+          284
+        ]
+      },
+      "roi_evidence": [
+        {
+          "source": "person",
+          "crop_xyxy_pixels": [
+            40,
+            0,
+            445,
+            405
+          ],
+          "detections": [
+            {
+              "label": "person",
+              "score": 0.9962562322616577,
+              "box": [
+                122.82882690429688,
+                5.924984455108643,
+                361.3419189453125,
+                329.9160461425781
+              ]
+            }
+          ]
+        },
+        {
+          "source": "person",
+          "crop_xyxy_pixels": [
+            40,
+            0,
+            445,
+            405
+          ],
+          "detections": [
+            {
+              "label": "person",
+              "score": 0.9962562322616577,
+              "box": [
+                122.82882690429688,
+                5.924984455108643,
+                361.3419189453125,
+                329.9160461425781
+              ]
+            }
+          ]
+        }
+      ],
+      "preprocess_ms": 2.6309599999976285,
+      "forward_ms": 110.65835400000168
+    }
+  ],
+  "suite_pass": true,
+  "projected_schedule": {
+    "official_processor_prompt_tokens": 284,
+    "t32_batches_from_official_prompt": 9,
+    "logical_calls_from_official_prompt": 1394,
+    "call_reduction_vs_M264_official_448_prompt_percent": 39.86194995685936,
+    "not_board_measurement": true
+  },
+  "model": "microsoft/Mage-VL",
+  "checkpoint": "/home/lyy/models/Mage-VL",
+  "checkpoint_config_sha256": "fd4621212569e893ce2caa110431fde73f3cc1a1d92e1b8320bb4e0cfbcad34a",
+  "backend": "WSL local CUDA GPU; not KV260",
+  "quantization": "bitsandbytes NF4 4-bit; BF16 compute",
+  "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "load_ms": 5819.379697999999,
+  "gpu_peak_allocated_bytes": 3852295680,
+  "threshold_calibrated": false,
+  "semantic_accuracy_passed": false,
+  "semantic_accuracy_reason": "Four examples are a regression screen only; M252 held-out target-camera metrics remain required.",
+  "host_gpu_timing_is_board_evidence": false,
+  "active_board_service_changed": false,
+  "stable_rollback_preserved": true,
+  "source_sha256": "e6080a16bf619f2da3b3f359ade8d687ab9108a73cf99e84b58eaf72eee7eef8",
+  "next_gate": "If PASS, create a clean M259+M261+M268 delta and wait for COM3 for isolated KV260 memory, exact identity, binary semantics and complete TTFT."
+}

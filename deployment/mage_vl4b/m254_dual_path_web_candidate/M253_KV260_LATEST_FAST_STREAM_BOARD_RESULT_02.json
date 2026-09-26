@@ -1,0 +1,183 @@
+{
+  "date": "2026-09-02",
+  "gate": "M253-KV260-latest-only-fast-safety-stream-board",
+  "status": "PASS",
+  "classification": "Real KV260 A53 continuous-source pressure, latest-only scheduling and structured safety-event latency; not camera/Web or target-scene knife/action accuracy.",
+  "package_manifest_sha256": "ec56e7957e914c29314db49a13fba4ffb963a366a22b70ac3c674f4f7725ae99",
+  "measurement": {
+    "date": "2026-09-02",
+    "gate": "M253-KV260-M249-latest-only-fast-safety-stream",
+    "status": "PASS",
+    "classification": "Real KV260 A53 continuous-source pressure, latest-only scheduling and structured safety-event latency; not camera/Web, target-scene knife/action accuracy, FPGA detector, or full production real-time acceptance.",
+    "stable_t32_overlay_preserved": true,
+    "boot_dtb_cma_partitions_services_changed": false,
+    "checks": {
+      "m249_predecessor_pass": true,
+      "runtime_loaded_once": true,
+      "all_source_frames_accepted": true,
+      "mailbox_capacity_one": true,
+      "stale_pending_frames_overwritten": true,
+      "input_outpaced_inference": true,
+      "latest_sequence_completed": true,
+      "worker_error_absent": true,
+      "every_result_meets_5s": true,
+      "person_sanity": true
+    },
+    "architecture": "aarch64",
+    "python": "3.10.12",
+    "threads": 4,
+    "source_fps": 5.0,
+    "source_frames": 16,
+    "processed_frames": 6,
+    "dropped_or_overwritten_frames": 10,
+    "maximum_detector_ms": 651.427884993609,
+    "maximum_capture_to_result_ms": 885,
+    "target_update_period_ms": 5000,
+    "person_result_frames": 6,
+    "final_status": {
+      "mode": "continuous-latest-only-per-frame",
+      "source_is_unbounded_contract": true,
+      "window_backlog_capacity": 1,
+      "runtime_load_count": 1,
+      "processed_frames": 6,
+      "last_completed_sequence": 15,
+      "frame_slot": {
+        "capacity": 1,
+        "depth": 0,
+        "accepted_frames": 16,
+        "overwritten_pending_frames": 10,
+        "newest_sequence": 15,
+        "last_claimed_sequence": 15
+      },
+      "error": null
+    },
+    "records": [
+      {
+        "sequence": 0,
+        "detector_ms": 651.427884993609,
+        "capture_to_result_ms": 652,
+        "person_count": 1,
+        "action_counts": {
+          "UNKNOWN": 1
+        },
+        "alarm": {
+          "active": false,
+          "state": "REVIEW",
+          "code": null,
+          "icon": "",
+          "badge_text": "",
+          "badge_style": "safe",
+          "evidence_frame_sha256": null
+        },
+        "realtime_deadline_met": true,
+        "evidence_sha256": "279476a000084e145462e6cc164be4590245df33280274f3ca7ea481c587bfa9"
+      },
+      {
+        "sequence": 3,
+        "detector_ms": 642.5925469957292,
+        "capture_to_result_ms": 712,
+        "person_count": 1,
+        "action_counts": {
+          "UNKNOWN": 1
+        },
+        "alarm": {
+          "active": false,
+          "state": "SAFE",
+          "code": null,
+          "icon": "",
+          "badge_text": "",
+          "badge_style": "safe",
+          "evidence_frame_sha256": null
+        },
+        "realtime_deadline_met": true,
+        "evidence_sha256": "ed1c069b705bac4c828edf0f4aceb048cd68ae80288092d935177bfff47874d7"
+      },
+      {
+        "sequence": 6,
+        "detector_ms": 646.5365470212419,
+        "capture_to_result_ms": 768,
+        "person_count": 1,
+        "action_counts": {
+          "UNKNOWN": 1
+        },
+        "alarm": {
+          "active": false,
+          "state": "SAFE",
+          "code": null,
+          "icon": "",
+          "badge_text": "",
+          "badge_style": "safe",
+          "evidence_frame_sha256": null
+        },
+        "realtime_deadline_met": true,
+        "evidence_sha256": "d02dd9d913635b3b3ccfd94a1cb1a83928708587abc033ab037bc8baa83d875e"
+      },
+      {
+        "sequence": 9,
+        "detector_ms": 621.6715680202469,
+        "capture_to_result_ms": 799,
+        "person_count": 1,
+        "action_counts": {
+          "WALKING": 1
+        },
+        "alarm": {
+          "active": false,
+          "state": "SAFE",
+          "code": null,
+          "icon": "",
+          "badge_text": "",
+          "badge_style": "safe",
+          "evidence_frame_sha256": null
+        },
+        "realtime_deadline_met": true,
+        "evidence_sha256": "4b88a559ccca9bba9c931fa1172aa31ea7d63f3582893f930e1c731cd89b2116"
+      },
+      {
+        "sequence": 13,
+        "detector_ms": 623.6194469965994,
+        "capture_to_result_ms": 632,
+        "person_count": 1,
+        "action_counts": {
+          "UNKNOWN": 1
+        },
+        "alarm": {
+          "active": false,
+          "state": "SAFE",
+          "code": null,
+          "icon": "",
+          "badge_text": "",
+          "badge_style": "safe",
+          "evidence_frame_sha256": null
+        },
+        "realtime_deadline_met": true,
+        "evidence_sha256": "4b88a559ccca9bba9c931fa1172aa31ea7d63f3582893f930e1c731cd89b2116"
+      },
+      {
+        "sequence": 15,
+        "detector_ms": 644.5800460060127,
+        "capture_to_result_ms": 885,
+        "person_count": 1,
+        "action_counts": {
+          "WALKING": 1
+        },
+        "alarm": {
+          "active": false,
+          "state": "SAFE",
+          "code": null,
+          "icon": "",
+          "badge_text": "",
+          "badge_style": "safe",
+          "evidence_frame_sha256": null
+        },
+        "realtime_deadline_met": true,
+        "evidence_sha256": "ed1c069b705bac4c828edf0f4aceb048cd68ae80288092d935177bfff47874d7"
+      }
+    ],
+    "peak_rss_mib": 386.55859375,
+    "next_gate": "Integrate this exact latest-only fast runtime with the existing Web/SSE ingress and run labelled target-camera evaluation.",
+    "total_ms": 42286.26295900904
+  },
+  "uart_log_sha256": "549acdbb4d695ccd65e208958433e6b778c1211b62793d501a604a36446cb845",
+  "stable_t32_overlay_preserved": true,
+  "next_gate": "Integrate the exact M253 runtime into Web/SSE and run labelled target-camera evaluation."
+}

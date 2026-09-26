@@ -1,0 +1,39 @@
+{
+  "date": "2026-09-01",
+  "gate": "M231-parse-reuse-runtime-board-delta",
+  "status": "PASS",
+  "classification": "Clean runtime-only delta for accepted M120 T32; no bitstream, weights, quantization, boot, DTB, CMA, partition, or persistent service mutation.",
+  "base_build_id": "0x4D395832",
+  "base_package_manifest_sha256": "406dcca340e4604baeb761445795391c43ec26bd99fa06ffae893d597b17414f",
+  "files": [
+    {
+      "path": "m230_prefill_runtime.py",
+      "bytes": 9341,
+      "sha256": "defbcff1cc36300fff84481f2e9eba7a06174941b568e34b2faa7885efc14df4"
+    },
+    {
+      "path": "m231_prefill_runtime.py",
+      "bytes": 11534,
+      "sha256": "e7d6aa5a43919405168612b6a5695c14330735f75c87aa269b245e61542750ad"
+    },
+    {
+      "path": "m231_board_gate.py",
+      "bytes": 7451,
+      "sha256": "f24e00427ee378c94015567bab7e0ce5ea3188d8edebca247229581010811473"
+    },
+    {
+      "path": "m230_verify_package.py",
+      "bytes": 2068,
+      "sha256": "71b4f937c806e4871b714b7fac48af06073bfc8a101211bdecada6faf932f909"
+    },
+    {
+      "path": "run_m231_board_gate.sh",
+      "bytes": 3403,
+      "sha256": "20fe40757fd5bf9ab750a45ac0de4cf70e02780832830adcc465e9124335ee44"
+    }
+  ],
+  "file_count": 5,
+  "total_file_bytes": 33797,
+  "forbidden_cache_file_count": 0,
+  "board_state_changed": false
+}

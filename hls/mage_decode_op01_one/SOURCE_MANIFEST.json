@@ -1,0 +1,21 @@
+{
+  "status": "CANDIDATE_UNTESTED",
+  "build_id": "0x4F503131",
+  "config": "bit24=1: only token0 valid; bit24=0: legacy T32; full T32 wire format always",
+  "parent_sha256": "94e85e0cdd7ccd4758ee02407b46b728a045b288befb3b29bf4615ecfee24f2d",
+  "files": [
+    {
+      "path": "decode_one.cpp",
+      "sha256": "22e8646e366a99cb97c2a81f3c635a00107fcf3de929e7addcb891bed17c1b7e"
+    },
+    {
+      "path": "decode_one.hpp",
+      "sha256": "ed63396d6acdfb0128211972680a8fd063751cebe8e11b108e0f4ff0d85a8ae7"
+    },
+    {
+      "path": "tb_decode_one.cpp",
+      "sha256": "f12b7bf616848a39b8be84c7cf773c8f50bebbd5dedb670c47852aaf6b5700c8"
+    }
+  ],
+  "arithmetic": "One token-pair executed for decode_one; lane1 arithmetic discarded; no speedup proven"
+}

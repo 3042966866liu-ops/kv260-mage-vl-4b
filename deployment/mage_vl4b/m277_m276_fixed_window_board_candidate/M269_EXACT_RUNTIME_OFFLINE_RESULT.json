@@ -1,0 +1,93 @@
+{
+  "active_board_service_changed": false,
+  "classification": "Exact NumPy view construction, visual output/cache accounting, constrained binary decision and composed runtime imports only; not KV260 memory, semantics, TTFT, Web or promotion.",
+  "cold_evidence": {
+    "cache_bytes": 66699264,
+    "cache_entries": 26,
+    "cache_hits": 0,
+    "cache_misses": 26,
+    "cache_precision": "uint8 codes + FP32 scales + int8 qmin",
+    "cache_reconstruct_ms": 0.0,
+    "cache_within_budget": true,
+    "decode_calls": 98,
+    "decode_ms": 1308.9157019999934,
+    "decoded_elements": 329252864,
+    "decoder": "M261-exact-bounded-packed-code-cache-v1",
+    "policy_budget_mib": 64,
+    "policy_expected_cache_bytes": 66699264,
+    "policy_expected_cache_entries": 26,
+    "uncached_decode_calls": 72
+  },
+  "cold_window_ms": 2131.537649000002,
+  "composed_video_runtime": "M269MultiscaleBinaryRuntime",
+  "composed_vision_runtime": "M269MultiscalePSVisionRuntime",
+  "cv2_required_on_board": false,
+  "date": "2026-09-02",
+  "decode_calls": 0,
+  "gate": "M269-deployable-multiscale-binary-runtime-offline",
+  "host_timing_is_board_evidence": false,
+  "host_warm_speedup": 1.7494214568862247,
+  "new_board_runtime_dependencies": [
+    "numpy"
+  ],
+  "next_gate": "Build a clean hash-locked delta, then COM3 read-only memory headroom and isolated fixed-window KV260 binary TTFT gate.",
+  "output_sha256_fp32": "17f80abedf4e9542ff887999cfc7fa3786d8480dd64c5b15fc1f06c4e2643eb7",
+  "output_shape": [
+    196,
+    2560
+  ],
+  "process_max_rss_kib": 1252800,
+  "runtime_import_closure_pass": true,
+  "selected_frame_indices": [
+    0,
+    3
+  ],
+  "semantic_predecessor_sha256": "af7ce05bb59e96885f0e59140d88f935626d50896e9c2cadb292c72c7bac4130",
+  "source_hashes": {
+    "deployment/mage_vl4b/M269_GPU_EXACT_RUNTIME_SEMANTIC_RESULT.json": "af7ce05bb59e96885f0e59140d88f935626d50896e9c2cadb292c72c7bac4130",
+    "deployment/mage_vl4b/m269_multiscale_binary_source/M269_BOUNDARY.md": "a1773d3344988ad6bfc0b44fe9f199fafc43e17f9943970b66d9df9dd2d72da2",
+    "deployment/mage_vl4b/m269_multiscale_binary_source/m269_m254_video_server.py": "871c645c12d28c7b0e83c896f6804ecd4bc6e3c0959ce4f1b82431068168484d",
+    "deployment/mage_vl4b/m269_multiscale_binary_source/m269_multiscale_contract.py": "059e1d83e6b83d34ed623ad408810c77f5dc1c65de6e3e3567ff2e4e36d72563",
+    "deployment/mage_vl4b/m269_multiscale_binary_source/m269_multiscale_vision_runtime.py": "704789015f10e6740d6c5f85cea7dd273e642fb463b61a92e18a82f776d82cc3",
+    "deployment/mage_vl4b/m269_multiscale_binary_source/m269_video_runtime.py": "3669a63ff5404d3eeb65662fd293bce7397f6fceab3a34de145d723ec8641573",
+    "scripts/m269_gate_exact_runtime_offline.py": "2fa99f3b6e1eee17ed3fa663456a717b44a5e49af86e10d3587078e46278d98f"
+  },
+  "stable_rollback_preserved": true,
+  "status": "PASS_OFFLINE_EXACT_BOARD_MEMORY_TTFT_PENDING",
+  "tensor_shapes": {
+    "image_grid_thw": [
+      4,
+      3
+    ],
+    "patch_positions": [
+      784,
+      3
+    ],
+    "pixel_values": [
+      784,
+      768
+    ]
+  },
+  "tokenizer_image_pad_tokens": 196,
+  "tokenizer_prompt_tokens": 284,
+  "visual_tokens": 196,
+  "warm_evidence": {
+    "cache_bytes": 66699264,
+    "cache_entries": 26,
+    "cache_hits": 26,
+    "cache_misses": 26,
+    "cache_precision": "uint8 codes + FP32 scales + int8 qmin",
+    "cache_reconstruct_ms": 87.20816800003206,
+    "cache_within_budget": true,
+    "decode_calls": 196,
+    "decode_ms": 1890.2936620001049,
+    "decoded_elements": 658505728,
+    "decoder": "M261-exact-bounded-packed-code-cache-v1",
+    "policy_budget_mib": 64,
+    "policy_expected_cache_bytes": 66699264,
+    "policy_expected_cache_entries": 26,
+    "uncached_decode_calls": 144
+  },
+  "warm_output_bit_exact_to_cold": true,
+  "warm_window_ms": 1218.424319999997
+}

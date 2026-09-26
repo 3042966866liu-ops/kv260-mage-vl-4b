@@ -1,0 +1,103 @@
+{
+  "active_board_service_changed": false,
+  "classification": "Real frozen input, exact preprocessing/prompt geometry, finite visual output, and host timing only; not semantic accuracy, ARM64 board speed, FPGA E2E, continuous Web, or promotion evidence.",
+  "composed_video_runtime": "M259PreVisionKeyframeRuntime",
+  "composed_vision_runtime": "M259VariableFramePSVisionRuntime",
+  "context_scores": [
+    51.025516510009766,
+    25.59025001525879,
+    20.8924617767334
+  ],
+  "date": "2026-09-02",
+  "decoder_evidence": {
+    "decode_calls": 98,
+    "decode_ms": 1544.3203270002073,
+    "decoded_elements": 329252864,
+    "decoder": "M222-vectorized-fourport-w4-v1"
+  },
+  "gate": "M259-two-alarm-keyframe-prevision-offline-contract",
+  "host_four_frame_m258_prefix2_ms": 5096.242156000002,
+  "host_timing_is_board_evidence": false,
+  "host_vision_forward_ms": 3745.6791490000114,
+  "host_vision_reduction_percent": 26.5011544910581,
+  "host_vision_speedup_vs_four_frame": 1.3605655885823942,
+  "init_ms": 4835.206428999982,
+  "logical_fpga_calls_one_generated_token": 2164,
+  "next_gate": "Run a labeled knife/no-knife and action semantic set before any board promotion; if accepted, package and run isolated COM3 fixed-window numerical/timing gate.",
+  "pixel_values_sha256": "e91b20ce70852a02302c976474d958a52a11e978cf81a642ad810514f64138e5",
+  "pixel_values_shape": [
+    1568,
+    768
+  ],
+  "precision_policy": {
+    "bf16_prefix_layers": [
+      0,
+      1
+    ],
+    "candidate": "M258-vision-state-boundary-sweep",
+    "fp32_layers": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "linear_gemm_dtype": "FP32 unchanged",
+    "packed_weight_layout": "M222 unchanged"
+  },
+  "process_max_rss_kib": 1269528,
+  "prompt_token_ids_sha256_i32": "4a2f0f1c32dfc5254a36afbb267c3da953d556eb51b72f08721085a5e9097a23",
+  "prompt_tokens": 442,
+  "quantization_changed": false,
+  "rejected_attempts": [
+    "Initial fixture-name template assumed one shared frame number; corrected to the frozen 68/102/137/171 manifest names.",
+    "The inherited M90 gate hard-coded 784 output tokens; replaced by a strict frame_count*196 gate without relaxing finite checks.",
+    "The fixed Chinese monitoring prompt tokenizes to 442, not the earlier English-contract 441; exact 442 count and ID hash are now locked."
+  ],
+  "runtime_import_closure_pass": true,
+  "selected_frame_indices": [
+    0,
+    3
+  ],
+  "selected_frame_sha256": "43e798d669d12acc27e8c250c42e6a8618a0a10fb49e3015fbdcb7a50bf02383",
+  "selected_timestamps_seconds": [
+    0.0,
+    3.0
+  ],
+  "source_frame_count": 4,
+  "source_hashes": {
+    "deployment/mage_vl4b/m259_prevision_keyframe_source/M259_BOUNDARY.md": "08c39e76f3f4b5c5fb26eea599d406b6b3004626bf872b83af8c25a2d71c8d1a",
+    "deployment/mage_vl4b/m259_prevision_keyframe_source/m259_m254_video_server.py": "753afaa95e1e5a217e852bd51d9d722b40ca0ce2dd0d7d19e2d15bc4322f83f0",
+    "deployment/mage_vl4b/m259_prevision_keyframe_source/m259_variable_vision_runtime.py": "d5e3888479ecb19b99c4ca6c1055953a12845030d9477620dc2c863a9b677429",
+    "deployment/mage_vl4b/m259_prevision_keyframe_source/m259_video_runtime.py": "d79c7b6d477bdfda2a56693d5d2d2757aef05410b11739d10f2e51cdea3a257b",
+    "scripts/m259_gate_prevision_keyframes.py": "b0cabb23936c40efb12f21ea720d05dbcca6428f8680f420563f0dd237d72e36"
+  },
+  "stable_rollback_preserved": true,
+  "status": "PASS_OFFLINE_FINITE_SEMANTIC_AND_BOARD_PENDING",
+  "t32_batches": 14,
+  "visual_output_finite": true,
+  "visual_output_sha256_fp32": "042e4d9ca11787379429dcecf302243051657d5dce17a42959a1755033ff2792",
+  "visual_output_shape": [
+    392,
+    2560
+  ],
+  "visual_prompt_tokens": 392,
+  "warning_count": 0
+}

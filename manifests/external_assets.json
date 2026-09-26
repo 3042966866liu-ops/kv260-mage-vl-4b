@@ -1,0 +1,64 @@
+{
+  "schema": "kv260-mage-vl-external-assets-v1",
+  "note": "All items excluded from Git; a locally observed hash is not redistribution permission. The exact upstream model revision and lawful public acquisition recipe are unresolved.",
+  "build_id": "0x4D395832",
+  "assets": [
+    {"destination": "distribution/kv260-mage-vl-4b-prebuilt-install-20260926-v7.tar", "local_source_path": "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7.tar", "bytes": 3909191680, "sha256": "c487e16bcc18698808d7c48822e355c8b6cf291633b00d661f372f7280d41145", "source": "owner-built immutable M327 v7 KV260 stable prebuilt installer; board first-install fixed text and runtime-ready passed", "obtain": "owner-controlled local TAR only; no public download URL; public redistribution requires owner and third-party rights review", "license": null},
+    {"destination": "distribution/m328_release_video_addon_20260926_v3.tar", "local_source_path": "release_staging/m328_release_video_addon_20260926_v3.tar", "bytes": 2437120, "sha256": "254587ec1f776a01dc12ef98b900a558e4c3087c90a8630a59be51ef12df8b93", "source": "owner-built M328 fixed-video companion with original M277 four RGB448 frames and direct 4B gate", "obtain": "owner-controlled local TAR only; no public download URL; sample-video redistribution rights must be reviewed", "license": null},
+    {"destination": "external_assets/runtime_wheels/m327_runtime_wheels_20260926.tar", "local_source_path": "release_staging/m327_runtime_wheels_20260926.tar", "bytes": 200151040, "sha256": "5b414672750e1e62ebbe6360e96a3a991a293d8da3dd9fa292eb8a29d0b07c96", "source": "hash-locked local M189 ARM64 wheel bundle plus M249 torchvision 0.27.1 wheel", "obtain": "owner-controlled local bundle; public redistribution rights and upstream wheel URLs require review", "license": null},
+    {"destination": "external_assets/runtime_wheels/pillow-12.1.0-cp310-cp310-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", "local_source_path": "tmp/m193_pillow_arm64/pillow-12.1.0-cp310-cp310-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", "bytes": 6222593, "sha256": "a40905599d8079e09f25027423aed94f2823adaf2868940de991e53a449e14a8", "source": "historical M193 ARM64 Pillow runtime repair wheel", "obtain": "owner-controlled local wheel; public redistribution rights and upstream URL require review", "license": null},
+    {"destination": "deployment/mage_vl4b/m175_m120_fixed_text_candidate/overlay/m120_m89x2_t32.bit", "bytes": 7797914, "sha256": "1cbf7bbb86cfe64c2349418d5a15890d735bea3fa4c999060c8a9da9ac3206ac", "source": "local historical M175 package", "obtain": "owner-supplied, rights pending", "license": null},
+    {"destination": "deployment/mage_vl4b/m175_m120_fixed_text_candidate/overlay/m120_m89x2_t32.hwh", "bytes": 493370, "sha256": "9bd6100bcc274486ddd51133e4dc2247f35c030d49e53cc709438f2a74ee3520", "source": "local historical M175 package", "obtain": "owner-supplied, rights pending", "license": null},
+    {"destination": "deployment/mage_vl4b/m175_m120_fixed_text_candidate/auxiliary/m77_text_aux_fp16.npz", "bytes": 315138, "sha256": "7f2dfc14ae47cb537e148cafc9b1c6cc285e1fe546dec901275a4078a8458ffd", "source": "local historical M77 fixed-text auxiliary", "obtain": "owner-supplied, rights pending", "license": null},
+    {"destination": "deployment/mage_vl4b/m175_m120_fixed_text_candidate/reference/m143_m120_layer0_boundaries.npz", "bytes": 1456855, "sha256": "9565ec2f7d1df162997456a6ccb01234c3b3e4802107ed318827553c3aa66eab", "source": "local historical M143 layer-boundary fixture required by M175 package whitelist", "obtain": "owner-supplied, rights pending", "license": null},
+    {"destination": "deployment/mage_vl4b/m181_m120_video_board_candidate/text_runtime/overlay/m120_m89x2_t32.bit", "bytes": 7797914, "sha256": "1cbf7bbb86cfe64c2349418d5a15890d735bea3fa4c999060c8a9da9ac3206ac", "source": "local historical M181 runtime copy of stable M120 bitstream", "obtain": "owner-supplied, rights pending", "license": null},
+    {"destination": "deployment/mage_vl4b/m181_m120_video_board_candidate/text_runtime/overlay/m120_m89x2_t32.hwh", "bytes": 493370, "sha256": "9bd6100bcc274486ddd51133e4dc2247f35c030d49e53cc709438f2a74ee3520", "source": "local historical M181 runtime copy of stable M120 HWH", "obtain": "owner-supplied, rights pending", "license": null},
+    {"destination": "deployment/mage_vl4b/m181_m120_video_board_candidate/text_auxiliary/tokenizer/tokenizer.json", "bytes": 11422064, "sha256": "ba0c439f7be467bf47d12a7e6f9adc6116201056fc60c67f431c679b7c16afc8", "source": "local Mage-VL tokenizer", "obtain": "upstream revision and terms need verification", "license": null},
+    {"destination": "deployment/mage_vl4b/m181_m120_video_board_candidate/text_auxiliary/tokenizer/vocab.json", "bytes": 2776833, "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910", "source": "local Mage-VL tokenizer vocabulary", "obtain": "upstream revision and terms need verification", "license": null},
+    {"destination": "deployment/mage_vl4b/m181_m120_video_board_candidate/text_auxiliary/embedding.fp16.rowmajor.bin", "bytes": 777912320, "sha256": "ec02de7da15a1569e96e50d886a3e4532617197e7a7aa84ac7196489caab4df4", "source": "historical M148 extraction", "obtain": "rebuild script partial; exact upstream inputs required", "license": null},
+    {"destination": "deployment/mage_vl4b/m181_m120_video_board_candidate/ps_vision_payload/vision_bf16.safetensors", "bytes": 660770912, "sha256": "312065d24f13432406b2016b02d28ee213ca545287748808a46796e05d36be0e", "source": "local vision payload", "obtain": "upstream revision and terms need verification", "license": null},
+    {"destination": "deployment/mage_vl4b/m249_ssdlite_board_candidate/model/ssdlite320_mobilenet_v3_large_coco-a79551df.pth", "bytes": 14069355, "sha256": "a79551df90c79834bcd3bb3845ef9d966b5449a3a9b2833ae8404778ca5d65d2", "source": "torchvision SSDLite checkpoint", "obtain": "verify torchvision checkpoint license/source", "license": null},
+    {"destination": "deployment/mage_vl4b/m181_m120_video_board_candidate/text_auxiliary/text_norms.fp16.npz", "bytes": 441894, "sha256": "c0d1e5fb6268bf28a4fbbbd6898715b5b39494a02b9e53d7c6e4c083bcbe2051", "source": "local M151 auxiliary", "obtain": "owner-supplied, rights pending", "license": null},
+    {"destination": "deployment/mage_vl4b/m181_m120_video_board_candidate/auxiliary/m90_vision_raw_bf16.bin", "bytes": 2233344, "sha256": "ae4353135414bf1691ce663f5973b67ab390f500b1b71789481d919c9d8a6eb2", "source": "local M90 auxiliary", "obtain": "owner-supplied, rights pending", "license": null},
+    {"destination": "deployment/mage_vl4b/m181_m120_video_board_candidate/vision_layout/weights0.bin", "bytes": 43728896, "sha256": "2e902f5f4ddec7165da4a873c713045fbb74bf0551d9dbda5fb0ce036776718e", "layout_manifest_sha256": "2d9bea77b8868d24fa7775886feb1b9c88b8e768d51b2e192802a439060b03c1", "source": "local M90 W4 four-port layout", "obtain": "owner-supplied, rights pending", "license": null},
+    {"destination": "deployment/mage_vl4b/m181_m120_video_board_candidate/vision_layout/weights1.bin", "bytes": 43728896, "sha256": "ed7618c3337da91fcf52d1d3a1b153d828b7ef19ded48c4f149647cfa474b3fd", "source": "local M90 W4 four-port layout", "obtain": "owner-supplied, rights pending", "license": null},
+    {"destination": "deployment/mage_vl4b/m181_m120_video_board_candidate/vision_layout/weights2.bin", "bytes": 43728896, "sha256": "98c518e426d8bca035220d6a59bee13879d23f5f70eb4b6a3080921457588346", "source": "local M90 W4 four-port layout", "obtain": "owner-supplied, rights pending", "license": null},
+    {"destination": "deployment/mage_vl4b/m181_m120_video_board_candidate/vision_layout/weights3.bin", "bytes": 43728896, "sha256": "5b9ce87baab34a7b43df4ed436e09200635866d71a154a6e598b26a44ac08b2a", "source": "local M90 W4 four-port layout", "obtain": "owner-supplied, rights pending", "license": null},
+    {
+      "destination": "external_assets/weights/language_fourport/",
+      "layout_manifest_sha256": "12ea4b8cc58639d0aab6da4ef3a3f12bbbb1254f88865f76512a5f0d00d4ae5d",
+      "layout_manifest_bytes": 302125,
+      "payload_bytes": 1828839424,
+      "source": "M125 exact M120 four-port layout; locally verified in WSL on 2026-09-26; historical KV260 layout identity also recorded",
+      "local_source": "/home/lyy/artifacts/tellme-mage-vl/m125-m120-fourport-layouts-v1/language_fourport/",
+      "checkpoint_manifest_sha256": "5ff33d1922376e18277902a8b051d069315f79c11b4f63e8d72517acd1dcd5d0",
+      "checkpoint_blob_sha256": "9c7de8995a08602186c7090081bbfc10b7c51170ad7e544f2f2dc71333b4f21d",
+      "files": [
+        {"path": "weights0.bin", "bytes": 457209856, "sha256": "7c037f04f65e9b13d5587c55af9861f6445f98dea47ffc942dcab8d825c25e65"},
+        {"path": "weights1.bin", "bytes": 457209856, "sha256": "61dcf114ad1a87cbf8d455d5eef0b90f09a24cc89507678e2c7fee19f7857bed"},
+        {"path": "weights2.bin", "bytes": 457209856, "sha256": "b8aabd302c0aba91dada96cde8967d088714b4e68cff5871ef36b6b2b7152101"},
+        {"path": "weights3.bin", "bytes": 457209856, "sha256": "2218e49d70ea9c83a389a4244924855a3ebf335e6fe948898ca7d4d59ca4ae5c"}
+      ],
+      "obtain": "Owner-controlled WSL source or exact M125 regeneration from the frozen M120 checkpoint; verify all listed SHA-256 values before separate installation. Not bundled or licensed for redistribution here.",
+      "license": null
+    },
+    {
+      "destination": "external_assets/weights/lmhead_fourport/",
+      "layout_manifest_sha256": "a1a555700e3daec8049627564c73e5783affe3827ab5437665249786d5c079ef",
+      "layout_manifest_bytes": 27905,
+      "payload_bytes": 206632960,
+      "source": "M125 exact M120 W4 LM Head four-port layout; locally verified in WSL on 2026-09-26; historical KV260 layout identity also recorded",
+      "local_source": "/home/lyy/artifacts/tellme-mage-vl/m125-m120-fourport-layouts-v1/lmhead_fourport/",
+      "checkpoint_manifest_sha256": "5ff33d1922376e18277902a8b051d069315f79c11b4f63e8d72517acd1dcd5d0",
+      "checkpoint_blob_sha256": "9c7de8995a08602186c7090081bbfc10b7c51170ad7e544f2f2dc71333b4f21d",
+      "files": [
+        {"path": "weights0.bin", "bytes": 51658240, "sha256": "71ee269ecaf5fcf1e07d06336f5b520d6bab473f4bfab02968a01011a278d50e"},
+        {"path": "weights1.bin", "bytes": 51658240, "sha256": "708422c93ebd4a517dcb25d205a6c330ae97ee15007ab455f214a8fa56c6d4f4"},
+        {"path": "weights2.bin", "bytes": 51658240, "sha256": "64b29a83ca5b2df16a6dd51b9a01eab5974eb722dd1fbc276ba8c4ad68d25c42"},
+        {"path": "weights3.bin", "bytes": 51658240, "sha256": "a5d954679387d0eef09dc50a16d5c124c8c7fbe5683b362a38c89e94057716f8"}
+      ],
+      "obtain": "Owner-controlled WSL source or exact M125 regeneration from the frozen M120 checkpoint; verify all listed SHA-256 values before separate installation. Not bundled or licensed for redistribution here.",
+      "license": null
+    }
+  ]
+}

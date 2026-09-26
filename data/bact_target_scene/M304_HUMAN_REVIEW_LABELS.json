@@ -1,0 +1,240 @@
+{
+  "schema": "tellme-bact-clip-constant-v1",
+  "date": "2026-09-03",
+  "sourceManifest": "data/bact_target_scene/M296_TARGET_SCENE_MANIFEST_DRAFT.json",
+  "sourceManifestSha256": "6c4a04f9c584bbc3cce6af7f70503e5bf951f4686b7be86fea9667e189aa7bc9",
+  "sourceWorkbook": "outputs/m304_bact_annotation/M304_BACT人工复核与稳健性条件表.xlsx",
+  "sourceWorkbookSha256": "eceef894cf0d8284810e49cc0edc511520c86d177a0abdc48685b2749d9d20d6",
+  "annotationPolicy": "Human full-video labels and conditions are authoritative; filename hints and model outputs are not ground truth.",
+  "scope": "AI_GENERATED_PILOT_CLIP_AND_SAMPLED_WINDOW_CLASSIFICATION_WITH_CONDITION_SLICES",
+  "clips": [
+    {
+      "clipId": "calibration-cal-falling-no-knife-01-3fd2c968",
+      "split": "calibration",
+      "sourceFilename": "cal_falling_no_knife_01.mp4",
+      "videoSha256": "3fd2c968a97d82222ac5079dd796aa2e0f77b712ed4dae4263967cb2785cb2e0",
+      "annotationStatus": "HUMAN_VERIFIED_COMPLETE_CLIP_CONSTANT",
+      "action": "FALLING",
+      "knifePresent": false,
+      "actionConstant": true,
+      "knifeConstant": true,
+      "watchedComplete": true,
+      "annotator": "lyy",
+      "conditions": {
+        "lowLight": false,
+        "occlusion": false,
+        "smallKnife": false
+      },
+      "notes": ""
+    },
+    {
+      "clipId": "calibration-cal-fighting-no-knife-01-f0b10fe2",
+      "split": "calibration",
+      "sourceFilename": "cal_fighting_no_knife_01.mp4",
+      "videoSha256": "f0b10fe23df78a0beda94ff067162c5de0af35073edb0706363c5a83610c3902",
+      "annotationStatus": "HUMAN_VERIFIED_COMPLETE_CLIP_CONSTANT",
+      "action": "FIGHTING",
+      "knifePresent": false,
+      "actionConstant": true,
+      "knifeConstant": true,
+      "watchedComplete": true,
+      "annotator": "lyy",
+      "conditions": {
+        "lowLight": false,
+        "occlusion": false,
+        "smallKnife": false
+      },
+      "notes": ""
+    },
+    {
+      "clipId": "calibration-cal-idle-knife-01-364a3160",
+      "split": "calibration",
+      "sourceFilename": "cal_idle_knife_01.mp4",
+      "videoSha256": "364a316054d9be0c8550acc3ee0c1d227486ef23045f3b75cb72f9fd0913916f",
+      "annotationStatus": "HUMAN_VERIFIED_COMPLETE_CLIP_CONSTANT",
+      "action": "IDLE",
+      "knifePresent": true,
+      "actionConstant": true,
+      "knifeConstant": true,
+      "watchedComplete": true,
+      "annotator": "lyy",
+      "conditions": {
+        "lowLight": false,
+        "occlusion": false,
+        "smallKnife": true
+      },
+      "notes": ""
+    },
+    {
+      "clipId": "calibration-cal-walking-knife-01-43fb67c6",
+      "split": "calibration",
+      "sourceFilename": "cal_walking_knife_01.mp4",
+      "videoSha256": "43fb67c6411938bd88c2698ca9233f58f6fb6987ae9d2f7b24a2b38e170be56b",
+      "annotationStatus": "HUMAN_VERIFIED_COMPLETE_CLIP_CONSTANT",
+      "action": "WALKING",
+      "knifePresent": true,
+      "actionConstant": true,
+      "knifeConstant": true,
+      "watchedComplete": true,
+      "annotator": "lyy",
+      "conditions": {
+        "lowLight": false,
+        "occlusion": false,
+        "smallKnife": true
+      },
+      "notes": ""
+    },
+    {
+      "clipId": "calibration-cal-working-knife-02-dfd917f8",
+      "split": "calibration",
+      "sourceFilename": "cal_working_knife_02.mp4",
+      "videoSha256": "dfd917f8126de358e2d86bbab06ee918bb824320e7aa18350db88b64b6173a90",
+      "annotationStatus": "HUMAN_VERIFIED_COMPLETE_CLIP_CONSTANT",
+      "action": "WORKING",
+      "knifePresent": true,
+      "actionConstant": true,
+      "knifeConstant": true,
+      "watchedComplete": true,
+      "annotator": "lyy",
+      "conditions": {
+        "lowLight": false,
+        "occlusion": false,
+        "smallKnife": true
+      },
+      "notes": ""
+    },
+    {
+      "clipId": "calibration-cal-working-no-knife-01-340a3274",
+      "split": "calibration",
+      "sourceFilename": "cal_working_no_knife_01.mp4",
+      "videoSha256": "340a3274e80ce22bb95fbfd8c16dec2f4f3907b97434cbc8787f5479a53a5970",
+      "annotationStatus": "HUMAN_VERIFIED_COMPLETE_CLIP_CONSTANT",
+      "action": "WORKING",
+      "knifePresent": false,
+      "actionConstant": true,
+      "knifeConstant": true,
+      "watchedComplete": true,
+      "annotator": "lyy",
+      "conditions": {
+        "lowLight": false,
+        "occlusion": false,
+        "smallKnife": false
+      },
+      "notes": ""
+    },
+    {
+      "clipId": "test_held_out-test-falling-no-knife-lowlight-01-74afd8c3",
+      "split": "test",
+      "sourceFilename": "test_falling_no_knife_lowlight_01.mp4",
+      "videoSha256": "74afd8c3a11aed1ca106087e0ff72f80f8e3c3a77b5412a72f48d8a4bbd7c16c",
+      "annotationStatus": "HUMAN_VERIFIED_COMPLETE_CLIP_CONSTANT",
+      "action": "FALLING",
+      "knifePresent": false,
+      "actionConstant": true,
+      "knifeConstant": true,
+      "watchedComplete": true,
+      "annotator": "lyy",
+      "conditions": {
+        "lowLight": true,
+        "occlusion": false,
+        "smallKnife": false
+      },
+      "notes": ""
+    },
+    {
+      "clipId": "test_held_out-test-fighting-knife-01-220ca3a7",
+      "split": "test",
+      "sourceFilename": "test_fighting_knife_01.mp4",
+      "videoSha256": "220ca3a7923348f4d5bce0e4748728fbc37610e5f70614e47f15287767910d48",
+      "annotationStatus": "HUMAN_VERIFIED_COMPLETE_CLIP_CONSTANT",
+      "action": "FIGHTING",
+      "knifePresent": true,
+      "actionConstant": true,
+      "knifeConstant": true,
+      "watchedComplete": true,
+      "annotator": "lyy",
+      "conditions": {
+        "lowLight": false,
+        "occlusion": false,
+        "smallKnife": true
+      },
+      "notes": ""
+    },
+    {
+      "clipId": "test_held_out-test-idle-no-knife-hard-01-99eccdca",
+      "split": "test",
+      "sourceFilename": "test_idle_no_knife_hard_01.mp4",
+      "videoSha256": "99eccdca1aa929948888231b176ecec057948f933deaf063b2715571e01e6572",
+      "annotationStatus": "HUMAN_VERIFIED_COMPLETE_CLIP_CONSTANT",
+      "action": "IDLE",
+      "knifePresent": false,
+      "actionConstant": true,
+      "knifeConstant": true,
+      "watchedComplete": true,
+      "annotator": "lyy",
+      "conditions": {
+        "lowLight": true,
+        "occlusion": false,
+        "smallKnife": false
+      },
+      "notes": ""
+    },
+    {
+      "clipId": "test_held_out-test-walking-knife-occluded-01-d6d5cefa",
+      "split": "test",
+      "sourceFilename": "test_walking_knife_occluded_01.mp4",
+      "videoSha256": "d6d5cefad1af6dfcfbdd7d34b442f4a0133692c2f927d3d36de6d0f9f49946fa",
+      "annotationStatus": "HUMAN_VERIFIED_COMPLETE_CLIP_CONSTANT",
+      "action": "WALKING",
+      "knifePresent": true,
+      "actionConstant": true,
+      "knifeConstant": true,
+      "watchedComplete": true,
+      "annotator": "lyy",
+      "conditions": {
+        "lowLight": false,
+        "occlusion": false,
+        "smallKnife": true
+      },
+      "notes": ""
+    },
+    {
+      "clipId": "test_held_out-test-working-knife-small-01-1c031a36",
+      "split": "test",
+      "sourceFilename": "test_working_knife_small_01.mp4",
+      "videoSha256": "1c031a36dd987aa235b068f7ad6be87069ba197a2012e80097c40c62440904c5",
+      "annotationStatus": "HUMAN_VERIFIED_COMPLETE_CLIP_CONSTANT",
+      "action": "WORKING",
+      "knifePresent": true,
+      "actionConstant": true,
+      "knifeConstant": true,
+      "watchedComplete": true,
+      "annotator": "lyy",
+      "conditions": {
+        "lowLight": false,
+        "occlusion": true,
+        "smallKnife": true
+      },
+      "notes": ""
+    },
+    {
+      "clipId": "test_held_out-test-working-no-knife-01-eb32b480",
+      "split": "test",
+      "sourceFilename": "test_working_no_knife_01.mp4",
+      "videoSha256": "eb32b4802093c62278c6ea4de39fde73297f9225c33456ff35fa716a7a71f227",
+      "annotationStatus": "HUMAN_VERIFIED_COMPLETE_CLIP_CONSTANT",
+      "action": "WORKING",
+      "knifePresent": false,
+      "actionConstant": true,
+      "knifeConstant": true,
+      "watchedComplete": true,
+      "annotator": "lyy",
+      "conditions": {
+        "lowLight": false,
+        "occlusion": false,
+        "smallKnife": false
+      },
+      "notes": ""
+    }
+  ]
+}

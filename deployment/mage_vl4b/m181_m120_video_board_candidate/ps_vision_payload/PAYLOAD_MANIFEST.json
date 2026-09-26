@@ -1,0 +1,33 @@
+{
+  "date": "2026-09-01T09:23:14+08:00",
+  "gate": "M181-M120-PS-high-precision-vision-payload",
+  "status": "PASS",
+  "route": "PS BF16 visual tower + M120/M89X2 FPGA language/head",
+  "source_payload_manifest_sha256": "de6db59edacd9ab73f5db1d7c561514c2018e51e343f2de39e8247b9c73b1702",
+  "files": [
+    {
+      "bytes": 3243,
+      "path": "config.json",
+      "sha256": "fd4621212569e893ce2caa110431fde73f3cc1a1d92e1b8320bb4e0cfbcad34a"
+    },
+    {
+      "bytes": 4926,
+      "path": "configuration_mage_vl.py",
+      "sha256": "7e3da0c90726ef33da4f0362b3c71dc28650003f1cc11e061d3e99404a8bfed8"
+    },
+    {
+      "bytes": 72783,
+      "path": "modeling_mage_vl.py",
+      "sha256": "3fe8bb1e40fa38db4ae08da097ee1238aa4258c4d454e66fe93a44d08ab641ec"
+    },
+    {
+      "bytes": 660770912,
+      "path": "vision_bf16.safetensors",
+      "sha256": "312065d24f13432406b2016b02d28ee213ca545287748808a46796e05d36be0e"
+    }
+  ],
+  "tensor_count": 297,
+  "tensor_bytes": 660739072,
+  "rejected_route": "M62 visual W4A8 is not promoted because its semantic gate passed only 2/3 cases",
+  "stable_rollback_preserved": true
+}

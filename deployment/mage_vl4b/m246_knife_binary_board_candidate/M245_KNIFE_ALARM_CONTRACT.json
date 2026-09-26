@@ -1,0 +1,31 @@
+{
+  "gate": "M245-knife-alert-contract-offline",
+  "status": "UNVERIFIED_UNTIL_TEST_RUN",
+  "input_contract": {
+    "window_frames": 4,
+    "model_output_codes": {
+      "1": "PRESENT",
+      "0": "ABSENT",
+      "?": "UNCERTAIN"
+    },
+    "optional_detector_score_range": [0.0, 1.0]
+  },
+  "alarm_policy": {
+    "score_alarm_threshold": 0.8,
+    "score_safe_threshold": 0.2,
+    "positive_windows_to_alarm": 1,
+    "absent_windows_to_clear": 2,
+    "uncertainty_never_clears_active_alarm": true,
+    "thresholds_calibrated": false
+  },
+  "evidence_required": [
+    "window_index",
+    "four_frame_sequences",
+    "evidence_sha256",
+    "capture_timestamp",
+    "raw_model_output",
+    "build_id",
+    "model_identity"
+  ],
+  "scope": "Alarm state-machine contract only; not a knife-recognition accuracy, board, Web, latency, or real-time PASS."
+}

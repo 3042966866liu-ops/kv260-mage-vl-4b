@@ -1,0 +1,19 @@
+scripts/preflight.py text eol=lf
+scripts/check_release.py text eol=lf
+scripts/run_demo.sh text eol=lf
+configs/*.json text eol=lf
+docs/** text eol=lf
+*.md text eol=lf
+deployment/** -text
+hls/** -text
+bact/** -text
+tmp/** -text
+data/** -text
+experiments/** -text
+model_tools/** -text
+scripts/m3*.py -text
+scripts/m325*.sh -text
+scripts/test_m325*.py -text
+scripts/generate_kv260_mage_vl_codebook.py -text
+M324_LATEST_BOARD_PERFORMANCE_REPORT.md -text
+M325_FULL_SESSION_PERFORMANCE_REPORT.md -text

@@ -1,0 +1,201 @@
+{
+  "files": [
+    {
+      "path": "decode_one_board_transaction.py",
+      "bytes": 4578,
+      "sha256": "169193355b328219844e30645d396d50d80dba516528a10594ecfd45571fcb5b"
+    },
+    {
+      "path": "decode_one_board_protocol.py",
+      "bytes": 4583,
+      "sha256": "6ab5ec47f89ddbeb82c1dbeb8d65f34d7196ed09527b769652c398a97d087d27"
+    },
+    {
+      "path": "op00_stable_probe.py",
+      "bytes": 10909,
+      "sha256": "c44c31451b4e8e2af70bac7eb47f430489ec7176747868efa0b41be8b6c9824f"
+    },
+    {
+      "path": "board_safety.py",
+      "bytes": 880,
+      "sha256": "18393fcac1a99831c28901a2484477005cc8b667462bbaef68e693029a048645"
+    },
+    {
+      "path": "measurement.py",
+      "bytes": 7152,
+      "sha256": "973d0354c1b019987b8f777f149ecb418db897e1b9f771b10c0c03b4bf49b23e"
+    },
+    {
+      "path": "m120_board_common.py",
+      "bytes": 3619,
+      "sha256": "9e72e022a7f6e86992df575125545330405b79ded3c23185917a676c70a6ade3"
+    },
+    {
+      "path": "m120_board_env_preflight.py",
+      "bytes": 4582,
+      "sha256": "7cb209d0810af25b87e1caee5cbc34f8b7d50f6dea7a5d76c4fd5a32a348ed46"
+    },
+    {
+      "path": "decode_one_env_preflight.py",
+      "bytes": 4608,
+      "sha256": "7c77760f9668da0d8e871239f3256cdc4a153576e8317ba7e22c0cf0ac75220e"
+    },
+    {
+      "path": "overlay/op01_decode_one.bit",
+      "bytes": 7797914,
+      "sha256": "955574611198b37c26cd2b82deacae50e8f7019902c563803f2721f04c54be68"
+    },
+    {
+      "path": "overlay/op01_decode_one.hwh",
+      "bytes": 493494,
+      "sha256": "69e12b61dc2a4f0a84f31d09be9b534664d9b322117b861191692be6135bec64"
+    },
+    {
+      "path": "evidence/implementation.log",
+      "bytes": 207391,
+      "sha256": "c646952d681d3ab27c4ccd24391d6fa4f9f13d0a886c4fcb55fa7a8a7ebb74f6"
+    },
+    {
+      "path": "evidence/route_gate.txt",
+      "bytes": 72,
+      "sha256": "21ddddec3d3138f0d414f95716a5e3fd6b89855d794048b3391b87bb201bb8b9"
+    },
+    {
+      "path": "evidence/impl_utilization.rpt",
+      "bytes": 12961,
+      "sha256": "ea579b57509316e33bb0b62a9043cb984b99d95955de340ee051e1047db54071"
+    },
+    {
+      "path": "evidence/impl_timing_summary.rpt",
+      "bytes": 666159,
+      "sha256": "a55525f6414857da85f0edff256434eb80a5a6bc06441c9fe11805d2260ca93b"
+    },
+    {
+      "path": "evidence/impl_drc.rpt",
+      "bytes": 1759065,
+      "sha256": "f6ff0be5f301f800147c3e67f5364e99b3fc1785bcfbe1e955e07d634697f487"
+    },
+    {
+      "path": "evidence/impl_route_status.rpt",
+      "bytes": 651,
+      "sha256": "49402adbf745c0645580365c3fa209ae09ba747cf57a0575a024cdc6733785d5"
+    },
+    {
+      "path": "evidence/preflight_gate.txt",
+      "bytes": 314,
+      "sha256": "611292f645a74633320ec6fa797762a2a2cdba1af81181b89a861dcf6326a130"
+    },
+    {
+      "path": "evidence/address_audit.txt",
+      "bytes": 1371,
+      "sha256": "6ea8c609ca6af6350734b9f4d0759de9ab4dc6389152b4daa4e782316e5626e0"
+    },
+    {
+      "path": "ARTIFACT_MANIFEST.json",
+      "bytes": 2208,
+      "sha256": "75fbe60f73a18d76074be9c5fd5f7c7fa836d877c4db100b47b98882b947b37c"
+    },
+    {
+      "path": "board_decode_one_layer.py",
+      "bytes": 14710,
+      "sha256": "0e545c524a8fabbababb0fc05ed3aacb42a41a1352474ef1d5fc7cddeb2a39d5"
+    },
+    {
+      "path": "decode_one_runtime_adapter.py",
+      "bytes": 2450,
+      "sha256": "1e906f939efd6da6ddfce42de5c8f4671849a953072b021352add7597000d050"
+    },
+    {
+      "path": "decode_one_layer_probe.py",
+      "bytes": 1722,
+      "sha256": "fe4cf2bdf86226046038a7b2a7942c1006cecef62a9edc5791a2fc2c6bd175b1"
+    },
+    {
+      "path": "decode_one_policy.py",
+      "bytes": 1322,
+      "sha256": "2093c9d374ae1779d795a86ecbf1484e1cce7df3868f318265326a9a34e63b24"
+    },
+    {
+      "path": "decode_checkpoint.py",
+      "bytes": 3781,
+      "sha256": "bd3c82d2b6713d1ce0bf19236ab530ec991161f2d41a7629cc10c78cc859ba1d"
+    },
+    {
+      "path": "decode_trace.py",
+      "bytes": 4177,
+      "sha256": "05dbc3c8a2c4664475aabcba7256c920b4efab029d14fba4e9e9bfc8581b2bcf"
+    },
+    {
+      "path": "op01_support.py",
+      "bytes": 2293,
+      "sha256": "fe249829deb0d28be95d4c3d912fbcf7e238ee164a0eb215a59391ea692710ad"
+    },
+    {
+      "path": "sys_config.json",
+      "bytes": 1583,
+      "sha256": "9667dcf5ad6fa9fd9443079e63a318dd08a5c659c88e8a5dce9badd777bf2636"
+    },
+    {
+      "path": "checkpoint_plan.json",
+      "bytes": 642,
+      "sha256": "793777e90be33c85498305ef01e4a27ba193e7892b0f84edd15d78b863f3f9e8"
+    },
+    {
+      "path": "stable_base.py",
+      "bytes": 23357,
+      "sha256": "5d53ea406e57de88f8c14d9bc4e1cb0c0049ff0b8f4bcf620e05745fcd82b201"
+    },
+    {
+      "path": "candidate_base.py",
+      "bytes": 23357,
+      "sha256": "87257670cf2c334ff5bae6274cbca94861bf422ace7c3c2a70a4a705093c2443"
+    },
+    {
+      "path": "run_layer.sh",
+      "bytes": 364,
+      "sha256": "f7d6cb2c9b8a588f9f8dd81a9746205d55b4dbae73905b1b5e7cd3133679257b"
+    },
+    {
+      "path": "decode_diagnostic.py",
+      "bytes": 5927,
+      "sha256": "e720426f941b25a4d0ae5980b1783b03905343901db8fd3aa5e3a4507942cb30"
+    },
+    {
+      "path": "decode_io_trace.py",
+      "bytes": 1512,
+      "sha256": "216cd05478c263693b129f6b4bcefb9720e9b4eafceef117fa37c98cbdb2a321"
+    },
+    {
+      "path": "lifecycle_reads.py",
+      "bytes": 1876,
+      "sha256": "183e4aad5fbb88f7d2baffe8bdd955a025acdfb1fd57400ea7c7aecc638af194"
+    },
+    {
+      "path": "summarize_decode_trace.py",
+      "bytes": 3814,
+      "sha256": "f769e58569ec26782a85813da06ed6d1ce71ad3320cff4b92a387e7616740aca"
+    },
+    {
+      "path": "transfer_trace.py",
+      "bytes": 2253,
+      "sha256": "319256f09211d3a9f66d80b1404611fd306831589613322964e51d7e954b1ffc"
+    },
+    {
+      "path": "lifecycle_read_plan.json",
+      "bytes": 197579,
+      "sha256": "8e435ca9674e233be6dbb3c4ac40c3dee116471d26e0a4740b57f9104e70fe88"
+    },
+    {
+      "path": "layer_gate.json",
+      "bytes": 4063,
+      "sha256": "4950a384c0d544f7ec5f40b1b9ee40936ac3fcc82c1387dc87ca51b313965c6e"
+    }
+  ],
+  "file_count": 38,
+  "total_bytes": 11279293,
+  "build_id": "0x4F503131",
+  "formal_promotion_allowed": false,
+  "capacity_status": "STOPPED_BY_USER_NOT_PASS",
+  "layer_gate_sha256": "4950a384c0d544f7ec5f40b1b9ee40936ac3fcc82c1387dc87ca51b313965c6e",
+  "scope": "Matched KV852 one-step diagnostic; not formal throughput"
+}

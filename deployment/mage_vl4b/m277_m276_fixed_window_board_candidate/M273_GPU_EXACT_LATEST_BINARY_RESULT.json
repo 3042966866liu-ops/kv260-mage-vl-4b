@@ -1,0 +1,81 @@
+{
+  "date": "2026-09-02",
+  "gate": "M273-official-GPU-exact-latest-global-detail-binary",
+  "status": "PASS_EXACT_LATEST_VIEW_SMALL_SUITE",
+  "classification": "Exact boardable NumPy view and official Mage-VL NF4/BF16 four-example regression only; not calibrated accuracy, board semantics, TTFT or promotion.",
+  "predecessor_m272_sha256": "46aa16a636c5008ad65e51caad73da4d55f0da15cf4cc266ed53f59d8183d4f9",
+  "source_frame_policy": "latest alarm frame only",
+  "views": [
+    "exact 2x2 area-average global 224",
+    "exact centered native 224 detail"
+  ],
+  "prompt": "[TELLME_KNIFE_BINARY_V2] Inspect these video views. Answer exactly 1 if a knife is visible, otherwise 0:",
+  "records": [
+    {
+      "name": "motorcycle_person_no_knife",
+      "expected": 0,
+      "decision": 0,
+      "pass": true,
+      "no_logit": 19.5,
+      "yes_logit": 16.875,
+      "margin_yes_minus_no": -2.625,
+      "prompt_tokens": 164,
+      "visual_tokens": 98,
+      "forward_ms": 1093.5018529999993
+    },
+    {
+      "name": "soccer_people_no_knife",
+      "expected": 0,
+      "decision": 0,
+      "pass": true,
+      "no_logit": 19.125,
+      "yes_logit": 17.5,
+      "margin_yes_minus_no": -1.625,
+      "prompt_tokens": 164,
+      "visual_tokens": 98,
+      "forward_ms": 125.80136799999764
+    },
+    {
+      "name": "dog_no_person_no_knife",
+      "expected": 0,
+      "decision": 0,
+      "pass": true,
+      "no_logit": 19.75,
+      "yes_logit": 16.75,
+      "margin_yes_minus_no": -3.0,
+      "prompt_tokens": 164,
+      "visual_tokens": 98,
+      "forward_ms": 93.64815800000059
+    },
+    {
+      "name": "businesswoman_knife_positive",
+      "expected": 1,
+      "decision": 1,
+      "pass": true,
+      "no_logit": 17.0,
+      "yes_logit": 19.125,
+      "margin_yes_minus_no": 2.125,
+      "prompt_tokens": 164,
+      "visual_tokens": 98,
+      "forward_ms": 114.29431999999906
+    }
+  ],
+  "suite_pass": true,
+  "visual_tokens": 98,
+  "official_prompt_tokens": 164,
+  "t32_batches": 6,
+  "logical_calls": 932,
+  "call_reduction_vs_m269_percent": 33.14203730272597,
+  "model": "microsoft/Mage-VL",
+  "checkpoint_config_sha256": "fd4621212569e893ce2caa110431fde73f3cc1a1d92e1b8320bb4e0cfbcad34a",
+  "backend": "WSL local CUDA GPU; not KV260",
+  "quantization": "bitsandbytes NF4 4-bit; BF16 compute",
+  "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "load_ms": 5904.975342999996,
+  "semantic_accuracy_passed": false,
+  "threshold_calibrated": false,
+  "active_board_service_changed": false,
+  "stable_rollback_preserved": true,
+  "source_sha256": "70afb533517de44ea723113d780c93930d98d529a7f0a323537e0511d09e6e9e",
+  "next_gate": "Only if PASS, add exact PS runtime/cache and composed import closure before any board package."
+}

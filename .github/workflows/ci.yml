@@ -1,0 +1,22 @@
+name: Offline release checks
+on: [push, pull_request]
+jobs:
+  no-board:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Shell syntax
+        run: bash -n scripts/run_demo.sh
+      - name: Release manifest and source syntax
+        run: python3 scripts/check_release.py
+      - name: Relative HLS include closure
+        run: python3 scripts/audit_hls_includes.py
+      - name: Stable M254 static Python import closure
+        run: python3 scripts/audit_python_closure.py
+      - name: Frozen BACT evidence only
+        run: python3 scripts/m321_reproduce_bact_v2_evidence.py --only all
+      - name: Dry-run must not touch device
+        run: python3 scripts/preflight.py --dry-run --config configs/deployment.example.json

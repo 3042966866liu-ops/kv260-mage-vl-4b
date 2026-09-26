@@ -1,0 +1,771 @@
+{
+  "causal_more_tokens_claim_allowed": false,
+  "classification": "read-only retrospective analysis of original M307/M308 predictions; all 12 clips are now historically seen development data, no new independent held-out",
+  "date": "2026-09-26",
+  "distinct_calibration_only_knife_thresholds": {
+    "bact": 0.3125,
+    "token_count_aware": -0.8125
+  },
+  "five_t32_batches_each": true,
+  "knife_prompt_tokens": {
+    "bact": 159,
+    "count": 144
+  },
+  "logical_language_calls_each": 778,
+  "metrics": {
+    "bact": {
+      "all": {
+        "Q": 0.7416666666666666,
+        "action_macro_f1": 0.7333333333333333,
+        "action_per_class": {
+          "FALLING": {
+            "f1": 1.0,
+            "fn": 0,
+            "fp": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 2,
+            "tp": 2
+          },
+          "FIGHTING": {
+            "f1": 1.0,
+            "fn": 0,
+            "fp": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 2,
+            "tp": 2
+          },
+          "IDLE": {
+            "f1": 0.6666666666666666,
+            "fn": 0,
+            "fp": 2,
+            "precision": 0.5,
+            "recall": 1.0,
+            "support": 2,
+            "tp": 2
+          },
+          "WALKING": {
+            "f1": 0.0,
+            "fn": 2,
+            "fp": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 2,
+            "tp": 0
+          },
+          "WORKING": {
+            "f1": 1.0,
+            "fn": 0,
+            "fp": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 4,
+            "tp": 4
+          }
+        },
+        "clip_ids": [
+          "calibration-cal-falling-no-knife-01-3fd2c968",
+          "calibration-cal-fighting-no-knife-01-f0b10fe2",
+          "calibration-cal-idle-knife-01-364a3160",
+          "calibration-cal-walking-knife-01-43fb67c6",
+          "calibration-cal-working-knife-02-dfd917f8",
+          "calibration-cal-working-no-knife-01-340a3274",
+          "test_held_out-test-falling-no-knife-lowlight-01-74afd8c3",
+          "test_held_out-test-fighting-knife-01-220ca3a7",
+          "test_held_out-test-idle-no-knife-hard-01-99eccdca",
+          "test_held_out-test-walking-knife-occluded-01-d6d5cefa",
+          "test_held_out-test-working-knife-small-01-1c031a36",
+          "test_held_out-test-working-no-knife-01-eb32b480"
+        ],
+        "knife": {
+          "false_alarm_rate": 0.16666666666666666,
+          "false_negative": 2,
+          "false_positive": 1,
+          "recall": 0.6666666666666666,
+          "true_negative": 5,
+          "true_positive": 4
+        },
+        "knife_balanced_accuracy": 0.7499999999999999
+      },
+      "calibration": {
+        "Q": 0.8666666666666667,
+        "action_macro_f1": 0.7333333333333333,
+        "action_per_class": {
+          "FALLING": {
+            "f1": 1.0,
+            "fn": 0,
+            "fp": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 1,
+            "tp": 1
+          },
+          "FIGHTING": {
+            "f1": 1.0,
+            "fn": 0,
+            "fp": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 1,
+            "tp": 1
+          },
+          "IDLE": {
+            "f1": 0.6666666666666666,
+            "fn": 0,
+            "fp": 1,
+            "precision": 0.5,
+            "recall": 1.0,
+            "support": 1,
+            "tp": 1
+          },
+          "WALKING": {
+            "f1": 0.0,
+            "fn": 1,
+            "fp": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 1,
+            "tp": 0
+          },
+          "WORKING": {
+            "f1": 1.0,
+            "fn": 0,
+            "fp": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 2,
+            "tp": 2
+          }
+        },
+        "clip_ids": [
+          "calibration-cal-falling-no-knife-01-3fd2c968",
+          "calibration-cal-fighting-no-knife-01-f0b10fe2",
+          "calibration-cal-idle-knife-01-364a3160",
+          "calibration-cal-walking-knife-01-43fb67c6",
+          "calibration-cal-working-knife-02-dfd917f8",
+          "calibration-cal-working-no-knife-01-340a3274"
+        ],
+        "knife": {
+          "false_alarm_rate": 0.0,
+          "false_negative": 0,
+          "false_positive": 0,
+          "recall": 1.0,
+          "true_negative": 3,
+          "true_positive": 3
+        },
+        "knife_balanced_accuracy": 1.0
+      },
+      "rank_audit": {
+        "all": {
+          "auc_descriptive": 0.7361111111111112,
+          "positive_negative_pairs": 36,
+          "rank_wins_with_half_ties": 26.5
+        },
+        "test": {
+          "auc_descriptive": 0.5,
+          "positive_negative_pairs": 9,
+          "rank_wins_with_half_ties": 4.5
+        }
+      },
+      "test": {
+        "Q": 0.6166666666666667,
+        "action_macro_f1": 0.7333333333333333,
+        "action_per_class": {
+          "FALLING": {
+            "f1": 1.0,
+            "fn": 0,
+            "fp": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 1,
+            "tp": 1
+          },
+          "FIGHTING": {
+            "f1": 1.0,
+            "fn": 0,
+            "fp": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 1,
+            "tp": 1
+          },
+          "IDLE": {
+            "f1": 0.6666666666666666,
+            "fn": 0,
+            "fp": 1,
+            "precision": 0.5,
+            "recall": 1.0,
+            "support": 1,
+            "tp": 1
+          },
+          "WALKING": {
+            "f1": 0.0,
+            "fn": 1,
+            "fp": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 1,
+            "tp": 0
+          },
+          "WORKING": {
+            "f1": 1.0,
+            "fn": 0,
+            "fp": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 2,
+            "tp": 2
+          }
+        },
+        "clip_ids": [
+          "test_held_out-test-falling-no-knife-lowlight-01-74afd8c3",
+          "test_held_out-test-fighting-knife-01-220ca3a7",
+          "test_held_out-test-idle-no-knife-hard-01-99eccdca",
+          "test_held_out-test-walking-knife-occluded-01-d6d5cefa",
+          "test_held_out-test-working-knife-small-01-1c031a36",
+          "test_held_out-test-working-no-knife-01-eb32b480"
+        ],
+        "knife": {
+          "false_alarm_rate": 0.3333333333333333,
+          "false_negative": 2,
+          "false_positive": 1,
+          "recall": 0.3333333333333333,
+          "true_negative": 2,
+          "true_positive": 1
+        },
+        "knife_balanced_accuracy": 0.5
+      }
+    },
+    "token_count_aware": {
+      "all": {
+        "Q": 0.7,
+        "action_macro_f1": 0.7333333333333333,
+        "action_per_class": {
+          "FALLING": {
+            "f1": 1.0,
+            "fn": 0,
+            "fp": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 2,
+            "tp": 2
+          },
+          "FIGHTING": {
+            "f1": 1.0,
+            "fn": 0,
+            "fp": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 2,
+            "tp": 2
+          },
+          "IDLE": {
+            "f1": 0.6666666666666666,
+            "fn": 0,
+            "fp": 2,
+            "precision": 0.5,
+            "recall": 1.0,
+            "support": 2,
+            "tp": 2
+          },
+          "WALKING": {
+            "f1": 0.0,
+            "fn": 2,
+            "fp": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 2,
+            "tp": 0
+          },
+          "WORKING": {
+            "f1": 1.0,
+            "fn": 0,
+            "fp": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 4,
+            "tp": 4
+          }
+        },
+        "clip_ids": [
+          "calibration-cal-falling-no-knife-01-3fd2c968",
+          "calibration-cal-fighting-no-knife-01-f0b10fe2",
+          "calibration-cal-idle-knife-01-364a3160",
+          "calibration-cal-walking-knife-01-43fb67c6",
+          "calibration-cal-working-knife-02-dfd917f8",
+          "calibration-cal-working-no-knife-01-340a3274",
+          "test_held_out-test-falling-no-knife-lowlight-01-74afd8c3",
+          "test_held_out-test-fighting-knife-01-220ca3a7",
+          "test_held_out-test-idle-no-knife-hard-01-99eccdca",
+          "test_held_out-test-walking-knife-occluded-01-d6d5cefa",
+          "test_held_out-test-working-knife-small-01-1c031a36",
+          "test_held_out-test-working-no-knife-01-eb32b480"
+        ],
+        "knife": {
+          "false_alarm_rate": 0.5,
+          "false_negative": 1,
+          "false_positive": 3,
+          "recall": 0.8333333333333334,
+          "true_negative": 3,
+          "true_positive": 5
+        },
+        "knife_balanced_accuracy": 0.6666666666666667
+      },
+      "calibration": {
+        "Q": 0.7833333333333333,
+        "action_macro_f1": 0.7333333333333333,
+        "action_per_class": {
+          "FALLING": {
+            "f1": 1.0,
+            "fn": 0,
+            "fp": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 1,
+            "tp": 1
+          },
+          "FIGHTING": {
+            "f1": 1.0,
+            "fn": 0,
+            "fp": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 1,
+            "tp": 1
+          },
+          "IDLE": {
+            "f1": 0.6666666666666666,
+            "fn": 0,
+            "fp": 1,
+            "precision": 0.5,
+            "recall": 1.0,
+            "support": 1,
+            "tp": 1
+          },
+          "WALKING": {
+            "f1": 0.0,
+            "fn": 1,
+            "fp": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 1,
+            "tp": 0
+          },
+          "WORKING": {
+            "f1": 1.0,
+            "fn": 0,
+            "fp": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 2,
+            "tp": 2
+          }
+        },
+        "clip_ids": [
+          "calibration-cal-falling-no-knife-01-3fd2c968",
+          "calibration-cal-fighting-no-knife-01-f0b10fe2",
+          "calibration-cal-idle-knife-01-364a3160",
+          "calibration-cal-walking-knife-01-43fb67c6",
+          "calibration-cal-working-knife-02-dfd917f8",
+          "calibration-cal-working-no-knife-01-340a3274"
+        ],
+        "knife": {
+          "false_alarm_rate": 0.3333333333333333,
+          "false_negative": 0,
+          "false_positive": 1,
+          "recall": 1.0,
+          "true_negative": 2,
+          "true_positive": 3
+        },
+        "knife_balanced_accuracy": 0.8333333333333334
+      },
+      "rank_audit": {
+        "all": {
+          "auc_descriptive": 0.6944444444444444,
+          "positive_negative_pairs": 36,
+          "rank_wins_with_half_ties": 25.0
+        },
+        "test": {
+          "auc_descriptive": 0.5555555555555556,
+          "positive_negative_pairs": 9,
+          "rank_wins_with_half_ties": 5.0
+        }
+      },
+      "test": {
+        "Q": 0.6166666666666666,
+        "action_macro_f1": 0.7333333333333333,
+        "action_per_class": {
+          "FALLING": {
+            "f1": 1.0,
+            "fn": 0,
+            "fp": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 1,
+            "tp": 1
+          },
+          "FIGHTING": {
+            "f1": 1.0,
+            "fn": 0,
+            "fp": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 1,
+            "tp": 1
+          },
+          "IDLE": {
+            "f1": 0.6666666666666666,
+            "fn": 0,
+            "fp": 1,
+            "precision": 0.5,
+            "recall": 1.0,
+            "support": 1,
+            "tp": 1
+          },
+          "WALKING": {
+            "f1": 0.0,
+            "fn": 1,
+            "fp": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "support": 1,
+            "tp": 0
+          },
+          "WORKING": {
+            "f1": 1.0,
+            "fn": 0,
+            "fp": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "support": 2,
+            "tp": 2
+          }
+        },
+        "clip_ids": [
+          "test_held_out-test-falling-no-knife-lowlight-01-74afd8c3",
+          "test_held_out-test-fighting-knife-01-220ca3a7",
+          "test_held_out-test-idle-no-knife-hard-01-99eccdca",
+          "test_held_out-test-walking-knife-occluded-01-d6d5cefa",
+          "test_held_out-test-working-knife-small-01-1c031a36",
+          "test_held_out-test-working-no-knife-01-eb32b480"
+        ],
+        "knife": {
+          "false_alarm_rate": 0.6666666666666666,
+          "false_negative": 1,
+          "false_positive": 2,
+          "recall": 0.6666666666666666,
+          "true_negative": 1,
+          "true_positive": 2
+        },
+        "knife_balanced_accuracy": 0.49999999999999994
+      }
+    }
+  },
+  "new_board_runs": 0,
+  "new_model_forwards": 0,
+  "next_step": "Keep V0+P0; use new independent labeled clips only if a formal same-batch quality claim is needed. Do not tune selector or threshold from the already opened test split.",
+  "paired_knife_correctness": {
+    "bact_only_correct": 2,
+    "both_correct": 7,
+    "both_wrong": 2,
+    "count_only_correct": 1
+  },
+  "per_clip": [
+    {
+      "action_truth": "FALLING",
+      "bact": {
+        "action_predicted": "FALLING",
+        "knife_correct": true,
+        "knife_predicted": false,
+        "knife_score": 0.125,
+        "threshold": 0.3125
+      },
+      "bact_only_knife_correct": false,
+      "clip_id": "calibration-cal-falling-no-knife-01-3fd2c968",
+      "count": {
+        "action_predicted": "FALLING",
+        "knife_correct": true,
+        "knife_predicted": false,
+        "knife_score": -1.0,
+        "threshold": -0.8125
+      },
+      "count_only_knife_correct": false,
+      "knife_truth": false,
+      "split_in_original_M308": "calibration"
+    },
+    {
+      "action_truth": "FIGHTING",
+      "bact": {
+        "action_predicted": "FIGHTING",
+        "knife_correct": true,
+        "knife_predicted": false,
+        "knife_score": -0.875,
+        "threshold": 0.3125
+      },
+      "bact_only_knife_correct": true,
+      "clip_id": "calibration-cal-fighting-no-knife-01-f0b10fe2",
+      "count": {
+        "action_predicted": "FIGHTING",
+        "knife_correct": false,
+        "knife_predicted": true,
+        "knife_score": -0.5,
+        "threshold": -0.8125
+      },
+      "count_only_knife_correct": false,
+      "knife_truth": false,
+      "split_in_original_M308": "calibration"
+    },
+    {
+      "action_truth": "IDLE",
+      "bact": {
+        "action_predicted": "IDLE",
+        "knife_correct": true,
+        "knife_predicted": true,
+        "knife_score": 0.5,
+        "threshold": 0.3125
+      },
+      "bact_only_knife_correct": false,
+      "clip_id": "calibration-cal-idle-knife-01-364a3160",
+      "count": {
+        "action_predicted": "IDLE",
+        "knife_correct": true,
+        "knife_predicted": true,
+        "knife_score": -0.625,
+        "threshold": -0.8125
+      },
+      "count_only_knife_correct": false,
+      "knife_truth": true,
+      "split_in_original_M308": "calibration"
+    },
+    {
+      "action_truth": "WALKING",
+      "bact": {
+        "action_predicted": "IDLE",
+        "knife_correct": true,
+        "knife_predicted": true,
+        "knife_score": 0.625,
+        "threshold": 0.3125
+      },
+      "bact_only_knife_correct": false,
+      "clip_id": "calibration-cal-walking-knife-01-43fb67c6",
+      "count": {
+        "action_predicted": "IDLE",
+        "knife_correct": true,
+        "knife_predicted": true,
+        "knife_score": -0.5,
+        "threshold": -0.8125
+      },
+      "count_only_knife_correct": false,
+      "knife_truth": true,
+      "split_in_original_M308": "calibration"
+    },
+    {
+      "action_truth": "WORKING",
+      "bact": {
+        "action_predicted": "WORKING",
+        "knife_correct": true,
+        "knife_predicted": true,
+        "knife_score": 4.0,
+        "threshold": 0.3125
+      },
+      "bact_only_knife_correct": false,
+      "clip_id": "calibration-cal-working-knife-02-dfd917f8",
+      "count": {
+        "action_predicted": "WORKING",
+        "knife_correct": true,
+        "knife_predicted": true,
+        "knife_score": 2.5,
+        "threshold": -0.8125
+      },
+      "count_only_knife_correct": false,
+      "knife_truth": true,
+      "split_in_original_M308": "calibration"
+    },
+    {
+      "action_truth": "WORKING",
+      "bact": {
+        "action_predicted": "WORKING",
+        "knife_correct": true,
+        "knife_predicted": false,
+        "knife_score": -0.625,
+        "threshold": 0.3125
+      },
+      "bact_only_knife_correct": false,
+      "clip_id": "calibration-cal-working-no-knife-01-340a3274",
+      "count": {
+        "action_predicted": "WORKING",
+        "knife_correct": true,
+        "knife_predicted": false,
+        "knife_score": -1.75,
+        "threshold": -0.8125
+      },
+      "count_only_knife_correct": false,
+      "knife_truth": false,
+      "split_in_original_M308": "calibration"
+    },
+    {
+      "action_truth": "FALLING",
+      "bact": {
+        "action_predicted": "FALLING",
+        "knife_correct": true,
+        "knife_predicted": false,
+        "knife_score": -0.25,
+        "threshold": 0.3125
+      },
+      "bact_only_knife_correct": false,
+      "clip_id": "test_held_out-test-falling-no-knife-lowlight-01-74afd8c3",
+      "count": {
+        "action_predicted": "FALLING",
+        "knife_correct": true,
+        "knife_predicted": false,
+        "knife_score": -1.625,
+        "threshold": -0.8125
+      },
+      "count_only_knife_correct": false,
+      "knife_truth": false,
+      "split_in_original_M308": "test"
+    },
+    {
+      "action_truth": "FIGHTING",
+      "bact": {
+        "action_predicted": "FIGHTING",
+        "knife_correct": false,
+        "knife_predicted": false,
+        "knife_score": -1.125,
+        "threshold": 0.3125
+      },
+      "bact_only_knife_correct": false,
+      "clip_id": "test_held_out-test-fighting-knife-01-220ca3a7",
+      "count": {
+        "action_predicted": "FIGHTING",
+        "knife_correct": true,
+        "knife_predicted": true,
+        "knife_score": -0.5,
+        "threshold": -0.8125
+      },
+      "count_only_knife_correct": true,
+      "knife_truth": true,
+      "split_in_original_M308": "test"
+    },
+    {
+      "action_truth": "IDLE",
+      "bact": {
+        "action_predicted": "IDLE",
+        "knife_correct": false,
+        "knife_predicted": true,
+        "knife_score": 1.375,
+        "threshold": 0.3125
+      },
+      "bact_only_knife_correct": false,
+      "clip_id": "test_held_out-test-idle-no-knife-hard-01-99eccdca",
+      "count": {
+        "action_predicted": "IDLE",
+        "knife_correct": false,
+        "knife_predicted": true,
+        "knife_score": -0.25,
+        "threshold": -0.8125
+      },
+      "count_only_knife_correct": false,
+      "knife_truth": false,
+      "split_in_original_M308": "test"
+    },
+    {
+      "action_truth": "WALKING",
+      "bact": {
+        "action_predicted": "IDLE",
+        "knife_correct": false,
+        "knife_predicted": false,
+        "knife_score": 0.25,
+        "threshold": 0.3125
+      },
+      "bact_only_knife_correct": false,
+      "clip_id": "test_held_out-test-walking-knife-occluded-01-d6d5cefa",
+      "count": {
+        "action_predicted": "IDLE",
+        "knife_correct": false,
+        "knife_predicted": false,
+        "knife_score": -0.875,
+        "threshold": -0.8125
+      },
+      "count_only_knife_correct": false,
+      "knife_truth": true,
+      "split_in_original_M308": "test"
+    },
+    {
+      "action_truth": "WORKING",
+      "bact": {
+        "action_predicted": "WORKING",
+        "knife_correct": true,
+        "knife_predicted": true,
+        "knife_score": 0.75,
+        "threshold": 0.3125
+      },
+      "bact_only_knife_correct": false,
+      "clip_id": "test_held_out-test-working-knife-small-01-1c031a36",
+      "count": {
+        "action_predicted": "WORKING",
+        "knife_correct": true,
+        "knife_predicted": true,
+        "knife_score": 0.625,
+        "threshold": -0.8125
+      },
+      "count_only_knife_correct": false,
+      "knife_truth": true,
+      "split_in_original_M308": "test"
+    },
+    {
+      "action_truth": "WORKING",
+      "bact": {
+        "action_predicted": "WORKING",
+        "knife_correct": true,
+        "knife_predicted": false,
+        "knife_score": -1.125,
+        "threshold": 0.3125
+      },
+      "bact_only_knife_correct": true,
+      "clip_id": "test_held_out-test-working-no-knife-01-eb32b480",
+      "count": {
+        "action_predicted": "WORKING",
+        "knife_correct": false,
+        "knife_predicted": true,
+        "knife_score": -0.125,
+        "threshold": -0.8125
+      },
+      "count_only_knife_correct": false,
+      "knife_truth": false,
+      "split_in_original_M308": "test"
+    }
+  ],
+  "quality_superiority_claim_allowed": false,
+  "reused_historical_test_not_new_independent": true,
+  "same_action_prompt_and_all_logits": true,
+  "same_visual_tokens": 98,
+  "same_visual_views": [
+    2,
+    3
+  ],
+  "schema": "bact-v2-paired-five-batch-quality-reuse-v1",
+  "source_evidence": {
+    "geometry": {
+      "path": "deployment/mage_vl4b/M306_FOUR_BASELINE_PREDICTION_GEOMETRY_RESULT.json",
+      "sha256": "65cf52d411b84a5f7f5e42e6add71adc27b9e80bfe8e192f5f07b173c5483c54"
+    },
+    "historical_evaluation": {
+      "path": "deployment/mage_vl4b/M308_BACT_HELDOUT_EVALUATION_RESULT.json",
+      "sha256": "0a8e77772f685a74f96ecb4f333a974cce896c3d51803b91876bac2d9288f397"
+    },
+    "labels": {
+      "path": "data/bact_target_scene/M304_HUMAN_REVIEW_LABELS.json",
+      "sha256": "9a60bfe6fc0c58b3340897744d2f9b4297ff39e5ec79cb5ad66fba8bf61d9055"
+    },
+    "predictions": {
+      "path": "data/bact_target_scene/M307_FOUR_BASELINE_PREDICTIONS.json",
+      "sha256": "efc66606649774e02b8971ac4f8cf70e3242f85ea38e5da36d51e3deee288d61"
+    },
+    "selector_config": {
+      "path": "bact/bact_v2_selector_config.json",
+      "sha256": "569700adfaf58b3f22a0ddeabc76156808228ea7f16eada115555b3b6534fa80"
+    }
+  }
+}

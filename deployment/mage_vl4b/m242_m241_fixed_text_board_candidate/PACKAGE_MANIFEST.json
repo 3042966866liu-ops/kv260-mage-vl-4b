@@ -1,0 +1,74 @@
+{
+  "date": "2026-09-01",
+  "gate": "M242-M241-fixed-text-runtime-board-delta",
+  "status": "PASS",
+  "classification": "Clean runtime-only M241 fixed-text delta; no bitstream, weights, quantization, boot, DTB, CMA, partition, or persistent service mutation.",
+  "base_build_id": "0x4D395832",
+  "base_package_manifest_sha256": "406dcca340e4604baeb761445795391c43ec26bd99fa06ffae893d597b17414f",
+  "files": [
+    {
+      "path": "m230_prefill_runtime.py",
+      "bytes": 9341,
+      "sha256": "defbcff1cc36300fff84481f2e9eba7a06174941b568e34b2faa7885efc14df4"
+    },
+    {
+      "path": "m230_verify_package.py",
+      "bytes": 2068,
+      "sha256": "71b4f937c806e4871b714b7fac48af06073bfc8a101211bdecada6faf932f909"
+    },
+    {
+      "path": "m230_video_language_runtime.py",
+      "bytes": 655,
+      "sha256": "2401f60823133f3a5c0656686ff1f7823da8796a154a1e9a888ba16f80138b56"
+    },
+    {
+      "path": "m231_prefill_runtime.py",
+      "bytes": 11534,
+      "sha256": "e7d6aa5a43919405168612b6a5695c14330735f75c87aa269b245e61542750ad"
+    },
+    {
+      "path": "m236_prefill_runtime.py",
+      "bytes": 14354,
+      "sha256": "d8061b561fe4d2a089523fde0d3860684244e76bca9646f255f03134fb50be56"
+    },
+    {
+      "path": "m238_prefill_runtime.py",
+      "bytes": 8974,
+      "sha256": "daf30c982c276b90ac776178ad258e536925dce52de7ab26b06a9473ff9a9d9a"
+    },
+    {
+      "path": "M241_PREDECESSOR_SUMMARY.json",
+      "bytes": 382,
+      "sha256": "94f2d8b12cc060f699e1e188d435a72b6e752ebd70a5d7e8880c2579012b0ace"
+    },
+    {
+      "path": "m241_video_language_runtime.py",
+      "bytes": 4412,
+      "sha256": "24f419ea8e0f130cefc8eb51f916dca3fb945b84f0dc8e73dec9f5376be3ad09"
+    },
+    {
+      "path": "m242_accept_fixed_text.py",
+      "bytes": 3770,
+      "sha256": "8599b4ea8926b57c86ae4835dfd6dbd13369a9de1ce5e91bbf04fc95ae0d4950"
+    },
+    {
+      "path": "m242_fixed_text_gate.py",
+      "bytes": 2070,
+      "sha256": "e289c854f40d134f0552e241db7bd74ab807a3686978cd8c88cb6d99fbdee183"
+    },
+    {
+      "path": "m242_verify_predecessor.py",
+      "bytes": 1694,
+      "sha256": "be3052b2545da24a91afda12d7803cc4870c0183375f0c606bc457859c790ecf"
+    },
+    {
+      "path": "run_m242_fixed_text_gate.sh",
+      "bytes": 4134,
+      "sha256": "273d0acc6558770f19c47fddf37b544d2ddb7f81b0f4d6dd5c0717366779c4dd"
+    }
+  ],
+  "file_count": 12,
+  "total_file_bytes": 63388,
+  "forbidden_cache_file_count": 0,
+  "board_state_changed": false
+}

@@ -1,0 +1,28 @@
+{
+  "gate": "M249-KV260-SSDLite-board-candidate-predecessor-summary",
+  "status": "PASS",
+  "predecessors": {
+    "m193_runtime_repair": {
+      "path": "deployment/mage_vl4b/M193_PILLOW_RUNTIME_REPAIR_RESULT_01.json",
+      "status": "PASS",
+      "sha256": "80cee9d8a23f84424c3d69c6ceb354d7e5e8ba07e9078970227ca5609eee3906"
+    },
+    "m248_fast_safety_contract": {
+      "path": "deployment/mage_vl4b/M248_FAST_SAFETY_OFFLINE_RESULT.json",
+      "status": "PASS_INTERFACE_AND_WEB_CONTRACT_ONLY",
+      "sha256": "130ec1a7fd279a2a2a4d7fb3ef54dbafe1a9f9662b472c6d3674aaaaf52b4343"
+    },
+    "m249_baseline_selection": {
+      "path": "deployment/mage_vl4b/M249_SSDLITE_BASELINE_SELECTION_RESULT.json",
+      "status": "MEASURED_CONTINUE_TO_BOARD_SPEED_GATE",
+      "sha256": "17ddcb70cccbf00c28416a588a0da84f040ee3f5983c288cb4e4f884883d4ed4"
+    },
+    "m249_host_codepath": {
+      "path": "deployment/mage_vl4b/M249_SSDLITE_HOST_CODEPATH_RESULT.json",
+      "status": "PASS_HOST_CODEPATH",
+      "sha256": "0e925f8a5bab4aa32e53e0abd8af2e60d386fee5d7b0295b067e77147411dc47"
+    }
+  },
+  "stable_t32_overlay_preserved": true,
+  "board_execution_run": false
+}

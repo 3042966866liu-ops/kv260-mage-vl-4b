@@ -1,0 +1,54 @@
+{
+  "date": "2026-09-02",
+  "gate": "M246-constrained-knife-runtime-delta",
+  "status": "PASS",
+  "build_id": "0x4D395832",
+  "m243_formal_result_sha256": "80ea2b8e1d142ef4400aa7e545cf62b3c6ae7a5531e4466df06b35758df096c6",
+  "m244_formal_result_sha256": "b134fc00f7e2be60d9444f0e81203561972455d78907cdb6515462a98243e392",
+  "knife_no_token_id": 15,
+  "knife_yes_token_id": 16,
+  "knife_score_calibrated": false,
+  "t64_used": false,
+  "files": [
+    {
+      "path": "knife_alarm.py",
+      "bytes": 5334,
+      "sha256": "dbfc11d4ddef18bf99c0493fd83b3f45ec5116c0e89c48439c293cb601fcb7db"
+    },
+    {
+      "path": "M244_PREDECESSOR_RESULT.json",
+      "bytes": 19355,
+      "sha256": "b134fc00f7e2be60d9444f0e81203561972455d78907cdb6515462a98243e392"
+    },
+    {
+      "path": "M245_KNIFE_ALARM_CONTRACT.json",
+      "bytes": 849,
+      "sha256": "646c8252180e08f526b5d4ec18fb1f8dd82465d35dc6f461eb5e0528a0e3e3de"
+    },
+    {
+      "path": "m246_knife_binary.py",
+      "bytes": 2136,
+      "sha256": "ddf55a13a29719cd57aecb99405a5f939f4439c38a4be72793644f2b6901da4d"
+    },
+    {
+      "path": "m246_runtime_ready_probe.py",
+      "bytes": 5553,
+      "sha256": "3d9a66c287e3404cd5f594b88e22cab2149ed1447ea0d8ba56813b0f85b23a2a"
+    },
+    {
+      "path": "m246_verify_package.py",
+      "bytes": 3035,
+      "sha256": "d99a71738cbe40095904839d3d7926a6a8a8f244a3bc1aa4240970ceb10cfc68"
+    },
+    {
+      "path": "m246_video_server.py",
+      "bytes": 6910,
+      "sha256": "b74f6ae0ec457974f44602029d4fe639211173a4c678192a0f1bb751bc8de101"
+    },
+    {
+      "path": "run_m246_knife_runtime_gate.sh",
+      "bytes": 4001,
+      "sha256": "fcd74b0a310420f2af0d97251674660dc3909a5023afc0b852b6029c936b94a1"
+    }
+  ]
+}

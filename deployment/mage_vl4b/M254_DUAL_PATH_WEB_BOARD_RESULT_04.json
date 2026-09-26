@@ -1,0 +1,30 @@
+{
+  "date": "2026-09-02",
+  "gate": "M254-KV260-dual-path-Web-runtime-board",
+  "status": "PASS_CANDIDATE_SERVICE_ACTIVE",
+  "classification": "Real KV260 no-frame M253-fast plus M243/M238/M241 semantic-runtime identity and service activation; not frame inference, target-scene accuracy, semantic output, alarm latency, or full Web acceptance.",
+  "package_manifest_sha256": "b28d3618f03b97dc2e756dbf0dbb056aed83266a0c9a5575dd014344d3f6a4a0",
+  "measurement": {
+    "date": "2026-09-02",
+    "gate": "M254-KV260-dual-path-Web-runtime-readiness",
+    "status": "PASS",
+    "classification": "Real KV260 hash-locked no-frame service/runtime identity only; not frame inference, target-scene accuracy, semantic output, alarm latency, or full Web acceptance.",
+    "package_manifest_sha256": "b28d3618f03b97dc2e756dbf0dbb056aed83266a0c9a5575dd014344d3f6a4a0",
+    "pid": 148909,
+    "runtime_ready_elapsed_ms": 127739.2035810044,
+    "fast_runtime_load_count": 1,
+    "fast_frames_submitted": 0,
+    "semantic_policy": "alarm-only-capacity-one",
+    "web_runtime_class": "M243VideoRuntime",
+    "web_board_runtime_class": "M238PrefillRuntime",
+    "web_language_model_class": "M241VideoLanguageModel",
+    "web_language_runtime": "M243-M238-T32-pack-prefetch-fused-parse",
+    "web_prefill_attention": "M241-grouped-GQA-reference-RoPE",
+    "t64_used": false,
+    "stable_t32_overlay_preserved": true,
+    "next_gate": "Send labelled knife/non-knife frames through the Web endpoint; require immediate M253 safety_result before optional M243/M241 review and record target-scene metrics."
+  },
+  "uart_log_sha256": "1884b3f8bb567a8088f47f143fe93f7ff537ab326e1085a416aabdbb9d9fd0f6",
+  "stable_t32_overlay_preserved": true,
+  "next_gate": "Run labelled knife/non-knife frames through the Web endpoint and require immediate M253 safety_result before optional M243/M241 review."
+}

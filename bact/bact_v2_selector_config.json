@@ -1,0 +1,120 @@
+{
+  "schema": "tellme-bact-v2-selector-config-v1",
+  "frozenOn": "2026-09-03",
+  "sourcePolicy": "Calibration/inference-time proxy fixture only; no M304/M308 human outcome or filename-hint field is permitted.",
+  "hardware": {
+    "buildId": "0x4D395832",
+    "kernel": "mage_m120_m89x2_0",
+    "tokenGranularity": 32,
+    "languageCallsPerBatch": 154,
+    "fixedCalls": 8
+  },
+  "bandRanges": {
+    "B4": [113, 128],
+    "B5": [145, 160],
+    "B6": [161, 192]
+  },
+  "proxyWeights": {
+    "visual_importance": 0.5,
+    "view_coverage": 0.3,
+    "prompt_deletion": 0.2
+  },
+  "maximumSemanticLossProxy": 0.1,
+  "candidates": [
+    {
+      "candidate_id": "b4-visual-only-128",
+      "adjustment_family": "visual_only",
+      "view_indices": [0, 1, 2, 3],
+      "visual_tokens_per_view": [10, 10, 10, 10],
+      "prompt_id": "knife-v1-88",
+      "text_tokens": 88,
+      "target_band": "B4",
+      "proxy": {"visual_importance_loss": 0.3, "view_coverage_loss": 0.0, "prompt_deletion_cost": 0.0}
+    },
+    {
+      "candidate_id": "b4-visual-prompt-128",
+      "adjustment_family": "visual_plus_prompt",
+      "view_indices": [0, 1, 2, 3],
+      "visual_tokens_per_view": [16, 16, 16, 16],
+      "prompt_id": "knife-compact-64",
+      "text_tokens": 64,
+      "target_band": "B4",
+      "proxy": {"visual_importance_loss": 0.2, "view_coverage_loss": 0.0, "prompt_deletion_cost": 0.25}
+    },
+    {
+      "candidate_id": "b4-joint-127",
+      "adjustment_family": "view_visual_prompt_joint",
+      "view_indices": [2],
+      "visual_tokens_per_view": [49],
+      "prompt_id": "knife-joint-78",
+      "text_tokens": 78,
+      "target_band": "B4",
+      "proxy": {"visual_importance_loss": 0.12, "view_coverage_loss": 0.24, "prompt_deletion_cost": 0.12}
+    },
+    {
+      "candidate_id": "b5-visual-only-160",
+      "adjustment_family": "visual_only",
+      "view_indices": [0, 1, 2, 3],
+      "visual_tokens_per_view": [18, 18, 18, 18],
+      "prompt_id": "knife-v1-88",
+      "text_tokens": 88,
+      "target_band": "B5",
+      "proxy": {"visual_importance_loss": 0.22, "view_coverage_loss": 0.0, "prompt_deletion_cost": 0.0}
+    },
+    {
+      "candidate_id": "b5-visual-prompt-150",
+      "adjustment_family": "visual_plus_prompt",
+      "view_indices": [0, 1, 2, 3],
+      "visual_tokens_per_view": [20, 20, 20, 20],
+      "prompt_id": "knife-compact-70",
+      "text_tokens": 70,
+      "target_band": "B5",
+      "proxy": {"visual_importance_loss": 0.16, "view_coverage_loss": 0.0, "prompt_deletion_cost": 0.19}
+    },
+    {
+      "candidate_id": "bact-159",
+      "adjustment_family": "view_visual_prompt_joint",
+      "view_indices": [2, 3],
+      "visual_tokens_per_view": [49, 49],
+      "prompt_id": "knife-v3-61",
+      "text_tokens": 61,
+      "target_band": "B5",
+      "proxy": {"visual_importance_loss": 0.05, "view_coverage_loss": 0.08, "prompt_deletion_cost": 0.08}
+    },
+    {
+      "candidate_id": "b6-visual-only-186",
+      "adjustment_family": "visual_only",
+      "view_indices": [0, 1],
+      "visual_tokens_per_view": [49, 49],
+      "prompt_id": "knife-v1-88",
+      "text_tokens": 88,
+      "target_band": "B6",
+      "proxy": {"visual_importance_loss": 0.06, "view_coverage_loss": 0.08, "prompt_deletion_cost": 0.0}
+    },
+    {
+      "candidate_id": "ratio-164",
+      "adjustment_family": "visual_plus_prompt",
+      "view_indices": [2, 3],
+      "visual_tokens_per_view": [49, 49],
+      "prompt_id": "knife-v2-66",
+      "text_tokens": 66,
+      "target_band": "B6",
+      "proxy": {"visual_importance_loss": 0.04, "view_coverage_loss": 0.08, "prompt_deletion_cost": 0.06}
+    },
+    {
+      "candidate_id": "b6-joint-161",
+      "adjustment_family": "view_visual_prompt_joint",
+      "view_indices": [2, 3],
+      "visual_tokens_per_view": [49, 49],
+      "prompt_id": "knife-joint-63",
+      "text_tokens": 63,
+      "target_band": "B6",
+      "proxy": {"visual_importance_loss": 0.055, "view_coverage_loss": 0.08, "prompt_deletion_cost": 0.075}
+    }
+  ],
+  "frozenComparators": {
+    "count-144": {"totalTokens": 144, "batches": 5, "logicalCalls": 778},
+    "bact-159": {"totalTokens": 159, "batches": 5, "logicalCalls": 778},
+    "ratio-164": {"totalTokens": 164, "batches": 6, "logicalCalls": 932}
+  }
+}

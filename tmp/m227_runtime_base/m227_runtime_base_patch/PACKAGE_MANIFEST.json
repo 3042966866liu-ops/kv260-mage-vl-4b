@@ -1,0 +1,35 @@
+{
+  "date": "2026-09-01",
+  "gate": "M227-runtime-base-compatibility-patch",
+  "status": "PASS",
+  "files": [
+    {
+      "path": "m227_board_restart.sh",
+      "bytes": 3426,
+      "sha256": "a38a6651314a84edd149e77bd13125304ffc5b011bd37f769debfa5e882a1644"
+    },
+    {
+      "path": "m227_health_probe.py",
+      "bytes": 2136,
+      "sha256": "10d657324b8c75c77dea9e74be1eaaf6d477709a09f15f146b4c9199dcba37be"
+    },
+    {
+      "path": "m227_import_preflight.py",
+      "bytes": 664,
+      "sha256": "32b5a157e9354a0b46ca277bba80145e27ad3ae78e411e18ee8ef7a12802d5fc"
+    },
+    {
+      "path": "m227_verify_patch.py",
+      "bytes": 1251,
+      "sha256": "9740e598cb1b0e67daceb3b97e6180c17ed1a2447549f4641f5964ebaba4cdec"
+    },
+    {
+      "path": "ps_vision_runtime.py",
+      "bytes": 17545,
+      "sha256": "ecaa55370f8fbb222ebdcdb55252eb19a3ad31d05e6236ba9138eac3ed11ae53"
+    }
+  ],
+  "file_count": 5,
+  "persistent_boot_dtb_cma_partitions_services_changed": false,
+  "stable_rollback_preserved": true
+}

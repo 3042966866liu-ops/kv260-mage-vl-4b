@@ -1,0 +1,954 @@
+{
+  "backend": "WSL CPU exact reconstructed M120 weights plus 253 A8-G64 hooks",
+  "baselines": {
+    "bact": {
+      "candidateId": "bact-159",
+      "predictions": [
+        {
+          "actionLogits": {
+            "FALLING": 13.75,
+            "FIGHTING": 13.3125,
+            "IDLE": 13.25,
+            "WALKING": 12.4375,
+            "WORKING": 13.1875
+          },
+          "clipId": "calibration-cal-falling-no-knife-01-3fd2c968",
+          "evidence": {
+            "actionForwardMs": 1759.4122269999984,
+            "actionPromptTokens": 144,
+            "finite": true,
+            "knifeForwardMs": 2278.0853709999888,
+            "knifePromptTokens": 159,
+            "videoSha256": "3fd2c968a97d82222ac5079dd796aa2e0f77b712ed4dae4263967cb2785cb2e0"
+          },
+          "knifeScore": 0.125
+        },
+        {
+          "actionLogits": {
+            "FALLING": 13.0,
+            "FIGHTING": 15.0,
+            "IDLE": 9.4375,
+            "WALKING": 10.75,
+            "WORKING": 11.5
+          },
+          "clipId": "calibration-cal-fighting-no-knife-01-f0b10fe2",
+          "evidence": {
+            "actionForwardMs": 1981.770900000001,
+            "actionPromptTokens": 144,
+            "finite": true,
+            "knifeForwardMs": 2274.454004000006,
+            "knifePromptTokens": 159,
+            "videoSha256": "f0b10fe23df78a0beda94ff067162c5de0af35073edb0706363c5a83610c3902"
+          },
+          "knifeScore": -0.875
+        },
+        {
+          "actionLogits": {
+            "FALLING": 12.4375,
+            "FIGHTING": 12.375,
+            "IDLE": 13.875,
+            "WALKING": 11.875,
+            "WORKING": 12.9375
+          },
+          "clipId": "calibration-cal-idle-knife-01-364a3160",
+          "evidence": {
+            "actionForwardMs": 1887.0115640000051,
+            "actionPromptTokens": 144,
+            "finite": true,
+            "knifeForwardMs": 2255.451844999982,
+            "knifePromptTokens": 159,
+            "videoSha256": "364a316054d9be0c8550acc3ee0c1d227486ef23045f3b75cb72f9fd0913916f"
+          },
+          "knifeScore": 0.5
+        },
+        {
+          "actionLogits": {
+            "FALLING": 12.25,
+            "FIGHTING": 12.1875,
+            "IDLE": 15.0625,
+            "WALKING": 13.8125,
+            "WORKING": 11.75
+          },
+          "clipId": "calibration-cal-walking-knife-01-43fb67c6",
+          "evidence": {
+            "actionForwardMs": 1995.5258349999951,
+            "actionPromptTokens": 144,
+            "finite": true,
+            "knifeForwardMs": 2028.872406000005,
+            "knifePromptTokens": 159,
+            "videoSha256": "43fb67c6411938bd88c2698ca9233f58f6fb6987ae9d2f7b24a2b38e170be56b"
+          },
+          "knifeScore": 0.625
+        },
+        {
+          "actionLogits": {
+            "FALLING": 10.25,
+            "FIGHTING": 12.75,
+            "IDLE": 9.6875,
+            "WALKING": 11.125,
+            "WORKING": 15.0
+          },
+          "clipId": "calibration-cal-working-knife-02-dfd917f8",
+          "evidence": {
+            "actionForwardMs": 1889.071553000008,
+            "actionPromptTokens": 144,
+            "finite": true,
+            "knifeForwardMs": 2122.4118849999913,
+            "knifePromptTokens": 159,
+            "videoSha256": "dfd917f8126de358e2d86bbab06ee918bb824320e7aa18350db88b64b6173a90"
+          },
+          "knifeScore": 4.0
+        },
+        {
+          "actionLogits": {
+            "FALLING": 10.75,
+            "FIGHTING": 11.75,
+            "IDLE": 13.75,
+            "WALKING": 12.0,
+            "WORKING": 14.25
+          },
+          "clipId": "calibration-cal-working-no-knife-01-340a3274",
+          "evidence": {
+            "actionForwardMs": 1847.2113009999873,
+            "actionPromptTokens": 144,
+            "finite": true,
+            "knifeForwardMs": 2184.227813000007,
+            "knifePromptTokens": 159,
+            "videoSha256": "340a3274e80ce22bb95fbfd8c16dec2f4f3907b97434cbc8787f5479a53a5970"
+          },
+          "knifeScore": -0.625
+        },
+        {
+          "actionLogits": {
+            "FALLING": 15.0625,
+            "FIGHTING": 13.0625,
+            "IDLE": 12.875,
+            "WALKING": 12.375,
+            "WORKING": 12.25
+          },
+          "clipId": "test_held_out-test-falling-no-knife-lowlight-01-74afd8c3",
+          "evidence": {
+            "actionForwardMs": 2086.485377999992,
+            "actionPromptTokens": 144,
+            "finite": true,
+            "knifeForwardMs": 2031.651557999993,
+            "knifePromptTokens": 159,
+            "videoSha256": "74afd8c3a11aed1ca106087e0ff72f80f8e3c3a77b5412a72f48d8a4bbd7c16c"
+          },
+          "knifeScore": -0.25
+        },
+        {
+          "actionLogits": {
+            "FALLING": 13.0,
+            "FIGHTING": 14.9375,
+            "IDLE": 9.8125,
+            "WALKING": 11.3125,
+            "WORKING": 11.8125
+          },
+          "clipId": "test_held_out-test-fighting-knife-01-220ca3a7",
+          "evidence": {
+            "actionForwardMs": 1943.3460569999852,
+            "actionPromptTokens": 144,
+            "finite": true,
+            "knifeForwardMs": 2198.552411999998,
+            "knifePromptTokens": 159,
+            "videoSha256": "220ca3a7923348f4d5bce0e4748728fbc37610e5f70614e47f15287767910d48"
+          },
+          "knifeScore": -1.125
+        },
+        {
+          "actionLogits": {
+            "FALLING": 12.5,
+            "FIGHTING": 12.0,
+            "IDLE": 15.4375,
+            "WALKING": 11.625,
+            "WORKING": 12.9375
+          },
+          "clipId": "test_held_out-test-idle-no-knife-hard-01-99eccdca",
+          "evidence": {
+            "actionForwardMs": 2060.351226000023,
+            "actionPromptTokens": 144,
+            "finite": true,
+            "knifeForwardMs": 1981.7479139999818,
+            "knifePromptTokens": 159,
+            "videoSha256": "99eccdca1aa929948888231b176ecec057948f933deaf063b2715571e01e6572"
+          },
+          "knifeScore": 1.375
+        },
+        {
+          "actionLogits": {
+            "FALLING": 11.6875,
+            "FIGHTING": 12.0625,
+            "IDLE": 15.0625,
+            "WALKING": 14.3125,
+            "WORKING": 12.25
+          },
+          "clipId": "test_held_out-test-walking-knife-occluded-01-d6d5cefa",
+          "evidence": {
+            "actionForwardMs": 1832.462774000021,
+            "actionPromptTokens": 144,
+            "finite": true,
+            "knifeForwardMs": 2216.671758000018,
+            "knifePromptTokens": 159,
+            "videoSha256": "d6d5cefad1af6dfcfbdd7d34b442f4a0133692c2f927d3d36de6d0f9f49946fa"
+          },
+          "knifeScore": 0.25
+        },
+        {
+          "actionLogits": {
+            "FALLING": 10.8125,
+            "FIGHTING": 12.0,
+            "IDLE": 12.4375,
+            "WALKING": 12.8125,
+            "WORKING": 13.9375
+          },
+          "clipId": "test_held_out-test-working-knife-small-01-1c031a36",
+          "evidence": {
+            "actionForwardMs": 2067.457327999989,
+            "actionPromptTokens": 144,
+            "finite": true,
+            "knifeForwardMs": 2039.45631900001,
+            "knifePromptTokens": 159,
+            "videoSha256": "1c031a36dd987aa235b068f7ad6be87069ba197a2012e80097c40c62440904c5"
+          },
+          "knifeScore": 0.75
+        },
+        {
+          "actionLogits": {
+            "FALLING": 8.75,
+            "FIGHTING": 10.8125,
+            "IDLE": 12.4375,
+            "WALKING": 10.75,
+            "WORKING": 14.25
+          },
+          "clipId": "test_held_out-test-working-no-knife-01-eb32b480",
+          "evidence": {
+            "actionForwardMs": 1859.0984820000358,
+            "actionPromptTokens": 144,
+            "finite": true,
+            "knifeForwardMs": 2233.42067599998,
+            "knifePromptTokens": 159,
+            "videoSha256": "eb32b4802093c62278c6ea4de39fde73297f9225c33456ff35fa716a7a71f227"
+          },
+          "knifeScore": -1.125
+        }
+      ]
+    },
+    "fixed_high_quality": {
+      "candidateId": "high-284",
+      "predictions": [
+        {
+          "actionLogits": {
+            "FALLING": 14.3125,
+            "FIGHTING": 13.375,
+            "IDLE": 13.5625,
+            "WALKING": 12.5625,
+            "WORKING": 13.1875
+          },
+          "clipId": "calibration-cal-falling-no-knife-01-3fd2c968",
+          "evidence": {
+            "actionForwardMs": 2889.531828000003,
+            "actionPromptTokens": 258,
+            "finite": true,
+            "knifeForwardMs": 4890.781007000001,
+            "knifePromptTokens": 284,
+            "videoSha256": "3fd2c968a97d82222ac5079dd796aa2e0f77b712ed4dae4263967cb2785cb2e0"
+          },
+          "knifeScore": 0.25
+        },
+        {
+          "actionLogits": {
+            "FALLING": 13.25,
+            "FIGHTING": 14.4375,
+            "IDLE": 9.75,
+            "WALKING": 10.75,
+            "WORKING": 11.0
+          },
+          "clipId": "calibration-cal-fighting-no-knife-01-f0b10fe2",
+          "evidence": {
+            "actionForwardMs": 3088.240474000003,
+            "actionPromptTokens": 258,
+            "finite": true,
+            "knifeForwardMs": 3441.0239120000056,
+            "knifePromptTokens": 284,
+            "videoSha256": "f0b10fe23df78a0beda94ff067162c5de0af35073edb0706363c5a83610c3902"
+          },
+          "knifeScore": -1.0
+        },
+        {
+          "actionLogits": {
+            "FALLING": 11.9375,
+            "FIGHTING": 12.125,
+            "IDLE": 14.75,
+            "WALKING": 11.625,
+            "WORKING": 12.875
+          },
+          "clipId": "calibration-cal-idle-knife-01-364a3160",
+          "evidence": {
+            "actionForwardMs": 3952.7106710000053,
+            "actionPromptTokens": 258,
+            "finite": true,
+            "knifeForwardMs": 4305.924826999998,
+            "knifePromptTokens": 284,
+            "videoSha256": "364a316054d9be0c8550acc3ee0c1d227486ef23045f3b75cb72f9fd0913916f"
+          },
+          "knifeScore": 0.625
+        },
+        {
+          "actionLogits": {
+            "FALLING": 11.4375,
+            "FIGHTING": 11.6875,
+            "IDLE": 15.75,
+            "WALKING": 14.4375,
+            "WORKING": 12.375
+          },
+          "clipId": "calibration-cal-walking-knife-01-43fb67c6",
+          "evidence": {
+            "actionForwardMs": 3236.353587999986,
+            "actionPromptTokens": 258,
+            "finite": true,
+            "knifeForwardMs": 3411.431562999979,
+            "knifePromptTokens": 284,
+            "videoSha256": "43fb67c6411938bd88c2698ca9233f58f6fb6987ae9d2f7b24a2b38e170be56b"
+          },
+          "knifeScore": 2.5
+        },
+        {
+          "actionLogits": {
+            "FALLING": 8.9375,
+            "FIGHTING": 12.75,
+            "IDLE": 11.3125,
+            "WALKING": 11.125,
+            "WORKING": 15.3125
+          },
+          "clipId": "calibration-cal-working-knife-02-dfd917f8",
+          "evidence": {
+            "actionForwardMs": 2854.3060760000003,
+            "actionPromptTokens": 258,
+            "finite": true,
+            "knifeForwardMs": 3286.3332430000014,
+            "knifePromptTokens": 284,
+            "videoSha256": "dfd917f8126de358e2d86bbab06ee918bb824320e7aa18350db88b64b6173a90"
+          },
+          "knifeScore": 2.875
+        },
+        {
+          "actionLogits": {
+            "FALLING": 10.375,
+            "FIGHTING": 11.5625,
+            "IDLE": 14.25,
+            "WALKING": 11.75,
+            "WORKING": 14.0625
+          },
+          "clipId": "calibration-cal-working-no-knife-01-340a3274",
+          "evidence": {
+            "actionForwardMs": 3569.0484389999992,
+            "actionPromptTokens": 258,
+            "finite": true,
+            "knifeForwardMs": 4714.786356000019,
+            "knifePromptTokens": 284,
+            "videoSha256": "340a3274e80ce22bb95fbfd8c16dec2f4f3907b97434cbc8787f5479a53a5970"
+          },
+          "knifeScore": 0.125
+        },
+        {
+          "actionLogits": {
+            "FALLING": 16.0,
+            "FIGHTING": 13.75,
+            "IDLE": 13.0625,
+            "WALKING": 13.1875,
+            "WORKING": 13.0
+          },
+          "clipId": "test_held_out-test-falling-no-knife-lowlight-01-74afd8c3",
+          "evidence": {
+            "actionForwardMs": 3086.7976160000126,
+            "actionPromptTokens": 258,
+            "finite": true,
+            "knifeForwardMs": 3535.4627110000083,
+            "knifePromptTokens": 284,
+            "videoSha256": "74afd8c3a11aed1ca106087e0ff72f80f8e3c3a77b5412a72f48d8a4bbd7c16c"
+          },
+          "knifeScore": -0.5
+        },
+        {
+          "actionLogits": {
+            "FALLING": 13.1875,
+            "FIGHTING": 14.875,
+            "IDLE": 11.75,
+            "WALKING": 11.5625,
+            "WORKING": 12.0
+          },
+          "clipId": "test_held_out-test-fighting-knife-01-220ca3a7",
+          "evidence": {
+            "actionForwardMs": 3063.0775289999974,
+            "actionPromptTokens": 258,
+            "finite": true,
+            "knifeForwardMs": 3472.4615480000125,
+            "knifePromptTokens": 284,
+            "videoSha256": "220ca3a7923348f4d5bce0e4748728fbc37610e5f70614e47f15287767910d48"
+          },
+          "knifeScore": -0.75
+        },
+        {
+          "actionLogits": {
+            "FALLING": 12.5,
+            "FIGHTING": 11.8125,
+            "IDLE": 15.9375,
+            "WALKING": 11.4375,
+            "WORKING": 12.875
+          },
+          "clipId": "test_held_out-test-idle-no-knife-hard-01-99eccdca",
+          "evidence": {
+            "actionForwardMs": 3311.749302999999,
+            "actionPromptTokens": 258,
+            "finite": true,
+            "knifeForwardMs": 3355.1795879999986,
+            "knifePromptTokens": 284,
+            "videoSha256": "99eccdca1aa929948888231b176ecec057948f933deaf063b2715571e01e6572"
+          },
+          "knifeScore": 0.125
+        },
+        {
+          "actionLogits": {
+            "FALLING": 12.125,
+            "FIGHTING": 12.0,
+            "IDLE": 16.0,
+            "WALKING": 14.0625,
+            "WORKING": 12.5625
+          },
+          "clipId": "test_held_out-test-walking-knife-occluded-01-d6d5cefa",
+          "evidence": {
+            "actionForwardMs": 3054.2643289999774,
+            "actionPromptTokens": 258,
+            "finite": true,
+            "knifeForwardMs": 3289.6931579999773,
+            "knifePromptTokens": 284,
+            "videoSha256": "d6d5cefad1af6dfcfbdd7d34b442f4a0133692c2f927d3d36de6d0f9f49946fa"
+          },
+          "knifeScore": -0.5
+        },
+        {
+          "actionLogits": {
+            "FALLING": 9.875,
+            "FIGHTING": 11.625,
+            "IDLE": 15.0,
+            "WALKING": 12.6875,
+            "WORKING": 14.3125
+          },
+          "clipId": "test_held_out-test-working-knife-small-01-1c031a36",
+          "evidence": {
+            "actionForwardMs": 3226.4256870000168,
+            "actionPromptTokens": 258,
+            "finite": true,
+            "knifeForwardMs": 3450.499769999965,
+            "knifePromptTokens": 284,
+            "videoSha256": "1c031a36dd987aa235b068f7ad6be87069ba197a2012e80097c40c62440904c5"
+          },
+          "knifeScore": 1.25
+        },
+        {
+          "actionLogits": {
+            "FALLING": 7.25,
+            "FIGHTING": 10.9375,
+            "IDLE": 12.5,
+            "WALKING": 10.0,
+            "WORKING": 13.75
+          },
+          "clipId": "test_held_out-test-working-no-knife-01-eb32b480",
+          "evidence": {
+            "actionForwardMs": 2851.4118289999715,
+            "actionPromptTokens": 258,
+            "finite": true,
+            "knifeForwardMs": 3424.6311279999873,
+            "knifePromptTokens": 284,
+            "videoSha256": "eb32b4802093c62278c6ea4de39fde73297f9225c33456ff35fa716a7a71f227"
+          },
+          "knifeScore": 0.0
+        }
+      ]
+    },
+    "fixed_ratio_visual_pruning": {
+      "candidateId": "ratio-164",
+      "predictions": [
+        {
+          "actionLogits": {
+            "FALLING": 13.75,
+            "FIGHTING": 13.3125,
+            "IDLE": 13.25,
+            "WALKING": 12.4375,
+            "WORKING": 13.1875
+          },
+          "clipId": "calibration-cal-falling-no-knife-01-3fd2c968",
+          "evidence": {
+            "actionForwardMs": 1927.9268209999998,
+            "actionPromptTokens": 144,
+            "finite": true,
+            "knifeForwardMs": 2820.4380100000035,
+            "knifePromptTokens": 164,
+            "videoSha256": "3fd2c968a97d82222ac5079dd796aa2e0f77b712ed4dae4263967cb2785cb2e0"
+          },
+          "knifeScore": -0.5
+        },
+        {
+          "actionLogits": {
+            "FALLING": 13.0,
+            "FIGHTING": 15.0,
+            "IDLE": 9.4375,
+            "WALKING": 10.75,
+            "WORKING": 11.5
+          },
+          "clipId": "calibration-cal-fighting-no-knife-01-f0b10fe2",
+          "evidence": {
+            "actionForwardMs": 2338.953361999998,
+            "actionPromptTokens": 144,
+            "finite": true,
+            "knifeForwardMs": 1988.4023350000034,
+            "knifePromptTokens": 164,
+            "videoSha256": "f0b10fe23df78a0beda94ff067162c5de0af35073edb0706363c5a83610c3902"
+          },
+          "knifeScore": -1.25
+        },
+        {
+          "actionLogits": {
+            "FALLING": 12.4375,
+            "FIGHTING": 12.375,
+            "IDLE": 13.875,
+            "WALKING": 11.875,
+            "WORKING": 12.9375
+          },
+          "clipId": "calibration-cal-idle-knife-01-364a3160",
+          "evidence": {
+            "actionForwardMs": 1691.1137220000114,
+            "actionPromptTokens": 144,
+            "finite": true,
+            "knifeForwardMs": 2520.396556000009,
+            "knifePromptTokens": 164,
+            "videoSha256": "364a316054d9be0c8550acc3ee0c1d227486ef23045f3b75cb72f9fd0913916f"
+          },
+          "knifeScore": 0.0
+        },
+        {
+          "actionLogits": {
+            "FALLING": 12.25,
+            "FIGHTING": 12.1875,
+            "IDLE": 15.0625,
+            "WALKING": 13.8125,
+            "WORKING": 11.75
+          },
+          "clipId": "calibration-cal-walking-knife-01-43fb67c6",
+          "evidence": {
+            "actionForwardMs": 1809.55946200001,
+            "actionPromptTokens": 144,
+            "finite": true,
+            "knifeForwardMs": 2122.403668000004,
+            "knifePromptTokens": 164,
+            "videoSha256": "43fb67c6411938bd88c2698ca9233f58f6fb6987ae9d2f7b24a2b38e170be56b"
+          },
+          "knifeScore": -0.25
+        },
+        {
+          "actionLogits": {
+            "FALLING": 10.25,
+            "FIGHTING": 12.75,
+            "IDLE": 9.6875,
+            "WALKING": 11.125,
+            "WORKING": 15.0
+          },
+          "clipId": "calibration-cal-working-knife-02-dfd917f8",
+          "evidence": {
+            "actionForwardMs": 1978.0979690000038,
+            "actionPromptTokens": 144,
+            "finite": true,
+            "knifeForwardMs": 2493.502694999989,
+            "knifePromptTokens": 164,
+            "videoSha256": "dfd917f8126de358e2d86bbab06ee918bb824320e7aa18350db88b64b6173a90"
+          },
+          "knifeScore": 3.9375
+        },
+        {
+          "actionLogits": {
+            "FALLING": 10.75,
+            "FIGHTING": 11.75,
+            "IDLE": 13.75,
+            "WALKING": 12.0,
+            "WORKING": 14.25
+          },
+          "clipId": "calibration-cal-working-no-knife-01-340a3274",
+          "evidence": {
+            "actionForwardMs": 2032.7065660000017,
+            "actionPromptTokens": 144,
+            "finite": true,
+            "knifeForwardMs": 2601.8494620000183,
+            "knifePromptTokens": 164,
+            "videoSha256": "340a3274e80ce22bb95fbfd8c16dec2f4f3907b97434cbc8787f5479a53a5970"
+          },
+          "knifeScore": -0.625
+        },
+        {
+          "actionLogits": {
+            "FALLING": 15.0625,
+            "FIGHTING": 13.0625,
+            "IDLE": 12.875,
+            "WALKING": 12.375,
+            "WORKING": 12.25
+          },
+          "clipId": "test_held_out-test-falling-no-knife-lowlight-01-74afd8c3",
+          "evidence": {
+            "actionForwardMs": 1840.521706000004,
+            "actionPromptTokens": 144,
+            "finite": true,
+            "knifeForwardMs": 2014.9458340000024,
+            "knifePromptTokens": 164,
+            "videoSha256": "74afd8c3a11aed1ca106087e0ff72f80f8e3c3a77b5412a72f48d8a4bbd7c16c"
+          },
+          "knifeScore": -1.0
+        },
+        {
+          "actionLogits": {
+            "FALLING": 13.0,
+            "FIGHTING": 14.9375,
+            "IDLE": 9.8125,
+            "WALKING": 11.3125,
+            "WORKING": 11.8125
+          },
+          "clipId": "test_held_out-test-fighting-knife-01-220ca3a7",
+          "evidence": {
+            "actionForwardMs": 1754.0095559999997,
+            "actionPromptTokens": 144,
+            "finite": true,
+            "knifeForwardMs": 2301.9287209999957,
+            "knifePromptTokens": 164,
+            "videoSha256": "220ca3a7923348f4d5bce0e4748728fbc37610e5f70614e47f15287767910d48"
+          },
+          "knifeScore": -1.375
+        },
+        {
+          "actionLogits": {
+            "FALLING": 12.5,
+            "FIGHTING": 12.0,
+            "IDLE": 15.4375,
+            "WALKING": 11.625,
+            "WORKING": 12.9375
+          },
+          "clipId": "test_held_out-test-idle-no-knife-hard-01-99eccdca",
+          "evidence": {
+            "actionForwardMs": 1906.0804899999937,
+            "actionPromptTokens": 144,
+            "finite": true,
+            "knifeForwardMs": 2057.372176000001,
+            "knifePromptTokens": 164,
+            "videoSha256": "99eccdca1aa929948888231b176ecec057948f933deaf063b2715571e01e6572"
+          },
+          "knifeScore": 0.5
+        },
+        {
+          "actionLogits": {
+            "FALLING": 11.6875,
+            "FIGHTING": 12.0625,
+            "IDLE": 15.0625,
+            "WALKING": 14.3125,
+            "WORKING": 12.25
+          },
+          "clipId": "test_held_out-test-walking-knife-occluded-01-d6d5cefa",
+          "evidence": {
+            "actionForwardMs": 2002.5097230000029,
+            "actionPromptTokens": 144,
+            "finite": true,
+            "knifeForwardMs": 2094.2882370000007,
+            "knifePromptTokens": 164,
+            "videoSha256": "d6d5cefad1af6dfcfbdd7d34b442f4a0133692c2f927d3d36de6d0f9f49946fa"
+          },
+          "knifeScore": -0.5
+        },
+        {
+          "actionLogits": {
+            "FALLING": 10.8125,
+            "FIGHTING": 12.0,
+            "IDLE": 12.4375,
+            "WALKING": 12.8125,
+            "WORKING": 13.9375
+          },
+          "clipId": "test_held_out-test-working-knife-small-01-1c031a36",
+          "evidence": {
+            "actionForwardMs": 1963.1507630000442,
+            "actionPromptTokens": 144,
+            "finite": true,
+            "knifeForwardMs": 2208.888454999965,
+            "knifePromptTokens": 164,
+            "videoSha256": "1c031a36dd987aa235b068f7ad6be87069ba197a2012e80097c40c62440904c5"
+          },
+          "knifeScore": 0.75
+        },
+        {
+          "actionLogits": {
+            "FALLING": 8.75,
+            "FIGHTING": 10.8125,
+            "IDLE": 12.4375,
+            "WALKING": 10.75,
+            "WORKING": 14.25
+          },
+          "clipId": "test_held_out-test-working-no-knife-01-eb32b480",
+          "evidence": {
+            "actionForwardMs": 1787.6515290000157,
+            "actionPromptTokens": 144,
+            "finite": true,
+            "knifeForwardMs": 2551.987743999973,
+            "knifePromptTokens": 164,
+            "videoSha256": "eb32b4802093c62278c6ea4de39fde73297f9225c33456ff35fa716a7a71f227"
+          },
+          "knifeScore": -1.125
+        }
+      ]
+    },
+    "token_count_aware": {
+      "candidateId": "count-144",
+      "predictions": [
+        {
+          "actionLogits": {
+            "FALLING": 13.75,
+            "FIGHTING": 13.3125,
+            "IDLE": 13.25,
+            "WALKING": 12.4375,
+            "WORKING": 13.1875
+          },
+          "clipId": "calibration-cal-falling-no-knife-01-3fd2c968",
+          "evidence": {
+            "actionForwardMs": 1747.3043250000019,
+            "actionPromptTokens": 144,
+            "finite": true,
+            "knifeForwardMs": 1792.438438000005,
+            "knifePromptTokens": 144,
+            "videoSha256": "3fd2c968a97d82222ac5079dd796aa2e0f77b712ed4dae4263967cb2785cb2e0"
+          },
+          "knifeScore": -1.0
+        },
+        {
+          "actionLogits": {
+            "FALLING": 13.0,
+            "FIGHTING": 15.0,
+            "IDLE": 9.4375,
+            "WALKING": 10.75,
+            "WORKING": 11.5
+          },
+          "clipId": "calibration-cal-fighting-no-knife-01-f0b10fe2",
+          "evidence": {
+            "actionForwardMs": 1687.5292260000094,
+            "actionPromptTokens": 144,
+            "finite": true,
+            "knifeForwardMs": 3219.4252379999994,
+            "knifePromptTokens": 144,
+            "videoSha256": "f0b10fe23df78a0beda94ff067162c5de0af35073edb0706363c5a83610c3902"
+          },
+          "knifeScore": -0.5
+        },
+        {
+          "actionLogits": {
+            "FALLING": 12.4375,
+            "FIGHTING": 12.375,
+            "IDLE": 13.875,
+            "WALKING": 11.875,
+            "WORKING": 12.9375
+          },
+          "clipId": "calibration-cal-idle-knife-01-364a3160",
+          "evidence": {
+            "actionForwardMs": 2021.3579760000187,
+            "actionPromptTokens": 144,
+            "finite": true,
+            "knifeForwardMs": 2018.4747119999997,
+            "knifePromptTokens": 144,
+            "videoSha256": "364a316054d9be0c8550acc3ee0c1d227486ef23045f3b75cb72f9fd0913916f"
+          },
+          "knifeScore": -0.625
+        },
+        {
+          "actionLogits": {
+            "FALLING": 12.25,
+            "FIGHTING": 12.1875,
+            "IDLE": 15.0625,
+            "WALKING": 13.8125,
+            "WORKING": 11.75
+          },
+          "clipId": "calibration-cal-walking-knife-01-43fb67c6",
+          "evidence": {
+            "actionForwardMs": 1852.0921090000115,
+            "actionPromptTokens": 144,
+            "finite": true,
+            "knifeForwardMs": 1919.753178999997,
+            "knifePromptTokens": 144,
+            "videoSha256": "43fb67c6411938bd88c2698ca9233f58f6fb6987ae9d2f7b24a2b38e170be56b"
+          },
+          "knifeScore": -0.5
+        },
+        {
+          "actionLogits": {
+            "FALLING": 10.25,
+            "FIGHTING": 12.75,
+            "IDLE": 9.6875,
+            "WALKING": 11.125,
+            "WORKING": 15.0
+          },
+          "clipId": "calibration-cal-working-knife-02-dfd917f8",
+          "evidence": {
+            "actionForwardMs": 1766.7230990000178,
+            "actionPromptTokens": 144,
+            "finite": true,
+            "knifeForwardMs": 2094.767496000003,
+            "knifePromptTokens": 144,
+            "videoSha256": "dfd917f8126de358e2d86bbab06ee918bb824320e7aa18350db88b64b6173a90"
+          },
+          "knifeScore": 2.5
+        },
+        {
+          "actionLogits": {
+            "FALLING": 10.75,
+            "FIGHTING": 11.75,
+            "IDLE": 13.75,
+            "WALKING": 12.0,
+            "WORKING": 14.25
+          },
+          "clipId": "calibration-cal-working-no-knife-01-340a3274",
+          "evidence": {
+            "actionForwardMs": 1794.8223949999829,
+            "actionPromptTokens": 144,
+            "finite": true,
+            "knifeForwardMs": 8941.737222,
+            "knifePromptTokens": 144,
+            "videoSha256": "340a3274e80ce22bb95fbfd8c16dec2f4f3907b97434cbc8787f5479a53a5970"
+          },
+          "knifeScore": -1.75
+        },
+        {
+          "actionLogits": {
+            "FALLING": 15.0625,
+            "FIGHTING": 13.0625,
+            "IDLE": 12.875,
+            "WALKING": 12.375,
+            "WORKING": 12.25
+          },
+          "clipId": "test_held_out-test-falling-no-knife-lowlight-01-74afd8c3",
+          "evidence": {
+            "actionForwardMs": 1923.9475219999917,
+            "actionPromptTokens": 144,
+            "finite": true,
+            "knifeForwardMs": 2114.60672299998,
+            "knifePromptTokens": 144,
+            "videoSha256": "74afd8c3a11aed1ca106087e0ff72f80f8e3c3a77b5412a72f48d8a4bbd7c16c"
+          },
+          "knifeScore": -1.625
+        },
+        {
+          "actionLogits": {
+            "FALLING": 13.0,
+            "FIGHTING": 14.9375,
+            "IDLE": 9.8125,
+            "WALKING": 11.3125,
+            "WORKING": 11.8125
+          },
+          "clipId": "test_held_out-test-fighting-knife-01-220ca3a7",
+          "evidence": {
+            "actionForwardMs": 1932.4494429999959,
+            "actionPromptTokens": 144,
+            "finite": true,
+            "knifeForwardMs": 2030.599542999994,
+            "knifePromptTokens": 144,
+            "videoSha256": "220ca3a7923348f4d5bce0e4748728fbc37610e5f70614e47f15287767910d48"
+          },
+          "knifeScore": -0.5
+        },
+        {
+          "actionLogits": {
+            "FALLING": 12.5,
+            "FIGHTING": 12.0,
+            "IDLE": 15.4375,
+            "WALKING": 11.625,
+            "WORKING": 12.9375
+          },
+          "clipId": "test_held_out-test-idle-no-knife-hard-01-99eccdca",
+          "evidence": {
+            "actionForwardMs": 2223.8333749999983,
+            "actionPromptTokens": 144,
+            "finite": true,
+            "knifeForwardMs": 1986.4622929999882,
+            "knifePromptTokens": 144,
+            "videoSha256": "99eccdca1aa929948888231b176ecec057948f933deaf063b2715571e01e6572"
+          },
+          "knifeScore": -0.25
+        },
+        {
+          "actionLogits": {
+            "FALLING": 11.6875,
+            "FIGHTING": 12.0625,
+            "IDLE": 15.0625,
+            "WALKING": 14.3125,
+            "WORKING": 12.25
+          },
+          "clipId": "test_held_out-test-walking-knife-occluded-01-d6d5cefa",
+          "evidence": {
+            "actionForwardMs": 1703.3746619999874,
+            "actionPromptTokens": 144,
+            "finite": true,
+            "knifeForwardMs": 2092.2333590000335,
+            "knifePromptTokens": 144,
+            "videoSha256": "d6d5cefad1af6dfcfbdd7d34b442f4a0133692c2f927d3d36de6d0f9f49946fa"
+          },
+          "knifeScore": -0.875
+        },
+        {
+          "actionLogits": {
+            "FALLING": 10.8125,
+            "FIGHTING": 12.0,
+            "IDLE": 12.4375,
+            "WALKING": 12.8125,
+            "WORKING": 13.9375
+          },
+          "clipId": "test_held_out-test-working-knife-small-01-1c031a36",
+          "evidence": {
+            "actionForwardMs": 1915.974196000036,
+            "actionPromptTokens": 144,
+            "finite": true,
+            "knifeForwardMs": 1957.4469890000046,
+            "knifePromptTokens": 144,
+            "videoSha256": "1c031a36dd987aa235b068f7ad6be87069ba197a2012e80097c40c62440904c5"
+          },
+          "knifeScore": 0.625
+        },
+        {
+          "actionLogits": {
+            "FALLING": 8.75,
+            "FIGHTING": 10.8125,
+            "IDLE": 12.4375,
+            "WALKING": 10.75,
+            "WORKING": 14.25
+          },
+          "clipId": "test_held_out-test-working-no-knife-01-eb32b480",
+          "evidence": {
+            "actionForwardMs": 1941.5484579999998,
+            "actionPromptTokens": 144,
+            "finite": true,
+            "knifeForwardMs": 2077.3151919999577,
+            "knifePromptTokens": 144,
+            "videoSha256": "eb32b4802093c62278c6ea4de39fde73297f9225c33456ff35fa716a7a71f227"
+          },
+          "knifeScore": -0.125
+        }
+      ]
+    }
+  },
+  "classification": "Raw exact-M120+A8 software logits over 12 source-unique AI-generated pilot clips; no labels were read and no accuracy, KV260 timing, power or real-world validity is claimed.",
+  "date": "2026-09-03",
+  "filenameHintsRead": false,
+  "geometry": "deployment/mage_vl4b/M306_FOUR_BASELINE_PREDICTION_GEOMETRY_RESULT.json",
+  "heldOutLabelsRead": false,
+  "humanLabelsRead": false,
+  "model": "microsoft/Mage-VL",
+  "schema": "tellme-bact-four-baseline-predictions-v1",
+  "sessionIdentity": {
+    "checkpointBlobSha256": "9c7de8995a08602186c7090081bbfc10b7c51170ad7e544f2f2dc71333b4f21d",
+    "checkpointManifestSha256": "5ff33d1922376e18277902a8b051d069315f79c11b4f63e8d72517acd1dcd5d0",
+    "collectorSha256": "008e3c66efe73565c6a4db410765a064bc97886b5e9f22d2765379a210a82c69",
+    "geometrySha256": "65cf52d411b84a5f7f5e42e6add71adc27b9e80bfe8e192f5f07b173c5483c54",
+    "modelConfigSha256": "fd4621212569e893ce2caa110431fde73f3cc1a1d92e1b8320bb4e0cfbcad34a",
+    "sourceManifestSha256": "6c4a04f9c584bbc3cce6af7f70503e5bf951f4686b7be86fea9667e189aa7bc9"
+  },
+  "sourceManifest": "data/bact_target_scene/M296_TARGET_SCENE_MANIFEST_DRAFT.json"
+}

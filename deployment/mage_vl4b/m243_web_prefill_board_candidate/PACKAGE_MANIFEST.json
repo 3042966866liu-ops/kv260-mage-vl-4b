@@ -1,0 +1,33 @@
+{
+  "date": "2026-09-02",
+  "gate": "M243-web-prefill-runtime-delta",
+  "status": "PASS",
+  "build_id": "0x4D395832",
+  "m242_formal_result_sha256": "f36b93758c93ec5986644ee170d4553dc07056532e35fdac281bd6e6722b6312",
+  "m242_delta_manifest_sha256": "ef94f50608dcda4ae33d3d133434429304bb72dbeb6def90666d7613aadfe510",
+  "m223_manifest_sha256": "debc3f1d1b783af028ad47a5a7c3bdb3c9012ee8febdecef39367c4bcc25b53f",
+  "m227_manifest_sha256": "0bab466470fe09ef1b548921235a365ac3832c6264bf2e3a16ee19a6a3aad13c",
+  "t64_used": false,
+  "files": [
+    {
+      "path": "m243_runtime_ready_probe.py",
+      "bytes": 5512,
+      "sha256": "a001fede5476103d91befe8d90545c1a2e1e9cb9687b4c9cc6bb66523314dd62"
+    },
+    {
+      "path": "m243_verify_package.py",
+      "bytes": 2084,
+      "sha256": "e75542ddb2f239ffb33e7fd440e4d81faadda3ab8638146bf97dc50ca58b8a54"
+    },
+    {
+      "path": "m243_video_server.py",
+      "bytes": 4632,
+      "sha256": "9ee51793532e1fa3637259664948735df7816fbbdae8165d167cb6a05cb98474"
+    },
+    {
+      "path": "run_m243_web_prefill_gate.sh",
+      "bytes": 3881,
+      "sha256": "c6aede20fcc0844c858a5ca6bc81b65f26ad2579e90c3526d0209cefbfe74bf2"
+    }
+  ]
+}

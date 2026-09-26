@@ -1,0 +1,57 @@
+{
+  "bf16_gemm_warning_count": 0,
+  "board_state_changed": false,
+  "classification": "Offline fixed-four-frame numerical/performance gate; not ARM64, FPGA, E2E, continuous-stream, or seconds-level board evidence.",
+  "decoder_evidence": {
+    "decode_calls": 98,
+    "decode_ms": 1381.9997709999952,
+    "decoded_elements": 329252864,
+    "decoder": "M222-vectorized-fourport-w4-v1"
+  },
+  "finite": true,
+  "fp32_encoder_layers": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "gate": "M222-vectorized-W4-M207-math-fixed-four-frame-vision",
+  "gemm_dtype": "FP32 for every W4 Linear",
+  "init_ms": 3688.7981629999995,
+  "metrics_vs_M56_W4_BF16_golden": {
+    "cosine_similarity": 0.9992565479809137,
+    "max_abs_error": 0.6201171875,
+    "mean_abs_error": 0.010619543835378418,
+    "rmse": 0.020916585950275686
+  },
+  "model_math_changed": false,
+  "output_shape": [
+    784,
+    2560
+  ],
+  "process_max_rss_kib": 1306372,
+  "quantization_changed": false,
+  "state_policy": "M198/M207 unchanged",
+  "status": "PASS",
+  "thresholds": {
+    "cosine_minimum": 0.999,
+    "decode_calls": 98,
+    "rmse_maximum": 0.05
+  },
+  "vision_forward_ms": 4566.100748,
+  "warning_count": 0
+}

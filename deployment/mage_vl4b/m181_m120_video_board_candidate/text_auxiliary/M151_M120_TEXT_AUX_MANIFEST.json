@@ -1,0 +1,56 @@
+{
+  "date": "2026-09-01T09:23:16+08:00",
+  "gate": "M181-M120-text-auxiliary",
+  "status": "PASS",
+  "build_id": "0x4D395832",
+  "embedding": {
+    "path": "embedding.fp16.rowmajor.bin",
+    "bytes": 777912320,
+    "sha256": "ec02de7da15a1569e96e50d886a3e4532617197e7a7aa84ac7196489caab4df4",
+    "shape": [
+      151936,
+      2560
+    ],
+    "dtype": "float16",
+    "source_bits": 3,
+    "source_group_size": 64,
+    "m148_manifest_sha256": "3c126bd3ae04b0d57c535c23819bf9a75d53a2f32b614c1d2689a56bb3195a03"
+  },
+  "norms": {
+    "path": "text_norms.fp16.npz",
+    "bytes": 441894,
+    "sha256": "c0d1e5fb6268bf28a4fbbbd6898715b5b39494a02b9e53d7c6e4c083bcbe2051"
+  },
+  "tokenizer_files": [
+    {
+      "path": "tokenizer/tokenizer.json",
+      "bytes": 11422064,
+      "sha256": "ba0c439f7be467bf47d12a7e6f9adc6116201056fc60c67f431c679b7c16afc8"
+    },
+    {
+      "path": "tokenizer/tokenizer_config.json",
+      "bytes": 4750,
+      "sha256": "f64d944a98d2d9901581be7a5f36b626ff2dc0d5b7d5dedb412412ca39606df0"
+    },
+    {
+      "path": "tokenizer/special_tokens_map.json",
+      "bytes": 613,
+      "sha256": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd"
+    },
+    {
+      "path": "tokenizer/added_tokens.json",
+      "bytes": 605,
+      "sha256": "58b54bbe36fc752f79a24a271ef66a0a0830054b4dfad94bde757d851968060b"
+    },
+    {
+      "path": "tokenizer/vocab.json",
+      "bytes": 2776833,
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    {
+      "path": "tokenizer/generation_config.json",
+      "bytes": 121,
+      "sha256": "8b9afb365eaab1c8fc2395f618067ee2307b9821e207f12c5c52cf371a14b0e0"
+    }
+  ]
+}

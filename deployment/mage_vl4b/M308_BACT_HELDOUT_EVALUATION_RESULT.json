@@ -1,0 +1,1679 @@
+{
+  "activeM254M256Changed": false,
+  "boardExecutionRun": false,
+  "bootDtbCmaPartitionsChanged": false,
+  "calibrationOnlyThresholdSelection": true,
+  "classification": "One-shot held-out pilot evaluation over 12 source-unique AI-generated clips. Knife thresholds were selected from calibration only; held-out knife/action and condition-slice metrics were opened once. This is pilot semantic evidence, not real-factory external validity or real-time proof.",
+  "date": "2026-09-03",
+  "filenameHintsUsedAsGroundTruth": false,
+  "formalPilotAccuracyAllowed": true,
+  "gate": "M308-one-shot-bact-held-out-evaluation",
+  "heldOutTestOpenedExactlyOnce": true,
+  "identity": {
+    "baselineIds": {
+      "bact": "bact-159",
+      "fixed_high_quality": "high-284",
+      "fixed_ratio_visual_pruning": "ratio-164",
+      "token_count_aware": "count-144"
+    },
+    "conditions": [
+      "lowLight",
+      "occlusion",
+      "smallKnife"
+    ],
+    "evaluatorSha256": "eafde2c960e943ee055980c9d2e3105263476b15fdc1cd89410b809bfa260642",
+    "labelsSha256": "9a60bfe6fc0c58b3340897744d2f9b4297ff39e5ec79cb5ad66fba8bf61d9055",
+    "m304ResultSha256": "3dac792aa12fa651ec02ec776f10aa6a19ccc7b62ee9531c91822f17b03b21d8",
+    "m304WorkbookSha256": "eceef894cf0d8284810e49cc0edc511520c86d177a0abdc48685b2749d9d20d6",
+    "m307ResultSha256": "5d0c5be56a89d38e09d7a6813a5bec0457bc48f7290ee0da2095c45c0eb689a4",
+    "minimumRecallConstraint": 0.9,
+    "predictionGeometrySha256": "65cf52d411b84a5f7f5e42e6add71adc27b9e80bfe8e192f5f07b173c5483c54",
+    "predictionsSha256": "efc66606649774e02b8971ac4f8cf70e3242f85ea38e5da36d51e3deee288d61"
+  },
+  "labels": "data/bact_target_scene/M304_HUMAN_REVIEW_LABELS.json",
+  "m304Result": "deployment/mage_vl4b/M304_HUMAN_REVIEW_IMPORT_RESULT.json",
+  "m307Result": "deployment/mage_vl4b/M307_FOUR_BASELINE_PREDICTION_COLLECTION_RESULT.json",
+  "metrics": {
+    "baselineOrder": [
+      "fixed_high_quality",
+      "fixed_ratio_visual_pruning",
+      "token_count_aware",
+      "bact"
+    ],
+    "baselines": {
+      "bact": {
+        "calibrationThresholdSensitivity": {
+          "folds": [
+            {
+              "calibrationMetrics": {
+                "false_alarm_rate": 0.0,
+                "false_negative": 0,
+                "false_positive": 0,
+                "recall": 1.0,
+                "true_negative": 2,
+                "true_positive": 3
+              },
+              "excludedCalibrationClipId": "calibration-cal-falling-no-knife-01-3fd2c968",
+              "status": "MEASURED",
+              "testLabelsUsed": false,
+              "threshold": -0.0625
+            },
+            {
+              "calibrationMetrics": {
+                "false_alarm_rate": 0.0,
+                "false_negative": 0,
+                "false_positive": 0,
+                "recall": 1.0,
+                "true_negative": 2,
+                "true_positive": 3
+              },
+              "excludedCalibrationClipId": "calibration-cal-fighting-no-knife-01-f0b10fe2",
+              "status": "MEASURED",
+              "testLabelsUsed": false,
+              "threshold": 0.3125
+            },
+            {
+              "calibrationMetrics": {
+                "false_alarm_rate": 0.0,
+                "false_negative": 0,
+                "false_positive": 0,
+                "recall": 1.0,
+                "true_negative": 3,
+                "true_positive": 2
+              },
+              "excludedCalibrationClipId": "calibration-cal-idle-knife-01-364a3160",
+              "status": "MEASURED",
+              "testLabelsUsed": false,
+              "threshold": 0.375
+            },
+            {
+              "calibrationMetrics": {
+                "false_alarm_rate": 0.0,
+                "false_negative": 0,
+                "false_positive": 0,
+                "recall": 1.0,
+                "true_negative": 3,
+                "true_positive": 2
+              },
+              "excludedCalibrationClipId": "calibration-cal-walking-knife-01-43fb67c6",
+              "status": "MEASURED",
+              "testLabelsUsed": false,
+              "threshold": 0.3125
+            },
+            {
+              "calibrationMetrics": {
+                "false_alarm_rate": 0.0,
+                "false_negative": 0,
+                "false_positive": 0,
+                "recall": 1.0,
+                "true_negative": 3,
+                "true_positive": 2
+              },
+              "excludedCalibrationClipId": "calibration-cal-working-knife-02-dfd917f8",
+              "status": "MEASURED",
+              "testLabelsUsed": false,
+              "threshold": 0.3125
+            },
+            {
+              "calibrationMetrics": {
+                "false_alarm_rate": 0.0,
+                "false_negative": 0,
+                "false_positive": 0,
+                "recall": 1.0,
+                "true_negative": 2,
+                "true_positive": 3
+              },
+              "excludedCalibrationClipId": "calibration-cal-working-no-knife-01-340a3274",
+              "status": "MEASURED",
+              "testLabelsUsed": false,
+              "threshold": 0.3125
+            }
+          ],
+          "measuredFoldCount": 6,
+          "method": "leave-one-calibration-clip-out",
+          "testLabelsUsed": false,
+          "thresholdMaximum": 0.375,
+          "thresholdMinimum": -0.0625,
+          "thresholdRange": 0.4375,
+          "unavailableFoldCount": 0
+        },
+        "candidateId": "bact-159",
+        "heldOutConditionSlices": {
+          "lowLight": {
+            "absent": {
+              "actionAccuracy": 0.75,
+              "actionMacroF1": null,
+              "actionSupport": {
+                "FALLING": 0,
+                "FIGHTING": 1,
+                "IDLE": 0,
+                "WALKING": 1,
+                "WORKING": 2
+              },
+              "clipCount": 4,
+              "clipIds": [
+                "test_held_out-test-fighting-knife-01-220ca3a7",
+                "test_held_out-test-walking-knife-occluded-01-d6d5cefa",
+                "test_held_out-test-working-knife-small-01-1c031a36",
+                "test_held_out-test-working-no-knife-01-eb32b480"
+              ],
+              "fiveClassMacroF1Available": false,
+              "knife": {
+                "false_alarm_rate": 0.0,
+                "false_negative": 2,
+                "false_positive": 0,
+                "recall": 0.3333333333333333,
+                "true_negative": 1,
+                "true_positive": 1
+              },
+              "knifeAccuracy": 0.5,
+              "knifeNegativeSupport": 1,
+              "knifePositiveSupport": 3,
+              "knifeRecallAndFalseAlarmAvailable": true
+            },
+            "present": {
+              "actionAccuracy": 1.0,
+              "actionMacroF1": null,
+              "actionSupport": {
+                "FALLING": 1,
+                "FIGHTING": 0,
+                "IDLE": 1,
+                "WALKING": 0,
+                "WORKING": 0
+              },
+              "clipCount": 2,
+              "clipIds": [
+                "test_held_out-test-falling-no-knife-lowlight-01-74afd8c3",
+                "test_held_out-test-idle-no-knife-hard-01-99eccdca"
+              ],
+              "fiveClassMacroF1Available": false,
+              "knife": null,
+              "knifeAccuracy": 0.5,
+              "knifeNegativeSupport": 2,
+              "knifePositiveSupport": 0,
+              "knifeRecallAndFalseAlarmAvailable": false
+            }
+          },
+          "occlusion": {
+            "absent": {
+              "actionAccuracy": 0.8,
+              "actionMacroF1": {
+                "macroF1": 0.7333333333333333,
+                "perClass": {
+                  "FALLING": {
+                    "f1": 1.0,
+                    "fn": 0,
+                    "fp": 0,
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "support": 1,
+                    "tp": 1
+                  },
+                  "FIGHTING": {
+                    "f1": 1.0,
+                    "fn": 0,
+                    "fp": 0,
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "support": 1,
+                    "tp": 1
+                  },
+                  "IDLE": {
+                    "f1": 0.6666666666666666,
+                    "fn": 0,
+                    "fp": 1,
+                    "precision": 0.5,
+                    "recall": 1.0,
+                    "support": 1,
+                    "tp": 1
+                  },
+                  "WALKING": {
+                    "f1": 0.0,
+                    "fn": 1,
+                    "fp": 0,
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "support": 1,
+                    "tp": 0
+                  },
+                  "WORKING": {
+                    "f1": 1.0,
+                    "fn": 0,
+                    "fp": 0,
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "support": 1,
+                    "tp": 1
+                  }
+                }
+              },
+              "actionSupport": {
+                "FALLING": 1,
+                "FIGHTING": 1,
+                "IDLE": 1,
+                "WALKING": 1,
+                "WORKING": 1
+              },
+              "clipCount": 5,
+              "clipIds": [
+                "test_held_out-test-falling-no-knife-lowlight-01-74afd8c3",
+                "test_held_out-test-fighting-knife-01-220ca3a7",
+                "test_held_out-test-idle-no-knife-hard-01-99eccdca",
+                "test_held_out-test-walking-knife-occluded-01-d6d5cefa",
+                "test_held_out-test-working-no-knife-01-eb32b480"
+              ],
+              "fiveClassMacroF1Available": true,
+              "knife": {
+                "false_alarm_rate": 0.3333333333333333,
+                "false_negative": 2,
+                "false_positive": 1,
+                "recall": 0.0,
+                "true_negative": 2,
+                "true_positive": 0
+              },
+              "knifeAccuracy": 0.4,
+              "knifeNegativeSupport": 3,
+              "knifePositiveSupport": 2,
+              "knifeRecallAndFalseAlarmAvailable": true
+            },
+            "present": {
+              "actionAccuracy": 1.0,
+              "actionMacroF1": null,
+              "actionSupport": {
+                "FALLING": 0,
+                "FIGHTING": 0,
+                "IDLE": 0,
+                "WALKING": 0,
+                "WORKING": 1
+              },
+              "clipCount": 1,
+              "clipIds": [
+                "test_held_out-test-working-knife-small-01-1c031a36"
+              ],
+              "fiveClassMacroF1Available": false,
+              "knife": null,
+              "knifeAccuracy": 1.0,
+              "knifeNegativeSupport": 0,
+              "knifePositiveSupport": 1,
+              "knifeRecallAndFalseAlarmAvailable": false
+            }
+          },
+          "smallKnife": {
+            "absent": {
+              "actionAccuracy": 1.0,
+              "actionMacroF1": null,
+              "actionSupport": {
+                "FALLING": 1,
+                "FIGHTING": 0,
+                "IDLE": 1,
+                "WALKING": 0,
+                "WORKING": 1
+              },
+              "clipCount": 3,
+              "clipIds": [
+                "test_held_out-test-falling-no-knife-lowlight-01-74afd8c3",
+                "test_held_out-test-idle-no-knife-hard-01-99eccdca",
+                "test_held_out-test-working-no-knife-01-eb32b480"
+              ],
+              "fiveClassMacroF1Available": false,
+              "knife": null,
+              "knifeAccuracy": 0.6666666666666666,
+              "knifeNegativeSupport": 3,
+              "knifePositiveSupport": 0,
+              "knifeRecallAndFalseAlarmAvailable": false
+            },
+            "present": {
+              "actionAccuracy": 0.6666666666666666,
+              "actionMacroF1": null,
+              "actionSupport": {
+                "FALLING": 0,
+                "FIGHTING": 1,
+                "IDLE": 0,
+                "WALKING": 1,
+                "WORKING": 1
+              },
+              "clipCount": 3,
+              "clipIds": [
+                "test_held_out-test-fighting-knife-01-220ca3a7",
+                "test_held_out-test-walking-knife-occluded-01-d6d5cefa",
+                "test_held_out-test-working-knife-small-01-1c031a36"
+              ],
+              "fiveClassMacroF1Available": false,
+              "knife": null,
+              "knifeAccuracy": 0.3333333333333333,
+              "knifeNegativeSupport": 0,
+              "knifePositiveSupport": 3,
+              "knifeRecallAndFalseAlarmAvailable": false
+            }
+          }
+        },
+        "primary": {
+          "candidateId": "bact-159",
+          "heldOutTest": {
+            "action": {
+              "macroF1": 0.7333333333333333,
+              "perClass": {
+                "FALLING": {
+                  "f1": 1.0,
+                  "fn": 0,
+                  "fp": 0,
+                  "precision": 1.0,
+                  "recall": 1.0,
+                  "support": 1,
+                  "tp": 1
+                },
+                "FIGHTING": {
+                  "f1": 1.0,
+                  "fn": 0,
+                  "fp": 0,
+                  "precision": 1.0,
+                  "recall": 1.0,
+                  "support": 1,
+                  "tp": 1
+                },
+                "IDLE": {
+                  "f1": 0.6666666666666666,
+                  "fn": 0,
+                  "fp": 1,
+                  "precision": 0.5,
+                  "recall": 1.0,
+                  "support": 1,
+                  "tp": 1
+                },
+                "WALKING": {
+                  "f1": 0.0,
+                  "fn": 1,
+                  "fp": 0,
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "support": 1,
+                  "tp": 0
+                },
+                "WORKING": {
+                  "f1": 1.0,
+                  "fn": 0,
+                  "fp": 0,
+                  "precision": 1.0,
+                  "recall": 1.0,
+                  "support": 2,
+                  "tp": 2
+                }
+              }
+            },
+            "knife": {
+              "false_alarm_rate": 0.3333333333333333,
+              "false_negative": 2,
+              "false_positive": 1,
+              "recall": 0.3333333333333333,
+              "true_negative": 2,
+              "true_positive": 1
+            },
+            "testClipIds": [
+              "test_held_out-test-falling-no-knife-lowlight-01-74afd8c3",
+              "test_held_out-test-fighting-knife-01-220ca3a7",
+              "test_held_out-test-idle-no-knife-hard-01-99eccdca",
+              "test_held_out-test-walking-knife-occluded-01-d6d5cefa",
+              "test_held_out-test-working-knife-small-01-1c031a36",
+              "test_held_out-test-working-no-knife-01-eb32b480"
+            ],
+            "threshold": 0.3125
+          },
+          "thresholdFreeze": {
+            "calibrationClipIds": [
+              "calibration-cal-falling-no-knife-01-3fd2c968",
+              "calibration-cal-fighting-no-knife-01-f0b10fe2",
+              "calibration-cal-idle-knife-01-364a3160",
+              "calibration-cal-walking-knife-01-43fb67c6",
+              "calibration-cal-working-knife-02-dfd917f8",
+              "calibration-cal-working-no-knife-01-340a3274"
+            ],
+            "calibrationMetrics": {
+              "false_alarm_rate": 0.0,
+              "false_negative": 0,
+              "false_positive": 0,
+              "recall": 1.0,
+              "true_negative": 3,
+              "true_positive": 3
+            },
+            "minimumRecallConstraint": 0.9,
+            "selectionKey": [
+              0.0,
+              -0.3125,
+              -1.0
+            ],
+            "testLabelsUsed": false,
+            "threshold": 0.3125
+          }
+        }
+      },
+      "fixed_high_quality": {
+        "calibrationThresholdSensitivity": {
+          "folds": [
+            {
+              "calibrationMetrics": {
+                "false_alarm_rate": 0.0,
+                "false_negative": 0,
+                "false_positive": 0,
+                "recall": 1.0,
+                "true_negative": 2,
+                "true_positive": 3
+              },
+              "excludedCalibrationClipId": "calibration-cal-falling-no-knife-01-3fd2c968",
+              "status": "MEASURED",
+              "testLabelsUsed": false,
+              "threshold": 0.375
+            },
+            {
+              "calibrationMetrics": {
+                "false_alarm_rate": 0.0,
+                "false_negative": 0,
+                "false_positive": 0,
+                "recall": 1.0,
+                "true_negative": 2,
+                "true_positive": 3
+              },
+              "excludedCalibrationClipId": "calibration-cal-fighting-no-knife-01-f0b10fe2",
+              "status": "MEASURED",
+              "testLabelsUsed": false,
+              "threshold": 0.4375
+            },
+            {
+              "calibrationMetrics": {
+                "false_alarm_rate": 0.0,
+                "false_negative": 0,
+                "false_positive": 0,
+                "recall": 1.0,
+                "true_negative": 3,
+                "true_positive": 2
+              },
+              "excludedCalibrationClipId": "calibration-cal-idle-knife-01-364a3160",
+              "status": "MEASURED",
+              "testLabelsUsed": false,
+              "threshold": 1.375
+            },
+            {
+              "calibrationMetrics": {
+                "false_alarm_rate": 0.0,
+                "false_negative": 0,
+                "false_positive": 0,
+                "recall": 1.0,
+                "true_negative": 3,
+                "true_positive": 2
+              },
+              "excludedCalibrationClipId": "calibration-cal-walking-knife-01-43fb67c6",
+              "status": "MEASURED",
+              "testLabelsUsed": false,
+              "threshold": 0.4375
+            },
+            {
+              "calibrationMetrics": {
+                "false_alarm_rate": 0.0,
+                "false_negative": 0,
+                "false_positive": 0,
+                "recall": 1.0,
+                "true_negative": 3,
+                "true_positive": 2
+              },
+              "excludedCalibrationClipId": "calibration-cal-working-knife-02-dfd917f8",
+              "status": "MEASURED",
+              "testLabelsUsed": false,
+              "threshold": 0.4375
+            },
+            {
+              "calibrationMetrics": {
+                "false_alarm_rate": 0.0,
+                "false_negative": 0,
+                "false_positive": 0,
+                "recall": 1.0,
+                "true_negative": 2,
+                "true_positive": 3
+              },
+              "excludedCalibrationClipId": "calibration-cal-working-no-knife-01-340a3274",
+              "status": "MEASURED",
+              "testLabelsUsed": false,
+              "threshold": 0.4375
+            }
+          ],
+          "measuredFoldCount": 6,
+          "method": "leave-one-calibration-clip-out",
+          "testLabelsUsed": false,
+          "thresholdMaximum": 1.375,
+          "thresholdMinimum": 0.375,
+          "thresholdRange": 1.0,
+          "unavailableFoldCount": 0
+        },
+        "candidateId": "high-284",
+        "heldOutConditionSlices": {
+          "lowLight": {
+            "absent": {
+              "actionAccuracy": 0.5,
+              "actionMacroF1": null,
+              "actionSupport": {
+                "FALLING": 0,
+                "FIGHTING": 1,
+                "IDLE": 0,
+                "WALKING": 1,
+                "WORKING": 2
+              },
+              "clipCount": 4,
+              "clipIds": [
+                "test_held_out-test-fighting-knife-01-220ca3a7",
+                "test_held_out-test-walking-knife-occluded-01-d6d5cefa",
+                "test_held_out-test-working-knife-small-01-1c031a36",
+                "test_held_out-test-working-no-knife-01-eb32b480"
+              ],
+              "fiveClassMacroF1Available": false,
+              "knife": {
+                "false_alarm_rate": 0.0,
+                "false_negative": 2,
+                "false_positive": 0,
+                "recall": 0.3333333333333333,
+                "true_negative": 1,
+                "true_positive": 1
+              },
+              "knifeAccuracy": 0.5,
+              "knifeNegativeSupport": 1,
+              "knifePositiveSupport": 3,
+              "knifeRecallAndFalseAlarmAvailable": true
+            },
+            "present": {
+              "actionAccuracy": 1.0,
+              "actionMacroF1": null,
+              "actionSupport": {
+                "FALLING": 1,
+                "FIGHTING": 0,
+                "IDLE": 1,
+                "WALKING": 0,
+                "WORKING": 0
+              },
+              "clipCount": 2,
+              "clipIds": [
+                "test_held_out-test-falling-no-knife-lowlight-01-74afd8c3",
+                "test_held_out-test-idle-no-knife-hard-01-99eccdca"
+              ],
+              "fiveClassMacroF1Available": false,
+              "knife": null,
+              "knifeAccuracy": 1.0,
+              "knifeNegativeSupport": 2,
+              "knifePositiveSupport": 0,
+              "knifeRecallAndFalseAlarmAvailable": false
+            }
+          },
+          "occlusion": {
+            "absent": {
+              "actionAccuracy": 0.8,
+              "actionMacroF1": {
+                "macroF1": 0.7333333333333333,
+                "perClass": {
+                  "FALLING": {
+                    "f1": 1.0,
+                    "fn": 0,
+                    "fp": 0,
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "support": 1,
+                    "tp": 1
+                  },
+                  "FIGHTING": {
+                    "f1": 1.0,
+                    "fn": 0,
+                    "fp": 0,
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "support": 1,
+                    "tp": 1
+                  },
+                  "IDLE": {
+                    "f1": 0.6666666666666666,
+                    "fn": 0,
+                    "fp": 1,
+                    "precision": 0.5,
+                    "recall": 1.0,
+                    "support": 1,
+                    "tp": 1
+                  },
+                  "WALKING": {
+                    "f1": 0.0,
+                    "fn": 1,
+                    "fp": 0,
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "support": 1,
+                    "tp": 0
+                  },
+                  "WORKING": {
+                    "f1": 1.0,
+                    "fn": 0,
+                    "fp": 0,
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "support": 1,
+                    "tp": 1
+                  }
+                }
+              },
+              "actionSupport": {
+                "FALLING": 1,
+                "FIGHTING": 1,
+                "IDLE": 1,
+                "WALKING": 1,
+                "WORKING": 1
+              },
+              "clipCount": 5,
+              "clipIds": [
+                "test_held_out-test-falling-no-knife-lowlight-01-74afd8c3",
+                "test_held_out-test-fighting-knife-01-220ca3a7",
+                "test_held_out-test-idle-no-knife-hard-01-99eccdca",
+                "test_held_out-test-walking-knife-occluded-01-d6d5cefa",
+                "test_held_out-test-working-no-knife-01-eb32b480"
+              ],
+              "fiveClassMacroF1Available": true,
+              "knife": {
+                "false_alarm_rate": 0.0,
+                "false_negative": 2,
+                "false_positive": 0,
+                "recall": 0.0,
+                "true_negative": 3,
+                "true_positive": 0
+              },
+              "knifeAccuracy": 0.6,
+              "knifeNegativeSupport": 3,
+              "knifePositiveSupport": 2,
+              "knifeRecallAndFalseAlarmAvailable": true
+            },
+            "present": {
+              "actionAccuracy": 0.0,
+              "actionMacroF1": null,
+              "actionSupport": {
+                "FALLING": 0,
+                "FIGHTING": 0,
+                "IDLE": 0,
+                "WALKING": 0,
+                "WORKING": 1
+              },
+              "clipCount": 1,
+              "clipIds": [
+                "test_held_out-test-working-knife-small-01-1c031a36"
+              ],
+              "fiveClassMacroF1Available": false,
+              "knife": null,
+              "knifeAccuracy": 1.0,
+              "knifeNegativeSupport": 0,
+              "knifePositiveSupport": 1,
+              "knifeRecallAndFalseAlarmAvailable": false
+            }
+          },
+          "smallKnife": {
+            "absent": {
+              "actionAccuracy": 1.0,
+              "actionMacroF1": null,
+              "actionSupport": {
+                "FALLING": 1,
+                "FIGHTING": 0,
+                "IDLE": 1,
+                "WALKING": 0,
+                "WORKING": 1
+              },
+              "clipCount": 3,
+              "clipIds": [
+                "test_held_out-test-falling-no-knife-lowlight-01-74afd8c3",
+                "test_held_out-test-idle-no-knife-hard-01-99eccdca",
+                "test_held_out-test-working-no-knife-01-eb32b480"
+              ],
+              "fiveClassMacroF1Available": false,
+              "knife": null,
+              "knifeAccuracy": 1.0,
+              "knifeNegativeSupport": 3,
+              "knifePositiveSupport": 0,
+              "knifeRecallAndFalseAlarmAvailable": false
+            },
+            "present": {
+              "actionAccuracy": 0.3333333333333333,
+              "actionMacroF1": null,
+              "actionSupport": {
+                "FALLING": 0,
+                "FIGHTING": 1,
+                "IDLE": 0,
+                "WALKING": 1,
+                "WORKING": 1
+              },
+              "clipCount": 3,
+              "clipIds": [
+                "test_held_out-test-fighting-knife-01-220ca3a7",
+                "test_held_out-test-walking-knife-occluded-01-d6d5cefa",
+                "test_held_out-test-working-knife-small-01-1c031a36"
+              ],
+              "fiveClassMacroF1Available": false,
+              "knife": null,
+              "knifeAccuracy": 0.3333333333333333,
+              "knifeNegativeSupport": 0,
+              "knifePositiveSupport": 3,
+              "knifeRecallAndFalseAlarmAvailable": false
+            }
+          }
+        },
+        "primary": {
+          "candidateId": "high-284",
+          "heldOutTest": {
+            "action": {
+              "macroF1": 0.6333333333333333,
+              "perClass": {
+                "FALLING": {
+                  "f1": 1.0,
+                  "fn": 0,
+                  "fp": 0,
+                  "precision": 1.0,
+                  "recall": 1.0,
+                  "support": 1,
+                  "tp": 1
+                },
+                "FIGHTING": {
+                  "f1": 1.0,
+                  "fn": 0,
+                  "fp": 0,
+                  "precision": 1.0,
+                  "recall": 1.0,
+                  "support": 1,
+                  "tp": 1
+                },
+                "IDLE": {
+                  "f1": 0.5,
+                  "fn": 0,
+                  "fp": 2,
+                  "precision": 0.3333333333333333,
+                  "recall": 1.0,
+                  "support": 1,
+                  "tp": 1
+                },
+                "WALKING": {
+                  "f1": 0.0,
+                  "fn": 1,
+                  "fp": 0,
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "support": 1,
+                  "tp": 0
+                },
+                "WORKING": {
+                  "f1": 0.6666666666666666,
+                  "fn": 1,
+                  "fp": 0,
+                  "precision": 1.0,
+                  "recall": 0.5,
+                  "support": 2,
+                  "tp": 1
+                }
+              }
+            },
+            "knife": {
+              "false_alarm_rate": 0.0,
+              "false_negative": 2,
+              "false_positive": 0,
+              "recall": 0.3333333333333333,
+              "true_negative": 3,
+              "true_positive": 1
+            },
+            "testClipIds": [
+              "test_held_out-test-falling-no-knife-lowlight-01-74afd8c3",
+              "test_held_out-test-fighting-knife-01-220ca3a7",
+              "test_held_out-test-idle-no-knife-hard-01-99eccdca",
+              "test_held_out-test-walking-knife-occluded-01-d6d5cefa",
+              "test_held_out-test-working-knife-small-01-1c031a36",
+              "test_held_out-test-working-no-knife-01-eb32b480"
+            ],
+            "threshold": 0.4375
+          },
+          "thresholdFreeze": {
+            "calibrationClipIds": [
+              "calibration-cal-falling-no-knife-01-3fd2c968",
+              "calibration-cal-fighting-no-knife-01-f0b10fe2",
+              "calibration-cal-idle-knife-01-364a3160",
+              "calibration-cal-walking-knife-01-43fb67c6",
+              "calibration-cal-working-knife-02-dfd917f8",
+              "calibration-cal-working-no-knife-01-340a3274"
+            ],
+            "calibrationMetrics": {
+              "false_alarm_rate": 0.0,
+              "false_negative": 0,
+              "false_positive": 0,
+              "recall": 1.0,
+              "true_negative": 3,
+              "true_positive": 3
+            },
+            "minimumRecallConstraint": 0.9,
+            "selectionKey": [
+              0.0,
+              -0.4375,
+              -1.0
+            ],
+            "testLabelsUsed": false,
+            "threshold": 0.4375
+          }
+        }
+      },
+      "fixed_ratio_visual_pruning": {
+        "calibrationThresholdSensitivity": {
+          "folds": [
+            {
+              "calibrationMetrics": {
+                "false_alarm_rate": 0.0,
+                "false_negative": 0,
+                "false_positive": 0,
+                "recall": 1.0,
+                "true_negative": 2,
+                "true_positive": 3
+              },
+              "excludedCalibrationClipId": "calibration-cal-falling-no-knife-01-3fd2c968",
+              "status": "MEASURED",
+              "testLabelsUsed": false,
+              "threshold": -0.4375
+            },
+            {
+              "calibrationMetrics": {
+                "false_alarm_rate": 0.0,
+                "false_negative": 0,
+                "false_positive": 0,
+                "recall": 1.0,
+                "true_negative": 2,
+                "true_positive": 3
+              },
+              "excludedCalibrationClipId": "calibration-cal-fighting-no-knife-01-f0b10fe2",
+              "status": "MEASURED",
+              "testLabelsUsed": false,
+              "threshold": -0.375
+            },
+            {
+              "calibrationMetrics": {
+                "false_alarm_rate": 0.0,
+                "false_negative": 0,
+                "false_positive": 0,
+                "recall": 1.0,
+                "true_negative": 3,
+                "true_positive": 2
+              },
+              "excludedCalibrationClipId": "calibration-cal-idle-knife-01-364a3160",
+              "status": "MEASURED",
+              "testLabelsUsed": false,
+              "threshold": -0.375
+            },
+            {
+              "calibrationMetrics": {
+                "false_alarm_rate": 0.0,
+                "false_negative": 0,
+                "false_positive": 0,
+                "recall": 1.0,
+                "true_negative": 3,
+                "true_positive": 2
+              },
+              "excludedCalibrationClipId": "calibration-cal-walking-knife-01-43fb67c6",
+              "status": "MEASURED",
+              "testLabelsUsed": false,
+              "threshold": -0.25
+            },
+            {
+              "calibrationMetrics": {
+                "false_alarm_rate": 0.0,
+                "false_negative": 0,
+                "false_positive": 0,
+                "recall": 1.0,
+                "true_negative": 3,
+                "true_positive": 2
+              },
+              "excludedCalibrationClipId": "calibration-cal-working-knife-02-dfd917f8",
+              "status": "MEASURED",
+              "testLabelsUsed": false,
+              "threshold": -0.375
+            },
+            {
+              "calibrationMetrics": {
+                "false_alarm_rate": 0.0,
+                "false_negative": 0,
+                "false_positive": 0,
+                "recall": 1.0,
+                "true_negative": 2,
+                "true_positive": 3
+              },
+              "excludedCalibrationClipId": "calibration-cal-working-no-knife-01-340a3274",
+              "status": "MEASURED",
+              "testLabelsUsed": false,
+              "threshold": -0.375
+            }
+          ],
+          "measuredFoldCount": 6,
+          "method": "leave-one-calibration-clip-out",
+          "testLabelsUsed": false,
+          "thresholdMaximum": -0.25,
+          "thresholdMinimum": -0.4375,
+          "thresholdRange": 0.1875,
+          "unavailableFoldCount": 0
+        },
+        "candidateId": "ratio-164",
+        "heldOutConditionSlices": {
+          "lowLight": {
+            "absent": {
+              "actionAccuracy": 0.75,
+              "actionMacroF1": null,
+              "actionSupport": {
+                "FALLING": 0,
+                "FIGHTING": 1,
+                "IDLE": 0,
+                "WALKING": 1,
+                "WORKING": 2
+              },
+              "clipCount": 4,
+              "clipIds": [
+                "test_held_out-test-fighting-knife-01-220ca3a7",
+                "test_held_out-test-walking-knife-occluded-01-d6d5cefa",
+                "test_held_out-test-working-knife-small-01-1c031a36",
+                "test_held_out-test-working-no-knife-01-eb32b480"
+              ],
+              "fiveClassMacroF1Available": false,
+              "knife": {
+                "false_alarm_rate": 0.0,
+                "false_negative": 2,
+                "false_positive": 0,
+                "recall": 0.3333333333333333,
+                "true_negative": 1,
+                "true_positive": 1
+              },
+              "knifeAccuracy": 0.5,
+              "knifeNegativeSupport": 1,
+              "knifePositiveSupport": 3,
+              "knifeRecallAndFalseAlarmAvailable": true
+            },
+            "present": {
+              "actionAccuracy": 1.0,
+              "actionMacroF1": null,
+              "actionSupport": {
+                "FALLING": 1,
+                "FIGHTING": 0,
+                "IDLE": 1,
+                "WALKING": 0,
+                "WORKING": 0
+              },
+              "clipCount": 2,
+              "clipIds": [
+                "test_held_out-test-falling-no-knife-lowlight-01-74afd8c3",
+                "test_held_out-test-idle-no-knife-hard-01-99eccdca"
+              ],
+              "fiveClassMacroF1Available": false,
+              "knife": null,
+              "knifeAccuracy": 0.5,
+              "knifeNegativeSupport": 2,
+              "knifePositiveSupport": 0,
+              "knifeRecallAndFalseAlarmAvailable": false
+            }
+          },
+          "occlusion": {
+            "absent": {
+              "actionAccuracy": 0.8,
+              "actionMacroF1": {
+                "macroF1": 0.7333333333333333,
+                "perClass": {
+                  "FALLING": {
+                    "f1": 1.0,
+                    "fn": 0,
+                    "fp": 0,
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "support": 1,
+                    "tp": 1
+                  },
+                  "FIGHTING": {
+                    "f1": 1.0,
+                    "fn": 0,
+                    "fp": 0,
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "support": 1,
+                    "tp": 1
+                  },
+                  "IDLE": {
+                    "f1": 0.6666666666666666,
+                    "fn": 0,
+                    "fp": 1,
+                    "precision": 0.5,
+                    "recall": 1.0,
+                    "support": 1,
+                    "tp": 1
+                  },
+                  "WALKING": {
+                    "f1": 0.0,
+                    "fn": 1,
+                    "fp": 0,
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "support": 1,
+                    "tp": 0
+                  },
+                  "WORKING": {
+                    "f1": 1.0,
+                    "fn": 0,
+                    "fp": 0,
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "support": 1,
+                    "tp": 1
+                  }
+                }
+              },
+              "actionSupport": {
+                "FALLING": 1,
+                "FIGHTING": 1,
+                "IDLE": 1,
+                "WALKING": 1,
+                "WORKING": 1
+              },
+              "clipCount": 5,
+              "clipIds": [
+                "test_held_out-test-falling-no-knife-lowlight-01-74afd8c3",
+                "test_held_out-test-fighting-knife-01-220ca3a7",
+                "test_held_out-test-idle-no-knife-hard-01-99eccdca",
+                "test_held_out-test-walking-knife-occluded-01-d6d5cefa",
+                "test_held_out-test-working-no-knife-01-eb32b480"
+              ],
+              "fiveClassMacroF1Available": true,
+              "knife": {
+                "false_alarm_rate": 0.3333333333333333,
+                "false_negative": 2,
+                "false_positive": 1,
+                "recall": 0.0,
+                "true_negative": 2,
+                "true_positive": 0
+              },
+              "knifeAccuracy": 0.4,
+              "knifeNegativeSupport": 3,
+              "knifePositiveSupport": 2,
+              "knifeRecallAndFalseAlarmAvailable": true
+            },
+            "present": {
+              "actionAccuracy": 1.0,
+              "actionMacroF1": null,
+              "actionSupport": {
+                "FALLING": 0,
+                "FIGHTING": 0,
+                "IDLE": 0,
+                "WALKING": 0,
+                "WORKING": 1
+              },
+              "clipCount": 1,
+              "clipIds": [
+                "test_held_out-test-working-knife-small-01-1c031a36"
+              ],
+              "fiveClassMacroF1Available": false,
+              "knife": null,
+              "knifeAccuracy": 1.0,
+              "knifeNegativeSupport": 0,
+              "knifePositiveSupport": 1,
+              "knifeRecallAndFalseAlarmAvailable": false
+            }
+          },
+          "smallKnife": {
+            "absent": {
+              "actionAccuracy": 1.0,
+              "actionMacroF1": null,
+              "actionSupport": {
+                "FALLING": 1,
+                "FIGHTING": 0,
+                "IDLE": 1,
+                "WALKING": 0,
+                "WORKING": 1
+              },
+              "clipCount": 3,
+              "clipIds": [
+                "test_held_out-test-falling-no-knife-lowlight-01-74afd8c3",
+                "test_held_out-test-idle-no-knife-hard-01-99eccdca",
+                "test_held_out-test-working-no-knife-01-eb32b480"
+              ],
+              "fiveClassMacroF1Available": false,
+              "knife": null,
+              "knifeAccuracy": 0.6666666666666666,
+              "knifeNegativeSupport": 3,
+              "knifePositiveSupport": 0,
+              "knifeRecallAndFalseAlarmAvailable": false
+            },
+            "present": {
+              "actionAccuracy": 0.6666666666666666,
+              "actionMacroF1": null,
+              "actionSupport": {
+                "FALLING": 0,
+                "FIGHTING": 1,
+                "IDLE": 0,
+                "WALKING": 1,
+                "WORKING": 1
+              },
+              "clipCount": 3,
+              "clipIds": [
+                "test_held_out-test-fighting-knife-01-220ca3a7",
+                "test_held_out-test-walking-knife-occluded-01-d6d5cefa",
+                "test_held_out-test-working-knife-small-01-1c031a36"
+              ],
+              "fiveClassMacroF1Available": false,
+              "knife": null,
+              "knifeAccuracy": 0.3333333333333333,
+              "knifeNegativeSupport": 0,
+              "knifePositiveSupport": 3,
+              "knifeRecallAndFalseAlarmAvailable": false
+            }
+          }
+        },
+        "primary": {
+          "candidateId": "ratio-164",
+          "heldOutTest": {
+            "action": {
+              "macroF1": 0.7333333333333333,
+              "perClass": {
+                "FALLING": {
+                  "f1": 1.0,
+                  "fn": 0,
+                  "fp": 0,
+                  "precision": 1.0,
+                  "recall": 1.0,
+                  "support": 1,
+                  "tp": 1
+                },
+                "FIGHTING": {
+                  "f1": 1.0,
+                  "fn": 0,
+                  "fp": 0,
+                  "precision": 1.0,
+                  "recall": 1.0,
+                  "support": 1,
+                  "tp": 1
+                },
+                "IDLE": {
+                  "f1": 0.6666666666666666,
+                  "fn": 0,
+                  "fp": 1,
+                  "precision": 0.5,
+                  "recall": 1.0,
+                  "support": 1,
+                  "tp": 1
+                },
+                "WALKING": {
+                  "f1": 0.0,
+                  "fn": 1,
+                  "fp": 0,
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "support": 1,
+                  "tp": 0
+                },
+                "WORKING": {
+                  "f1": 1.0,
+                  "fn": 0,
+                  "fp": 0,
+                  "precision": 1.0,
+                  "recall": 1.0,
+                  "support": 2,
+                  "tp": 2
+                }
+              }
+            },
+            "knife": {
+              "false_alarm_rate": 0.3333333333333333,
+              "false_negative": 2,
+              "false_positive": 1,
+              "recall": 0.3333333333333333,
+              "true_negative": 2,
+              "true_positive": 1
+            },
+            "testClipIds": [
+              "test_held_out-test-falling-no-knife-lowlight-01-74afd8c3",
+              "test_held_out-test-fighting-knife-01-220ca3a7",
+              "test_held_out-test-idle-no-knife-hard-01-99eccdca",
+              "test_held_out-test-walking-knife-occluded-01-d6d5cefa",
+              "test_held_out-test-working-knife-small-01-1c031a36",
+              "test_held_out-test-working-no-knife-01-eb32b480"
+            ],
+            "threshold": -0.375
+          },
+          "thresholdFreeze": {
+            "calibrationClipIds": [
+              "calibration-cal-falling-no-knife-01-3fd2c968",
+              "calibration-cal-fighting-no-knife-01-f0b10fe2",
+              "calibration-cal-idle-knife-01-364a3160",
+              "calibration-cal-walking-knife-01-43fb67c6",
+              "calibration-cal-working-knife-02-dfd917f8",
+              "calibration-cal-working-no-knife-01-340a3274"
+            ],
+            "calibrationMetrics": {
+              "false_alarm_rate": 0.0,
+              "false_negative": 0,
+              "false_positive": 0,
+              "recall": 1.0,
+              "true_negative": 3,
+              "true_positive": 3
+            },
+            "minimumRecallConstraint": 0.9,
+            "selectionKey": [
+              0.0,
+              0.375,
+              -1.0
+            ],
+            "testLabelsUsed": false,
+            "threshold": -0.375
+          }
+        }
+      },
+      "token_count_aware": {
+        "calibrationThresholdSensitivity": {
+          "folds": [
+            {
+              "calibrationMetrics": {
+                "false_alarm_rate": 0.5,
+                "false_negative": 0,
+                "false_positive": 1,
+                "recall": 1.0,
+                "true_negative": 1,
+                "true_positive": 3
+              },
+              "excludedCalibrationClipId": "calibration-cal-falling-no-knife-01-3fd2c968",
+              "status": "MEASURED",
+              "testLabelsUsed": false,
+              "threshold": -1.1875
+            },
+            {
+              "calibrationMetrics": {
+                "false_alarm_rate": 0.0,
+                "false_negative": 0,
+                "false_positive": 0,
+                "recall": 1.0,
+                "true_negative": 2,
+                "true_positive": 3
+              },
+              "excludedCalibrationClipId": "calibration-cal-fighting-no-knife-01-f0b10fe2",
+              "status": "MEASURED",
+              "testLabelsUsed": false,
+              "threshold": -0.8125
+            },
+            {
+              "calibrationMetrics": {
+                "false_alarm_rate": 0.3333333333333333,
+                "false_negative": 0,
+                "false_positive": 1,
+                "recall": 1.0,
+                "true_negative": 2,
+                "true_positive": 2
+              },
+              "excludedCalibrationClipId": "calibration-cal-idle-knife-01-364a3160",
+              "status": "MEASURED",
+              "testLabelsUsed": false,
+              "threshold": -0.75
+            },
+            {
+              "calibrationMetrics": {
+                "false_alarm_rate": 0.3333333333333333,
+                "false_negative": 0,
+                "false_positive": 1,
+                "recall": 1.0,
+                "true_negative": 2,
+                "true_positive": 2
+              },
+              "excludedCalibrationClipId": "calibration-cal-walking-knife-01-43fb67c6",
+              "status": "MEASURED",
+              "testLabelsUsed": false,
+              "threshold": -0.8125
+            },
+            {
+              "calibrationMetrics": {
+                "false_alarm_rate": 0.3333333333333333,
+                "false_negative": 0,
+                "false_positive": 1,
+                "recall": 1.0,
+                "true_negative": 2,
+                "true_positive": 2
+              },
+              "excludedCalibrationClipId": "calibration-cal-working-knife-02-dfd917f8",
+              "status": "MEASURED",
+              "testLabelsUsed": false,
+              "threshold": -0.8125
+            },
+            {
+              "calibrationMetrics": {
+                "false_alarm_rate": 0.5,
+                "false_negative": 0,
+                "false_positive": 1,
+                "recall": 1.0,
+                "true_negative": 1,
+                "true_positive": 3
+              },
+              "excludedCalibrationClipId": "calibration-cal-working-no-knife-01-340a3274",
+              "status": "MEASURED",
+              "testLabelsUsed": false,
+              "threshold": -0.8125
+            }
+          ],
+          "measuredFoldCount": 6,
+          "method": "leave-one-calibration-clip-out",
+          "testLabelsUsed": false,
+          "thresholdMaximum": -0.75,
+          "thresholdMinimum": -1.1875,
+          "thresholdRange": 0.4375,
+          "unavailableFoldCount": 0
+        },
+        "candidateId": "count-144",
+        "heldOutConditionSlices": {
+          "lowLight": {
+            "absent": {
+              "actionAccuracy": 0.75,
+              "actionMacroF1": null,
+              "actionSupport": {
+                "FALLING": 0,
+                "FIGHTING": 1,
+                "IDLE": 0,
+                "WALKING": 1,
+                "WORKING": 2
+              },
+              "clipCount": 4,
+              "clipIds": [
+                "test_held_out-test-fighting-knife-01-220ca3a7",
+                "test_held_out-test-walking-knife-occluded-01-d6d5cefa",
+                "test_held_out-test-working-knife-small-01-1c031a36",
+                "test_held_out-test-working-no-knife-01-eb32b480"
+              ],
+              "fiveClassMacroF1Available": false,
+              "knife": {
+                "false_alarm_rate": 1.0,
+                "false_negative": 1,
+                "false_positive": 1,
+                "recall": 0.6666666666666666,
+                "true_negative": 0,
+                "true_positive": 2
+              },
+              "knifeAccuracy": 0.5,
+              "knifeNegativeSupport": 1,
+              "knifePositiveSupport": 3,
+              "knifeRecallAndFalseAlarmAvailable": true
+            },
+            "present": {
+              "actionAccuracy": 1.0,
+              "actionMacroF1": null,
+              "actionSupport": {
+                "FALLING": 1,
+                "FIGHTING": 0,
+                "IDLE": 1,
+                "WALKING": 0,
+                "WORKING": 0
+              },
+              "clipCount": 2,
+              "clipIds": [
+                "test_held_out-test-falling-no-knife-lowlight-01-74afd8c3",
+                "test_held_out-test-idle-no-knife-hard-01-99eccdca"
+              ],
+              "fiveClassMacroF1Available": false,
+              "knife": null,
+              "knifeAccuracy": 0.5,
+              "knifeNegativeSupport": 2,
+              "knifePositiveSupport": 0,
+              "knifeRecallAndFalseAlarmAvailable": false
+            }
+          },
+          "occlusion": {
+            "absent": {
+              "actionAccuracy": 0.8,
+              "actionMacroF1": {
+                "macroF1": 0.7333333333333333,
+                "perClass": {
+                  "FALLING": {
+                    "f1": 1.0,
+                    "fn": 0,
+                    "fp": 0,
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "support": 1,
+                    "tp": 1
+                  },
+                  "FIGHTING": {
+                    "f1": 1.0,
+                    "fn": 0,
+                    "fp": 0,
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "support": 1,
+                    "tp": 1
+                  },
+                  "IDLE": {
+                    "f1": 0.6666666666666666,
+                    "fn": 0,
+                    "fp": 1,
+                    "precision": 0.5,
+                    "recall": 1.0,
+                    "support": 1,
+                    "tp": 1
+                  },
+                  "WALKING": {
+                    "f1": 0.0,
+                    "fn": 1,
+                    "fp": 0,
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "support": 1,
+                    "tp": 0
+                  },
+                  "WORKING": {
+                    "f1": 1.0,
+                    "fn": 0,
+                    "fp": 0,
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "support": 1,
+                    "tp": 1
+                  }
+                }
+              },
+              "actionSupport": {
+                "FALLING": 1,
+                "FIGHTING": 1,
+                "IDLE": 1,
+                "WALKING": 1,
+                "WORKING": 1
+              },
+              "clipCount": 5,
+              "clipIds": [
+                "test_held_out-test-falling-no-knife-lowlight-01-74afd8c3",
+                "test_held_out-test-fighting-knife-01-220ca3a7",
+                "test_held_out-test-idle-no-knife-hard-01-99eccdca",
+                "test_held_out-test-walking-knife-occluded-01-d6d5cefa",
+                "test_held_out-test-working-no-knife-01-eb32b480"
+              ],
+              "fiveClassMacroF1Available": true,
+              "knife": {
+                "false_alarm_rate": 0.6666666666666666,
+                "false_negative": 1,
+                "false_positive": 2,
+                "recall": 0.5,
+                "true_negative": 1,
+                "true_positive": 1
+              },
+              "knifeAccuracy": 0.4,
+              "knifeNegativeSupport": 3,
+              "knifePositiveSupport": 2,
+              "knifeRecallAndFalseAlarmAvailable": true
+            },
+            "present": {
+              "actionAccuracy": 1.0,
+              "actionMacroF1": null,
+              "actionSupport": {
+                "FALLING": 0,
+                "FIGHTING": 0,
+                "IDLE": 0,
+                "WALKING": 0,
+                "WORKING": 1
+              },
+              "clipCount": 1,
+              "clipIds": [
+                "test_held_out-test-working-knife-small-01-1c031a36"
+              ],
+              "fiveClassMacroF1Available": false,
+              "knife": null,
+              "knifeAccuracy": 1.0,
+              "knifeNegativeSupport": 0,
+              "knifePositiveSupport": 1,
+              "knifeRecallAndFalseAlarmAvailable": false
+            }
+          },
+          "smallKnife": {
+            "absent": {
+              "actionAccuracy": 1.0,
+              "actionMacroF1": null,
+              "actionSupport": {
+                "FALLING": 1,
+                "FIGHTING": 0,
+                "IDLE": 1,
+                "WALKING": 0,
+                "WORKING": 1
+              },
+              "clipCount": 3,
+              "clipIds": [
+                "test_held_out-test-falling-no-knife-lowlight-01-74afd8c3",
+                "test_held_out-test-idle-no-knife-hard-01-99eccdca",
+                "test_held_out-test-working-no-knife-01-eb32b480"
+              ],
+              "fiveClassMacroF1Available": false,
+              "knife": null,
+              "knifeAccuracy": 0.3333333333333333,
+              "knifeNegativeSupport": 3,
+              "knifePositiveSupport": 0,
+              "knifeRecallAndFalseAlarmAvailable": false
+            },
+            "present": {
+              "actionAccuracy": 0.6666666666666666,
+              "actionMacroF1": null,
+              "actionSupport": {
+                "FALLING": 0,
+                "FIGHTING": 1,
+                "IDLE": 0,
+                "WALKING": 1,
+                "WORKING": 1
+              },
+              "clipCount": 3,
+              "clipIds": [
+                "test_held_out-test-fighting-knife-01-220ca3a7",
+                "test_held_out-test-walking-knife-occluded-01-d6d5cefa",
+                "test_held_out-test-working-knife-small-01-1c031a36"
+              ],
+              "fiveClassMacroF1Available": false,
+              "knife": null,
+              "knifeAccuracy": 0.6666666666666666,
+              "knifeNegativeSupport": 0,
+              "knifePositiveSupport": 3,
+              "knifeRecallAndFalseAlarmAvailable": false
+            }
+          }
+        },
+        "primary": {
+          "candidateId": "count-144",
+          "heldOutTest": {
+            "action": {
+              "macroF1": 0.7333333333333333,
+              "perClass": {
+                "FALLING": {
+                  "f1": 1.0,
+                  "fn": 0,
+                  "fp": 0,
+                  "precision": 1.0,
+                  "recall": 1.0,
+                  "support": 1,
+                  "tp": 1
+                },
+                "FIGHTING": {
+                  "f1": 1.0,
+                  "fn": 0,
+                  "fp": 0,
+                  "precision": 1.0,
+                  "recall": 1.0,
+                  "support": 1,
+                  "tp": 1
+                },
+                "IDLE": {
+                  "f1": 0.6666666666666666,
+                  "fn": 0,
+                  "fp": 1,
+                  "precision": 0.5,
+                  "recall": 1.0,
+                  "support": 1,
+                  "tp": 1
+                },
+                "WALKING": {
+                  "f1": 0.0,
+                  "fn": 1,
+                  "fp": 0,
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "support": 1,
+                  "tp": 0
+                },
+                "WORKING": {
+                  "f1": 1.0,
+                  "fn": 0,
+                  "fp": 0,
+                  "precision": 1.0,
+                  "recall": 1.0,
+                  "support": 2,
+                  "tp": 2
+                }
+              }
+            },
+            "knife": {
+              "false_alarm_rate": 0.6666666666666666,
+              "false_negative": 1,
+              "false_positive": 2,
+              "recall": 0.6666666666666666,
+              "true_negative": 1,
+              "true_positive": 2
+            },
+            "testClipIds": [
+              "test_held_out-test-falling-no-knife-lowlight-01-74afd8c3",
+              "test_held_out-test-fighting-knife-01-220ca3a7",
+              "test_held_out-test-idle-no-knife-hard-01-99eccdca",
+              "test_held_out-test-walking-knife-occluded-01-d6d5cefa",
+              "test_held_out-test-working-knife-small-01-1c031a36",
+              "test_held_out-test-working-no-knife-01-eb32b480"
+            ],
+            "threshold": -0.8125
+          },
+          "thresholdFreeze": {
+            "calibrationClipIds": [
+              "calibration-cal-falling-no-knife-01-3fd2c968",
+              "calibration-cal-fighting-no-knife-01-f0b10fe2",
+              "calibration-cal-idle-knife-01-364a3160",
+              "calibration-cal-walking-knife-01-43fb67c6",
+              "calibration-cal-working-knife-02-dfd917f8",
+              "calibration-cal-working-no-knife-01-340a3274"
+            ],
+            "calibrationMetrics": {
+              "false_alarm_rate": 0.3333333333333333,
+              "false_negative": 0,
+              "false_positive": 1,
+              "recall": 1.0,
+              "true_negative": 2,
+              "true_positive": 3
+            },
+            "minimumRecallConstraint": 0.9,
+            "selectionKey": [
+              0.3333333333333333,
+              0.8125,
+              -1.0
+            ],
+            "testLabelsUsed": false,
+            "threshold": -0.8125
+          }
+        }
+      }
+    },
+    "conditions": [
+      "lowLight",
+      "occlusion",
+      "smallKnife"
+    ],
+    "filenameHintsUsedAsGroundTruth": false,
+    "minimumRecallConstraint": 0.9,
+    "testLabelsUsedForThresholdSelection": false
+  },
+  "predictions": "data/bact_target_scene/M307_FOUR_BASELINE_PREDICTIONS.json",
+  "realWorldExternalValidityClaimAllowed": false,
+  "semanticRobustnessPilotAllowed": true,
+  "stableRollbackPreserved": true,
+  "status": "PASS_PILOT_HELDOUT_EVALUATION_SEALED"
+}

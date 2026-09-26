@@ -1,0 +1,7 @@
+# GitHub publication procedure (not executed)
+
+Suggested name: `kv260-mage-vl-4b`. Suggested description: “Mage-VL 4B deployment on AMD Kria KV260, with PS–PL inference, BACT-V2 token budgeting, and reproducible evaluation artifacts.” Suggested topics: `fpga`, `kv260`, `multimodal`, `edge-ai`, `hls`, `research-prototype`.
+
+First review the [readiness blockers](../RELEASE_READINESS.md), especially source/upstream license. Until then, keep the work local or use a **Private** repository; no Public setting is assumed. Preserve an existing remote repository's files and history rather than replacing them. The exact owner and remote must be verified from Git, not guessed from this document.
+
+Before publication, inspect local `git status`, review [file manifest](../manifests/release_files.json) and `git diff --cached --stat`, add only this release directory and inspect ignored assets. Set and verify the remote URL, then perform an ordinary non-forced push. If the remote already has a commit, fetch and compare it, preserving its history and files; never force-push over it. Verify the remote commit SHA after pushing. Only after the separately requested source upload should an owner consider `v0.1.0` as a research-preview Release using [release notes](releases/v0.1.0.md). Hardware binaries belong in a separately permission-cleared Release asset with SHA-256, not the Git tree. Model weights follow upstream license and obtain instructions, not an invented download link. This document is a procedure, not proof that a remote push or Release occurred.

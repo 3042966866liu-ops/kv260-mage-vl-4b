@@ -1,0 +1,119 @@
+{
+  "date": "2026-09-01",
+  "gate": "M175-M120-fixed-text-board-package",
+  "status": "OFFLINE_PACKAGE_PASS_BOARD_NOT_EXECUTED",
+  "build_id": "0x4D395832",
+  "kernel": "mage_m120_m89x2_0",
+  "weight_mode": "staged-low-cma",
+  "source_manifest_sha256": "6140f030a338d2f9691d9c3a3b8045cd5b6a12dd42ecfbb0736fa98c0a0f7a94",
+  "m143_result_sha256": "c514c1b44690855ad45cda8df558807940916d27728491be0d275095d7a1eda2",
+  "m143_fixture_sha256": "9565ec2f7d1df162997456a6ccb01234c3b3e4802107ed318827553c3aa66eab",
+  "required_predecessor": "M140_M120_SINGLE_CHAIN_BOARD_RESULT_01.json status=PASS",
+  "board_state_changed": false,
+  "stable_rollback_preserved": true,
+  "m165_auxiliary_result_sha256": "013d5e6cd49bf044b319cb7e80ac3f7915a7b8983fc0cfba0cfd49fcafe5a726",
+  "embedding_policy": "M120 W3-G64 selected fixed-prompt rows",
+  "files": [
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 5430,
+      "sha256": "6140f030a338d2f9691d9c3a3b8045cd5b6a12dd42ecfbb0736fa98c0a0f7a94"
+    },
+    {
+      "path": "auxiliary/M77_TEXT_AUX_MANIFEST.json",
+      "bytes": 25926,
+      "sha256": "122d2d9ba268802b86422d1d888855c5f2f30e4851adcc450cf3736a17669d2a"
+    },
+    {
+      "path": "auxiliary/m77_text_aux_fp16.npz",
+      "bytes": 315138,
+      "sha256": "7f2dfc14ae47cb537e148cafc9b1c6cc285e1fe546dec901275a4078a8458ffd"
+    },
+    {
+      "path": "auxiliary/official_cpu_text_1token.json",
+      "bytes": 916,
+      "sha256": "bb7f5a34db949976eca159ab8a125508e178699dbe1cb90cfac675bc582243bb"
+    },
+    {
+      "path": "contracts/M126_LANGUAGE_RUNTIME_CONTRACT_RESULT.json",
+      "bytes": 406213,
+      "sha256": "c8bab2c1d4c7ba1cf2075559498243ed2803d8db8de90a8d812c94ceebfc7e9f"
+    },
+    {
+      "path": "contracts/M126_LMHEAD_RUNTIME_CONTRACT_RESULT.json",
+      "bytes": 40001,
+      "sha256": "3304da81b7e679291bfa59bb11d4fd2d978c2dc3facb2fc2dbbd23739fe5be4e"
+    },
+    {
+      "path": "overlay/m120_m89x2_t32.bit",
+      "bytes": 7797914,
+      "sha256": "1cbf7bbb86cfe64c2349418d5a15890d735bea3fa4c999060c8a9da9ac3206ac"
+    },
+    {
+      "path": "overlay/m120_m89x2_t32.hwh",
+      "bytes": 493370,
+      "sha256": "9bd6100bcc274486ddd51133e4dc2247f35c030d49e53cc709438f2a74ee3520"
+    },
+    {
+      "path": "reference/M143_M120_LAYER0_BOUNDARY_FIXTURE_RESULT.json",
+      "bytes": 2131,
+      "sha256": "c514c1b44690855ad45cda8df558807940916d27728491be0d275095d7a1eda2"
+    },
+    {
+      "path": "reference/m143_m120_layer0_boundaries.npz",
+      "bytes": 1456855,
+      "sha256": "9565ec2f7d1df162997456a6ccb01234c3b3e4802107ed318827553c3aa66eab"
+    },
+    {
+      "path": "runtime/board_runtime.py",
+      "bytes": 23357,
+      "sha256": "5d53ea406e57de88f8c14d9bc4e1cb0c0049ff0b8f4bcf620e05745fcd82b201"
+    },
+    {
+      "path": "runtime/contract_runtime.py",
+      "bytes": 7223,
+      "sha256": "2912ab6040e1218775b397a184fd2d2487a83935fb9f7dfff7c97381c9cde75d"
+    },
+    {
+      "path": "runtime/m120_board_env_preflight.py",
+      "bytes": 4582,
+      "sha256": "7cb209d0810af25b87e1caee5cbc34f8b7d50f6dea7a5d76c4fd5a32a348ed46"
+    },
+    {
+      "path": "runtime/m120_layer0_boundary_acceptance.py",
+      "bytes": 2902,
+      "sha256": "c7fb289afa223a25e3357239f7d05f4e2aee96e02f27eeb9422ec86578959f48"
+    },
+    {
+      "path": "runtime/m120_layer0_boundary_diagnostic.py",
+      "bytes": 9683,
+      "sha256": "33f43a15b1e0ead3d249773fa5e33208d47b57aebe0ec34e1895c91ceb43f9d7"
+    },
+    {
+      "path": "runtime/run_m120_layer0_gate.sh",
+      "bytes": 1968,
+      "sha256": "24f43f0c5284991a6ad6c24e1f54af6bfee0ffed9a6b0ece07e608521b254f56"
+    },
+    {
+      "path": "runtime/support/reserved_ddr_pool.py",
+      "bytes": 5894,
+      "sha256": "e933f9818e888ed7c924b7597adadd42f7254b942f65c645b85f17fc40f33013"
+    },
+    {
+      "path": "runtime/text_e2e_gate.py",
+      "bytes": 10194,
+      "sha256": "ea189ccad3ca6ade1a80e0a8e8730a80f96fe0001d0c0af96cc509047d1a56e9"
+    }
+  ],
+  "source_package_manifest_sha256": "34662ca90cb45b9a1d34903538b030f28b1f9f70ece3f35e7ccbbaf6eb3bbf97",
+  "m168_failure_uart_sha256": "62fb068ab16b37596eaad2c01d24d3749287594b32ede4751ceb1c1b866c0a2d",
+  "host_runtime_fix": {
+    "optional_layer_conversion": "convert chain.layer to int only when non-null",
+    "patched_occurrences": 2,
+    "failure_evidence_includes_traceback_and_partial_runtime_counters": true,
+    "fpga_arithmetic_changed": false,
+    "contracts_changed": false,
+    "weights_changed": false
+  },
+  "video_runtime_must_inherit_fix": true
+}

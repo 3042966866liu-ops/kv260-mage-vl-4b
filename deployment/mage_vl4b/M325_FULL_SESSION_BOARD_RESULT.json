@@ -1,0 +1,75 @@
+{
+  "date": "2026-09-26",
+  "gate": "M325-BACT159-same-session-video-and-Decode-one",
+  "status": "PASS_NUMERICAL_EXPERIMENTAL_PERFORMANCE_NOT_FASTER",
+  "classification": "real KV260 same-session fixed-video measurement; candidate not formally promoted",
+  "uart_log": "tmp/m325_full_session_02_uart.log",
+  "uart_log_sha256": "bb51433c6dd111ed200899c35e1af1e8de9cf6acc7f1cfc4f1a3195037cbe31c",
+  "board_results": {
+    "stable": "/home/ubuntu/tellme_m120_m89x2_20260901/results/m325_full_session_02/video_stable.json",
+    "candidate": "/home/ubuntu/tellme_m120_m89x2_20260901/results/m325_full_session_02/video_candidate.json"
+  },
+  "board_full_result_sha256": {
+    "stable": "569cdbe6b07cdf876a8355d700f59223528be2b1cf3540ebeb467fe8bc604a0b",
+    "candidate": "6da360399a000042b0561173b4392e727ab9e2547d2222121a6b0b133d8225c0"
+  },
+  "reused_fixed_text_gate": true,
+  "same_session_video_and_decode_per_mode": true,
+  "stable_service_restored": true,
+  "stable_rollback_preserved": true,
+  "prompt_tokens": 159,
+  "visual_tokens": 98,
+  "t32_batches": 5,
+  "logical_fpga_calls_per_session": 1264,
+  "full_logits_each_step_exact": true,
+  "final_72_kv_hashes_exact": true,
+  "final_kv_length": 162,
+  "token_ids": [
+    15,
+    151645,
+    198,
+    58
+  ],
+  "eos_index": 1,
+  "continuation_after_eos": true,
+  "measurement_scope": "three forced incremental Decode steps after constrained first token; user-facing answer terminates at EOS",
+  "model_runtime_load_excluded": true,
+  "stable": {
+    "build_id": "0x4D395832",
+    "first_token_s": 228.531356099993,
+    "vision_s": 41.48707435501274,
+    "prefill_to_first_token_s": 186.79058894698392,
+    "decode_step_s": [
+      36.583860276005,
+      36.16910399700282,
+      36.18323452901677
+    ],
+    "three_decode_s": 108.93619880202459,
+    "three_decode_tokens_per_s": 0.027539055272637662,
+    "four_token_elapsed_s": 337.4675549020176
+  },
+  "candidate": {
+    "build_id": "0x4F503131",
+    "first_token_s": 241.07204257597914,
+    "vision_s": 41.87487042398425,
+    "prefill_to_first_token_s": 198.9478067579912,
+    "decode_step_s": [
+      40.7765837800107,
+      34.76326797599904,
+      34.66626923700096
+    ],
+    "three_decode_s": 110.2061209930107,
+    "three_decode_tokens_per_s": 0.027221718475966147,
+    "four_token_elapsed_s": 351.27816356898984
+  },
+  "paired_difference": {
+    "candidate_minus_stable_ttft_s": 12.54068647598615,
+    "candidate_minus_stable_three_decode_s": 1.269922190986108,
+    "candidate_over_stable_three_decode_throughput": 0.9884768452101981
+  },
+  "capacity_status": "STOPPED_BY_USER_NOT_PASS",
+  "formal_candidate_promotion_allowed": false,
+  "formal_performance_improvement_proved": false,
+  "rejected_attempt": "m325_full_session_01 video stopped before FPGA inference: progress callback accepted one argument but received two; text gates reused after exact verification",
+  "next_step": "Keep stable T32 service; if pursuing Decode-one, close RTL capacity gate and repeat order-balanced measurements, preferably with a non-EOS-generating prompt"
+}

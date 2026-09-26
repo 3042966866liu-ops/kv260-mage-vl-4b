@@ -1,0 +1,157 @@
+{
+  "status": "PASS_CANDIDATE_LAYER_EXACT",
+  "scope": "Real layer0 only; not full Decode performance",
+  "mode": "candidate",
+  "build_id": "0x4F503131",
+  "errors": [],
+  "overlay_loads": 1,
+  "stable_restored": true,
+  "performance_pass": false,
+  "capacity_status": "STOPPED_BY_USER_NOT_PASS",
+  "formal_promotion_allowed": false,
+  "input_token": 1291,
+  "checkpoint_sha256": "bee367481e65c79b9578bd40d6ea8e3776a98db440a14b9283b61e36882ca27e",
+  "cache_before": 852,
+  "service": {
+    "port8001_listening": false,
+    "accelerator_owners": [],
+    "excluded_display_owners": [
+      {
+        "pid": 1,
+        "device": "/dev/dri/card0",
+        "driver": "zynqmp-display"
+      },
+      {
+        "pid": 900,
+        "device": "/dev/dri/card0",
+        "driver": "zynqmp-display"
+      },
+      {
+        "pid": 1412,
+        "device": "/dev/dri/card0",
+        "driver": "zynqmp-display"
+      },
+      {
+        "pid": 1412,
+        "device": "/dev/dri/card0",
+        "driver": "zynqmp-display"
+      },
+      {
+        "pid": 1553,
+        "device": "/dev/dri/card0",
+        "driver": "zynqmp-display"
+      }
+    ]
+  },
+  "layer_seconds": 0.8860666730033699,
+  "outputs": [
+    {
+      "name": "hidden",
+      "path": "decode_one_layer_candidate01.arrays/hidden.npy",
+      "sha256": "0b7f432f28d726313e2fc536224f08350c10a5a9e61106bc9db21692f5de02b1",
+      "shape": [
+        1,
+        2560
+      ]
+    },
+    {
+      "name": "key",
+      "path": "decode_one_layer_candidate01.arrays/key.npy",
+      "sha256": "15cbba4fee4e921ec80a0974fec97e14cfc969b1bfd842fba51f492337891776",
+      "shape": [
+        853,
+        8,
+        128
+      ]
+    },
+    {
+      "name": "value",
+      "path": "decode_one_layer_candidate01.arrays/value.npy",
+      "sha256": "0e475df9638d6bc323038c3487f98767d18d0bfeccd2502e83eefc955f9f1c7e",
+      "shape": [
+        853,
+        8,
+        128
+      ]
+    }
+  ],
+  "comparisons": {
+    "hidden": {
+      "bit_exact": true
+    },
+    "key": {
+      "bit_exact": true
+    },
+    "value": {
+      "bit_exact": true
+    }
+  },
+  "cleanup": {
+    "recovery_required": false,
+    "buffers_released": true,
+    "errors": [],
+    "release_snapshot": {
+      "ap_ctrl": 4,
+      "ap_return": 1330655537,
+      "mm2s_dmasr": 4098,
+      "s2mm_dmasr": 4098,
+      "mm2s_idle": true,
+      "mm2s_error": false,
+      "s2mm_idle": true,
+      "s2mm_error": false,
+      "kernel_read_error": "",
+      "return_read_error": "",
+      "dma_read_error": ""
+    }
+  },
+  "restore": {
+    "identity": "stable-restored-zero",
+    "input_bytes": 2576,
+    "output_bytes": 4096,
+    "expected_build": 1295603762,
+    "status": "PASS_MINIMAL_TRANSACTION_ONLY",
+    "completion": {
+      "identity": "stable-restored-zero",
+      "expected_build": 1295603762,
+      "input_bytes": 2576,
+      "output_bytes": 4096,
+      "wait_seconds": 0.00011304099461995065,
+      "snapshot": {
+        "ap_ctrl": 14,
+        "kernel_read_error": "",
+        "ap_return": 1295603762,
+        "return_read_error": "",
+        "mm2s_dmasr": 4098,
+        "s2mm_dmasr": 4098,
+        "dma_read_error": "",
+        "mm2s_idle": true,
+        "mm2s_error": false,
+        "s2mm_idle": true,
+        "s2mm_error": false
+      },
+      "ap_done_seen": true,
+      "observed_return": 1295603762
+    },
+    "observed_sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+    "expected_sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+    "release_snapshot": {
+      "ap_ctrl": 4,
+      "kernel_read_error": "",
+      "ap_return": 1295603762,
+      "return_read_error": "",
+      "mm2s_dmasr": 4098,
+      "s2mm_dmasr": 4098,
+      "dma_read_error": "",
+      "mm2s_idle": true,
+      "mm2s_error": false,
+      "s2mm_idle": true,
+      "s2mm_error": false
+    },
+    "total_seconds": 0.004574105012579821
+  },
+  "boot_unchanged": true,
+  "cmdline_unchanged": true,
+  "recovery_required": false,
+  "result_sha256": "44cbc9ba0f97d80a5d470a907240cc6685010c861a86f3271ec00c37c4e5ef52",
+  "controller_exit_code": 0
+}

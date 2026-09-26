@@ -1,0 +1,195 @@
+{
+  "date": "2026-09-02",
+  "gate": "M267-official-gpu-constrained-binary-multiscale-knife",
+  "status": "PASS_SMALL_LABELLED_BINARY_MULTISCALE_SUITE_BOARD_PENDING",
+  "classification": "Small labelled official Mage-VL NF4/BF16 constrained-logit knife regression screen; not calibrated knife accuracy, target-camera evidence, KV260 semantics, or FPGA speed.",
+  "predecessors": {
+    "m264": "/mnt/c/Users/30429/Desktop/TeLLMe_FPGA_2026/deployment/mage_vl4b/M264_GPU_RESOLUTION_SEMANTIC_SUITE_RESULT.json",
+    "m264_sha256": "dbd2de884d393f9ee6c48f3d33ca35801eeab8b9c2f63c3446e8bd63bc1d31dd",
+    "m266": "/mnt/c/Users/30429/Desktop/TeLLMe_FPGA_2026/deployment/mage_vl4b/M266_GPU_MULTISCALE_SEMANTIC_RESULT.json",
+    "m266_sha256": "eb9f3a8efc4f49992cf57cac5bfafaaa57e7fe05d321e8befd0626cc4dcd124b",
+    "m246_source_sha256": "ddf55a13a29719cd57aecb99405a5f939f4439c38a4be72793644f2b6901da4d"
+  },
+  "architecture_decision": "The bounded fast path remains responsible for person/action updates and immediate alarm. The 4B path is alarm-only semantic knife review and must not block or revoke it.",
+  "prompt": "[TELLME_KNIFE_BINARY_V1] Inspect the four video frames. Output exactly one character: 1 if any knife is visible, otherwise 0. Answer:",
+  "knife_no_token_id": 15,
+  "knife_yes_token_id": 16,
+  "visual_strategy": {
+    "selected_keyframes": 2,
+    "views_per_keyframe": [
+      "224x224 global",
+      "224x224 centered 320-of-448 crop"
+    ],
+    "input_frames_to_processor": 4,
+    "visual_tokens": 196,
+    "visual_token_reduction_vs_M259_392_percent": 50.0,
+    "detail_source_is_label_independent": true,
+    "future_board_roi_source": "Use the already bounded fast-path person/object region to choose the detail crop; the current center crop is a deterministic feasibility screen, not final ROI logic."
+  },
+  "records": [
+    {
+      "name": "motorcycle_person_no_knife",
+      "expected": 0,
+      "decision": 0,
+      "pass": true,
+      "no_logit": 19.75,
+      "yes_logit": 17.75,
+      "margin_yes_minus_no": -2.0,
+      "score_calibrated": false,
+      "prompt_tokens": 284,
+      "tensor_shapes": {
+        "pixel_values": [
+          784,
+          768
+        ],
+        "image_grid_thw": [
+          4,
+          3
+        ],
+        "patch_positions": [
+          784,
+          3
+        ],
+        "input_ids": [
+          1,
+          284
+        ],
+        "attention_mask": [
+          1,
+          284
+        ]
+      },
+      "preprocess_ms": 22.43985399999815,
+      "forward_ms": 976.7776979999994
+    },
+    {
+      "name": "soccer_people_no_knife",
+      "expected": 0,
+      "decision": 0,
+      "pass": true,
+      "no_logit": 19.25,
+      "yes_logit": 17.75,
+      "margin_yes_minus_no": -1.5,
+      "score_calibrated": false,
+      "prompt_tokens": 284,
+      "tensor_shapes": {
+        "pixel_values": [
+          784,
+          768
+        ],
+        "image_grid_thw": [
+          4,
+          3
+        ],
+        "patch_positions": [
+          784,
+          3
+        ],
+        "input_ids": [
+          1,
+          284
+        ],
+        "attention_mask": [
+          1,
+          284
+        ]
+      },
+      "preprocess_ms": 11.424602999994704,
+      "forward_ms": 97.74166300000076
+    },
+    {
+      "name": "dog_no_person_no_knife",
+      "expected": 0,
+      "decision": 0,
+      "pass": true,
+      "no_logit": 18.75,
+      "yes_logit": 15.75,
+      "margin_yes_minus_no": -3.0,
+      "score_calibrated": false,
+      "prompt_tokens": 284,
+      "tensor_shapes": {
+        "pixel_values": [
+          784,
+          768
+        ],
+        "image_grid_thw": [
+          4,
+          3
+        ],
+        "patch_positions": [
+          784,
+          3
+        ],
+        "input_ids": [
+          1,
+          284
+        ],
+        "attention_mask": [
+          1,
+          284
+        ]
+      },
+      "preprocess_ms": 16.069748999996136,
+      "forward_ms": 101.71584199999728
+    },
+    {
+      "name": "businesswoman_knife_positive",
+      "expected": 1,
+      "decision": 1,
+      "pass": true,
+      "no_logit": 17.875,
+      "yes_logit": 19.5,
+      "margin_yes_minus_no": 1.625,
+      "score_calibrated": false,
+      "prompt_tokens": 284,
+      "tensor_shapes": {
+        "pixel_values": [
+          784,
+          768
+        ],
+        "image_grid_thw": [
+          4,
+          3
+        ],
+        "patch_positions": [
+          784,
+          3
+        ],
+        "input_ids": [
+          1,
+          284
+        ],
+        "attention_mask": [
+          1,
+          284
+        ]
+      },
+      "preprocess_ms": 7.116508000002852,
+      "forward_ms": 107.31536800000185
+    }
+  ],
+  "suite_pass": true,
+  "projected_schedule": {
+    "official_processor_prompt_tokens": 284,
+    "t32_batches_from_official_prompt": 9,
+    "logical_calls_from_official_prompt": 1394,
+    "call_reduction_vs_M264_official_448_prompt_percent": 39.86194995685936,
+    "not_board_measurement": true
+  },
+  "model": "microsoft/Mage-VL",
+  "checkpoint": "/home/lyy/models/Mage-VL",
+  "checkpoint_config_sha256": "fd4621212569e893ce2caa110431fde73f3cc1a1d92e1b8320bb4e0cfbcad34a",
+  "backend": "WSL local CUDA GPU; not KV260",
+  "quantization": "bitsandbytes NF4 4-bit; BF16 compute",
+  "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "load_ms": 5815.850816000001,
+  "gpu_peak_allocated_bytes": 3852295680,
+  "threshold_calibrated": false,
+  "semantic_accuracy_passed": false,
+  "semantic_accuracy_reason": "Four examples are only a regression screen. M252 held-out target-camera calibration is still required before reporting precision, recall or false-alarm rate.",
+  "host_gpu_timing_is_board_evidence": false,
+  "active_board_service_changed": false,
+  "stable_rollback_preserved": true,
+  "source_sha256": "dc73adb41565f49b6b18de4ff2a677fff3b41af6e547a644194ba98a0ce66979",
+  "next_gate": "If PASS, replace center crop with hash-locked fast-path ROI selection, rerun the same binary suite, package cleanly, and wait for COM3 for isolated KV260 TTFT."
+}

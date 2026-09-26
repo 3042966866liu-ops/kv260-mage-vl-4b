@@ -1,0 +1,569 @@
+{
+  "date": "2026-09-02",
+  "gate": "M264-official-gpu-labelled-resolution-semantic-suite",
+  "status": "FAIL_OR_BASELINE_UNSUPPORTED_REQUIRES_RESOLUTION_SWEEP",
+  "classification": "Small labelled official Mage-VL NF4/BF16 GPU resolution-regression suite; not KV260 quantized semantics, production accuracy, FPGA speed, or board promotion.",
+  "model": "microsoft/Mage-VL",
+  "checkpoint": "/home/lyy/models/Mage-VL",
+  "checkpoint_config_sha256": "fd4621212569e893ce2caa110431fde73f3cc1a1d92e1b8320bb4e0cfbcad34a",
+  "backend": "WSL local CUDA GPU; not KV260",
+  "quantization": "bitsandbytes NF4 4-bit; BF16 compute",
+  "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "load_ms": 6393.348815999996,
+  "gpu_peak_allocated_bytes": 3834225664,
+  "prompt": "请仅依据这两帧可见内容判断安全状态。只按以下格式回答，不要解释：刀具=有或无；人物=有或无；动作=一个简短动作。",
+  "records": [
+    {
+      "name": "motorcycle_person_no_knife",
+      "provenance": "Frozen user motorcycle frames 0 and 3 from M249 fixtures.",
+      "expected": {
+        "knife": "无",
+        "person": "有",
+        "action_any": [
+          "摩托",
+          "骑",
+          "驾驶",
+          "挥手",
+          "招手"
+        ]
+      },
+      "full_448": {
+        "label": "motorcycle_person_no_knife:M259-448",
+        "prompt_tokens": 467,
+        "tensor_shapes": {
+          "pixel_values": [
+            1568,
+            768
+          ],
+          "image_grid_thw": [
+            2,
+            3
+          ],
+          "patch_positions": [
+            1568,
+            3
+          ],
+          "input_ids": [
+            1,
+            467
+          ],
+          "attention_mask": [
+            1,
+            467
+          ]
+        },
+        "generated_token_ids": [
+          101953,
+          76813,
+          28,
+          42192,
+          24968,
+          104013,
+          28,
+          18830,
+          24968,
+          102196,
+          28,
+          117057,
+          151645
+        ],
+        "answer": "刀具=无；人物=有；动作=挥手",
+        "semantic": {
+          "knife": "无",
+          "person": "有",
+          "action_expected_any": [
+            "摩托",
+            "骑",
+            "驾驶",
+            "挥手",
+            "招手"
+          ],
+          "action_match": true,
+          "matches_expected": true
+        },
+        "preprocess_ms": 35.09255600000216,
+        "ttft_ms": 1209.9619370000028,
+        "generation_ms": 2068.0793639999993
+      },
+      "candidate_224": {
+        "label": "motorcycle_person_no_knife:M262-224",
+        "prompt_tokens": 173,
+        "tensor_shapes": {
+          "pixel_values": [
+            392,
+            768
+          ],
+          "image_grid_thw": [
+            2,
+            3
+          ],
+          "patch_positions": [
+            392,
+            3
+          ],
+          "input_ids": [
+            1,
+            173
+          ],
+          "attention_mask": [
+            1,
+            173
+          ]
+        },
+        "generated_token_ids": [
+          101953,
+          76813,
+          28,
+          42192,
+          24968,
+          104013,
+          28,
+          18830,
+          24968,
+          102196,
+          28,
+          117057,
+          151645
+        ],
+        "answer": "刀具=无；人物=有；动作=挥手",
+        "semantic": {
+          "knife": "无",
+          "person": "有",
+          "action_expected_any": [
+            "摩托",
+            "骑",
+            "驾驶",
+            "挥手",
+            "招手"
+          ],
+          "action_match": true,
+          "matches_expected": true
+        },
+        "preprocess_ms": 26.369125999998744,
+        "ttft_ms": 108.71482299999968,
+        "generation_ms": 895.6751640000036
+      },
+      "full_supported": true,
+      "candidate_pass": true,
+      "candidate_regression": false,
+      "semantic_flags_match": true
+    },
+    {
+      "name": "soccer_people_no_knife",
+      "provenance": "/home/lyy/models/Mage-VL/examples/soccer-broadcast.mp4",
+      "expected": {
+        "knife": "无",
+        "person": "有",
+        "action_any": [
+          "足球",
+          "踢球",
+          "运动",
+          "跑",
+          "比赛"
+        ]
+      },
+      "full_448": {
+        "label": "soccer_people_no_knife:M259-448",
+        "prompt_tokens": 467,
+        "tensor_shapes": {
+          "pixel_values": [
+            1568,
+            768
+          ],
+          "image_grid_thw": [
+            2,
+            3
+          ],
+          "patch_positions": [
+            1568,
+            3
+          ],
+          "input_ids": [
+            1,
+            467
+          ],
+          "attention_mask": [
+            1,
+            467
+          ]
+        },
+        "generated_token_ids": [
+          101953,
+          76813,
+          28,
+          42192,
+          24968,
+          104013,
+          28,
+          18830,
+          24968,
+          102196,
+          28,
+          102631,
+          151645
+        ],
+        "answer": "刀具=无；人物=有；动作=讲话",
+        "semantic": {
+          "knife": "无",
+          "person": "有",
+          "action_expected_any": [
+            "足球",
+            "踢球",
+            "运动",
+            "跑",
+            "比赛"
+          ],
+          "action_match": false,
+          "matches_expected": false
+        },
+        "preprocess_ms": 28.645085999997377,
+        "ttft_ms": 202.96216900000275,
+        "generation_ms": 869.3991470000028
+      },
+      "candidate_224": {
+        "label": "soccer_people_no_knife:M262-224",
+        "prompt_tokens": 173,
+        "tensor_shapes": {
+          "pixel_values": [
+            392,
+            768
+          ],
+          "image_grid_thw": [
+            2,
+            3
+          ],
+          "patch_positions": [
+            392,
+            3
+          ],
+          "input_ids": [
+            1,
+            173
+          ],
+          "attention_mask": [
+            1,
+            173
+          ]
+        },
+        "generated_token_ids": [
+          101953,
+          76813,
+          28,
+          42192,
+          24968,
+          104013,
+          28,
+          18830,
+          24968,
+          102196,
+          28,
+          102631,
+          151645
+        ],
+        "answer": "刀具=无；人物=有；动作=讲话",
+        "semantic": {
+          "knife": "无",
+          "person": "有",
+          "action_expected_any": [
+            "足球",
+            "踢球",
+            "运动",
+            "跑",
+            "比赛"
+          ],
+          "action_match": false,
+          "matches_expected": false
+        },
+        "preprocess_ms": 26.884569999999997,
+        "ttft_ms": 144.9527949999947,
+        "generation_ms": 855.5493959999935
+      },
+      "full_supported": false,
+      "candidate_pass": false,
+      "candidate_regression": false,
+      "semantic_flags_match": true
+    },
+    {
+      "name": "dog_no_person_no_knife",
+      "provenance": "/home/lyy/models/Mage-VL/examples/dog.jpg",
+      "expected": {
+        "knife": "无",
+        "person": "无",
+        "action_any": []
+      },
+      "full_448": {
+        "label": "dog_no_person_no_knife:M259-448",
+        "prompt_tokens": 467,
+        "tensor_shapes": {
+          "pixel_values": [
+            1568,
+            768
+          ],
+          "image_grid_thw": [
+            2,
+            3
+          ],
+          "patch_positions": [
+            1568,
+            3
+          ],
+          "input_ids": [
+            1,
+            467
+          ],
+          "attention_mask": [
+            1,
+            467
+          ]
+        },
+        "generated_token_ids": [
+          101953,
+          76813,
+          28,
+          42192,
+          24968,
+          104013,
+          28,
+          42192,
+          24968,
+          102196,
+          28,
+          42192,
+          151645
+        ],
+        "answer": "刀具=无；人物=无；动作=无",
+        "semantic": {
+          "knife": "无",
+          "person": "无",
+          "action_expected_any": [],
+          "action_match": true,
+          "matches_expected": true
+        },
+        "preprocess_ms": 10.005018000001087,
+        "ttft_ms": 190.72441199999446,
+        "generation_ms": 600.6198299999994
+      },
+      "candidate_224": {
+        "label": "dog_no_person_no_knife:M262-224",
+        "prompt_tokens": 173,
+        "tensor_shapes": {
+          "pixel_values": [
+            392,
+            768
+          ],
+          "image_grid_thw": [
+            2,
+            3
+          ],
+          "patch_positions": [
+            392,
+            3
+          ],
+          "input_ids": [
+            1,
+            173
+          ],
+          "attention_mask": [
+            1,
+            173
+          ]
+        },
+        "generated_token_ids": [
+          101953,
+          76813,
+          28,
+          42192,
+          24968,
+          104013,
+          28,
+          42192,
+          24968,
+          102196,
+          28,
+          42192,
+          151645
+        ],
+        "answer": "刀具=无；人物=无；动作=无",
+        "semantic": {
+          "knife": "无",
+          "person": "无",
+          "action_expected_any": [],
+          "action_match": true,
+          "matches_expected": true
+        },
+        "preprocess_ms": 5.132768000002841,
+        "ttft_ms": 130.0009440000025,
+        "generation_ms": 637.6475839999998
+      },
+      "full_supported": true,
+      "candidate_pass": true,
+      "candidate_regression": false,
+      "semantic_flags_match": true
+    },
+    {
+      "name": "businesswoman_knife_positive",
+      "provenance": "Wikimedia Commons CC BY 2.0 fixture documented in m264_semantic_fixtures/README.md.",
+      "expected": {
+        "knife": "有",
+        "person": "有",
+        "action_any": [
+          "切",
+          "准备",
+          "拿刀",
+          "持刀",
+          "处理",
+          "做饭",
+          "烹饪"
+        ]
+      },
+      "full_448": {
+        "label": "businesswoman_knife_positive:M259-448",
+        "prompt_tokens": 467,
+        "tensor_shapes": {
+          "pixel_values": [
+            1568,
+            768
+          ],
+          "image_grid_thw": [
+            2,
+            3
+          ],
+          "patch_positions": [
+            1568,
+            3
+          ],
+          "input_ids": [
+            1,
+            467
+          ],
+          "attention_mask": [
+            1,
+            467
+          ]
+        },
+        "generated_token_ids": [
+          101953,
+          76813,
+          28,
+          18830,
+          24968,
+          104013,
+          28,
+          18830,
+          24968,
+          102196,
+          28,
+          101077,
+          99322,
+          112622,
+          151645
+        ],
+        "answer": "刀具=有；人物=有；动作=准备切香蕉",
+        "semantic": {
+          "knife": "有",
+          "person": "有",
+          "action_expected_any": [
+            "切",
+            "准备",
+            "拿刀",
+            "持刀",
+            "处理",
+            "做饭",
+            "烹饪"
+          ],
+          "action_match": true,
+          "matches_expected": true
+        },
+        "preprocess_ms": 8.388759999995443,
+        "ttft_ms": 196.37607800000012,
+        "generation_ms": 992.7532170000006
+      },
+      "candidate_224": {
+        "label": "businesswoman_knife_positive:M262-224",
+        "prompt_tokens": 173,
+        "tensor_shapes": {
+          "pixel_values": [
+            392,
+            768
+          ],
+          "image_grid_thw": [
+            2,
+            3
+          ],
+          "patch_positions": [
+            392,
+            3
+          ],
+          "input_ids": [
+            1,
+            173
+          ],
+          "attention_mask": [
+            1,
+            173
+          ]
+        },
+        "generated_token_ids": [
+          101953,
+          76813,
+          28,
+          42192,
+          24968,
+          104013,
+          28,
+          18830,
+          24968,
+          102196,
+          28,
+          115113,
+          151645
+        ],
+        "answer": "刀具=无；人物=有；动作=站立",
+        "semantic": {
+          "knife": "无",
+          "person": "有",
+          "action_expected_any": [
+            "切",
+            "准备",
+            "拿刀",
+            "持刀",
+            "处理",
+            "做饭",
+            "烹饪"
+          ],
+          "action_match": false,
+          "matches_expected": false
+        },
+        "preprocess_ms": 5.128632000001687,
+        "ttft_ms": 106.16924300000363,
+        "generation_ms": 754.9005690000001
+      },
+      "full_supported": true,
+      "candidate_pass": false,
+      "candidate_regression": true,
+      "semantic_flags_match": false
+    }
+  ],
+  "supported_sample_count": 3,
+  "sample_count": 4,
+  "candidate_regressions": [
+    "businesswoman_knife_positive"
+  ],
+  "knife_positive_supported_by_full": true,
+  "knife_positive_passed_by_candidate": false,
+  "suite_pass": false,
+  "semantic_accuracy_passed": false,
+  "semantic_accuracy_reason": "Four labelled examples are a regression screen, not a held-out target-camera dataset or calibrated accuracy measurement.",
+  "knife_fixture": {
+    "path": "/mnt/c/Users/30429/Desktop/TeLLMe_FPGA_2026/deployment/mage_vl4b/m264_semantic_fixtures/knife_positive_businesswoman_960.jpg",
+    "sha256": "cf1e19f8a3d74b15802e632c84cb48f96c6062002ff38134146dd922d793285a",
+    "bytes": 87763,
+    "source_page": "https://commons.wikimedia.org/wiki/File:Businesswoman_prepares_fruits_and_vegetables_in_kitchen.jpg",
+    "license": "CC BY 2.0 (per source page)"
+  },
+  "host_gpu_timing_is_board_evidence": false,
+  "active_board_service_changed": false,
+  "stable_rollback_preserved": true,
+  "source_sha256": "69ae48ba181cd5b6601fe6b665acfb1eed5b4eca16cee1dfa80e8cfcb982f9c8",
+  "next_gate": "If PASS, package the 224 candidate and wait for COM3 before a same-level isolated KV260 memory/TTFT gate. If FAIL, sweep 256/320/384 and select the smallest resolution with no supported-sample regression."
+}

@@ -1,0 +1,178 @@
+{
+  "actionClassLegend": {
+    "FALLING": "fall",
+    "FIGHTING": "fight",
+    "IDLE": "idle",
+    "WALKING": "walk",
+    "WORKING": "work"
+  },
+  "actionTokenIds": {
+    "FALLING": 13464,
+    "FIGHTING": 21143,
+    "IDLE": 47273,
+    "WALKING": 19059,
+    "WORKING": 1778
+  },
+  "actionTokenizerContract": {
+    "FALLING": {
+      "tokenId": 13464,
+      "word": "fall"
+    },
+    "FIGHTING": {
+      "tokenId": 21143,
+      "word": "fight"
+    },
+    "IDLE": {
+      "tokenId": 47273,
+      "word": "idle"
+    },
+    "WALKING": {
+      "tokenId": 19059,
+      "word": "walk"
+    },
+    "WORKING": {
+      "tokenId": 1778,
+      "word": "work"
+    }
+  },
+  "activeM254M256Changed": false,
+  "baselineIds": {
+    "bact": "bact-159",
+    "fixed_high_quality": "high-284",
+    "fixed_ratio_visual_pruning": "ratio-164",
+    "token_count_aware": "count-144"
+  },
+  "binaryDigitTokenizerContract": {
+    "0": 15,
+    "1": 16
+  },
+  "boardExecutionRun": false,
+  "bootDtbCmaPartitionsChanged": false,
+  "candidates": {
+    "bact": {
+      "actionPrompt": "Action? Reply one: work idle walk fall fight:",
+      "actionPromptGeometryPurpose": "Fixed auxiliary semantic probe; not used as the candidate's board-cost identity.",
+      "actionPromptTokens": 144,
+      "actionPromptUsesNeutralPadding": false,
+      "boardTimingClaimAllowed": false,
+      "candidateId": "bact-159",
+      "knifePrompt": "[TELLME_KNIFE_BINARY_V3] Knife visible? Reply exactly 1 for yes or 0 for no:",
+      "knifePromptTokens": 159,
+      "logicalFpgaCallsPerProbe": 778,
+      "probeCountPerClip": 2,
+      "semanticEvaluationBackend": "exact M120 mixed-weight plus A8-G64 software reference",
+      "t32BatchesPerProbe": 5,
+      "targetPromptTokensPerProbe": 159,
+      "viewCount": 2,
+      "viewIndices": [
+        2,
+        3
+      ],
+      "visualTokens": 98
+    },
+    "fixed_high_quality": {
+      "actionPrompt": "Action? Reply one: work idle walk fall fight:",
+      "actionPromptGeometryPurpose": "Fixed auxiliary semantic probe; not used as the candidate's board-cost identity.",
+      "actionPromptTokens": 258,
+      "actionPromptUsesNeutralPadding": false,
+      "boardTimingClaimAllowed": false,
+      "candidateId": "high-284",
+      "knifePrompt": "[TELLME_KNIFE_BINARY_V1] Inspect the four video frames. Output exactly one character: 1 if any knife is visible, otherwise 0. Answer:",
+      "knifePromptTokens": 284,
+      "logicalFpgaCallsPerProbe": 1394,
+      "probeCountPerClip": 2,
+      "semanticEvaluationBackend": "exact M120 mixed-weight plus A8-G64 software reference",
+      "t32BatchesPerProbe": 9,
+      "targetPromptTokensPerProbe": 284,
+      "viewCount": 4,
+      "viewIndices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "visualTokens": 196
+    },
+    "fixed_ratio_visual_pruning": {
+      "actionPrompt": "Action? Reply one: work idle walk fall fight:",
+      "actionPromptGeometryPurpose": "Fixed auxiliary semantic probe; not used as the candidate's board-cost identity.",
+      "actionPromptTokens": 144,
+      "actionPromptUsesNeutralPadding": false,
+      "boardTimingClaimAllowed": false,
+      "candidateId": "ratio-164",
+      "knifePrompt": "[TELLME_KNIFE_BINARY_V2] Inspect these video views. Answer exactly 1 if a knife is visible, otherwise 0:",
+      "knifePromptTokens": 164,
+      "logicalFpgaCallsPerProbe": 932,
+      "probeCountPerClip": 2,
+      "semanticEvaluationBackend": "exact M120 mixed-weight plus A8-G64 software reference",
+      "t32BatchesPerProbe": 6,
+      "targetPromptTokensPerProbe": 164,
+      "viewCount": 2,
+      "viewIndices": [
+        2,
+        3
+      ],
+      "visualTokens": 98
+    },
+    "token_count_aware": {
+      "actionPrompt": "Action? Reply one: work idle walk fall fight:",
+      "actionPromptGeometryPurpose": "Fixed auxiliary semantic probe; not used as the candidate's board-cost identity.",
+      "actionPromptTokens": 144,
+      "actionPromptUsesNeutralPadding": false,
+      "boardTimingClaimAllowed": false,
+      "candidateId": "count-144",
+      "knifePrompt": "Knife visible? Answer only 1 or 0:",
+      "knifePromptTokens": 144,
+      "logicalFpgaCallsPerProbe": 778,
+      "probeCountPerClip": 2,
+      "semanticEvaluationBackend": "exact M120 mixed-weight plus A8-G64 software reference",
+      "t32BatchesPerProbe": 5,
+      "targetPromptTokensPerProbe": 144,
+      "viewCount": 2,
+      "viewIndices": [
+        2,
+        3
+      ],
+      "visualTokens": 98
+    }
+  },
+  "classification": "Tokenizer/view/task-head geometry for offline semantic prediction collection. This is not human-labelled accuracy, KV260 execution, timing, power or real-time evidence.",
+  "date": "2026-09-03",
+  "filenameHintsRead": false,
+  "gate": "M306-four-baseline-prediction-geometry-freeze",
+  "humanLabelsRead": false,
+  "knifeTokenIds": {
+    "no": 15,
+    "yes": 16
+  },
+  "m289WiringCorrection": {
+    "cause": "M289 used the V1 high-quality prompt instead of the frozen M272/M280 V2 two-view prompt",
+    "correctedFixedRatioCandidateId": "ratio-164",
+    "historicalFixedRatioObservedTokens": 170,
+    "historicalResultPreserved": true
+  },
+  "modelLoaded": false,
+  "nextGate": "Use this immutable geometry plus the M296 source manifest to collect raw knife/action logits for all 12 clips without reading human labels or filename hints.",
+  "predecessors": {
+    "M280": {
+      "path": "deployment/mage_vl4b/M280_BACT_METHOD_PLAN_RESULT.json",
+      "sha256": "34b0d848c5023cde985175adab7895a7d3a15dc74555ce62963d08e04f993b36"
+    },
+    "M288": {
+      "path": "deployment/mage_vl4b/M288_BACT_SELECTOR_RESULT.json",
+      "sha256": "a7a53496933925e39193adc773692bede2d2f8543a207c58670a6a3559ed7b08"
+    },
+    "M289": {
+      "path": "deployment/mage_vl4b/M289_M120_A8_FOUR_BASELINE_SCREEN_RESULT.json",
+      "sha256": "661cf447500ca920d9999dafab6f7291a99f04d8bf1143e9318586b7d1d59d40"
+    }
+  },
+  "schema": "tellme-bact-four-baseline-prediction-geometry-v1",
+  "sourceSha256": "1292eebf0f0d17e422ca88a7b1155d164b314c0cebb7bc27a7cfa9d83f3f9cf3",
+  "stableRollbackPreserved": true,
+  "status": "PASS_EXACT_GEOMETRY_AND_TASK_TOKEN_CONTRACT",
+  "tasks": {
+    "action": "separate fixed-prompt one-token work/idle/walk/fall/fight logits; used only as an offline semantic constraint, with no padding and no board-timing claim",
+    "knife": "one-token 0/1 logit margin; per-baseline threshold frozen on calibration only"
+  }
+}

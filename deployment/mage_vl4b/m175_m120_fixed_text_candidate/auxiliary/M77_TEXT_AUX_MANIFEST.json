@@ -1,0 +1,1106 @@
+{
+  "result": "PASS",
+  "format": "tellme-m165-m120-w3-fixed-text-aux-fp16-v1",
+  "classification": "fixed-prompt M120 W3 embedding rows plus identity-retained FP16 norms; not a general-chat embedding table",
+  "source_model": "/home/lyy/artifacts/tellme-mage-vl/m120-text4b-mixed-w3e-w4h-w4mlpkv-v2",
+  "source_index_sha256": "2cad26f4364750d9b0551dff11e776837b9ef822fe29e068f68d935a8e65cc54",
+  "reference": "/mnt/c/Users/30429/Desktop/TeLLMe_FPGA_2026/artifacts/M77-mage-text-e2e/official_cpu_text_1token.json",
+  "reference_sha256": "bb7f5a34db949976eca159ab8a125508e178699dbe1cb90cfac675bc582243bb",
+  "prompt_token_ids": [
+    151644,
+    8948,
+    198,
+    2610,
+    525,
+    264,
+    10950,
+    17847,
+    13,
+    151645,
+    198,
+    151644,
+    872,
+    198,
+    18,
+    10,
+    17,
+    21,
+    107106,
+    100430,
+    11319,
+    91680,
+    102104,
+    82587,
+    1773,
+    151645,
+    198,
+    151644,
+    77091,
+    198
+  ],
+  "generated_token_ids": [
+    17
+  ],
+  "selected_embedding_ids": [
+    10,
+    13,
+    17,
+    18,
+    21,
+    198,
+    264,
+    525,
+    872,
+    1773,
+    2610,
+    8948,
+    10950,
+    11319,
+    17847,
+    77091,
+    82587,
+    91680,
+    100430,
+    102104,
+    107106,
+    151644,
+    151645
+  ],
+  "embedding_rows": 23,
+  "embedding_width": 2560,
+  "tensor_count": 146,
+  "payload": "m77_text_aux_fp16.npz",
+  "payload_bytes": 315138,
+  "payload_sha256": "7f2dfc14ae47cb537e148cafc9b1c6cc285e1fe546dec901275a4078a8458ffd",
+  "tensors": {
+    "model.language_model.embed_tokens.weight": {
+      "shape": [
+        23,
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 117760
+    },
+    "model.language_model.norm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.0.input_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.0.post_attention_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.0.self_attn.q_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.0.self_attn.k_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.1.input_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.1.post_attention_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.1.self_attn.q_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.1.self_attn.k_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.2.input_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.2.post_attention_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.2.self_attn.q_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.2.self_attn.k_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.3.input_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.3.post_attention_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.3.self_attn.q_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.3.self_attn.k_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.4.input_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.4.post_attention_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.4.self_attn.q_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.4.self_attn.k_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.5.input_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.5.post_attention_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.5.self_attn.q_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.5.self_attn.k_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.6.input_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.6.post_attention_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.6.self_attn.q_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.6.self_attn.k_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.7.input_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.7.post_attention_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.7.self_attn.q_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.7.self_attn.k_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.8.input_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.8.post_attention_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.8.self_attn.q_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.8.self_attn.k_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.9.input_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.9.post_attention_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.9.self_attn.q_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.9.self_attn.k_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.10.input_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.10.post_attention_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.10.self_attn.q_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.10.self_attn.k_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.11.input_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.11.post_attention_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.11.self_attn.q_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.11.self_attn.k_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.12.input_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.12.post_attention_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.12.self_attn.q_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.12.self_attn.k_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.13.input_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.13.post_attention_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.13.self_attn.q_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.13.self_attn.k_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.14.input_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.14.post_attention_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.14.self_attn.q_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.14.self_attn.k_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.15.input_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.15.post_attention_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.15.self_attn.q_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.15.self_attn.k_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.16.input_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.16.post_attention_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.16.self_attn.q_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.16.self_attn.k_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.17.input_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.17.post_attention_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.17.self_attn.q_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.17.self_attn.k_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.18.input_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.18.post_attention_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.18.self_attn.q_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.18.self_attn.k_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.19.input_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.19.post_attention_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.19.self_attn.q_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.19.self_attn.k_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.20.input_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.20.post_attention_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.20.self_attn.q_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.20.self_attn.k_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.21.input_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.21.post_attention_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.21.self_attn.q_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.21.self_attn.k_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.22.input_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.22.post_attention_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.22.self_attn.q_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.22.self_attn.k_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.23.input_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.23.post_attention_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.23.self_attn.q_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.23.self_attn.k_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.24.input_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.24.post_attention_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.24.self_attn.q_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.24.self_attn.k_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.25.input_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.25.post_attention_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.25.self_attn.q_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.25.self_attn.k_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.26.input_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.26.post_attention_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.26.self_attn.q_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.26.self_attn.k_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.27.input_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.27.post_attention_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.27.self_attn.q_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.27.self_attn.k_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.28.input_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.28.post_attention_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.28.self_attn.q_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.28.self_attn.k_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.29.input_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.29.post_attention_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.29.self_attn.q_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.29.self_attn.k_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.30.input_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.30.post_attention_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.30.self_attn.q_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.30.self_attn.k_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.31.input_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.31.post_attention_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.31.self_attn.q_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.31.self_attn.k_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.32.input_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.32.post_attention_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.32.self_attn.q_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.32.self_attn.k_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.33.input_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.33.post_attention_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.33.self_attn.q_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.33.self_attn.k_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.34.input_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.34.post_attention_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.34.self_attn.q_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.34.self_attn.k_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.35.input_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.35.post_attention_layernorm.weight": {
+      "shape": [
+        2560
+      ],
+      "dtype": "float16",
+      "bytes": 5120
+    },
+    "model.language_model.layers.35.self_attn.q_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    },
+    "model.language_model.layers.35.self_attn.k_norm.weight": {
+      "shape": [
+        128
+      ],
+      "dtype": "float16",
+      "bytes": 256
+    }
+  },
+  "next_gate": "Use only this exact auxiliary payload with the frozen reference token IDs for the first KV260 M77 E2E token gate.",
+  "source_checkpoint_manifest_sha256": "5ff33d1922376e18277902a8b051d069315f79c11b4f63e8d72517acd1dcd5d0",
+  "source_blob_sha256": "9c7de8995a08602186c7090081bbfc10b7c51170ad7e544f2f2dc71333b4f21d",
+  "embedding_source_bits": 3,
+  "embedding_source_group_size": 64,
+  "source_m165_auxiliary_manifest_sha256": "4aab9f779c0c7d8d4bf76afa84da1516f9877e83b3cea03b1fc7af6bfd697a44"
+}

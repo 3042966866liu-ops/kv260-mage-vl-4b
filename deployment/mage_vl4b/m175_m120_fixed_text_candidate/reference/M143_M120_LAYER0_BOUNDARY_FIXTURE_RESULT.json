@@ -1,0 +1,71 @@
+{
+  "date": "2026-09-01",
+  "gate": "M143-M120-layer0-boundary-fixture",
+  "status": "PASS",
+  "classification": "offline compact extraction from accepted M127 golden; not board evidence",
+  "board_state_changed": false,
+  "stable_rollback_preserved": true,
+  "source_sha256": "16abe560e085dc9417bdea569ccf9d1799810bdc741f8f11a726417b891edd2e",
+  "fixture": "deployment/mage_vl4b/artifacts/m143_m120_layer0_boundaries.npz",
+  "fixture_bytes": 1456855,
+  "fixture_sha256": "9565ec2f7d1df162997456a6ccb01234c3b3e4802107ed318827553c3aa66eab",
+  "arrays": {
+    "layer00_q": {
+      "shape": [
+        30,
+        2560
+      ],
+      "dtype": "float32",
+      "sha256_fp32": "0e80dcff0e303d8fd93058c17c45f00439b11bae970a7684425e17c864290288"
+    },
+    "layer00_kv": {
+      "shape": [
+        30,
+        2560
+      ],
+      "dtype": "float32",
+      "sha256_fp32": "0e80dcff0e303d8fd93058c17c45f00439b11bae970a7684425e17c864290288"
+    },
+    "layer00_attention_out": {
+      "shape": [
+        30,
+        4096
+      ],
+      "dtype": "float32",
+      "sha256_fp32": "7e24dc011b19d611ab4a4c9c37f517da33adb6f61718518ebd779de9b09fbe5b"
+    },
+    "layer00_gate_up": {
+      "shape": [
+        30,
+        2560
+      ],
+      "dtype": "float32",
+      "sha256_fp32": "221b2064c2cb67e6dcb378af3f07bb42913251180a272bf84e5e65adf4f3e4a6"
+    },
+    "layer00_mlp_down": {
+      "shape": [
+        30,
+        9728
+      ],
+      "dtype": "float32",
+      "sha256_fp32": "b9456e2ffe6fda73fc8f51bcd3e22e86477f4b5726b443ee8df16625389be18d"
+    },
+    "layer01_q": {
+      "shape": [
+        30,
+        2560
+      ],
+      "dtype": "float32",
+      "sha256_fp32": "6252007d89e69c7b2bffb6f64c3b1502bae6c5122e228677676b3b8868cfb9a8"
+    },
+    "layer01_kv": {
+      "shape": [
+        30,
+        2560
+      ],
+      "dtype": "float32",
+      "sha256_fp32": "6252007d89e69c7b2bffb6f64c3b1502bae6c5122e228677676b3b8868cfb9a8"
+    }
+  },
+  "next_gate": "Package this fixture with an M120 Layer-0 boundary diagnostic; execution remains locked behind M140 single-chain PASS."
+}

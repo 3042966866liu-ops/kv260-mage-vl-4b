@@ -1,0 +1,65 @@
+{
+  "gate": "M249-fixed-RGB448-fixtures",
+  "status": "PASS",
+  "source_video_sha256": "10574ca38dd1d1d682277bd70dde067e9b78fcf1d0677e160e57d635769bd0a0",
+  "frame_count": 241,
+  "fps": 24.0,
+  "files": [
+    {
+      "ordinal": 0,
+      "frame_index": 68,
+      "timestamp_s": 2.8333333333333335,
+      "path": "frame_00_0068_rgb448.npy",
+      "shape": [
+        448,
+        448,
+        3
+      ],
+      "dtype": "uint8",
+      "bytes": 602240,
+      "sha256": "efbd192266329db17ab9b233b854fa4086a16ccf8faf8aace75462c164844e8f"
+    },
+    {
+      "ordinal": 1,
+      "frame_index": 102,
+      "timestamp_s": 4.25,
+      "path": "frame_01_0102_rgb448.npy",
+      "shape": [
+        448,
+        448,
+        3
+      ],
+      "dtype": "uint8",
+      "bytes": 602240,
+      "sha256": "e334ea6bdeb142a42a443afe27fa8af551895d568149ab8aca92a181fdc69243"
+    },
+    {
+      "ordinal": 2,
+      "frame_index": 137,
+      "timestamp_s": 5.708333333333333,
+      "path": "frame_02_0137_rgb448.npy",
+      "shape": [
+        448,
+        448,
+        3
+      ],
+      "dtype": "uint8",
+      "bytes": 602240,
+      "sha256": "81ddb1f5358e44bf9263c71f1cd64c68e888c5233f0fe8ab017e6011277d9527"
+    },
+    {
+      "ordinal": 3,
+      "frame_index": 171,
+      "timestamp_s": 7.125,
+      "path": "frame_03_0171_rgb448.npy",
+      "shape": [
+        448,
+        448,
+        3
+      ],
+      "dtype": "uint8",
+      "bytes": 602240,
+      "sha256": "7bf716a4f68defdb85066a0afeed955c61305628a2f43563b0b14ee539644b13"
+    }
+  ]
+}

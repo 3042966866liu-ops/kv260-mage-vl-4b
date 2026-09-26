@@ -1,0 +1,173 @@
+{
+  "schema": "tellme-bact-v2-preregistered-protocol-v1",
+  "protocolId": "M312-BACT-EVALUATION-PROTOCOL-V2",
+  "frozenOn": "2026-09-03",
+  "historyPolicy": {
+    "preserveM288ThroughM311": true,
+    "historicalPilotTestMayBeRetuned": false,
+    "historicalPilotTestMayBeReopened": false,
+    "historicalCompletionAuditSha256": "a9258a9f4e9c744e6824d9f0e0179f98cbc61dbc37d569a9221f698b7daf8af7"
+  },
+  "versioning": {
+    "gitCommit": null,
+    "gitRepositoryAvailable": false,
+    "mode": "sha256-manifest",
+    "reason": "The current workspace is not a Git repository; every frozen input and output is therefore identified by SHA-256 and an immutable manifest."
+  },
+  "hardwareContract": {
+    "board": "AMD Kria KV260",
+    "buildId": "0x4D395832",
+    "kernel": "mage_m120_m89x2_0",
+    "tokenGranularity": 32,
+    "logicalCallIdentity": "154 * ceil(total_tokens / 32) + 8",
+    "rerunExisting27PointBoundaryStudy": false,
+    "representativeBoardRerunOnlyIfGeometryOrRuntimeChanges": true
+  },
+  "modelContract": {
+    "model": "microsoft/Mage-VL",
+    "parameterCount": 4741793792,
+    "checkpointFormat": "tellme-mage-vl-mixed-bit-v1-artifact-v1",
+    "checkpointManifestSha256": "5ff33d1922376e18277902a8b051d069315f79c11b4f63e8d72517acd1dcd5d0",
+    "checkpointBlobSha256": "9c7de8995a08602186c7090081bbfc10b7c51170ad7e544f2f2dc71333b4f21d",
+    "geometryResultSha256": "65cf52d411b84a5f7f5e42e6add71adc27b9e80bfe8e192f5f07b173c5483c54"
+  },
+  "baselines": {
+    "fixed_high_quality": {"candidateId": "high-284", "totalTokens": 284, "t32Batches": 9, "logicalCalls": 1394, "viewCount": 4},
+    "fixed_ratio_visual_pruning": {"candidateId": "ratio-164", "totalTokens": 164, "t32Batches": 6, "logicalCalls": 932, "viewCount": 2},
+    "token_count_aware": {"candidateId": "count-144", "totalTokens": 144, "t32Batches": 5, "logicalCalls": 778, "viewCount": 2},
+    "bact": {"candidateId": "bact-159", "totalTokens": 159, "t32Batches": 5, "logicalCalls": 778, "viewCount": 2}
+  },
+  "hypotheses": {
+    "primary": {
+      "id": "H1-same-cost-quality",
+      "comparison": ["bact", "token_count_aware"],
+      "costEqualityRequired": true,
+      "expectedBatchesEach": 5,
+      "expectedLogicalCallsEach": 778,
+      "strongPass": "paired-bootstrap lower95(deltaQ) > 0 and safety differences remain within preregistered margins",
+      "weakPass": "paired-bootstrap lower95(deltaQ) >= -0.02 and no safety margin violation",
+      "failure": "lower95(deltaQ) < -0.02 or a safety margin is violated"
+    },
+    "secondaryBoundary": {
+      "id": "H2-cross-boundary-cost",
+      "comparison": ["bact", "fixed_ratio_visual_pruning"],
+      "expectedBatchReduction": 1,
+      "expectedLogicalCallReduction": 154,
+      "qualityConstraint": "No preregistered safety-margin violation; report the paired quality interval without assuming superiority."
+    },
+    "secondaryHighQuality": {
+      "id": "H3-high-quality-tradeoff",
+      "comparison": ["bact", "fixed_high_quality"],
+      "directionalSuperiorityAssumed": false
+    }
+  },
+  "qualityMetrics": {
+    "primaryComposite": "0.5 * knife_balanced_accuracy + 0.5 * action_macro_f1",
+    "primaryName": "Q",
+    "knifeMetrics": ["recall", "false_alarm_rate", "balanced_accuracy", "pr_auc"],
+    "actionMetrics": ["macro_f1", "per_class_recall", "per_class_f1"],
+    "safetyMargins": {
+      "minimumAllowedDeltaKnifeRecall": -0.05,
+      "maximumAllowedDeltaKnifeFalseAlarmRate": 0.05
+    },
+    "deploymentSafetyIsSeparate": true,
+    "deploymentSafetyTargets": {"minimumKnifeRecall": 0.9, "maximumKnifeFalseAlarmRate": 0.1}
+  },
+  "statistics": {
+    "independentUnit": "source_video",
+    "pairedBootstrapReplicates": 5000,
+    "pairedBootstrapSeed": 20260903,
+    "confidenceLevel": 0.95,
+    "mcnemar": "exact two-sided supplemental test on paired binary errors",
+    "reportAbsoluteMetrics": true,
+    "reportPairedDifferences": true,
+    "framesTokensAndRepeatedRunsAreIndependentSamples": false
+  },
+  "dataset": {
+    "minimumIndependentSourceVideos": 100,
+    "targetIndependentSourceVideos": 120,
+    "pilotOnlyBelow": 60,
+    "minimumControlledOrLicensedRealPublicVideos": 80,
+    "maximumAiGeneratedVideos": 40,
+    "targetKnifePositiveFraction": 0.5,
+    "actions": ["WORKING", "IDLE", "WALKING", "FALLING", "FIGHTING"],
+    "recommendedMinimumPerAction": 20,
+    "conditions": ["lowLight", "occlusion", "smallKnife", "hardNegative", "fastMotion", "partialPerson"],
+    "recommendedMinimumPerCoreCondition": 20,
+    "sourceTypes": ["controlled_capture", "public_licensed", "ai_generated"],
+    "requiredManifestFields": ["clip_id", "source_id", "source_type", "license_or_consent", "duration", "knife_label", "action_label", "low_light", "occlusion", "small_knife", "person_or_scene_group", "sha256", "split"],
+    "sameSourceAcrossSplitsAllowed": false,
+    "aiAndRealReportedSeparately": true,
+    "oldPilotClipsMayEnterNewHeldOutTest": false
+  },
+  "annotation": {
+    "primaryAnnotatorCoverage": 1.0,
+    "minimumIndependentSecondAnnotatorFraction": 0.2,
+    "minimumCohenKappaKnife": 0.8,
+    "minimumCohenKappaAction": 0.8,
+    "preserveRawLabelsAndAdjudication": true,
+    "kappaUnavailableIsPass": false
+  },
+  "split": {
+    "calibrationFraction": 0.3333333333333333,
+    "heldOutFraction": 0.6666666666666666,
+    "groupKeys": ["source_id", "person_or_scene_group"],
+    "stratifyKeys": ["knife_label", "action_label", "source_type", "low_light", "occlusion", "small_knife"],
+    "frozenBeforePrediction": true
+  },
+  "calibration": {
+    "thresholdsUseHeldOutLabels": false,
+    "semanticProxyWeightsUseHeldOutLabels": false,
+    "deltaUsesHeldOutLabels": false,
+    "allCalibrationChoicesFrozenBeforeHeldOutOpen": true
+  },
+  "predictionIntegrity": {
+    "labelsReadableDuringBlindCollection": false,
+    "filenameSemanticHintsReadable": false,
+    "recordRawLogits": true,
+    "recordParsedOutputs": true,
+    "recordTimingErrorsAndFallback": true,
+    "silentDeletionAllowed": false,
+    "partialErrorOnlyRerunAllowed": false,
+    "cpuFallbackCountsAsValidExactBackend": false,
+    "invalidKnifePositiveScore": "false_negative",
+    "invalidKnifeNegativeScore": "false_positive",
+    "invalidActionScore": "incorrect"
+  },
+  "heldOutSeal": {
+    "openExactlyOnce": true,
+    "writeOpenedSealBeforeReadingLabels": true,
+    "writeCompleteSealWithResultHash": true,
+    "sameInputsAfterComplete": "verify-existing-result-only",
+    "changedInputsAfterOpen": "reject-and-require-new-held-out-set",
+    "plannedCommand": "scripts/m317_run_bact_v2_one_shot_evaluation.py",
+    "responsibleRole": "independent finalization runner after blind predictions and calibration freeze"
+  },
+  "selectorCandidateSpace": {
+    "batches": {
+      "B4": {"minimumTokens": 113, "maximumTokens": 128},
+      "B5": {"minimumTokens": 145, "maximumTokens": 160},
+      "B6": {"minimumTokens": 161, "maximumTokens": 192}
+    },
+    "adjustmentFamiliesRequired": ["visual_only", "visual_plus_prompt", "view_visual_prompt_joint"],
+    "selectionUsesHeldOutLabels": false
+  },
+  "claimPolicy": {
+    "realTime4BAllowed": false,
+    "gpuSuperiorityAllowed": false,
+    "dynamicPowerLeadershipAllowed": false,
+    "realFactoryExternalValidityAllowedBeforeRealHeldOut": false,
+    "causalSpeedupAllowedFromPilot": false,
+    "noveltyPriorityAllowedWithoutLiteratureReview": false
+  },
+  "plannedOutputs": {
+    "selector": "deployment/mage_vl4b/M313_BACT_V2_SELECTOR_RESULT.json",
+    "datasetManifest": "data/bact_v2/M314_BACT_DATASET_MANIFEST.json",
+    "annotationReport": "M315_BACT_ANNOTATION_AND_SPLIT_REPORT.md",
+    "blindPredictions": "data/bact_v2/M316_BACT_BLIND_PREDICTION_COLLECTION.jsonl",
+    "paretoResult": "deployment/mage_vl4b/M317_BACT_PARETO_EVALUATION_RESULT.json",
+    "paretoSeal": "deployment/mage_vl4b/M317_BACT_PARETO_EVALUATION_SEAL.json",
+    "ablationResult": "deployment/mage_vl4b/M318_BACT_JOINT_ABLATION_RESULT.json",
+    "finalReport": "M319_BACT_FINAL_EVIDENCE_REPORT.md"
+  }
+}

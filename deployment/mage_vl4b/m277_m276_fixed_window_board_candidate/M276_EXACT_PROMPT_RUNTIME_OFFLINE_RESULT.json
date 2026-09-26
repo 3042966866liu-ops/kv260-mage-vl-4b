@@ -1,0 +1,31 @@
+{
+  "active_board_service_changed": false,
+  "classification": "Exact tokenizer, constrained decision and composed runtime identity over unchanged M273 vision only; not board TTFT or calibrated accuracy.",
+  "composed_video_runtime": "M276ShortPromptBinaryRuntime",
+  "composed_vision_runtime": "M273LatestPSVisionRuntime",
+  "date": "2026-09-02",
+  "gate": "M276-exact-five-batch-prompt-runtime-offline",
+  "image_pad_tokens": 98,
+  "logical_call_reduction_vs_m269_percent": 44.18938307030129,
+  "logical_call_reduction_vs_m273_percent": 16.523605150214593,
+  "logical_calls": 778,
+  "next_gate": "Package with stage-timed isolated KV260 gate; retain M274 until the new package closes.",
+  "predecessor_m273_sha256": "c656fcdd20b93ee6fa6811a50c4857c0932d112bcb84d407813b0c8518b31b7c",
+  "predecessor_m275_sha256": "234bba1a9b2796a2a231efd539427d39435715bda69a4f401b87f9273defb5bd",
+  "prompt": "[TELLME_KNIFE_BINARY_V3] Knife visible? Reply exactly 1 for yes or 0 for no:",
+  "prompt_tokens": 159,
+  "runtime_import_closure_pass": true,
+  "source_hashes": {
+    "deployment/mage_vl4b/m276_short_prompt_source/M276_BOUNDARY.md": "fe0b22a28e96d4c401286e6879350cb5aca64597db6a8c66853a90a09304dfc9",
+    "deployment/mage_vl4b/m276_short_prompt_source/m276_m254_video_server.py": "b0ffc2750fb28587b8d51909f59e2c0a367c6dfd0183c784743e945356f9346a",
+    "deployment/mage_vl4b/m276_short_prompt_source/m276_prompt_contract.py": "fc46f457e7eec1fb044dcb5f9bb6e416f74596ba44ee3f321038ecaf4674bc39",
+    "deployment/mage_vl4b/m276_short_prompt_source/m276_video_runtime.py": "7dc39257361179d8e2ddcf91380e4ce73e96c69fc2e23b411a337b47896f8386",
+    "scripts/m276_gate_exact_prompt_runtime_offline.py": "7610d8010db304238a775674320490821ae1fd2c6d2412624fc927ea0c0ac221"
+  },
+  "stable_rollback_preserved": true,
+  "status": "PASS_OFFLINE_EXACT_BOARD_TTFT_PENDING",
+  "t32_batches": 5,
+  "unchanged_m273_output_bit_exact": true,
+  "unchanged_m273_output_sha256_fp32": "a3e758934d53e7ec009967ceeac2047cc10c73fc8b6c04be74f33643883f8f11",
+  "visual_tokens": 98
+}

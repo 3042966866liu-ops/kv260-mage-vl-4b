@@ -1,0 +1,765 @@
+{
+  "date": "2026-09-02",
+  "gate": "M244-real-KV260-M243-fixed-four-frame-HTTP-SSE-E2E-and-5s-target",
+  "status": "FAIL",
+  "functional_status": "FAIL",
+  "performance_status": "FAIL",
+  "classification": "Real-KV260 deterministic four-frame HTTP/SSE PS-vision plus M238/M241 FPGA language E2E; the 5000 ms target is independently fail-closed.",
+  "target_window_ms": 5000.0,
+  "inference_ms": null,
+  "complete": [],
+  "window_complete": [],
+  "window_error": [
+    {
+      "sequences": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "error": "RuntimeError: M152 generated no non-EOS token"
+    }
+  ],
+  "events": [
+    {
+      "event": "worker",
+      "payload": {
+        "status": "loading"
+      }
+    },
+    {
+      "event": "runtime",
+      "payload": {
+        "status": "ready",
+        "load_count": 1
+      }
+    },
+    {
+      "event": "frame",
+      "payload": {
+        "sequence": 0,
+        "buffer": {
+          "capacity": 16,
+          "depth": 1,
+          "accepted_frames": 1,
+          "overwritten_frames": 0,
+          "oldest_sequence": 0,
+          "newest_sequence": 0
+        },
+        "inference_busy": false
+      }
+    },
+    {
+      "event": "frame",
+      "payload": {
+        "sequence": 1,
+        "buffer": {
+          "capacity": 16,
+          "depth": 2,
+          "accepted_frames": 2,
+          "overwritten_frames": 0,
+          "oldest_sequence": 0,
+          "newest_sequence": 1
+        },
+        "inference_busy": false
+      }
+    },
+    {
+      "event": "frame",
+      "payload": {
+        "sequence": 2,
+        "buffer": {
+          "capacity": 16,
+          "depth": 3,
+          "accepted_frames": 3,
+          "overwritten_frames": 0,
+          "oldest_sequence": 0,
+          "newest_sequence": 2
+        },
+        "inference_busy": false
+      }
+    },
+    {
+      "event": "frame",
+      "payload": {
+        "sequence": 3,
+        "buffer": {
+          "capacity": 16,
+          "depth": 4,
+          "accepted_frames": 4,
+          "overwritten_frames": 0,
+          "oldest_sequence": 0,
+          "newest_sequence": 3
+        },
+        "inference_busy": false
+      }
+    },
+    {
+      "event": "window_begin",
+      "payload": {
+        "window_index": 0,
+        "sequences": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "newest_capture_age_ms": 0.4827049851883203,
+        "buffer": {
+          "capacity": 16,
+          "depth": 4,
+          "accepted_frames": 4,
+          "overwritten_frames": 0,
+          "oldest_sequence": 0,
+          "newest_sequence": 3
+        }
+      }
+    },
+    {
+      "event": "stage",
+      "payload": {
+        "name": "preprocess",
+        "label": "四帧预处理",
+        "window_sequences": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "window_newest_sequence": 3
+      }
+    },
+    {
+      "event": "stage",
+      "payload": {
+        "name": "vision",
+        "label": "M222 向量化 W4 解码 + M207 FP32 视觉塔",
+        "window_sequences": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "window_newest_sequence": 3
+      }
+    },
+    {
+      "event": "vision_layer_begin",
+      "payload": {
+        "index": 0,
+        "total_layers": 24,
+        "dtype": "BF16_BLOCK_FP32_LINEAR",
+        "elapsed_s": 12.764954409998609,
+        "rss_mib": 570.42578125
+      }
+    },
+    {
+      "event": "vision_layer_pass",
+      "payload": {
+        "index": 0,
+        "total_layers": 24,
+        "layer_ms": 16419.95271499036,
+        "elapsed_s": 29.184645801986335,
+        "rss_mib": 738.2734375
+      }
+    },
+    {
+      "event": "vision_layer_begin",
+      "payload": {
+        "index": 1,
+        "total_layers": 24,
+        "dtype": "BF16_BLOCK_FP32_LINEAR",
+        "elapsed_s": 29.185018866002792,
+        "rss_mib": 738.2734375
+      }
+    },
+    {
+      "event": "vision_layer_pass",
+      "payload": {
+        "index": 1,
+        "total_layers": 24,
+        "layer_ms": 15658.158156002173,
+        "elapsed_s": 44.84304569099913,
+        "rss_mib": 750.37890625
+      }
+    },
+    {
+      "event": "vision_layer_begin",
+      "payload": {
+        "index": 2,
+        "total_layers": 24,
+        "dtype": "BF16_BLOCK_FP32_LINEAR",
+        "elapsed_s": 44.843657997000264,
+        "rss_mib": 750.37890625
+      }
+    },
+    {
+      "event": "vision_layer_pass",
+      "payload": {
+        "index": 2,
+        "total_layers": 24,
+        "layer_ms": 15895.615231012926,
+        "elapsed_s": 60.73888930398971,
+        "rss_mib": 782.52734375
+      }
+    },
+    {
+      "event": "vision_layer_begin",
+      "payload": {
+        "index": 3,
+        "total_layers": 24,
+        "dtype": "BF16_BLOCK_FP32_LINEAR",
+        "elapsed_s": 60.739488560007885,
+        "rss_mib": 782.52734375
+      }
+    },
+    {
+      "event": "vision_layer_pass",
+      "payload": {
+        "index": 3,
+        "total_layers": 24,
+        "layer_ms": 15669.651481002802,
+        "elapsed_s": 76.40876878699055,
+        "rss_mib": 794.37109375
+      }
+    },
+    {
+      "event": "vision_layer_begin",
+      "payload": {
+        "index": 4,
+        "total_layers": 24,
+        "dtype": "BF16_BLOCK_FP32_LINEAR",
+        "elapsed_s": 76.40911980098463,
+        "rss_mib": 794.37109375
+      }
+    },
+    {
+      "event": "vision_layer_pass",
+      "payload": {
+        "index": 4,
+        "total_layers": 24,
+        "layer_ms": 15874.20150701655,
+        "elapsed_s": 92.28319134598132,
+        "rss_mib": 794.62890625
+      }
+    },
+    {
+      "event": "vision_layer_begin",
+      "payload": {
+        "index": 5,
+        "total_layers": 24,
+        "dtype": "BF16_BLOCK_FP32_LINEAR",
+        "elapsed_s": 92.28380091200233,
+        "rss_mib": 794.62890625
+      }
+    },
+    {
+      "event": "vision_layer_pass",
+      "payload": {
+        "index": 5,
+        "total_layers": 24,
+        "layer_ms": 15532.584789994871,
+        "elapsed_s": 107.81599854899105,
+        "rss_mib": 800.88671875
+      }
+    },
+    {
+      "event": "vision_layer_begin",
+      "payload": {
+        "index": 6,
+        "total_layers": 24,
+        "dtype": "FP32_BLOCK_FP32_LINEAR",
+        "elapsed_s": 107.81637503200909,
+        "rss_mib": 800.88671875
+      }
+    },
+    {
+      "event": "vision_layer_pass",
+      "payload": {
+        "index": 6,
+        "total_layers": 24,
+        "layer_ms": 11110.888875991805,
+        "elapsed_s": 118.92713343698415,
+        "rss_mib": 813.08984375
+      }
+    },
+    {
+      "event": "vision_layer_begin",
+      "payload": {
+        "index": 7,
+        "total_layers": 24,
+        "dtype": "FP32_BLOCK_FP32_LINEAR",
+        "elapsed_s": 118.92772433298524,
+        "rss_mib": 813.08984375
+      }
+    },
+    {
+      "event": "vision_layer_pass",
+      "payload": {
+        "index": 7,
+        "total_layers": 24,
+        "layer_ms": 10923.2378200104,
+        "elapsed_s": 129.85058530900278,
+        "rss_mib": 843.80078125
+      }
+    },
+    {
+      "event": "vision_layer_begin",
+      "payload": {
+        "index": 8,
+        "total_layers": 24,
+        "dtype": "FP32_BLOCK_FP32_LINEAR",
+        "elapsed_s": 129.85118226500344,
+        "rss_mib": 843.80078125
+      }
+    },
+    {
+      "event": "vision_layer_pass",
+      "payload": {
+        "index": 8,
+        "total_layers": 24,
+        "layer_ms": 10875.547052011825,
+        "elapsed_s": 140.72635577298934,
+        "rss_mib": 843.80078125
+      }
+    },
+    {
+      "event": "vision_layer_begin",
+      "payload": {
+        "index": 9,
+        "total_layers": 24,
+        "dtype": "FP32_BLOCK_FP32_LINEAR",
+        "elapsed_s": 140.72695833898615,
+        "rss_mib": 843.80078125
+      }
+    },
+    {
+      "event": "vision_layer_pass",
+      "payload": {
+        "index": 9,
+        "total_layers": 24,
+        "layer_ms": 11075.938886002405,
+        "elapsed_s": 151.80253107199678,
+        "rss_mib": 854.00390625
+      }
+    },
+    {
+      "event": "vision_layer_begin",
+      "payload": {
+        "index": 10,
+        "total_layers": 24,
+        "dtype": "FP32_BLOCK_FP32_LINEAR",
+        "elapsed_s": 151.803130847984,
+        "rss_mib": 854.00390625
+      }
+    },
+    {
+      "event": "vision_layer_pass",
+      "payload": {
+        "index": 10,
+        "total_layers": 24,
+        "layer_ms": 11004.745544021716,
+        "elapsed_s": 162.8075069290062,
+        "rss_mib": 868.76171875
+      }
+    },
+    {
+      "event": "vision_layer_begin",
+      "payload": {
+        "index": 11,
+        "total_layers": 24,
+        "dtype": "FP32_BLOCK_FP32_LINEAR",
+        "elapsed_s": 162.80787427298492,
+        "rss_mib": 868.76171875
+      }
+    },
+    {
+      "event": "vision_layer_pass",
+      "payload": {
+        "index": 11,
+        "total_layers": 24,
+        "layer_ms": 11168.655214016326,
+        "elapsed_s": 173.97639648598852,
+        "rss_mib": 922.16796875
+      }
+    },
+    {
+      "event": "vision_layer_begin",
+      "payload": {
+        "index": 12,
+        "total_layers": 24,
+        "dtype": "FP32_BLOCK_FP32_LINEAR",
+        "elapsed_s": 173.97699446199113,
+        "rss_mib": 922.16796875
+      }
+    },
+    {
+      "event": "vision_layer_pass",
+      "payload": {
+        "index": 12,
+        "total_layers": 24,
+        "layer_ms": 11115.739244996803,
+        "elapsed_s": 185.09236936300294,
+        "rss_mib": 922.16796875
+      }
+    },
+    {
+      "event": "vision_layer_begin",
+      "payload": {
+        "index": 13,
+        "total_layers": 24,
+        "dtype": "FP32_BLOCK_FP32_LINEAR",
+        "elapsed_s": 185.09276344699902,
+        "rss_mib": 922.16796875
+      }
+    },
+    {
+      "event": "vision_layer_pass",
+      "payload": {
+        "index": 13,
+        "total_layers": 24,
+        "layer_ms": 10817.431961011607,
+        "elapsed_s": 195.91005451598903,
+        "rss_mib": 934.21484375
+      }
+    },
+    {
+      "event": "vision_layer_begin",
+      "payload": {
+        "index": 14,
+        "total_layers": 24,
+        "dtype": "FP32_BLOCK_FP32_LINEAR",
+        "elapsed_s": 195.91045096999733,
+        "rss_mib": 934.21484375
+      }
+    },
+    {
+      "event": "vision_layer_pass",
+      "payload": {
+        "index": 14,
+        "total_layers": 24,
+        "layer_ms": 10972.369630995672,
+        "elapsed_s": 206.88267585998983,
+        "rss_mib": 952.82421875
+      }
+    },
+    {
+      "event": "vision_layer_begin",
+      "payload": {
+        "index": 15,
+        "total_layers": 24,
+        "dtype": "FP32_BLOCK_FP32_LINEAR",
+        "elapsed_s": 206.88325987599092,
+        "rss_mib": 952.82421875
+      }
+    },
+    {
+      "event": "vision_layer_pass",
+      "payload": {
+        "index": 15,
+        "total_layers": 24,
+        "layer_ms": 11250.78306501382,
+        "elapsed_s": 218.13368584698765,
+        "rss_mib": 983.7890625
+      }
+    },
+    {
+      "event": "vision_layer_begin",
+      "payload": {
+        "index": 16,
+        "total_layers": 24,
+        "dtype": "FP32_BLOCK_FP32_LINEAR",
+        "elapsed_s": 218.13427854300244,
+        "rss_mib": 983.7890625
+      }
+    },
+    {
+      "event": "vision_layer_pass",
+      "payload": {
+        "index": 16,
+        "total_layers": 24,
+        "layer_ms": 11066.111518011894,
+        "elapsed_s": 229.2000235079904,
+        "rss_mib": 983.7890625
+      }
+    },
+    {
+      "event": "vision_layer_begin",
+      "payload": {
+        "index": 17,
+        "total_layers": 24,
+        "dtype": "FP32_BLOCK_FP32_LINEAR",
+        "elapsed_s": 229.20042316199397,
+        "rss_mib": 983.7890625
+      }
+    },
+    {
+      "event": "vision_layer_pass",
+      "payload": {
+        "index": 17,
+        "total_layers": 24,
+        "layer_ms": 11207.66002399614,
+        "elapsed_s": 240.40794648500741,
+        "rss_mib": 988.66015625
+      }
+    },
+    {
+      "event": "vision_layer_begin",
+      "payload": {
+        "index": 18,
+        "total_layers": 24,
+        "dtype": "FP32_BLOCK_FP32_LINEAR",
+        "elapsed_s": 240.40855723098502,
+        "rss_mib": 988.66015625
+      }
+    },
+    {
+      "event": "vision_layer_pass",
+      "payload": {
+        "index": 18,
+        "total_layers": 24,
+        "layer_ms": 11280.429701990215,
+        "elapsed_s": 251.6886053289927,
+        "rss_mib": 988.66015625
+      }
+    },
+    {
+      "event": "vision_layer_begin",
+      "payload": {
+        "index": 19,
+        "total_layers": 24,
+        "dtype": "FP32_BLOCK_FP32_LINEAR",
+        "elapsed_s": 251.68898464299855,
+        "rss_mib": 988.66015625
+      }
+    },
+    {
+      "event": "vision_layer_pass",
+      "payload": {
+        "index": 19,
+        "total_layers": 24,
+        "layer_ms": 11148.041948006721,
+        "elapsed_s": 262.83690179898986,
+        "rss_mib": 1026.296875
+      }
+    },
+    {
+      "event": "vision_layer_begin",
+      "payload": {
+        "index": 20,
+        "total_layers": 24,
+        "dtype": "FP32_BLOCK_FP32_LINEAR",
+        "elapsed_s": 262.8375116350071,
+        "rss_mib": 1026.296875
+      }
+    },
+    {
+      "event": "vision_layer_pass",
+      "payload": {
+        "index": 20,
+        "total_layers": 24,
+        "layer_ms": 11227.409151004395,
+        "elapsed_s": 274.0645469930023,
+        "rss_mib": 1026.296875
+      }
+    },
+    {
+      "event": "vision_layer_begin",
+      "payload": {
+        "index": 21,
+        "total_layers": 24,
+        "dtype": "FP32_BLOCK_FP32_LINEAR",
+        "elapsed_s": 274.06515298900194,
+        "rss_mib": 1026.296875
+      }
+    },
+    {
+      "event": "vision_layer_pass",
+      "payload": {
+        "index": 21,
+        "total_layers": 24,
+        "layer_ms": 11140.263159992173,
+        "elapsed_s": 285.20503581498633,
+        "rss_mib": 1030.9921875
+      }
+    },
+    {
+      "event": "vision_layer_begin",
+      "payload": {
+        "index": 22,
+        "total_layers": 24,
+        "dtype": "FP32_BLOCK_FP32_LINEAR",
+        "elapsed_s": 285.2054150089971,
+        "rss_mib": 1030.9921875
+      }
+    },
+    {
+      "event": "vision_layer_pass",
+      "payload": {
+        "index": 22,
+        "total_layers": 24,
+        "layer_ms": 11126.414540980477,
+        "elapsed_s": 296.3316982190008,
+        "rss_mib": 1047.1171875
+      }
+    },
+    {
+      "event": "vision_layer_begin",
+      "payload": {
+        "index": 23,
+        "total_layers": 24,
+        "dtype": "FP32_BLOCK_FP32_LINEAR",
+        "elapsed_s": 296.3322881649947,
+        "rss_mib": 1047.1171875
+      }
+    },
+    {
+      "event": "vision_layer_pass",
+      "payload": {
+        "index": 23,
+        "total_layers": 24,
+        "layer_ms": 10976.355530001456,
+        "elapsed_s": 307.3082759419922,
+        "rss_mib": 1073.6875
+      }
+    },
+    {
+      "event": "stage",
+      "payload": {
+        "name": "prefill",
+        "label": "FPGA T32 M238 调度 + M241 Grouped-GQA Prefill",
+        "window_sequences": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "window_newest_sequence": 3
+      }
+    },
+    {
+      "event": "window_error",
+      "payload": {
+        "sequences": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "error": "RuntimeError: M152 generated no non-EOS token"
+      }
+    }
+  ],
+  "submitted": [
+    {
+      "accepted": true,
+      "sequence": 0
+    },
+    {
+      "accepted": true,
+      "sequence": 1
+    },
+    {
+      "accepted": true,
+      "sequence": 2
+    },
+    {
+      "accepted": true,
+      "sequence": 3
+    }
+  ],
+  "fixed_frames_sha256": "3852e880bafa89412d0f850f303208fd32edbd6395c2444e27b99f5d62cfb5f3",
+  "initial": {
+    "mode": "continuous-latest-only",
+    "source_is_unbounded": true,
+    "window_backlog_capacity": 1,
+    "inference_busy": false,
+    "runtime_load_count": 1,
+    "windows_started": 0,
+    "windows_completed": 0,
+    "last_started_newest_sequence": -1,
+    "last_completed_newest_sequence": -1,
+    "last_window_sequences": [],
+    "buffer": {
+      "capacity": 16,
+      "depth": 0,
+      "accepted_frames": 0,
+      "overwritten_frames": 0,
+      "oldest_sequence": null,
+      "newest_sequence": null
+    },
+    "last_result_monotonic": null,
+    "service_state": "ready",
+    "worker_alive": true,
+    "runtime_loading": false,
+    "worker_error": null,
+    "worker_started_monotonic": 137391.252965478,
+    "worker_stopped_monotonic": null,
+    "web_runtime_class": "M243VideoRuntime",
+    "web_board_runtime_class": "M238PrefillRuntime",
+    "web_language_model_class": "M241VideoLanguageModel",
+    "web_language_runtime": "M243-M238-T32-pack-prefetch-fused-parse",
+    "web_prefill_attention": "M241-grouped-GQA-reference-RoPE",
+    "web_prefill_hash_locked": true,
+    "t64_used": false,
+    "status": "running",
+    "board_runtime_loaded": true,
+    "build_id": "0x4D395832",
+    "kernel": "mage_m120_m89x2_0",
+    "source_mode": "browser-camera",
+    "source_label": "M243-no-frame-runtime-ready",
+    "source_content_is_finite": false
+  },
+  "final": {
+    "mode": "continuous-latest-only",
+    "source_is_unbounded": true,
+    "window_backlog_capacity": 1,
+    "inference_busy": false,
+    "runtime_load_count": 1,
+    "windows_started": 1,
+    "windows_completed": 0,
+    "last_started_newest_sequence": 3,
+    "last_completed_newest_sequence": -1,
+    "last_window_sequences": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "buffer": {
+      "capacity": 16,
+      "depth": 4,
+      "accepted_frames": 4,
+      "overwritten_frames": 0,
+      "oldest_sequence": 0,
+      "newest_sequence": 3
+    },
+    "last_result_monotonic": null,
+    "service_state": "ready",
+    "worker_alive": true,
+    "runtime_loading": false,
+    "worker_error": null,
+    "worker_started_monotonic": 137391.252965478,
+    "worker_stopped_monotonic": null,
+    "web_runtime_class": "M243VideoRuntime",
+    "web_board_runtime_class": "M238PrefillRuntime",
+    "web_language_model_class": "M241VideoLanguageModel",
+    "web_language_runtime": "M243-M238-T32-pack-prefetch-fused-parse",
+    "web_prefill_attention": "M241-grouped-GQA-reference-RoPE",
+    "web_prefill_hash_locked": true,
+    "t64_used": false,
+    "status": "running",
+    "board_runtime_loaded": true,
+    "build_id": "0x4D395832",
+    "kernel": "mage_m120_m89x2_0",
+    "source_mode": "browser-camera",
+    "source_label": "M243-no-frame-runtime-ready",
+    "source_content_is_finite": false
+  },
+  "elapsed_ms": 1069764.9999999995,
+  "error": null,
+  "runtime_loaded_once": true,
+  "persistent_boot_dtb_cma_partitions_services_changed": false,
+  "stable_rollback_preserved": true,
+  "next_gate": "If functionally correct but slower than 5000 ms, preserve this exact baseline and optimize only the measured dominant stage before knife-alert promotion."
+}

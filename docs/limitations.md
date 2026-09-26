@@ -1,0 +1,10 @@
+# Limitations and status boundaries
+
+- No seconds-level 4B video inference or RTX 4060 superiority is claimed. Stable M325 fixed-video TTFT was 228.531 s in one session, with EOS on the second output token.
+- The Web fast path and slow 4B semantic review have different latency and evidence. Immediate fast alarms are not a certified tool detector; small objects, occlusion and domain shift need independent target-scene evaluation.
+- BACT-V2's exact call staircase is limited to a measured fixed T32 Prefill geometry. Frozen proxies and 12 previously seen AI-generated clips do not establish deployment accuracy or novel generality. BACT is not the default M254 Web router.
+- The M277 fixed-video fixture sampled four frames but sent only last-frame two views to the model. It is not proof of multi-frame motion understanding.
+- Decode-one's long FIFO occupancy capacity test was stopped by the user (`STOPPED_BY_USER_NOT_PASS`). Other narrower numerical/board gates do not promote it to the stable deployment. M325 paired measurements showed no full-session improvement.
+- The Git source tree lacks model/bitstream binaries, a complete source-to-weight conversion recipe, a verified clean Vivado full-shell build, generic clean-OS provisioning evidence and rights clearance. The separately distributed v7 archive passed an independent first install on the owner's KV260; this does not by itself make the assets publicly obtainable or prove every new-board environment.
+- Original scripts contain machine-specific historical paths and inherited predecessor checks. The release wrapper resolves its own paths and reached no-frame Web runtime-ready in the v7 owner-board install; a separate M328 companion passed direct fixed-video inference. The alarm-triggered Web-to-4B path remains unverified in that independent install.
+- No real-factory external validity, robust knife recall, power advantage or continuous user-visible 4B throughput is established. Hashes prove artifact identity, not semantic correctness or licensing rights.

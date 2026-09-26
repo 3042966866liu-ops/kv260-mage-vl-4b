@@ -1,0 +1,70 @@
+{
+  "active_board_service_changed": false,
+  "classification": "Deployable bounded-cache source, exact outputs and composed import closure only; not ARM64 board memory/speed, semantic accuracy, FPGA E2E, Web deployment, or promotion.",
+  "cold_evidence": {
+    "cache_bytes": 66699264,
+    "cache_entries": 26,
+    "cache_hits": 0,
+    "cache_misses": 26,
+    "cache_precision": "uint8 codes + FP32 scales + int8 qmin",
+    "cache_reconstruct_ms": 0.0,
+    "cache_within_budget": true,
+    "decode_calls": 98,
+    "decode_ms": 1336.5378119999746,
+    "decoded_elements": 329252864,
+    "decoder": "M261-exact-bounded-packed-code-cache-v1",
+    "policy_budget_mib": 64,
+    "policy_expected_cache_bytes": 66699264,
+    "policy_expected_cache_entries": 26,
+    "uncached_decode_calls": 72
+  },
+  "cold_window_ms": 2820.7940869999957,
+  "composed_video_runtime": "M261PreVisionKeyframeRuntime",
+  "composed_vision_runtime": "M261BudgetedVariableFramePSVisionRuntime",
+  "date": "2026-09-02",
+  "gate": "M261-deployable-bounded-exact-cache-offline",
+  "host_timing_is_board_evidence": false,
+  "host_warm_reduction_percent": 28.790438257891704,
+  "host_warm_speedup": 1.4043057919968502,
+  "next_gate": "COM3 read-only memory-headroom gate, then isolated two-window ARM64 timing/identity gate.",
+  "output_sha256_fp32": "042e4d9ca11787379429dcecf302243051657d5dce17a42959a1755033ff2792",
+  "output_shape": [
+    392,
+    2560
+  ],
+  "process_max_rss_kib": 1434476,
+  "runtime_import_closure_pass": true,
+  "selected_frame_indices": [
+    0,
+    3
+  ],
+  "source_hashes": {
+    "deployment/mage_vl4b/m261_bounded_cache_source/M261_BOUNDARY.md": "c4e912824038946e9d55ebb012855568bd946b7489099edfd0d16f7ec28749e7",
+    "deployment/mage_vl4b/m261_bounded_cache_source/M261_CACHE_POLICY.json": "601ee0f0577952bbe685cbfaed4fd6e3cf27957d3b11305f1e0c7ce884664811",
+    "deployment/mage_vl4b/m261_bounded_cache_source/m261_budgeted_w4_runtime.py": "24be172d8366884bc1d4ca9917cf53382773e6b8f4b8a040991ccf18aecdae9a",
+    "deployment/mage_vl4b/m261_bounded_cache_source/m261_m254_video_server.py": "13a550606be8ee3b9e51ff0c1a5280273db9d955bdd290b2f9e63342a7b5193a",
+    "deployment/mage_vl4b/m261_bounded_cache_source/m261_video_runtime.py": "2f228a8753dc6777be1d3b20c0971bc514a228809afb5f6ae66b45c09f9cd69f",
+    "scripts/m261_gate_budgeted_runtime.py": "00dc6d69b0777dd76956c7d6639d27c05ccc6a24d1e24fd01f184694d364b212"
+  },
+  "stable_rollback_preserved": true,
+  "status": "PASS_OFFLINE_EXACT_BOARD_MEMORY_AND_SPEED_PENDING",
+  "warm_evidence": {
+    "cache_bytes": 66699264,
+    "cache_entries": 26,
+    "cache_hits": 26,
+    "cache_misses": 26,
+    "cache_precision": "uint8 codes + FP32 scales + int8 qmin",
+    "cache_reconstruct_ms": 92.18089199998758,
+    "cache_within_budget": true,
+    "decode_calls": 196,
+    "decode_ms": 1935.9592620000403,
+    "decoded_elements": 658505728,
+    "decoder": "M261-exact-bounded-packed-code-cache-v1",
+    "policy_budget_mib": 64,
+    "policy_expected_cache_bytes": 66699264,
+    "policy_expected_cache_entries": 26,
+    "uncached_decode_calls": 144
+  },
+  "warm_output_bit_exact_to_cold": true,
+  "warm_window_ms": 2008.6751070000018
+}

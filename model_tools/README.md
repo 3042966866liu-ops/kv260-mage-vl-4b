@@ -1,0 +1,3 @@
+# Historical model preparation scripts
+
+These four byte-identical scripts were copied from the parent project's `scripts/` directory: M125 four-port layouts, M126 runtime contracts, M148 embedding extraction, and M153 video candidate assembly. They are evidence of the actual preparation chain, not a complete clean-room raw-model converter. Their historical default paths and predecessor inputs have not been made portable here; run only after auditing their inputs/rights. The released prebuilt loader expects the exact layout manifests and asset hashes in [model setup](../docs/model_setup.md). `SOURCE_BUILD_VERIFIED=NOT_RUN` also applies to model preparation from a fresh upstream checkpoint.

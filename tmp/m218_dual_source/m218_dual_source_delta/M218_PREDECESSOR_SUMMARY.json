@@ -1,0 +1,69 @@
+{
+  "date": "2026-09-01",
+  "gate": "M218-dual-source-predecessor-summary",
+  "status": "PASS",
+  "source_board_gate_sha256": "b5a8386e2711906ae99b15ac3aab877da9df323a2faee467648a354731df15df",
+  "stable_rollback_preserved": true,
+  "m179": {
+    "status": "PASS",
+    "candidate_build_id": "0x4D395832",
+    "fpga_execution_proved": true,
+    "cpu_linear_fallback": false,
+    "formal_result_sha256": "3a798eafd2e66974774dcdcac39de86243830a6a4771eb182cd535220b4aacd3"
+  },
+  "m198": {
+    "status": "PASS",
+    "candidate_build_id": "0x4D395832",
+    "fp32_encoder_layers": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "formal_result_sha256": "b05671184eddb853c30091f3f0cb4718f5a96be9080dee210387bd483cce3209"
+  },
+  "m208": {
+    "status": "PASS",
+    "candidate_build_id": "0x4D395832",
+    "metrics": {
+      "cosine_similarity": 0.9991173106764643,
+      "max_abs_error": 0.6259765625,
+      "mean_abs_error": 0.011580251454170696,
+      "rmse": 0.022790040042836874
+    },
+    "bf16_gemm_warning_count": 0,
+    "formal_result_sha256": "2ff1d5823b97e349613abd15199e9db37630314a2d2c9b60fb4964658d47b23a"
+  },
+  "m209": {
+    "status": "OFFLINE_PASS_BOARD_NOT_EXECUTED",
+    "runtime_load_count": 1,
+    "last_window_sequences": [
+      60,
+      61,
+      62,
+      63
+    ],
+    "formal_result_sha256": "a38db7fd6e22da15fa0e5021e014a59624478b10f1408e7cd2616161695ada90"
+  },
+  "m212": {
+    "status": "PUBLIC_HTTPS_CONTROL_PLANE_PASS_LIVE_CAMERA_INFERENCE_PENDING",
+    "package_manifest_sha256": "b21349e0eddac4b46ea8fe8f61a3e7f4ddbf77f406e14cb53d3ded1c39d582fc",
+    "formal_result_sha256": "60b739b83ab1730132a0517142164113e8ceb53b4508045d55c294a1bda0fafc",
+    "public_https_result_sha256": "c87ed1f652726b0182a3f29a690f4b9cd3af8f0ba5a482c4904d60644d0e5535"
+  },
+  "m218_offline_result_sha256": "990c39fc9b8a1e62c195c8203b863d5c0bc5ff9429d8e94899a277b2b037bfbd"
+}

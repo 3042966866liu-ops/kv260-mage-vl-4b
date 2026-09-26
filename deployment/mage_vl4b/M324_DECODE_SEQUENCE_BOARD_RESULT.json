@@ -1,0 +1,56 @@
+{
+  "gate": "M324-KV852-three-step-incremental-decode-stable-candidate",
+  "date": "2026-09-26",
+  "status": "PASS_EXACT_EXPERIMENTAL_MEASUREMENT_NOT_PROMOTED",
+  "scope": "Three incremental Decode steps from the same fixed KV852 checkpoint; separate from M277 video Prefill",
+  "checkpoint_manifest_sha256": "bee367481e65c79b9578bd40d6ea8e3776a98db440a14b9283b61e36882ca27e",
+  "input_token": 1291,
+  "output_tokens": [311, 2115, 151645],
+  "kv_lengths_after_steps": [853, 854, 855],
+  "logical_fpga_calls_per_step": 162,
+  "stable": {
+    "build_id": "0x4D395832",
+    "status": "PASS_STABLE_SEQUENCE_REFERENCE",
+    "decode_step_seconds": [39.31492059098673, 38.98899030001485, 38.892447095015086],
+    "decode_seconds_sum": 117.19635798601666,
+    "diagnostic_sequence_wall_seconds": 158.88090579700656,
+    "board_result": "/home/ubuntu/tellme_m120_m89x2_20260901/results/m324_decode_sequence_01/stable.json",
+    "board_result_sha256": "a3ea399d1415952a8355d532622fa0d36ea4589731e62530dc2ac9fb6bc98e44"
+  },
+  "candidate": {
+    "build_id": "0x4F503131",
+    "status": "PASS_CANDIDATE_SEQUENCE_EXACT",
+    "decode_step_seconds": [38.12827369198203, 40.06518035399495, 37.28709444901324],
+    "decode_seconds_sum": 115.48054849499,
+    "diagnostic_sequence_wall_seconds": 153.49442794401,
+    "board_result": "/home/ubuntu/tellme_m120_m89x2_20260901/results/m324_decode_sequence_01/candidate.json",
+    "board_result_sha256": "421cf48cb36aa934eb5c0d0363ca5a940153102646decaee05d7fae4564a2efb"
+  },
+  "comparisons": {
+    "all_three_full_logits_bit_exact": true,
+    "all_three_step_kv_hashes_exact": true,
+    "kv_hashes_per_step": 72,
+    "candidate_to_stable_decode_sum_ratio": 1.01485799568316,
+    "candidate_compute_only_tokens_per_second": 0.0259784010302839,
+    "candidate_diagnostic_wall_tokens_per_second": 0.0195446834141387,
+    "formal_sustained_throughput_pass": false,
+    "reason": "Only three steps; each step has separate full diagnostic postchecks, stable and candidate were run in fixed order, and storage/cache conditions were not identical"
+  },
+  "read_preparation_outside_decode_timing": {
+    "stable_two_pass_wall_seconds": [34.329306677, 7.618033482],
+    "candidate_two_pass_wall_seconds": [15.035074024, 10.007100107],
+    "identical_residency_claimed": false
+  },
+  "candidate_capacity_status": "STOPPED_BY_USER_NOT_PASS",
+  "candidate_formal_promotion_allowed": false,
+  "stable_overlay_restored": true,
+  "stable_service_restored": true,
+  "stable_service_pid": 119445,
+  "service_ready_result_sha256": "3e6422145f29f2dcbed03b5cdee54af8915ab53d6cd485108268140e36407933",
+  "boot_dtb_cma_partitions_changed": false,
+  "stable_rollback_preserved": true,
+  "uart_log": "tmp/m324_latest_perf/sequence_gate_uart.log",
+  "uart_log_sha256": "1d1c3df573c73cd5eef7f80d1b1b26bd3eec295d4155d995ba6157e61a41a142",
+  "result_hash_collection_log": "tmp/m324_latest_perf/sequence_result_hashes_uart.log",
+  "next_step": "For a formal performance promotion, complete stopped RTL capacity evidence and run repeated, order-balanced same-cache comparisons; do not claim this fixed-KV852 test is combined BACT video throughput"
+}

@@ -1,0 +1,59 @@
+{
+  "active_board_service_changed": false,
+  "classification": "Two repeated host windows, exact output and cache accounting only; not ARM64 board memory/speed, semantic accuracy, FPGA E2E, Web deployment, or promotion.",
+  "cold_evidence": {
+    "cache_bytes": 354975744,
+    "cache_entries": 98,
+    "cache_hits": 0,
+    "cache_misses": 98,
+    "cache_precision": "uint8 codes + FP32 scales + int8 qmin",
+    "cache_reconstruct_ms": 0.0,
+    "decode_calls": 98,
+    "decode_ms": 1513.16563000006,
+    "decoded_elements": 329252864,
+    "decoder": "M260-exact-packed-code-cache-v1"
+  },
+  "cold_window_ms": 3322.0485270000067,
+  "composed_video_runtime": "M260PreVisionKeyframeRuntime",
+  "composed_vision_runtime": "M260CachedVariableFramePSVisionRuntime",
+  "date": "2026-09-02",
+  "gate": "M260-two-window-exact-packed-code-cache-offline",
+  "host_timing_is_board_evidence": false,
+  "host_warm_reduction_percent": 40.712000743149076,
+  "host_warm_speedup": 1.686681980391583,
+  "next_gate": "Reject if ARM64 free-memory headroom cannot cover cache plus fast detector and language runtime; otherwise run isolated COM3 two-window timing/identity gate.",
+  "output_sha256_fp32": "042e4d9ca11787379429dcecf302243051657d5dce17a42959a1755033ff2792",
+  "output_shape": [
+    392,
+    2560
+  ],
+  "process_max_rss_kib": 1791664,
+  "runtime_import_closure_pass": true,
+  "selected_frame_indices": [
+    0,
+    3
+  ],
+  "source_hashes": {
+    "deployment/mage_vl4b/m260_cached_w4_source/M260_BOUNDARY.md": "5ec0c2573f14ab53b65fc15d78456dcafdd4597d10092a6ab1c014c35eda56e3",
+    "deployment/mage_vl4b/m260_cached_w4_source/m260_cached_w4_runtime.py": "065c5ce58ec52dac3ee327a06228e99ff08c9d0e98bec1a2d8cf171238f076d7",
+    "deployment/mage_vl4b/m260_cached_w4_source/m260_m254_video_server.py": "1abd23bfae28506ca7c05df7ddeb525eab1eed7391276f73f684b3a292eb433d",
+    "deployment/mage_vl4b/m260_cached_w4_source/m260_video_runtime.py": "1d87d109b343fce07f7ded493dcd934bb7e1e73b1ad8772abe20af570628a30d",
+    "scripts/m260_gate_cached_w4.py": "fc086d9cbcbb9e38462d5f46c9068fb2c2a11b92e3d69f72bee0ec2649f2cd33"
+  },
+  "stable_rollback_preserved": true,
+  "status": "PASS_OFFLINE_EXACT_BOARD_MEMORY_AND_SPEED_PENDING",
+  "warm_evidence": {
+    "cache_bytes": 354975744,
+    "cache_entries": 98,
+    "cache_hits": 98,
+    "cache_misses": 98,
+    "cache_precision": "uint8 codes + FP32 scales + int8 qmin",
+    "cache_reconstruct_ms": 542.1634769998889,
+    "decode_calls": 196,
+    "decode_ms": 2055.3291069999473,
+    "decoded_elements": 658505728,
+    "decoder": "M260-exact-packed-code-cache-v1"
+  },
+  "warm_output_bit_exact_to_cold": true,
+  "warm_window_ms": 1969.576105999991
+}

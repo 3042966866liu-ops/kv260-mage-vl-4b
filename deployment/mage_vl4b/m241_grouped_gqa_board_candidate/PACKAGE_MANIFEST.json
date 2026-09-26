@@ -1,0 +1,60 @@
+{
+  "date": "2026-09-01",
+  "gate": "M241-grouped-GQA-complete-849-Prefill-board-delta",
+  "status": "PASS",
+  "classification": "Grouped-GQA-only Prefill delta over accepted M238; retains reference RoPE and changes no bitstream, weight, quantization, FPGA transaction, boot, DTB, CMA, partition, or persistent service.",
+  "base_build_id": "0x4D395832",
+  "base_package_manifest_sha256": "406dcca340e4604baeb761445795391c43ec26bd99fa06ffae893d597b17414f",
+  "m240r1_predecessor_sha256": "1a132d2e25c951fd9bafadefb5c10c5b3c981ac265c25bbfc756f5ba7cacda8a",
+  "files": [
+    {
+      "path": "m230_prefill_runtime.py",
+      "bytes": 9341,
+      "sha256": "defbcff1cc36300fff84481f2e9eba7a06174941b568e34b2faa7885efc14df4"
+    },
+    {
+      "path": "m231_prefill_runtime.py",
+      "bytes": 11534,
+      "sha256": "e7d6aa5a43919405168612b6a5695c14330735f75c87aa269b245e61542750ad"
+    },
+    {
+      "path": "m236_prefill_runtime.py",
+      "bytes": 14354,
+      "sha256": "d8061b561fe4d2a089523fde0d3860684244e76bca9646f255f03134fb50be56"
+    },
+    {
+      "path": "m238_prefill_runtime.py",
+      "bytes": 8974,
+      "sha256": "daf30c982c276b90ac776178ad258e536925dce52de7ab26b06a9473ff9a9d9a"
+    },
+    {
+      "path": "m230_video_language_runtime.py",
+      "bytes": 655,
+      "sha256": "2401f60823133f3a5c0656686ff1f7823da8796a154a1e9a888ba16f80138b56"
+    },
+    {
+      "path": "m241_video_language_runtime.py",
+      "bytes": 4412,
+      "sha256": "24f419ea8e0f130cefc8eb51f916dca3fb945b84f0dc8e73dec9f5376be3ad09"
+    },
+    {
+      "path": "m241_full849_gate.py",
+      "bytes": 8658,
+      "sha256": "68552a3c1c4490baeb29c2d38ff32c83dae2b4d7a18d5aab69dc094a71e2b58e"
+    },
+    {
+      "path": "m230_verify_package.py",
+      "bytes": 2068,
+      "sha256": "71b4f937c806e4871b714b7fac48af06073bfc8a101211bdecada6faf932f909"
+    },
+    {
+      "path": "run_m241_board_gate.sh",
+      "bytes": 3718,
+      "sha256": "16fe26924d87f69502c82b0022c9dd9269c2a6dbfd8827421ce58fa98b1962f2"
+    }
+  ],
+  "file_count": 9,
+  "total_file_bytes": 63714,
+  "forbidden_cache_file_count": 0,
+  "board_state_changed": false
+}

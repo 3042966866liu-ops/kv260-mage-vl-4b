@@ -1,0 +1,53 @@
+{
+  "date": "2026-09-01T09:23:15+08:00",
+  "gate": "M181-M120-video-text-runtime-slice",
+  "status": "PASS",
+  "build_id": "0x4D395832",
+  "source_package_manifest_sha256": "406dcca340e4604baeb761445795391c43ec26bd99fa06ffae893d597b17414f",
+  "files": [
+    {
+      "path": "contracts/M126_LANGUAGE_RUNTIME_CONTRACT_RESULT.json",
+      "bytes": 406213,
+      "sha256": "c8bab2c1d4c7ba1cf2075559498243ed2803d8db8de90a8d812c94ceebfc7e9f"
+    },
+    {
+      "path": "contracts/M126_LMHEAD_RUNTIME_CONTRACT_RESULT.json",
+      "bytes": 40001,
+      "sha256": "3304da81b7e679291bfa59bb11d4fd2d978c2dc3facb2fc2dbbd23739fe5be4e"
+    },
+    {
+      "path": "overlay/m120_m89x2_t32.bit",
+      "bytes": 7797914,
+      "sha256": "1cbf7bbb86cfe64c2349418d5a15890d735bea3fa4c999060c8a9da9ac3206ac"
+    },
+    {
+      "path": "overlay/m120_m89x2_t32.hwh",
+      "bytes": 493370,
+      "sha256": "9bd6100bcc274486ddd51133e4dc2247f35c030d49e53cc709438f2a74ee3520"
+    },
+    {
+      "path": "runtime/board_runtime.py",
+      "bytes": 23357,
+      "sha256": "5d53ea406e57de88f8c14d9bc4e1cb0c0049ff0b8f4bcf620e05745fcd82b201"
+    },
+    {
+      "path": "runtime/contract_runtime.py",
+      "bytes": 7223,
+      "sha256": "2912ab6040e1218775b397a184fd2d2487a83935fb9f7dfff7c97381c9cde75d"
+    },
+    {
+      "path": "runtime/m120_board_env_preflight.py",
+      "bytes": 4582,
+      "sha256": "7cb209d0810af25b87e1caee5cbc34f8b7d50f6dea7a5d76c4fd5a32a348ed46"
+    },
+    {
+      "path": "runtime/support/reserved_ddr_pool.py",
+      "bytes": 5894,
+      "sha256": "e933f9818e888ed7c924b7597adadd42f7254b942f65c645b85f17fc40f33013"
+    }
+  ],
+  "fixed_prompt_auxiliary_included": false,
+  "layer0_reference_fixture_included": false,
+  "lmhead_null_layer_safe": true,
+  "unsafe_optional_layer_conversion_count": 0
+}

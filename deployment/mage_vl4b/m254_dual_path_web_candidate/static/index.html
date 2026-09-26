@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TeLLMe · KV260 刀具安全监控</title>
+  <meta name="description" content="KV260 Mage-VL 4B 持续视频流刀具安全监控与 FPGA 证据面板">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div><p class="eyebrow">TeLLMe / KV260 / M247 + M248</p><h1>人物动作与刀具安全监控</h1></div>
+    <div id="health" class="health cold"><span></span><b>服务离线</b></div>
+  </header>
+  <main>
+    <section class="workspace">
+      <div class="panel input-panel">
+        <div class="panel-title"><div><span>01</span><h2>监控视频源</h2></div><p>可选现场摄像头或本地 MP4 循环；系统只保留最近 16 帧，每次分析最新 4 帧。</p></div>
+        <video id="source-video" autoplay muted playsinline></video>
+        <canvas id="capture-canvas" width="448" height="448" hidden></canvas>
+        <div class="source-picker">
+          <button id="camera" type="button">打开摄像头</button>
+          <label class="file-button" for="video-file">选择本地视频<input id="video-file" type="file" accept="video/mp4,video/*"></label>
+          <button id="stop" type="button" class="secondary" disabled>停止发送</button>
+        </div>
+        <p id="source-status" class="source-status">尚未选择输入源。本地视频只在浏览器解码，不整文件上传；选中后自动循环回放。</p>
+        <form id="prompt-form">
+          <label>固定监控任务</label>
+          <div class="task-contract"><strong>刀具出现检测</strong><span>每个最新四帧窗口只输出 0/1；由 M246 受限 logits 判定，不接受自由文本猜测。</span></div>
+          <input id="prompt" type="hidden" value="[TELLME_KNIFE_BINARY_V1] Inspect the four video frames. Output exactly one character: 1 if any knife is visible, otherwise 0. Answer:">
+          <input id="max-tokens" type="hidden" value="1">
+          <div class="form-row single-action"><button id="run" type="submit">启动持续刀具监控</button></div>
+        </form>
+        <p class="boundary">采集与推理解耦：模型忙碌时输入源仍持续产生帧，旧帧被覆盖，不形成无限队列。当前尚未达到秒级更新，页面会明确显示实际窗口延迟。</p>
+      </div>
+      <div class="panel output-panel">
+        <div class="panel-title"><div><span>02</span><h2>安全状态与最新窗口</h2></div><p>每次推理结束后立刻跳到当时最新四帧，旧窗口不积压。</p></div>
+        <div id="alarm-card" class="alarm-card review" role="status" aria-live="assertive">
+          <div id="alarm-icon" class="alarm-icon" aria-hidden="true">?</div>
+          <div><p id="alarm-kicker">等待首个可信窗口</p><strong id="alarm-title">待复核</strong><span id="alarm-detail">尚无刀具判定证据</span></div>
+        </div>
+        <div class="result-grid">
+          <div><span>模型判定</span><strong id="knife-verdict">—</strong></div>
+          <div><span>未校准二元分数</span><strong id="knife-score">—</strong></div>
+          <div><span>捕获到报警</span><strong id="alarm-latency">—</strong></div>
+          <div><span>快速通道时限</span><strong id="fast-path-latency">—</strong></div>
+        </div>
+        <section class="person-state" aria-live="polite">
+          <div><span>画面人物</span><strong id="person-count">0</strong></div>
+          <p id="person-actions">等待快速人物检测与动作结果。</p>
+        </section>
+        <div id="answer" class="answer compact" aria-live="polite">等待启动视频源与持续推理。</div>
+        <ol id="stages" class="stages">
+          <li data-stage="capture"><i></i><div><b>持续采集</b><span>等待</span></div></li>
+          <li data-stage="window"><i></i><div><b>最新四帧窗口</b><span>等待</span></div></li>
+          <li data-stage="vision"><i></i><div><b>M207 PS 视觉塔</b><span>等待</span></div></li>
+          <li data-stage="prefill"><i></i><div><b>FPGA M238/M241 T32 Prefill</b><span>等待</span></div></li>
+          <li data-stage="decode"><i></i><div><b>M246 受限 0/1 判定</b><span>等待</span></div></li>
+        </ol>
+      </div>
+    </section>
+    <section class="proof panel">
+      <div class="panel-title proof-heading"><div><span>03</span><h2>持续流状态与可核查 FPGA 证据</h2></div><strong id="proof-badge" class="badge pending">等待运行</strong></div>
+      <dl id="proof-grid">
+        <div><dt>调度模式</dt><dd>continuous-latest-only</dd></div>
+        <div><dt>当前输入源</dt><dd id="source-proof">未选择</dd></div>
+        <div><dt>接收 / 覆盖帧</dt><dd id="frame-count">0 / 0</dd></div>
+        <div><dt>窗口开始 / 完成</dt><dd id="window-count">0 / 0</dd></div>
+        <div><dt>当前窗口序号</dt><dd id="window-sequences">—</dd></div>
+        <div><dt>Runtime 加载次数</dt><dd id="load-count">0（要求始终为 1）</dd></div>
+        <div><dt>Build ID / Kernel</dt><dd id="build-kernel">0x4D395832 / mage_m120_m89x2_0</dd></div>
+        <div><dt>语言 CPU Linear fallback</dt><dd>false（每个结果校验）</dd></div>
+        <div><dt>证据帧 SHA-256</dt><dd id="evidence-sha">—</dd></div>
+        <div><dt>报警策略</dt><dd id="alarm-policy">阈值未校准；阳性立即报警</dd></div>
+        <div><dt>最近结果状态</dt><dd id="last-result-status">等待</dd></div>
+        <div><dt>实时性边界</dt><dd id="realtime-boundary">有界积压；尚非秒级结果</dd></div>
+      </dl>
+      <p class="boundary">M248 快速安全通道负责人物、动作和即时刀具报警；Mage-VL 4B 只异步复核，不阻塞报警。“未校准二元分数”不是检测准确率，正式阈值仍必须用目标监控场景数据校准。</p>
+    </section>
+  </main>
+</body>
+</html>

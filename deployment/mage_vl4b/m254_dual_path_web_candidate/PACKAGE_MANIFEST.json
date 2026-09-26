@@ -1,0 +1,107 @@
+{
+  "date": "2026-09-02",
+  "gate": "M254-dual-path-Web-board-candidate",
+  "status": "PASS",
+  "classification": "Hash-closed delta combining real-board M253 fast safety with alarm-only M243/M238/M241 semantic review; board service and frames not yet executed.",
+  "predecessors": {
+    "m243_board_result_sha256": "80ea2b8e1d142ef4400aa7e545cf62b3c6ae7a5531e4466df06b35758df096c6",
+    "m253_board_result_sha256": "d9e56ea4dbb7b981f8aa02ed834317dca430f252b4ac412c7dbf762478ebc4eb",
+    "m249_board_result_sha256": "e45597c3cc14a68420b09d389dde8c2b1cd81ab23eacc5833b5a527d4f633681"
+  },
+  "policy": "M253 immediate; M243/M238/M241 alarm-only capacity-one review; semantic review never blocks alarm.",
+  "files": [
+    {
+      "path": "m254_dual_path_core.py",
+      "bytes": 4157,
+      "sha256": "cd1a7af2cb0575f5a60a1a033af4424866ee4d329d3bbbacc798b873d507ffd3"
+    },
+    {
+      "path": "m254_video_server.py",
+      "bytes": 5591,
+      "sha256": "86e2c79740af645449db5b2f8c64246000dab1896a30b4148e5c90f1e321fc6f"
+    },
+    {
+      "path": "m254_runtime_ready_probe.py",
+      "bytes": 4606,
+      "sha256": "b46831164aaf2cb1f52a0ce0402385d6a3413888757641ea76de1e3af691bc5a"
+    },
+    {
+      "path": "verify_m254_candidate.py",
+      "bytes": 3475,
+      "sha256": "eb8221c8de492d13b529965738d6b556a350f9a22cfc1c4b6cca0fe2ffcf0e40"
+    },
+    {
+      "path": "run_m254_board_gate.sh",
+      "bytes": 3781,
+      "sha256": "6b194ec5d0e3d810f2f87a2f66a26a3b49a3c791080490447a9b3d9a24557a3f"
+    },
+    {
+      "path": "latest_fast_stream.py",
+      "bytes": 7546,
+      "sha256": "f3904f7c82f3770704ff5457612a11aae61af6a3453a215c8efae79d0a0fefa0"
+    },
+    {
+      "path": "m253_board_latest_stream.py",
+      "bytes": 9671,
+      "sha256": "5e70cae45e854bf8cbda67612af956ab4d3fadd12f90525e715496aca3803b15"
+    },
+    {
+      "path": "fast_frame_pipeline.py",
+      "bytes": 11491,
+      "sha256": "5e0158e067a43e225f52ac267223fe257b459a0fe5a9cad219fe83e6c035eb98"
+    },
+    {
+      "path": "immediate_safety_monitor.py",
+      "bytes": 5262,
+      "sha256": "20e61b893eb2de73896c5246c2b04eaa08c0c8001b47c613240c759236086d00"
+    },
+    {
+      "path": "temporal_action_adapter.py",
+      "bytes": 8461,
+      "sha256": "19699b51b22a9bee71f4055772d80439a348076ac111086fbf6b1801d9538597"
+    },
+    {
+      "path": "fast_safety_monitor.py",
+      "bytes": 8138,
+      "sha256": "7efbb9c8f4c792d8d6004ca859ce4b612d6f76e2bccc5c00bb8808d023134ca1"
+    },
+    {
+      "path": "knife_alarm.py",
+      "bytes": 5334,
+      "sha256": "dbfc11d4ddef18bf99c0493fd83b3f45ec5116c0e89c48439c293cb601fcb7db"
+    },
+    {
+      "path": "static/index.html",
+      "bytes": 6017,
+      "sha256": "052510d0c1b5af40cea8fc8dda53b1d23d4b420b49c3146a8d9b51c02ad07a65"
+    },
+    {
+      "path": "static/app.js",
+      "bytes": 13811,
+      "sha256": "51dc587507ccce008b511ef18dc81db6198fe9093d810c3a840dccf8e70a28e4"
+    },
+    {
+      "path": "static/style.css",
+      "bytes": 8149,
+      "sha256": "a7c99c9c62c314882605e196ce6c27fc1577d1b99aeab1eb8ca350442910aa70"
+    },
+    {
+      "path": "M243_WEB_PREFILL_BOARD_RESULT_05.json",
+      "bytes": 10884,
+      "sha256": "80ea2b8e1d142ef4400aa7e545cf62b3c6ae7a5531e4466df06b35758df096c6"
+    },
+    {
+      "path": "M253_KV260_LATEST_FAST_STREAM_BOARD_RESULT_02.json",
+      "bytes": 6170,
+      "sha256": "d9e56ea4dbb7b981f8aa02ed834317dca430f252b4ac412c7dbf762478ebc4eb"
+    },
+    {
+      "path": "M249_KV260_SSDLITE_BOARD_RESULT_03.json",
+      "bytes": 4264,
+      "sha256": "e45597c3cc14a68420b09d389dde8c2b1cd81ab23eacc5833b5a527d4f633681"
+    }
+  ],
+  "file_count": 18,
+  "total_bytes": 126808,
+  "forbidden_cache_file_count": 0
+}

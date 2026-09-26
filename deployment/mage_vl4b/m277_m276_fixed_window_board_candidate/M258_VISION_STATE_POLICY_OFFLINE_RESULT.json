@@ -1,0 +1,139 @@
+{
+  "active_board_service_changed": false,
+  "board_projection_not_measurement": {
+    "changed_layers": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "m244_bf16_layer_mean_ms": 15841.69398000328,
+    "m244_fp32_layer_mean_ms": 11082.667937114215,
+    "m244_pre_layer_and_boundary_ms": 12770.089193916647,
+    "m244_visual_layer_sum_ms": 294538.18674807553,
+    "m244_visual_total_ms": 307308.2759419922,
+    "measured_board_speedup": false,
+    "projected_reduction_ms": 19036.104171556246,
+    "projected_reduction_percent": 6.194465187507518,
+    "projected_visual_ms": 288272.17177043593,
+    "source_result": "deployment/mage_vl4b/M244_M243_FIXED_FOUR_FRAME_BOARD_RESULT_02.json",
+    "source_sha256": "b134fc00f7e2be60d9444f0e81203561972455d78907cdb6515462a98243e392"
+  },
+  "classification": "Frozen four-frame numerical sweep and isolated Web-entry integration source; not ARM64 board timing, FPGA E2E, semantic accuracy, Web deployment, or promotion.",
+  "date": "2026-09-02",
+  "frozen_thresholds": {
+    "cosine_minimum": 0.999,
+    "rmse_maximum": 0.05
+  },
+  "gate": "M258-visual-state-boundary-offline-sweep",
+  "next_gate": "Package from a clean whitelist, verify recursive dependency/hash closure, then run an isolated COM3 board fixed-four-frame numerical/timing gate before any Web promotion.",
+  "selected_policy": {
+    "bf16_layers": [
+      0,
+      1
+    ],
+    "bf16_prefix": 2,
+    "cosine": 0.9992125236194707,
+    "fp32_layers": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "rmse": 0.021527794975756246,
+    "selection_reason": "Prefix 1 passes too close to the cosine threshold; prefix 2 retains a larger numerical guard band while converting four expensive BF16 blocks."
+  },
+  "source_hashes": {
+    "deployment/mage_vl4b/m258_vision_state_sweep_source/M258_BOUNDARY.md": "fc93ea2d465fd0a41bf5ec10c2cab4c18aa2420e0eac8fd052a75d4ea08ed039",
+    "deployment/mage_vl4b/m258_vision_state_sweep_source/m258_m254_video_server.py": "c6db0b777a195c2476490788a123854b29fda6e3035564a40be158b9da63b673",
+    "deployment/mage_vl4b/m258_vision_state_sweep_source/m258_vectorized_w4_runtime.py": "b8b973f5355504dfc7b3d1cb21c16a9756831947396dc536c5b8f99478004e8a",
+    "scripts/m258_finalize_offline_result.py": "7b80201a8df80262dad30f810eff5baa98759595d9f3ffe4005191424cb0c006",
+    "scripts/m258_gate_vision_state_policy.py": "42af8a235ef269afce43781438c0d7b3e593cb5fe3f6e0032abe944a21683d9d"
+  },
+  "stable_rollback_preserved": true,
+  "status": "PASS_OFFLINE_NUMERICAL_BOARD_TIMING_PENDING",
+  "sweep": [
+    {
+      "bf16_prefix": 0,
+      "cosine": 0.9987092294467006,
+      "host_vision_forward_ms": 4913.4579159999985,
+      "result_sha256": "6e47ba3e670b06f30a92b8a7ad85947992826c63da74f19056fdceb705008a69",
+      "rmse": 0.0275580297661768,
+      "status": "FAIL"
+    },
+    {
+      "bf16_prefix": 1,
+      "cosine": 0.9990322057725857,
+      "host_vision_forward_ms": 4905.96095699999,
+      "result_sha256": "d3261180a155dbbddd00294008e8ab48588afc9037f242df6f1734925bf808fa",
+      "rmse": 0.023863625110699154,
+      "status": "PASS"
+    },
+    {
+      "bf16_prefix": 2,
+      "cosine": 0.9992125236194707,
+      "host_vision_forward_ms": 5096.242156000002,
+      "result_sha256": "495e47ddc9d7ea55c490200e7340e6a06be85bbf12fcb41635e08d96aa32be9a",
+      "rmse": 0.021527794975756246,
+      "status": "PASS"
+    },
+    {
+      "bf16_prefix": 3,
+      "cosine": 0.9990974936476066,
+      "host_vision_forward_ms": 5006.1417459999975,
+      "result_sha256": "ecee43fb97a877dabad68aaba4f07eacd310a02faaf4b76c33d66eb5fb67188e",
+      "rmse": 0.023041998714097307,
+      "status": "PASS"
+    },
+    {
+      "bf16_prefix": 4,
+      "cosine": 0.9992229932712663,
+      "host_vision_forward_ms": 4933.479171000002,
+      "result_sha256": "6a837fa1023f8c50ebac4c1f2a225358fe90ed05447d73a59ec27a06574779c1",
+      "rmse": 0.021381213542661943,
+      "status": "PASS"
+    },
+    {
+      "bf16_prefix": 5,
+      "cosine": 0.9992640217846691,
+      "host_vision_forward_ms": 5118.347134999994,
+      "result_sha256": "465838e3c49b3bd2e9fc88e815c3fc8faf9c4875fd82cb3a47faa9a25976193a",
+      "rmse": 0.02081108721488675,
+      "status": "PASS"
+    },
+    {
+      "bf16_prefix": 6,
+      "cosine": 0.9992565479809137,
+      "host_vision_forward_ms": 5045.254830000004,
+      "result_sha256": "5f94e596845928cf490b25b941dd91d69751a8ff99d5be4a26e6361cace47741",
+      "rmse": 0.020916585950275686,
+      "status": "PASS"
+    }
+  ],
+  "unchanged": [
+    "M222 packed W4/FP16-scale decoder",
+    "FP32 W4 Linear GEMM",
+    "four-frame preprocessing and token count",
+    "M238/M241 T32 language path",
+    "M254 fast alarm path",
+    "overlay/boot/DTB/CMA/partitions/stable rollback"
+  ]
+}
