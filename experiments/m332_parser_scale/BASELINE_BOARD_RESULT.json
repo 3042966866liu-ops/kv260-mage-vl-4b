@@ -1,0 +1,144 @@
+{
+  "gate": "M332-isolated-fixed-video-parser-scale-AB",
+  "status": "PASS_INDEPENDENT_VIDEO_E2E",
+  "variant": "baseline",
+  "release_root": "/home/ubuntu/tellme_release_install_20260926",
+  "addon_root": "/home/ubuntu/tellme_release_video_addon_20260926_v3",
+  "build_id_expected": "0x4D395832",
+  "entry": "M277 M276ShortPromptBinaryRuntime.stream (direct 4B inference)",
+  "fast_alarm_gate_used": false,
+  "semantic_inference_executed": true,
+  "stable_service_modified": false,
+  "boot_dtb_cma_partitions_changed": false,
+  "release_preflight": {
+    "status": "READY_FOR_BOARD_PREFLIGHT",
+    "build_id": "0x4D395832",
+    "missing": [],
+    "hash_or_identity_mismatch": [],
+    "port_free": true
+  },
+  "m277_release_subset": {
+    "manifest_sha256": "0e1bdfa578f655b2bb6d07b097f1dda115a7936906e3e112137123db65e7f2fa",
+    "verified_present_files": 51,
+    "omitted_nonruntime_docs": [
+      "M259_BOUNDARY.md",
+      "M260_BOUNDARY.md",
+      "M261_BOUNDARY.md",
+      "M269_BOUNDARY.md",
+      "M273_BOUNDARY.md",
+      "M276_BOUNDARY.md",
+      "M277_BOUNDARY.md"
+    ]
+  },
+  "m236_module_path": "/home/ubuntu/tellme_release_install_20260926/deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m236_prefill_runtime.py",
+  "m236_module_sha256": "d8061b561fe4d2a089523fde0d3860684244e76bca9646f255f03134fb50be56",
+  "submitted_frame_count": 4,
+  "submitted_frame_names": [
+    "frame_00_0068_rgb448.npy",
+    "frame_01_0102_rgb448.npy",
+    "frame_02_0137_rgb448.npy",
+    "frame_03_0171_rgb448.npy"
+  ],
+  "submitted_frame_file_sha256": {
+    "frame_00_0068_rgb448.npy": "efbd192266329db17ab9b233b854fa4086a16ccf8faf8aace75462c164844e8f",
+    "frame_01_0102_rgb448.npy": "e334ea6bdeb142a42a443afe27fa8af551895d568149ab8aca92a181fdc69243",
+    "frame_02_0137_rgb448.npy": "81ddb1f5358e44bf9263c71f1cd64c68e888c5233f0fe8ab017e6011277d9527",
+    "frame_03_0171_rgb448.npy": "7bf716a4f68defdb85066a0afeed955c61305628a2f43563b0b14ee539644b13"
+  },
+  "submitted_tensor_sha256": "5911485955780036ac4c8990bcaa248667f2e86bd1fd6f9b0783002553b4adff",
+  "semantic_path_invoked": true,
+  "m277_result_sha256": "ffa47e5c798205a386c68031dac6beb8a60ffa5725228c570867eaab163d97e9",
+  "m277_status": "PASS_FUNCTIONAL_FASTER_THAN_M244",
+  "first_exception": null,
+  "stage_timing_ms": {
+    "process_start_and_runtime_load_to_preprocess": 91310.27771500158,
+    "preprocess": 76.89909900000202,
+    "vision": 44142.27551099975,
+    "language_prefill_to_first_token": 160830.69199799866,
+    "token_to_complete": 1.454565001069568
+  },
+  "stage_events": [
+    {
+      "name": "preprocess",
+      "label": "M276 最新报警帧全景+细节",
+      "selected_indices": [
+        3
+      ]
+    },
+    {
+      "name": "vision",
+      "label": "M276 两视图 98-token 精确视觉塔"
+    },
+    {
+      "name": "prefill",
+      "label": "M276 159-token/5-batch T32 受限 0/1"
+    }
+  ],
+  "selected_frame_indices": [
+    3
+  ],
+  "prompt_tokens": 159,
+  "first_token_ms": 205049.90489900048,
+  "final_output": [
+    {
+      "text": "0",
+      "token_id": 15,
+      "generated_tokens": 1,
+      "knife_verdict": "ABSENT",
+      "knife_score": 0.4416730056646256,
+      "score_calibrated": false
+    },
+    {
+      "verdict": "ABSENT",
+      "knife_score": 0.4416730056646256,
+      "score_kind": "two-token-logit-softmax",
+      "score_calibrated": false,
+      "selected_frame_indices": [
+        3
+      ]
+    },
+    {
+      "status": "PASS",
+      "prompt_tokens": 159,
+      "generated_tokens": 1,
+      "decode_calls": 0,
+      "first_token_ms": 205049.90489900048,
+      "total_ms": 205051.35704299936,
+      "selected_frame_indices": [
+        3
+      ],
+      "knife_verdict": "ABSENT",
+      "knife_score": 0.4416730056646256,
+      "proof": {
+        "result": "PASS",
+        "build_id": "0x4D395832",
+        "kernel": "mage_m120_m89x2_0",
+        "pl_logical_chain_calls": 778,
+        "expected_pl_logical_chain_calls": 778,
+        "pl_expected_macros": 9277767680,
+        "language_cpu_linear_fallback": false,
+        "vision_backend": "M273 exact latest global/detail with M261 bounded cache",
+        "language_scheduler": "M238 T32 + M241 grouped-GQA/reference-RoPE",
+        "knife_decision": "M276 constrained logits 0/1 V3",
+        "decode_calls": 0
+      }
+    }
+  ],
+  "fpga_proof": {
+    "result": "PASS",
+    "build_id": "0x4D395832",
+    "kernel": "mage_m120_m89x2_0",
+    "pl_logical_chain_calls": 778,
+    "expected_pl_logical_chain_calls": 778,
+    "pl_expected_macros": 9277767680,
+    "language_cpu_linear_fallback": false,
+    "vision_backend": "M273 exact latest global/detail with M261 bounded cache",
+    "language_scheduler": "M238 T32 + M241 grouped-GQA/reference-RoPE",
+    "knife_decision": "M276 constrained logits 0/1 V3",
+    "decode_calls": 0
+  },
+  "vision_stage_reached": true,
+  "prefill_stage_reached": true,
+  "semantic_inference_completed": true,
+  "elapsed_ms": 513849.386156
+}

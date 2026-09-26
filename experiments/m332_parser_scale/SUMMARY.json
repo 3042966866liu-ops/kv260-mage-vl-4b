@@ -1,0 +1,56 @@
+{
+  "gate": "M332-fixed-video-same-input-AB",
+  "status": "FAIL_E2E_GAIN",
+  "baseline_board_result_sha256": "61985522080a66444c3bd4a3f32d2215a3d2df24b0f341bafe109ce295291f21",
+  "candidate_board_result_sha256": "2be9b3c4bc3266d8ed82ab1e0eff5fe16827fc4fb89695a66fbd18f171d729e1",
+  "functional_output_identity": true,
+  "parser_module_identity": true,
+  "baseline": {
+    "status": "PASS_INDEPENDENT_VIDEO_E2E",
+    "m236_module_path": "/home/ubuntu/tellme_release_install_20260926/deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m236_prefill_runtime.py",
+    "m236_module_sha256": "d8061b561fe4d2a089523fde0d3860684244e76bca9646f255f03134fb50be56",
+    "input_sha256": "5911485955780036ac4c8990bcaa248667f2e86bd1fd6f9b0783002553b4adff",
+    "selected_frame_indices": [
+      3
+    ],
+    "prompt_tokens": 159,
+    "first_token_ms": 205049.90489900048,
+    "vision_ms": 44142.27551099975,
+    "language_prefill_to_first_token_ms": 160830.69199799866,
+    "load_to_preprocess_ms": 91310.27771500158,
+    "token_id": 15,
+    "token_text": "0",
+    "knife_verdict": "ABSENT",
+    "knife_score": 0.4416730056646256,
+    "build_id": "0x4D395832",
+    "logical_fpga_calls": 778,
+    "language_cpu_linear_fallback": false
+  },
+  "candidate": {
+    "status": "PASS_INDEPENDENT_VIDEO_E2E",
+    "m236_module_path": "/home/ubuntu/m332_parser_scale_video_pkg_02/m236_prefill_runtime.py",
+    "m236_module_sha256": "7e36223f762cfc04c0fc74e3f468664e05d38b8f8024c8eb194e77cdc12944e8",
+    "input_sha256": "5911485955780036ac4c8990bcaa248667f2e86bd1fd6f9b0783002553b4adff",
+    "selected_frame_indices": [
+      3
+    ],
+    "prompt_tokens": 159,
+    "first_token_ms": 225273.59902699938,
+    "vision_ms": 43872.7712660002,
+    "language_prefill_to_first_token_ms": 181325.98369299923,
+    "load_to_preprocess_ms": 135370.67641799877,
+    "token_id": 15,
+    "token_text": "0",
+    "knife_verdict": "ABSENT",
+    "knife_score": 0.4416730056646256,
+    "build_id": "0x4D395832",
+    "logical_fpga_calls": 778,
+    "language_cpu_linear_fallback": false
+  },
+  "first_token_saved_ms": -20223.694127998897,
+  "preregistered_min_saved_ms": 11536.0,
+  "sample_pairs": 1,
+  "performance_noise_resolved": false,
+  "deployment_promoted": false,
+  "limits": "One same-input A/B pair cannot establish repeatability; one output token/score is not full-logit equality; neither run measures sustained Decode."
+}

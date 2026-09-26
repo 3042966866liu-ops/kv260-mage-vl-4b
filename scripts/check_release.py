@@ -51,7 +51,7 @@ def entry(p: Path) -> dict:
     rel = p.relative_to(ROOT).as_posix()
     origin = SOURCE_ROOT / ("scripts/" + p.name if rel.startswith("model_tools/") and p.suffix == ".py" else rel)
     copied = origin.is_file() and sha(origin) == sha(p)
-    family = ("experimental" if "OP01" in rel or "decode_op01" in rel or "m325" in rel.lower()
+    family = ("experimental" if "OP01" in rel or "decode_op01" in rel or "m325" in rel.lower() or "m332" in rel.lower()
               else "bact" if rel.startswith(("bact/", "data/bact", "experiments/bact")) or "m277_m276" in rel or "m321_" in rel
               else "stable" if rel.startswith(("deployment/mage_vl4b/m", "hls/mage_prefill", "tmp/", "model_tools/"))
               else "support")
