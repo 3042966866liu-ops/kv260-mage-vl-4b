@@ -32,7 +32,16 @@ def files() -> list[Path]:
         if not p.is_file():
             continue
         rel = p.relative_to(ROOT).as_posix()
-        if rel in EXCLUDE or rel.startswith("external_assets/") or "__pycache__" in p.parts or p.suffix == ".pyc" or ".git" in p.parts:
+        # A child checkout is not a release payload, even when it is not yet
+        # ignored by Git.  Do not let --write-manifest ingest its README.
+        current = ROOT
+        child_checkout = False
+        for part in p.relative_to(ROOT).parts[:-1]:
+            current = current / part
+            if (current / ".git").exists():
+                child_checkout = True
+                break
+        if child_checkout or rel in EXCLUDE or rel.startswith("external_assets/") or "__pycache__" in p.parts or p.suffix == ".pyc" or ".git" in p.parts:
             continue
         result.append(p)
     return sorted(result)

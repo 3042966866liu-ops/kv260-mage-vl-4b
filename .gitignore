@@ -20,6 +20,8 @@ venv/
 deployment/mage_vl4b/m181_m120_video_board_candidate/text_auxiliary/tokenizer/tokenizer.json
 deployment/mage_vl4b/m181_m120_video_board_candidate/text_auxiliary/tokenizer/vocab.json
 external_assets/
+# A mistakenly created same-name child Git repository is not part of this release.
+/kv260-mage-vl-4b/
 build/
 dist/
 *.jou

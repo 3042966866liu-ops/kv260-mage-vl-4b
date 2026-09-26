@@ -16,6 +16,6 @@
 
 在独立 v7 首装上，另以哈希锁定的伴随包提交原 M277 四帧样例，**直接** 4B 路径完成：Build `0x4D395832`、778 次逻辑 FPGA 调用、输出 `0`、不含初始化的首 Token **230.721 秒**。冻结运行时实际只从末帧形成两个视觉视图；这不证明网页报警复核或四帧时序理解。见[固定视频复现](docs/fixed_video_reproduction.md)及所有者工作区的 `deployment/mage_vl4b/M328_RELEASE_VIDEO_BOARD_RESULT.json`。
 
-Git 中不包含模型权重或 bitstream；身份与可获得性见[外部资产清单](manifests/external_assets.json)。稳定版 M125 的语言与 LM Head 清单及八个分片已在本机 WSL 找到并重哈希确认，见[资产溯源](docs/stable_asset_provenance.md)。本地 v7 预构建 TAR 与 M328 视频伴随包已完成上述所有者板端门禁，但都没有公开下载地址，也未打进 Git。当前还不是可无限制公开发布的版本：项目源码、上游衍生代码和样例视频的再分发授权需所有者核准。见[第三方说明](THIRD_PARTY_NOTICES.md)和[版本说明](docs/releases/v0.1.0.md)。不虚构远程仓库、DOI、论文或作者。
+Git 中不包含模型权重或 bitstream；身份与可获得性见[外部资产清单](manifests/external_assets.json)。稳定版 M125 的语言与 LM Head 清单及八个分片已在本机 WSL 找到并重哈希确认，见[资产溯源](docs/stable_asset_provenance.md)。本地 v7 预构建 TAR 与 M328 视频伴随包已完成上述所有者板端门禁，但都没有公开下载地址，也未打进 Git。[源码仓库](https://github.com/3042966866liu-ops/kv260-mage-vl-4b)已上传；这不等于模型、硬件资产或全部源码的再分发授权已经核准。见[第三方说明](THIRD_PARTY_NOTICES.md)、[下一轮验证门槛](docs/next_validation.md)和[版本说明](docs/releases/v0.1.0.md)。不虚构 DOI、论文或作者。
 
 English: [README.md](README.md).

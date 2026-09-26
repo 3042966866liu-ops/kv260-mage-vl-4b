@@ -101,6 +101,8 @@ Git 仓库不包含模型权重或 bitstream。所需文件的身份、校验值
 | [固定视频复现](docs/fixed_video_reproduction.md) | 直接固定视频推理验证 |
 | [构建说明](docs/build.md) | 硬件构建流程与已验证范围 |
 | [评测结果](docs/results.md) | 测量条件、结果与证据 |
+| [源码导览](docs/source_map.md) | 稳定运行路径、研究分支与历史依赖的入口 |
+| [下一轮验证门槛](docs/next_validation.md) | 公平性能对照、BACT 质量及 Web 视频闭环的待完成实验 |
 | [已知限制](docs/limitations.md) | 性能、功能与适用范围 |
 | [代码来源](docs/provenance.md) | 上游来源与本地修改 |
 | [版本说明](docs/releases/v0.1.0.md) | 首版内容与发布状态 |

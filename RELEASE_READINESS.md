@@ -1,6 +1,6 @@
 # Local release readiness — 2026-09-26 (post-install update)
 
-This is an unpublished, local KV260 Mage-VL 4B release candidate. It selects the conservative M254/M120/T32 Build `0x4D395832`. The OP01 Decode-one experiment is included as evidence/source only and is not the release default.
+The source-and-documentation snapshot was pushed to the [GitHub repository](https://github.com/3042966866liu-ops/kv260-mage-vl-4b) on `main` at initial release commit `69b14e8ac616b1c5c50f67d73c52190e961c9ea7`. This document describes the owner's local installation and evidence status; it is not a claim that prebuilt assets are publicly available or that a GitHub Release exists. The conservative default is M254/M120/T32 Build `0x4D395832`. OP01 Decode-one remains experimental.
 
 ## What is already evidenced
 
@@ -22,7 +22,7 @@ This is an unpublished, local KV260 Mage-VL 4B release candidate. It selects the
 | `PREBUILT_READY` | **Yes locally for exact KV260 fixed-text E2E, Web runtime startup and separate-companion direct fixed-video E2E.** Alarm-triggered Web 4B video, sustained throughput and clean generic OS provisioning remain unverified. Neither TAR has a public download URL. |
 | `SOURCE_BUILD_VERIFIED` | Not run. No clean Vivado full-shell rebuild claim. |
 
-Public release remains blocked by the owner's source-license choice, file-level attribution/redistribution review, and a lawful distribution method for the large hash-locked assets and companion. An unuploaded address must not be invented. This local first-install check does not prove a generic clean OS image can satisfy the observed PYNQ/XRT/Torch environment without additional provisioning. M328 supplies the previously missing fixed-window direct-video gate; the earlier fixed-text and no-frame Web service checks remain distinct and must not be described as an alarm-triggered video Web gate. M328 uses only the last submitted frame for two visual views, so it does not establish four-frame temporal reasoning or real-time operation.
+The source snapshot is online, but a broadly reusable software/asset release remains blocked by the owner's source-license choice, file-level attribution/redistribution review, and a lawful distribution method for the large hash-locked assets and companion. An unuploaded address must not be invented. This local first-install check does not prove a generic clean OS image can satisfy the observed PYNQ/XRT/Torch environment without additional provisioning. M328 supplies the previously missing fixed-window direct-video gate; the earlier fixed-text and no-frame Web service checks remain distinct and must not be described as an alarm-triggered video Web gate. M328 uses only the last submitted frame for two visual views, so it does not establish four-frame temporal reasoning or real-time operation. The remaining experiments and their acceptance boundaries are in [next validation gates](docs/next_validation.md).
 
 ## Preserved failures and recovery boundary
 
