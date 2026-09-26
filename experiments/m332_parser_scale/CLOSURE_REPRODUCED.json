@@ -1,0 +1,56 @@
+{
+  "gate": "M332-two-order-fixed-video-closure",
+  "status": "REJECT_NO_E2E_GAIN",
+  "functional_status": "PASS_BOTH_ORDERS",
+  "build_id": "0x4D395832",
+  "pair_count": 2,
+  "records": [
+    {
+      "run": "M332-parser-scale-video-02",
+      "order": "baseline-then-candidate",
+      "summary_sha256": "66629c1fef56530ee88251890455603a71f8207c433825d12f29afa3a98f0755",
+      "input_sha256": "5911485955780036ac4c8990bcaa248667f2e86bd1fd6f9b0783002553b4adff",
+      "baseline_first_token_ms": 205049.90489900048,
+      "candidate_first_token_ms": 225273.59902699938,
+      "saved_ms": -20223.694127998897,
+      "baseline_vision_ms": 44142.27551099975,
+      "candidate_vision_ms": 43872.7712660002,
+      "baseline_language_ms": 160830.69199799866,
+      "candidate_language_ms": 181325.98369299923,
+      "language_candidate_minus_baseline_ms": 20495.291695000575,
+      "vision_candidate_minus_baseline_ms": -269.5042449995526,
+      "baseline_load_to_preprocess_ms": 91310.27771500158,
+      "candidate_load_to_preprocess_ms": 135370.67641799877
+    },
+    {
+      "run": "M332-parser-scale-video-03",
+      "order": "candidate-then-baseline",
+      "summary_sha256": "28fc49fbedfa6842c71a37987594c1feef28ea956cbb033436a4e1acac5370e7",
+      "input_sha256": "5911485955780036ac4c8990bcaa248667f2e86bd1fd6f9b0783002553b4adff",
+      "baseline_first_token_ms": 215864.05396699958,
+      "candidate_first_token_ms": 222886.72185399992,
+      "saved_ms": -7022.667887000338,
+      "baseline_vision_ms": 44954.18223199886,
+      "candidate_vision_ms": 43441.08778900045,
+      "baseline_language_ms": 170834.94844599953,
+      "candidate_language_ms": 179373.79116800003,
+      "language_candidate_minus_baseline_ms": 8538.842722000496,
+      "vision_candidate_minus_baseline_ms": -1513.0944429984083,
+      "baseline_load_to_preprocess_ms": 72235.30452600062,
+      "candidate_load_to_preprocess_ms": 124368.1483750006
+    }
+  ],
+  "required_min_saved_ms": 11536.0,
+  "observed_saved_ms": [
+    -20223.694127998897,
+    -7022.667887000338
+  ],
+  "observed_mean_saved_ms": -13623.181007499617,
+  "candidate_faster_in_any_pair": false,
+  "candidate_met_preregistered_gain_in_any_pair": false,
+  "candidate_promoted": false,
+  "stable_rollback_preserved": true,
+  "subphase_attribution": "Unavailable: the 159-token video logs time language Prefill as a whole, not file I/O, parser, PL wait and PS separately.",
+  "limits": "Two order-counterbalanced pairs reject observed end-to-end gain but do not prove a population-level slowdown, identify the cause of timing variance, or measure sustained Decode.",
+  "next_step": "Close M332; profile the real 159-token language path by weight I/O, parsing, PL wait and PS before selecting one new bottleneck candidate."
+}
