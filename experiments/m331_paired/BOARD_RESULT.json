@@ -1,0 +1,693 @@
+{
+  "boundary": "CPU in-memory packed fixture to complete output; PL in-memory packet/weights through staging, sync, DMA and output copy; neither includes file read, overlay load or CMA allocation",
+  "build_id_expected": "0x4d395832",
+  "cases": [
+    {
+      "allocation_ms_excluded": 4.240082000251277,
+      "bits": 2,
+      "descriptor_count": 2,
+      "expected_cpu_output_sha256": "c03f51cc7cd6d157e04bd0da674ee59652168b58473d6d3b2070f58fe30ec3a0",
+      "expected_pl_output_sha256_ftz": "7167dff9da96757a768b44254403d1a439615fffbca3139ee5bfd261fa3c7a2d",
+      "identity": "fixture-ordinal0-layer0-family4-bits2-groups40-descriptors2",
+      "input_packet_sha256": "3faeebd435cc116f510b1400846a57561f1f0dc9ed7c8eae162ffd758b8d1d89",
+      "ordinal": 0,
+      "pairs": [
+        {
+          "cpu": {
+            "full_original_fp16_exact": true,
+            "output_sha256": "c03f51cc7cd6d157e04bd0da674ee59652168b58473d6d3b2070f58fe30ec3a0",
+            "packed_compute_ms": 5.89174
+          },
+          "execution_order": "CPU-PL",
+          "index": 0,
+          "pl": {
+            "dma_launch_and_completion_wait_ms": 1.20204199993168,
+            "full_fp16_ftz_output_exact": true,
+            "input_stage_and_sync_ms": 0.20385200059536146,
+            "output_sha256_ftz": "7167dff9da96757a768b44254403d1a439615fffbca3139ee5bfd261fa3c7a2d",
+            "output_sync_and_copy_ms": 0.1415010001437622,
+            "register_setup_ms": 0.1662519998717471,
+            "snapshot": {
+              "ap_ctrl": 14,
+              "ap_return": 1295603762,
+              "dma_read_error": "",
+              "kernel_read_error": "",
+              "mm2s_dmasr": 4098,
+              "mm2s_error": false,
+              "mm2s_idle": true,
+              "return_read_error": "",
+              "s2mm_dmasr": 4098,
+              "s2mm_error": false,
+              "s2mm_idle": true
+            },
+            "transaction_total_ms": 2.422944000500138,
+            "weight_stage_and_sync_ms": 0.6981269998505013
+          }
+        },
+        {
+          "cpu": {
+            "full_original_fp16_exact": true,
+            "output_sha256": "c03f51cc7cd6d157e04bd0da674ee59652168b58473d6d3b2070f58fe30ec3a0",
+            "packed_compute_ms": 5.89065
+          },
+          "execution_order": "PL-CPU",
+          "index": 1,
+          "pl": {
+            "dma_launch_and_completion_wait_ms": 1.1379119996490772,
+            "full_fp16_ftz_output_exact": true,
+            "input_stage_and_sync_ms": 0.15046200041979318,
+            "output_sha256_ftz": "7167dff9da96757a768b44254403d1a439615fffbca3139ee5bfd261fa3c7a2d",
+            "output_sync_and_copy_ms": 0.13294100062921643,
+            "register_setup_ms": 0.14877099965815432,
+            "snapshot": {
+              "ap_ctrl": 14,
+              "ap_return": 1295603762,
+              "dma_read_error": "",
+              "kernel_read_error": "",
+              "mm2s_dmasr": 4098,
+              "mm2s_error": false,
+              "mm2s_idle": true,
+              "return_read_error": "",
+              "s2mm_dmasr": 4098,
+              "s2mm_error": false,
+              "s2mm_idle": true
+            },
+            "transaction_total_ms": 2.0898209995721118,
+            "weight_stage_and_sync_ms": 0.5082549996586749
+          }
+        },
+        {
+          "cpu": {
+            "full_original_fp16_exact": true,
+            "output_sha256": "c03f51cc7cd6d157e04bd0da674ee59652168b58473d6d3b2070f58fe30ec3a0",
+            "packed_compute_ms": 5.89108
+          },
+          "execution_order": "CPU-PL",
+          "index": 2,
+          "pl": {
+            "dma_launch_and_completion_wait_ms": 1.1702909996529343,
+            "full_fp16_ftz_output_exact": true,
+            "input_stage_and_sync_ms": 0.15513200014538597,
+            "output_sha256_ftz": "7167dff9da96757a768b44254403d1a439615fffbca3139ee5bfd261fa3c7a2d",
+            "output_sync_and_copy_ms": 0.13781199959339574,
+            "register_setup_ms": 0.16250099997705547,
+            "snapshot": {
+              "ap_ctrl": 14,
+              "ap_return": 1295603762,
+              "dma_read_error": "",
+              "kernel_read_error": "",
+              "mm2s_dmasr": 4098,
+              "mm2s_error": false,
+              "mm2s_idle": true,
+              "return_read_error": "",
+              "s2mm_dmasr": 4098,
+              "s2mm_error": false,
+              "s2mm_idle": true
+            },
+            "transaction_total_ms": 2.23668299986457,
+            "weight_stage_and_sync_ms": 0.5988160000924836
+          }
+        },
+        {
+          "cpu": {
+            "full_original_fp16_exact": true,
+            "output_sha256": "c03f51cc7cd6d157e04bd0da674ee59652168b58473d6d3b2070f58fe30ec3a0",
+            "packed_compute_ms": 5.89489
+          },
+          "execution_order": "PL-CPU",
+          "index": 3,
+          "pl": {
+            "dma_launch_and_completion_wait_ms": 1.1754019997169962,
+            "full_fp16_ftz_output_exact": true,
+            "input_stage_and_sync_ms": 0.15909099965938367,
+            "output_sha256_ftz": "7167dff9da96757a768b44254403d1a439615fffbca3139ee5bfd261fa3c7a2d",
+            "output_sync_and_copy_ms": 0.13823100016452372,
+            "register_setup_ms": 0.16570200023124926,
+            "snapshot": {
+              "ap_ctrl": 14,
+              "ap_return": 1295603762,
+              "dma_read_error": "",
+              "kernel_read_error": "",
+              "mm2s_dmasr": 4098,
+              "mm2s_error": false,
+              "mm2s_idle": true,
+              "return_read_error": "",
+              "s2mm_dmasr": 4098,
+              "s2mm_error": false,
+              "s2mm_idle": true
+            },
+            "transaction_total_ms": 2.316413000698958,
+            "weight_stage_and_sync_ms": 0.6644969998887973
+          }
+        },
+        {
+          "cpu": {
+            "full_original_fp16_exact": true,
+            "output_sha256": "c03f51cc7cd6d157e04bd0da674ee59652168b58473d6d3b2070f58fe30ec3a0",
+            "packed_compute_ms": 5.90305
+          },
+          "execution_order": "CPU-PL",
+          "index": 4,
+          "pl": {
+            "dma_launch_and_completion_wait_ms": 1.1326519997965079,
+            "full_fp16_ftz_output_exact": true,
+            "input_stage_and_sync_ms": 0.15401099972223165,
+            "output_sha256_ftz": "7167dff9da96757a768b44254403d1a439615fffbca3139ee5bfd261fa3c7a2d",
+            "output_sync_and_copy_ms": 0.13729100010095863,
+            "register_setup_ms": 0.1996119999603252,
+            "snapshot": {
+              "ap_ctrl": 14,
+              "ap_return": 1295603762,
+              "dma_read_error": "",
+              "kernel_read_error": "",
+              "mm2s_dmasr": 4098,
+              "mm2s_error": false,
+              "mm2s_idle": true,
+              "return_read_error": "",
+              "s2mm_dmasr": 4098,
+              "s2mm_error": false,
+              "s2mm_idle": true
+            },
+            "transaction_total_ms": 2.234951999525947,
+            "weight_stage_and_sync_ms": 0.599676000092586
+          }
+        },
+        {
+          "cpu": {
+            "full_original_fp16_exact": true,
+            "output_sha256": "c03f51cc7cd6d157e04bd0da674ee59652168b58473d6d3b2070f58fe30ec3a0",
+            "packed_compute_ms": 5.88973
+          },
+          "execution_order": "PL-CPU",
+          "index": 5,
+          "pl": {
+            "dma_launch_and_completion_wait_ms": 1.2348629998086835,
+            "full_fp16_ftz_output_exact": true,
+            "input_stage_and_sync_ms": 0.15316200006054714,
+            "output_sha256_ftz": "7167dff9da96757a768b44254403d1a439615fffbca3139ee5bfd261fa3c7a2d",
+            "output_sync_and_copy_ms": 0.1367210006719688,
+            "register_setup_ms": 0.15588099995511584,
+            "snapshot": {
+              "ap_ctrl": 14,
+              "ap_return": 1295603762,
+              "dma_read_error": "",
+              "kernel_read_error": "",
+              "mm2s_dmasr": 4098,
+              "mm2s_error": false,
+              "mm2s_idle": true,
+              "return_read_error": "",
+              "s2mm_dmasr": 4098,
+              "s2mm_error": false,
+              "s2mm_idle": true
+            },
+            "transaction_total_ms": 2.2505829992951476,
+            "weight_stage_and_sync_ms": 0.5575559998760582
+          }
+        },
+        {
+          "cpu": {
+            "full_original_fp16_exact": true,
+            "output_sha256": "c03f51cc7cd6d157e04bd0da674ee59652168b58473d6d3b2070f58fe30ec3a0",
+            "packed_compute_ms": 5.87763
+          },
+          "execution_order": "CPU-PL",
+          "index": 6,
+          "pl": {
+            "dma_launch_and_completion_wait_ms": 1.13812100062205,
+            "full_fp16_ftz_output_exact": true,
+            "input_stage_and_sync_ms": 0.15431099927809555,
+            "output_sha256_ftz": "7167dff9da96757a768b44254403d1a439615fffbca3139ee5bfd261fa3c7a2d",
+            "output_sync_and_copy_ms": 0.16834199959703255,
+            "register_setup_ms": 0.16125199999805773,
+            "snapshot": {
+              "ap_ctrl": 14,
+              "ap_return": 1295603762,
+              "dma_read_error": "",
+              "kernel_read_error": "",
+              "mm2s_dmasr": 4098,
+              "mm2s_error": false,
+              "mm2s_idle": true,
+              "return_read_error": "",
+              "s2mm_dmasr": 4098,
+              "s2mm_error": false,
+              "s2mm_idle": true
+            },
+            "transaction_total_ms": 2.2341519998008152,
+            "weight_stage_and_sync_ms": 0.6006960002196138
+          }
+        },
+        {
+          "cpu": {
+            "full_original_fp16_exact": true,
+            "output_sha256": "c03f51cc7cd6d157e04bd0da674ee59652168b58473d6d3b2070f58fe30ec3a0",
+            "packed_compute_ms": 5.89821
+          },
+          "execution_order": "PL-CPU",
+          "index": 7,
+          "pl": {
+            "dma_launch_and_completion_wait_ms": 1.1291310001979582,
+            "full_fp16_ftz_output_exact": true,
+            "input_stage_and_sync_ms": 0.15373099995485973,
+            "output_sha256_ftz": "7167dff9da96757a768b44254403d1a439615fffbca3139ee5bfd261fa3c7a2d",
+            "output_sync_and_copy_ms": 0.13476099957188126,
+            "register_setup_ms": 0.2637529996718513,
+            "snapshot": {
+              "ap_ctrl": 14,
+              "ap_return": 1295603762,
+              "dma_read_error": "",
+              "kernel_read_error": "",
+              "mm2s_dmasr": 4098,
+              "mm2s_error": false,
+              "mm2s_idle": true,
+              "return_read_error": "",
+              "s2mm_dmasr": 4098,
+              "s2mm_error": false,
+              "s2mm_idle": true
+            },
+            "transaction_total_ms": 2.2521520004374906,
+            "weight_stage_and_sync_ms": 0.55853499998193
+          }
+        },
+        {
+          "cpu": {
+            "full_original_fp16_exact": true,
+            "output_sha256": "c03f51cc7cd6d157e04bd0da674ee59652168b58473d6d3b2070f58fe30ec3a0",
+            "packed_compute_ms": 5.89043
+          },
+          "execution_order": "CPU-PL",
+          "index": 8,
+          "pl": {
+            "dma_launch_and_completion_wait_ms": 1.1754919996747049,
+            "full_fp16_ftz_output_exact": true,
+            "input_stage_and_sync_ms": 0.1550109991512727,
+            "output_sha256_ftz": "7167dff9da96757a768b44254403d1a439615fffbca3139ee5bfd261fa3c7a2d",
+            "output_sync_and_copy_ms": 0.137181000354758,
+            "register_setup_ms": 0.16489199970237678,
+            "snapshot": {
+              "ap_ctrl": 14,
+              "ap_return": 1295603762,
+              "dma_read_error": "",
+              "kernel_read_error": "",
+              "mm2s_dmasr": 4098,
+              "mm2s_error": false,
+              "mm2s_idle": true,
+              "return_read_error": "",
+              "s2mm_dmasr": 4098,
+              "s2mm_error": false,
+              "s2mm_idle": true
+            },
+            "transaction_total_ms": 2.2534529998665676,
+            "weight_stage_and_sync_ms": 0.6092069997976068
+          }
+        },
+        {
+          "cpu": {
+            "full_original_fp16_exact": true,
+            "output_sha256": "c03f51cc7cd6d157e04bd0da674ee59652168b58473d6d3b2070f58fe30ec3a0",
+            "packed_compute_ms": 5.88215
+          },
+          "execution_order": "PL-CPU",
+          "index": 9,
+          "pl": {
+            "dma_launch_and_completion_wait_ms": 1.1547809999683523,
+            "full_fp16_ftz_output_exact": true,
+            "input_stage_and_sync_ms": 0.15720200008217944,
+            "output_sha256_ftz": "7167dff9da96757a768b44254403d1a439615fffbca3139ee5bfd261fa3c7a2d",
+            "output_sync_and_copy_ms": 0.139441999635892,
+            "register_setup_ms": 0.16163200052687898,
+            "snapshot": {
+              "ap_ctrl": 14,
+              "ap_return": 1295603762,
+              "dma_read_error": "",
+              "kernel_read_error": "",
+              "mm2s_dmasr": 4098,
+              "mm2s_error": false,
+              "mm2s_idle": true,
+              "return_read_error": "",
+              "s2mm_dmasr": 4098,
+              "s2mm_error": false,
+              "s2mm_idle": true
+            },
+            "transaction_total_ms": 2.223303000391752,
+            "weight_stage_and_sync_ms": 0.5968360001133988
+          }
+        }
+      ],
+      "weight_shard_sha256": [
+        "b9c47bdf986b8d9f667b933a943048bb7f891d5e1d046e0bcc8a2be1612f03ac",
+        "ffa59b5073b1b5b386a7929a85992ebaa1da043b64d4e3474a66bf452f8184d5",
+        "b723c2459a61333accd6e5cc4179afa8aa69b3e87156a797a67d3a504ae29ff9",
+        "66547a20f2263391fd10dee6efc1d5fe9efe6845e682385b2d43aa0989a51f77"
+      ]
+    },
+    {
+      "allocation_ms_excluded": 2.839398000105575,
+      "bits": 4,
+      "descriptor_count": 2,
+      "expected_cpu_output_sha256": "9dfa69036b7974a37ede922ddf46f4d9e9995f6f682e03e72b27e8867d879bb8",
+      "expected_pl_output_sha256_ftz": "fa47a9b8a152fe9c23a2b75d0d240efa2c9424f3e0f7f6a4ca793bd4847272ad",
+      "identity": "fixture-ordinal1-layer0-family5-bits4-groups40-descriptors2",
+      "input_packet_sha256": "c8fe40cd331569b4838d4241ca016b427224d8cadfd28e9de071fa9cdae2ef7f",
+      "ordinal": 1,
+      "pairs": [
+        {
+          "cpu": {
+            "full_original_fp16_exact": true,
+            "output_sha256": "9dfa69036b7974a37ede922ddf46f4d9e9995f6f682e03e72b27e8867d879bb8",
+            "packed_compute_ms": 5.87941
+          },
+          "execution_order": "CPU-PL",
+          "index": 0,
+          "pl": {
+            "dma_launch_and_completion_wait_ms": 1.4338539995151223,
+            "full_fp16_ftz_output_exact": true,
+            "input_stage_and_sync_ms": 0.22173199977260083,
+            "output_sha256_ftz": "fa47a9b8a152fe9c23a2b75d0d240efa2c9424f3e0f7f6a4ca793bd4847272ad",
+            "output_sync_and_copy_ms": 0.1656419999562786,
+            "register_setup_ms": 0.1631719997021719,
+            "snapshot": {
+              "ap_ctrl": 14,
+              "ap_return": 1295603762,
+              "dma_read_error": "",
+              "kernel_read_error": "",
+              "mm2s_dmasr": 4098,
+              "mm2s_error": false,
+              "mm2s_idle": true,
+              "return_read_error": "",
+              "s2mm_dmasr": 4098,
+              "s2mm_error": false,
+              "s2mm_idle": true
+            },
+            "transaction_total_ms": 2.6847170001929044,
+            "weight_stage_and_sync_ms": 0.688756999807083
+          }
+        },
+        {
+          "cpu": {
+            "full_original_fp16_exact": true,
+            "output_sha256": "9dfa69036b7974a37ede922ddf46f4d9e9995f6f682e03e72b27e8867d879bb8",
+            "packed_compute_ms": 5.87026
+          },
+          "execution_order": "PL-CPU",
+          "index": 1,
+          "pl": {
+            "dma_launch_and_completion_wait_ms": 1.438493999557977,
+            "full_fp16_ftz_output_exact": true,
+            "input_stage_and_sync_ms": 0.15388100018753903,
+            "output_sha256_ftz": "fa47a9b8a152fe9c23a2b75d0d240efa2c9424f3e0f7f6a4ca793bd4847272ad",
+            "output_sync_and_copy_ms": 0.14224200003809528,
+            "register_setup_ms": 0.16196199976548087,
+            "snapshot": {
+              "ap_ctrl": 14,
+              "ap_return": 1295603762,
+              "dma_read_error": "",
+              "kernel_read_error": "",
+              "mm2s_dmasr": 4098,
+              "mm2s_error": false,
+              "mm2s_idle": true,
+              "return_read_error": "",
+              "s2mm_dmasr": 4098,
+              "s2mm_error": false,
+              "s2mm_idle": true
+            },
+            "transaction_total_ms": 2.5099260001297807,
+            "weight_stage_and_sync_ms": 0.6002959999023005
+          }
+        },
+        {
+          "cpu": {
+            "full_original_fp16_exact": true,
+            "output_sha256": "9dfa69036b7974a37ede922ddf46f4d9e9995f6f682e03e72b27e8867d879bb8",
+            "packed_compute_ms": 5.86915
+          },
+          "execution_order": "CPU-PL",
+          "index": 2,
+          "pl": {
+            "dma_launch_and_completion_wait_ms": 1.398823999807064,
+            "full_fp16_ftz_output_exact": true,
+            "input_stage_and_sync_ms": 0.15678099953220226,
+            "output_sha256_ftz": "fa47a9b8a152fe9c23a2b75d0d240efa2c9424f3e0f7f6a4ca793bd4847272ad",
+            "output_sync_and_copy_ms": 0.13813099940307438,
+            "register_setup_ms": 0.16371200035791844,
+            "snapshot": {
+              "ap_ctrl": 14,
+              "ap_return": 1295603762,
+              "dma_read_error": "",
+              "kernel_read_error": "",
+              "mm2s_dmasr": 4098,
+              "mm2s_error": false,
+              "mm2s_idle": true,
+              "return_read_error": "",
+              "s2mm_dmasr": 4098,
+              "s2mm_error": false,
+              "s2mm_idle": true
+            },
+            "transaction_total_ms": 2.4933549993875204,
+            "weight_stage_and_sync_ms": 0.6237369998416398
+          }
+        },
+        {
+          "cpu": {
+            "full_original_fp16_exact": true,
+            "output_sha256": "9dfa69036b7974a37ede922ddf46f4d9e9995f6f682e03e72b27e8867d879bb8",
+            "packed_compute_ms": 5.87596
+          },
+          "execution_order": "PL-CPU",
+          "index": 3,
+          "pl": {
+            "dma_launch_and_completion_wait_ms": 1.4181050000843243,
+            "full_fp16_ftz_output_exact": true,
+            "input_stage_and_sync_ms": 0.15531200006080326,
+            "output_sha256_ftz": "fa47a9b8a152fe9c23a2b75d0d240efa2c9424f3e0f7f6a4ca793bd4847272ad",
+            "output_sync_and_copy_ms": 0.14001100043969927,
+            "register_setup_ms": 0.1630709994060453,
+            "snapshot": {
+              "ap_ctrl": 14,
+              "ap_return": 1295603762,
+              "dma_read_error": "",
+              "kernel_read_error": "",
+              "mm2s_dmasr": 4098,
+              "mm2s_error": false,
+              "mm2s_idle": true,
+              "return_read_error": "",
+              "s2mm_dmasr": 4098,
+              "s2mm_error": false,
+              "s2mm_idle": true
+            },
+            "transaction_total_ms": 2.4965049997263122,
+            "weight_stage_and_sync_ms": 0.6078360001993133
+          }
+        },
+        {
+          "cpu": {
+            "full_original_fp16_exact": true,
+            "output_sha256": "9dfa69036b7974a37ede922ddf46f4d9e9995f6f682e03e72b27e8867d879bb8",
+            "packed_compute_ms": 5.86626
+          },
+          "execution_order": "CPU-PL",
+          "index": 4,
+          "pl": {
+            "dma_launch_and_completion_wait_ms": 1.4292340001702541,
+            "full_fp16_ftz_output_exact": true,
+            "input_stage_and_sync_ms": 0.16018099995562807,
+            "output_sha256_ftz": "fa47a9b8a152fe9c23a2b75d0d240efa2c9424f3e0f7f6a4ca793bd4847272ad",
+            "output_sync_and_copy_ms": 0.1380220001010457,
+            "register_setup_ms": 0.16364200018870179,
+            "snapshot": {
+              "ap_ctrl": 14,
+              "ap_return": 1295603762,
+              "dma_read_error": "",
+              "kernel_read_error": "",
+              "mm2s_dmasr": 4098,
+              "mm2s_error": false,
+              "mm2s_idle": true,
+              "return_read_error": "",
+              "s2mm_dmasr": 4098,
+              "s2mm_error": false,
+              "s2mm_idle": true
+            },
+            "transaction_total_ms": 2.5295759996879497,
+            "weight_stage_and_sync_ms": 0.626557000032335
+          }
+        },
+        {
+          "cpu": {
+            "full_original_fp16_exact": true,
+            "output_sha256": "9dfa69036b7974a37ede922ddf46f4d9e9995f6f682e03e72b27e8867d879bb8",
+            "packed_compute_ms": 5.8725
+          },
+          "execution_order": "PL-CPU",
+          "index": 5,
+          "pl": {
+            "dma_launch_and_completion_wait_ms": 1.4202049997038557,
+            "full_fp16_ftz_output_exact": true,
+            "input_stage_and_sync_ms": 0.1574219995745807,
+            "output_sha256_ftz": "fa47a9b8a152fe9c23a2b75d0d240efa2c9424f3e0f7f6a4ca793bd4847272ad",
+            "output_sync_and_copy_ms": 0.14442100018641213,
+            "register_setup_ms": 0.1640009995753644,
+            "snapshot": {
+              "ap_ctrl": 14,
+              "ap_return": 1295603762,
+              "dma_read_error": "",
+              "kernel_read_error": "",
+              "mm2s_dmasr": 4098,
+              "mm2s_error": false,
+              "mm2s_idle": true,
+              "return_read_error": "",
+              "s2mm_dmasr": 4098,
+              "s2mm_error": false,
+              "s2mm_idle": true
+            },
+            "transaction_total_ms": 2.5234550003006007,
+            "weight_stage_and_sync_ms": 0.624346000222431
+          }
+        },
+        {
+          "cpu": {
+            "full_original_fp16_exact": true,
+            "output_sha256": "9dfa69036b7974a37ede922ddf46f4d9e9995f6f682e03e72b27e8867d879bb8",
+            "packed_compute_ms": 5.86721
+          },
+          "execution_order": "CPU-PL",
+          "index": 6,
+          "pl": {
+            "dma_launch_and_completion_wait_ms": 1.4019740001458558,
+            "full_fp16_ftz_output_exact": true,
+            "input_stage_and_sync_ms": 0.1552620005895733,
+            "output_sha256_ftz": "fa47a9b8a152fe9c23a2b75d0d240efa2c9424f3e0f7f6a4ca793bd4847272ad",
+            "output_sync_and_copy_ms": 0.1655410005696467,
+            "register_setup_ms": 0.16335199961758917,
+            "snapshot": {
+              "ap_ctrl": 14,
+              "ap_return": 1295603762,
+              "dma_read_error": "",
+              "kernel_read_error": "",
+              "mm2s_dmasr": 4098,
+              "mm2s_error": false,
+              "mm2s_idle": true,
+              "return_read_error": "",
+              "s2mm_dmasr": 4098,
+              "s2mm_error": false,
+              "s2mm_idle": true
+            },
+            "transaction_total_ms": 2.519255000152043,
+            "weight_stage_and_sync_ms": 0.6214760005605058
+          }
+        },
+        {
+          "cpu": {
+            "full_original_fp16_exact": true,
+            "output_sha256": "9dfa69036b7974a37ede922ddf46f4d9e9995f6f682e03e72b27e8867d879bb8",
+            "packed_compute_ms": 5.87655
+          },
+          "execution_order": "PL-CPU",
+          "index": 7,
+          "pl": {
+            "dma_launch_and_completion_wait_ms": 1.4380239999809419,
+            "full_fp16_ftz_output_exact": true,
+            "input_stage_and_sync_ms": 0.15666099989175564,
+            "output_sha256_ftz": "fa47a9b8a152fe9c23a2b75d0d240efa2c9424f3e0f7f6a4ca793bd4847272ad",
+            "output_sync_and_copy_ms": 0.14181200003804406,
+            "register_setup_ms": 0.1639319998503197,
+            "snapshot": {
+              "ap_ctrl": 14,
+              "ap_return": 1295603762,
+              "dma_read_error": "",
+              "kernel_read_error": "",
+              "mm2s_dmasr": 4098,
+              "mm2s_error": false,
+              "mm2s_idle": true,
+              "return_read_error": "",
+              "s2mm_dmasr": 4098,
+              "s2mm_error": false,
+              "s2mm_idle": true
+            },
+            "transaction_total_ms": 2.5327449993710616,
+            "weight_stage_and_sync_ms": 0.6201259993758867
+          }
+        },
+        {
+          "cpu": {
+            "full_original_fp16_exact": true,
+            "output_sha256": "9dfa69036b7974a37ede922ddf46f4d9e9995f6f682e03e72b27e8867d879bb8",
+            "packed_compute_ms": 5.98564
+          },
+          "execution_order": "CPU-PL",
+          "index": 8,
+          "pl": {
+            "dma_launch_and_completion_wait_ms": 1.4293539998107008,
+            "full_fp16_ftz_output_exact": true,
+            "input_stage_and_sync_ms": 0.15560100018774392,
+            "output_sha256_ftz": "fa47a9b8a152fe9c23a2b75d0d240efa2c9424f3e0f7f6a4ca793bd4847272ad",
+            "output_sync_and_copy_ms": 0.13827200018567964,
+            "register_setup_ms": 0.1638610001464258,
+            "snapshot": {
+              "ap_ctrl": 14,
+              "ap_return": 1295603762,
+              "dma_read_error": "",
+              "kernel_read_error": "",
+              "mm2s_dmasr": 4098,
+              "mm2s_error": false,
+              "mm2s_idle": true,
+              "return_read_error": "",
+              "s2mm_dmasr": 4098,
+              "s2mm_error": false,
+              "s2mm_idle": true
+            },
+            "transaction_total_ms": 2.526384999328002,
+            "weight_stage_and_sync_ms": 0.6273760000112816
+          }
+        },
+        {
+          "cpu": {
+            "full_original_fp16_exact": true,
+            "output_sha256": "9dfa69036b7974a37ede922ddf46f4d9e9995f6f682e03e72b27e8867d879bb8",
+            "packed_compute_ms": 5.86436
+          },
+          "execution_order": "PL-CPU",
+          "index": 9,
+          "pl": {
+            "dma_launch_and_completion_wait_ms": 1.427354000043124,
+            "full_fp16_ftz_output_exact": true,
+            "input_stage_and_sync_ms": 0.156561000039801,
+            "output_sha256_ftz": "fa47a9b8a152fe9c23a2b75d0d240efa2c9424f3e0f7f6a4ca793bd4847272ad",
+            "output_sync_and_copy_ms": 0.14139199993223883,
+            "register_setup_ms": 0.16575200061197393,
+            "snapshot": {
+              "ap_ctrl": 14,
+              "ap_return": 1295603762,
+              "dma_read_error": "",
+              "kernel_read_error": "",
+              "mm2s_dmasr": 4098,
+              "mm2s_error": false,
+              "mm2s_idle": true,
+              "return_read_error": "",
+              "s2mm_dmasr": 4098,
+              "s2mm_error": false,
+              "s2mm_idle": true
+            },
+            "transaction_total_ms": 2.5258660007239087,
+            "weight_stage_and_sync_ms": 0.6220969999048975
+          }
+        }
+      ],
+      "weight_shard_sha256": [
+        "96b6b3a7e48844372b6590681d3c3e5111e332ee20f9666ee6e4a8a007026da9",
+        "348918db462f547542a8960bc7228ab174424c09b611a2ba1d34e113f7c610b3",
+        "8612541e227b131718934fdeff93c9f0042c2862fe34321aca64a930dbd13503",
+        "bb7413faed463be16f79261efc3da813ba64cfa96b21873dfbad07a604ba73ac"
+      ]
+    }
+  ],
+  "dma_safe_to_release": true,
+  "fixture_sha256": "f384f45eea4bc14110a7add49dd0944f0a025403aecc3360369ec999e28257d9",
+  "fixture_sha256_expected": "f384f45eea4bc14110a7add49dd0944f0a025403aecc3360369ec999e28257d9",
+  "gate": "M331-KV260-counterbalanced-native-CPU-stable-PL-fixture",
+  "limitation": "Implementation-level same-fixture comparison, not full-model or video acceleration. CPU subprocess startup/fixture parse/output-file write excluded from native timer.",
+  "native_cpu_binary_sha256": "97730113c0c34c99c9b61aaf5ad70ac57c00a6749c89752ea2b510c338f36354",
+  "native_cpu_binary_sha256_expected": "97730113c0c34c99c9b61aaf5ad70ac57c00a6749c89752ea2b510c338f36354",
+  "order": "CPU-PL for even pair indices, PL-CPU for odd pair indices",
+  "overlay_load_ms_excluded": 2034.5764089997829,
+  "pairs_per_case": 10,
+  "status": "PASS_PAIRED_FIXTURE_AB"
+}

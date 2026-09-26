@@ -5,6 +5,7 @@
 | 路径 | 无板可审阅或复现 | 实板状态 |
 | --- | --- | --- |
 | 稳定 M254 | 原始 Python/网页源码、T32 HLS、历史清单与门禁 | 独立 v7 首装已通过固定文本 FPGA E2E 和无帧网页运行时；M328 伴随包的直接固定视频 4B E2E PASS。报警触发的网页视频链尚未验证。 |
+| 原生 A53 CPU／稳定 PL | M329–M331 原始结果及复算脚本 | 两个冻结 W2/W4 单链形状各 10 对交错 PASS；不是整模型或视频加速比 |
 | BACT-V2 | 九个冻结候选、27 条实板成本记录、12 段历史预测重算 | 成本来自已有 KV260 测量；不是新模型运行或独立精度优势 |
 | Decode-one | OP01 源码和同会话 M325 结果 | 仅实验；FIFO 容量长测中止，未正式晋级 |
 
@@ -15,6 +16,8 @@
 历史固定视频同会话 M325 对照：稳定 T32 首 Token **228.531 秒**、三步增量 **36.584 / 36.169 / 36.183 秒**；实验 OP01 为 **241.072 秒**、**40.777 / 34.763 / 34.666 秒**。第二个输出 Token 已是 EOS，后两步是强制续跑诊断，不是用户可见的持续吞吐。两者都未达到 4B 实时视频分析。见[原始证据](deployment/mage_vl4b/M325_FULL_SESSION_BOARD_RESULT.json)。
 
 在独立 v7 首装上，另以哈希锁定的伴随包提交原 M277 四帧样例，**直接** 4B 路径完成：Build `0x4D395832`、778 次逻辑 FPGA 调用、输出 `0`、不含初始化的首 Token **230.721 秒**。冻结运行时实际只从末帧形成两个视觉视图；这不证明网页报警复核或四帧时序理解。见[固定视频复现](docs/fixed_video_reproduction.md)及所有者工作区的 `deployment/mage_vl4b/M328_RELEASE_VIDEO_BOARD_RESULT.json`。
+
+[同量化 CPU／PL 对照](docs/cpu_pl_benchmark.md)在 KV260 上对两个冻结双 descriptor 单链形状各测 10 对：A53 CPU/稳定 PL 中位数 W2 为 **5.891/2.244 ms**，W4 为 **5.871/2.525 ms**；完整输出和 DMA 状态通过。这仅是单链实现级证据，不能推断固定视频首 Token 已缩短。
 
 Git 中不包含模型权重或 bitstream；身份与可获得性见[外部资产清单](manifests/external_assets.json)。稳定版 M125 的语言与 LM Head 清单及八个分片已在本机 WSL 找到并重哈希确认，见[资产溯源](docs/stable_asset_provenance.md)。本地 v7 预构建 TAR 与 M328 视频伴随包已完成上述所有者板端门禁，但都没有公开下载地址，也未打进 Git。[源码仓库](https://github.com/3042966866liu-ops/kv260-mage-vl-4b)已上传；这不等于模型、硬件资产或全部源码的再分发授权已经核准。见[第三方说明](THIRD_PARTY_NOTICES.md)、[下一轮验证门槛](docs/next_validation.md)和[版本说明](docs/releases/v0.1.0.md)。不虚构 DOI、论文或作者。
 

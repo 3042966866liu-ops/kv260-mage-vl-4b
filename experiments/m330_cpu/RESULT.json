@@ -1,0 +1,136 @@
+{
+  "board": "KV260 Cortex-A53; one thread pinned to core 1",
+  "compiler": "g++ 11.4.0; -O3 -std=c++17 -ffp-contract=off -fno-fast-math -march=armv8-a+simd",
+  "fixture_sha256": "f384f45eea4bc14110a7add49dd0944f0a025403aecc3360369ec999e28257d9",
+  "gate": "M330-KV260-native-A53-CPU-only-frozen-fixture",
+  "new_evidence_scope": "two representative W2/W4 native CPU cases, 10 repeats each, packed and predecoded",
+  "not_proved": "fair paired CPU/PL speedup, full-model acceleration, video E2E benefit",
+  "reused_existing_evidence": "M329 seven CPU numerical cases and two PL cases; no PL rerun in M330",
+  "remote_candidate_result_sha256": {
+    "case_0_packed.json": "df4bff6cef7fc6bd25245e64c8968d6b71fd741abc3fdec66bef3ca2086f31aa",
+    "case_0_predecoded.json": "905b45a2c2cff6e896c53c3bf2fd55b339d000a1336099a2daf5873b857b8dd9",
+    "case_1_packed.json": "cda77a924d4b94714133e1d06195eaf95dbccb74e8352e73851b5594e6cc2756",
+    "case_1_predecoded.json": "bfd9ad82932cddb687e41c951505741bc3b60fe08da19489048bd05f77194785"
+  },
+  "remote_candidate_log_sha256": {
+    "case_0_packed.log": "86a1ace13fa954687c4f6d2d241e50457b6cfa5417e8765b07800c328ed8a34c",
+    "case_0_predecoded.log": "4a9e5d24a9d74a36a631257cf599fae50a80ad88545cf44778691831db81e181",
+    "case_1_packed.log": "416deb399df7fd24921394d9e7be9ec072c3e360a097439ffb0fd206bba125cd",
+    "case_1_predecoded.log": "e4057671df150b5f434e77849615bb97db2bf9b0c4ca78de536610a6a84d28d8"
+  },
+  "status": "PASS_NATIVE_CPU_ONLY",
+  "summaries": [
+    {
+      "bits": 2,
+      "descriptors": 2,
+      "full_original_fp16_exact": true,
+      "median_ms": 5.79023,
+      "mode": "packed",
+      "ordinal": 0,
+      "output_sha256": "c03f51cc7cd6d157e04bd0da674ee59652168b58473d6d3b2070f58fe30ec3a0",
+      "predecoded_bytes": 0,
+      "range_ms": [
+        5.78351,
+        5.87154
+      ],
+      "run_ms": [
+        5.87154,
+        5.7978,
+        5.78733,
+        5.78351,
+        5.79183,
+        5.78569,
+        5.798,
+        5.78553,
+        5.84233,
+        5.78863
+      ],
+      "setup_ms_excluded": 0.00073
+    },
+    {
+      "bits": 4,
+      "descriptors": 2,
+      "full_original_fp16_exact": true,
+      "median_ms": 5.78678,
+      "mode": "packed",
+      "ordinal": 1,
+      "output_sha256": "9dfa69036b7974a37ede922ddf46f4d9e9995f6f682e03e72b27e8867d879bb8",
+      "predecoded_bytes": 0,
+      "range_ms": [
+        5.77645,
+        5.87637
+      ],
+      "run_ms": [
+        5.87637,
+        5.77871,
+        5.78669,
+        5.77961,
+        5.8168,
+        5.82704,
+        5.7807,
+        5.78749,
+        5.77645,
+        5.78687
+      ],
+      "setup_ms_excluded": 0.0007
+    },
+    {
+      "bits": 2,
+      "descriptors": 2,
+      "full_original_fp16_exact": true,
+      "median_ms": 4.4976400000000005,
+      "mode": "predecoded",
+      "ordinal": 0,
+      "output_sha256": "c03f51cc7cd6d157e04bd0da674ee59652168b58473d6d3b2070f58fe30ec3a0",
+      "predecoded_bytes": 174080,
+      "range_ms": [
+        4.49456,
+        4.53695
+      ],
+      "run_ms": [
+        4.53695,
+        4.51652,
+        4.50483,
+        4.49512,
+        4.50654,
+        4.49803,
+        4.49456,
+        4.49725,
+        4.49667,
+        4.49536
+      ],
+      "setup_ms_excluded": 1.52381
+    },
+    {
+      "bits": 4,
+      "descriptors": 2,
+      "full_original_fp16_exact": true,
+      "median_ms": 4.496245,
+      "mode": "predecoded",
+      "ordinal": 1,
+      "output_sha256": "9dfa69036b7974a37ede922ddf46f4d9e9995f6f682e03e72b27e8867d879bb8",
+      "predecoded_bytes": 174080,
+      "range_ms": [
+        4.49251,
+        4.53491
+      ],
+      "run_ms": [
+        4.53491,
+        4.50929,
+        4.49629,
+        4.49545,
+        4.50232,
+        4.4962,
+        4.4954,
+        4.49576,
+        4.49251,
+        4.49829
+      ],
+      "setup_ms_excluded": 1.51434
+    }
+  ],
+  "uart_log_sha256": {
+    "board": "8c5d5349e0b7dbeadc625d1110951ad302b9c446b2a0dbb86878f30010b3077d",
+    "detail": "7b62e9cfc5755e9fafa786ba2489456e848d77769027a5f1c4b20a49048b6850"
+  }
+}

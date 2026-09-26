@@ -23,6 +23,7 @@
 | --- | --- | --- |
 | 稳定 T32 部署 | Python 运行时、Web 前后端、T32 HLS 源码及验证记录 | 独立 v7 安装已通过固定文本 FPGA 端到端推理和无视频帧的 Web 运行时加载验证 |
 | 直接固定视频推理 | 仓库内的固定样例复现流程；M328 配套包为单独的本地资产 | 已在独立安装目录通过 4B 端到端推理；不经过 Web 报警触发链路；配套包尚无公开下载 |
+| 优化 A53 CPU／稳定 PL 对照 | M329–M331 原始机器结果与复算脚本 | W2/W4 两个冻结单链形状各 10 对同板交错 PASS；不是整模型或视频加速比 |
 | BACT-V2 | 9 个冻结候选配置、27 条板端成本记录、12 段历史视频预测 | 支持离线复算；尚未证明独立数据上的质量优势，未接入网页默认路由 |
 | Decode-one | OP01 源码与 M325 同会话对照结果 | 实验版本，Build ID `0x4F503131`；FIFO 容量长测已中止，未替换稳定版 |
 
@@ -69,6 +70,10 @@ M328 在独立 v7 安装上，通过哈希校验的配套包提交原 M277 四�
 
 复现步骤见[固定视频复现](docs/fixed_video_reproduction.md)。原始结果保存在维护者工作区的 `deployment/mage_vl4b/M328_RELEASE_VIDEO_BOARD_RESULT.json`；本文不将其作为已随仓库提供的文件链接。
 
+### 同量化 CPU／PL 单链对照
+
+M331 在 KV260 稳定 Build 上，对两个冻结 W2/W4 双 descriptor 形状各测 10 对优化 A53 CPU 与 PL 事务。CPU/PL 中位数分别为 W2 `5.891/2.244 ms`、W4 `5.871/2.525 ms`；完整输出和 DMA 状态通过。原始逐对结果、计时边界、预解包成本及离线复算命令见[CPU／PL 对照说明](docs/cpu_pl_benchmark.md)。这些数字不代表完整 4B 视频加速，M328 首 Token 基线未变。
+
 ### 稳定 T32 与 Decode-one 的历史对照
 
 M325 固定视频同会话测试结果如下：
@@ -101,6 +106,7 @@ Git 仓库不包含模型权重或 bitstream。所需文件的身份、校验值
 | [固定视频复现](docs/fixed_video_reproduction.md) | 直接固定视频推理验证 |
 | [构建说明](docs/build.md) | 硬件构建流程与已验证范围 |
 | [评测结果](docs/results.md) | 测量条件、结果与证据 |
+| [CPU／PL 对照](docs/cpu_pl_benchmark.md) | M329–M331 同量化单链实板证据与复算 |
 | [源码导览](docs/source_map.md) | 稳定运行路径、研究分支与历史依赖的入口 |
 | [下一轮验证门槛](docs/next_validation.md) | 公平性能对照、BACT 质量及 Web 视频闭环的待完成实验 |
 | [已知限制](docs/limitations.md) | 性能、功能与适用范围 |

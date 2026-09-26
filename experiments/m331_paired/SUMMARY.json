@@ -1,0 +1,69 @@
+{
+  "build_id": "0x4D395832",
+  "gate": "M331-paired-native-A53-stable-PL-analysis",
+  "interpretation": "same-fixture single-chain implementation-level paired speed; not whole-model/video speedup",
+  "status": "PASS",
+  "summaries": [
+    {
+      "bits": 2,
+      "cpu_packed_compute_median_ms": 5.890865,
+      "cpu_range_ms": [
+        5.87763,
+        5.90305
+      ],
+      "order_medians": {
+        "CPU-PL": {
+          "cpu_ms": 5.89108,
+          "pl_ms": 2.23668299986457
+        },
+        "PL-CPU": {
+          "cpu_ms": 5.89065,
+          "pl_ms": 2.2505829992951476
+        }
+      },
+      "ordinal": 0,
+      "paired_cpu_over_pl_median": 2.624866035691699,
+      "paired_ratio_range": [
+        2.431645138634588,
+        2.818734236667209
+      ],
+      "pl_range_ms": [
+        2.0898209995721118,
+        2.422944000500138
+      ],
+      "pl_transaction_median_ms": 2.2436329995798587,
+      "valid_pairs": 10
+    },
+    {
+      "bits": 4,
+      "cpu_packed_compute_median_ms": 5.87138,
+      "cpu_range_ms": [
+        5.86436,
+        5.98564
+      ],
+      "order_medians": {
+        "CPU-PL": {
+          "cpu_ms": 5.86915,
+          "pl_ms": 2.526384999328002
+        },
+        "PL-CPU": {
+          "cpu_ms": 5.8725,
+          "pl_ms": 2.5234550003006007
+        }
+      },
+      "ordinal": 1,
+      "paired_cpu_over_pl_median": 2.3280564888326274,
+      "paired_ratio_range": [
+        2.189955216723978,
+        2.3692509263600487
+      ],
+      "pl_range_ms": [
+        2.4933549993875204,
+        2.6847170001929044
+      ],
+      "pl_transaction_median_ms": 2.5246605005122547,
+      "valid_pairs": 10
+    }
+  ],
+  "valid_pairs_total": 20
+}

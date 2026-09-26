@@ -1,0 +1,63 @@
+{
+  "build_id": "0x4d395832",
+  "cpu_case_count": 7,
+  "cpu_repeats_per_case": 3,
+  "fixture_sha256": "f384f45eea4bc14110a7add49dd0944f0a025403aecc3360369ec999e28257d9",
+  "gate": "M329-KV260-same-fixture-CPU-PL-comparison",
+  "measurement_limitation": "CPU reference is Python/NumPy, not optimized A53 NEON; CPU and PL were measured sequentially, not counterbalanced. No model-wide speedup or end-to-end video gain is inferred.",
+  "next_step": "Repeat with optimized A53 CPU kernel and counterbalanced order; then profile full video path before claiming model-level PL benefit.",
+  "numerical_contract": "CPU full output exact original FP16; PL full output exact after frozen FP16 subnormal-to-signed-zero canonicalization",
+  "pl_case_count": 2,
+  "pl_overlay_load_ms_excluded": 2188.8007410000228,
+  "pl_repeats_per_case": 3,
+  "remote_result_sha256": {
+    "/home/ubuntu/tellme_m329_cpu_reference_20260926/results/case_0.json": "825d1910480a862057fa62e39cba22c5bb8d24dd3e3086092750d40363152add",
+    "/home/ubuntu/tellme_m329_cpu_reference_20260926/results/case_1.json": "2119526dce48479c259021918f433dd0ea0e539fa2bc8813d6e0c6cbec499db4",
+    "/home/ubuntu/tellme_m329_cpu_reference_20260926/results/case_2.json": "bfb08e82f112873b426b2b9582e93d35479cecbf4d48487b47e974993688bd2f",
+    "/home/ubuntu/tellme_m329_cpu_reference_20260926/results/case_3.json": "b5dbf7de04cc129d5870c1593af5356326543cc83f537b734a5ffe9f0f136977",
+    "/home/ubuntu/tellme_m329_cpu_reference_20260926/results/case_4.json": "610c35a670f4d826acdff20ba8a6b3324dd2aede6089c6f571f2a246f9a2d533",
+    "/home/ubuntu/tellme_m329_cpu_reference_20260926/results/case_5.json": "80a3ddc7e2b02a752f2f743b732e3b06990a9dd3dd08bc508b4108084aa81c1d",
+    "/home/ubuntu/tellme_m329_cpu_reference_20260926/results/case_6.json": "8c2794c78abb25a7d86788e3b281c4e5155c720d7c63a42ca113f61abb3348ed",
+    "/home/ubuntu/tellme_m329_cpu_reference_20260926/results/pl_environment.json": "75a6d4caaa162082b854cd3981c0c3af3191d6ebb0aa8cb014d4730fcd226585",
+    "/home/ubuntu/tellme_m329_cpu_reference_20260926/results/pl_fixture.json": "4f4a0ea8e60c33c8b25679bac5b1fe7e24cda6d1753462aebc1e1ee892e8cc89"
+  },
+  "same_input_and_weight_identity": true,
+  "scope": "One frozen real-record fixture, not whole-model or video acceleration",
+  "stable_rollback_preserved": true,
+  "status": "PASS_SAME_INPUT_IMPLEMENTATION_AB",
+  "summaries": [
+    {
+      "bits": 2,
+      "cpu_output_sha256": "c03f51cc7cd6d157e04bd0da674ee59652168b58473d6d3b2070f58fe30ec3a0",
+      "cpu_reference_decode_median_ms": 371.9267190001574,
+      "cpu_reference_integer_dot_median_ms": 65.00088900065748,
+      "cpu_reference_total_median_ms": 449.3480339999678,
+      "descriptor_count": 2,
+      "identity": "fixture-ordinal0-layer0-family4-bits2-groups40-descriptors2",
+      "ordinal": 0,
+      "pl_dma_launch_wait_median_ms": 1.1132809997889126,
+      "pl_output_sha256_ftz": "7167dff9da96757a768b44254403d1a439615fffbca3139ee5bfd261fa3c7a2d",
+      "pl_transaction_total_median_ms": 2.074480999908701,
+      "pl_weight_stage_sync_median_ms": 0.5150250001406675
+    },
+    {
+      "bits": 4,
+      "cpu_output_sha256": "9dfa69036b7974a37ede922ddf46f4d9e9995f6f682e03e72b27e8867d879bb8",
+      "cpu_reference_decode_median_ms": 419.8504099999809,
+      "cpu_reference_integer_dot_median_ms": 65.55474599986155,
+      "cpu_reference_total_median_ms": 497.5393360000453,
+      "descriptor_count": 2,
+      "identity": "fixture-ordinal1-layer0-family5-bits4-groups40-descriptors2",
+      "ordinal": 1,
+      "pl_dma_launch_wait_median_ms": 1.3813040000059118,
+      "pl_output_sha256_ftz": "fa47a9b8a152fe9c23a2b75d0d240efa2c9424f3e0f7f6a4ca793bd4847272ad",
+      "pl_transaction_total_median_ms": 2.420314000119106,
+      "pl_weight_stage_sync_median_ms": 0.5594060000930767
+    }
+  ],
+  "uart_log_sha256": {
+    "cpu": "3f121d97ec14b08fff31de69d2c6f7802c31ddbc2153ad71b2fe648b441ab7e4",
+    "pl": "5cd0ee832a03f8f521b076d37242ed83099de74a6a45066759343e03c1b99fcd",
+    "result_hashes": "6b4a2ace004c140bdd03444668e365b2f0f2692c06efc972ac8dfac7165b791b"
+  }
+}
