@@ -1,0 +1,21 @@
+{
+  "gate": "M333-real-handler-fake-runtime-HTTP-SSE",
+  "status": "PASS",
+  "classification": "Real unedited HTTP Handler class with fake detector/model; no board, 4B forward or FPGA execution.",
+  "real_handler_sha256": "6b6655e29c13fee8f805a102d8f4ac9d89988067930e0ae187a9e2d860d88b74",
+  "checks": {
+    "http_start_accepted": true,
+    "http_frame_0": true,
+    "http_frame_1": true,
+    "http_frame_2": true,
+    "http_frame_3": true,
+    "http_frame_4": true,
+    "http_frame_5": true,
+    "first_active_second_waiting": true,
+    "second_dispatched_after_first_completion": true,
+    "second_completion_releases_capacity": true,
+    "http_status_two_reviews": true,
+    "sse_two_review_cycles": true,
+    "terminal_monitor_healthy": true
+  }
+}

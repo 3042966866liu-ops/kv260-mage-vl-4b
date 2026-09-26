@@ -1,0 +1,67 @@
+{
+  "gate": "M333-KV260-CPU-only-fake-runtime",
+  "status": "PASS",
+  "archive_sha256": "a9264139488a97cbca1ad3abbd1b819e9bef473033396716b9372ef8c4e6e832",
+  "contract_sha256": "ff4f0a52906ead29b581b6c4bb785e3280986ec31c98f0c0bc2f48cdf7dd67af",
+  "overlay_loaded": false,
+  "stable_service_modified": false,
+  "tests": [
+    {
+      "name": "scheduler",
+      "returncode": 0,
+      "result": {
+        "gate": "M333-Web-review-loop-offline-contract",
+        "status": "PASS",
+        "classification": "Offline scheduler and journal simulation only; no HTTP, detector, 4B forward, FPGA or KV260 deployment.",
+        "candidate_source_sha256": "ad42c5d58dabe419dca545d18b66df3b31c765def16de587ddfb40e4049547bf",
+        "candidate_web_wrapper_sha256": "b2281dcbe8c4b6d9f65b5e7f1222ace70c6eb9cf5c85d8d623c78c982772362e",
+        "checks": {
+          "first_alarm_exact_four_frames": true,
+          "busy_keeps_only_latest_distinct_incident": true,
+          "completed_review_dispatches_latest_waiting": true,
+          "old_terminal_does_not_clear_new_job": true,
+          "error_releases_capacity": true,
+          "new_incident_after_failure_can_retry": true,
+          "fast_alarm_never_waits_for_semantic": true,
+          "monitor_has_no_error": true,
+          "delayed_alarm_uses_its_own_window": true,
+          "submission_failure_recovers": true,
+          "terminal_during_submit_is_not_lost": true,
+          "isolated_web_callback_wired": true,
+          "isolated_web_completion_releases": true
+        },
+        "stable_build_id": "0x4D395832",
+        "stable_implementation_modified": false
+      },
+      "stdout": "{\n  \"gate\": \"M333-Web-review-loop-offline-contract\",\n  \"status\": \"PASS\",\n  \"classification\": \"Offline scheduler and journal simulation only; no HTTP, detector, 4B forward, FPGA or KV260 deployment.\",\n  \"candidate_source_sha256\": \"ad42c5d58dabe419dca545d18b66df3b31c765def16de587ddfb40e4049547bf\",\n  \"candidate_web_wrapper_sha256\": \"b2281dcbe8c4b6d9f65b5e7f1222ace70c6eb9cf5c85d8d623c78c982772362e\",\n  \"checks\": {\n    \"first_alarm_exact_four_frames\": true,\n    \"busy_keeps_only_latest_distinct_incident\": true,\n    \"completed_review_dispatches_latest_waiting\": true,\n    \"old_terminal_does_not_clear_new_job\": true,\n    \"error_releases_capacity\": true,\n    \"new_incident_after_failure_can_retry\": true,\n    \"fast_alarm_never_waits_for_semantic\": true,\n    \"monitor_has_no_error\": true,\n    \"delayed_alarm_uses_its_own_window\": true,\n    \"submission_failure_recovers\": true,\n    \"terminal_during_submit_is_not_lost\": true,\n    \"isolated_web_callback_wired\": true,\n    \"isolated_web_completion_releases\": true\n  },\n  \"stable_build_id\": \"0x4D395832\",\n  \"stable_implementation_modified\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "http_sse",
+      "returncode": 0,
+      "result": {
+        "gate": "M333-real-handler-fake-runtime-HTTP-SSE",
+        "status": "PASS",
+        "classification": "Real unedited HTTP Handler class with fake detector/model; no board, 4B forward or FPGA execution.",
+        "real_handler_sha256": "6b6655e29c13fee8f805a102d8f4ac9d89988067930e0ae187a9e2d860d88b74",
+        "checks": {
+          "http_start_accepted": true,
+          "http_frame_0": true,
+          "http_frame_1": true,
+          "http_frame_2": true,
+          "http_frame_3": true,
+          "http_frame_4": true,
+          "http_frame_5": true,
+          "first_active_second_waiting": true,
+          "second_dispatched_after_first_completion": true,
+          "second_completion_releases_capacity": true,
+          "http_status_two_reviews": true,
+          "sse_two_review_cycles": true,
+          "terminal_monitor_healthy": true
+        }
+      },
+      "stdout": "{\"gate\": \"M333-real-handler-fake-runtime-HTTP-SSE\", \"status\": \"PASS\", \"classification\": \"Real unedited HTTP Handler class with fake detector/model; no board, 4B forward or FPGA execution.\", \"real_handler_sha256\": \"6b6655e29c13fee8f805a102d8f4ac9d89988067930e0ae187a9e2d860d88b74\", \"checks\": {\"http_start_accepted\": true, \"http_frame_0\": true, \"http_frame_1\": true, \"http_frame_2\": true, \"http_frame_3\": true, \"http_frame_4\": true, \"http_frame_5\": true, \"first_active_second_waiting\": true, \"second_dispatched_after_first_completion\": true, \"second_completion_releases_capacity\": true, \"http_status_two_reviews\": true, \"sse_two_review_cycles\": true, \"terminal_monitor_healthy\": true}}\n",
+      "stderr": ""
+    }
+  ]
+}

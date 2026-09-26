@@ -1,0 +1,24 @@
+{
+  "gate": "M333-Web-review-loop-offline-contract",
+  "status": "PASS",
+  "classification": "Offline scheduler and journal simulation only; no HTTP, detector, 4B forward, FPGA or KV260 deployment.",
+  "candidate_source_sha256": "ad42c5d58dabe419dca545d18b66df3b31c765def16de587ddfb40e4049547bf",
+  "candidate_web_wrapper_sha256": "b2281dcbe8c4b6d9f65b5e7f1222ace70c6eb9cf5c85d8d623c78c982772362e",
+  "checks": {
+    "first_alarm_exact_four_frames": true,
+    "busy_keeps_only_latest_distinct_incident": true,
+    "completed_review_dispatches_latest_waiting": true,
+    "old_terminal_does_not_clear_new_job": true,
+    "error_releases_capacity": true,
+    "new_incident_after_failure_can_retry": true,
+    "fast_alarm_never_waits_for_semantic": true,
+    "monitor_has_no_error": true,
+    "delayed_alarm_uses_its_own_window": true,
+    "submission_failure_recovers": true,
+    "terminal_during_submit_is_not_lost": true,
+    "isolated_web_callback_wired": true,
+    "isolated_web_completion_releases": true
+  },
+  "stable_build_id": "0x4D395832",
+  "stable_implementation_modified": false
+}

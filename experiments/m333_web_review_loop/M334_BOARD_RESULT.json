@@ -1,0 +1,26 @@
+{
+  "gate": "M334-KV260-real-M333-import-closure",
+  "status": "PASS",
+  "classification": "read-only import; no model, detector, overlay or Web request",
+  "overlay_loaded": false,
+  "stable_service_modified": false,
+  "release_root": "/home/ubuntu/tellme_release_install_20260926",
+  "m333_root": "/home/ubuntu/m333_offline_board_01/deployment/m333",
+  "euid": 1000,
+  "imports": {
+    "m333_review_bridge": {
+      "path": "/home/ubuntu/m333_offline_board_01/deployment/m333/m333_review_bridge.py",
+      "sha256": "ad42c5d58dabe419dca545d18b66df3b31c765def16de587ddfb40e4049547bf"
+    },
+    "m254_video_server": {
+      "path": "/home/ubuntu/tellme_release_install_20260926/deployment/mage_vl4b/m254_dual_path_web_candidate/m254_video_server.py",
+      "sha256": "86e2c79740af645449db5b2f8c64246000dab1896a30b4148e5c90f1e321fc6f"
+    },
+    "m333_video_server": {
+      "path": "/home/ubuntu/m333_offline_board_01/deployment/m333/m333_video_server.py",
+      "sha256": "b2281dcbe8c4b6d9f65b5e7f1222ace70c6eb9cf5c85d8d623c78c982772362e"
+    }
+  },
+  "real_controller_bound": true,
+  "elapsed_s": 18.783658936001302
+}
