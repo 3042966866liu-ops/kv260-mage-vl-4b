@@ -1,0 +1,47 @@
+{
+  "schema": "kv260-mage-vl4b-historical-attribution-v1",
+  "status": "PASS",
+  "meaning": "historical coarse top-level attribution only; no new board run",
+  "build_id": "0x4D395832",
+  "source_result": "deployment/mage_vl4b/M328_RELEASE_VIDEO_BOARD_RESULT.json",
+  "source_sha256": "0f46a89d37d4289536a264fd05ee2b3e94ff87af45dbc8b9e900dba570ecaf6d",
+  "fixed_video_first_token_ms_excluding_load": 230720.9167989986,
+  "load_to_preprocess_ms_separate": 149694.91961199854,
+  "exclusive_top_level_ms": {
+    "preprocess": 71.98201000029803,
+    "vision": 43637.71697599985,
+    "token_build_prefill_lm_head_and_selection": 187011.16635300062,
+    "boundary_rounding_residual": 0.0514599978341721
+  },
+  "source_input": {
+    "submitted_frames": 4,
+    "selected_frame_indices": [3],
+    "visual_tokens": 98,
+    "total_tokens": 159,
+    "t32_batches": 5,
+    "logical_fpga_calls": 778
+  },
+  "historical_context_not_same_input_breakdown": [
+    {
+      "source": "deployment/mage_vl4b/M239_FULL849_PROFILE_BOARD_RESULT_02.json",
+      "sha256": "7a4aaa9c2da2a9f40b8f74b9e2a7db85b3a05c831ced151ad3fa4232e97ce456",
+      "tokens": 849,
+      "prefill_wall_ms": 709754.5216220024,
+      "exclusive_family_wall_ms": 588906.7480241356,
+      "exclusive_ps_and_head_residual_ms": 120847.77359786676,
+      "nested_phases_overlap": true
+    },
+    {
+      "source": "deployment/mage_vl4b/M294R3_COUNTERBALANCED_BOUNDARY_BOARD_RESULT_05.json",
+      "sha256": "1a8138f92fc9340b1e5c660f886729cd725280d29877863af54cdd12aef895d1",
+      "tokens": 159,
+      "language_probe_ms": [131528.70868198806, 131524.03805599897, 131375.59098098427],
+      "same_complete_video_request": false
+    }
+  ],
+  "fine_grained_same_video_breakdown_status": "NOT_RUN",
+  "five_same_input_requests_status": "NOT_RUN",
+  "timing_on_off_overhead_status": "NOT_RUN",
+  "new_board_run": false,
+  "new_speedup_claim_allowed": false
+}
