@@ -8,7 +8,7 @@
 | B 固定视频耗时分解 | PASS | 按所有者最新要求复用历史实板数据，不新跑视频。`docs/performance_attribution_history.md` 完成互斥顶层重算；细分读盘/PS/PL 仅有不同 849-token 输入的旁证，不冒充 159-token 明细。原方案中的 5 次同条件完整采样与计时开关开销仍 `NOT_RUN`。 |
 | C 优化 A53 CPU/PL 公平对照 | PASS | M329 数值与 M330 新原生 CPU 子门禁复用；M331 在稳定 Build 上 W2/W4 各 10 对交错，同量化完整输出、Build-ID/DMA 全通过。单链配对 CPU/PL 中位数为 W2 `5.891/2.244 ms`、W4 `5.871/2.525 ms`；仅为代表形状，不外推整模型或视频。逐对机器证据已随仓库置于 `experiments/m331_paired/`。 |
 | D 端到端优化 | NOT_RUN | 必须依据 B 的前两大瓶颈选择一个候选，预登记 ≥5% 固定视频改善门槛；失败保留负结果。 |
-| E 整模型 CPU-only 可行性 | NOT_RUN | 需先审计全算子、内存、时间及同量化输入；算子级速度不冒充整模型速度。 |
+| E 整模型 CPU-only 可行性 | BLOCKED | [可行性审计](docs/whole_model_cpu_feasibility.md)已复用历史证据完成：当前原生 CPU 只覆盖两个代表单链，尚无 36 层及 LM Head 的同量化完整后端。整模型公平性能实验 `NOT_RUN`，不外推 M331 的单链 2.x 倍。 |
 | F BACT 质量—成本 | BLOCKED | 旧 12 段 AI 视频只能作开发回归；`bact-159` 与 `count-144` 同为 5 批/778 逻辑调用，历史质量未证明 BACT 胜出。独立人工确认新样本缺失时先完成可复现工具，不伪造独立准确率。 |
 | G Web 报警复核闭环 | NOT_RUN | M327 v7 证明 Web runtime-ready，M328 证明直接 4B 视频；尚无同一会话“自然报警→排队→4B→SSE”的实板 PASS。 |
 | H 外部复现交付 | BLOCKED | 本地 v7 预构建独立安装固定文本及 M328 伴随包直接视频 PASS；公开资产 URL、文件级再分发权、自有代码许可、干净 OS/整壳重建未闭合。按用户后续明确要求，完成阶段后同步 GitHub；外部资产仍不得擅自公开上传。 |
