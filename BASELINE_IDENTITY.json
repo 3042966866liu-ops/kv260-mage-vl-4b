@@ -1,0 +1,68 @@
+{
+  "schema": "kv260-mage-vl4b-baseline-identity-v1",
+  "date": "2026-09-26",
+  "status": "PASS",
+  "meaning": "identity and evidence audit only; not a new model run or new performance result; evidence paths are relative to the parent development workspace",
+  "stable": {
+    "model": "microsoft/Mage-VL 4B",
+    "quantization": "M120 mixed W2/W4 language and W4 LM Head, M125 four-port layouts",
+    "build_id": "0x4D395832",
+    "kernel": "mage_m120_m89x2_0",
+    "bitstream_sha256": "1cbf7bbb86cfe64c2349418d5a15890d735bea3fa4c999060c8a9da9ac3206ac",
+    "hwh_sha256": "9bd6100bcc274486ddd51133e4dc2247f35c030d49e53cc709438f2a74ee3520",
+    "language_layout_manifest_sha256": "12ea4b8cc58639d0aab6da4ef3a3f12bbbb1254f88865f76512a5f0d00d4ae5d",
+    "lmhead_layout_manifest_sha256": "a1a555700e3daec8049627564c73e5783affe3827ab5437665249786d5c079ef",
+    "board_stable_root": "/home/ubuntu/tellme_m120_m89x2_20260901/m120_text4b_board_candidate",
+    "release_install_root": "/home/ubuntu/tellme_release_install_20260926",
+    "rollback_preserved": true
+  },
+  "fixed_video": {
+    "entry": "M277/M276ShortPromptBinaryRuntime.stream, independent direct 4B entry",
+    "source_runtime_path": "deployment/mage_vl4b/m276_short_prompt_source/m276_video_runtime.py",
+    "source_runtime_sha256": "7dc39257361179d8e2ddcf91380e4ce73e96c69fc2e23b411a337b47896f8386",
+    "ordered_rgb448_tensor_sha256": "5911485955780036ac4c8990bcaa248667f2e86bd1fd6f9b0783002553b4adff",
+    "submitted_frames": 4,
+    "selected_frame_indices": [3],
+    "visual_views": 2,
+    "visual_tokens": 98,
+    "prompt_tokens": 159,
+    "t32_batches": 5,
+    "logical_fpga_language_calls": 778,
+    "max_new_tokens": 1,
+    "expected_output_text": "0",
+    "first_token_ms_excluding_load": 230720.9167989986,
+    "evidence": "deployment/mage_vl4b/M328_RELEASE_VIDEO_BOARD_RESULT.json",
+    "web_alarm_route_verified": false,
+    "temporal_four_frame_reasoning_verified": false
+  },
+  "m329_same_fixture": {
+    "fixture_sha256": "f384f45eea4bc14110a7add49dd0944f0a025403aecc3360369ec999e28257d9",
+    "fixture_bytes": 2753984,
+    "cpu_cases": 7,
+    "pl_cases": 2,
+    "repeats_per_case": 3,
+    "cpu_implementation": "Python/NumPy arithmetic reference, not optimized A53 baseline",
+    "cpu_contract": "full original FP16 output byte exact",
+    "pl_contract": "full FP16 output exact after predeclared FTZ canonicalization",
+    "measurement_exclusions": ["one-time PL overlay load", "PL buffer allocation", "CPU fixture read and reference generation"],
+    "result": "deployment/mage_vl4b/optimization_v1/runs/M329-cpu-pl-same-fixture-01/RESULT.json",
+    "result_sha256": "fb3ef14f029358a65a8948929deb9585fdca6ccb2359118bb149021d34f28dd8",
+    "raw_logs": ["tmp/m329/cpu_board_01.log", "tmp/m329/pl_board_01.log", "tmp/m329/result_hashes_01.log"]
+  },
+  "release": {
+    "prebuilt_v7_sha256": "c487e16bcc18698808d7c48822e355c8b6cf291633b00d661f372f7280d41145",
+    "fixed_video_companion_v3_sha256": "254587ec1f776a01dc12ef98b900a558e4c3087c90a8630a59be51ef12df8b93",
+    "local_install_verified": true,
+    "public_asset_url_verified": false,
+    "generic_clean_os_install_verified": false,
+    "full_shell_clean_rebuild_verified": false,
+    "asset_inventory": "release_staging/kv260-mage-vl-4b/manifests/external_assets.json"
+  },
+  "experimental_decode_one": {
+    "build_id": "0x4F503131",
+    "formal_promotion_allowed": false,
+    "capacity_status": "STOPPED_BY_USER_NOT_PASS",
+    "same_session_candidate_faster_verified": false,
+    "evidence": "deployment/mage_vl4b/M325_FULL_SESSION_BOARD_RESULT.json"
+  }
+}
