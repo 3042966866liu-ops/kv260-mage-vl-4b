@@ -1,0 +1,128 @@
+M218 dual-source video service listening on http://127.0.0.1:8013
+[m120-video-web] 127.0.0.1 "GET /api/health HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /index.html HTTP/1.1" 200 -
+M253_RUNTIME_LOAD_BEGIN
+M253_MODEL_IMPORT_BEGIN
+/usr/local/share/pynq-venv/lib/python3.10/site-packages/pynqutils/build_utils/xsa_parser.py:19: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+M253_MODEL_CONSTRUCT_BEGIN
+M253_MODEL_WARM_BEGIN
+M253_MODEL_WARM_PASS
+M253_RUNTIME_LOAD_PASS
+[m120-video-web] 127.0.0.1 "POST /api/4b/video/live/start HTTP/1.1" 202 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/status HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "POST /api/4b/video/live/review HTTP/1.1" 409 -
+[m120-video-web] 127.0.0.1 "GET /api/4b/video/live/events?after=0 HTTP/1.1" 200 -
+[m120-video-web] 127.0.0.1 "POST /api/4b/video/live/frame HTTP/1.1" 202 -
+M253_DETECT_BEGIN sequence=0
+[m120-video-web] 127.0.0.1 "POST /api/4b/video/live/frame HTTP/1.1" 202 -
+[m120-video-web] 127.0.0.1 "POST /api/4b/video/live/frame HTTP/1.1" 202 -
+[m120-video-web] 127.0.0.1 "POST /api/4b/video/live/frame HTTP/1.1" 202 -
+[m120-video-web] 127.0.0.1 "POST /api/4b/video/live/review HTTP/1.1" 202 -
+[m120-video-web] 127.0.0.1 "POST /api/4b/video/live/frame HTTP/1.1" 202 -
+[m120-video-web] 127.0.0.1 "POST /api/4b/video/live/frame HTTP/1.1" 202 -
+[m120-video-web] 127.0.0.1 "POST /api/4b/video/live/frame HTTP/1.1" 202 -
+[m120-video-web] 127.0.0.1 "POST /api/4b/video/live/frame HTTP/1.1" 202 -
+[m120-video-web] 127.0.0.1 "POST /api/4b/video/live/review HTTP/1.1" 202 -
+VISION_BEGIN layers=24 gemm_dtype=FP32 state_policy=M198 l00_05=BF16 l06_23=FP32 boundary=BF16 w4_storage=unchanged
+M253_DETECT_PASS sequence=0 detector_ms=1912.551
+M253_EVENT_BEGIN sequence=0
+M253_EVENT_PASS sequence=0
+M253_FRAME_RESULT sequence=0 detector_ms=1912.551 latency_ms=1915 people=1 alarm=REVIEW
+M253_DETECT_BEGIN sequence=7
+M253_DETECT_PASS sequence=7 detector_ms=1758.636
+M253_EVENT_BEGIN sequence=7
+M253_EVENT_PASS sequence=7
+M253_FRAME_RESULT sequence=7 detector_ms=1758.636 latency_ms=3615 people=1 alarm=SAFE
+VISION_LAYER_BEGIN index=0 dtype=BF16_BLOCK_FP32_LINEAR elapsed_s=13.589 rss_mib=611.1
+VISION_LAYER_PASS index=0 layer_ms=16035.776 elapsed_s=29.625 rss_mib=779.9
+VISION_LAYER_BEGIN index=1 dtype=BF16_BLOCK_FP32_LINEAR elapsed_s=29.626 rss_mib=779.9
+VISION_LAYER_PASS index=1 layer_ms=16002.108 elapsed_s=45.628 rss_mib=785.6
+VISION_LAYER_BEGIN index=2 dtype=BF16_BLOCK_FP32_LINEAR elapsed_s=45.628 rss_mib=785.6
+VISION_LAYER_PASS index=2 layer_ms=15973.367 elapsed_s=61.602 rss_mib=785.6
+VISION_LAYER_BEGIN index=3 dtype=BF16_BLOCK_FP32_LINEAR elapsed_s=61.602 rss_mib=785.6
+VISION_LAYER_PASS index=3 layer_ms=15897.480 elapsed_s=77.499 rss_mib=809.5
+VISION_LAYER_BEGIN index=4 dtype=BF16_BLOCK_FP32_LINEAR elapsed_s=77.500 rss_mib=809.5
+VISION_LAYER_PASS index=4 layer_ms=15783.733 elapsed_s=93.284 rss_mib=825.3
+VISION_LAYER_BEGIN index=5 dtype=BF16_BLOCK_FP32_LINEAR elapsed_s=93.284 rss_mib=825.3
+VISION_LAYER_PASS index=5 layer_ms=15991.791 elapsed_s=109.276 rss_mib=841.2
+VISION_LAYER_BEGIN index=6 dtype=FP32_BLOCK_FP32_LINEAR elapsed_s=109.276 rss_mib=841.2
+VISION_LAYER_PASS index=6 layer_ms=11148.297 elapsed_s=120.425 rss_mib=855.5
+VISION_LAYER_BEGIN index=7 dtype=FP32_BLOCK_FP32_LINEAR elapsed_s=120.425 rss_mib=855.5
+VISION_LAYER_PASS index=7 layer_ms=11187.981 elapsed_s=131.613 rss_mib=855.5
+VISION_LAYER_BEGIN index=8 dtype=FP32_BLOCK_FP32_LINEAR elapsed_s=131.614 rss_mib=855.5
+VISION_LAYER_PASS index=8 layer_ms=11469.833 elapsed_s=143.083 rss_mib=907.7
+VISION_LAYER_BEGIN index=9 dtype=FP32_BLOCK_FP32_LINEAR elapsed_s=143.084 rss_mib=907.7
+VISION_LAYER_PASS index=9 layer_ms=11025.946 elapsed_s=154.110 rss_mib=907.7
+VISION_LAYER_BEGIN index=10 dtype=FP32_BLOCK_FP32_LINEAR elapsed_s=154.110 rss_mib=907.7
+VISION_LAYER_PASS index=10 layer_ms=11087.329 elapsed_s=165.198 rss_mib=916.1
+VISION_LAYER_BEGIN index=11 dtype=FP32_BLOCK_FP32_LINEAR elapsed_s=165.198 rss_mib=916.1
+VISION_LAYER_PASS index=11 layer_ms=10973.342 elapsed_s=176.172 rss_mib=933.3
+VISION_LAYER_BEGIN index=12 dtype=FP32_BLOCK_FP32_LINEAR elapsed_s=176.172 rss_mib=933.3
+VISION_LAYER_PASS index=12 layer_ms=11435.738 elapsed_s=187.608 rss_mib=962.0
+VISION_LAYER_BEGIN index=13 dtype=FP32_BLOCK_FP32_LINEAR elapsed_s=187.608 rss_mib=962.0
+VISION_LAYER_PASS index=13 layer_ms=11040.578 elapsed_s=198.649 rss_mib=962.0
+VISION_LAYER_BEGIN index=14 dtype=FP32_BLOCK_FP32_LINEAR elapsed_s=198.649 rss_mib=962.0
+VISION_LAYER_PASS index=14 layer_ms=11011.491 elapsed_s=209.661 rss_mib=977.9
+VISION_LAYER_BEGIN index=15 dtype=FP32_BLOCK_FP32_LINEAR elapsed_s=209.661 rss_mib=977.9
+VISION_LAYER_PASS index=15 layer_ms=11076.479 elapsed_s=220.738 rss_mib=977.9
+VISION_LAYER_BEGIN index=16 dtype=FP32_BLOCK_FP32_LINEAR elapsed_s=220.738 rss_mib=977.9
+VISION_LAYER_PASS index=16 layer_ms=11243.117 elapsed_s=231.981 rss_mib=1012.4
+VISION_LAYER_BEGIN index=17 dtype=FP32_BLOCK_FP32_LINEAR elapsed_s=231.982 rss_mib=1012.4
+VISION_LAYER_PASS index=17 layer_ms=11031.299 elapsed_s=243.013 rss_mib=1012.4
+VISION_LAYER_BEGIN index=18 dtype=FP32_BLOCK_FP32_LINEAR elapsed_s=243.014 rss_mib=1012.4
+VISION_LAYER_PASS index=18 layer_ms=11080.633 elapsed_s=254.094 rss_mib=1017.2
+VISION_LAYER_BEGIN index=19 dtype=FP32_BLOCK_FP32_LINEAR elapsed_s=254.095 rss_mib=1017.2
+VISION_LAYER_PASS index=19 layer_ms=11010.462 elapsed_s=265.105 rss_mib=1034.0
+VISION_LAYER_BEGIN index=20 dtype=FP32_BLOCK_FP32_LINEAR elapsed_s=265.106 rss_mib=1034.0
+VISION_LAYER_PASS index=20 layer_ms=11339.164 elapsed_s=276.445 rss_mib=1062.3
+VISION_LAYER_BEGIN index=21 dtype=FP32_BLOCK_FP32_LINEAR elapsed_s=276.445 rss_mib=1062.3
+VISION_LAYER_PASS index=21 layer_ms=11093.279 elapsed_s=287.539 rss_mib=1062.3
+VISION_LAYER_BEGIN index=22 dtype=FP32_BLOCK_FP32_LINEAR elapsed_s=287.539 rss_mib=1062.3
+VISION_LAYER_PASS index=22 layer_ms=11141.933 elapsed_s=298.681 rss_mib=1078.6
+VISION_LAYER_BEGIN index=23 dtype=FP32_BLOCK_FP32_LINEAR elapsed_s=298.681 rss_mib=1078.6
+VISION_LAYER_PASS index=23 layer_ms=10993.336 elapsed_s=309.675 rss_mib=1078.6
+VISION_PASS total_ms=316974.128 rss_mib=1211.1
+/home/ubuntu/tellme_release_install_20260926/deployment/mage_vl4b/m181_m120_video_board_candidate/video_language_runtime.py:74: RuntimeWarning: overflow encountered in exp
+  return (x / (1.0 + np.exp(-x))).astype(np.float32)

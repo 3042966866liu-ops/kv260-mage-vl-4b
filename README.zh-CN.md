@@ -6,10 +6,11 @@
 | --- | --- | --- |
 | 稳定 M254 | 原始 Python/网页源码、T32 HLS、历史清单与门禁 | 独立 v7 首装已通过固定文本 FPGA E2E 和无帧网页运行时；M328 伴随包的直接固定视频 4B E2E PASS。报警触发的网页视频链尚未验证。 |
 | 原生 A53 CPU／稳定 PL | M329–M331 原始结果及复算脚本 | 两个冻结 W2/W4 单链形状各 10 对交错 PASS；不是整模型或视频加速比 |
+| M335 手动 Web 4B 复核 | [隔离源码与完整报告](experiments/m335_manual_web_review/REPORT.md) | 两次真实窗口经 Web→4B/FPGA→SSE 通过，首 Token 196.286/174.653 秒；只取末帧两视图。自动报警链路未验证，稳定入口未替换 |
 | BACT-V2 | 九个冻结候选、27 条实板成本记录、12 段历史预测重算 | 成本来自已有 KV260 测量；不是新模型运行或独立精度优势 |
 | Decode-one | OP01 源码和同会话 M325 结果 | 仅实验；FIFO 容量长测中止，未正式晋级 |
 
-快通道在不等待 4B 复核时处理人物、动作和刀具相关事件；慢通道仅在报警后触发 4B 语义复核。视觉塔在 PS，语言 Linear 使用 T32 PL。它不是经过认证的安全检测系统，不能用于无人值守的安全决策。
+快通道在不等待 4B 复核时处理人物、动作和刀具相关事件；默认慢通道设计为报警后触发，M335 另有明确标注的手动复核入口。手动路径已实板通过，不代表自动报警触发链路通过。视觉塔在 PS，语言 Linear 使用 T32 PL。它不是经过认证的安全检测系统，不能用于无人值守的安全决策。
 
 先看[快速开始](docs/quickstart.md)与[架构](docs/architecture.md)。`scripts/preflight.py --dry-run` 是不访问设备的发布入口；`scripts/run_demo.sh` 是带门禁的板端入口，不是旧版升级门禁。BACT 证据可用 `python3 scripts/m321_reproduce_bact_v2_evidence.py --only all` 重算，无需下载权重。还请阅读[模型资产](docs/model_setup.md)、[环境](docs/environment.md)、[构建范围](docs/build.md)、[结果](docs/results.md)、[限制](docs/limitations.md)、[来源](docs/provenance.md)及[发布就绪状态](RELEASE_READINESS.md)。
 

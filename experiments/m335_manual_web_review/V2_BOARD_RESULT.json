@@ -1,0 +1,51 @@
+{
+  "gate": "M335-real-Web-manual-4B-FPGA-SSE",
+  "status": "FAIL",
+  "candidate_not_promoted": true,
+  "stable_directory_modified": false,
+  "automatic_alarm_threshold_modified": false,
+  "build_id_expected": "0x4D395832",
+  "first_error": "TimeoutError: two real manual review completions: timed out after 900s",
+  "checks": {
+    "manual_button_visible": true,
+    "candidate_modules_isolated": true,
+    "runtime_loaded_once": true,
+    "missing_frames_explicit": true,
+    "busy_latest_window": true
+  },
+  "events": [],
+  "tasks": [
+    {
+      "accepted": true,
+      "task_id": 1,
+      "trigger": "manual",
+      "state": "active",
+      "source_sequences": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "replaced_task_id": null
+    },
+    {
+      "accepted": true,
+      "task_id": 2,
+      "trigger": "manual",
+      "state": "waiting",
+      "source_sequences": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "replaced_task_id": null
+    }
+  ],
+  "service_pid": 42987,
+  "service_exit_code": -15,
+  "elapsed_s": 1019.1881816509995,
+  "service_log": "/home/ubuntu/m335_manual_web_02/service.log",
+  "service_log_sha256": "7c578f593fdf5b83b023d7945761dcf8bf32f06ed91f05dceac3486249406e32",
+  "sse_faults": []
+}

@@ -1,0 +1,476 @@
+{
+  "gate": "M335-real-Web-manual-4B-FPGA-SSE",
+  "status": "PASS_MANUAL_WEB_ONLY",
+  "candidate_not_promoted": true,
+  "stable_directory_modified": false,
+  "automatic_alarm_threshold_modified": false,
+  "build_id_expected": "0x4D395832",
+  "first_error": null,
+  "checks": {
+    "manual_button_visible": true,
+    "candidate_modules_isolated": true,
+    "runtime_loaded_once": true,
+    "m276_runtime_selected": true,
+    "missing_frames_explicit": true,
+    "busy_latest_window": true,
+    "two_task_results_bound": true,
+    "real_fpga_proof_both": true,
+    "no_fake_auto_alarm": true,
+    "recovered_for_next_event": true,
+    "sse_healthy": true
+  },
+  "events": [
+    {
+      "name": "semantic_review_queued",
+      "payload": {
+        "policy": "one-active-one-latest-waiting",
+        "task_id": 1,
+        "trigger": "manual",
+        "sequences": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "fast_alarm_already_emitted": false
+      }
+    },
+    {
+      "name": "window_begin",
+      "payload": {
+        "window_index": 0,
+        "sequences": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "newest_capture_age_ms": 0.577856000745669,
+        "buffer": {
+          "capacity": 16,
+          "depth": 4,
+          "accepted_frames": 4,
+          "overwritten_frames": 0,
+          "oldest_sequence": 0,
+          "newest_sequence": 3
+        }
+      }
+    },
+    {
+      "name": "semantic_review_waiting",
+      "payload": {
+        "task_id": 2,
+        "trigger": "manual",
+        "source_sequences": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "replaced_task_id": null,
+        "policy": "latest-pending-only"
+      }
+    },
+    {
+      "name": "window_complete",
+      "payload": {
+        "sequences": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "inference_ms": 196294.61035200075,
+        "result_age_from_newest_capture_ms": 196295.1882080015,
+        "buffer": {
+          "capacity": 16,
+          "depth": 4,
+          "accepted_frames": 4,
+          "overwritten_frames": 0,
+          "oldest_sequence": 0,
+          "newest_sequence": 3
+        }
+      }
+    },
+    {
+      "name": "semantic_review_result",
+      "payload": {
+        "task_id": 1,
+        "trigger": "manual",
+        "source_sequences": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "semantic_sequences": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "tokens": [
+          {
+            "text": "0",
+            "token_id": 15
+          }
+        ],
+        "complete": {
+          "status": "PASS",
+          "prompt_tokens": 159,
+          "generated_tokens": 1,
+          "decode_calls": 0,
+          "first_token_ms": 196286.21958800068,
+          "total_ms": 196287.3365790001,
+          "selected_frame_indices": [
+            3
+          ],
+          "knife_verdict": "ABSENT",
+          "knife_score": 0.4416730056646256,
+          "proof": {
+            "result": "PASS",
+            "build_id": "0x4D395832",
+            "kernel": "mage_m120_m89x2_0",
+            "pl_logical_chain_calls": 778,
+            "expected_pl_logical_chain_calls": 778,
+            "pl_expected_macros": 9277767680,
+            "language_cpu_linear_fallback": false,
+            "vision_backend": "M273 exact latest global/detail with M261 bounded cache",
+            "language_scheduler": "M238 T32 + M241 grouped-GQA/reference-RoPE",
+            "knife_decision": "M276 constrained logits 0/1 V3",
+            "decode_calls": 0
+          },
+          "window_sequences": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "window_newest_sequence": 3
+        }
+      }
+    },
+    {
+      "name": "semantic_review_released",
+      "payload": {
+        "task_id": 1,
+        "trigger": "manual",
+        "terminal_event": "window_complete",
+        "source_sequences": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "semantic_sequences": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "error": null
+      }
+    },
+    {
+      "name": "semantic_review_queued",
+      "payload": {
+        "policy": "one-active-one-latest-waiting",
+        "task_id": 2,
+        "trigger": "manual",
+        "sequences": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "fast_alarm_already_emitted": false
+      }
+    },
+    {
+      "name": "window_begin",
+      "payload": {
+        "window_index": 1,
+        "sequences": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "newest_capture_age_ms": 0.2632830000948161,
+        "buffer": {
+          "capacity": 16,
+          "depth": 5,
+          "accepted_frames": 5,
+          "overwritten_frames": 0,
+          "oldest_sequence": 0,
+          "newest_sequence": 4
+        }
+      }
+    },
+    {
+      "name": "window_complete",
+      "payload": {
+        "sequences": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "inference_ms": 174182.96158099838,
+        "result_age_from_newest_capture_ms": 174183.22486399848,
+        "buffer": {
+          "capacity": 16,
+          "depth": 8,
+          "accepted_frames": 8,
+          "overwritten_frames": 0,
+          "oldest_sequence": 0,
+          "newest_sequence": 7
+        }
+      }
+    },
+    {
+      "name": "window_begin",
+      "payload": {
+        "window_index": 2,
+        "sequences": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "newest_capture_age_ms": 174178.788489,
+        "buffer": {
+          "capacity": 16,
+          "depth": 8,
+          "accepted_frames": 8,
+          "overwritten_frames": 0,
+          "oldest_sequence": 0,
+          "newest_sequence": 7
+        }
+      }
+    },
+    {
+      "name": "window_complete",
+      "payload": {
+        "sequences": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "inference_ms": 174678.64508899947,
+        "result_age_from_newest_capture_ms": 348857.4335779995,
+        "buffer": {
+          "capacity": 16,
+          "depth": 8,
+          "accepted_frames": 8,
+          "overwritten_frames": 0,
+          "oldest_sequence": 0,
+          "newest_sequence": 7
+        }
+      }
+    },
+    {
+      "name": "semantic_review_result",
+      "payload": {
+        "task_id": 2,
+        "trigger": "manual",
+        "source_sequences": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "semantic_sequences": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "tokens": [
+          {
+            "text": "0",
+            "token_id": 15
+          }
+        ],
+        "complete": {
+          "status": "PASS",
+          "prompt_tokens": 159,
+          "generated_tokens": 1,
+          "decode_calls": 0,
+          "first_token_ms": 174653.28015600244,
+          "total_ms": 174654.321066002,
+          "selected_frame_indices": [
+            3
+          ],
+          "knife_verdict": "ABSENT",
+          "knife_score": 0.4416730056646256,
+          "proof": {
+            "result": "PASS",
+            "build_id": "0x4D395832",
+            "kernel": "mage_m120_m89x2_0",
+            "pl_logical_chain_calls": 778,
+            "expected_pl_logical_chain_calls": 778,
+            "pl_expected_macros": 9277767680,
+            "language_cpu_linear_fallback": false,
+            "vision_backend": "M273 exact latest global/detail with M261 bounded cache",
+            "language_scheduler": "M238 T32 + M241 grouped-GQA/reference-RoPE",
+            "knife_decision": "M276 constrained logits 0/1 V3",
+            "decode_calls": 0
+          },
+          "window_sequences": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "window_newest_sequence": 7
+        }
+      }
+    },
+    {
+      "name": "semantic_review_released",
+      "payload": {
+        "task_id": 2,
+        "trigger": "manual",
+        "terminal_event": "window_complete",
+        "source_sequences": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "semantic_sequences": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "error": null
+      }
+    }
+  ],
+  "tasks": [
+    {
+      "accepted": true,
+      "task_id": 1,
+      "trigger": "manual",
+      "state": "active",
+      "source_sequences": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "replaced_task_id": null
+    },
+    {
+      "accepted": true,
+      "task_id": 2,
+      "trigger": "manual",
+      "state": "waiting",
+      "source_sequences": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "replaced_task_id": null
+    }
+  ],
+  "service_pid": 45664,
+  "final_status": {
+    "mode": "M254-dual-path-latest-only",
+    "source_is_unbounded": true,
+    "window_backlog_capacity": 1,
+    "inference_busy": false,
+    "runtime_load_count": 1,
+    "windows_started": 3,
+    "windows_completed": 3,
+    "last_started_newest_sequence": 7,
+    "last_completed_newest_sequence": 7,
+    "last_window_sequences": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "buffer": {
+      "capacity": 16,
+      "depth": 8,
+      "accepted_frames": 8,
+      "overwritten_frames": 0,
+      "oldest_sequence": 0,
+      "newest_sequence": 7
+    },
+    "last_result_monotonic": 51307.199267105,
+    "service_state": "ready",
+    "worker_alive": true,
+    "runtime_loading": false,
+    "worker_error": null,
+    "worker_started_monotonic": 50668.371295819,
+    "worker_stopped_monotonic": null,
+    "web_runtime_class": "M276ShortPromptBinaryRuntime",
+    "web_board_runtime_class": "M238PrefillRuntime",
+    "web_language_model_class": "M241VideoLanguageModel",
+    "web_language_runtime": "M243-M238-T32-pack-prefetch-fused-parse",
+    "web_prefill_attention": "M241-grouped-GQA-reference-RoPE",
+    "web_prefill_hash_locked": true,
+    "t64_used": false,
+    "status": "running",
+    "board_runtime_loaded": true,
+    "build_id": "0x4D395832",
+    "kernel": "mage_m120_m89x2_0",
+    "source_mode": "uploaded-file-loop",
+    "source_label": "M328-fixed-video-RGB448-local-loop",
+    "source_content_is_finite": true,
+    "fast_path": {
+      "mode": "continuous-latest-only-per-frame",
+      "source_is_unbounded_contract": true,
+      "window_backlog_capacity": 1,
+      "runtime_load_count": 1,
+      "processed_frames": 2,
+      "last_completed_sequence": 7,
+      "frame_slot": {
+        "capacity": 1,
+        "depth": 0,
+        "accepted_frames": 8,
+        "overwritten_pending_frames": 6,
+        "newest_sequence": 7,
+        "last_claimed_sequence": 7
+      },
+      "error": null
+    },
+    "semantic_review": {
+      "policy": "one-active-one-latest-waiting",
+      "latest_frame_capacity": 16,
+      "latest_frame_depth": 8,
+      "fast_results": 2,
+      "semantic_review_queued": false,
+      "active_task_id": null,
+      "active_trigger": null,
+      "active_source_sequences": [],
+      "waiting_task_id": null,
+      "waiting_trigger": null,
+      "waiting_source_sequences": [],
+      "semantic_reviews_queued": 2,
+      "semantic_reviews_completed": 2,
+      "semantic_reviews_failed": 0,
+      "fast_alarm_blocks_on_semantic_review": false
+    },
+    "semantic_language_runtime": "M243-M238-T32-pack-prefetch-fused-parse",
+    "semantic_prefill_attention": "M241-grouped-GQA-reference-RoPE",
+    "semantic_terminal_monitor_error": null,
+    "manual_review_available": true,
+    "candidate_module_path": "/home/ubuntu/m335_manual_web_03/m335_video_server.py",
+    "m254_module_path": "/home/ubuntu/tellme_release_install_20260926/deployment/mage_vl4b/m254_dual_path_web_candidate/m254_video_server.py",
+    "semantic_runtime_class": "M276ShortPromptBinaryRuntime",
+    "semantic_input_contract": "M276 latest source frame, two views, 159 tokens, restricted 0/1"
+  },
+  "sse_event_count": 189,
+  "service_exit_code": -15,
+  "elapsed_s": 660.0679133790036,
+  "service_log": "/home/ubuntu/m335_manual_web_03/service.log",
+  "service_log_sha256": "2fc351e3364b8549ad379033a0977fa92d9d7ca95700773fea7088dd53c23f13",
+  "sse_faults": []
+}
