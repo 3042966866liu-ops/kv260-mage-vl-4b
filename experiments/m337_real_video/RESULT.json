@@ -1,0 +1,33 @@
+{
+  "gate": "M337-private-real-video-browser-input-diagnostic-public-summary",
+  "status": "MEASURED_OFFLINE_ONLY",
+  "source_media_in_repository": false,
+  "frame_images_in_repository": false,
+  "checkpoint_in_repository": false,
+  "video_count": 6,
+  "deterministic_2fps_sample_count": 253,
+  "browser_to_loopback_rgb448_hash_match": true,
+  "app_js_sha256": "3aa35208a7739cb9068796735aec78410f39f94d48041f0b41bf3cf397dfd95e",
+  "checkpoint_sha256": "a79551df90c79834bcd3bb3845ef9d966b5449a3a9b2833ae8404778ca5d65d2",
+  "detector_device": "WSL CUDA",
+  "original_detection_filter": 0.05,
+  "original_safe_threshold": 0.2,
+  "original_alarm_threshold": 0.8,
+  "cases": [
+    {"alias": "A", "frames": 42, "observed_content": "cleaver on board", "baseline_max": 0.164627, "zoom_075_max": 0.077874},
+    {"alias": "B", "frames": 42, "observed_content": "person chopping with cleaver", "baseline_max": 0.068310, "zoom_075_max": 0.101745},
+    {"alias": "C", "frames": 42, "observed_content": "person chopping with cleaver", "baseline_max": 0.059906, "zoom_075_max": 0.207281},
+    {"alias": "D", "frames": 43, "observed_content": "ladle or similar utensil", "baseline_max": 0.122975, "zoom_075_max": 0.272716},
+    {"alias": "E", "frames": 42, "observed_content": "scissors", "baseline_max": 0.087223, "zoom_075_max": 0.112238},
+    {"alias": "F", "frames": 42, "observed_content": "food washing and sorting; tiny items unverified", "baseline_max": 0.0, "zoom_075_max": 0.0}
+  ],
+  "baseline_frames_at_or_above_safe_threshold": 0,
+  "baseline_frames_at_or_above_alarm_threshold": 0,
+  "zoom_075_frames_at_or_above_safe_threshold": 2,
+  "zoom_075_frames_at_or_above_alarm_threshold": 0,
+  "zoom_075_adopted": false,
+  "thresholds_changed": false,
+  "kv260_model_or_overlay_run": false,
+  "automatic_alarm_validated": false,
+  "independent_scene_quality_validated": false
+}

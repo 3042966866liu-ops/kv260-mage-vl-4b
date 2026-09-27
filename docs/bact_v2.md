@@ -1,11 +1,52 @@
-# BACT-V2: frozen offline budget method
+# BACT-V2：让输入预算跨过真实硬件批边界
 
-The selector in [bact/selector_v2.py](../bact/selector_v2.py) enumerates nine frozen candidate configurations across B4/B5/B6. Its semantic-loss proxy is an experiment fixture, not a calibrated answer-accuracy model. For the measured T32 fixed-Prefill contract, `B=ceil(N/32)` and `Calls=154*B+8`; this counts logical FPGA calls, not full latency, energy or arbitrary Decode. `bact-159` has five batches and 778 calls, versus `ratio-164` six batches and 932 calls. `count-144` also has five batches and 778 calls. A tie in calls does not imply equal time, quality or power; 159 vs 144 changes textual and visual composition, not merely visual-token count.
+## 问题从哪里来
 
-Reproduce frozen selector, 27 historical KV260 cost records and 12 previously seen AI-generated pilot predictions from this directory:
+稳定语言核每次处理至多 32 个输入 Token。对固定 Prefill 路径，输入长度 `N` 需要的批数为 `B(N)=ceil(N/32)`，语言逻辑调用为 `154×B(N)+8`。因此 Token 数连续变化，调用成本却是阶梯：从 164 减到 161 仍为 6 批；再减至 160 才变成 5 批。单纯追求最大裁剪率，可能删掉很多信息却没有省下一批执行。
 
-```sh
+BACT（Boundary-Aligned Cross-modal Token Budgeting）把视觉视图、视觉 Token 和文本 Prompt 放进同一个预算问题：先满足任务质量约束，再寻找可以跨过 T32 边界的配置；同批次成本相同的候选，优先保留语义信息。这里的调用式只适用于当前固定语言 Prefill 合同，不等于整个视频请求的时延或功耗。
+
+| 配置 | 总 Token | T32 批次 | 语言逻辑调用 | 输入区别 |
+| --- | ---: | ---: | ---: | --- |
+| `high-284` | 284 | 9 | 1394 | 较多视觉视图，作为高输入预算基线 |
+| `ratio-164` | 164 | 6 | 932 | 两视图的固定比例裁剪基线 |
+| `bact-159` | 159 | 5 | 778 | 两视图、缩短后的任务 Prompt |
+| `count-144` | 144 | 5 | 778 | 更短的文本预算基线 |
+
+相对 164 Token，159 Token 只少 5 个，却使固定合同的调用数少 154 次（`16.52%`）。相对 159 Token 再少 15 个到 144，调用数不再下降。这解释了为什么“保留更多内容、仍占五批”值得作为质量对照；**它不预设 159 的回答一定更好**。
+
+## Prompt：从 164 到 159 Token
+
+两视图视觉输入保持不变时，M275 用官方 GPU 路径比较了四种任务措辞。原句为：
+
+> `[TELLME_KNIFE_BINARY_V2] Inspect these video views. Answer exactly 1 if a knife is visible, otherwise 0:`
+
+选用的短句为：
+
+> `[TELLME_KNIFE_BINARY_V3] Knife visible? Reply exactly 1 for yes or 0 for no:`
+
+完整包装后的输入长度从 164 降为 159 Token，视觉 Token 仍为 98。四个固定小回归样例的 0/1 判断均与预期一致；短句的最小绝对二元 logit margin 为 `2.50`，原句为 `1.625`。这是筛选时的局部信号，不是刀具召回率或跨场景精度证明。[M275 原始 Prompt、Token 和分数](../deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/M275_GPU_EXACT_PROMPT_SWEEP_RESULT.json)保留了全部候选。M276 随后冻结 tokenizer 和运行路径；M277 的实板直接样例测得 159 Token、5 批、778 次调用与约 230 秒首 Token。
+
+这段探索的核心不是“短 Prompt 总是更准确”，而是：在任务格式不变、固定小回归未退步的前提下，**恰好跨过 160 边界会省掉一整个硬件批次**。后续等批次措辞改写 KR1/KR2 在已见 12 段上没有净减少错误，故保留原 P0；不能把个别误报减少单独写成质量提升。
+
+## 视觉视图与时序的取舍
+
+更早的输入曾使用四帧产生大量视觉 Token；较短的复核路径改为同一较晚时刻的两个视图，即经原预处理后的整帧视图与中心细节。它提高了可运行性，却牺牲了直接比较前后动作的视觉证据。M273 在离线小回归中固定视图几何，M277 才对该受限路径做板端计时；两者不是对原四帧任务的无损替代。
+
+之后试过一个单独的 V1 候选：统一取视频 25% 和 75% 时刻的两个处理后整帧视图，保留相同 159-Token/五批预算。旧 12 段中刀具漏报少 1 段，但动作 Macro-F1 从 `0.733` 降至 `0.686`，原本正确的动作又错 1 段，因此没有作为统一输入方案采用。V1 同时改变了时间覆盖和细节裁剪，不能单独把变化归因于“增加时序信息”。
+
+## 证据、选择器和质量边界
+
+[选择器](../bact/selector_v2.py)列举冻结的九个代理/几何候选；这些代理分数是实验 fixture，不是已校准的逐视频语义损失模型。完整可运行并产生旧样本预测的只有上表四类配置，不能把九个候选说成九条都经过完整模型验证的路径。
+
+27 条反平衡 KV260 成本记录覆盖三组 T32 边界，调用身份全部匹配，边界附近的实测语言时延呈约 20 秒阶跃。[原始板端记录](../deployment/mage_vl4b/M294R3_COUNTERBALANCED_BOUNDARY_BOARD_RESULT_05.json)、[成本绑定](../deployment/mage_vl4b/M314_BACT_V2_BOARD_COST_BINDING_RESULT.json)和[资源记录](../deployment/mage_vl4b/M300_BACT_RESOURCE_BINDING_RESULT.json)可以复核。144/164 的上述调用数字由该已验证合同得出，不表示这两个完整语义配置都另做过板端视频请求。
+
+旧 12 段 AI 生成视频的配对质量复核显示，`bact-159` 与 `count-144` 同为五批：前者在全 12 段上刀具 TP/FN/FP/TN 为 `4/2/1/5`，后者为 `5/1/3/3`。前者误报较少、漏报较多；历史六段 test 的综合指标接近。Prompt 内容和各自校准阈值一起变化，不能把差异纯归因于多保留 15 Token，也不能宣称有独立数据上的稳定优势。[配对原始结果](../experiments/bact_v2_quality/paired_quality.json)保留负结果。
+
+在仓库根目录复算已冻结的选择器、成本和质量证据：
+
+```bash
 python3 scripts/m321_reproduce_bact_v2_evidence.py --only all
 ```
 
-The command is read-only and verifies selected artifact hashes. It does not perform 12 new model forwards. The historic held-out protocol/calibration/test split is preserved as recorded, but these same 12 clips cannot be renamed a new independent set. The paired BACT-159 vs count-144 quality experiment did not establish an independent quality advantage. Prompt rewrite and two-time-view enhancement were explored but not adopted; P0/V0 remains frozen. The M277 fixed video path is not the Web's default BACT router; it uses the last-frame two-view/159-token fixture. Its 0/1 knife probe with `decode_calls=0` must not be described as free-form continuous generation.
+它不执行新模型 forward。BACT 当前证明的是固定粒度执行成本及可执行的候选选择流程；默认 Web 服务尚未接入内容自适应的 BACT 路由。若要证明新场景的质量优势，需要先冻结配置和阈值，再使用来源独立、人工标注的视频盲测。

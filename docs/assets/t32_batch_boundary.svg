@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="390" viewBox="0 0 820 390" role="img" aria-labelledby="title desc">
+  <title id="title">T32 输入长度与语言逻辑 FPGA 调用数</title>
+  <desc id="desc">144、159 和 160 Token 都为五批、778 次调用；161 和 164 Token 为六批、932 次调用。164 减至 159 Token 跨过批边界。</desc>
+  <rect width="820" height="390" fill="#fff"/>
+  <text x="58" y="42" font-size="21" font-family="Arial, sans-serif" fill="#172b4d">固定 T32 执行粒度的成本阶梯</text>
+  <text x="58" y="68" font-size="13" font-family="Arial, sans-serif" fill="#53677d">Calls = 154 × ceil(N / 32) + 8，固定语言 Prefill 几何</text>
+  <line x1="95" y1="304" x2="760" y2="304" stroke="#66788a" stroke-width="1.5"/>
+  <line x1="95" y1="104" x2="95" y2="304" stroke="#66788a" stroke-width="1.5"/>
+  <line x1="90" y1="245" x2="760" y2="245" stroke="#e4e9ee"/>
+  <line x1="90" y1="145" x2="760" y2="145" stroke="#e4e9ee"/>
+  <text x="48" y="249" font-size="14" font-family="Arial, sans-serif" fill="#53677d">778</text>
+  <text x="48" y="149" font-size="14" font-family="Arial, sans-serif" fill="#53677d">932</text>
+  <path d="M140 245 H585 V145 H710" fill="none" stroke="#2462a5" stroke-width="4"/>
+  <line x1="585" y1="100" x2="585" y2="304" stroke="#bb6730" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="518" y="94" font-size="13" font-family="Arial, sans-serif" fill="#9d4d1b">160 / 161 边界</text>
+  <g fill="#2462a5">
+    <circle cx="140" cy="245" r="6"/><circle cx="410" cy="245" r="6"/><circle cx="570" cy="245" r="6"/>
+    <circle cx="600" cy="145" r="6"/><circle cx="710" cy="145" r="6"/>
+  </g>
+  <g font-size="14" font-family="Arial, sans-serif" fill="#172b4d" text-anchor="middle">
+    <text x="140" y="326">144</text><text x="410" y="326">159</text><text x="570" y="326">160</text>
+    <text x="600" y="326">161</text><text x="710" y="326">164</text>
+  </g>
+  <text x="386" y="360" font-size="13" font-family="Arial, sans-serif" fill="#53677d">总输入 Token N；纵轴为逻辑调用数，不是时延</text>
+  <text x="173" y="230" font-size="14" font-family="Arial, sans-serif" fill="#2462a5">5 批</text>
+  <text x="638" y="130" font-size="14" font-family="Arial, sans-serif" fill="#2462a5">6 批</text>
+</svg>

@@ -1,136 +1,61 @@
 # Mage-VL 4B on KV260
 
-**基于 AMD Kria KV260 的 Mage-VL 4B 多模态推理原型，结合 PS–PL 协同计算与 BACT-V2 Token 预算选择。**
+[English](README.en.md) · 简体中文
 
-[English](README.en.md) | 简体中文
+这是一个在 AMD Kria KV260 上运行 Mage-VL 4B 的多模态推理研究原型。我们解决的主要问题是：如何在有限内存和固定 T32 FPGA 执行粒度下，完成可核验的 PS–PL 推理，并让输入预算真正对应硬件开销。
 
-本项目提供模型部署源码、T32 FPGA 计算核、视频 Web 应用，以及性能与质量评测记录。默认部署采用已在实板验证的 **M254 / M120 T32** 路径，Build ID 为 `0x4D395832`。
+项目已完成混合精度权重适配、PS 视觉塔与 PL 语言 Linear 协同、固定视频样例的独立安装验证，以及 Web 手动语义复核。它也记录了没有奏效的优化：局部解析提速未降低完整请求时间，T64 未满足时序，通用快速检测器在现有厨房视频中难以识别菜刀。这些结果共同界定了当前实现的能力。
 
-> **项目状态：研究预览。** 已在独立安装目录完成固定文本 FPGA 推理、直接固定视频推理，以及隔离候选中两次真实 Web 手动 4B/FPGA 复核。默认稳定服务未替换；自动报警触发的 Web 复核仍未通过。预构建安装包及视频配套包尚未提供公开下载。
+默认板端实现采用稳定的 T32 Build `0x4D395832`。源码和实验数据可审阅；模型权重与 bitstream 不在 Git 仓库中，预构建包尚无公开下载地址。
 
-## 项目特性
+## 硬件成本为何不是线性的
 
-- **PS–PL 协同推理**：视觉塔在 PS 侧执行，语言模型 Linear 运算由 T32 PL 路径加速。
-- **双通道视频应用**：系统设计为由快通道处理人物、动作和刀具相关事件，报警后再由慢通道调用 4B 模型进行语义复核；独立发布安装中的报警触发全链路尚未验证。
-- **BACT-V2 预算选择**：提供面向 T32 批次边界的离线 Token 预算选择器，以及可复算的成本和质量评测记录。
-- **部署与评测证据**：保留运行版本、文件校验值、FPGA 调用记录及实验结果，区分稳定部署与实验候选。
+![固定 T32 执行粒度下的语言逻辑调用阶梯](docs/assets/t32_batch_boundary.svg)
 
-系统架构与各模块的执行位置见[架构说明](docs/architecture.md)。
+上图是固定语言 Prefill 几何的**逻辑调用数**，不是整请求时延。板卡连接与网页演示的实拍素材尚未纳入公开仓库；[系统架构](docs/architecture.md)说明 PS–PL 分工，[实验索引](experiments/README.md)保留原始测量。
 
-## 验证状态
+## 主要工作
 
-| 路径 | 提供内容 | 当前状态 |
-| --- | --- | --- |
-| 稳定 T32 部署 | Python 运行时、Web 前后端、T32 HLS 源码及验证记录 | 独立 v7 安装已通过固定文本 FPGA 端到端推理和无视频帧的 Web 运行时加载验证 |
-| 直接固定视频推理 | 仓库内的固定样例复现流程；M328 配套包为单独的本地资产 | 已在独立安装目录通过 4B 端到端推理；不经过 Web 报警触发链路；配套包尚无公开下载 |
-| 优化 A53 CPU／稳定 PL 对照 | M329–M331 原始机器结果与复算脚本 | W2/W4 两个冻结单链形状各 10 对同板交错 PASS；不是整模型或视频加速比 |
-| M332 解析器优化实验 | 隔离候选代码及两种顺序的同输入固定视频 A/B | 局部短测加速，但两组端到端首 Token 均未提速；候选已归档，稳定版保留，见[结案报告](experiments/m332_parser_scale/REPORT.md) |
-| M333 连续 Web 复核调度实验 | [隔离代码与报告](experiments/m333_web_review_loop/REPORT.md)、[KV260 子门禁](experiments/m333_web_review_loop/BOARD_REPORT.md) | 板端假引擎调度 13 项及真实 HTTP Handler/假模型 SSE 13 项通过；尚未测真实检测器、4B 或 FPGA，未替换默认 M254 |
-| M334 真实模块与资产前置检查 | [板端导入及触发夹具审计](experiments/m333_web_review_loop/M334_IMPORT_TRIGGER_AUDIT.md) | 实际 M333/M254 模块导入与发布资产身份检查通过；既有视频抽样未触发原 0.80 报警阈值，未运行真实 Web 4B 复核 |
-| M335 手动 Web 4B 复核 | [隔离源码、实板结果和负结果](experiments/m335_manual_web_review/REPORT.md)、[报警阈值可行性审计](experiments/m335_manual_web_review/CALIBRATION_FEASIBILITY_REPORT.md) | 两次真实视频窗口手动复核经 Web→4B/FPGA→SSE 通过，159 Token、每次 778 调用；只用末帧两视图，首 Token 约 196/175 秒。自动报警未验证；六段校准视频显示仅调报警阈值不可行。候选未替换稳定服务 |
-| M336 浏览器输入短诊断 | [报告与机器摘要](experiments/m336_browser_input/REPORT.md) | 两张 AI 校准视频帧的浏览器 RGB448 与本机接收字节一致；有刀帧可见刀具但原检测器分数仅 0.0524。不是板端或真实摄像头准确率，自动报警仍未验证 |
-| BACT-V2 | 9 个冻结候选配置、27 条板端成本记录、12 段历史视频预测 | 支持离线复算；尚未证明独立数据上的质量优势，未接入网页默认路由 |
-| Decode-one | OP01 源码与 M325 同会话对照结果 | 实验版本，Build ID `0x4F503131`；FIFO 容量长测已中止，未替换稳定版 |
+1. **让 4B 模型适配板端资源。** 按模块敏感性选用 W2/W3/W4 与高精度保留，冻结打包权重、布局和校验值；避免统一低位宽破坏语义。[部署探索](docs/optimization_journey.md)
+2. **打通可验证的 PS–PL 推理。** PS 负责视觉、Attention、Norm 和 KV；PL 的 T32 核执行语言 Linear/LM Head。固定输入验证同时检查 Build ID、FPGA 调用、输出和 CPU Linear fallback。[架构](docs/architecture.md) · [源码导览](docs/source_map.md)
+3. **以真实请求决定优化取舍。** 视觉 W4 向量化解码、权重暂存和输出解析取得组件收益；T64、Decode-one 与解析器候选则依据时序或端到端测量保留为实验。[性能分析](docs/performance_attribution_history.md)
+4. **研究输入预算与批边界。** BACT-V2 将视图和 Prompt 预算对齐 T32 批次；164→159 Token 跨过 160 边界，语言逻辑调用从 932 降至 778。[BACT 方法与 Prompt 实验](docs/bact_v2.md)
 
-完整发布状态见 [RELEASE_READINESS.md](RELEASE_READINESS.md)。
+## 代表性结果
 
-## 快速开始
+| 实验 | 结果与测量范围 |
+| --- | --- |
+| 独立安装的固定视频 | 四帧按顺序提交，但模型实际只用末帧的两个视图；159 输入 Token、778 次语言 FPGA 逻辑调用、输出 `0`；首 Token **230.721 s**，不含初始化。[公开摘要](experiments/fixed_video/RESULT.json) |
+| 同板 CPU／PL 单链 | 两种固定双 descriptor 形状各 10 对交错；W2 为 **5.891/2.244 ms**，W4 为 **5.871/2.525 ms**（A53 CPU/PL），约 **2.63×/2.33×**。这不是整模型加速比。[测试条件](docs/cpu_pl_benchmark.md) |
+| T32 批边界 | 在固定 Prefill 合同下，164 Token 为 6 批/932 次调用，159 Token 为 5 批/778 次调用；27 条板端记录支持成本阶梯。[方法与证据](docs/bact_v2.md) |
+| Web 手动复核 | 隔离版本完成两次真实视频窗口的 Web→4B/FPGA→SSE 回传，首 Token **196.286/174.653 s**；不是自动报警触发。[实验记录](experiments/m335_manual_web_review/REPORT.md) |
 
-### 离线复算 BACT-V2 结果
+分钟级的 4B 首 Token 还不能满足秒级视频语义更新。现有受限路径仅使用末帧两视图；快通道可以持续接收并丢弃过期帧，但自动刀具触发尚未得到可靠性验证。具体条件和其他结果见[结果总表](docs/results.md)与[适用边界](docs/limitations.md)。
 
-按[环境说明](docs/environment.md)准备依赖后，在仓库根目录运行：
+## 开始使用
+
+没有开发板时，可先按[环境说明](docs/environment.md)配置 Python，然后复算已冻结的 BACT 选择、成本和质量记录；命令不下载权重，也不进行新推理：
 
 ```bash
 python3 scripts/m321_reproduce_bact_v2_evidence.py --only all
 ```
 
-该命令复算已有的选择器、板端成本和历史质量评测结果，**无需 KV260 或模型权重，也不会执行新的模型推理**。
-
-### 在 KV260 上运行
-
-先阅读[快速开始](docs/quickstart.md)，按[模型资产说明](docs/model_setup.md)准备匹配的模型、硬件产物与运行环境。无设备预检可运行：
+在 KV260 上运行前，先读[安装步骤](docs/quickstart.md)、[模型与硬件资产](docs/model_setup.md)和[固定视频复现](docs/fixed_video_reproduction.md)。无设备预检入口为：
 
 ```bash
 python3 scripts/preflight.py --dry-run --config configs/deployment.example.json
 ```
 
-板端服务启动前还须按快速开始文档完成安装包逐文件校验、隔离依赖安装、同终端 sudo 授权和运行确认；**不能直接以裸 `bash scripts/run_demo.sh` 代替完整首次安装流程**。
+本地 v7 预构建包及固定视频伴随包已在维护者的 KV260 上通过独立目录安装，但尚未提供公开下载；**仅克隆此仓库不足以完成同一板端安装**。源码构建覆盖范围见[构建说明](docs/build.md)。
 
-固定视频测试采用独立入口，见[固定视频复现](docs/fixed_video_reproduction.md)。**Web 服务就绪与固定视频推理通过属于不同验证项。**
+## 阅读路线
 
-## 实测结果
-
-### 独立安装后的固定视频复现
-
-M328 在独立 v7 安装上，通过哈希校验的配套包提交原 M277 四帧样例，直接调用 4B 推理路径。
-
-| 指标 | 结果 |
+| 想了解什么 | 从这里开始 |
 | --- | --- |
-| Build ID | `0x4D395832` |
-| 逻辑 FPGA 调用次数 | 778 |
-| 输出 | `0` |
-| 首 Token 延迟，不含初始化 | 230.721 秒 |
+| 系统如何分工 | [架构](docs/architecture.md) · [源码导览](docs/source_map.md) |
+| 为什么选当前实现 | [部署与优化探索](docs/optimization_journey.md) · [BACT/Prompt](docs/bact_v2.md) |
+| 如何复核数字 | [结果总表](docs/results.md) · [实验索引](experiments/README.md) |
+| 如何部署或构建 | [快速开始](docs/quickstart.md) · [资产清单](manifests/external_assets.json) · [构建说明](docs/build.md) |
+| 来源、许可与版本 | [代码来源](docs/provenance.md) · [第三方说明](THIRD_PARTY_NOTICES.md) · [发布状态](RELEASE_READINESS.md) |
 
-该冻结运行时实际使用**末帧生成的两个视觉视图**。此结果验证了直接固定视频路径的安装复现，不代表四帧时序理解能力，也不覆盖报警触发的 Web 视频复核。
-
-复现步骤见[固定视频复现](docs/fixed_video_reproduction.md)。原始结果保存在维护者工作区的 `deployment/mage_vl4b/M328_RELEASE_VIDEO_BOARD_RESULT.json`；本文不将其作为已随仓库提供的文件链接。
-
-### 同量化 CPU／PL 单链对照
-
-M331 在 KV260 稳定 Build 上，对两个冻结 W2/W4 双 descriptor 形状各测 10 对优化 A53 CPU 与 PL 事务。CPU/PL 中位数分别为 W2 `5.891/2.244 ms`、W4 `5.871/2.525 ms`；完整输出和 DMA 状态通过。原始逐对结果、计时边界、预解包成本及离线复算命令见[CPU／PL 对照说明](docs/cpu_pl_benchmark.md)。这些数字不代表完整 4B 视频加速，M328 首 Token 基线未变。
-
-### 稳定 T32 与 Decode-one 的历史对照
-
-M325 固定视频同会话测试结果如下：
-
-| 实现 | 首 Token 延迟 | 增量步骤 1 | 增量步骤 2 | 增量步骤 3 |
-| --- | ---: | ---: | ---: | ---: |
-| 稳定 T32 | 228.531 秒 | 36.584 秒 | 36.169 秒 | 36.183 秒 |
-| 实验 Decode-one（OP01） | 241.072 秒 | 40.777 秒 | 34.763 秒 | 34.666 秒 |
-
-**第二个输出 Token 已为 EOS，后两步属于强制续跑诊断。**因此，这些增量耗时不能作为用户可见的持续生成吞吐率。当前结果也未达到 4B 实时视频分析要求。
-
-详见[原始对照记录](deployment/mage_vl4b/M325_FULL_SESSION_BOARD_RESULT.json)与[评测结果说明](docs/results.md)。
-
-## 模型与硬件资产
-
-Git 仓库不包含模型权重或 bitstream。所需文件的身份、校验值及获取状态见[外部资产清单](manifests/external_assets.json)。
-
-稳定版 M125 的语言模型与 LM Head 布局清单、8 个权重分片已从原始产物中找回，并完成 SHA-256 核对。详情见[稳定资产溯源](docs/stable_asset_provenance.md)。
-
-本地 v7 预构建 TAR 包及 M328 视频配套包已完成上述板端验证，但**尚未提供公开下载地址**。现阶段，仅克隆本仓库还不足以完成板端安装。完整源码构建的覆盖范围与验证状态见[构建说明](docs/build.md)。
-
-## 文档导航
-
-| 文档 | 内容 |
-| --- | --- |
-| [快速开始](docs/quickstart.md) | 安装步骤与运行入口 |
-| [系统架构](docs/architecture.md) | PS–PL 分工与视频处理流程 |
-| [运行环境](docs/environment.md) | 工具、软件依赖与板端要求 |
-| [模型资产](docs/model_setup.md) | 权重、配置及硬件产物准备 |
-| [固定视频复现](docs/fixed_video_reproduction.md) | 直接固定视频推理验证 |
-| [构建说明](docs/build.md) | 硬件构建流程与已验证范围 |
-| [评测结果](docs/results.md) | 测量条件、结果与证据 |
-| [CPU／PL 对照](docs/cpu_pl_benchmark.md) | M329–M331 同量化单链实板证据与复算 |
-| [源码导览](docs/source_map.md) | 稳定运行路径、研究分支与历史依赖的入口 |
-| [下一轮验证门槛](docs/next_validation.md) | 公平性能对照、BACT 质量及 Web 视频闭环的待完成实验 |
-| [已知限制](docs/limitations.md) | 性能、功能与适用范围 |
-| [代码来源](docs/provenance.md) | 上游来源与本地修改 |
-| [版本说明](docs/releases/v0.1.0.md) | 首版内容与发布状态 |
-
-## 已知限制
-
-- 当前 4B 语义推理尚不具备实时视频分析性能。
-- 报警触发的 Web 视频复核链路尚未完成独立安装验证。
-- M333 只修补连续复核调度的实验候选；KV260 CPU-only/假模型测试不能代替真实 4B Web 端到端或 FPGA 通过。
-- M334 只通过真实模块导入和发布资产前置检查；自动报警→4B→SSE 仍无真实通过记录，不能把导入 PASS 当作部署 PASS。
-- M335 在隔离候选中两次真实手动复核通过；它复用最新窗口调度，但不是自动报警，也不是四帧时序理解或秒级实时推理。原 M254 稳定入口未更改。
-- BACT-V2 的历史样本结果不能作为独立质量优势的证据。
-- Decode-one 为独立实验候选，未作为默认部署发布。
-- 本项目用于研究与原型验证，未经安全检测系统认证，不适用于无人值守的安全决策。
-
-## 许可证与第三方来源
-
-项目自有代码的许可证，以及上游衍生代码、模型和样例视频的再分发授权仍待确认。当前研究预览不表示仓库内全部内容已获得统一的开源或再分发授权。
-
-第三方来源、署名与许可信息见[第三方说明](THIRD_PARTY_NOTICES.md)和[代码来源](docs/provenance.md)。
+本仓库是研究预览，不是经过认证的安全监控产品。项目自有代码授权及部分上游文件、模型和样例的再分发条件仍需分别确认；见[发布状态](RELEASE_READINESS.md)。

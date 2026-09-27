@@ -1,26 +1,61 @@
-# Mage-VL 4B on KV260 (research preview)
+# Mage-VL 4B on KV260
 
-This repository is a source-and-evidence snapshot of a PS–PL Mage-VL 4B prototype on AMD Kria KV260. The default is the historically board-tested **M254 / M120 T32** service, Build ID `0x4D395832`. It is not a seconds-level 4B video system. BACT-V2 is an offline budget/evaluation path, not the default Web router. Decode-one Build `0x4F503131` is isolated experimentation and is not promoted.
+English · [简体中文](README.md)
 
-| Path | What can be reviewed or reproduced without a board | Board status |
-| --- | --- | --- |
-| Stable M254 | Original Python/HTML/CSS/JS, T32 HLS, historical manifests and gates | Separate v7 first install: fixed-text FPGA E2E and no-frame Web runtime ready; M328 companion: direct fixed-video 4B E2E PASS. Alarm-triggered Web video remains unverified. |
-| Native A53 CPU vs stable PL | M329–M331 results and analysis script | Ten counterbalanced pairs for each of two frozen W2/W4 chain shapes passed; not a full-model or video speedup. |
-| M335 manual Web 4B review | [Isolated source and board evidence](experiments/m335_manual_web_review/REPORT.md), [alarm-threshold feasibility audit](experiments/m335_manual_web_review/CALIBRATION_FEASIBILITY_REPORT.md) | Two real video windows passed Web→4B/FPGA→SSE with 159 tokens and 778 logical calls each; first-token times were 196.286/174.653 s. Latest frame only; automatic alarm route unverified; stable service unchanged. |
-| M336 browser-input diagnostic | [Report and machine summary](experiments/m336_browser_input/REPORT.md) | Two AI calibration frames matched the loopback receiver byte-for-byte as RGB448. A visible knife scored only 0.0524 with the unchanged detector. This is not board or real-camera accuracy evidence; automatic triggering remains unverified. |
-| BACT-V2 | Nine frozen selector candidates, 27 board-cost records, 12-clip retrospective prediction calculation | Existing KV260 cost measurements; not a new model run or independent accuracy win |
-| Decode-one | OP01 source and same-session M325 result | Experimental only; FIFO capacity long test stopped, no formal promotion |
+This is a multimodal inference research prototype for AMD Kria KV260. It asks how a 4B model can run with limited memory and a fixed T32 FPGA execution granularity, while keeping PS–PL execution and its costs measurable.
 
-The fast channel detects people/actions/knife-related events without waiting for 4B review. The default slow path is designed for alarm-triggered review; M335 adds an explicitly labeled manual review entry in an isolated candidate. Its manual path passed on board, but automatic alarm triggering did not. The 4B path uses PS vision plus T32 PL language linear operations. This is not a claim of certified safety detection. Do not use it for unattended safety decisions.
+The project includes mixed-precision weight adaptation, a PS vision tower with PL language Linear operations, an independently installed fixed-video example, and an isolated Web manual-review path. It also records experiments that did not improve the final request: a faster local parser, a T64 design that missed timing, and a generic fast detector that responded weakly to visible kitchen knives.
 
-Start with [quickstart](docs/quickstart.md) and [architecture](docs/architecture.md). `scripts/preflight.py --dry-run` is the no-device release entry; `scripts/run_demo.sh` is a gated board entry, not the old upgrade gate. Run BACT evidence reproduction with `python3 scripts/m321_reproduce_bact_v2_evidence.py --only all` in a Python 3 environment; it needs no weight download. See [model/assets](docs/model_setup.md), [environment](docs/environment.md), [build scope](docs/build.md), [results](docs/results.md), [limits](docs/limitations.md), [provenance](docs/provenance.md), and [release readiness](RELEASE_READINESS.md).
+The default board path uses stable T32 Build `0x4D395832`. Source and experimental evidence can be reviewed here. Model weights and bitstreams are excluded from Git; the verified prebuilt package has no public download link yet.
 
-The historical fixed-video same-session M325 comparison reported stable T32 TTFT **228.531 s** and three incremental steps **36.584 / 36.169 / 36.183 s**. The experimental OP01 measured **241.072 s** and **40.777 / 34.763 / 34.666 s**. The second output token was EOS; the last two steps were forced continuation diagnostics, not user-visible sustained throughput. Neither mode meets real-time 4B video analysis. See [source evidence](deployment/mage_vl4b/M325_FULL_SESSION_BOARD_RESULT.json).
+## Why hardware cost is not linear in token count
 
-For the independent v7 installation, the original four-frame M277 sample was submitted through a separate hash-locked companion and the **direct** 4B path completed: Build `0x4D395832`, 778 logical FPGA calls, output `0`, first Token **230.721 s** excluding initialization. The frozen path uses only the last frame for two visual views, and this is not proof of a Web alarm review or temporal understanding. See [fixed-video reproduction](docs/fixed_video_reproduction.md) and the owner-workspace `deployment/mage_vl4b/M328_RELEASE_VIDEO_BOARD_RESULT.json`.
+![Logical language FPGA calls at the fixed T32 batch boundary](docs/assets/t32_batch_boundary.svg)
 
-The new [same-quantization CPU/PL benchmark](docs/cpu_pl_benchmark.md) reports paired A53 CPU/PL median times of **5.891/2.244 ms** (W2) and **5.871/2.525 ms** (W4) for two frozen double-descriptor chain shapes, ten pairs each. Full numerical outputs and DMA status passed. These are single-chain implementation-level measurements, not a reduction of the 230.721 s video first-token latency.
+The plot shows **logical calls**, not full-request latency. Board and UI photographs are not yet part of the public repository; see the [architecture](docs/architecture.md) and [experiment index](experiments/README.md) for the implementation and measurements.
 
-No model weights or bitstreams are in Git. Their identity and availability are in [external assets](manifests/external_assets.json); the exact stable M125 language and LM Head layouts have been located and rehashed on the owner's WSL host ([provenance](docs/stable_asset_provenance.md)). A separate local, hash-checked v7 prebuilt TAR and M328 video companion have passed the stated owner-board gates, but **neither has a public download URL** or is part of this Git tree. The [source repository](https://github.com/3042966866liu-ops/kv260-mage-vl-4b) has been uploaded, but this is not an unrestricted asset or software release: project-source, copied upstream-code and sample-video redistribution still need owner review. See [third-party notices](THIRD_PARTY_NOTICES.md), [next validation gates](docs/next_validation.md), and [release notes](docs/releases/v0.1.0.md). No DOI, paper, or author list is asserted.
+## Main contributions
 
-中文说明：[README.zh-CN.md](README.zh-CN.md).
+1. **Fit the model to board constraints.** Choose W2/W3/W4 and selected higher-precision components by sensitivity, then lock packed weights and layouts by hash. [Engineering journey](docs/optimization_journey.md)
+2. **Build verifiable PS–PL inference.** PS handles vision, attention, normalization, and KV cache; the T32 PL kernel runs language Linear/LM Head work. Fixed-input gates check Build ID, FPGA calls, output, and CPU Linear fallback. [Architecture](docs/architecture.md) · [Source map](docs/source_map.md)
+3. **Accept optimizations by full-request measurements.** Vectorized visual W4 decoding, weight staging, and output parsing helped components; T64, Decode-one, and a parser candidate remained experimental after timing or end-to-end comparisons. [Performance analysis](docs/performance_attribution_history.md)
+4. **Align input budgets to hardware batches.** BACT-V2 studies view and prompt budgets around T32 boundaries. Moving from 164 to 159 tokens crossed the 160-token boundary and reduced logical language calls from 932 to 778. [BACT and prompt study](docs/bact_v2.md)
+
+## Representative results
+
+| Experiment | Result and scope |
+| --- | --- |
+| Independently installed fixed video | Four frames submitted in order, but only two views of the last frame used by the model; 159 input tokens, 778 logical language FPGA calls, output `0`; **230.721 s** first token excluding initialization. [Public result](experiments/fixed_video/RESULT.json) |
+| Paired CPU/PL chain | Ten interleaved pairs for each of two fixed double-descriptor shapes. A53 CPU/PL medians: W2 **5.891/2.244 ms**, W4 **5.871/2.525 ms**, about **2.63×/2.33×**. These are not whole-model speedups. [Protocol](docs/cpu_pl_benchmark.md) |
+| T32 batch boundary | For the fixed Prefill contract, 164 tokens need 6 batches/932 calls; 159 need 5 batches/778 calls. The staircase is supported by 27 board records. [Method and evidence](docs/bact_v2.md) |
+| Web manual review | An isolated version returned two real video-window Web→4B/FPGA→SSE reviews; first-token times **196.286/174.653 s**. This was not an automatic alarm trigger. [Experiment](experiments/m335_manual_web_review/REPORT.md) |
+
+Minutes-scale 4B first-token latency is not seconds-level video semantic updating. The constrained path only uses two last-frame views. The fast channel can keep accepting frames and discard stale work, but reliable automatic knife triggering has not been established. See [results](docs/results.md) and [limits](docs/limitations.md) for conditions.
+
+## Getting started
+
+Without a board, use the [environment guide](docs/environment.md) and reproduce the frozen BACT selector, cost, and quality records. This does not download weights or perform new model inference:
+
+```bash
+python3 scripts/m321_reproduce_bact_v2_evidence.py --only all
+```
+
+For KV260, read the [installation guide](docs/quickstart.md), [model and hardware assets](docs/model_setup.md), and [fixed-video reproduction](docs/fixed_video_reproduction.md). The no-device preflight is:
+
+```bash
+python3 scripts/preflight.py --dry-run --config configs/deployment.example.json
+```
+
+The local v7 prebuilt package and fixed-video companion passed an independent-directory install on the owner's KV260, but neither has a public download link. **Cloning this repository alone is insufficient to reproduce that board install.** See the [build scope](docs/build.md).
+
+## Where to read next
+
+| Question | Entry points |
+| --- | --- |
+| How is work split across PS and PL? | [Architecture](docs/architecture.md) · [Source map](docs/source_map.md) |
+| Why was this implementation selected? | [Engineering journey](docs/optimization_journey.md) · [BACT/prompt](docs/bact_v2.md) |
+| How can I inspect the numbers? | [Results](docs/results.md) · [Experiment index](experiments/README.md) |
+| How can I install or build it? | [Quickstart](docs/quickstart.md) · [Asset manifest](manifests/external_assets.json) · [Build guide](docs/build.md) |
+| What are the release and attribution terms? | [Provenance](docs/provenance.md) · [Third-party notices](THIRD_PARTY_NOTICES.md) · [Release readiness](RELEASE_READINESS.md) |
+
+This repository is a research preview, not a certified safety-monitoring product. Licensing of original code and redistribution terms for some upstream files, models, and examples require separate review; see [release readiness](RELEASE_READINESS.md).

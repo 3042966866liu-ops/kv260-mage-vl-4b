@@ -1,0 +1,33 @@
+{
+  "experiment": "independent-v7-install-direct-fixed-video",
+  "source_result_sha256": "0f46a89d37d4289536a264fd05ee2b3e94ff87af45dbc8b9e900dba570ecaf6d",
+  "source_note": "Selected fields transcribed from the owner's M328_RELEASE_VIDEO_BOARD_RESULT.json; the full UART log and private video companion are not in this repository.",
+  "board": "AMD Kria KV260",
+  "model": "Mage-VL 4B mixed-precision deployment",
+  "stable_build_id": "0x4D395832",
+  "kernel": "mage_m120_m89x2_0",
+  "entry": "direct M277/M276 fixed-video path, not the Web alarm route",
+  "input": {
+    "submitted_rgb448_frames": 4,
+    "selected_frame_indices_for_vision": [3],
+    "visual_views_from_selected_frame": 2,
+    "visual_tokens": 98,
+    "total_prompt_tokens": 159,
+    "t32_batches": 5
+  },
+  "output": {
+    "text": "0",
+    "token_id": 15,
+    "generated_tokens": 1,
+    "logical_fpga_language_calls": 778,
+    "language_cpu_linear_fallback": false
+  },
+  "timing_ms": {
+    "preprocess": 71.982,
+    "ps_vision": 43637.717,
+    "language_prefill_to_first_token": 187011.166,
+    "first_token_excluding_initialization": 230720.917,
+    "load_to_preprocess_separate": 149694.920
+  },
+  "scope": "One fixed sample after an independent local install. This does not test automatic Web triggering, four-frame temporal reasoning, sustained Decode, or generic deployment from Git alone."
+}
