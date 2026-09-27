@@ -6,7 +6,7 @@
 
 项目已完成混合精度权重适配、PS 视觉塔与 PL 语言 Linear 协同、固定视频样例的独立安装验证，以及 Web 手动语义复核。它也记录了没有奏效的优化：局部解析提速未降低完整请求时间，T64 未满足时序，通用快速检测器在现有厨房视频中难以识别菜刀。这些结果共同界定了当前实现的能力。
 
-默认板端实现采用稳定的 T32 Build `0x4D395832`。源码和实验数据可审阅；模型权重与 bitstream 不在 Git 仓库中，预构建包尚无公开下载地址。
+默认板端实现采用稳定的 T32 Build `0x4D395832`。源码和实验数据可审阅；模型权重与 bitstream 不在 Git 仓库中。项目所有者报告已将八个预构建包分片上传到 [GitHub Releases](https://github.com/3042966866liu-ops/kv260-mage-vl-4b/releases)，但 Release 中的旧两分片校验清单仍需替换，当前不能按它完成复现。
 
 ## 硬件成本为何不是线性的
 
@@ -50,7 +50,7 @@ python3 scripts/m321_reproduce_bact_v2_evidence.py --only all
 python3 scripts/preflight.py --dry-run --config configs/deployment.example.json
 ```
 
-本地 v7 预构建包及固定视频伴随包已在维护者的 KV260 上通过独立目录安装，但尚未提供公开下载；**仅克隆此仓库不足以完成同一板端安装**。源码构建覆盖范围见[构建说明](docs/build.md)。
+本地 v7 预构建包及固定视频伴随包已在维护者的 KV260 上通过独立目录安装。下载者还须取得全部八个 500 MB 分片和正确的清单，按[预构建资产说明](docs/prebuilt_release.md)验证、合并后才能安装；目前线上旧清单与分片不符，尚未完成公开下载回验。**仅克隆此仓库不足以完成同一板端安装。**源码构建覆盖范围见[构建说明](docs/build.md)。
 
 ## 阅读路线
 

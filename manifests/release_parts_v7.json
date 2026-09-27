@@ -3,17 +3,47 @@
   "source_name": "kv260-mage-vl-4b-prebuilt-install-20260926-v7.tar",
   "source_bytes": 3909191680,
   "source_sha256": "c487e16bcc18698808d7c48822e355c8b6cf291633b00d661f372f7280d41145",
-  "part_bytes_limit": 2000000000,
+  "part_bytes_limit": 500000000,
   "parts": [
     {
       "file": "kv260-mage-vl-4b-prebuilt-install-20260926-v7.tar.part01",
-      "bytes": 2000000000,
-      "sha256": "dd112211cefbe2972ad952581a902b17f3b9b648b4acd83e3973f6dd2e23276a"
+      "bytes": 500000000,
+      "sha256": "60d7d3c1e7045ee36bb8a452b8c01474cacbdc29199b01ecd1a186efb040be10"
     },
     {
       "file": "kv260-mage-vl-4b-prebuilt-install-20260926-v7.tar.part02",
-      "bytes": 1909191680,
-      "sha256": "279b7f26b279e3a54777541a66922b72a52beb5af33c486f863c056a79607b63"
+      "bytes": 500000000,
+      "sha256": "b7de4ff4f0a71df41397b5737890072f16966ddab86912113c84a53daf7aa0e0"
+    },
+    {
+      "file": "kv260-mage-vl-4b-prebuilt-install-20260926-v7.tar.part03",
+      "bytes": 500000000,
+      "sha256": "61e1c948b652ed570d8f58147212515f9ab4bdd6c9d596e81ffab501b8c32dc1"
+    },
+    {
+      "file": "kv260-mage-vl-4b-prebuilt-install-20260926-v7.tar.part04",
+      "bytes": 500000000,
+      "sha256": "5e5cca1d2edd6af941810aa16ffb97105edc9fc9fe748900414c45aea5bf16ad"
+    },
+    {
+      "file": "kv260-mage-vl-4b-prebuilt-install-20260926-v7.tar.part05",
+      "bytes": 500000000,
+      "sha256": "d94e19be5142b0e9174b99d5109a430c0020068add7dfee9d41287419aa26547"
+    },
+    {
+      "file": "kv260-mage-vl-4b-prebuilt-install-20260926-v7.tar.part06",
+      "bytes": 500000000,
+      "sha256": "35cbc6b16a5f3bacdbe4b0c9a7c96abc1c0eb8238fa59851bb36c1aa5195cfc6"
+    },
+    {
+      "file": "kv260-mage-vl-4b-prebuilt-install-20260926-v7.tar.part07",
+      "bytes": 500000000,
+      "sha256": "fc9b9a1742df21d00a94943406e8f9b346265a67a02b50b53e1bad7cea719651"
+    },
+    {
+      "file": "kv260-mage-vl-4b-prebuilt-install-20260926-v7.tar.part08",
+      "bytes": 409191680,
+      "sha256": "1ecb792ea63f92fd565111c2e8b3528dcede774ed2c4f78d7c9eb70b7beb6a20"
     }
   ]
 }
