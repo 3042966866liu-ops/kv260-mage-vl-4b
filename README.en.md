@@ -6,7 +6,7 @@ This repository is a source-and-evidence snapshot of a PS–PL Mage-VL 4B protot
 | --- | --- | --- |
 | Stable M254 | Original Python/HTML/CSS/JS, T32 HLS, historical manifests and gates | Separate v7 first install: fixed-text FPGA E2E and no-frame Web runtime ready; M328 companion: direct fixed-video 4B E2E PASS. Alarm-triggered Web video remains unverified. |
 | Native A53 CPU vs stable PL | M329–M331 results and analysis script | Ten counterbalanced pairs for each of two frozen W2/W4 chain shapes passed; not a full-model or video speedup. |
-| M335 manual Web 4B review | [Isolated source and board evidence](experiments/m335_manual_web_review/REPORT.md) | Two real video windows passed Web→4B/FPGA→SSE with 159 tokens and 778 logical calls each; first-token times were 196.286/174.653 s. Latest frame only; automatic alarm route unverified; stable service unchanged. |
+| M335 manual Web 4B review | [Isolated source and board evidence](experiments/m335_manual_web_review/REPORT.md), [alarm-threshold feasibility audit](experiments/m335_manual_web_review/CALIBRATION_FEASIBILITY_REPORT.md) | Two real video windows passed Web→4B/FPGA→SSE with 159 tokens and 778 logical calls each; first-token times were 196.286/174.653 s. Latest frame only; automatic alarm route unverified; stable service unchanged. |
 | BACT-V2 | Nine frozen selector candidates, 27 board-cost records, 12-clip retrospective prediction calculation | Existing KV260 cost measurements; not a new model run or independent accuracy win |
 | Decode-one | OP01 source and same-session M325 result | Experimental only; FIFO capacity long test stopped, no formal promotion |
 

@@ -6,7 +6,7 @@
 | --- | --- | --- |
 | 稳定 M254 | 原始 Python/网页源码、T32 HLS、历史清单与门禁 | 独立 v7 首装已通过固定文本 FPGA E2E 和无帧网页运行时；M328 伴随包的直接固定视频 4B E2E PASS。报警触发的网页视频链尚未验证。 |
 | 原生 A53 CPU／稳定 PL | M329–M331 原始结果及复算脚本 | 两个冻结 W2/W4 单链形状各 10 对交错 PASS；不是整模型或视频加速比 |
-| M335 手动 Web 4B 复核 | [隔离源码与完整报告](experiments/m335_manual_web_review/REPORT.md) | 两次真实窗口经 Web→4B/FPGA→SSE 通过，首 Token 196.286/174.653 秒；只取末帧两视图。自动报警链路未验证，稳定入口未替换 |
+| M335 手动 Web 4B 复核 | [隔离源码与完整报告](experiments/m335_manual_web_review/REPORT.md)、[校准可行性负结果](experiments/m335_manual_web_review/CALIBRATION_FEASIBILITY_REPORT.md) | 两次真实窗口经 Web→4B/FPGA→SSE 通过，首 Token 196.286/174.653 秒；只取末帧两视图。自动报警链路未验证，稳定入口未替换 |
 | BACT-V2 | 九个冻结候选、27 条实板成本记录、12 段历史预测重算 | 成本来自已有 KV260 测量；不是新模型运行或独立精度优势 |
 | Decode-one | OP01 源码和同会话 M325 结果 | 仅实验；FIFO 容量长测中止，未正式晋级 |
 

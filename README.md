@@ -27,7 +27,7 @@
 | M332 解析器优化实验 | 隔离候选代码及两种顺序的同输入固定视频 A/B | 局部短测加速，但两组端到端首 Token 均未提速；候选已归档，稳定版保留，见[结案报告](experiments/m332_parser_scale/REPORT.md) |
 | M333 连续 Web 复核调度实验 | [隔离代码与报告](experiments/m333_web_review_loop/REPORT.md)、[KV260 子门禁](experiments/m333_web_review_loop/BOARD_REPORT.md) | 板端假引擎调度 13 项及真实 HTTP Handler/假模型 SSE 13 项通过；尚未测真实检测器、4B 或 FPGA，未替换默认 M254 |
 | M334 真实模块与资产前置检查 | [板端导入及触发夹具审计](experiments/m333_web_review_loop/M334_IMPORT_TRIGGER_AUDIT.md) | 实际 M333/M254 模块导入与发布资产身份检查通过；既有视频抽样未触发原 0.80 报警阈值，未运行真实 Web 4B 复核 |
-| M335 手动 Web 4B 复核 | [隔离源码、实板结果和负结果](experiments/m335_manual_web_review/REPORT.md) | 两次真实视频窗口手动复核经 Web→4B/FPGA→SSE 通过，159 Token、每次 778 调用；只用末帧两视图，首 Token 约 196/175 秒。自动报警未验证，候选未替换稳定服务 |
+| M335 手动 Web 4B 复核 | [隔离源码、实板结果和负结果](experiments/m335_manual_web_review/REPORT.md)、[报警阈值可行性审计](experiments/m335_manual_web_review/CALIBRATION_FEASIBILITY_REPORT.md) | 两次真实视频窗口手动复核经 Web→4B/FPGA→SSE 通过，159 Token、每次 778 调用；只用末帧两视图，首 Token 约 196/175 秒。自动报警未验证；六段校准视频显示仅调报警阈值不可行。候选未替换稳定服务 |
 | BACT-V2 | 9 个冻结候选配置、27 条板端成本记录、12 段历史视频预测 | 支持离线复算；尚未证明独立数据上的质量优势，未接入网页默认路由 |
 | Decode-one | OP01 源码与 M325 同会话对照结果 | 实验版本，Build ID `0x4F503131`；FIFO 容量长测已中止，未替换稳定版 |
 

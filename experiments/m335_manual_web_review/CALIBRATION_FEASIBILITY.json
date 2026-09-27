@@ -1,0 +1,82 @@
+{
+  "gate": "M335-fast-knife-calibration-feasibility",
+  "status": "NO_FEASIBLE_ALARM_ONLY_THRESHOLD",
+  "scope": "Six human-labeled AI-generated calibration clips, OpenCV approximate browser crop; no board or held-out test run",
+  "checkpoint_sha256": "a79551df90c79834bcd3bb3845ef9d966b5449a3a9b2833ae8404778ca5d65d2",
+  "labels_sha256": "9a60bfe6fc0c58b3340897744d2f9b4297ff39e5ec79cb5ad66fba8bf61d9055",
+  "scan_inputs": [
+    {
+      "path": "tmp\\m335\\calibration_remaining_full.json",
+      "sha256": "b40923d32c01033240708e2005b92b9f364a8e3f1d7a922150c37714560a7b1a"
+    },
+    {
+      "path": "tmp\\m335\\continuous_two_clip_scan.json",
+      "sha256": "e634168d67c5d7c30a365a5d1d42e4500fec0b2cf982021c5fd0bc29b34a1bb1"
+    }
+  ],
+  "current_safe_threshold": 0.2,
+  "current_alarm_threshold": 0.8,
+  "policy_requires_safe_below_alarm": true,
+  "positive_clips": 3,
+  "negative_clips": 3,
+  "total_frames": 1734,
+  "rows": [
+    {
+      "video": "cal_falling_no_knife_01.mp4",
+      "video_sha256": "3fd2c968a97d82222ac5079dd796aa2e0f77b712ed4dae4263967cb2785cb2e0",
+      "knife_present_human": false,
+      "frames": 289,
+      "raw_max_knife_score": null,
+      "runtime_max_knife_score": 0.0,
+      "original_policy_alarm_count": 0
+    },
+    {
+      "video": "cal_fighting_no_knife_01.mp4",
+      "video_sha256": "f0b10fe23df78a0beda94ff067162c5de0af35073edb0706363c5a83610c3902",
+      "knife_present_human": false,
+      "frames": 289,
+      "raw_max_knife_score": null,
+      "runtime_max_knife_score": 0.0,
+      "original_policy_alarm_count": 0
+    },
+    {
+      "video": "cal_idle_knife_01.mp4",
+      "video_sha256": "364a316054d9be0c8550acc3ee0c1d227486ef23045f3b75cb72f9fd0913916f",
+      "knife_present_human": true,
+      "frames": 289,
+      "raw_max_knife_score": null,
+      "runtime_max_knife_score": 0.0,
+      "original_policy_alarm_count": 0
+    },
+    {
+      "video": "cal_walking_knife_01.mp4",
+      "video_sha256": "43fb67c6411938bd88c2698ca9233f58f6fb6987ae9d2f7b24a2b38e170be56b",
+      "knife_present_human": true,
+      "frames": 289,
+      "raw_max_knife_score": 0.028568629175424576,
+      "runtime_max_knife_score": 0.0,
+      "original_policy_alarm_count": 0
+    },
+    {
+      "video": "cal_working_knife_02.mp4",
+      "video_sha256": "dfd917f8126de358e2d86bbab06ee918bb824320e7aa18350db88b64b6173a90",
+      "knife_present_human": true,
+      "frames": 289,
+      "raw_max_knife_score": 0.14781296253204346,
+      "runtime_max_knife_score": 0.14781296253204346,
+      "original_policy_alarm_count": 0
+    },
+    {
+      "video": "cal_working_no_knife_01.mp4",
+      "video_sha256": "340a3274e80ce22bb95fbfd8c16dec2f4f3907b97434cbc8787f5479a53a5970",
+      "knife_present_human": false,
+      "frames": 289,
+      "raw_max_knife_score": null,
+      "runtime_max_knife_score": 0.0,
+      "original_policy_alarm_count": 0
+    }
+  ],
+  "held_out_test_clips_scanned": false,
+  "thresholds_modified": false,
+  "candidate_promoted": false
+}

@@ -1,0 +1,4669 @@
+{
+  "gate": "M333-historical-real-detector-trigger-search",
+  "status": "MEASURED",
+  "classification": "Host fixture search with approximate browser crop; no board alarm or quality claim",
+  "checkpoint_sha256": "a79551df90c79834bcd3bb3845ef9d966b5449a3a9b2833ae8404778ca5d65d2",
+  "unchanged_alarm_threshold": 0.8,
+  "videos": [
+    {
+      "video": "cal_falling_no_knife_01.mp4",
+      "sha256": "3fd2c968a97d82222ac5079dd796aa2e0f77b712ed4dae4263967cb2785cb2e0",
+      "frames": 289,
+      "max_knife_score": null,
+      "sampled_alarm_count": 0,
+      "samples": [
+        {
+          "frame_index": 0,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 1,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 2,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 3,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 4,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 5,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 6,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 7,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 8,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 9,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 10,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 11,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 12,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 13,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 14,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 15,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 16,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 17,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 18,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 19,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 20,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 21,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 22,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 23,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 24,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 25,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 26,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 27,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 28,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 29,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 30,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 31,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 32,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 33,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 34,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 35,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 36,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 37,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 38,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 39,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 40,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 41,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 42,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 43,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 44,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 45,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 46,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 47,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 48,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 49,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 50,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 51,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 52,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 53,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 54,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 55,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 56,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 57,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 58,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 59,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 60,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 61,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 62,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 63,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 64,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 65,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 66,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 67,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 68,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 69,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 70,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 71,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 72,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 73,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 74,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 75,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 76,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 77,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 78,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 79,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 80,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 81,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 82,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 83,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 84,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 85,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 86,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 87,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 88,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 89,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 90,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 91,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 92,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 93,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 94,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 95,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 96,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 97,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 98,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 99,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 100,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 101,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 102,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 103,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 104,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 105,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 106,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 107,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 108,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 109,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 110,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 111,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 112,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 113,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 114,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 115,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 116,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 117,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 118,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 119,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 120,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 121,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 122,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 123,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 124,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 125,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 126,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 127,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 128,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 129,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 130,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 131,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 132,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 133,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 134,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 135,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 136,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 137,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 138,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 139,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 140,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 141,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 142,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 143,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 144,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 145,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 146,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 147,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 148,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 149,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 150,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 151,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 152,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 153,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 154,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 155,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 156,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 157,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 158,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 159,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 160,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 161,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 162,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 163,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 164,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 165,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 166,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 167,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 168,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 169,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 170,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 171,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 172,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 173,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 174,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 175,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 176,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 177,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 178,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 179,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 180,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 181,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 182,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 183,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 184,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 185,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 186,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 187,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 188,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 189,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 190,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 191,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 192,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 193,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 194,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 195,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 196,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 197,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 198,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 199,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 200,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 201,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 202,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 203,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 204,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 205,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 206,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 207,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 208,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 209,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 210,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 211,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 212,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 213,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 214,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 215,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 216,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 217,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 218,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 219,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 220,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 221,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 222,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 223,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 224,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 225,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 226,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 227,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 228,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 229,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 230,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 231,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 232,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 233,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 234,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 235,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 236,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 237,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 238,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 239,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 240,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 241,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 242,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 243,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 244,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 245,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 246,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 247,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 248,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 249,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 250,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 251,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 252,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 253,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 254,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 255,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 256,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 257,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 258,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 259,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 260,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 261,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 262,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 263,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 264,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 265,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 266,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 267,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 268,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 269,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 270,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 271,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 272,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 273,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 274,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 275,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 276,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 277,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 278,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 279,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 280,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 281,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 282,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 283,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 284,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 285,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 286,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 287,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 288,
+          "knife_top_score": null
+        }
+      ]
+    },
+    {
+      "video": "cal_fighting_no_knife_01.mp4",
+      "sha256": "f0b10fe23df78a0beda94ff067162c5de0af35073edb0706363c5a83610c3902",
+      "frames": 289,
+      "max_knife_score": null,
+      "sampled_alarm_count": 0,
+      "samples": [
+        {
+          "frame_index": 0,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 1,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 2,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 3,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 4,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 5,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 6,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 7,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 8,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 9,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 10,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 11,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 12,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 13,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 14,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 15,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 16,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 17,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 18,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 19,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 20,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 21,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 22,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 23,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 24,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 25,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 26,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 27,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 28,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 29,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 30,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 31,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 32,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 33,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 34,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 35,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 36,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 37,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 38,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 39,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 40,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 41,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 42,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 43,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 44,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 45,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 46,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 47,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 48,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 49,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 50,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 51,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 52,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 53,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 54,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 55,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 56,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 57,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 58,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 59,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 60,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 61,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 62,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 63,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 64,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 65,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 66,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 67,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 68,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 69,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 70,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 71,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 72,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 73,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 74,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 75,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 76,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 77,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 78,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 79,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 80,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 81,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 82,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 83,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 84,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 85,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 86,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 87,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 88,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 89,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 90,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 91,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 92,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 93,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 94,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 95,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 96,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 97,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 98,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 99,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 100,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 101,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 102,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 103,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 104,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 105,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 106,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 107,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 108,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 109,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 110,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 111,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 112,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 113,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 114,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 115,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 116,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 117,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 118,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 119,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 120,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 121,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 122,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 123,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 124,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 125,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 126,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 127,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 128,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 129,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 130,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 131,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 132,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 133,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 134,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 135,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 136,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 137,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 138,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 139,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 140,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 141,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 142,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 143,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 144,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 145,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 146,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 147,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 148,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 149,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 150,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 151,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 152,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 153,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 154,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 155,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 156,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 157,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 158,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 159,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 160,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 161,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 162,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 163,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 164,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 165,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 166,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 167,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 168,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 169,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 170,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 171,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 172,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 173,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 174,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 175,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 176,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 177,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 178,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 179,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 180,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 181,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 182,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 183,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 184,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 185,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 186,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 187,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 188,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 189,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 190,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 191,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 192,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 193,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 194,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 195,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 196,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 197,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 198,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 199,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 200,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 201,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 202,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 203,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 204,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 205,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 206,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 207,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 208,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 209,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 210,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 211,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 212,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 213,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 214,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 215,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 216,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 217,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 218,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 219,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 220,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 221,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 222,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 223,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 224,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 225,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 226,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 227,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 228,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 229,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 230,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 231,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 232,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 233,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 234,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 235,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 236,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 237,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 238,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 239,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 240,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 241,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 242,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 243,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 244,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 245,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 246,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 247,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 248,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 249,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 250,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 251,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 252,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 253,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 254,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 255,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 256,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 257,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 258,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 259,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 260,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 261,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 262,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 263,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 264,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 265,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 266,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 267,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 268,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 269,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 270,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 271,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 272,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 273,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 274,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 275,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 276,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 277,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 278,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 279,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 280,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 281,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 282,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 283,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 284,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 285,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 286,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 287,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 288,
+          "knife_top_score": null
+        }
+      ]
+    },
+    {
+      "video": "cal_idle_knife_01.mp4",
+      "sha256": "364a316054d9be0c8550acc3ee0c1d227486ef23045f3b75cb72f9fd0913916f",
+      "frames": 289,
+      "max_knife_score": null,
+      "sampled_alarm_count": 0,
+      "samples": [
+        {
+          "frame_index": 0,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 1,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 2,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 3,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 4,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 5,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 6,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 7,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 8,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 9,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 10,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 11,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 12,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 13,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 14,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 15,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 16,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 17,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 18,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 19,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 20,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 21,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 22,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 23,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 24,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 25,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 26,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 27,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 28,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 29,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 30,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 31,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 32,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 33,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 34,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 35,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 36,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 37,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 38,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 39,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 40,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 41,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 42,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 43,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 44,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 45,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 46,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 47,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 48,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 49,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 50,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 51,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 52,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 53,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 54,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 55,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 56,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 57,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 58,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 59,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 60,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 61,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 62,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 63,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 64,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 65,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 66,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 67,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 68,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 69,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 70,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 71,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 72,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 73,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 74,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 75,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 76,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 77,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 78,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 79,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 80,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 81,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 82,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 83,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 84,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 85,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 86,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 87,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 88,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 89,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 90,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 91,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 92,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 93,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 94,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 95,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 96,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 97,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 98,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 99,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 100,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 101,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 102,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 103,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 104,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 105,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 106,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 107,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 108,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 109,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 110,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 111,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 112,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 113,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 114,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 115,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 116,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 117,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 118,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 119,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 120,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 121,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 122,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 123,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 124,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 125,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 126,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 127,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 128,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 129,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 130,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 131,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 132,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 133,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 134,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 135,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 136,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 137,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 138,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 139,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 140,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 141,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 142,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 143,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 144,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 145,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 146,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 147,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 148,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 149,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 150,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 151,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 152,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 153,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 154,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 155,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 156,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 157,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 158,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 159,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 160,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 161,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 162,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 163,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 164,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 165,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 166,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 167,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 168,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 169,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 170,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 171,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 172,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 173,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 174,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 175,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 176,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 177,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 178,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 179,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 180,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 181,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 182,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 183,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 184,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 185,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 186,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 187,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 188,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 189,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 190,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 191,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 192,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 193,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 194,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 195,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 196,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 197,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 198,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 199,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 200,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 201,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 202,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 203,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 204,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 205,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 206,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 207,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 208,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 209,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 210,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 211,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 212,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 213,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 214,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 215,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 216,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 217,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 218,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 219,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 220,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 221,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 222,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 223,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 224,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 225,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 226,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 227,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 228,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 229,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 230,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 231,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 232,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 233,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 234,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 235,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 236,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 237,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 238,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 239,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 240,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 241,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 242,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 243,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 244,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 245,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 246,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 247,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 248,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 249,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 250,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 251,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 252,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 253,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 254,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 255,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 256,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 257,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 258,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 259,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 260,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 261,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 262,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 263,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 264,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 265,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 266,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 267,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 268,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 269,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 270,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 271,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 272,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 273,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 274,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 275,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 276,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 277,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 278,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 279,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 280,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 281,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 282,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 283,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 284,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 285,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 286,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 287,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 288,
+          "knife_top_score": null
+        }
+      ]
+    },
+    {
+      "video": "cal_walking_knife_01.mp4",
+      "sha256": "43fb67c6411938bd88c2698ca9233f58f6fb6987ae9d2f7b24a2b38e170be56b",
+      "frames": 289,
+      "max_knife_score": 0.028568629175424576,
+      "sampled_alarm_count": 0,
+      "samples": [
+        {
+          "frame_index": 0,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 1,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 2,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 3,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 4,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 5,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 6,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 7,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 8,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 9,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 10,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 11,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 12,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 13,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 14,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 15,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 16,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 17,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 18,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 19,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 20,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 21,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 22,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 23,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 24,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 25,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 26,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 27,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 28,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 29,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 30,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 31,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 32,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 33,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 34,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 35,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 36,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 37,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 38,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 39,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 40,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 41,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 42,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 43,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 44,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 45,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 46,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 47,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 48,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 49,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 50,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 51,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 52,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 53,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 54,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 55,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 56,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 57,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 58,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 59,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 60,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 61,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 62,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 63,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 64,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 65,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 66,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 67,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 68,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 69,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 70,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 71,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 72,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 73,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 74,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 75,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 76,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 77,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 78,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 79,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 80,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 81,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 82,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 83,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 84,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 85,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 86,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 87,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 88,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 89,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 90,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 91,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 92,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 93,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 94,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 95,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 96,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 97,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 98,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 99,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 100,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 101,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 102,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 103,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 104,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 105,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 106,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 107,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 108,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 109,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 110,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 111,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 112,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 113,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 114,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 115,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 116,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 117,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 118,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 119,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 120,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 121,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 122,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 123,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 124,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 125,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 126,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 127,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 128,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 129,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 130,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 131,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 132,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 133,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 134,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 135,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 136,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 137,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 138,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 139,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 140,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 141,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 142,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 143,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 144,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 145,
+          "knife_top_score": 0.01552662905305624
+        },
+        {
+          "frame_index": 146,
+          "knife_top_score": 0.015747586265206337
+        },
+        {
+          "frame_index": 147,
+          "knife_top_score": 0.01789083145558834
+        },
+        {
+          "frame_index": 148,
+          "knife_top_score": 0.015643056482076645
+        },
+        {
+          "frame_index": 149,
+          "knife_top_score": 0.017181895673274994
+        },
+        {
+          "frame_index": 150,
+          "knife_top_score": 0.020813612267374992
+        },
+        {
+          "frame_index": 151,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 152,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 153,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 154,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 155,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 156,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 157,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 158,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 159,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 160,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 161,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 162,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 163,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 164,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 165,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 166,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 167,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 168,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 169,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 170,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 171,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 172,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 173,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 174,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 175,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 176,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 177,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 178,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 179,
+          "knife_top_score": 0.012769007124006748
+        },
+        {
+          "frame_index": 180,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 181,
+          "knife_top_score": 0.020946549251675606
+        },
+        {
+          "frame_index": 182,
+          "knife_top_score": 0.028568629175424576
+        },
+        {
+          "frame_index": 183,
+          "knife_top_score": 0.013878357596695423
+        },
+        {
+          "frame_index": 184,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 185,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 186,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 187,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 188,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 189,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 190,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 191,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 192,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 193,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 194,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 195,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 196,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 197,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 198,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 199,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 200,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 201,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 202,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 203,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 204,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 205,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 206,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 207,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 208,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 209,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 210,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 211,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 212,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 213,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 214,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 215,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 216,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 217,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 218,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 219,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 220,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 221,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 222,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 223,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 224,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 225,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 226,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 227,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 228,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 229,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 230,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 231,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 232,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 233,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 234,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 235,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 236,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 237,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 238,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 239,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 240,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 241,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 242,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 243,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 244,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 245,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 246,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 247,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 248,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 249,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 250,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 251,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 252,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 253,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 254,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 255,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 256,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 257,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 258,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 259,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 260,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 261,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 262,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 263,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 264,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 265,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 266,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 267,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 268,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 269,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 270,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 271,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 272,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 273,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 274,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 275,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 276,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 277,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 278,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 279,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 280,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 281,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 282,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 283,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 284,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 285,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 286,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 287,
+          "knife_top_score": null
+        },
+        {
+          "frame_index": 288,
+          "knife_top_score": null
+        }
+      ]
+    }
+  ]
+}
