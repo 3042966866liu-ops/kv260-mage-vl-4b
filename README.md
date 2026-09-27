@@ -10,9 +10,13 @@
 
 ## 硬件成本为何不是线性的
 
+![项目使用的 AMD Kria KV260 实物板卡](docs/assets/kv260-board.jpg)
+
+上图为本项目使用的 KV260 实物照片，由项目所有者提供并同意公开。网页截图和原始监控视频不随仓库发布。
+
 ![固定 T32 执行粒度下的语言逻辑调用阶梯](docs/assets/t32_batch_boundary.svg)
 
-上图是固定语言 Prefill 几何的**逻辑调用数**，不是整请求时延。板卡连接与网页演示的实拍素材尚未纳入公开仓库；[系统架构](docs/architecture.md)说明 PS–PL 分工，[实验索引](experiments/README.md)保留原始测量。
+成本图显示固定语言 Prefill 几何的**逻辑调用数**，不是整请求时延。[系统架构](docs/architecture.md)说明 PS–PL 分工，[实验索引](experiments/README.md)保留原始测量。
 
 ## 主要工作
 

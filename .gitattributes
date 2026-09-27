@@ -8,6 +8,9 @@ scripts/optimization/*.cpp text eol=lf
 scripts/optimization/*.sh text eol=lf
 configs/*.json text eol=lf
 docs/** text eol=lf
+docs/assets/*.jpg -text !eol
+docs/assets/*.jpeg -text !eol
+docs/assets/*.png -text !eol
 *.md text eol=lf
 deployment/** -text
 hls/** -text

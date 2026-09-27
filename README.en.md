@@ -10,9 +10,13 @@ The default board path uses stable T32 Build `0x4D395832`. Source and experiment
 
 ## Why hardware cost is not linear in token count
 
+![The AMD Kria KV260 board used in this project](docs/assets/kv260-board.jpg)
+
+The project owner supplied this photograph and approved its publication. UI screenshots and original monitoring videos are not included in the repository.
+
 ![Logical language FPGA calls at the fixed T32 batch boundary](docs/assets/t32_batch_boundary.svg)
 
-The plot shows **logical calls**, not full-request latency. Board and UI photographs are not yet part of the public repository; see the [architecture](docs/architecture.md) and [experiment index](experiments/README.md) for the implementation and measurements.
+The plot shows **logical calls**, not full-request latency; see the [architecture](docs/architecture.md) and [experiment index](experiments/README.md) for the implementation and measurements.
 
 ## Main contributions
 
