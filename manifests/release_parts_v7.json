@@ -1,0 +1,19 @@
+{
+  "schema": "kv260-release-parts-v1",
+  "source_name": "kv260-mage-vl-4b-prebuilt-install-20260926-v7.tar",
+  "source_bytes": 3909191680,
+  "source_sha256": "c487e16bcc18698808d7c48822e355c8b6cf291633b00d661f372f7280d41145",
+  "part_bytes_limit": 2000000000,
+  "parts": [
+    {
+      "file": "kv260-mage-vl-4b-prebuilt-install-20260926-v7.tar.part01",
+      "bytes": 2000000000,
+      "sha256": "dd112211cefbe2972ad952581a902b17f3b9b648b4acd83e3973f6dd2e23276a"
+    },
+    {
+      "file": "kv260-mage-vl-4b-prebuilt-install-20260926-v7.tar.part02",
+      "bytes": 1909191680,
+      "sha256": "279b7f26b279e3a54777541a66922b72a52beb5af33c486f863c056a79607b63"
+    }
+  ]
+}

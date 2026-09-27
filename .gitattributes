@@ -2,6 +2,10 @@
 scripts/preflight.py text eol=lf
 scripts/check_release.py text eol=lf
 scripts/run_demo.sh text eol=lf
+scripts/release_parts.py text eol=lf
+scripts/test_release_parts.py text eol=lf
+manifests/release_parts_v7.json text eol=lf
+LICENSE text eol=lf
 scripts/optimization/*.py text eol=lf
 scripts/optimization/*.js text eol=lf
 scripts/optimization/*.cpp text eol=lf

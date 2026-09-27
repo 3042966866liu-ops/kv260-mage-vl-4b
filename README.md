@@ -44,7 +44,7 @@
 python3 scripts/m321_reproduce_bact_v2_evidence.py --only all
 ```
 
-在 KV260 上运行前，先读[安装步骤](docs/quickstart.md)、[模型与硬件资产](docs/model_setup.md)和[固定视频复现](docs/fixed_video_reproduction.md)。无设备预检入口为：
+在 KV260 上运行前，先读[安装步骤](docs/quickstart.md)、[预构建资产及校验](docs/prebuilt_release.md)、[模型与硬件资产](docs/model_setup.md)和[固定视频复现](docs/fixed_video_reproduction.md)。无设备预检入口为：
 
 ```bash
 python3 scripts/preflight.py --dry-run --config configs/deployment.example.json
@@ -60,6 +60,6 @@ python3 scripts/preflight.py --dry-run --config configs/deployment.example.json
 | 为什么选当前实现 | [部署与优化探索](docs/optimization_journey.md) · [BACT/Prompt](docs/bact_v2.md) |
 | 如何复核数字 | [结果总表](docs/results.md) · [实验索引](experiments/README.md) |
 | 如何部署或构建 | [快速开始](docs/quickstart.md) · [资产清单](manifests/external_assets.json) · [构建说明](docs/build.md) |
-| 来源、许可与版本 | [代码来源](docs/provenance.md) · [第三方说明](THIRD_PARTY_NOTICES.md) · [发布状态](RELEASE_READINESS.md) |
+| 来源、许可与版本 | [原创代码许可范围](LICENSE_SCOPE.md) · [代码来源](docs/provenance.md) · [第三方说明](THIRD_PARTY_NOTICES.md) · [发布状态](RELEASE_READINESS.md) |
 
-本仓库是研究预览，不是经过认证的安全监控产品。项目自有代码授权及部分上游文件、模型和样例的再分发条件仍需分别确认；见[发布状态](RELEASE_READINESS.md)。
+本仓库是研究预览，不是经过认证的安全监控产品。项目所有者已为有权授权的原创代码选择 Apache-2.0；第三方文件、模型与样例仍保留各自的许可及再分发条件。见[许可范围](LICENSE_SCOPE.md)与[发布状态](RELEASE_READINESS.md)。

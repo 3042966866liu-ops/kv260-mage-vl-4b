@@ -44,7 +44,7 @@ Without a board, use the [environment guide](docs/environment.md) and reproduce 
 python3 scripts/m321_reproduce_bact_v2_evidence.py --only all
 ```
 
-For KV260, read the [installation guide](docs/quickstart.md), [model and hardware assets](docs/model_setup.md), and [fixed-video reproduction](docs/fixed_video_reproduction.md). The no-device preflight is:
+For KV260, read the [installation guide](docs/quickstart.md), [prebuilt assets and verification](docs/prebuilt_release.md), [model and hardware assets](docs/model_setup.md), and [fixed-video reproduction](docs/fixed_video_reproduction.md). The no-device preflight is:
 
 ```bash
 python3 scripts/preflight.py --dry-run --config configs/deployment.example.json
@@ -60,6 +60,6 @@ The local v7 prebuilt package and fixed-video companion passed an independent-di
 | Why was this implementation selected? | [Engineering journey](docs/optimization_journey.md) · [BACT/prompt](docs/bact_v2.md) |
 | How can I inspect the numbers? | [Results](docs/results.md) · [Experiment index](experiments/README.md) |
 | How can I install or build it? | [Quickstart](docs/quickstart.md) · [Asset manifest](manifests/external_assets.json) · [Build guide](docs/build.md) |
-| What are the release and attribution terms? | [Provenance](docs/provenance.md) · [Third-party notices](THIRD_PARTY_NOTICES.md) · [Release readiness](RELEASE_READINESS.md) |
+| What are the release and attribution terms? | [Original-code license scope](LICENSE_SCOPE.md) · [Provenance](docs/provenance.md) · [Third-party notices](THIRD_PARTY_NOTICES.md) · [Release readiness](RELEASE_READINESS.md) |
 
-This repository is a research preview, not a certified safety-monitoring product. Licensing of original code and redistribution terms for some upstream files, models, and examples require separate review; see [release readiness](RELEASE_READINESS.md).
+This repository is a research preview, not a certified safety-monitoring product. The owner selected Apache-2.0 for original work they have the right to license; third-party files, models, and examples retain their own terms. See the [license scope](LICENSE_SCOPE.md) and [release readiness](RELEASE_READINESS.md).
