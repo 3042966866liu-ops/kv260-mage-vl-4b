@@ -6,7 +6,7 @@ This is a multimodal inference research prototype for AMD Kria KV260. It asks ho
 
 The project includes mixed-precision weight adaptation, a PS vision tower with PL language Linear operations, an independently installed fixed-video example, and an isolated Web manual-review path. It also records experiments that did not improve the final request: a faster local parser, a T64 design that missed timing, and a generic fast detector that responded weakly to visible kitchen knives.
 
-The default board path uses stable T32 Build `0x4D395832`. Source and experimental evidence can be reviewed here. Model weights and bitstreams are excluded from Git. The owner reports eight prebuilt parts uploaded to [GitHub Releases](https://github.com/3042966866liu-ops/kv260-mage-vl-4b/releases), but the old two-part Release manifest must be replaced before readers can reproduce the archive.
+The default board path uses stable T32 Build `0x4D395832`. Source and experimental evidence can be reviewed here. Model weights and bitstreams are excluded from Git. [GitHub Releases](https://github.com/3042966866liu-ops/kv260-mage-vl-4b/releases) provides eight prebuilt parts, the fixed-video companion, and the matching eight-part `RELEASE_PARTS.json`; downloaders must verify the files against that manifest.
 
 ## Why hardware cost is not linear in token count
 
@@ -50,7 +50,7 @@ For KV260, read the [installation guide](docs/quickstart.md), [prebuilt assets a
 python3 scripts/preflight.py --dry-run --config configs/deployment.example.json
 ```
 
-The local v7 prebuilt package and fixed-video companion passed an independent-directory install on the owner's KV260. Downloaders also need all eight 500 MB parts and the corrected manifest; the currently reported Release manifest mismatch blocks the documented verification path. The uploaded copies have not been independently downloaded and rehashed. **Cloning this repository alone is insufficient to reproduce that board install.** See the [prebuilt asset instructions](docs/prebuilt_release.md) and [build scope](docs/build.md).
+The local v7 prebuilt package and fixed-video companion passed an independent-directory install on the owner's KV260. Downloaders can obtain all eight parts and `RELEASE_PARTS.json` from the Release, then verify and assemble them using the [prebuilt asset instructions](docs/prebuilt_release.md). The Release manifest has been checked as the eight-part version; a complete download, reassembly, and hash check of the public parts has not been recorded. **Cloning this repository alone is insufficient to reproduce that board install.** See the [build scope](docs/build.md).
 
 ## Where to read next
 

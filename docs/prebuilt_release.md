@@ -3,10 +3,9 @@
 The stable installation is the hash-locked M327 v7 archive for Build
 `0x4D395832`. It was independently installed and exercised on the owner's
 KV260. The Git repository alone does not contain its model weights or
-bitstream. The owner reports that the eight 500 MB release parts below were
-uploaded to [GitHub Releases](https://github.com/3042966866liu-ops/kv260-mage-vl-4b/releases).
-The old two-part `RELEASE_PARTS.json` attachment is incompatible and must be
-replaced before this Release is usable. Do not substitute similarly named
+bitstream. The eight release parts below and the matching eight-part
+`RELEASE_PARTS.json` are available from [GitHub Releases](https://github.com/3042966866liu-ops/kv260-mage-vl-4b/releases).
+Do not substitute similarly named
 older v2–v6 archives or mix the 2 GB and 500 MB splits.
 
 | Asset | Bytes | SHA-256 |
@@ -26,35 +25,25 @@ GitHub Releases require each individual asset to be under 2 GiB. The first
 re-split into smaller upload parts without altering the original TAR. The exact machine
 manifest is [`release_parts_v7.json`](../manifests/release_parts_v7.json).
 The upload source is the owner's local `release_staging/distribution_v7_500mb/`
-directory; it is not a reader download path. The owner's report of uploaded
-assets is not a download-and-reassembly check of the GitHub copies.
+directory; it is not a reader download path. The Release manifest has been
+downloaded and checked as the eight-part version; the public archive parts
+have not undergone a recorded complete download-and-reassembly check.
 
-Download all eight parts into one host directory. The Release's existing
-two-part `RELEASE_PARTS.json` is stale: **do not use it**. Until its attachment
-is replaced, copy this repository's [corrected eight-part manifest](../manifests/release_parts_v7.json)
-into the download directory as `RELEASE_PARTS.json`. After replacement, the
-Release copy is usable only if it lists eight parts and `part_bytes_limit` is
-`500000000`. Verify every part and the combined stream before assembling.
+Download all eight parts and `RELEASE_PARTS.json` from the same Release into
+one host directory. The manifest should list eight parts with
+`part_bytes_limit` of `500000000`; the repository copy is
+[release_parts_v7.json](../manifests/release_parts_v7.json). Verify every part
+and the combined stream before assembling.
 The verifier refuses a missing, altered, or repeated part. It does not
 contact a board or run a model.
 
 ```sh
-# Run from the cloned repository root; keep all eight downloaded parts together.
-cp manifests/release_parts_v7.json /path/to/downloads/RELEASE_PARTS.json
+# Run from the cloned repository root; keep the downloaded manifest and eight parts together.
 python3 scripts/release_parts.py verify /path/to/downloads/RELEASE_PARTS.json
 python3 scripts/release_parts.py assemble /path/to/downloads/RELEASE_PARTS.json /path/to/kv260-mage-vl-4b-prebuilt-install-20260926-v7.tar
 ```
 
-Once the Release attachment has been replaced and checked, its corrected
-`RELEASE_PARTS.json` can be used in place of the copied repository manifest:
-
-```sh
-python3 scripts/release_parts.py verify /path/to/RELEASE_PARTS.json
-python3 scripts/release_parts.py assemble /path/to/RELEASE_PARTS.json /path/to/kv260-mage-vl-4b-prebuilt-install-20260926-v7.tar
-```
-
-The Release must provide the corrected `RELEASE_PARTS.json` alongside all eight
-parts; the same manifest is versioned in this repository. The `assemble`
+The same manifest is versioned in this repository. The `assemble`
 command refuses to overwrite an existing output and checks the complete TAR
 SHA-256 before finalizing it. It requires roughly another 3.9 GB of host disk
 space. Do not assemble on a nearly full KV260 microSD.
