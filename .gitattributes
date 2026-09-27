@@ -1,7 +1,9 @@
+/.gitattributes text eol=lf
 scripts/preflight.py text eol=lf
 scripts/check_release.py text eol=lf
 scripts/run_demo.sh text eol=lf
 scripts/optimization/*.py text eol=lf
+scripts/optimization/*.js text eol=lf
 scripts/optimization/*.cpp text eol=lf
 scripts/optimization/*.sh text eol=lf
 configs/*.json text eol=lf

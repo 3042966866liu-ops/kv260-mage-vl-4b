@@ -1,0 +1,32 @@
+{
+  "gate": "M336-browser-input-and-detector-diagnostic",
+  "status": "PASS_BROWSER_TRANSPORT_ONLY_DETECTOR_WEAK",
+  "scope": "Two AI-generated calibration still frames at 4.8 s; Chrome loopback receiver and WSL GPU detector, no KV260 or held-out test",
+  "m335_app_js_sha256": "3aa35208a7739cb9068796735aec78410f39f94d48041f0b41bf3cf397dfd95e",
+  "m249_checkpoint_sha256": "a79551df90c79834bcd3bb3845ef9d966b5449a3a9b2833ae8404778ca5d65d2",
+  "browser": "Google Chrome 153.0.8010.53",
+  "shape": [448, 448, 3],
+  "frame_bytes": 602112,
+  "positive": {
+    "video": "cal_working_knife_02.mp4",
+    "video_sha256": "dfd917f8126de358e2d86bbab06ee918bb824320e7aa18350db88b64b6173a90",
+    "browser_rgb_sha256": "ec78d9ea223e68646ada965c3f7a2bff8b75043209184a1f0d3c454d56a133f7",
+    "receiver_rgb_sha256": "ec78d9ea223e68646ada965c3f7a2bff8b75043209184a1f0d3c454d56a133f7",
+    "knife_visible_in_saved_view": true,
+    "raw_knife_max_score": 0.052440959960222244,
+    "alarm_at_original_0_80": false
+  },
+  "negative": {
+    "video": "cal_working_no_knife_01.mp4",
+    "video_sha256": "340a3274e80ce22bb95fbfd8c16dec2f4f3907b97434cbc8787f5479a53a5970",
+    "browser_rgb_sha256": "1726eae8e4a03abeddf2982be904e5e07774a91578c18dd7af2070ecb826cfe1",
+    "receiver_rgb_sha256": "1726eae8e4a03abeddf2982be904e5e07774a91578c18dd7af2070ecb826cfe1",
+    "raw_knife_max_score": null,
+    "alarm_at_original_0_80": false
+  },
+  "thresholds_modified": false,
+  "board_modified": false,
+  "held_out_test_used": false,
+  "automatic_alarm_validated": false,
+  "next_step": "Acquire consented real-camera positive, negative, and lookalike clips; check exact browser frames and detector boxes without changing thresholds."
+}
