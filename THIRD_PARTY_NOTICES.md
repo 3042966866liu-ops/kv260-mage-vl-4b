@@ -31,3 +31,27 @@ The exact versions and applicable terms for each copied model file, checkpoint,
 wheel and IP in this archive still need to be matched to the preserved assets
 before public upload. A model-card tag or wheel metadata field alone is not a
 complete notice bundle.
+
+The stable overlay HWH names the owner's custom HLS core plus AMD/Xilinx
+`axi_dma:7.1`, `proc_sys_reset:5.0`, `smartconnect:1.0` and
+`zynq_ultra_ps_e:3.5`; no other IP VLNV appears in that HWH. This inventory
+does not replace Vivado's Report IP Status or determine whether every core was
+licensed as Included rather than Purchase/Eval. Any bitstream redistribution
+is for the stated AMD/Xilinx KV260 device only and remains subject to the
+applicable AMD agreement.
+
+The bundled `ssdlite320_mobilenet_v3_large_coco-a79551df.pth` is identified
+as torchvision `SSDLite320_MobileNet_V3_Large_Weights.COCO_V1`, not original
+project work. [Torchvision's model documentation](https://docs.pytorch.org/vision/main/models)
+warns that pretrained weights may carry terms derived from their training
+datasets; the code repository's BSD license alone is not a conclusive license
+for this checkpoint. Do not describe it as Apache-2.0. The 36-wheel inventory
+is reproducible with `scripts/audit_wheel_licenses.py`; `tokenizers 0.22.1`
+has an Apache license classifier but lacks an embedded license file in this
+particular wheel. Its [upstream license](https://github.com/huggingface/tokenizers/blob/main/LICENSE)
+and attribution must travel with any public binary distribution.
+
+The separate M328 four-frame motorcycle fixture was confirmed by the owner as
+AI-generated and approved for public distribution. It is not a real monitoring
+video and is not part of the v7 base archive. Its exact TAR and tensor hashes
+are in [`manifests/fixed_video_companion_v3.json`](manifests/fixed_video_companion_v3.json).

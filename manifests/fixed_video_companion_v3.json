@@ -1,0 +1,12 @@
+{
+  "schema": "kv260-fixed-video-companion-v1",
+  "file": "m328_release_video_addon_20260926_v3.tar",
+  "bytes": 2437120,
+  "sha256": "254587ec1f776a01dc12ef98b900a558e4c3087c90a8630a59be51ef12df8b93",
+  "package_manifest_sha256": "4eb8c6c95752208b5848e0e52efb2a713f98487f5b88518dbd5b58801d236568",
+  "base_release_sha256": "c487e16bcc18698808d7c48822e355c8b6cf291633b00d661f372f7280d41145",
+  "frame_count": 4,
+  "ordered_rgb448_tensor_sha256": "5911485955780036ac4c8990bcaa248667f2e86bd1fd6f9b0783002553b4adff",
+  "media_provenance": "User-confirmed AI-generated motorcycle example, approved for public distribution; not real monitoring footage",
+  "board_evidence": "M328 direct fixed-video 4B entry only; no automatic Web alarm or temporal-understanding claim"
+}

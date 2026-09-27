@@ -36,10 +36,16 @@ SHA-256 before finalizing it. It requires roughly another 3.9 GB of host disk
 space. Do not assemble on a nearly full KV260 microSD.
 
 The v7 TAR contains no video, still image fixture, or monitoring footage. The
-historical M328 fixed-video entry needs a separate four-frame companion. Its
-input rights and publication status are tracked independently; the v7 TAR by
-itself supports the fixed-text and runtime-start checks, **not** recreation
-of the recorded fixed-video result. See [fixed-video reproduction](fixed_video_reproduction.md).
+historical M328 fixed-video entry needs a separate four-frame companion. The
+owner confirmed these four motorcycle frames are AI-generated and approved
+their publication. The companion is prepared locally as
+`m328_release_video_addon_20260926_v3.tar` (2,437,120 bytes, SHA-256
+`254587ec1f776a01dc12ef98b900a558e4c3087c90a8630a59be51ef12df8b93`),
+with its [machine manifest](../manifests/fixed_video_companion_v3.json). It
+is **not yet a public download**. No real monitoring video is part of this
+distribution. The v7 TAR by itself supports the fixed-text and runtime-start
+checks, **not** recreation of the recorded fixed-video result. See
+[fixed-video reproduction](fixed_video_reproduction.md).
 
 After extraction into a new board directory, follow [quickstart](quickstart.md)
 for exact package-file verification, isolated wheel installation, environment
