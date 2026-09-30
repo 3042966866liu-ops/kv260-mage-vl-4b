@@ -1,19 +1,7 @@
-# License scope
+# 许可范围
 
-The repository owner selected Apache License 2.0 for code and documentation
-that the owner created and has the right to license. The license text is in
-[`LICENSE`](LICENSE). This choice does **not** relicense third-party code,
-checkpoints, model assets, Python wheels, or AMD/Xilinx components. Their
-original terms and attribution remain applicable; see
-[`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md) and
-[`docs/provenance.md`](docs/provenance.md).
+仓库所有者为其原创且有权许可的代码和文档选择了 Apache License 2.0，许可原文见[LICENSE](LICENSE)。这一选择**不会重新许可**第三方代码、checkpoint、模型资产、Python wheel 或 AMD/Xilinx 组件。这些内容继续适用原有条款和署名要求，见[第三方说明](THIRD_PARTY_NOTICES.md)与[来源说明](docs/provenance.md)。
 
-Some historical files were copied or adapted from upstream projects and their
-exact file-level origin has not yet been fully mapped. If a file's ownership is
-unclear, do not assume this repository's Apache-2.0 grant applies to it.
-The repository owner must also confirm permission from any coauthors before
-licensing jointly owned original work.
+部分历史文件从上游项目复制或改编，逐文件来源尚未完全核清。文件权属不明确时，不能默认仓库的 Apache-2.0 授权适用于该文件。对于共同创作的原创内容，仓库所有者还须取得其他权利人的许可。
 
-The prepared v7 prebuilt archive contains third-party model and runtime assets.
-Its local hash and board tests establish identity and behavior, not public
-redistribution permission. The archive is not published by adding this license.
+v7 预构建归档包含第三方模型及运行时资产。本地哈希和实板测试证明文件身份与运行行为，不证明公开再分发权限。资产现已通过 Release 公开；添加本许可证本身并不授予其中第三方内容的再分发权。

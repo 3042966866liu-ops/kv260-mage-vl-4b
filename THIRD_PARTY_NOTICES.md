@@ -1,57 +1,22 @@
-# Third-party notices and release review
+# 第三方来源、署名与发布审查
 
-- Mage-VL: the official [Microsoft Mage repository](https://github.com/microsoft/Mage) lists Mage-VL under Apache-2.0, and the official [Hugging Face model card](https://huggingface.co/microsoft/Mage-VL) marks the model Apache-2.0. The GitHub repository's root [LICENSE](https://github.com/microsoft/Mage/blob/main/LICENSE) is MIT for that repository's software. **The exact upstream revision and file-by-file origin of the copied local modeling/configuration files are not yet pinned**, so these public license labels are not a completed attribution review for every copied file. Weights are excluded from the Git source tree but included in the owner-reported Release prebuilt archive.
-- Hugging Face Transformers APIs are imported by the copied model code; dependency license and exact installed version should be checked before publication.
-- torchvision SSDLite architecture/checkpoint is used by the fast path. The official [torchvision documentation](https://docs.pytorch.org/vision/stable/models/generated/torchvision.models.detection.ssdlite320_mobilenet_v3_large.html) identifies `COCO_V1`; the [torchvision repository](https://github.com/pytorch/vision) identifies BSD-3-Clause for its software. The checkpoint is outside Git but inside the owner-reported Release archive; confirm its exact source and notices.
-- AMD/Xilinx Vitis and Vivado are external tool dependencies. The board's PYNQ/XRT environment is not bundled as a full OS image; a stable hardware bitstream/HWH is included in the owner-reported Release archive. Applicable AMD/IP redistribution terms remain to be checked.
+- Mage-VL：官方 [Microsoft Mage 仓库](https://github.com/microsoft/Mage)将 Mage-VL 列为 Apache-2.0，官方 [Hugging Face 模型卡](https://huggingface.co/microsoft/Mage-VL)也将模型标为 Apache-2.0。GitHub 仓库根目录的 [LICENSE](https://github.com/microsoft/Mage/blob/main/LICENSE)对该仓库软件采用 MIT。**本地复制的模型实现／配置文件尚未固定精确上游版本及逐文件来源**，这些公开许可标签不能替代每个复制文件的署名审查。权重不在 Git 源码目录中，但包含在 Release 预构建归档内。
+- 复制的模型代码导入 Hugging Face Transformers API；公开分发时须核对依赖许可及实际安装版本。
+- 快通道使用 torchvision SSDLite 架构／checkpoint。官方 [torchvision 文档](https://docs.pytorch.org/vision/stable/models/generated/torchvision.models.detection.ssdlite320_mobilenet_v3_large.html)标明 `COCO_V1`；[torchvision 仓库](https://github.com/pytorch/vision)对软件采用 BSD-3-Clause。checkpoint 位于 Git 之外、Release 归档之内，须确认精确来源和声明。
+- AMD/Xilinx Vitis 与 Vivado 是外部工具依赖。板端 PYNQ/XRT 环境不以完整系统镜像形式提供；Release 归档包含稳定硬件 bitstream/HWH。适用的 AMD/IP 再分发条款仍需核对。
 
-No third-party ownership is disclaimed. The owner selected Apache-2.0 for original work they have the right to license; [`LICENSE_SCOPE.md`](LICENSE_SCOPE.md) excludes third-party material from that grant. The upstream attribution and public redistribution review is still incomplete for the prebuilt archive.
+本项目不否认任何第三方权属。所有者为其有权许可的原创内容选择了 Apache-2.0；[许可范围](LICENSE_SCOPE.md)将第三方内容排除在这一授权之外。预构建归档的上游署名及公开再分发审查仍未完成。
 
-## v7 archive inventory (owner-reported Release upload)
+## v7 归档内容（已通过 Release 公开）
 
-The immutable M327 v7 prebuilt TAR contains the Mage-VL-derived quantized
-language weights, vision weights, tokenizer, a torchvision SSDLite checkpoint,
-the stable KV260 bitstream/HWH, and 37 ARM64 Python wheels. Its file identity
-and first-install result are recorded in [`RELEASE_READINESS.md`](RELEASE_READINESS.md).
-The base TAR contains no video, still-image fixture, or monitoring footage.
+不可变的 M327 v7 TAR 包含衍生自 Mage-VL 的量化语言权重、视觉权重、tokenizer、torchvision SSDLite checkpoint、稳定 KV260 bitstream/HWH 和 37 个 ARM64 Python wheel。文件身份与首次安装结果见[发布状态](RELEASE_READINESS.md)。基础 TAR 不含视频、静态图像样例或监控录像。
 
-An offline metadata inventory of the nested 36-wheel bundle found license
-metadata in all 36 wheels and embedded license files in 35. `tokenizers`
-reported an Apache Software License classifier but no embedded license file;
-its notice must be supplied separately if that wheel is redistributed. The
-additional Pillow 12.1.0 wheel reports `MIT-CMU` and includes a `LICENSE`
-file. These are metadata observations, not a file-by-file legal clearance.
+对内嵌 36-wheel 包的离线元数据盘点发现：36 个 wheel 均有许可元数据，其中 35 个带有许可证文件。`tokenizers` 声明 Apache Software License 分类，但没有内嵌许可证文件；再分发该 wheel 时须单独附上声明。额外的 Pillow 12.1.0 wheel 标为 `MIT-CMU`，并包含 `LICENSE` 文件。这些是元数据观察，不等于逐文件权利审查完成。
 
-The official [Mage-VL model card](https://huggingface.co/microsoft/Mage-VL)
-labels the model Apache-2.0; the [Mage source repository](https://github.com/microsoft/Mage)
-has its own MIT license. The [torchvision source license](https://github.com/pytorch/vision/blob/main/LICENSE)
-is BSD-3-Clause. AMD lists separate agreements for [Vivado tools and LogiCORE
-IP](https://www.amd.com/en/products/adaptive-socs-and-fpgas/intellectual-property/license.html).
-The exact versions and applicable terms for each copied model file, checkpoint,
-wheel and IP in this archive still need to be matched to the preserved assets
-for the reported public upload. A model-card tag or wheel metadata field alone is not a
-complete notice bundle.
+官方 [Mage-VL 模型卡](https://huggingface.co/microsoft/Mage-VL)将模型标为 Apache-2.0；[Mage 源码仓库](https://github.com/microsoft/Mage)另有 MIT 许可证。[torchvision 源码许可证](https://github.com/pytorch/vision/blob/main/LICENSE)为 BSD-3-Clause。AMD 为 [Vivado 工具及 LogiCORE IP](https://www.amd.com/en/products/adaptive-socs-and-fpgas/intellectual-property/license.html)列出独立协议。归档内每个模型文件、checkpoint、wheel 和 IP 的精确版本及适用条款仍须与保留资产对应核查；模型卡标签或 wheel 元数据字段本身不构成完整声明包。
 
-The stable overlay HWH names the owner's custom HLS core plus AMD/Xilinx
-`axi_dma:7.1`, `proc_sys_reset:5.0`, `smartconnect:1.0` and
-`zynq_ultra_ps_e:3.5`; no other IP VLNV appears in that HWH. This inventory
-does not replace Vivado's Report IP Status or determine whether every core was
-licensed as Included rather than Purchase/Eval. Any bitstream redistribution
-is for the stated AMD/Xilinx KV260 device only and remains subject to the
-applicable AMD agreement.
+稳定 overlay 的 HWH 列出所有者自定义 HLS 核及 AMD/Xilinx `axi_dma:7.1`、`proc_sys_reset:5.0`、`smartconnect:1.0` 和 `zynq_ultra_ps_e:3.5`，未出现其他 IP VLNV。此盘点不能替代 Vivado 的 Report IP Status，也不能判定每个核都属于 Included，而非 Purchase/Eval。bitstream 再分发仅面向指定 AMD/Xilinx KV260 器件，仍受适用 AMD 协议约束。
 
-The bundled `ssdlite320_mobilenet_v3_large_coco-a79551df.pth` is identified
-as torchvision `SSDLite320_MobileNet_V3_Large_Weights.COCO_V1`, not original
-project work. [Torchvision's model documentation](https://docs.pytorch.org/vision/main/models)
-warns that pretrained weights may carry terms derived from their training
-datasets; the code repository's BSD license alone is not a conclusive license
-for this checkpoint. Do not describe it as Apache-2.0. The 36-wheel inventory
-is reproducible with `scripts/audit_wheel_licenses.py`; `tokenizers 0.22.1`
-has an Apache license classifier but lacks an embedded license file in this
-particular wheel. Its [upstream license](https://github.com/huggingface/tokenizers/blob/main/LICENSE)
-and attribution must travel with any public binary distribution.
+包内 `ssdlite320_mobilenet_v3_large_coco-a79551df.pth` 标识为 torchvision `SSDLite320_MobileNet_V3_Large_Weights.COCO_V1`，不是项目原创。[Torchvision 模型文档](https://docs.pytorch.org/vision/main/models)提醒预训练权重可能受训练数据集相关条款约束；代码仓库的 BSD 许可本身不足以确定该 checkpoint 的许可，不能将其描述为 Apache-2.0。36-wheel 盘点可用 `scripts/audit_wheel_licenses.py` 复现；该 `tokenizers 0.22.1` wheel 有 Apache 许可分类，但没有内嵌许可证文件。公开二进制分发应附上其[上游许可证](https://github.com/huggingface/tokenizers/blob/main/LICENSE)与署名。
 
-The separate M328 four-frame motorcycle fixture was confirmed by the owner as
-AI-generated and approved for public distribution. It is not a real monitoring
-video and is not part of the v7 base archive. Its exact TAR and tensor hashes
-are in [`manifests/fixed_video_companion_v3.json`](manifests/fixed_video_companion_v3.json).
+独立 M328 四帧摩托车样例经所有者确认为 AI 生成并批准公开分发，不是真实监控视频，也不属于 v7 基础归档。精确 TAR 与张量哈希见[固定视频伴随包清单](manifests/fixed_video_companion_v3.json)。

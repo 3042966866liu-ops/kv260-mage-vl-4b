@@ -1,7 +1,7 @@
 {
   "experiment": "independent-v7-install-direct-fixed-video",
   "source_result_sha256": "0f46a89d37d4289536a264fd05ee2b3e94ff87af45dbc8b9e900dba570ecaf6d",
-  "source_note": "Selected fields transcribed from the owner's M328_RELEASE_VIDEO_BOARD_RESULT.json; the full UART log and private video companion are not in this repository.",
+  "source_note": "字段摘录自所有者的 M328_RELEASE_VIDEO_BOARD_RESULT.json；完整 UART 日志不在本仓库中，视频伴随包通过 Release 单独提供，不包含在 Git 源码目录中。",
   "board": "AMD Kria KV260",
   "model": "Mage-VL 4B mixed-precision deployment",
   "stable_build_id": "0x4D395832",

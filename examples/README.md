@@ -1,3 +1,3 @@
-# Examples
+# 示例
 
-No source video or model weights are included, so this directory provides an evidence-recomputation example only. From the repository root run `python3 scripts/m321_reproduce_bact_v2_evidence.py --only all`. Expected final line begins `M321_BACT_V2_REPRODUCE_ALL_PASS` and reports selected `bact-159`, 27 board records and 12 *historically seen* clips. It does not infer an image, synthesize a new label or reproduce measured latency on the current machine. Original video provenance and public redistribution rights have not been cleared.
+本目录不包含源视频或模型权重，仅提供证据复算示例。在仓库根目录运行 `python3 scripts/m321_reproduce_bact_v2_evidence.py --only all`，预期末行以 `M321_BACT_V2_REPRODUCE_ALL_PASS` 开头，并报告选中 `bact-159`、27 条板端记录与 12 段**历史已见**片段。该命令不对图像推理、不合成新标签，也不在当前机器重现原测量时延。原质量评估视频的来源与公开再分发权仍未核清；它们与已公开的固定视频四帧伴随包不同。

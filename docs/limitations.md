@@ -1,10 +1,10 @@
-# Limitations and status boundaries
+# 当前限制与验证范围
 
-- No seconds-level 4B video inference or RTX 4060 superiority is claimed. Stable M325 fixed-video TTFT was 228.531 s in one session, with EOS on the second output token.
-- The Web fast path and slow 4B semantic review have different latency and evidence. Immediate fast alarms are not a certified tool detector; small objects, occlusion and domain shift need independent target-scene evaluation.
-- BACT-V2's exact call staircase is limited to a measured fixed T32 Prefill geometry. Frozen proxies and 12 previously seen AI-generated clips do not establish deployment accuracy or novel generality. BACT is not the default M254 Web router.
-- The M277 fixed-video fixture sampled four frames but sent only last-frame two views to the model. It is not proof of multi-frame motion understanding.
-- Decode-one's long FIFO occupancy capacity test was stopped by the user (`STOPPED_BY_USER_NOT_PASS`). Other narrower numerical/board gates do not promote it to the stable deployment. M325 paired measurements showed no full-session improvement.
-- The Git source tree lacks model/bitstream binaries, a complete source-to-weight conversion recipe, a verified clean Vivado full-shell build, generic clean-OS provisioning evidence and rights clearance. The separately distributed v7 archive passed an independent first install on the owner's KV260; this does not by itself make the assets publicly obtainable or prove every new-board environment.
-- Original scripts contain machine-specific historical paths and inherited predecessor checks. The release wrapper resolves its own paths and reached no-frame Web runtime-ready in the v7 owner-board install; a separate M328 companion passed direct fixed-video inference. The alarm-triggered Web-to-4B path remains unverified in that independent install.
-- No real-factory external validity, robust knife recall, power advantage or continuous user-visible 4B throughput is established. Hashes prove artifact identity, not semantic correctness or licensing rights.
+- 尚未实现秒级 4B 视频推理，也未证明优于 RTX 4060。稳定 M325 固定视频在一次会话中首 Token 为 228.531 s，第二个输出 Token 即 EOS。
+- Web 快通道和 4B 慢速语义复核的时延与验证范围不同。快速报警不等于经过认证的刀具检测；小目标、遮挡和场景变化需要独立目标场景评估。
+- BACT-V2 的精确调用阶梯仅适用于实测的固定 T32 Prefill 几何。固定代理和 12 段已见 AI 合成视频不能证明部署准确率或普遍适用性。BACT 不是 M254 Web 的默认路由。
+- M277 固定视频样例虽然抽取四帧，模型实际只接收末帧的两个视图，不能据此证明多帧动作理解。
+- Decode-one 的 FIFO 占用容量长测由用户中止（`STOPPED_BY_USER_NOT_PASS`）。其他较小范围的数值或实板测试不代表它已进入稳定部署；M325 配对测量未显示完整会话收益。
+- Git 源码目录不含模型或 bitstream 二进制。预构建资产现已通过 [GitHub Releases](https://github.com/3042966866liu-ops/kv260-mage-vl-4b/releases)公开，v7 归档已在所有者 KV260 的独立目录完成首次安装验证；**新板干净系统安装仍未验证**。公开八分片的完整下载、重组和哈希校验尚无记录；完整权重转换流程、干净 Vivado 全系统构建和第三方权利审查也尚未完成。
+- 原始脚本保留特定机器的历史路径与前置检查。发布启动器在 v7 独立安装中达到无帧 Web 运行时就绪，独立 M328 伴随包通过直接固定视频推理；该安装中的自动报警 Web→4B 路径仍未验证。固定视频伴随包要求[指定基础安装目录](fixed_video_reproduction.md)。
+- 尚未建立真实工厂场景泛化、可靠刀具召回、功耗优势或用户可见的持续 4B 吞吐结论。哈希证明文件身份，不证明语义正确性或许可权利。

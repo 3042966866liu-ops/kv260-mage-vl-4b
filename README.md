@@ -1,6 +1,4 @@
-# Mage-VL 4B on KV260
-
-[English](README.en.md) · 简体中文
+# 在 KV260 上部署 Mage-VL 4B
 
 这是一个在 AMD Kria KV260 上运行 Mage-VL 4B 的多模态推理研究原型。我们解决的主要问题是：如何在有限内存和固定 T32 FPGA 执行粒度下，完成可核验的 PS–PL 推理，并让输入预算真正对应硬件开销。
 

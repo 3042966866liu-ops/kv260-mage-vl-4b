@@ -1,5 +1,5 @@
-# Changelog
+# 版本更新记录
 
-## v0.1.0 — local research-preview staging
+## v0.1.0 — 本地研究预览暂存版
 
-Initial source/evidence snapshot of stable M254/T32, offline BACT-V2 and isolated OP01 Decode-one experiment. Adds a fail-closed first-install preflight, reproducible M321 evidence entry, asset/source manifests and status-limited documentation. No new FPGA build, board installation or model forward was performed for this staging version. Public release awaits provenance and license review.
+首次整理稳定 M254/T32、离线 BACT-V2 与隔离 OP01 Decode-one 实验的源码和证据快照。新增检查失败即停止的首次安装预检、可复算的 M321 证据入口、资产与来源清单，以及明确验证范围的文档。此次暂存没有新建 FPGA、执行板端安装或运行模型前向。当时的公开发布仍待来源与许可审查。

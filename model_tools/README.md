@@ -1,3 +1,3 @@
-# Historical model preparation scripts
+# 历史模型准备脚本
 
-These four byte-identical scripts were copied from the parent project's `scripts/` directory: M125 four-port layouts, M126 runtime contracts, M148 embedding extraction, and M153 video candidate assembly. They are evidence of the actual preparation chain, not a complete clean-room raw-model converter. Their historical default paths and predecessor inputs have not been made portable here; run only after auditing their inputs/rights. The released prebuilt loader expects the exact layout manifests and asset hashes in [model setup](../docs/model_setup.md). `SOURCE_BUILD_VERIFIED=NOT_RUN` also applies to model preparation from a fresh upstream checkpoint.
+以下四个脚本从上级项目的 `scripts/` 目录逐字节复制：M125 四端口布局、M126 运行时契约、M148 embedding 提取和 M153 视频候选组装。它们记录了实际准备过程，但不是完整、独立可复现的原始模型转换器。历史默认路径和前置输入尚未做可迁移适配，运行前须核对输入及其使用权限。发布版预构建加载器要求[模型配置说明](../docs/model_setup.md)中的精确布局清单与资产哈希。从全新上游 checkpoint 准备模型同样属于 `SOURCE_BUILD_VERIFIED=NOT_RUN` 的范围。
