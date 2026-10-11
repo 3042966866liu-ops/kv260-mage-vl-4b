@@ -1,0 +1,22 @@
+{
+  "schema": "m441-read-source-only-12",
+  "files": [
+    {
+      "path": "probe.py",
+      "bytes": 2891,
+      "sha256": "4f2aefcfe82ef39148573834f46cf36074d7db6ddf0c95488fd08687bf8a88dc"
+    },
+    {
+      "path": "run.sh",
+      "bytes": 520,
+      "sha256": "42fb71764526a299ee3bf98c99b58e3f96e751497cd4fa9175193bd7317b44a6"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 148,
+      "sha256": "f6fb62db1caa70e1c29ad755c99e470fd7ddc17e55918c17c4921568d445722b"
+    }
+  ],
+  "file_count": 3,
+  "total_bytes": 3559
+}

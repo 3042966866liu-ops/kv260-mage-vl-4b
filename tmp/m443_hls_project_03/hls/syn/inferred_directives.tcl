@@ -1,0 +1,7 @@
+# Inferred from performance & pipeline pragmas/directives
+set_directive_loop_flatten m89s_load/VITIS_LOOP_23_3
+set_directive_loop_flatten m443_compute.3/VITIS_LOOP_84_3
+set_directive_array_partition m89x_runtime_kernel/activation_0 -dim=3 -type=complete activation_0
+set_directive_loop_flatten m443_compute.3/VITIS_LOOP_132_9
+set_directive_loop_flatten m89x_merge/VITIS_LOOP_165_4
+set_directive_loop_flatten m89x_runtime_kernel/VITIS_LOOP_262_4

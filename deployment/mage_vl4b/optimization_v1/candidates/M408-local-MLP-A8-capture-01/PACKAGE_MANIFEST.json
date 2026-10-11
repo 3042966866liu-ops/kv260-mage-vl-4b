@@ -1,0 +1,63 @@
+{
+  "schema": "M408-local-MLP-A8-capture-v1",
+  "default_off": true,
+  "file_count": 11,
+  "total_bytes": 60454,
+  "files": [
+    {
+      "path": "EXPECTED.json",
+      "bytes": 1228,
+      "sha256": "7ec9fb64b5f9c0aee5e9accd722d80beebc099dbc40c29a2b76f4ede79b5c99f"
+    },
+    {
+      "path": "frozen_video_identity.py",
+      "bytes": 3762,
+      "sha256": "b89bc42e622a86169cb30a5ac8f91a2f40155988afa2830e2e38d0be50804ccc"
+    },
+    {
+      "path": "M348_SOURCE_IDENTITIES.json",
+      "bytes": 10405,
+      "sha256": "5785abdbe87d5b7b863d1f13f6253447842390e9b2387ff133c841439cf4bdf1"
+    },
+    {
+      "path": "m406_vision_observer.py",
+      "bytes": 13848,
+      "sha256": "8e3708a0888c707d53f1a1427e9c20722b61ac52a696918854f1f0c2c72fec6b"
+    },
+    {
+      "path": "m407_mlp_contract.py",
+      "bytes": 3219,
+      "sha256": "b9b2d23be042b3281543f08022c347cef8461149a53add2be29cd42ac7a4c513"
+    },
+    {
+      "path": "m408_component.py",
+      "bytes": 5309,
+      "sha256": "944388361d62371192232810b980c4b5d55426f47f42d564daf848d357af8b2a"
+    },
+    {
+      "path": "m408_gate.py",
+      "bytes": 13954,
+      "sha256": "f95e85a5df6a62579798e68a00af085fa473c8ac5d5460255e831b4dbdc0fe86"
+    },
+    {
+      "path": "m408_mlp_capture.py",
+      "bytes": 6257,
+      "sha256": "8bc05814d1c708400d4a4abda15b88bedd7aacdd7e6a13e5ef31923d6f5868f6"
+    },
+    {
+      "path": "PREREQUISITE.json",
+      "bytes": 743,
+      "sha256": "b85b7d0c7bca5f5665d80c071964ccf5f4ee0ae2b9b6d1133c16008e615db8e3"
+    },
+    {
+      "path": "run_m408_capture.sh",
+      "bytes": 868,
+      "sha256": "bf10f4eafe2bcd860ee1c96bee5d3881b84b4c315a06ad37ae8f842dad9776a0"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 861,
+      "sha256": "ab9eeb8538dc757901ed6eef5dcd924f1ed6fc1e112add814da8dbd97b7e7a67"
+    }
+  ]
+}

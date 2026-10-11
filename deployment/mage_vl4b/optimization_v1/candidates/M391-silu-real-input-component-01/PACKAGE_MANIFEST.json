@@ -1,0 +1,42 @@
+{
+  "schema": "M391-real-input-CPU-component-v1",
+  "files": [
+    {
+      "path": "INPUT_IDENTITY.json",
+      "bytes": 1585,
+      "sha256": "963aa65e901014598ba3aa9b1c28a527105b4250ed3e7d023e7be36721074104"
+    },
+    {
+      "path": "m389_silu_workspace.py",
+      "bytes": 2217,
+      "sha256": "f028cf6e02475138f8ad4b2d62e973fed0354d830322553f2a25ef7e717715cf"
+    },
+    {
+      "path": "m391_export.py",
+      "bytes": 756,
+      "sha256": "40988e0cd5e81cf465313eb418b9132ad253d95949f466a26f25fdb847848f82"
+    },
+    {
+      "path": "m391_silu_gate.py",
+      "bytes": 10497,
+      "sha256": "a456f5f7e5efc4fe1ca25bc7ea3b616d191c831dc5684b28b77978399501838e"
+    },
+    {
+      "path": "original_silu.py",
+      "bytes": 148,
+      "sha256": "ee914fe60e26040978c183e019d2d45d250fcd6762b990e6fbfc141c590c4483"
+    },
+    {
+      "path": "run_m391_silu.sh",
+      "bytes": 743,
+      "sha256": "9bfa18f1be68476e91c57d2f159a29c338d14a19f4d0472de95b62dc93fd2b4f"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 506,
+      "sha256": "cc5721b6a0807220c6da0c08a9a36a8b605ce60edc1f7e9e2a9bc9c072c67b52"
+    }
+  ],
+  "file_count": 7,
+  "total_bytes": 16452
+}

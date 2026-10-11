@@ -1,0 +1,197 @@
+{
+  "schema": "m375-fixed-video-narrow-wait-v1",
+  "files": [
+    {
+      "path": "board_safety.py",
+      "bytes": 880,
+      "sha256": "18393fcac1a99831c28901a2484477005cc8b667462bbaef68e693029a048645"
+    },
+    {
+      "path": "decode_trace.py",
+      "bytes": 4177,
+      "sha256": "05dbc3c8a2c4664475aabcba7256c920b4efab029d14fba4e9e9bfc8581b2bcf"
+    },
+    {
+      "path": "frozen_video_identity.py",
+      "bytes": 3762,
+      "sha256": "b89bc42e622a86169cb30a5ac8f91a2f40155988afa2830e2e38d0be50804ccc"
+    },
+    {
+      "path": "HARDWARE_CLOSURE.json",
+      "bytes": 3170,
+      "sha256": "a86b595540bc381c43ab14bac67907487a906a56bbc640ae9de4ec5cac81b081"
+    },
+    {
+      "path": "m120_board_common.py",
+      "bytes": 3619,
+      "sha256": "9e72e022a7f6e86992df575125545330405b79ded3c23185917a676c70a6ade3"
+    },
+    {
+      "path": "m120_board_env_preflight.py",
+      "bytes": 4582,
+      "sha256": "7cb209d0810af25b87e1caee5cbc34f8b7d50f6dea7a5d76c4fd5a32a348ed46"
+    },
+    {
+      "path": "m341_build_id_gate.py",
+      "bytes": 11659,
+      "sha256": "34aef23eec105826c7e962175192c4c7620a13564f938337a7d3002642e4fd7d"
+    },
+    {
+      "path": "M348_SOURCE_IDENTITIES.json",
+      "bytes": 10405,
+      "sha256": "5785abdbe87d5b7b863d1f13f6253447842390e9b2387ff133c841439cf4bdf1"
+    },
+    {
+      "path": "M357_COMPARE_PREREQUISITE.json",
+      "bytes": 40020,
+      "sha256": "ca35750d1b7043b76a16c75b97341616823137a58d91545576de0361a6ba3bde"
+    },
+    {
+      "path": "m363_observers.py",
+      "bytes": 3623,
+      "sha256": "cffce2bd4a2af04951782da2c1b56d9ed33a6933c6bcc7734d3b1740ef0c4af6"
+    },
+    {
+      "path": "m363_package_identity.py",
+      "bytes": 1508,
+      "sha256": "1b28d2465478ccfbc156d28d3562243b26d776e0f78d2973f666a52ef15ef59e"
+    },
+    {
+      "path": "m363_tokenizer_once.py",
+      "bytes": 1416,
+      "sha256": "c97f7687de214616201f723d857144626835cff934c89be8e2745bf721cb4393"
+    },
+    {
+      "path": "m366_head_observer.py",
+      "bytes": 4105,
+      "sha256": "7f969a2605532f17cd5b5aa885cb4d6cec9d002bd55f9fc1f46732231991b17d"
+    },
+    {
+      "path": "m368_stage_policy.py",
+      "bytes": 7658,
+      "sha256": "8af8e669e1be35a94494c3ccb7d9157e5840b9ecb6ccbdb46f9e8b262e717dbb"
+    },
+    {
+      "path": "m368_video_contract.py",
+      "bytes": 3455,
+      "sha256": "20bc937aa772ee3e086f4d21adade91ce1669357468a1f55e63af21b1abb436b"
+    },
+    {
+      "path": "m369_light_policy.py",
+      "bytes": 2272,
+      "sha256": "2297bb52d6d2e44fbbab449050a185037654b1a6a6b446445569855c6dbe230a"
+    },
+    {
+      "path": "m371_profile_summary.py",
+      "bytes": 4467,
+      "sha256": "38d7c4bfb361b8ff774799bac009636c7326bedccdd55865de118ffa3423fbda"
+    },
+    {
+      "path": "m372_future_wait.py",
+      "bytes": 8290,
+      "sha256": "33f76bc5b910f0b513f86f8cdb81bd68dfcac48220c4f898dd8f0bc6feec3a52"
+    },
+    {
+      "path": "m375_assemble.py",
+      "bytes": 1510,
+      "sha256": "2568c639d6370b27fb5a850e6eeae365fdd798d297d6a73d1944c7c70c41bcd9"
+    },
+    {
+      "path": "m375_export_result.py",
+      "bytes": 887,
+      "sha256": "e98bf66cc051d01c68d378b42674c5cc18943acb5cb2b66d23e236d76d0d13ef"
+    },
+    {
+      "path": "m375_trials.py",
+      "bytes": 12644,
+      "sha256": "bb2b9872295107acfcd6289f9cdbe43594cff88a69075f0fb8a2d81cc53f565b"
+    },
+    {
+      "path": "m375_video_wait.py",
+      "bytes": 4043,
+      "sha256": "b2d5db1d9361acebc510d4b51b3a29dee741aa1f4cf83bc1d230cb31d709d160"
+    },
+    {
+      "path": "m375_video_wait_gate.py",
+      "bytes": 25846,
+      "sha256": "237ea54ebe07a126b9951b1f09cf1f3e676b0f54b9169cd4be11ad61e334b322"
+    },
+    {
+      "path": "m375_wait_validation.py",
+      "bytes": 7486,
+      "sha256": "ba8089811177e8ed83a28830d9c2fbbfdd3f6bdc2c4cb0db6eecf79d5ba10b7b"
+    },
+    {
+      "path": "measurement.py",
+      "bytes": 7152,
+      "sha256": "973d0354c1b019987b8f777f149ecb418db897e1b9f771b10c0c03b4bf49b23e"
+    },
+    {
+      "path": "memory_lifecycle.py",
+      "bytes": 2049,
+      "sha256": "939fa2ca7cc1e438dd9b770b2aebab6424a69270c5ce605a72a27806ab125cc0"
+    },
+    {
+      "path": "NUMERIC_PREREQUISITE.json",
+      "bytes": 3493,
+      "sha256": "964b1da3225cec57e21fae109ff7599e225aa221c3f2f11b52c61870e7599acc"
+    },
+    {
+      "path": "owned_buffer_release.py",
+      "bytes": 1146,
+      "sha256": "e383c7657744d634b3661b988fe5f3e6f5c5fa027ec5cc6443e3b8b2851f3996"
+    },
+    {
+      "path": "ps_slot_capacity.py",
+      "bytes": 3293,
+      "sha256": "05f3835a761aab8b1f6f08dcccedae96d2b36e76844f3fa13a6ad8f5e25a0043"
+    },
+    {
+      "path": "run_m375_video_wait.sh",
+      "bytes": 893,
+      "sha256": "4cff6e9bb8fbcd72fa91b5cd98473451ffeb93daebca4953f836a77c42648892"
+    },
+    {
+      "path": "SOURCE_CLOSURE.json",
+      "bytes": 16344,
+      "sha256": "c2f625f6c4b4097fb143f714ff8626fac160aaf02d251da623cb88d05768a457"
+    },
+    {
+      "path": "STAGE_PREREQUISITE.json",
+      "bytes": 2154,
+      "sha256": "ec450256bea9f4f8baf1f8b0df6c400108048ac338424a3f19e72d2adcff4b1b"
+    },
+    {
+      "path": "VIDEO_BUDGET.json",
+      "bytes": 2525,
+      "sha256": "5b5c0442b9f06ec2c601cbd086c42b282927fe50de01a1178c650e2c101fbd8f"
+    },
+    {
+      "path": "VIDEO_EXPECTED.json",
+      "bytes": 339151,
+      "sha256": "cc03faca51a3797fe69d7d7cc8cd1711b6df3234cc3b91a2a822f2d394d071cb"
+    },
+    {
+      "path": "VISUAL_EXPECTED.json",
+      "bytes": 55535,
+      "sha256": "b2d34d44317c2b23de531957d17c5f8a7a230d58d2ace30004fff147ee65e48c"
+    },
+    {
+      "path": "WAIT_CONTRACT.json",
+      "bytes": 42644,
+      "sha256": "c82ed1035adbece01ac750cff2fbff2ac5eaee250f0c942a0b1d916169648409"
+    },
+    {
+      "path": "WAIT_PREREQUISITE.json",
+      "bytes": 3560,
+      "sha256": "031cf6e2e506f5296998e6e8dfbeba0e87480f41fc07f023aaf3fc6fc79147a2"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 3242,
+      "sha256": "f0fb09f8c3882672e6c6c2886c3915140f3238c4b6afb0c446dde3110403d8a7"
+    }
+  ],
+  "file_count": 38,
+  "total_bytes": 654665
+}

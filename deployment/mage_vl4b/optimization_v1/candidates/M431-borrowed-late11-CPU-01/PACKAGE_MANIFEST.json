@@ -1,0 +1,51 @@
+{
+  "file_count": 9,
+  "total_bytes": 144091,
+  "files": [
+    {
+      "path": "m431_borrowed_visual.py",
+      "bytes": 5502,
+      "sha256": "9201a6d99daad3d8c27cd61fc8bdd79b45a4e9c491004b84cb67fd5c1549fa73"
+    },
+    {
+      "path": "m431_component_entry.py",
+      "bytes": 1737,
+      "sha256": "f0dd3338d1b9187d34895b17c1b00408376b3d907cce5f2c9571c8f65a9a1934"
+    },
+    {
+      "path": "m431_cpu.py",
+      "bytes": 5931,
+      "sha256": "071675c878ee345ce161766d537383485e0e7d86c2446be582cf071cff0d6798"
+    },
+    {
+      "path": "m431_window_component.py",
+      "bytes": 5097,
+      "sha256": "aea787f1de7de9d2c3795090768f21102209e41c80ac5c4a32d0959a0c364103"
+    },
+    {
+      "path": "PLAN.json",
+      "bytes": 108399,
+      "sha256": "7ebb1e348867ca7938ee9ea035e83e70d203b923e38eb0815480d9525c3e905e"
+    },
+    {
+      "path": "run_cpu.sh",
+      "bytes": 397,
+      "sha256": "2b87c6719b40e5ec92f74992d539654bdaacda153c1dc2e5b7b930180de49f59"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 686,
+      "sha256": "37d66b9cf380318832a21dcdf66fa1e97b0fb4148c0db8e1dbb29c7b6a9f43f3"
+    },
+    {
+      "path": "SOURCE_IDENTITIES.json",
+      "bytes": 10405,
+      "sha256": "5785abdbe87d5b7b863d1f13f6253447842390e9b2387ff133c841439cf4bdf1"
+    },
+    {
+      "path": "test_m431_borrowed_visual.py",
+      "bytes": 5937,
+      "sha256": "43fec54d09056312269c37cbf9d7a021d27426186193e8f0c71c119bd0f263b9"
+    }
+  ]
+}

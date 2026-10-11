@@ -1,0 +1,26 @@
+--- frozen-host-text
++++ reproduced-board-text
+@@ -10,20 +10,20 @@
+         prefix = f'model.language_model.layers.{layer}'
+         residual = hidden
+         normed = rms_norm(hidden, self.weight(f'{prefix}.input_layernorm.weight'))
+-        q_raw, k_raw, v_raw = self._attention_inputs(layer, normed)
++        (q_raw, k_raw, v_raw) = self._attention_inputs(layer, normed)
+         q = q_raw.reshape(tokens, HEADS, HEAD_DIM)
+         k = k_raw.reshape(tokens, KV_HEADS, HEAD_DIM)
+         v = v_raw.reshape(tokens, KV_HEADS, HEAD_DIM)
+         q = rms_norm(q, self.weight(f'{prefix}.self_attn.q_norm.weight'))
+         k = rms_norm(k, self.weight(f'{prefix}.self_attn.k_norm.weight'))
+-        q, k = apply_rope(q, k, positions)
++        (q, k) = apply_rope(q, k, positions)
+         keys.append(k.copy())
+         values.append(v.copy())
+         attention_started = time.monotonic()
+         attended = causal_attention_grouped(q, k, v)
+         self.grouped_attention_wall_ms += (time.monotonic() - attention_started) * 1000.0
+         self.grouped_attention_calls += 1
+-        attended, residual = _m400_select(self, layer, attended, residual)
++        (attended, residual) = _m400_select(self, layer, attended, residual)
+         projected = self._family(layer, 'attention_out', attended)
+         hidden = residual + projected[f'{prefix}.self_attn.o_proj']
+         residual = hidden

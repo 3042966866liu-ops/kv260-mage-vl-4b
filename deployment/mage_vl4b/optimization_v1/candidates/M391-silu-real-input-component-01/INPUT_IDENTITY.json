@@ -1,0 +1,43 @@
+{
+  "capture_raw_sha256": "846e8ba91b1c2b07a39bf8f05fbef421fc516c83464ab482cc3125409de097e1",
+  "capture_closure": {
+    "status": "PASS_ACTUAL_FIXED159_GATE_UP_CAPTURE_ONLY",
+    "sha256": "f63960b1ee5cdf2dcdaf35bcfe30f24932cf534cc1c9029466e46ca3fdfbc24e",
+    "result": "deployment/mage_vl4b/optimization_v1/runs/M390-capture-closure-01/RESULT.json",
+    "raw_sha256": "846e8ba91b1c2b07a39bf8f05fbef421fc516c83464ab482cc3125409de097e1"
+  },
+  "fixtures": {
+    "gate": {
+      "path": "/home/ubuntu/m390_gate_up_capture_01/B1/gate.npy",
+      "file_sha256": "7d465cab4d93cca8ff86e3206263a6f14ba62f76e42c2238e7ef8e767bb294b7",
+      "file_bytes": 6187136,
+      "tensor": {
+        "shape": [
+          159,
+          9728
+        ],
+        "dtype": "float32",
+        "bytes": 6187008,
+        "sha256": "e8d2bf13876b58ed6849ea7927d6904b6aa387000efef0d9676e923659014b4b"
+      }
+    },
+    "up": {
+      "path": "/home/ubuntu/m390_gate_up_capture_01/B1/up.npy",
+      "file_sha256": "bfcd193a7f63806beb78923852b46e634d0f1208686417cd496059e5ddd8eb98",
+      "file_bytes": 6187136,
+      "tensor": {
+        "shape": [
+          159,
+          9728
+        ],
+        "dtype": "float32",
+        "bytes": 6187008,
+        "sha256": "6c2729077dec38bf5d60b6387e4036d16c61f8d874f79608643821a4eea87e2d"
+      }
+    }
+  },
+  "original_source": {
+    "path": "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m181_m120_video_board_candidate/video_language_runtime.py",
+    "sha256": "fae70964171580dc8329700e99aa0b25f27b752e9d4274c5bae72fa19f30cf61"
+  }
+}

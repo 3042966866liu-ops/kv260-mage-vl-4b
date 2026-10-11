@@ -1,0 +1,51 @@
+{
+  "file_count": 9,
+  "total_bytes": 137640,
+  "files": [
+    {
+      "path": "EXPECTED_VISUAL.json",
+      "bytes": 1228,
+      "sha256": "7ec9fb64b5f9c0aee5e9accd722d80beebc099dbc40c29a2b76f4ede79b5c99f"
+    },
+    {
+      "path": "m426_range02.py",
+      "bytes": 8451,
+      "sha256": "55de67dfa161b263c1104135d7b4dbb36df6c374a274bcac88ba4e4ec5dc9cb5"
+    },
+    {
+      "path": "m427_export.py",
+      "bytes": 941,
+      "sha256": "741c07cad31e9a135ae7eee2bb4b5d3cc8dfedf53154d9d410b207e8a12a61fb"
+    },
+    {
+      "path": "m427_gate.py",
+      "bytes": 16319,
+      "sha256": "a78845aa81fae4891bbc69cbd6af744a18e78d76768cea43358e33712885d403"
+    },
+    {
+      "path": "m427_saved_baseline.py",
+      "bytes": 2316,
+      "sha256": "ecd5041901a6090d10f73fe1e7e062b0069ebf81f6f5f6b2a1d567db5cd658eb"
+    },
+    {
+      "path": "PLAN.json",
+      "bytes": 96454,
+      "sha256": "8ae71fc7b5a5c7524264f9e94c77e16ea7a0f01ec65823bdd1ca616006f141e1"
+    },
+    {
+      "path": "run_m427.sh",
+      "bytes": 865,
+      "sha256": "6d28f364c93663716559310765de4d9481815c157aff81d27e9039c850c97efd"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 661,
+      "sha256": "db098ace0f89eee637bafa2ae45f90c732255f3988e65e7d2800c1f63aaa7f93"
+    },
+    {
+      "path": "SOURCE_IDENTITIES.json",
+      "bytes": 10405,
+      "sha256": "5785abdbe87d5b7b863d1f13f6253447842390e9b2387ff133c841439cf4bdf1"
+    }
+  ]
+}

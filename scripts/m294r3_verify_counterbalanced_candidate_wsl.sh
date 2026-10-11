@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+workspace=/mnt/c/Users/30429/Desktop/TeLLMe_FPGA_2026
+python=/home/lyy/projects/qwen_baseline/.venv/bin/python
+candidate=${workspace}/deployment/mage_vl4b/m294r3_counterbalanced_boundary_board_candidate
+manifest=$(${python} -c "import json; print(json.load(open('${workspace}/deployment/mage_vl4b/M294R3_COUNTERBALANCED_BOUNDARY_BUILD_RESULT.json'))['manifest_sha256'])")
+export PYTHONDONTWRITEBYTECODE=1
+export PYTHONPATH="${candidate}:${workspace}/deployment/mage_vl4b/m254_dual_path_web_candidate_r4:${workspace}/deployment/mage_vl4b/m243_web_prefill_source:${workspace}/deployment/mage_vl4b/m241_grouped_gqa_board_candidate:${workspace}/deployment/mage_vl4b/m181_m120_video_board_candidate/text_runtime/runtime:${workspace}/deployment/mage_vl4b/m222_realtime_vision_source:${workspace}/deployment/mage_vl4b/m212_live_stream_source:${workspace}/deployment/mage_vl4b/m197_ps_vision_fp32_block_candidate:${workspace}/deployment/mage_vl4b/m181_m120_video_board_candidate"
+
+${python} "${candidate}/m294_verify_package.py" \
+  --root "${candidate}" --expected-manifest-sha256 "${manifest}" --runtime-imports \
+  --tokenizer-json "${workspace}/deployment/mage_vl4b/m181_m120_video_board_candidate/text_auxiliary/tokenizer/tokenizer.json"
+bash -n "${candidate}/run_m294_counterbalanced_boundary_gate.sh"
+bash "${workspace}/scripts/m294r3_test_gate_root_contract.sh"
+if find "${candidate}" \( -type d -name __pycache__ -o -type f -name '*.pyc' \) -print -quit | grep -q .; then
+  echo M294R3_CACHE_CLOSURE_FAIL >&2
+  exit 1
+fi
+echo M294R3_WSL_RUNTIME_IMPORT_ROOT_BASH_CACHE_PASS

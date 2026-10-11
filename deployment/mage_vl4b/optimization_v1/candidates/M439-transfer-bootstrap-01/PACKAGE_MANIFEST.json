@@ -1,0 +1,22 @@
+{
+  "schema": "m439-transfer-bootstrap-v1",
+  "files": [
+    {
+      "path": "m439_transfer.py",
+      "bytes": 13477,
+      "sha256": "2ac8c530227232b0ff694684106ee32bc52af1ddfae610b146d7914d4c3f48e6"
+    },
+    {
+      "path": "run_m439_transfer.sh",
+      "bytes": 362,
+      "sha256": "43f4c03a5946ddf96e02eed956e187936d3e8cb3d93c75b2e7309c9c8af69906"
+    },
+    {
+      "path": "TRANSPORT_MANIFEST.json",
+      "bytes": 8531,
+      "sha256": "b786dbd3735460a00dd800506fb35dac5671c5b6680ac5505b35a8435536905b"
+    }
+  ],
+  "file_count": 3,
+  "total_bytes": 22370
+}

@@ -1,0 +1,80 @@
+{
+  "build_id": "0x4F503131",
+  "classification": "EXPERIMENTAL_IMPLEMENTATION_ONLY",
+  "capacity_status": "STOPPED_BY_USER_NOT_PASS",
+  "formal_promotion_allowed": false,
+  "board_deployed": false,
+  "performance_pass": false,
+  "timing": {
+    "wns_ns": 0.168,
+    "whs_ns": 0.01,
+    "serious_drc": 0
+  },
+  "registers": {
+    "CTRL": 0,
+    "ap_return": 16,
+    "s0_1": 24,
+    "s0_2": 28,
+    "s1_1": 36,
+    "s1_2": 40,
+    "s2_1": 48,
+    "s2_2": 52,
+    "s3_1": 60,
+    "s3_2": 64,
+    "config_r": 128
+  },
+  "files": [
+    {
+      "path": "overlay/op01_decode_one.bit",
+      "bytes": 7797914,
+      "sha256": "955574611198b37c26cd2b82deacae50e8f7019902c563803f2721f04c54be68"
+    },
+    {
+      "path": "overlay/op01_decode_one.hwh",
+      "bytes": 493494,
+      "sha256": "69e12b61dc2a4f0a84f31d09be9b534664d9b322117b861191692be6135bec64"
+    },
+    {
+      "path": "evidence/implementation.log",
+      "bytes": 207391,
+      "sha256": "c646952d681d3ab27c4ccd24391d6fa4f9f13d0a886c4fcb55fa7a8a7ebb74f6"
+    },
+    {
+      "path": "evidence/route_gate.txt",
+      "bytes": 72,
+      "sha256": "21ddddec3d3138f0d414f95716a5e3fd6b89855d794048b3391b87bb201bb8b9"
+    },
+    {
+      "path": "evidence/impl_utilization.rpt",
+      "bytes": 12961,
+      "sha256": "ea579b57509316e33bb0b62a9043cb984b99d95955de340ee051e1047db54071"
+    },
+    {
+      "path": "evidence/impl_timing_summary.rpt",
+      "bytes": 666159,
+      "sha256": "a55525f6414857da85f0edff256434eb80a5a6bc06441c9fe11805d2260ca93b"
+    },
+    {
+      "path": "evidence/impl_drc.rpt",
+      "bytes": 1759065,
+      "sha256": "f6ff0be5f301f800147c3e67f5364e99b3fc1785bcfbe1e955e07d634697f487"
+    },
+    {
+      "path": "evidence/impl_route_status.rpt",
+      "bytes": 651,
+      "sha256": "49402adbf745c0645580365c3fa209ae09ba747cf57a0575a024cdc6733785d5"
+    },
+    {
+      "path": "evidence/preflight_gate.txt",
+      "bytes": 314,
+      "sha256": "611292f645a74633320ec6fa797762a2a2cdba1af81181b89a861dcf6326a130"
+    },
+    {
+      "path": "evidence/address_audit.txt",
+      "bytes": 1371,
+      "sha256": "6ea8c609ca6af6350734b9f4d0759de9ab4dc6389152b4daa4e782316e5626e0"
+    }
+  ],
+  "file_count": 10,
+  "total_bytes": 10939392
+}

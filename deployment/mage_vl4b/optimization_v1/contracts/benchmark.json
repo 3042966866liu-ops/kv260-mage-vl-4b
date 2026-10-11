@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "status": "PROVISIONAL",
+  "source": "source_execution_contract.md",
+  "tracks": ["SYS", "FIX", "CACHE"],
+  "sys": {
+    "raw_video_duration_s": 4.0,
+    "frame_sample_times_s": [0.5, 1.5, 2.5, 3.5],
+    "batch_size": 1,
+    "quick_path_enabled": false,
+    "all_inference_and_preprocessing_on_board": true,
+    "persistent_model_and_overlay": true,
+    "request_kv_cache_cold": true,
+    "request_vision_cache_cold": true,
+    "request_answer_cache_cold": true,
+    "ttft_start": "after complete raw input received on board, before decode/preprocessing",
+    "ttft_end": "first valid generated token synchronized and ready for delivery"
+  },
+  "qa": {"max_new_tokens": 64, "sampling": "greedy", "honor_eos": true},
+  "long_generation": {"max_new_tokens": 128, "sampling": "greedy", "honor_eos": true, "required_actual_valid_tokens": 128},
+  "decode_tps": "(K-1)/(last_valid_ready_s-first_valid_ready_s); null if K<2",
+  "p90": "nearest-rank",
+  "formal_sys": {"videos": 10, "repeats_each": 3, "seed": 20260924},
+  "formal_long": {"videos": 5, "repeats_each": 2},
+  "formal_fix": {"sequences": 3, "pairs_each": 5, "orders": ["AB", "BA", "AB", "BA", "AB"], "excluded_warmups": 1},
+  "initial_watchdogs_s": {"first_token": 3600, "whole_request": 7200},
+  "frozen_watchdog_after_baseline": "max(600,2*matching_baseline_request_wall_s)",
+  "targets": {
+    "L1": {"ttft_median_s": 120, "ttft_p90_s": 180, "decode_median_tps": 2},
+    "L2": {"ttft_median_s": 60, "ttft_p90_s": 90, "decode_median_tps": 5},
+    "L3": {"ttft_median_s": 30, "ttft_p90_s": 45, "decode_median_tps": 8},
+    "R1": {"same_input_prefill_speedup_each_sequence": 2}
+  },
+  "performance_sample_manifest": null,
+  "frozen_candidate_hash": null,
+  "formal_acceptance_requires": ["G08.1", "G08.2", "G08.3-record", "10/10 actual 128 valid tokens", "zero execution failures", "independent KV260 execution"],
+  "note": "Definitions frozen from user contract; sample selection and runner synchronization remain unverified. No tier achieved."
+}

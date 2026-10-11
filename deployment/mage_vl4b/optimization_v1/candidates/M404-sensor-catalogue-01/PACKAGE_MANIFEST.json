@@ -1,0 +1,22 @@
+{
+  "schema": "m404-bounded-sensor-catalogue-v1",
+  "files": [
+    {
+      "path": "m404_sensor_inventory.py",
+      "bytes": 4351,
+      "sha256": "f45cb65f669b8b560b839f3c4eb56b128759ed0c9da2464d8cbbaa91cdb67dd6"
+    },
+    {
+      "path": "run_m404_sensor.sh",
+      "bytes": 537,
+      "sha256": "a6d689b737e8356c81e64e4ca01e7cc012cab318e32fd9d0dd01a8d2d5a51824"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 176,
+      "sha256": "777808a2c7ce1f2d045d02423e83efa7180d603bf82a5f16da12eff656b8aa03"
+    }
+  ],
+  "file_count": 3,
+  "total_bytes": 5064
+}

@@ -1,0 +1,22 @@
+"""Manifest-first assembly only from one exact previously verified package."""
+import hashlib,json,shutil,sys
+from pathlib import Path
+HERE=Path(__file__).resolve().parent
+OLD=Path('/home/ubuntu/m368_staged_video_candidate_03')
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def main():
+    if len(sys.argv)!=2 or sha(HERE/'PACKAGE_MANIFEST.json')!=sys.argv[1]:raise RuntimeError('Exact new manifest required')
+    if sha(OLD/'PACKAGE_MANIFEST.json')!='f5937684306cd0ce40683a9bc46097b69cc7a9c7625bf208883eaada8071fb66':raise RuntimeError('Old manifest differs')
+    old=json.loads((OLD/'PACKAGE_MANIFEST.json').read_bytes());oldrows={r['path']:r for r in old['files']}
+    m=json.loads((HERE/'PACKAGE_MANIFEST.json').read_bytes())
+    for row in m['files']:
+        name=row['path']
+        if Path(name).name!=name:raise RuntimeError('Flat whitelist required')
+        p=HERE/name
+        if not p.exists():
+            if oldrows.get(name)!=row or sha(OLD/name)!=row['sha256']:raise RuntimeError('Missing new payload; cannot synthesize')
+            shutil.copyfile(OLD/name,p)
+        if p.is_symlink() or p.stat().st_size!=row['bytes'] or sha(p)!=row['sha256']:raise RuntimeError('Assembled file differs')
+    if {p.name for p in HERE.iterdir()}!={r['path'] for r in m['files']}|{'PACKAGE_MANIFEST.json'} or len(m['files'])!=m['file_count'] or sum(r['bytes'] for r in m['files'])!=m['total_bytes']:raise RuntimeError('Closure differs')
+    print('M415_ASSEMBLY_PASS',sys.argv[1],m['file_count'],m['total_bytes'])
+if __name__=='__main__':main()

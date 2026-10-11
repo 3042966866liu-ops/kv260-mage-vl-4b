@@ -1,0 +1,28 @@
+{
+  "schema": "m397-offline-tail-scope-v1",
+  "board_ready": false,
+  "files": [
+    {
+      "path": "AUDIT_PREREQUISITE.json",
+      "bytes": 1553,
+      "sha256": "5b54ef78bc8c3224eb5840c74efde5b8427205b550869677c465896c46f59441"
+    },
+    {
+      "path": "m397_last_layer_tail_scope.py",
+      "bytes": 6092,
+      "sha256": "4fe1acc850ff066bc7f3e6ea298de0299cdb06b3a4c08470f8f48ca0adb011fe"
+    },
+    {
+      "path": "VALIDATION_PLAN.md",
+      "bytes": 4039,
+      "sha256": "83bb2de0baa2585bd8a635d03eb4d465ff99193c5a57e0e3ea838d5d7478e6c9"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 271,
+      "sha256": "f0cc007e6fe9a28bc0b40e90ecc3baf57533dc86885bf083d969ca8beb8a3788"
+    }
+  ],
+  "file_count": 4,
+  "total_bytes": 11955
+}

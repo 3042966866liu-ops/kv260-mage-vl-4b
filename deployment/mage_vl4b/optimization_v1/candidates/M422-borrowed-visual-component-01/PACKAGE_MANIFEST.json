@@ -1,0 +1,36 @@
+{
+  "file_count": 6,
+  "total_bytes": 18409,
+  "files": [
+    {
+      "path": "board_safety.py",
+      "bytes": 880,
+      "sha256": "18393fcac1a99831c28901a2484477005cc8b667462bbaef68e693029a048645"
+    },
+    {
+      "path": "component_entry.py",
+      "bytes": 142,
+      "sha256": "90347f74af0c82f78cf189b04e9a1e25ecc852bf7b896c1b8c738256ed390142"
+    },
+    {
+      "path": "m411_mlp_binding.py",
+      "bytes": 5681,
+      "sha256": "275e85583abc6c1ecfc2f14d59341207f2d2184a5a00bb4f838898f215ec29f5"
+    },
+    {
+      "path": "m422_borrowed_visual.py",
+      "bytes": 5437,
+      "sha256": "ba0c8277181c6cfbb8b818bbf16f8d6bdb289e11377e5b704e011a791fdbef07"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 438,
+      "sha256": "d34fb3c4215f545d95f160acd397182861ce904fdea15bc502ac75a46e3a62bb"
+    },
+    {
+      "path": "test_m422_borrowed_visual.py",
+      "bytes": 5831,
+      "sha256": "90be1b5a51b9af8cebbc4a97ad7e6568cf351495c671584c2d08a6dc691ad6ce"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+#ifndef T64_RTL_TB_EXTERNAL_HEADER
+#include "mage_prefill_m230_t64_reuse.hpp"
+#endif
+#ifndef T64_RTL_TB_KERNEL
+#define T64_RTL_TB_KERNEL m240_t64_kernel
+#endif
+#ifndef T64_RTL_TB_BUILD_ID
+#define T64_RTL_TB_BUILD_ID 0x4D323430U
+#endif
+#ifndef T64_RTL_TB_LABEL
+#define T64_RTL_TB_LABEL "M240"
+#endif
+
+#include <iostream>
+
+namespace {
+constexpr unsigned kGroups = 1;
+constexpr unsigned kBits = 4;
+constexpr unsigned kDescriptorCount = 1;
+constexpr unsigned kRowsPerShard = 512;
+constexpr unsigned kBlocks = kRowsPerShard / 8;
+constexpr unsigned kWordsPerGroupBlock = 1 + 4 * kBits;
+constexpr unsigned kWordsPerShard = kGroups * kBlocks * kWordsPerGroupBlock;
+constexpr unsigned kPairsPerShard = kBlocks * 64 * 4;
+constexpr unsigned kExpectedOutputWords = kPairsPerShard * 4;
+static_assert(kWordsPerShard == 1088, "M240 W4 weight geometry drifted");
+static_assert(kPairsPerShard == 16384, "M240 FIFO occupancy drifted");
+static_assert(kExpectedOutputWords == 65536, "M240 output contract drifted");
+}
+
+int main() {
+  static ap_uint<128> weights[4][524288];
+  for (unsigned shard = 0; shard < 4; ++shard)
+    for (unsigned block = 0; block < kBlocks; ++block) {
+      const unsigned base = block * kWordsPerGroupBlock;
+      weights[shard][base] = 0;
+      for (unsigned word = 1; word < kWordsPerGroupBlock; ++word)
+        weights[shard][base + word] =
+            ap_uint<128>(0x0101010101010101ULL) |
+            (ap_uint<128>(0x0101010101010101ULL) << 64);
+    }
+
+  hls::stream<m89_axis128_t> tx;
+  hls::stream<m89_axis64_t> rx;
+  m89_axis128_t descriptor;
+  descriptor.data = 0;
+  descriptor.data.range(41, 32) = kRowsPerShard;
+  descriptor.data.range(44, 42) = kBits;
+  descriptor.keep = -1;
+  descriptor.strb = -1;
+  descriptor.last = 0;
+  tx.write(descriptor);
+
+  for (unsigned token_block = 0; token_block < 2; ++token_block)
+    for (unsigned token = 0; token < 32; ++token)
+      for (unsigned word = 0; word < 5; ++word) {
+        m89_axis128_t item;
+        item.data = word == 4 ? ap_uint<128>(0x3c00) : ap_uint<128>(0);
+        item.keep = -1;
+        item.strb = -1;
+        item.last = token_block == 1 && token == 31 && word == 4;
+        tx.write(item);
+      }
+
+  const ap_uint<32> config =
+      kGroups | (kBits << 8) | (kDescriptorCount << 16) | (2U << 20);
+  const ap_uint<32> returned = T64_RTL_TB_KERNEL(
+      tx, weights[0], weights[1], weights[2], weights[3], rx, config);
+  if (returned != T64_RTL_TB_BUILD_ID) return 1;
+
+  unsigned tlast_count = 0;
+  for (unsigned index = 0; index < kExpectedOutputWords; ++index) {
+    const m89_axis64_t item = rx.read();
+    const bool expected_last = index + 1 == kExpectedOutputWords;
+    if (item.data != 0 || item.keep != ap_uint<8>(0xff) ||
+        item.strb != ap_uint<8>(0xff)) return 2;
+    if (bool(item.last) != expected_last) return 3;
+    if (item.last) ++tlast_count;
+  }
+  if (!rx.empty() || !tx.empty()) return 4;
+  if (tlast_count != 1) return 5;
+  std::cout << T64_RTL_TB_LABEL << "_GEOMETRY fifo_pairs_per_shard=" << kPairsPerShard
+            << " output_words64=" << kExpectedOutputWords << "\n";
+  std::cout << T64_RTL_TB_LABEL << "_RETURN_ID=0x" << std::hex << returned.to_uint()
+            << std::dec << "\n";
+  std::cout << T64_RTL_TB_LABEL << "_T64_MAX_FIFO_RANDOM_STALL_RTL_PASS\n";
+  return 0;
+}

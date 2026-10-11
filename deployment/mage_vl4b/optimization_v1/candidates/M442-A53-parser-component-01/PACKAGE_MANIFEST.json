@@ -1,0 +1,82 @@
+{
+  "schema": "m442-a53-cpu-component-v1",
+  "files": [
+    {
+      "path": "gate_up_actual_output.bin.gz",
+      "bytes": 1372976,
+      "sha256": "707ef55c72aed2820bbaf1c1ebf7397c727422faab0f26011d9387f566406228"
+    },
+    {
+      "path": "m231_prefill_runtime.py",
+      "bytes": 11534,
+      "sha256": "e7d6aa5a43919405168612b6a5695c14330735f75c87aa269b245e61542750ad"
+    },
+    {
+      "path": "m236_prefill_runtime.py",
+      "bytes": 14354,
+      "sha256": "d8061b561fe4d2a089523fde0d3860684244e76bca9646f255f03134fb50be56"
+    },
+    {
+      "path": "m238_prefill_runtime.py",
+      "bytes": 8974,
+      "sha256": "daf30c982c276b90ac776178ad258e536925dce52de7ab26b06a9473ff9a9d9a"
+    },
+    {
+      "path": "m441_host_io08.py",
+      "bytes": 1449,
+      "sha256": "5fbb1054b4b798ee56892a74c2566674838a89da1551ee73a9fefdb1dee2deca"
+    },
+    {
+      "path": "m442_component_gate01.py",
+      "bytes": 4161,
+      "sha256": "78e1f8cb2fa3a6865f6237d77b3b52aed67ce666d949f671aef7dd0b541563b9"
+    },
+    {
+      "path": "m442_output_parser06.py",
+      "bytes": 5651,
+      "sha256": "3069230b6ce2d1c06f9a2229f70922f0e7b9b5ab86e37985f8195b5deec88256"
+    },
+    {
+      "path": "m442_runtime_adapter02.py",
+      "bytes": 1849,
+      "sha256": "3fe443c242da231d894e5624d761677674588a7af10b4b7b3f541f184ea09491"
+    },
+    {
+      "path": "m442_verify_integration02.py",
+      "bytes": 12059,
+      "sha256": "63ea50ba8f4054a4c4a3c0bbca91d9d569d5bd18fb5866613b202285beef7a81"
+    },
+    {
+      "path": "m442_verify_parser06.py",
+      "bytes": 10293,
+      "sha256": "40576abad7f8a307388aeda519feebe2ab390fc9eefe76d0411fd5cd868978d6"
+    },
+    {
+      "path": "mlp_down_actual_output.bin.gz",
+      "bytes": 182358,
+      "sha256": "04acff1c852f65d36311c3d9a6e573c67037f5a60e471b6bc8551ef8e0502985"
+    },
+    {
+      "path": "PLAN.json",
+      "bytes": 12333,
+      "sha256": "c1169d52ac90fd9a43d19d7661487dad0d9f070505940c07f4d76698f7a2c890"
+    },
+    {
+      "path": "q_actual_output.bin.gz",
+      "bytes": 291001,
+      "sha256": "f0f7c8f069e23b1657c5d12ef118a94530f914a1f77e0a510368f34404b9e22c"
+    },
+    {
+      "path": "run_m442_component.sh",
+      "bytes": 638,
+      "sha256": "95238637fc0762562e71899048113d3b401bac5eb2fde356086f0ebb1ab82cb5"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 1256,
+      "sha256": "7bd34d9a871eda0509e9053c6c657eb9572f4806a796d4d790fc3cd39d571e82"
+    }
+  ],
+  "file_count": 15,
+  "total_bytes": 1930886
+}

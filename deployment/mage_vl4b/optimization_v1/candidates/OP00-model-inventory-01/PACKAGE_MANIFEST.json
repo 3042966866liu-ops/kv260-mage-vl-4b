@@ -1,0 +1,21 @@
+{
+  "files": [
+    {
+      "path": "inventory_targets.json",
+      "bytes": 1702,
+      "sha256": "14cacad6162bbcae9e4a72363080e460e7e1c76155cbffddcfff1c136d25d3cc"
+    },
+    {
+      "path": "measurement.py",
+      "bytes": 7152,
+      "sha256": "973d0354c1b019987b8f777f149ecb418db897e1b9f771b10c0c03b4bf49b23e"
+    },
+    {
+      "path": "op00_model_inventory.py",
+      "bytes": 5305,
+      "sha256": "2a0adf5654c0519edfc6e62dea5691978e67c4943f701e3c1ac13592d7d0b86f"
+    }
+  ],
+  "file_count": 3,
+  "total_bytes": 14159
+}

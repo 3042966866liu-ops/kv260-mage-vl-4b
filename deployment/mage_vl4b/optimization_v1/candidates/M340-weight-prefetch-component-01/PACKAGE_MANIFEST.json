@@ -1,0 +1,40 @@
+{
+  "schema": "tellme-m340-component-only-v1",
+  "files": [
+    {
+      "path": "board_safety.py",
+      "bytes": 880,
+      "sha256": "18393fcac1a99831c28901a2484477005cc8b667462bbaef68e693029a048645"
+    },
+    {
+      "path": "m340_component_probe.py",
+      "bytes": 3521,
+      "sha256": "f5d780bdace4d5b5b5521564e77408c337b3beac0761c5d8b4b2d558ad2e5c7e"
+    },
+    {
+      "path": "run_m340_component.sh",
+      "bytes": 480,
+      "sha256": "0580b612311ccd72bab9462ae8888acb8fceac0a846e644b3e1e68dd3373e053"
+    },
+    {
+      "path": "test_weight_prefetch.py",
+      "bytes": 8218,
+      "sha256": "ed59f1573b53c690795d389debcc20e5f2c1c64b306116f79564ea5841fff28a"
+    },
+    {
+      "path": "weight_prefetch.py",
+      "bytes": 8258,
+      "sha256": "5e02203e54358440e702f0828713e0baa6d50ee8923656d8dedf431f830cea1e"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 435,
+      "sha256": "e3ed7491b098024c6d8cdc4d35292199c74e01986a434413bb62e8e05a2e1b26"
+    }
+  ],
+  "file_count": 6,
+  "total_bytes": 21792,
+  "hardware_changed": false,
+  "hardware_gate_allowed": false,
+  "performance_pass": false
+}

@@ -1,0 +1,42 @@
+{
+  "schema": "m441-first-switch-cma13",
+  "files": [
+    {
+      "path": "m441_cma_trace13.py",
+      "bytes": 8843,
+      "sha256": "ea535e2789bb3db8f35100810a049b00141742922beb459713bda74cf7e8aeba"
+    },
+    {
+      "path": "m441_switch_entry13.py",
+      "bytes": 2780,
+      "sha256": "601058074caf4e41271d49308e83319f4ebfa44e5abeb4816bf8b7021ab39fbd"
+    },
+    {
+      "path": "m441_switch_export13.py",
+      "bytes": 1438,
+      "sha256": "71bba22de07df7547bb565e9241080822497a3dcbf430f7d0779a1b1240e8e21"
+    },
+    {
+      "path": "PROTOCOL.json",
+      "bytes": 1027,
+      "sha256": "1b778f2a35895739b7aa153fbbd8bda539e5b8c09752ff2dbf176403b45a07db"
+    },
+    {
+      "path": "run.sh",
+      "bytes": 864,
+      "sha256": "7d21c17f7785d7cdb8986a17c6a7516270b0e75696c6f4befd8e7ab537ebe1a6"
+    },
+    {
+      "path": "SOURCE_IDENTITIES.json",
+      "bytes": 930,
+      "sha256": "223865b1673d4760584af2282bc970f72fd84b72d9164f8c268ef0fec26c51d8"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 507,
+      "sha256": "02666fc2c6bbc51ad9dc431b07a713194ba1bcf64b17b39352aad0e29ead59b2"
+    }
+  ],
+  "file_count": 7,
+  "total_bytes": 16389
+}

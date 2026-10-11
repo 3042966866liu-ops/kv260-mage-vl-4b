@@ -1,0 +1,22 @@
+{
+  "schema": "m443-transfer-bootstrap-v1",
+  "files": [
+    {
+      "path": "m443_transfer.py",
+      "bytes": 13477,
+      "sha256": "58f6be96ee6aba52fd381a4ec44c95e7e53d29f7eb494b2f9007ef41df3bff9c"
+    },
+    {
+      "path": "run_m443_transfer.sh",
+      "bytes": 362,
+      "sha256": "86f34aef778d414136d26fea6c41da21b1ad6d17913a9e73fd2bf9040ffcb805"
+    },
+    {
+      "path": "TRANSPORT_MANIFEST.json",
+      "bytes": 10015,
+      "sha256": "82c284a44f3b82a271dfa4d8b6e65e6a83e3068d4fd47fe202f0751bd5c7c1dd"
+    }
+  ],
+  "file_count": 3,
+  "total_bytes": 23854
+}

@@ -33,3 +33,11 @@
 - Decode-one 容量测试仍为 `STOPPED_BY_USER_NOT_PASS`；M325 同会话对照未证明优于稳定核，未进入稳定版。
 
 精确 v4–v7 与 M328 板端／UART 证据保存在上级工作区的 `deployment/mage_vl4b/M327_RELEASE_FIRST_INSTALL*_RESULT.json`、`deployment/mage_vl4b/M328_RELEASE_VIDEO_BOARD_RESULT.json`、`tmp/m327_v7_*_uart.log` 和 `tmp/m328_video_gate_uart.log`。安装失败即停止的流程见[快速开始](docs/quickstart.md)，许可范围见[来源说明](docs/provenance.md)。
+
+## 2026-10-11 优化源码同步
+
+上次 GitHub 上传后新增的 PS／DMA／CMA／解析器与 M441、M443 硬件优化源码、控制采集脚本、所需配置和实测摘要已整理。M442 与 M443 的独立完整请求收益分别为 1.233025656% 和 1.564552813%，不相加；原始结果和失败记录保留在本地工作区，稳定默认安装保持。详见[代码目录、实验条件及实测摘要](docs/optimization_20260930_20261011.md)。本次源码发布核验不执行新的 FPGA 推理或实现，未证明干净克隆能完整重建全壳。
+
+本次公开审计核对源码清单 SHA、摘要统计、语法与依赖；完整 raw 证据在本地核实后保留于工作区。代码同步未触碰设备或修改 Release 大资产。
+
+本次离线核验通过：发布清单覆盖 12873 个文件；12548 份源码／配置逐 SHA 对照；4151 个 Python 文件通过 Python 3.11 语法检查。三项公开统计复算及本地原始 closure/raw SHA 核对通过。HLS include 210 条 missing=0、稳定 M254 31 模块 unresolved=0、M321 BACT 复算通过。无设备 dry-run 正确指出缺少外部二进制资产，未执行硬件。

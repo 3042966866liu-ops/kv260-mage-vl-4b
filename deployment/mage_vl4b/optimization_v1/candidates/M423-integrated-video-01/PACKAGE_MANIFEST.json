@@ -1,0 +1,101 @@
+{
+  "file_count": 19,
+  "total_bytes": 540783,
+  "files": [
+    {
+      "path": "HARDWARE_CLOSURE.json",
+      "bytes": 3170,
+      "sha256": "a86b595540bc381c43ab14bac67907487a906a56bbc640ae9de4ec5cac81b081"
+    },
+    {
+      "path": "M348_SOURCE_IDENTITIES.json",
+      "bytes": 10405,
+      "sha256": "5785abdbe87d5b7b863d1f13f6253447842390e9b2387ff133c841439cf4bdf1"
+    },
+    {
+      "path": "M357_COMPARE_PREREQUISITE.json",
+      "bytes": 40020,
+      "sha256": "ca35750d1b7043b76a16c75b97341616823137a58d91545576de0361a6ba3bde"
+    },
+    {
+      "path": "m369_light_policy.py",
+      "bytes": 2272,
+      "sha256": "2297bb52d6d2e44fbbab449050a185037654b1a6a6b446445569855c6dbe230a"
+    },
+    {
+      "path": "m411_mlp_binding.py",
+      "bytes": 5681,
+      "sha256": "275e85583abc6c1ecfc2f14d59341207f2d2184a5a00bb4f838898f215ec29f5"
+    },
+    {
+      "path": "m422_borrowed_visual.py",
+      "bytes": 5476,
+      "sha256": "8295e0b07a7579a65eaabcc512b9f09450034a33c25064331b9d1444c64b0666"
+    },
+    {
+      "path": "m423_assemble.py",
+      "bytes": 1563,
+      "sha256": "c6df0e0d90d52847f8c5b9f8692db873ad591c83640926431c5d551cb083671c"
+    },
+    {
+      "path": "m423_export.py",
+      "bytes": 871,
+      "sha256": "ccf9306bd8014289e157adac3256d04c0684a5fdc5142e10f6c96edcb080a1bd"
+    },
+    {
+      "path": "m423_gate.py",
+      "bytes": 28082,
+      "sha256": "252da179852241b0598fc5f5777d899e7aa732c2c1fc7f47fe6ed5ce2a6d6e04"
+    },
+    {
+      "path": "m423_request_visual.py",
+      "bytes": 8755,
+      "sha256": "65d096fece32439253580b3f608adee4550396a1f35d862fb39fcae29f451b9b"
+    },
+    {
+      "path": "m423_saved_features.py",
+      "bytes": 3988,
+      "sha256": "ac37353d1ef8f5cd5c10c876196b859582dd8d87319dcff45ef3bc81fdecba25"
+    },
+    {
+      "path": "m423_trials.py",
+      "bytes": 7121,
+      "sha256": "6f47d06bc17cc7cb3d648743ebdb7113b91669afc5dfbb928ecbdaa6ac0e8675"
+    },
+    {
+      "path": "PLAN.json",
+      "bytes": 7849,
+      "sha256": "42c51883ca4773f8d180de94bb98bf0b5520ce64ceb4aab7389163a01e206883"
+    },
+    {
+      "path": "run_m423.sh",
+      "bytes": 799,
+      "sha256": "ac80e59e67f430669409b13a2028db6511e64896493992af54a083e4f9c9999f"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 1547,
+      "sha256": "2cdcc882652f65ef71f952fc4a273169e6da343a80ffd0c01dfdb7b07cf89763"
+    },
+    {
+      "path": "SOURCE_CLOSURE.json",
+      "bytes": 16344,
+      "sha256": "c2f625f6c4b4097fb143f714ff8626fac160aaf02d251da623cb88d05768a457"
+    },
+    {
+      "path": "STAGE_PREREQUISITE.json",
+      "bytes": 2154,
+      "sha256": "ec450256bea9f4f8baf1f8b0df6c400108048ac338424a3f19e72d2adcff4b1b"
+    },
+    {
+      "path": "VIDEO_EXPECTED.json",
+      "bytes": 339151,
+      "sha256": "cc03faca51a3797fe69d7d7cc8cd1711b6df3234cc3b91a2a822f2d394d071cb"
+    },
+    {
+      "path": "VISUAL_EXPECTED.json",
+      "bytes": 55535,
+      "sha256": "b2d34d44317c2b23de531957d17c5f8a7a230d58d2ace30004fff147ee65e48c"
+    }
+  ]
+}

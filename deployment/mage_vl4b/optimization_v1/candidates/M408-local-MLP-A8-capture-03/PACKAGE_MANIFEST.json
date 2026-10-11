@@ -1,0 +1,76 @@
+{
+  "file_count": 14,
+  "total_bytes": 68895,
+  "files": [
+    {
+      "path": "EXPECTED.json",
+      "bytes": 1228,
+      "sha256": "7ec9fb64b5f9c0aee5e9accd722d80beebc099dbc40c29a2b76f4ede79b5c99f"
+    },
+    {
+      "path": "EXPECTED_TARGET.json",
+      "bytes": 918,
+      "sha256": "3cf013d46bd9c62ca4ecbfdebba7ddf505e2a51f73117ed8fbf88fb6fd429e76"
+    },
+    {
+      "path": "frozen_video_identity.py",
+      "bytes": 3762,
+      "sha256": "b89bc42e622a86169cb30a5ac8f91a2f40155988afa2830e2e38d0be50804ccc"
+    },
+    {
+      "path": "M348_SOURCE_IDENTITIES.json",
+      "bytes": 10405,
+      "sha256": "5785abdbe87d5b7b863d1f13f6253447842390e9b2387ff133c841439cf4bdf1"
+    },
+    {
+      "path": "m406_vision_observer.py",
+      "bytes": 13848,
+      "sha256": "8e3708a0888c707d53f1a1427e9c20722b61ac52a696918854f1f0c2c72fec6b"
+    },
+    {
+      "path": "m407_mlp_contract.py",
+      "bytes": 3219,
+      "sha256": "b9b2d23be042b3281543f08022c347cef8461149a53add2be29cd42ac7a4c513"
+    },
+    {
+      "path": "m408_component.py",
+      "bytes": 5309,
+      "sha256": "944388361d62371192232810b980c4b5d55426f47f42d564daf848d357af8b2a"
+    },
+    {
+      "path": "m408_gate.py",
+      "bytes": 14246,
+      "sha256": "fff7f61c513e5b04ddaaafac1762bee365fcd69f49786bcbe1e1b8cbdfc9980d"
+    },
+    {
+      "path": "m408_mlp_capture.py",
+      "bytes": 6257,
+      "sha256": "8bc05814d1c708400d4a4abda15b88bedd7aacdd7e6a13e5ef31923d6f5868f6"
+    },
+    {
+      "path": "m408_target03.py",
+      "bytes": 2140,
+      "sha256": "3c21b581b6b36959e1ffee5de8a983921fd66924b27ce9d7b8393a5f57d10276"
+    },
+    {
+      "path": "m408_target_component03.py",
+      "bytes": 4828,
+      "sha256": "e74576d090ea474135b6cb2516d07e8763f1e867ac01d4bc906c0d0d1ee1f7d8"
+    },
+    {
+      "path": "PREREQUISITE.json",
+      "bytes": 743,
+      "sha256": "b85b7d0c7bca5f5665d80c071964ccf5f4ee0ae2b9b6d1133c16008e615db8e3"
+    },
+    {
+      "path": "run_m408_capture.sh",
+      "bytes": 868,
+      "sha256": "af2f9126e1d6ea3ce76c44ddacb17768c94ed99653ac2b362376808318caabe3"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 1124,
+      "sha256": "71a08e93b64d94139c2d603b0039f2059d292fc5778a165e4226626d87e70bdc"
+    }
+  ]
+}

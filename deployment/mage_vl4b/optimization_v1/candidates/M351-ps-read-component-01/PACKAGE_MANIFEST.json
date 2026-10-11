@@ -1,0 +1,47 @@
+{
+  "schema": "m351-ps-read-cpu-component-v1",
+  "files": [
+    {
+      "path": "board_safety.py",
+      "bytes": 880,
+      "sha256": "18393fcac1a99831c28901a2484477005cc8b667462bbaef68e693029a048645"
+    },
+    {
+      "path": "DESIGN_PREREQUISITE.json",
+      "bytes": 186,
+      "sha256": "51546c3f13abf894ae98d8dcdf3151ac32a84315126f9676fc201926abdeef6f"
+    },
+    {
+      "path": "m351_component_gate.py",
+      "bytes": 5673,
+      "sha256": "eeb539035bc8c97fbf1e947fd0d20eb941e62ce8f3bfe8a19d637d6bb3f2ad4f"
+    },
+    {
+      "path": "m351_export_result.py",
+      "bytes": 838,
+      "sha256": "0d97c163a7f429ba069335ed482ed26fd9074fbdc3929a687429427a3eedf6d6"
+    },
+    {
+      "path": "ps_read_ahead.py",
+      "bytes": 13326,
+      "sha256": "4cd28217f1bf8b36cb29d80ff16c64d7e10d5240b20a7c2a8cc5849ee39aabd2"
+    },
+    {
+      "path": "run_m351_component.sh",
+      "bytes": 814,
+      "sha256": "26caa61db92631c234ffb407e5d9110cbe2127dcb1c184616b16eb64362885e8"
+    },
+    {
+      "path": "test_ps_read_ahead.py",
+      "bytes": 17009,
+      "sha256": "a9b13bf26780f569aca962cbbd32801ce21ff5a7b1dc2f0b9f90ebdda88d8f22"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 609,
+      "sha256": "45613c9edbf427bd3a38925302a7163fe5c549bb39cfc401d5f0dedeac32128b"
+    }
+  ],
+  "file_count": 8,
+  "total_bytes": 39335
+}

@@ -1,0 +1,136 @@
+{
+  "status": "PASS_G00.1",
+  "build_id": "0x4D395832",
+  "board_python": "/usr/local/share/pynq-venv/bin/python",
+  "board_platform": "Linux-5.15.0-1027-xilinx-zynqmp-aarch64-with-glibc2.35",
+  "runtime_imports": {
+    "numpy": {
+      "file": "/home/ubuntu/tellme_m120_m89x2_20260901/m190_mage_runtime/numpy/__init__.py",
+      "sha256": "22cd1535fa14d74ef6f457cca149ffdc80875f460be313b8f895273f78bc402e",
+      "version": "1.26.4"
+    },
+    "tokenizers": {
+      "file": "/home/ubuntu/tellme_m120_m89x2_20260901/m190_mage_runtime/tokenizers/__init__.py",
+      "sha256": "644e596a052fa1b05272b1c141d1286e1c78c2a3346ecabd17d68b62404d8d84",
+      "version": "0.22.1"
+    },
+    "torch": {
+      "file": "/home/ubuntu/tellme_m120_m89x2_20260901/m190_mage_runtime/torch/__init__.py",
+      "sha256": "d9dfff4b75d46e4c75572200a3466b70231d05b0318e38ac1bd121789165fb49",
+      "version": "2.12.1+cpu"
+    },
+    "transformers": {
+      "file": "/home/ubuntu/tellme_m120_m89x2_20260901/m190_mage_runtime/transformers/__init__.py",
+      "sha256": "f9540fe5a11e5c8d8c23d932de6fbb78273b993f356c0223b6f544588b8f9788",
+      "version": "5.7.0"
+    },
+    "PIL": {
+      "file": "/home/ubuntu/tellme_m120_m89x2_20260901/m190_mage_runtime/PIL/__init__.py",
+      "sha256": "43828e12947b4bf5ec8f7d1fbceb2f47de311295f8294b15794c1a54fd5f53cd",
+      "version": "12.1.0"
+    },
+    "m238_prefill_runtime": {
+      "file": "/home/ubuntu/tellme_m120_m89x2_20260901/m242_m241_fixed_text_delta/m238_prefill_runtime.py",
+      "sha256": "daf30c982c276b90ac776178ad258e536925dce52de7ab26b06a9473ff9a9d9a",
+      "version": "unavailable"
+    },
+    "m241_video_language_runtime": {
+      "file": "/home/ubuntu/tellme_m120_m89x2_20260901/m242_m241_fixed_text_delta/m241_video_language_runtime.py",
+      "sha256": "24f419ea8e0f130cefc8eb51f916dca3fb945b84f0dc8e73dec9f5376be3ad09",
+      "version": "unavailable"
+    },
+    "m222_vectorized_w4_runtime": {
+      "file": "/home/ubuntu/tellme_m120_m89x2_20260901/m223_realtime_delta/m222_vectorized_w4_runtime.py",
+      "sha256": "48f9144f14d58bf57202ed32b7aab34a84430906bbe857a568b4f4f00faacf7d",
+      "version": "unavailable"
+    }
+  },
+  "isolated_decoder": "/home/ubuntu/tellme_m120_m89x2_20260901/optimization_v1/dependencies/opencv411_arm64_v1/site",
+  "decoder_manifest_sha256": "88be2d8b1f74aac57d87debe941dbf67b701242e68c53bdf0eb61d35e6317bf7",
+  "python_paths": [
+    "/home/ubuntu/tellme_m120_m89x2_20260901/m190_mage_runtime",
+    "/home/ubuntu/tellme_m120_m89x2_20260901/m227_runtime_base_patch",
+    "/home/ubuntu/tellme_m120_m89x2_20260901/m242_m241_fixed_text_delta",
+    "/home/ubuntu/tellme_m120_m89x2_20260901/m223_realtime_delta",
+    "/home/ubuntu/tellme_m120_m89x2_20260901/m218_dual_source_delta",
+    "/home/ubuntu/tellme_m120_m89x2_20260901/m181_m120_video_board_candidate",
+    "/home/ubuntu/tellme_m120_m89x2_20260901/m175_m120_fixed_text_candidate/runtime",
+    "/home/ubuntu/tellme_m120_m89x2_20260901/m175_m120_fixed_text_candidate/runtime/support"
+  ],
+  "wsl": {
+    "status": "PASS",
+    "scope": "WSL_READONLY_IDENTITY",
+    "python": "/home/lyy/projects/qwen_baseline/.venv/bin/python",
+    "model_files": [
+      {
+        "path": "/home/lyy/models/Mage-VL/config.json",
+        "exists": true,
+        "sha256": "fd4621212569e893ce2caa110431fde73f3cc1a1d92e1b8320bb4e0cfbcad34a",
+        "bytes": 3243
+      },
+      {
+        "path": "/home/lyy/models/Mage-VL/tokenizer_config.json",
+        "exists": true,
+        "sha256": "f64d944a98d2d9901581be7a5f36b626ff2dc0d5b7d5dedb412412ca39606df0",
+        "bytes": 4750
+      },
+      {
+        "path": "/home/lyy/models/Mage-VL/tokenizer.json",
+        "exists": true,
+        "sha256": "ba0c439f7be467bf47d12a7e6f9adc6116201056fc60c67f431c679b7c16afc8",
+        "bytes": 11422064
+      },
+      {
+        "path": "/home/lyy/models/Mage-VL/model.safetensors.index.json",
+        "exists": true,
+        "sha256": "2cad26f4364750d9b0551dff11e776837b9ef822fe29e068f68d935a8e65cc54",
+        "bytes": 65768
+      }
+    ],
+    "checkpoint_manifest_sha256": "5ff33d1922376e18277902a8b051d069315f79c11b4f63e8d72517acd1dcd5d0",
+    "checkpoint_blob_path": "/home/lyy/artifacts/tellme-mage-vl/m120-text4b-mixed-w3e-w4h-w4mlpkv-v2/weights.bin",
+    "checkpoint_blob_sha256": "9c7de8995a08602186c7090081bbfc10b7c51170ad7e544f2f2dc71333b4f21d",
+    "checkpoint_blob_bytes": 2380646272,
+    "packages": {
+      "torch": "2.12.1+cu130",
+      "transformers": "5.15.0",
+      "numpy": "2.5.2",
+      "Pillow": "12.3.0",
+      "safetensors": "0.8.0",
+      "av": null
+    },
+    "elapsed_s": 1.4127276110000002,
+    "board_accessed": false
+  },
+  "evidence": [
+    {
+      "path": "C:\\Users\\30429\\Desktop\\TeLLMe_FPGA_2026\\deployment\\mage_vl4b\\optimization_v1\\baselines\\identity.json",
+      "sha256": "6eda97e22472541535e86541a4d7ebaae873994bedf165a8b5b6d6ecd77c273d"
+    },
+    {
+      "path": "C:\\Users\\30429\\Desktop\\TeLLMe_FPGA_2026\\deployment\\mage_vl4b\\optimization_v1\\baselines\\OP00_WSL_IDENTITY.json",
+      "sha256": "4a1a2f59a9eba577d52b869ac6fe84749cc4877718fd875527ec64d5e7d48881"
+    },
+    {
+      "path": "C:\\Users\\30429\\Desktop\\TeLLMe_FPGA_2026\\deployment\\mage_vl4b\\optimization_v1\\gates\\G00-audit\\attempt_01\\result.json",
+      "sha256": "c734deb697687b9498a0fbca11550b72e25bd06a808443f0467c81bc3ee8d9ab"
+    },
+    {
+      "path": "C:\\Users\\30429\\Desktop\\TeLLMe_FPGA_2026\\deployment\\mage_vl4b\\optimization_v1\\gates\\G00.2\\attempt_01\\result.json",
+      "sha256": "0ffb4f99a58736c35ccbe1f301210cc29f60ebc7614d1224b8d19d6ce9555a16"
+    },
+    {
+      "path": "C:\\Users\\30429\\Desktop\\TeLLMe_FPGA_2026\\deployment\\mage_vl4b\\optimization_v1\\gates\\G00-stable-probe\\attempt_03\\result.json",
+      "sha256": "144c3d67757a251a83cbac5df7776d857dfd09ffae404e2bc6d2175820396969"
+    },
+    {
+      "path": "C:\\Users\\30429\\Desktop\\TeLLMe_FPGA_2026\\deployment\\mage_vl4b\\optimization_v1\\gates\\G00-model-inventory\\attempt_01\\result.json",
+      "sha256": "f42fcf1adc890b494fe71d306b90b9feda263811ae6b9700da812817f7e166e7"
+    },
+    {
+      "path": "C:\\Users\\30429\\Desktop\\TeLLMe_FPGA_2026\\deployment\\mage_vl4b\\optimization_v1\\gates\\G00-decoder-dependency\\attempt_01\\result.json",
+      "sha256": "9a92126355efa4f473932715fc3b353937ee692ae67508c597d11407eb9b0d50"
+    }
+  ],
+  "transport": "COM3 control/results; user-authorized bounded temporary Ethernet artifacts; no SSH"
+}

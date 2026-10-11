@@ -1,0 +1,186 @@
+{
+  "scope": "Three independent fixed159 resident-runtime experiments; no combined variant or production promotion.",
+  "source_of_numbers": "Verified local original closure results; raw traces remain in the private workspace.",
+  "experiments": [
+    {
+      "name": "M441-complete-request-closure-17",
+      "closure_sha256": "a2735e49ac9640a09dac3c19506376166b84e049368fea85e79ee56c1d49af23",
+      "raw_sha256": "ebd5c09d6ed2e54fe9e41f7b6a6ce27d2c8f62648bfb683c77bbdc7d6ffffacc",
+      "status": "PASS_NATURAL_IO_FULL_REQUEST_BENEFIT",
+      "A_mean_ms": 106413.5153415,
+      "B_mean_ms": 94595.48968000035,
+      "paired_mean_gain_ms": 11818.025661499632,
+      "paired_95percent_CI_ms": [
+        11392.076658899145,
+        12243.97466410012
+      ],
+      "gain_percent": 11.105756278771066,
+      "paired_deltas_ms": [
+        11631.098478999775,
+        12161.690826000267,
+        11897.196060999704,
+        11582.117279998783
+      ],
+      "completed_requests": 12,
+      "formal_requests": 8,
+      "production_promoted": false,
+      "IO_adjusted": false,
+      "blocks": [
+        {
+          "order": "ABBA",
+          "A_ms": [
+            106467.17183800138,
+            106501.05342700044
+          ],
+          "B_ms": [
+            94836.0733590016,
+            94339.36260100018
+          ],
+          "A_mean_ms": 106484.11263250091,
+          "B_mean_ms": 94587.71798000089,
+          "gain_ms": 11896.394652500021,
+          "gain_percent": 11.171990223139657,
+          "A_range_ms": 33.88158899906557,
+          "B_range_ms": 496.71075800142717
+        },
+        {
+          "order": "BAAB",
+          "A_ms": [
+            106543.03509699821,
+            106142.80100399992
+          ],
+          "B_ms": [
+            94645.8390359985,
+            94560.68372400114
+          ],
+          "A_mean_ms": 106342.91805049907,
+          "B_mean_ms": 94603.26137999982,
+          "gain_ms": 11739.656670499244,
+          "gain_percent": 11.039434393670138,
+          "A_range_ms": 400.23409299828927,
+          "B_range_ms": 85.1553119973687
+        }
+      ]
+    },
+    {
+      "name": "M442-complete-request-parser-closure-01",
+      "closure_sha256": "4aaf39b4059d41b83f1164822a30f3d1b2916e737ddd124a55694b6838d9c035",
+      "raw_sha256": "6a17bf72dd5b15e632e6139668e8c2d67be282b544ce895fa8655153e7c71f63",
+      "status": "PASS_NATURAL_IO_FULL_REQUEST_BENEFIT",
+      "A_mean_ms": 94760.294961,
+      "B_mean_ms": 93591.87621224964,
+      "paired_mean_gain_ms": 1168.418748750355,
+      "paired_95percent_CI_ms": [
+        874.0058027169051,
+        1462.8316947838048
+      ],
+      "gain_percent": 1.2330256561899113,
+      "paired_deltas_ms": [
+        1367.417416000535,
+        952.9035720006505,
+        1267.5530679998774,
+        1085.8009390003572
+      ],
+      "completed_requests": 12,
+      "formal_requests": 8,
+      "production_promoted": false,
+      "IO_adjusted": false,
+      "blocks": [
+        {
+          "order": "ABBA",
+          "A_ms": [
+            94703.01712800028,
+            94582.47332300016
+          ],
+          "B_ms": [
+            93335.59971199975,
+            93629.56975099951
+          ],
+          "A_mean_ms": 94642.74522550023,
+          "B_mean_ms": 93482.58473149964,
+          "gain_ms": 1160.1604940005927,
+          "gain_percent": 1.2258314054990058,
+          "A_range_ms": 120.54380500012485,
+          "B_range_ms": 293.9700389997597
+        },
+        {
+          "order": "BAAB",
+          "A_ms": [
+            94853.87402699962,
+            94901.81536599994
+          ],
+          "B_ms": [
+            93586.32095899974,
+            93816.01442699958
+          ],
+          "A_mean_ms": 94877.84469649979,
+          "B_mean_ms": 93701.16769299966,
+          "gain_ms": 1176.6770035001246,
+          "gain_percent": 1.240202080121171,
+          "A_range_ms": 47.941339000317384,
+          "B_range_ms": 229.6934679998376
+        }
+      ]
+    },
+    {
+      "name": "M443-complete-request-closure-01",
+      "closure_sha256": "559f88ddf52878082a80bfbfe3ca51a155bf2d40f69621cf9e2bc9a041592741",
+      "raw_sha256": "52a03814964c23b1b2716004ac7378ea5ab27d2e8be7ec647dbcce25b5f030b0",
+      "status": "PASS_NATURAL_IO_FULL_REQUEST_BENEFIT",
+      "A_mean_ms": 95418.91257549991,
+      "B_mean_ms": 93926.03329424992,
+      "paired_mean_gain_ms": 1492.879281249996,
+      "paired_95percent_CI_ms": [
+        394.8874768762141,
+        2590.8710856237776
+      ],
+      "gain_percent": 1.564552813435966,
+      "paired_deltas_ms": [
+        2518.5535200007434,
+        1248.8829799995146,
+        1026.633399000275,
+        1177.447225999451
+      ],
+      "completed_requests": 12,
+      "formal_requests": 8,
+      "production_promoted": false,
+      "IO_adjusted": false,
+      "blocks": [
+        {
+          "order": "ABBA",
+          "A_ms": [
+            97530.2822550002,
+            94649.38492100009
+          ],
+          "B_ms": [
+            95011.72873499946,
+            93400.50194100058
+          ],
+          "A_mean_ms": 96089.83358800015,
+          "B_mean_ms": 94206.11533800002,
+          "gain_ms": 1883.7182500001363,
+          "gain_percent": 1.9603720598339949,
+          "A_range_ms": 2880.8973340001103,
+          "B_range_ms": 1611.2267939988815
+        },
+        {
+          "order": "BAAB",
+          "A_ms": [
+            94631.48443299998,
+            94864.4986929994
+          ],
+          "B_ms": [
+            93604.8510339997,
+            93687.05146699995
+          ],
+          "A_mean_ms": 94747.9915629997,
+          "B_mean_ms": 93645.95125049983,
+          "gain_ms": 1102.0403124998702,
+          "gain_percent": 1.1631278872725268,
+          "A_range_ms": 233.01425999942876,
+          "B_range_ms": 82.20043300025281
+        }
+      ]
+    }
+  ]
+}

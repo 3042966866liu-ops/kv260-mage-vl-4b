@@ -1,0 +1,39 @@
+{
+  "schema": "m442-same-kernel-parser-natural-IO-v1",
+  "ORDER": "ABBAABBABAAB",
+  "preconditioning": "ABBA",
+  "formal": "ABBABAAB",
+  "formal_pairs": [
+    [
+      1,
+      2
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      6,
+      5
+    ],
+    [
+      7,
+      8
+    ]
+  ],
+  "sequence_budget_s": 3600,
+  "request_budget_s": 240,
+  "original_parser_sha256": "d8061b561fe4d2a089523fde0d3860684244e76bca9646f255f03134fb50be56",
+  "candidate_parser_sha256": "3069230b6ce2d1c06f9a2229f70922f0e7b9b5ab86e37985f8195b5deec88256",
+  "kernel_build_both": "0x4D343431",
+  "request_video_prerequisite_sha256": "5f29b06fe12c1a896f15fca0b640b7f03f0748afb83fec91c919ae26fcf9e239",
+  "physical_transactions": 12805,
+  "PL_switches": 0,
+  "extra_DMA": 0,
+  "single_parser": true,
+  "PS_prefetch": false,
+  "natural_IO_all_samples_retained": true,
+  "pass_rule": "Both ABBA/BAAB positive net gain AND paired df3 95percent lower bound positive; no additional samples or posthoc selection",
+  "timer": "Original stream total: complete weight I/O/staging/parser/vision/prefill/head; parser binding and endpoint full SHA outside timer",
+  "production_promotion": false
+}

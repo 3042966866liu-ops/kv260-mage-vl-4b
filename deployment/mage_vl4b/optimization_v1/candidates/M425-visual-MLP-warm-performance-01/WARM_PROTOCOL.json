@@ -1,0 +1,145 @@
+{
+  "schema": "m425-temperature-free-warm-request-protocol-v1",
+  "prerequisites": {
+    "latest_m420_combination_board": {
+      "result": "deployment/mage_vl4b/optimization_v1/runs/M420-combination-board-01/BOARD_RESULT.json",
+      "sha256": "093807c1b24764b1a101a4830762d6b0276e8827cb0582fe06145fdc2351ca70",
+      "status": "PASS_M420_LAYERS12_13_FULL_VISUAL_FEATURE_QUALITY"
+    },
+    "latest_m421_saved_language_board": {
+      "result": "deployment/mage_vl4b/optimization_v1/runs/M421-saved-language-board-01/BOARD_RESULT.json",
+      "sha256": "06d27fd4d467cf1d10740173102f81559e71d533348e76e32e2a937ceaee26fe",
+      "status": "PASS_M421_SAVED_FEATURE_DECISION_CONSISTENCY"
+    },
+    "latest_m423_integrated_board": {
+      "result": "deployment/mage_vl4b/optimization_v1/runs/M423-integrated-video-board-01/BOARD_RESULT.json",
+      "sha256": "2a83ff8aceb3e90f785230ee4edb145d38f8dd059b38314242d23fbc46f63f55",
+      "status": "PASS_M423_INTEGRATED_VIDEO_NUMERICAL"
+    },
+    "latest_m423_integrated_closure": {
+      "result": "deployment/mage_vl4b/optimization_v1/runs/M423-integrated-closure-01/RESULT.json",
+      "sha256": "f143540523bcc56cf293695ca672d25c931b8fea67a931a9a484a3e2db3a40f4",
+      "status": "CLOSED_M423_INTEGRATED_LAYERS12_13_NUMERICAL_PASS"
+    }
+  },
+  "scope": "fixed159-two-view-original-versus-visual-MLP12+13",
+  "build_id": "0x4D333537",
+  "stable_rollback_build": "0x4D395832",
+  "changed_layers": [
+    12,
+    13
+  ],
+  "changed_parts": [
+    "mlp.fc1",
+    "mlp.fc2"
+  ],
+  "attention_GELU_norm_language_unchanged": true,
+  "parser_workers": 1,
+  "PS_prefetch": false,
+  "last_layer_tail": false,
+  "SiLU_workspace": false,
+  "original_seven_DMA_payload_bytes": 33484832,
+  "additional_DMA": 0,
+  "runtime_resident_through_all_requests": true,
+  "same_overlay_legal_minimal_before_first_request": true,
+  "warmup_order": "ABBA",
+  "formal_order": "ABBABAAB",
+  "maximum_requests": 12,
+  "no_additional_warmups_or_formal_samples": true,
+  "experiment_budget_s": 1800,
+  "request_budget_s": 180,
+  "measurement": {
+    "entry": "original M276ShortPromptBinaryRuntime.stream(request)",
+    "primary": "original complete.total_ms",
+    "secondary": [
+      "first_token_ms",
+      "preprocess_ms",
+      "vision_ms",
+      "prefill_ms",
+      "head_ms"
+    ],
+    "source_frames": 4,
+    "selected_frame_indices": [
+      3
+    ],
+    "views": 2,
+    "prompt_tokens": 159,
+    "generated_tokens": 1,
+    "decode_calls": 0,
+    "model_load_and_common_source_checks_outside_timer": true,
+    "B_binding_staging_pack_parse_cache_invalidation_close_inside_timer": true,
+    "no_full_tensor_packet_or_wire_hash_inside_timer": true,
+    "full_visual_logits_KV_hash_after_each_timer": true,
+    "per_request_language_expected_logical": 778,
+    "per_request_language_expected_physical": 781,
+    "candidate_visual_physical": 52,
+    "candidate_visual_stage_bytes": 8912896,
+    "language_and_visual_counters_separate": true
+  },
+  "warm_conditions": {
+    "established_before_formal_by_fixed_warmups_3_and_4": true,
+    "warmup_1_and_2_io_recorded_without_warm_limit": true,
+    "read_bytes_max_per_warm_request": 1048576,
+    "major_faults_max": 0,
+    "paired_read_bytes_difference_max": 1048576,
+    "original_visual_cache_entries": 26,
+    "original_visual_cache_bytes": 66699264,
+    "original_visual_cache_misses": 26,
+    "identical_source_asset_storage_threads_CPU_policy_PL_clocks": true,
+    "do_not_modify_cache_governor_clock_fan_or_kernel": true,
+    "temperature_measurement_enabled": false,
+    "no_thermal_hwmon_IIO_cooling_reads": true,
+    "first_two_warmup_before_cache_may_be_empty_within_fixed_budget": true,
+    "after_every_request_cache_must_match": true,
+    "CPU_observed_frequency_must_match": true
+  },
+  "numerical": {
+    "A": "bit exact saved original M421",
+    "B": "bit exact saved layers12+13 M421",
+    "visual_source": "M420",
+    "logits_words": 151936,
+    "KV_tensors": 72,
+    "per_request_count_retry_release_guard": true
+  },
+  "statistics": {
+    "pairs": [
+      [
+        1,
+        2
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        6,
+        5
+      ],
+      [
+        7,
+        8
+      ]
+    ],
+    "pair_definition": "A total_ms minus B total_ms",
+    "block_gains": [
+      "ABBA meanA minus meanB",
+      "BAAB meanA minus meanB"
+    ],
+    "report_all_warmup_and_formal_samples": true,
+    "report_read_bytes_major_faults_memory_environment_for_each": true,
+    "report_total_vision_language_ms_and_group_spread": true,
+    "report_mean_median_relative_gain_and_paired_deltas": true,
+    "confidence_interval": "two-sided 95% paired t interval on four deltas, df=3, critical=3.182446305",
+    "benefit_requires_both_blocks_positive_and_paired_lower_bound_positive": true,
+    "conditions_failure": "WARM_CONDITIONS_NOT_ESTABLISHED",
+    "insufficient_benefit": "NET_BENEFIT_NOT_RELIABLY_MEASURED_CLOSE_VARIANT",
+    "no_outlier_deletion_no_extra_runs_no_fitted_posthoc_threshold": true
+  },
+  "production_changed": false,
+  "expanded_24_layers": false,
+  "performance_pass": false,
+  "board_run": false,
+  "supersedes_protocol_sha256": "37faa0fefa2602e3af8edcb6b4086c07c0e3e3fb35fb9edfcbd44687d9ebe590",
+  "user_instruction": "\u4ee5\u540e\u90fd\u4e0d\u9700\u8981\u518d\u6d4b\u91cf\u6e29\u5ea6\uff1b\u7ee7\u7eed\u4e0b\u4e00\u6b65\u3002",
+  "temperature_measurement_enabled": false
+}

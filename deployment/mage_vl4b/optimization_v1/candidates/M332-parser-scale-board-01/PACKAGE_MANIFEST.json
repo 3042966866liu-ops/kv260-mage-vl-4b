@@ -1,0 +1,23 @@
+{
+  "package": "M332-parser-scale-board-01",
+  "purpose": "Isolated KV260 A53 CPU-only parser microgate; no FPGA load or stable runtime mutation",
+  "path_whitelist": [
+    "m332_parser_scale_bench.py",
+    "run_m332_parser_micro.sh",
+    "SHA256SUMS",
+    "PACKAGE_MANIFEST.json"
+  ],
+  "payload_file_count": 2,
+  "payload_byte_count": 8145,
+  "payload": {
+    "m332_parser_scale_bench.py": {
+      "bytes": 6195,
+      "sha256": "a9bd5a94a89622336098ab4ad8ed13276c79920d49ab4189bdff39855c3fe646"
+    },
+    "run_m332_parser_micro.sh": {
+      "bytes": 1950,
+      "sha256": "4d24e7a6496bdad15ee037dd9bc2fe1b496d5199a152a9f883c086635f804809"
+    }
+  },
+  "preregistered_board_trigger": "15 counterbalanced pairs; numerical bit-exact; at least 2/3 widths >=1.2x median; no width >5% regression"
+}

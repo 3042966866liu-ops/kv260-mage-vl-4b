@@ -1,0 +1,22 @@
+{
+  "schema": "m357-readonly-transfer-bootstrap-v1",
+  "files": [
+    {
+      "path": "m357_transfer.py",
+      "bytes": 13477,
+      "sha256": "8baf68d97864075309602d5224414c0958c5a03ddee64ee21d1a449eb4475845"
+    },
+    {
+      "path": "run_m357_transfer.sh",
+      "bytes": 362,
+      "sha256": "7230b5b9973562b5756218edb208f83e26176c267cfb16e1261f5378110b8069"
+    },
+    {
+      "path": "TRANSPORT_MANIFEST.json",
+      "bytes": 5447,
+      "sha256": "7ff2be039f7dcca901ea581204fa4ccac71d020dbbfc3ab04973360c5b044c27"
+    }
+  ],
+  "file_count": 3,
+  "total_bytes": 19286
+}

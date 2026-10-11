@@ -12,6 +12,8 @@ jobs:
         run: bash -n scripts/run_demo.sh
       - name: Release manifest and source syntax
         run: python3 scripts/check_release.py
+      - name: Frozen optimization source and independent statistics
+        run: python3 scripts/audit_optimization_snapshot.py
       - name: Relative HLS include closure
         run: python3 scripts/audit_hls_includes.py
       - name: Stable M254 static Python import closure

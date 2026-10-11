@@ -1,0 +1,36 @@
+{
+  "files": [
+    {
+      "path": "AMS_EXPECTED.json",
+      "bytes": 465,
+      "sha256": "52b97c03028c71b696d6d6694091a1f8df4824c971022d74fdf26ce24e5c2dcb"
+    },
+    {
+      "path": "m404_warm_conditions.py",
+      "bytes": 9229,
+      "sha256": "b504decb087d3ae33acd0de8d80e1debcccce8d441c7a332b48f750bc4740030"
+    },
+    {
+      "path": "m424_environment.py",
+      "bytes": 2246,
+      "sha256": "1e181d66bc74157b434de10068a9fd053f17584b355f20dc0fc6c7c0214d2a0b"
+    },
+    {
+      "path": "m424_environment_probe.py",
+      "bytes": 2817,
+      "sha256": "5c13ae6b00982ad64a408fbad1bf1cc2ee3db6b021601c6401a8ba53ebfa18ab"
+    },
+    {
+      "path": "run_m424_environment.sh",
+      "bytes": 443,
+      "sha256": "a2500513626ef35905f3c85faba29859b65ae8704949a4a15903b3ecef9b257b"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 442,
+      "sha256": "b6178af318fb18b1e64161df4d1618eb28b53999af88e73f6f730802c1340af3"
+    }
+  ],
+  "file_count": 6,
+  "total_bytes": 15642
+}

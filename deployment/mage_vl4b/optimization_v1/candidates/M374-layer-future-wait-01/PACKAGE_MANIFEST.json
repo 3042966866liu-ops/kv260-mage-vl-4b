@@ -1,0 +1,157 @@
+{
+  "schema": "m374-layer-future-wait-v1",
+  "files": [
+    {
+      "path": "board_safety.py",
+      "bytes": 880,
+      "sha256": "18393fcac1a99831c28901a2484477005cc8b667462bbaef68e693029a048645"
+    },
+    {
+      "path": "decode_trace.py",
+      "bytes": 4177,
+      "sha256": "05dbc3c8a2c4664475aabcba7256c920b4efab029d14fba4e9e9bfc8581b2bcf"
+    },
+    {
+      "path": "frozen_one_layer.py",
+      "bytes": 2086,
+      "sha256": "2c9e39ef8819f3a30f0ade0cd627a24a0ba73bac76b205303b5059a69342f5ce"
+    },
+    {
+      "path": "frozen_video_identity.py",
+      "bytes": 3762,
+      "sha256": "b89bc42e622a86169cb30a5ac8f91a2f40155988afa2830e2e38d0be50804ccc"
+    },
+    {
+      "path": "HARDWARE_CLOSURE.json",
+      "bytes": 3170,
+      "sha256": "a86b595540bc381c43ab14bac67907487a906a56bbc640ae9de4ec5cac81b081"
+    },
+    {
+      "path": "LAYER_EXPECTED.json",
+      "bytes": 12162,
+      "sha256": "bb49e4c635add5f6acb318f5991ace36a7406dc1ae3564bc31adbd1656f7201a"
+    },
+    {
+      "path": "m120_board_common.py",
+      "bytes": 3619,
+      "sha256": "9e72e022a7f6e86992df575125545330405b79ded3c23185917a676c70a6ade3"
+    },
+    {
+      "path": "m120_board_env_preflight.py",
+      "bytes": 4582,
+      "sha256": "7cb209d0810af25b87e1caee5cbc34f8b7d50f6dea7a5d76c4fd5a32a348ed46"
+    },
+    {
+      "path": "m341_build_id_gate.py",
+      "bytes": 11659,
+      "sha256": "34aef23eec105826c7e962175192c4c7620a13564f938337a7d3002642e4fd7d"
+    },
+    {
+      "path": "m343_layer_scope.py",
+      "bytes": 1795,
+      "sha256": "10b971ba24db34795e9e594d6f30e7aea942ebfea975e0a1532b0b5262982067"
+    },
+    {
+      "path": "M348_SOURCE_IDENTITIES.json",
+      "bytes": 10405,
+      "sha256": "5785abdbe87d5b7b863d1f13f6253447842390e9b2387ff133c841439cf4bdf1"
+    },
+    {
+      "path": "M357_COMPARE_PREREQUISITE.json",
+      "bytes": 40020,
+      "sha256": "ca35750d1b7043b76a16c75b97341616823137a58d91545576de0361a6ba3bde"
+    },
+    {
+      "path": "m363_observers.py",
+      "bytes": 3623,
+      "sha256": "cffce2bd4a2af04951782da2c1b56d9ed33a6933c6bcc7734d3b1740ef0c4af6"
+    },
+    {
+      "path": "m363_package_identity.py",
+      "bytes": 1508,
+      "sha256": "1b28d2465478ccfbc156d28d3562243b26d776e0f78d2973f666a52ef15ef59e"
+    },
+    {
+      "path": "m363_tokenizer_once.py",
+      "bytes": 1416,
+      "sha256": "c97f7687de214616201f723d857144626835cff934c89be8e2745bf721cb4393"
+    },
+    {
+      "path": "m365_stage_policy.py",
+      "bytes": 7479,
+      "sha256": "5f400eeef43573845fff24ad87946923708db4047e130683a1bfb82765c24963"
+    },
+    {
+      "path": "m372_future_wait.py",
+      "bytes": 8290,
+      "sha256": "33f76bc5b910f0b513f86f8cdb81bd68dfcac48220c4f898dd8f0bc6feec3a52"
+    },
+    {
+      "path": "M373_CAPABILITY_RESULT.json",
+      "bytes": 4987,
+      "sha256": "52d05d3aa2ab204fa53a9281804b5ad76e15fdd92c6376780bf506fe60868067"
+    },
+    {
+      "path": "m374_assemble.py",
+      "bytes": 1792,
+      "sha256": "6cd077cac04519143f0f9d4cc1985d6c3efd116fe5af61c0424c5d5eec5b3767"
+    },
+    {
+      "path": "m374_export_result.py",
+      "bytes": 911,
+      "sha256": "3e4ac3dd430a7da3bc72e4acb111e6fbfa94f33a666053ec80cbd4abc2c39776"
+    },
+    {
+      "path": "m374_layer_wait.py",
+      "bytes": 2682,
+      "sha256": "7790693465f6ee65c9b73a4835f4aec966c9dc866b6662a713b6d92b4a1afac3"
+    },
+    {
+      "path": "m374_staged_layer_gate.py",
+      "bytes": 28943,
+      "sha256": "a1ce0a98454c782f8a398c7608ba673b73f6426231e1ab0a0a6467214c584927"
+    },
+    {
+      "path": "m374_wait_validation.py",
+      "bytes": 5783,
+      "sha256": "830c89a111a38619ceb2b716def8720c74e778a19d5c0f53d6b2167994ca7ca7"
+    },
+    {
+      "path": "measurement.py",
+      "bytes": 7152,
+      "sha256": "973d0354c1b019987b8f777f149ecb418db897e1b9f771b10c0c03b4bf49b23e"
+    },
+    {
+      "path": "memory_lifecycle.py",
+      "bytes": 2049,
+      "sha256": "939fa2ca7cc1e438dd9b770b2aebab6424a69270c5ce605a72a27806ab125cc0"
+    },
+    {
+      "path": "owned_buffer_release.py",
+      "bytes": 1146,
+      "sha256": "e383c7657744d634b3661b988fe5f3e6f5c5fa027ec5cc6443e3b8b2851f3996"
+    },
+    {
+      "path": "ps_slot_capacity.py",
+      "bytes": 3293,
+      "sha256": "05f3835a761aab8b1f6f08dcccedae96d2b36e76844f3fa13a6ad8f5e25a0043"
+    },
+    {
+      "path": "run_m374_staged_layer.sh",
+      "bytes": 907,
+      "sha256": "d7959390241a94d746a19e44c46eda412d600e9c9642a4bb27ae43e6128c213e"
+    },
+    {
+      "path": "SOURCE_CLOSURE.json",
+      "bytes": 16344,
+      "sha256": "c2f625f6c4b4097fb143f714ff8626fac160aaf02d251da623cb88d05768a457"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 2550,
+      "sha256": "0ff8f1e838267f6e81e00e3828dce419e207f5927870b4e6401090967cbec0c2"
+    }
+  ],
+  "file_count": 30,
+  "total_bytes": 199172
+}

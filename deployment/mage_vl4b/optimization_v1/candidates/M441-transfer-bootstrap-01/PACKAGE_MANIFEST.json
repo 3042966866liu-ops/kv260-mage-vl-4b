@@ -1,0 +1,22 @@
+{
+  "schema": "m441-transfer-bootstrap-v1",
+  "files": [
+    {
+      "path": "m441_transfer.py",
+      "bytes": 13477,
+      "sha256": "79aac2703d52c7fa2e72910e0ddeea2a44c50374a3cfe9d9aa5ef33d45cf842a"
+    },
+    {
+      "path": "run_m441_transfer.sh",
+      "bytes": 362,
+      "sha256": "821248499e1bdfea8a12ff2bd876602e997037bfc6d57f81c258fd32fa091eaa"
+    },
+    {
+      "path": "TRANSPORT_MANIFEST.json",
+      "bytes": 10618,
+      "sha256": "3cc4059c2305e596a70d2f893734a70cd8b5e8df9bf662d8dd505f08bd55624a"
+    }
+  ],
+  "file_count": 3,
+  "total_bytes": 24457
+}

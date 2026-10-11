@@ -1,0 +1,29 @@
+{
+  "package": "M332-parser-scale-video-01",
+  "purpose": "Isolated same-input M328 stable/candidate fixed-video A/B with stable FPGA bitstream",
+  "path_whitelist": [
+    "m236_prefill_runtime.py",
+    "run_fixed_video_ab.py",
+    "run_m332_video_variant.sh",
+    "SHA256SUMS",
+    "PACKAGE_MANIFEST.json"
+  ],
+  "payload_file_count": 3,
+  "payload_byte_count": 31758,
+  "payload": {
+    "m236_prefill_runtime.py": {
+      "bytes": 14743,
+      "sha256": "7e36223f762cfc04c0fc74e3f468664e05d38b8f8024c8eb194e77cdc12944e8"
+    },
+    "run_fixed_video_ab.py": {
+      "bytes": 16058,
+      "sha256": "06c5246b8758929d2fb6ac5023bf189ae320aaa5e2c08e4592790d03419c5b7d"
+    },
+    "run_m332_video_variant.sh": {
+      "bytes": 957,
+      "sha256": "faf76f18d2d578258c596058bb8cf2d4037f7184cad802c470cb9422ae5c281e"
+    }
+  },
+  "video_success_gate": "Same frozen four frames, prompt, weights and stable build; exact output and FPGA-call identity; candidate TTFT improves >=11.536 s and beyond A/B noise",
+  "stable_release_modified": false
+}

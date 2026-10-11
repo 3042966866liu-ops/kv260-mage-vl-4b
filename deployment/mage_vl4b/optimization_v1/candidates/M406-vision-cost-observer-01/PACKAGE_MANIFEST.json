@@ -1,0 +1,43 @@
+{
+  "schema": "M406-PS-only-visual-cost-observation-v1",
+  "default_off": true,
+  "file_count": 7,
+  "total_bytes": 45705,
+  "files": [
+    {
+      "path": "EXPECTED.json",
+      "bytes": 1228,
+      "sha256": "7ec9fb64b5f9c0aee5e9accd722d80beebc099dbc40c29a2b76f4ede79b5c99f"
+    },
+    {
+      "path": "frozen_video_identity.py",
+      "bytes": 3762,
+      "sha256": "b89bc42e622a86169cb30a5ac8f91a2f40155988afa2830e2e38d0be50804ccc"
+    },
+    {
+      "path": "M348_SOURCE_IDENTITIES.json",
+      "bytes": 10405,
+      "sha256": "5785abdbe87d5b7b863d1f13f6253447842390e9b2387ff133c841439cf4bdf1"
+    },
+    {
+      "path": "m406_vision_gate.py",
+      "bytes": 15033,
+      "sha256": "301b8f0bbbb672038251e2fb5f0a0143999511b1e046ae15b3d72d712e4debf7"
+    },
+    {
+      "path": "m406_vision_observer.py",
+      "bytes": 13848,
+      "sha256": "8e3708a0888c707d53f1a1427e9c20722b61ac52a696918854f1f0c2c72fec6b"
+    },
+    {
+      "path": "run_m406_vision.sh",
+      "bytes": 903,
+      "sha256": "e4d20c0193c12c9022abd5e295979681da64109418e2ef4dd077a0a5f20c486e"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 526,
+      "sha256": "d5a53312feb8119dc19bf1e323e928848ea0d21d923fc6f67a0e847b9bea335c"
+    }
+  ]
+}

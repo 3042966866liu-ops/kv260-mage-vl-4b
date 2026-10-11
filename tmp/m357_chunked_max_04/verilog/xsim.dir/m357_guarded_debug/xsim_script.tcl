@@ -1,0 +1,1 @@
+xsim {m357_guarded_debug} -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=m89x_runtime_kernel_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -testplusarg M357_ZERO_EXTRA_LATENCY -autoloadwcfg -tclbatch {chunked.tcl} -sv_seed 357

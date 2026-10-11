@@ -1,0 +1,37 @@
+{
+  "files": [
+    {
+      "path": "dev-0001.mp4",
+      "bytes": 27323,
+      "sha256": "a859467a06d77a075f54d02bb3a612b404e660abfc0592971116abe3edfa7333"
+    },
+    {
+      "path": "measurement.py",
+      "bytes": 7152,
+      "sha256": "973d0354c1b019987b8f777f149ecb418db897e1b9f771b10c0c03b4bf49b23e"
+    },
+    {
+      "path": "op00_import_decode_probe.py",
+      "bytes": 5453,
+      "sha256": "b501591ddbf544d12fe35b466b144ee0df05b6cd85aac3c8b39eaa97f50e2474"
+    },
+    {
+      "path": "probe_config.json",
+      "bytes": 785,
+      "sha256": "37a6bb43f8ebb24f3e5f4e074e07b900c5cc3f48ec19e7af16406aaddfe53563"
+    },
+    {
+      "path": "run_import_decode_probe.sh",
+      "bytes": 292,
+      "sha256": "88c519a5651b5ad22f29991d80b651042c761ec55fc109ddc0b9b9f63b9883ea"
+    },
+    {
+      "path": "sys_video_input.py",
+      "bytes": 4965,
+      "sha256": "924bf2c7ace3130e87a90b52ee3523de52dabfa7c51e2b923c9e052c497237eb"
+    }
+  ],
+  "file_count": 6,
+  "total_bytes": 45970,
+  "scope": "read-only no Overlay/model"
+}

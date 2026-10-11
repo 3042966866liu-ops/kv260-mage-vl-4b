@@ -1,0 +1,10 @@
+set source_root "Q:/hls/prefill_w4a8_s64_l40_wbmu"
+set project_root "C:/Users/30429/qprefill40/hls"
+
+open_component -reset $project_root -flow_target vivado
+set_top qwen25_prefill_w4a8
+add_files "$source_root/qwen25_prefill_w4a8.cpp"
+set_part {xck26-sfvc784-2LV-c}
+create_clock -period 6.0 -name default
+csynth_design
+exit

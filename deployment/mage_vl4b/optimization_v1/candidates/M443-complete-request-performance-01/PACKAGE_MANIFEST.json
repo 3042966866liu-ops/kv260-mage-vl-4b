@@ -1,0 +1,212 @@
+{
+  "schema": "m443-independent-original-request-performance01",
+  "files": [
+    {
+      "path": "CONFIGURATION_APPLICATION.json",
+      "bytes": 823,
+      "sha256": "27eb234fe196c9eaf1d3cd5eb00bfee6b7be11b18a008d4516fcdd285d169ffb"
+    },
+    {
+      "path": "HARDWARE_CLOSURE.json",
+      "bytes": 2951,
+      "sha256": "c865b4cca846b836b3970a64ebfeda6850f89b910072cfcb2ef3d32fcaab3913"
+    },
+    {
+      "path": "M348_SOURCE_IDENTITIES.json",
+      "bytes": 10405,
+      "sha256": "5785abdbe87d5b7b863d1f13f6253447842390e9b2387ff133c841439cf4bdf1"
+    },
+    {
+      "path": "M443_BUILD_CONFIGURATION_PROOF.json",
+      "bytes": 19360,
+      "sha256": "403b8549a7ea6444b89cedd551ed553ba32b8d9c93caedde9c187fc7347a3599"
+    },
+    {
+      "path": "M443_CHAIN_PREREQUISITE.json",
+      "bytes": 27881,
+      "sha256": "e3d0bbf6e1c16c2d5d7d3efecc479093919ea8a800e702a3823b906dc0ff416b"
+    },
+    {
+      "path": "M443_VIDEO_PREREQUISITE.json",
+      "bytes": 1198829,
+      "sha256": "daa74aebef873ebcce6e27a4b7c4cc7ac31a0f1327de0fa12cda15c86d6af731"
+    },
+    {
+      "path": "PERFORMANCE_PLAN.json",
+      "bytes": 424,
+      "sha256": "7af8a46684caa7c4e3e584a6865594cfbfdc989ebad11943530240a3a60c3a54"
+    },
+    {
+      "path": "PLAN.json",
+      "bytes": 58059,
+      "sha256": "e3700ea7d2f1c1a6f4b61a2920712771e2c5bfa108a35b27b8ce47ac5e1b8673"
+    },
+    {
+      "path": "SOURCE_CLOSURE.json",
+      "bytes": 16344,
+      "sha256": "c2f625f6c4b4097fb143f714ff8626fac160aaf02d251da623cb88d05768a457"
+    },
+    {
+      "path": "SOURCE_IDENTITIES.json",
+      "bytes": 930,
+      "sha256": "223865b1673d4760584af2282bc970f72fd84b72d9164f8c268ef0fec26c51d8"
+    },
+    {
+      "path": "STAGE_PREREQUISITE.json",
+      "bytes": 1107880,
+      "sha256": "72baafdf3f667d786822fad89ab5aa37b8f37ef438aee0ab667201161b2d4f6b"
+    },
+    {
+      "path": "VIDEO_EXPECTED.json",
+      "bytes": 339151,
+      "sha256": "cc03faca51a3797fe69d7d7cc8cd1711b6df3234cc3b91a2a822f2d394d071cb"
+    },
+    {
+      "path": "VISUAL_EXPECTED.json",
+      "bytes": 55535,
+      "sha256": "b2d34d44317c2b23de531957d17c5f8a7a230d58d2ace30004fff147ee65e48c"
+    },
+    {
+      "path": "WARM_PROTOCOL.json",
+      "bytes": 15820,
+      "sha256": "905fb4d20a23f812201cdc6d25c5859265681894783c272b7a6e64f1e4853ea6"
+    },
+    {
+      "path": "m369_light_policy.py",
+      "bytes": 2272,
+      "sha256": "2297bb52d6d2e44fbbab449050a185037654b1a6a6b446445569855c6dbe230a"
+    },
+    {
+      "path": "m425_environment.py",
+      "bytes": 2563,
+      "sha256": "ae8b45a431c134aabb5a5739e317704766f52449b80e27178dd77f9216ec5ef6"
+    },
+    {
+      "path": "m428_saved_features.py",
+      "bytes": 6999,
+      "sha256": "986e4a9208f5798ad7319553b1d13609794dbec256dcea2f16b21302f8d3b8fd"
+    },
+    {
+      "path": "m430_timed_scope.py",
+      "bytes": 1866,
+      "sha256": "d90c0cc74e87b812e462fc6df86dd86a1b4668e5a22361d2f90043ce05370f02"
+    },
+    {
+      "path": "m431_borrowed_visual.py",
+      "bytes": 5502,
+      "sha256": "9201a6d99daad3d8c27cd61fc8bdd79b45a4e9c491004b84cb67fd5c1549fa73"
+    },
+    {
+      "path": "m432_request_visual.py",
+      "bytes": 11920,
+      "sha256": "050fd43741dc8b854834c7587d6245ae5b9a5a2714c2a198d4482082206646e6"
+    },
+    {
+      "path": "m432_trials.py",
+      "bytes": 7120,
+      "sha256": "1a50ef63d0aa421cc61f5c9eb5b17ac0ba71cabcf09514d28c8c533804bc8ab3"
+    },
+    {
+      "path": "m433_light_policy.py",
+      "bytes": 590,
+      "sha256": "5642704390b504291d57fa8c6a10bef8747d40845587581b9dbdc01cf7163ddd"
+    },
+    {
+      "path": "m433_prerequisite.py",
+      "bytes": 1244,
+      "sha256": "280cbcbe1caff9243a6bea58e515f9caa0e8550554b9a2c4c969e491dab24d04"
+    },
+    {
+      "path": "m433_timed_visual.py",
+      "bytes": 3375,
+      "sha256": "15b31b763156ce1e6535c163b48ce2c3e82e4ede89904a308ece3490540d54f5"
+    },
+    {
+      "path": "m437_sequence.py",
+      "bytes": 5610,
+      "sha256": "b58c182abf221a8d28de12a63fc91702a2827e09a9ed772ae3221ee4ce00f12e"
+    },
+    {
+      "path": "m441_cma_ledger15.py",
+      "bytes": 7267,
+      "sha256": "0048404ca75821da475bf133427e3d0d7802c5dfdc3bb4ba7b725b4bee9b789a"
+    },
+    {
+      "path": "m441_cma_trace15.py",
+      "bytes": 2811,
+      "sha256": "7174ae2881e6137c88ba391c5baed910c8fce9b8d279d5746b9ee9dc95776287"
+    },
+    {
+      "path": "m443_cma_contract01.py",
+      "bytes": 2298,
+      "sha256": "0e54d924546b276f02040feae4536ff43f9c0f5b84aaf799d09f35e765040e7e"
+    },
+    {
+      "path": "m443_cma_trace01.py",
+      "bytes": 2809,
+      "sha256": "5db06be33e855cdc260a657014b520616005f883200e7d8d1417cd20ea866db2"
+    },
+    {
+      "path": "m443_configuration01.py",
+      "bytes": 4900,
+      "sha256": "9b24d04aad4ded0470953d0926a443d7ac35a746f0e3109e11d70d2c724c247c"
+    },
+    {
+      "path": "m443_kernel_switch01.py",
+      "bytes": 5640,
+      "sha256": "817fb77b94cfdbc7eff150e3f654793404a82ae144223753683bc8cdcf81e2fd"
+    },
+    {
+      "path": "m443_layer_configuration01.py",
+      "bytes": 1383,
+      "sha256": "d3eba52bcca92b0799cac1bb7df9574508e6844d869d70beec9b0807bf2c069e"
+    },
+    {
+      "path": "m443_performance_assemble.py",
+      "bytes": 1979,
+      "sha256": "0e920df733dbd4e48a95fc8a5608a6261de56202b25e5777b6d4ba69acafbe4a"
+    },
+    {
+      "path": "m443_performance_entry.py",
+      "bytes": 989,
+      "sha256": "c50c51a9fb14d83eb81591517cd9ac62b9ac1c86244ccc5e9f07d5d029b95938"
+    },
+    {
+      "path": "m443_performance_export.py",
+      "bytes": 887,
+      "sha256": "7c1709fe98bd9d4c0f5e82cdbbd94cb99560bf5e2abd98ae987fe4d34fcc9d5d"
+    },
+    {
+      "path": "m443_performance_gate.py",
+      "bytes": 32321,
+      "sha256": "59641fe12de1f5eae193eb8a6d3de5fe1e78e2dbcc120604ce580cd12c38aa33"
+    },
+    {
+      "path": "m443_performance_ledger01.py",
+      "bytes": 5899,
+      "sha256": "74aab047a0b19eba2a7f4d7664eda0d1eaa14fc130afa1cf6b614a6e81a53526"
+    },
+    {
+      "path": "m443_performance_trace01.py",
+      "bytes": 2835,
+      "sha256": "b8b864f024de9b6166eb7df2823882b2f6abaf2dd57b5e7b8483f3af36b0d8ba"
+    },
+    {
+      "path": "m443_performance_trials.py",
+      "bytes": 12682,
+      "sha256": "d95810f6c3445103b031b055930d1caa0e9a8f12c72c9f5f224b001f03dd0f26"
+    },
+    {
+      "path": "run_m443_performance.sh",
+      "bytes": 852,
+      "sha256": "c18df7b7550d86aeea88f3dee80787a023a8df3ba84c0aef8a6a70f687b50ecd"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 3577,
+      "sha256": "24e3e634a7261f480bdb80fee02073c3022df0dda814f2edbae70bac9228abd3"
+    }
+  ],
+  "file_count": 41,
+  "total_bytes": 2992582
+}

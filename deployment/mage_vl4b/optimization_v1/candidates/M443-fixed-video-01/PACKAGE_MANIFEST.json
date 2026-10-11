@@ -1,0 +1,137 @@
+{
+  "schema": "m443-independent-fixed-video-v01",
+  "files": [
+    {
+      "path": "CONFIGURATION_APPLICATION.json",
+      "bytes": 823,
+      "sha256": "27eb234fe196c9eaf1d3cd5eb00bfee6b7be11b18a008d4516fcdd285d169ffb"
+    },
+    {
+      "path": "DEPENDENCY_CLOSURE.json",
+      "bytes": 7241,
+      "sha256": "d1c6c75c8d61bea1a0ec29d4e9394e040d68ea680bf5ebb1c6080c8ca9ab9094"
+    },
+    {
+      "path": "HARDWARE_CLOSURE.json",
+      "bytes": 2951,
+      "sha256": "c865b4cca846b836b3970a64ebfeda6850f89b910072cfcb2ef3d32fcaab3913"
+    },
+    {
+      "path": "M348_SOURCE_IDENTITIES.json",
+      "bytes": 10405,
+      "sha256": "5785abdbe87d5b7b863d1f13f6253447842390e9b2387ff133c841439cf4bdf1"
+    },
+    {
+      "path": "m369_light_policy.py",
+      "bytes": 2272,
+      "sha256": "2297bb52d6d2e44fbbab449050a185037654b1a6a6b446445569855c6dbe230a"
+    },
+    {
+      "path": "m428_saved_features.py",
+      "bytes": 6999,
+      "sha256": "986e4a9208f5798ad7319553b1d13609794dbec256dcea2f16b21302f8d3b8fd"
+    },
+    {
+      "path": "m431_borrowed_visual.py",
+      "bytes": 5502,
+      "sha256": "9201a6d99daad3d8c27cd61fc8bdd79b45a4e9c491004b84cb67fd5c1549fa73"
+    },
+    {
+      "path": "m432_request_visual.py",
+      "bytes": 11912,
+      "sha256": "54d7b345feaf9b45aed0eefbd08e9a7d25ceac8a3b6820fb3dcf9e240bbef894"
+    },
+    {
+      "path": "m432_trials.py",
+      "bytes": 6453,
+      "sha256": "45ad6faa470bd2905bac9a7aa2376da97e9ff0a42e45b0cd6781f0e1bd58bd03"
+    },
+    {
+      "path": "M443_BUILD_CONFIGURATION_PROOF.json",
+      "bytes": 19360,
+      "sha256": "403b8549a7ea6444b89cedd551ed553ba32b8d9c93caedde9c187fc7347a3599"
+    },
+    {
+      "path": "M443_CHAIN_PREREQUISITE.json",
+      "bytes": 27881,
+      "sha256": "e3d0bbf6e1c16c2d5d7d3efecc479093919ea8a800e702a3823b906dc0ff416b"
+    },
+    {
+      "path": "m443_cma_contract01.py",
+      "bytes": 2298,
+      "sha256": "0e54d924546b276f02040feae4536ff43f9c0f5b84aaf799d09f35e765040e7e"
+    },
+    {
+      "path": "m443_cma_trace01.py",
+      "bytes": 2809,
+      "sha256": "5db06be33e855cdc260a657014b520616005f883200e7d8d1417cd20ea866db2"
+    },
+    {
+      "path": "m443_configuration01.py",
+      "bytes": 4900,
+      "sha256": "9b24d04aad4ded0470953d0926a443d7ac35a746f0e3109e11d70d2c724c247c"
+    },
+    {
+      "path": "m443_layer_configuration01.py",
+      "bytes": 1383,
+      "sha256": "d3eba52bcca92b0799cac1bb7df9574508e6844d869d70beec9b0807bf2c069e"
+    },
+    {
+      "path": "m443_video_assemble.py",
+      "bytes": 2346,
+      "sha256": "602921668008f1b1acfa6fcdb4dc9134dfbb8bf43707bc732d5ff154f1c4fbf6"
+    },
+    {
+      "path": "m443_video_entry.py",
+      "bytes": 977,
+      "sha256": "0810569151e7246f88c8b209c6857dc88e4f841b4651468085c8cc8933fc087b"
+    },
+    {
+      "path": "m443_video_export.py",
+      "bytes": 878,
+      "sha256": "2ff454ce2e91dc9bf14fcf7ca0c371c2e6aa293015017221fd015805f0c28f99"
+    },
+    {
+      "path": "m443_video_gate.py",
+      "bytes": 30340,
+      "sha256": "232c8455d5f3c9be9529e2d197a143e6ecf0f6a8d3252a1938b90f947c831edf"
+    },
+    {
+      "path": "PLAN.json",
+      "bytes": 55661,
+      "sha256": "1e06a452c4af3ab724f974d51e61ca780cd2e2e99d0739eb6c0040aeb6b14232"
+    },
+    {
+      "path": "run_m443_video.sh",
+      "bytes": 829,
+      "sha256": "d7b654cf9e96d5d549a54a17f8ea9629eb2270a242dba2f347b395a16456fe8f"
+    },
+    {
+      "path": "SOURCE_CLOSURE.json",
+      "bytes": 16344,
+      "sha256": "c2f625f6c4b4097fb143f714ff8626fac160aaf02d251da623cb88d05768a457"
+    },
+    {
+      "path": "STAGE_PREREQUISITE.json",
+      "bytes": 1107880,
+      "sha256": "72baafdf3f667d786822fad89ab5aa37b8f37ef438aee0ab667201161b2d4f6b"
+    },
+    {
+      "path": "VIDEO_EXPECTED.json",
+      "bytes": 339151,
+      "sha256": "cc03faca51a3797fe69d7d7cc8cd1711b6df3234cc3b91a2a822f2d394d071cb"
+    },
+    {
+      "path": "VISUAL_EXPECTED.json",
+      "bytes": 55535,
+      "sha256": "b2d34d44317c2b23de531957d17c5f8a7a230d58d2ace30004fff147ee65e48c"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 2219,
+      "sha256": "54ce45a20bae7ba8defd7c5627f50c7fe31a381bebca34f7a0624e6301ac4e9f"
+    }
+  ],
+  "file_count": 26,
+  "total_bytes": 1725349
+}

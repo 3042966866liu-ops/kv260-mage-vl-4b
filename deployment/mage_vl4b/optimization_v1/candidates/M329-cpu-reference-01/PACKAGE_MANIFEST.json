@@ -1,0 +1,23 @@
+{
+  "schema": "m329-cpu-reference-package-v1",
+  "classification": "CPU numerical diagnostic only; no overlay, FPGA transaction, or performance claim",
+  "file_count": 2,
+  "total_bytes": 8308,
+  "files": [
+    {
+      "path": "runtime/m329_cpu_fixture_baseline.py",
+      "bytes": 6137,
+      "sha256": "6e93d00587eb542ade6d63baae3550745f4a846ec35d26a4a44dfe5040c3f777"
+    },
+    {
+      "path": "runtime/m120_group_reference.py",
+      "bytes": 2171,
+      "sha256": "b275a71b67be281eea96c62b356ecdae91c2079e0ae22903704e26e32b1597c5"
+    }
+  ],
+  "external_fixture": {
+    "board_path": "/home/ubuntu/tellme_m120_m89x2_20260901/m120_text4b_board_candidate/reference/m128_m120_real_record_csim_fixture.bin",
+    "bytes": 2753984,
+    "sha256": "f384f45eea4bc14110a7add49dd0944f0a025403aecc3360369ec999e28257d9"
+  }
+}

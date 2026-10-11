@@ -1,0 +1,72 @@
+{
+  "schema": "m442-frozen-parser-candidate",
+  "files": [
+    {
+      "path": "gate_up_actual_output.bin.gz",
+      "bytes": 1372976,
+      "sha256": "707ef55c72aed2820bbaf1c1ebf7397c727422faab0f26011d9387f566406228"
+    },
+    {
+      "path": "m231_prefill_runtime.py",
+      "bytes": 11534,
+      "sha256": "e7d6aa5a43919405168612b6a5695c14330735f75c87aa269b245e61542750ad"
+    },
+    {
+      "path": "m236_prefill_runtime.py",
+      "bytes": 14354,
+      "sha256": "d8061b561fe4d2a089523fde0d3860684244e76bca9646f255f03134fb50be56"
+    },
+    {
+      "path": "m238_prefill_runtime.py",
+      "bytes": 8974,
+      "sha256": "daf30c982c276b90ac776178ad258e536925dce52de7ab26b06a9473ff9a9d9a"
+    },
+    {
+      "path": "m441_host_io08.py",
+      "bytes": 1449,
+      "sha256": "5fbb1054b4b798ee56892a74c2566674838a89da1551ee73a9fefdb1dee2deca"
+    },
+    {
+      "path": "m442_output_parser05.py",
+      "bytes": 4597,
+      "sha256": "7e017bec52a0db1643de33790a5e079284227219e658c160b4fb2d71a4af922d"
+    },
+    {
+      "path": "m442_runtime_adapter.py",
+      "bytes": 1810,
+      "sha256": "f0c19813aeafdffc068b25d036edb08eb7cae68e3647fd1a2e872e7d86c298dc"
+    },
+    {
+      "path": "m442_verify_integration.py",
+      "bytes": 11822,
+      "sha256": "02949aa13589efcda8ce5f572ea6a297b510729b0c6a551962933150f69e8b0f"
+    },
+    {
+      "path": "m442_verify_parser05.py",
+      "bytes": 10091,
+      "sha256": "81c4587466b9e94c3ee7d7700baedcb559f0f7670755aaf41a0c467e09e50b8e"
+    },
+    {
+      "path": "mlp_down_actual_output.bin.gz",
+      "bytes": 182358,
+      "sha256": "04acff1c852f65d36311c3d9a6e573c67037f5a60e471b6bc8551ef8e0502985"
+    },
+    {
+      "path": "PLAN.json",
+      "bytes": 12333,
+      "sha256": "88b039d4f48faf934433b8173dde682a5a96339c0437f2900535a963a3f540f3"
+    },
+    {
+      "path": "q_actual_output.bin.gz",
+      "bytes": 291001,
+      "sha256": "f0f7c8f069e23b1657c5d12ef118a94530f914a1f77e0a510368f34404b9e22c"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 1073,
+      "sha256": "49cd2343dc416dd68684fd9b7d33a98ad8bdbf54fbc7723c53d05f847ff1075e"
+    }
+  ],
+  "file_count": 13,
+  "total_bytes": 1924372
+}

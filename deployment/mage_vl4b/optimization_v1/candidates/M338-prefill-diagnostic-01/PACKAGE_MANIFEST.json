@@ -1,0 +1,28 @@
+{
+  "schema": "tellme-m338-prefill-diagnostic-offline-v1",
+  "status": "OFFLINE_COMPONENTS_ONLY_NOT_BOARD_RUNNABLE",
+  "file_count": 4,
+  "total_bytes": 13116,
+  "files": [
+    {
+      "path": "prefill_diagnostic.py",
+      "bytes": 5174,
+      "sha256": "dd573910253e171df21306f6addef4d098c00233e421578349ef6d916ed8ed7a"
+    },
+    {
+      "path": "decode_trace.py",
+      "bytes": 4177,
+      "sha256": "05dbc3c8a2c4664475aabcba7256c920b4efab029d14fba4e9e9bfc8581b2bcf"
+    },
+    {
+      "path": "decode_io_trace.py",
+      "bytes": 1512,
+      "sha256": "216cd05478c263693b129f6b4bcefb9720e9b4eafceef117fa37c98cbdb2a321"
+    },
+    {
+      "path": "transfer_trace.py",
+      "bytes": 2253,
+      "sha256": "319256f09211d3a9f66d80b1404611fd306831589613322964e51d7e954b1ffc"
+    }
+  ]
+}

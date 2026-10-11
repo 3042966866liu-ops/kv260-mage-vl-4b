@@ -1,0 +1,91 @@
+{
+  "file_count": 17,
+  "total_bytes": 77980,
+  "files": [
+    {
+      "path": "EXPECTED.json",
+      "bytes": 1228,
+      "sha256": "7ec9fb64b5f9c0aee5e9accd722d80beebc099dbc40c29a2b76f4ede79b5c99f"
+    },
+    {
+      "path": "EXPECTED_TARGET.json",
+      "bytes": 918,
+      "sha256": "390d29c957365ec4fd3f4ed2abf3a40b13645a212274c0b69db97c9226957ce1"
+    },
+    {
+      "path": "frozen_video_identity.py",
+      "bytes": 3762,
+      "sha256": "b89bc42e622a86169cb30a5ac8f91a2f40155988afa2830e2e38d0be50804ccc"
+    },
+    {
+      "path": "M348_SOURCE_IDENTITIES.json",
+      "bytes": 10405,
+      "sha256": "5785abdbe87d5b7b863d1f13f6253447842390e9b2387ff133c841439cf4bdf1"
+    },
+    {
+      "path": "m406_vision_observer.py",
+      "bytes": 13848,
+      "sha256": "8e3708a0888c707d53f1a1427e9c20722b61ac52a696918854f1f0c2c72fec6b"
+    },
+    {
+      "path": "m407_mlp_contract.py",
+      "bytes": 3219,
+      "sha256": "b9b2d23be042b3281543f08022c347cef8461149a53add2be29cd42ac7a4c513"
+    },
+    {
+      "path": "m408_component04.py",
+      "bytes": 5311,
+      "sha256": "12c072c2977f09ae47465a07dcb2d73c291744168ccbabf46c733093425f6b6b"
+    },
+    {
+      "path": "m408_mlp_capture04.py",
+      "bytes": 6473,
+      "sha256": "d5f3d5533f1cbdc2f6ebdd9475c30a2d116a1e400f41b1f3d6efea5173868cb4"
+    },
+    {
+      "path": "m414_entry.py",
+      "bytes": 3111,
+      "sha256": "573b13ef739c3817a98cb630c63c2b8c33d99474c42123bd27e836718b1d2d06"
+    },
+    {
+      "path": "m414_quality.py",
+      "bytes": 3715,
+      "sha256": "044c16d36bae9f9ebdc00ea16bb491858032554db59527d90646d623ec14b75f"
+    },
+    {
+      "path": "m416_component_entry.py",
+      "bytes": 625,
+      "sha256": "47dc5f97de62c007cd2e7682e2d30c231d049085bae7d53eb7cecb6405ae4829"
+    },
+    {
+      "path": "m416_gate.py",
+      "bytes": 14894,
+      "sha256": "ac0753b33ef5843475be643e9e1de11c6da69374340439853cc0fb0cef6c3d34"
+    },
+    {
+      "path": "m416_target13.py",
+      "bytes": 2140,
+      "sha256": "8a2ebd452efb63165bb64af3720551aade3dc92cf7a5a02355126d8436d82ef3"
+    },
+    {
+      "path": "m416_target_component.py",
+      "bytes": 5338,
+      "sha256": "07f38088d47cf664570e43399d4d8a801d2a29c84e2918c1f17a9e8c5e2ef92f"
+    },
+    {
+      "path": "PREREQUISITE.json",
+      "bytes": 743,
+      "sha256": "b85b7d0c7bca5f5665d80c071964ccf5f4ee0ae2b9b6d1133c16008e615db8e3"
+    },
+    {
+      "path": "run_m416_capture.sh",
+      "bytes": 872,
+      "sha256": "4d07b4dd9b137699b5f7d42a2c8fffbd36fada61315dd823932a953828bec346"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 1378,
+      "sha256": "e5f518242c620f5be4a3333933e4f63625ca8f3571014a299a7d26cec80f21ab"
+    }
+  ]
+}

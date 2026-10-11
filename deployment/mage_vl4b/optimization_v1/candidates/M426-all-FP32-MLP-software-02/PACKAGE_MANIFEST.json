@@ -1,0 +1,46 @@
+{
+  "file_count": 8,
+  "total_bytes": 133390,
+  "files": [
+    {
+      "path": "EXPECTED_VISUAL.json",
+      "bytes": 1228,
+      "sha256": "7ec9fb64b5f9c0aee5e9accd722d80beebc099dbc40c29a2b76f4ede79b5c99f"
+    },
+    {
+      "path": "m426_export.py",
+      "bytes": 935,
+      "sha256": "50fe0b4f3145650efebb79b05ef6a30e9b256315395a0d824be59010dc248ecb"
+    },
+    {
+      "path": "m426_gate.py",
+      "bytes": 15295,
+      "sha256": "acac091cbcf2cf1081294cb5960805de4fbe9e51f3bd7b4f910cad45920f21e2"
+    },
+    {
+      "path": "m426_range02.py",
+      "bytes": 8451,
+      "sha256": "55de67dfa161b263c1104135d7b4dbb36df6c374a274bcac88ba4e4ec5dc9cb5"
+    },
+    {
+      "path": "PLAN.json",
+      "bytes": 95645,
+      "sha256": "7b14103957cb96d861903a6220c8f318865a83a64e53c36ac16786dd36501801"
+    },
+    {
+      "path": "run_m426.sh",
+      "bytes": 859,
+      "sha256": "1e7719bcf6289737cc1e5cee4e1f948914cd0bbec53062fc4c29b8f2d9f63a00"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 572,
+      "sha256": "8cb3487b6207b3549eda983ea0d6af6e4086e0664f929482aaeac31edb449b8a"
+    },
+    {
+      "path": "SOURCE_IDENTITIES.json",
+      "bytes": 10405,
+      "sha256": "5785abdbe87d5b7b863d1f13f6253447842390e9b2387ff133c841439cf4bdf1"
+    }
+  ]
+}

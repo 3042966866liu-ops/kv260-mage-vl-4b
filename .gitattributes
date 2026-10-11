@@ -5,6 +5,8 @@ scripts/run_demo.sh text eol=lf
 scripts/release_parts.py text eol=lf
 scripts/test_release_parts.py text eol=lf
 manifests/release_parts_v7.json text eol=lf
+manifests/release_files.json text eol=lf
+manifests/optimization_sync_20261011.json text eol=lf
 LICENSE text eol=lf
 scripts/optimization/*.py text eol=lf
 scripts/optimization/*.js text eol=lf
@@ -29,3 +31,18 @@ scripts/test_m325*.py -text
 scripts/generate_kv260_mage_vl_codebook.py -text
 M324_LATEST_BOARD_PERFORMANCE_REPORT.md -text
 M325_FULL_SESSION_PERFORMANCE_REPORT.md -text
+
+# Frozen optimization sources and evidence retain their measured byte hashes.
+scripts/** -text !eol
+scripts/optimization/** -text !eol
+scripts/*.ps1 -text !eol
+scripts/*.sh -text !eol
+scripts/*.py -text !eol
+scripts/check_release.py text eol=lf
+scripts/preflight.py text eol=lf
+scripts/audit_hls_includes.py text eol=lf
+scripts/audit_python_closure.py text eol=lf
+scripts/release_parts.py text eol=lf
+scripts/test_release_parts.py text eol=lf
+scripts/run_demo.sh text eol=lf
+rtl/** -text !eol

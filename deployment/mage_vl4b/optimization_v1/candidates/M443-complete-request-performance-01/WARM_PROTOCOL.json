@@ -1,0 +1,383 @@
+{
+  "schema": "m441-same-late11-kernel-complete-request-v09",
+  "prerequisites": {
+    "latest_m441_fixed_video_board": {
+      "status": "PASS_M441V_INTEGRATED_VIDEO_NUMERICAL",
+      "result": "deployment/mage_vl4b/optimization_v1/runs/M441-fixed-video-board-09/BOARD_RESULT.json",
+      "sha256": "defbb0fd59e9139e1f6c267a78aa066d25a19708c1e4a075032415b7b3ae95e8",
+      "manifest_sha256": "0ee4346810fac005890ef42b6ba44e4bf44fa848cf0829525a3eae3421ab9160",
+      "build_id": "0x4D343431",
+      "numerical_pass": true,
+      "performance_pass": false
+    },
+    "latest_m441_fixed_video_closure": {
+      "status": "PASS_M441_FIXED159_VIDEO_CLOSED",
+      "result": "deployment/mage_vl4b/optimization_v1/runs/M441-fixed-video-closure-09/RESULT.json",
+      "sha256": "f866f8ee1e19aee38b23f14ed3e5d0a684ab9260a6977d1d63bc7ffd4951fb41",
+      "raw_sha256": "defbb0fd59e9139e1f6c267a78aa066d25a19708c1e4a075032415b7b3ae95e8"
+    },
+    "latest_m441_board_compare": {
+      "status": "PASS_M441_COMPARE",
+      "result": "deployment/mage_vl4b/optimization_v1/runs/M441-compare-board-01/BOARD_RESULT.json",
+      "sha256": "0b416a17669ae1a5690a62650237ce6ced33f922017625f685401ca806e2273d",
+      "build_id": "0x4D343431",
+      "board": true
+    },
+    "latest_m441_kernel_switch_component": {
+      "status": "PASS_M441_KERNEL_SWITCH_CPU_COMPONENT_ONLY",
+      "result": "deployment/mage_vl4b/optimization_v1/runs/M441-kernel-switch-component-09/RESULT.json",
+      "sha256": "54f1259c315cb6ac50746152616fbff01f74ade1c931f0d2abeb9d8b8c53d75d"
+    },
+    "latest_m437_natural_IO_protocol": {
+      "result": "deployment/mage_vl4b/optimization_v1/runs/M437-natural-IO-protocol-01/RESULT.json",
+      "sha256": "9522ad5d062e4bbc5c7a060c9c145f381e9da4826cb6ec65709315852aff2248",
+      "status": "FROZEN_M437_NATURAL_IO_COMPLETE_REQUEST_PROTOCOL_ONLY",
+      "protocol_sha256": "947298b80629a614f520d682a3653738877e496f9d72beb3c48f6034c9f59e34",
+      "source_sha256": "1036932c0528645dd6653cd3fab1b550f838d77675f8e03dfb5b89b2a31aefe2",
+      "prerequisites": {
+        "latest_m432_integrated_board": {
+          "status": "PASS_M432_INTEGRATED_VIDEO_NUMERICAL",
+          "result": "deployment/mage_vl4b/optimization_v1/runs/M432-integrated-video-board-01/BOARD_RESULT.json",
+          "sha256": "6e90366d95b252b5fa18c59949dfc0dbdcecc5983bc0f4d913e10f67b54d1c1a",
+          "manifest_sha256": "37579ee6572d076a547842ba868c04a3797dd2a0375724c2a6fce333a9b9a0ee",
+          "build_id": "0x4D333537",
+          "decision_consistency_pass": true,
+          "accuracy_proven": false,
+          "performance_pass": false
+        },
+        "latest_m432_integrated_closure": {
+          "status": "CLOSED_M432_LATE11_INTEGRATED_NUMERICAL_PASS",
+          "result": "deployment/mage_vl4b/optimization_v1/runs/M432-integrated-closure-01/RESULT.json",
+          "sha256": "35493c2bf818a539de0790bc9c12d31534e5c1884d8d6ba97ff6f39e2b29c450",
+          "raw_sha256": "6e90366d95b252b5fa18c59949dfc0dbdcecc5983bc0f4d913e10f67b54d1c1a",
+          "numerical_pass": true,
+          "full_request_performance_gate_preparation_unlocked": true,
+          "full_request_performance_proven": false
+        },
+        "latest_m430_complete_visual_closure": {
+          "status": "CLOSED_M430_WORTHWHILE_COMPLETE_VISUAL_GAIN",
+          "result": "deployment/mage_vl4b/optimization_v1/runs/M430-complete-visual-warm-closure-01/RESULT.json",
+          "sha256": "0e6ee39403e36bc1b6bc7220d72abe6e4ba986a90a7770405375baf717c83215",
+          "raw_sha256": "34de6b3d094c621933598eabba7dcdd9bf1e7fccad940381e8b74ffaede534ad",
+          "performance_pass": true,
+          "full_request_gate_preparation_unlocked": true,
+          "full_request_performance_proven": false
+        },
+        "latest_m428_saved_language_board": {
+          "status": "PASS_M428_SAVED_FEATURE_DECISION_CONSISTENCY",
+          "result": "deployment/mage_vl4b/optimization_v1/runs/M428-saved-language-board-01/BOARD_RESULT.json",
+          "sha256": "1132519865016da467a1748948165fc917e0a8a3c4f4bba7de1af75c3154b739",
+          "manifest_sha256": "dd0b9a54aa4cd60a90d071977dcc50095a870da8274f1364628bb3dee2be5dcb",
+          "build_id": "0x4D333537",
+          "decision_consistency_pass": true,
+          "accuracy_proven": false,
+          "performance_pass": false
+        },
+        "latest_m433_warm_closure": {
+          "status": "CLOSED_M433_WARM_CONDITIONS_NOT_ESTABLISHED",
+          "result": "deployment/mage_vl4b/optimization_v1/runs/M433-warm-performance-closure-01/RESULT.json",
+          "sha256": "c17ee5b0998d6e34c57bfaef5a6bf8d918bd53dccce6f4b9e8e920886b7ee5b4",
+          "raw_sha256": "b35c8ea3e9393ffc000a9bdf8e4f07c07ba3b5f957e580fc33b716a0246853d1",
+          "build_id": "0x4D333537",
+          "performance_pass": false,
+          "temperature_measurement_enabled": false,
+          "production_promoted": false
+        },
+        "latest_m436_IO_board": {
+          "status": "PASS_M435_BB_IO_DIAGNOSTIC",
+          "result": "deployment/mage_vl4b/optimization_v1/runs/M436-IO-observation-board-02/BOARD_RESULT.json",
+          "sha256": "a3cd5d568627f760a6c2e4e32395aa8e002fc2fe0408e24ccd244c9955688a20",
+          "manifest_sha256": "64aed65f9a76d4154e555451d5fd26c20d916ea05721ed66e78767da9db2b966",
+          "build_id": "0x4D333537",
+          "temperature_measurement_enabled": false,
+          "performance_pass": false
+        },
+        "latest_m436_IO_interpretation": {
+          "status": "CLOSED_M436_TWO_REQUEST_IO_DIAGNOSTIC_PASS",
+          "result": "deployment/mage_vl4b/optimization_v1/runs/M436-IO-observation-board-02/INTERPRETATION.json",
+          "sha256": "27e1794b8ea4c44f4370dacc596284f6bbf2c281c88ee495092e9e2fba0c023c",
+          "raw_sha256": "a3cd5d568627f760a6c2e4e32395aa8e002fc2fe0408e24ccd244c9955688a20",
+          "performance_pass": false
+        }
+      },
+      "board_run": false,
+      "performance_pass": false,
+      "old_verdict_changed": false,
+      "temperature_measurement_enabled": false,
+      "numerical_and_resource_logic_unchanged": true,
+      "requires_new_packet_and_actual_control_collector_support": true
+    }
+  },
+  "scope": "M357-versus-M441-both-late13-through23-visual",
+  "build_id": "0x4D333537",
+  "stable_rollback_build": "0x4D395832",
+  "changed_layers": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "changed_parts": [
+    "mlp.fc1",
+    "mlp.fc2"
+  ],
+  "attention_GELU_norm_language_unchanged": true,
+  "parser_workers": 1,
+  "PS_prefetch": false,
+  "last_layer_tail": false,
+  "SiLU_workspace": false,
+  "original_seven_DMA_payload_bytes": 33484832,
+  "additional_DMA": 0,
+  "runtime_resident_through_all_requests": true,
+  "same_overlay_legal_minimal_before_first_request": true,
+  "warmup_order": "ABBA",
+  "formal_order": "ABBABAAB",
+  "maximum_requests": 12,
+  "no_additional_warmups_or_formal_samples": true,
+  "experiment_budget_s": 3600,
+  "request_budget_s": 240,
+  "measurement": {
+    "entry": "original M276ShortPromptBinaryRuntime.stream(request)",
+    "primary": "original complete.total_ms",
+    "secondary": [
+      "first_token_ms",
+      "preprocess_ms",
+      "vision_ms",
+      "prefill_ms",
+      "head_ms"
+    ],
+    "source_frames": 4,
+    "selected_frame_indices": [
+      3
+    ],
+    "views": 2,
+    "prompt_tokens": 159,
+    "generated_tokens": 1,
+    "decode_calls": 0,
+    "model_load_and_common_source_checks_outside_timer": true,
+    "B_binding_staging_pack_parse_cache_invalidation_close_inside_timer": true,
+    "no_full_tensor_packet_or_wire_hash_inside_timer": true,
+    "full_visual_logits_KV_hash_after_each_timer": true,
+    "per_request_language_expected_logical": 778,
+    "per_request_language_expected_physical": 781,
+    "candidate_visual_physical": 286,
+    "candidate_visual_stage_bytes": 49020928,
+    "language_and_visual_counters_separate": true,
+    "natural_storage_IO_included_in_primary_timer": true,
+    "heavy_file_window_observer_enabled": false,
+    "mincore_observer_enabled": false,
+    "process_IO_and_faults_before_after_request_only": true,
+    "foreground_weight_staging_and_B_CPU_PL_scope_inside_original_timer": true,
+    "interval_hashing_may_affect_next_request_cache": true,
+    "interval_policy": "Same fixed post-timer full numerical check after every A and B; report this protocol boundary and do not infer unattended service steady state.",
+    "both_variants_same_accepted_visual_language_reference": true,
+    "loaded_resident_runtime": true,
+    "overlay_programming_included": false,
+    "legal_minimal_included": false,
+    "all_vision_staging_language_parsing_head_included": true
+  },
+  "numerical": {
+    "A": "bit exact saved original M428 and integrated M432",
+    "B": "bit exact saved late13..23 M428 and integrated M432",
+    "visual_source": "M429/M432",
+    "logits_words": 151936,
+    "KV_tensors": 72,
+    "per_request_count_retry_release_guard": true
+  },
+  "statistics": {
+    "pairs": [
+      [
+        1,
+        2
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        6,
+        5
+      ],
+      [
+        7,
+        8
+      ]
+    ],
+    "pair_definition": "A total_ms minus B total_ms",
+    "block_gains": [
+      "ABBA meanA minus meanB",
+      "BAAB meanA minus meanB"
+    ],
+    "report_all_warmup_and_formal_samples": true,
+    "report_read_bytes_major_faults_memory_environment_for_each": true,
+    "report_total_vision_language_ms_and_group_spread": true,
+    "report_mean_median_relative_gain_and_paired_deltas": true,
+    "confidence_interval": "two-sided 95% paired t interval on four deltas, df=3, critical=3.182446305",
+    "benefit_requires_both_blocks_positive_and_paired_lower_bound_positive": true,
+    "conditions_failure": "EXPERIMENT_CONDITIONS_NOT_ESTABLISHED",
+    "insufficient_benefit": "NET_BENEFIT_NOT_RELIABLY_MEASURED_CLOSE_VARIANT",
+    "no_outlier_deletion_no_extra_runs_no_fitted_posthoc_threshold": true,
+    "IO_difference_reported_without_sample_rejection": true,
+    "no_regression_adjustment_or_posthoc_IO_matching": true,
+    "estimand": "Total effect of selected implementation under this fixed resident-runtime protocol, including its natural I/O and cache effects.",
+    "single_bounded_experiment_only": true,
+    "inconclusive_or_nonpositive_gain": "NET_BENEFIT_NOT_RELIABLY_MEASURED_CLOSE_THIS_EXPERIMENT"
+  },
+  "production_changed": false,
+  "expanded_24_layers": false,
+  "performance_pass": false,
+  "board_run": false,
+  "supersedes_protocol_sha256": "947298b80629a614f520d682a3653738877e496f9d72beb3c48f6034c9f59e34",
+  "user_instruction": "\u4ee5\u540e\u90fd\u4e0d\u9700\u8981\u518d\u6d4b\u91cf\u6e29\u5ea6\uff1b\u7ee7\u7eed\u4e0b\u4e00\u6b65\u3002",
+  "temperature_measurement_enabled": false,
+  "previous_verdict_unchanged": {
+    "status": "CLOSED_M433_WARM_CONDITIONS_NOT_ESTABLISHED",
+    "result": "deployment/mage_vl4b/optimization_v1/runs/M433-warm-performance-closure-01/RESULT.json",
+    "sha256": "c17ee5b0998d6e34c57bfaef5a6bf8d918bd53dccce6f4b9e8e920886b7ee5b4",
+    "raw_sha256": "b35c8ea3e9393ffc000a9bdf8e4f07c07ba3b5f957e580fc33b716a0246853d1",
+    "build_id": "0x4D333537",
+    "performance_pass": false,
+    "temperature_measurement_enabled": false,
+    "production_promoted": false
+  },
+  "measurement_question": "Does the new record pipeline reduce complete fixed159 requests under the same accepted visual policy?",
+  "preconditioning": {
+    "order": "ABBA",
+    "requests": 4,
+    "fixed_without_cache_qualification": true,
+    "retained_separately": true,
+    "additional_preconditioning_allowed": false,
+    "next_step_after_fixed_four": "Proceed to exactly eight formal requests if numerical, environment and lifecycle checks hold, regardless of ordinary read_bytes."
+  },
+  "runtime_conditions": {
+    "identical_source_asset_storage_threads_CPU_policy_PL_clocks": true,
+    "same_original_runtime_and_seven_DMA": true,
+    "additional_DMA": 0,
+    "no_cache_eviction_or_forced_weight_preload": true,
+    "no_drop_caches_fadvise_governor_clock_fan_or_kernel_changes": true,
+    "temperature_measurement_enabled": false,
+    "no_thermal_hwmon_IIO_cooling_reads": true,
+    "decoded_cache_entry_upper_bound": 26,
+    "decoded_cache_byte_upper_bound": 66699264,
+    "decoded_cache_within_budget_required": true,
+    "equal_cache_entries_or_misses_between_variants_required": false,
+    "read_bytes_max_per_request": null,
+    "paired_read_bytes_difference_max": null,
+    "major_faults_max": null,
+    "natural_read_bytes_and_faults_are_observations_not_exclusion_rules": true,
+    "observed_CPU_frequency_and_original_environment_check_required": true,
+    "storage_identity_and_source_SHA_required": true,
+    "unexpected_environment_numerical_or_lifecycle_failure_invalidates_experiment": true
+  },
+  "removed_previous_conditions": {
+    "read_bytes_max_per_warm_request": 1048576,
+    "paired_read_bytes_difference_max": 1048576,
+    "reason": "M436 second request still incurred storage I/O; a full-cache qualification would test an unestablished operating condition."
+  },
+  "expected_total_physical": 12813,
+  "variants": {
+    "A": {
+      "build_id": "0x4D333537",
+      "visual_layers": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ]
+    },
+    "B": {
+      "build_id": "0x4D343431",
+      "visual_layers": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ]
+    }
+  },
+  "kernel_transitions": {
+    "initial_build": "0x4D343431",
+    "initial_minimal": 1,
+    "order": "ABBAABBABAAB",
+    "expected_switches": 8,
+    "expected_switch_minimals": 8,
+    "full4096_output_and_Build_idle_required": true,
+    "original_seven_owners_retained": true,
+    "additional_DMA": 0,
+    "environment_preflight_before_every_overlay": true,
+    "all_switching_and_proofs_outside_request_timer": true,
+    "programming_failure_retains_owners": true
+  },
+  "request_accounting": {
+    "each_language_logical": 778,
+    "each_language_physical": 781,
+    "each_visual_physical": 286,
+    "requests": 12,
+    "expected_formal": 8,
+    "expected_primer": 4,
+    "all_endpoint_hashes_after_timer": true
+  },
+  "unchanged_optimizations": {
+    "selected_visual_layers": [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "PS_prefetch": false,
+    "parser_workers": 1,
+    "last_layer_tail": false,
+    "SiLU_workspace": false
+  },
+  "excluded_interpretations": [
+    "cold-start or Overlay-load latency",
+    "long-term unattended service stability",
+    "automatic promotion",
+    "pure PL compute time"
+  ],
+  "revision": "M44117: imported prerequisite alias correction; original15 zero-hardware failure retained; unchanged fixed4+8 and exact resource contract",
+  "supersedes_failed09_raw_sha256": "219f4172fd769a97e4ee446c5e30049ce0c2699f4ab628559f5573ff84fa089a",
+  "resource_contract": {
+    "raw_counters_and_original_baseline_saved": true,
+    "baseline_reset": false,
+    "raw_cumulative_success_credit": "only1904 reserved pages for each exact A/B bit programming with same-PID actual driver stack allocation/finish/matching-PFN release, all4CPU trace loss zero",
+    "unknown_allocation_rejected": true,
+    "allocator_failures_rejected": true,
+    "maximum_programming_s": 30,
+    "trace_instance": "m441_performance_cma15",
+    "trace_limit_bytes": 1048576,
+    "trace_removed_before_request": true,
+    "credits_outside_timer": true,
+    "no_new_slots_banks_or_DMA": true,
+    "causal_prerequisite_sha256": "c31df037d60466230dbe58148ef7e663a0da76059a9e784364791ef058ac38b4"
+  },
+  "supersedes_zero_request15_raw_sha256": "55a6b4e60fc38ef89a3cc5fedf6c45a6d637bd02c931936f9932418432911eb1"
+}

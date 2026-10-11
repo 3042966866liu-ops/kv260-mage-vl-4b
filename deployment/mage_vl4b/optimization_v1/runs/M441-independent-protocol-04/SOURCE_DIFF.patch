@@ -1,0 +1,83 @@
+--- C:\Users\30429\Desktop\TeLLMe_FPGA_2026\tmp\m439_record_load_02\hls\mage_prefill_m89x_runtime\mage_prefill_m89x_runtime.cpp
++++ C:\Users\30429\Desktop\TeLLMe_FPGA_2026\tmp\m441_record_pipeline_02\hls\mage_prefill_m89x_runtime\mage_prefill_m89x_runtime.cpp
+@@ -39,7 +39,26 @@
+   m89n_decode(low1, high1, tagged1, bits, weight1);
+ }
+ 
+-static void m89x_shard(const ap_uint<128> *memory,
++static void m441_load_records(const ap_uint<128> *memory,
++                                hls::stream<ap_uint<128> > &records,
++                                unsigned groups, unsigned rows, unsigned bits) {
++#pragma HLS INLINE off
++  const unsigned blocks = rows / 8;
++  const unsigned words = 1 + 4 * bits;
++  for (unsigned block = 0; block < blocks; ++block) {
++    for (unsigned group = 0; group < groups; ++group) {
++      const unsigned base = group * blocks * words + block * words;
++      for (unsigned i = 0; i < words; ++i) {
++#pragma HLS LOOP_FLATTEN off
++#pragma HLS PIPELINE II=1
++#pragma HLS LOOP_TRIPCOUNT min=9 max=17
++        records.write(memory[base + i]);
++      }
++    }
++  }
++}
++
++static void m441_compute(hls::stream<ap_uint<128> > &records,
+                        const ap_uint<128> x[M89_MAX_GROUPS][32][4],
+                        const ap_uint<16> as[M89_MAX_GROUPS][32],
+                        hls::stream<m89s_pair_t> &out, unsigned groups,
+@@ -50,7 +69,7 @@
+   // activation scales make many valid dot*activation*weight terms subnormal.
+   // Converting the two (normal) stored scales to float before multiplication
+   // preserves those contributions and rounds only once at the AXIS FP16 edge.
+-  // M439: load exactly one current record; no next-record prefetch.
++  // M441 consumer: identical MAC order, a record owned until all four pairs finish.
+   ap_uint<128> record[17];
+ #pragma HLS BIND_STORAGE variable=record type=ram_2p impl=lutram
+   float acc0[32][4], acc1[32][4];
+@@ -68,12 +87,10 @@
+         acc1[token][pair] = 0.0f;
+       }
+     for (unsigned group = 0; group < groups; ++group) {
+-      const unsigned base = group * blocks * words + block * words;
+-      // Contiguous current-record load; actual burst is judged from RTL.
+       for (unsigned i = 0; i < words; ++i) {
+ #pragma HLS PIPELINE II=1
+ #pragma HLS LOOP_TRIPCOUNT min=9 max=17
+-        record[i] = memory[base + i];
++        record[i] = records.read();
+       }
+       ap_uint<128> tagged = record[0];
+       for (unsigned pair = 0; pair < 4; ++pair) {
+@@ -111,6 +128,21 @@
+         out.write(item);
+       }
+   }
++}
++
++static void m89x_shard(const ap_uint<128> *memory,
++                       const ap_uint<128> x[M89_MAX_GROUPS][32][4],
++                       const ap_uint<16> as[M89_MAX_GROUPS][32],
++                       hls::stream<m89s_pair_t> &out, unsigned groups,
++                       unsigned rows, unsigned bits) {
++#pragma HLS INLINE off
++#pragma HLS DATAFLOW
++  hls::stream<ap_uint<128> > records("records");
++  // 34 queued words = two W4 records. The consumer additionally owns one
++  // local 17-word record; AXI inflight responses retain the existing ABI.
++#pragma HLS STREAM variable=records depth=34
++  m441_load_records(memory, records, groups, rows, bits);
++  m441_compute(records, x, as, out, groups, rows, bits);
+ }
+ 
+ static void m89x_merge(hls::stream<m89s_pair_t> r[4],
+@@ -240,5 +272,5 @@
+   }
+   // M89-X2: FP32 scale/accumulation correction after the X1 non-unit-scale
+   // Layer-0 rejection.  Keep the identity distinct from both X and X1.
+-  return 0x4D343339U;
+-}
++  return 0x4D343431U;
++}

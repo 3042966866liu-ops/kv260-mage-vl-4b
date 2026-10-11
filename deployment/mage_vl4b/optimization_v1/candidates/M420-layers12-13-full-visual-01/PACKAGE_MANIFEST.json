@@ -1,0 +1,51 @@
+{
+  "file_count": 9,
+  "total_bytes": 45048,
+  "files": [
+    {
+      "path": "EXPECTED_VISUAL.json",
+      "bytes": 1228,
+      "sha256": "7ec9fb64b5f9c0aee5e9accd722d80beebc099dbc40c29a2b76f4ede79b5c99f"
+    },
+    {
+      "path": "m411_mlp_binding.py",
+      "bytes": 5681,
+      "sha256": "275e85583abc6c1ecfc2f14d59341207f2d2184a5a00bb4f838898f215ec29f5"
+    },
+    {
+      "path": "m420_combination.py",
+      "bytes": 3654,
+      "sha256": "d8eab55f9333476adebc64cfa00b96376768f801a0211986b1ebae04df2e365b"
+    },
+    {
+      "path": "m420_export.py",
+      "bytes": 899,
+      "sha256": "47e0b0a62dbf2dfce833c2c37e16c11ab5a0caa59ccca411f0678f9be4766d20"
+    },
+    {
+      "path": "m420_gate.py",
+      "bytes": 20810,
+      "sha256": "858fb08154604dc0fea259e9cce82057cd1841cd25d74021ad545a56411b5cfe"
+    },
+    {
+      "path": "PLAN.json",
+      "bytes": 4380,
+      "sha256": "5dd1de516d5223b6fa233d32195a2bb3e5efac707da1e7c0a2bcee9730a312fd"
+    },
+    {
+      "path": "run_m420_mlp.sh",
+      "bytes": 945,
+      "sha256": "9b3f5e4dbf7130c4123ef8c6c6717dd831eb039a247cc51a45f51f36d40bf545"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 668,
+      "sha256": "1c21647bbc6952a9fb08bbd70ee6de4781d4df76c55a623fc3e7c97cf3c6246d"
+    },
+    {
+      "path": "test_m420_combination.py",
+      "bytes": 6783,
+      "sha256": "79b90b28578d04240c5b243b8843e21283378f4b348c45cb39c74ee103355450"
+    }
+  ]
+}

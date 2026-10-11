@@ -1,0 +1,69 @@
+--- frozen01.cpp
++++ independent02.cpp
+@@ -69,7 +69,7 @@
+   // activation scales make many valid dot*activation*weight terms subnormal.
+   // Converting the two (normal) stored scales to float before multiplication
+   // preserves those contributions and rounds only once at the AXIS FP16 edge.
+-  // M443: one 64-work pipeline per record; original per-output group order.
++  // M443 revision02: two 32-work pipelines; original per-output group order.
+   ap_uint<128> record[17];
+ #pragma HLS BIND_STORAGE variable=record type=ram_2p impl=lutram
+   float acc0[32][4], acc1[32][4];
+@@ -93,37 +93,41 @@
+         record[i] = records.read();
+       }
+       ap_uint<128> tagged = record[0];
+-      // Decode all four independent output pairs before one shared MAC loop.
++      // Decode two independent pairs before each shared 32-work MAC loop.
+       // No extra MAC lane, no cross-group reassociation, no early final output.
+-      ap_int<5> weight0[4][64], weight1[4][64];
+-      float scale0[4], scale1[4];
++      ap_int<5> weight0[2][64], weight1[2][64];
++      float scale0[2], scale1[2];
+ #pragma HLS ARRAY_PARTITION variable=weight0 complete dim=0
+ #pragma HLS ARRAY_PARTITION variable=weight1 complete dim=0
+ #pragma HLS ARRAY_PARTITION variable=scale0 complete
+ #pragma HLS ARRAY_PARTITION variable=scale1 complete
+-      for (unsigned pair = 0; pair < 4; ++pair) {
++      for (unsigned pair_block = 0; pair_block < 2; ++pair_block) {
++      for (unsigned local_pair = 0; local_pair < 2; ++local_pair) {
++        const unsigned pair = 2 * pair_block + local_pair;
+         ap_uint<16> tagged0 = tagged.range(32 * pair + 15, 32 * pair);
+         ap_uint<16> tagged1 = tagged.range(32 * pair + 31, 32 * pair + 16);
+         m89x_decode_pair(record, pair, bits, tagged0, tagged1,
+-                         weight0[pair], weight1[pair]);
+-        scale0[pair] = m89x_scale_float(tagged0 & 0x7fff);
+-        scale1[pair] = m89x_scale_float(tagged1 & 0x7fff);
+-      }
+-      for (unsigned work = 0; work < 64; ++work) {
++                         weight0[local_pair], weight1[local_pair]);
++        scale0[local_pair] = m89x_scale_float(tagged0 & 0x7fff);
++        scale1[local_pair] = m89x_scale_float(tagged1 & 0x7fff);
++      }
++      for (unsigned work = 0; work < 32; ++work) {
+ #pragma HLS LOOP_FLATTEN off
+ #pragma HLS PIPELINE II=1
+-        const unsigned pair = work >> 4;
++        const unsigned local_pair = work >> 4;
++        const unsigned pair = 2 * pair_block + local_pair;
+         const unsigned token_pair = work & 15;
+         unsigned token0 = 2 * token_pair, token1 = token0 + 1;
+           ap_int<24> dot00, dot01, dot10, dot11;
+-          m89o_dot(weight0[pair], weight1[pair], x[group][token0], dot00, dot01);
+-          m89o_dot(weight0[pair], weight1[pair], x[group][token1], dot10, dot11);
++          m89o_dot(weight0[local_pair], weight1[local_pair], x[group][token0], dot00, dot01);
++          m89o_dot(weight0[local_pair], weight1[local_pair], x[group][token1], dot10, dot11);
+           float activation0 = m89x_scale_float(as[group][token0]);
+           float activation1 = m89x_scale_float(as[group][token1]);
+-          acc0[token0][pair] += (float)dot00 * activation0 * scale0[pair];
+-          acc1[token0][pair] += (float)dot01 * activation0 * scale1[pair];
+-          acc0[token1][pair] += (float)dot10 * activation1 * scale0[pair];
+-          acc1[token1][pair] += (float)dot11 * activation1 * scale1[pair];
++          acc0[token0][pair] += (float)dot00 * activation0 * scale0[local_pair];
++          acc1[token0][pair] += (float)dot01 * activation0 * scale1[local_pair];
++          acc0[token1][pair] += (float)dot10 * activation1 * scale0[local_pair];
++          acc1[token1][pair] += (float)dot11 * activation1 * scale1[local_pair];
++      }
+       }
+     }
+     for (unsigned token = 0; token < 32; ++token)

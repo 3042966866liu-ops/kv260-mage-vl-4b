@@ -1,0 +1,20 @@
+{
+  "workspace": "C:\\Users\\30429\\Desktop\\TeLLMe_FPGA_2026",
+  "python_used": "C:\\Users\\30429\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+  "config_sha256": "bba91df39fbdfbfc0fe660756469b707560dc3d9bf77d13f306971ecaa058a01",
+  "source_contract_sha256": "0e5a443b851eeea1b247479487a9fb862594cfa362ccf0281fc242e92958b84a",
+  "board_transport": "COM3-only, explicit locked runner",
+  "live_board": {
+    "evidence": "C:\\Users\\30429\\Desktop\\TeLLMe_FPGA_2026\\deployment\\mage_vl4b\\optimization_v1\\baselines\\OP00_BOARD_READONLY.json",
+    "sha256": "3ddffad248814b89623c11ed87b07f34ae1ba212114d40ae525a04fec0c1c4a9",
+    "scope": "Read-only UART shell, OS, memory and process-name observation only"
+  },
+  "wsl": {
+    "evidence": "C:\\Users\\30429\\Desktop\\TeLLMe_FPGA_2026\\deployment\\mage_vl4b\\optimization_v1\\baselines\\OP00_WSL_IDENTITY.json",
+    "sha256": "4a1a2f59a9eba577d52b869ac6fe84749cc4877718fd875527ec64d5e7d48881"
+  },
+  "verified_tools": {
+    "windows_python": true,
+    "powershell": true
+  }
+}

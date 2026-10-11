@@ -1,0 +1,22 @@
+{
+  "schema": "M400-CPU-sentinel-only-v1",
+  "files": [
+    {
+      "path": "m400_gdb_cpu_sentinel.py",
+      "bytes": 7399,
+      "sha256": "0ab0774c9103c7459c47812e1df2f9ee9534b678ddd754607a89097748c1cf2f"
+    },
+    {
+      "path": "owned_buffer_release.py",
+      "bytes": 1146,
+      "sha256": "e383c7657744d634b3661b988fe5f3e6f5c5fa027ec5cc6443e3b8b2851f3996"
+    },
+    {
+      "path": "run_m400_cpu_sentinel.sh",
+      "bytes": 251,
+      "sha256": "2e862396fa66914cc3777f3595899426167513e1ea18e5a20dfa7de9cd6cdfdf"
+    }
+  ],
+  "file_count": 3,
+  "total_bytes": 8796
+}

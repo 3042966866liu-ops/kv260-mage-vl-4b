@@ -1,0 +1,45 @@
+{
+  "schema": "m349-opt-in-fixture-component-v1",
+  "files": [
+    {
+      "path": "direct_hash.py",
+      "bytes": 8085,
+      "sha256": "dbaf9ea5ad41bd5ee5af308a49781ad1d310afeb8de04ae12024cd84512266c8"
+    },
+    {
+      "path": "M348_PREREQUISITE.json",
+      "bytes": 219,
+      "sha256": "f15fe198777c452968646847b502452e1da2f6e02f3c308633559523d3fb51b1"
+    },
+    {
+      "path": "m349_direct_hash_fixture_gate.py",
+      "bytes": 14534,
+      "sha256": "7ec152b981e33f8543b91009edd29ddb584b231baa423d4eb127259febb128c1"
+    },
+    {
+      "path": "m349_export_result.py",
+      "bytes": 746,
+      "sha256": "99900f6ec32d39a5b4e691708198f502b7c2cc86935439084c6d925d6c089b82"
+    },
+    {
+      "path": "run_m349_fixture.sh",
+      "bytes": 838,
+      "sha256": "22aa5a4ae26362659ce974f2a4b1e3f3028f37cf54e5ca5248f34b997ec55729"
+    },
+    {
+      "path": "test_direct_hash.py",
+      "bytes": 7659,
+      "sha256": "760a4361b890dced45378dbdda92d0a045762f32da0fcd0ba82befc403ec5652"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 529,
+      "sha256": "8b980ee2de8063cc0e1a4e06d492ee7ae0ff97ae03f39860b1b59cc28eee6390"
+    }
+  ],
+  "file_count": 7,
+  "total_bytes": 32610,
+  "board_run": false,
+  "model_assets_included": false,
+  "hardware_changed": false
+}

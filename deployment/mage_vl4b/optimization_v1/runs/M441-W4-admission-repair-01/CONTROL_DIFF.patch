@@ -1,0 +1,61 @@
+--- C:\Users\30429\Desktop\TeLLMe_FPGA_2026\scripts\optimization\m441_continue04.py
++++ C:\Users\30429\Desktop\TeLLMe_FPGA_2026\scripts\optimization\m441_continue04b.py
+@@ -9,11 +9,15 @@
+ from m441_supervisor04 import boot,process,classify,log_snapshot,selftest
+ 
+ RUN=BASE/'runs/M441-independent-protocol-04'
+-WORK=BASE/'runs/M441-W4-zero-continuation-04'
++WORK=BASE/'runs/M441-W4-zero-continuation-04b'
++POLICY=BASE/'runs/M441-W4-admission-repair-01/RESULT.json'
+ PY='C:/Users/30429/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe'
+ PS='C:/Users/30429/.cache/codex-runtimes/codex-primary-runtime/dependencies/native/powershell/pwsh.exe'
+ 
+ def verified():
++    policy=json.loads(POLICY.read_bytes())
++    assert policy['status']=='PREPARED_M441_W4_ADMISSION_KEY_REPAIR_ONLY'
++    for f in policy['new_control_files']:assert sha(ROOT/f['path'])==f['sha256']
+     prep=RUN/'PREPARATION.json';p=json.loads(prep.read_bytes())
+     assert p['status']=='PREPARED_M441_SEPARATE_NUMERIC_BOUNDARY_BOARD_PROTOCOL04'
+     b=json.loads((ROOT/'deployment/mage_vl4b/BOARD_GATE_RESULT.json').read_bytes())
+@@ -71,8 +75,14 @@
+         r=synced(ev);assert rc==0 and r['status'].startswith('PASS_'),r['status'];return r
+     try:
+         for v in ('A','B'):
+-            assert call('prepare_'+v,[PY,'-B',str(HERE/'m441_prepare_long_rtl04.py'),v,'mlp_down'])==0
+-            prep=BASE/f'runs/M441-long-{v}-mlp_down-RTL-preparation-04/RESULT.json';r=synced(prep)
++            prep=BASE/f'runs/M441-long-{v}-mlp_down-RTL-preparation-04/RESULT.json'
++            if not prep.exists():
++                assert call('prepare_'+v,[PY,'-B',str(HERE/'m441_prepare_long_rtl04.py'),v,'mlp_down'])==0
++            else:
++                assert v=='A' and sha(prep)==json.loads(POLICY.read_bytes())['reused_A_preparation_sha256'],'Only saved A preparation may be reused'
++            r=synced(prep)
++            sync('latest_m441_long_'+v+'_mlp_down_RTL_preparation04',dict(status=r['status'],sha256=sha(prep),result=prep.relative_to(ROOT).as_posix(),board=False),
++                 '## M441 '+v+'/mlp_down04准备键名一致性闭合\n\nSHA '+sha(prep)+'；实际准备字节未变，执行器要求的04键名精确同步，非降低SHA准入。')
+             assert r['cycle_budget']==12000000 and r['observer_revision']=='04'
+             monitor=ROOT/f'tmp/m441_long_{v}_mlp_down_04/verilog/m441_monitor.sv'
+             assert 'cyc>12000000' in monitor.read_text(encoding='utf-8-sig') and 'cyc>80000000' not in monitor.read_text(encoding='utf-8-sig')
+@@ -85,7 +95,7 @@
+             live.append((v,child,job))
+         started_proof=WORK/'RUNNING.json'
+         atomic(started_proof,encoded(dict(status='RUNNING_M441_MLPDOWN_ZERO04_ONLY',jobs=[x[2] for x in live],host=boot(),board=False,pressure_started=False)),immutable=True)
+-        sync('latest_m441_W4_zero04_running',dict(status='RUNNING_M441_MLPDOWN_ZERO04_ONLY',sha256=sha(started_proof),result=started_proof.relative_to(ROOT).as_posix(),board=False),
++        sync('latest_m441_W4_zero04b_running',dict(status='RUNNING_M441_MLPDOWN_ZERO04_ONLY',sha256=sha(started_proof),result=started_proof.relative_to(ROOT).as_posix(),board=False),
+             '## M441 W4 mlp_down完整Zero04实际启动（2026-10-08）\n\nSHA '+sha(started_proof)+'；A/B同输入与冻结DUT，各一次完整长链，两个身份已绑定；仅数值及正常协议，固定12M/8h，每30s原子保存进度/主机启动/PID身份/失败末段。gate_up Zero复用，0压力/时序/整壳/上板。完成后严格回收同步；失败不kill、不重跑。')
+         answers={}
+         for v,child,job in live:
+@@ -99,12 +109,14 @@
+             complete_numerical_pair=all(x['status']=='PASS_M441_COMPLETE_CHAIN_RTL_NUMERIC_AND_PROTOCOL' for x in answers.values()))
+     except Exception as exc:
+         final=dict(status='STOP_M441_W4_ZERO04_AT_FAILED_LEVEL',errors=[repr(exc)])
++    last_observation=observe()
++    held=[j for j in last_observation['jobs'] if j['identity']['status']=='ALIVE']
+     final.update(preparation_sha256=sha(RUN/'PREPARATION.json'),elapsed_s=time.time()-started,
+         board=False,pressure_started=False,OOC_started=False,shell_started=False,processes_killed=False,
+         retained_process_owners=held,last_live_sha256=sha(WORK/'LIVE.json') if (WORK/'LIVE.json').exists() else None,
+         next='Read full W4 result; implement and validate the separately frozen bounded-boundary fixture before any later tool.')
+     ev=WORK/'RESULT.json';atomic(ev,encoded(final),immutable=True)
+-    sync('latest_m441_W4_zero04_result',dict(status=final['status'],sha256=sha(ev),result=ev.relative_to(ROOT).as_posix(),board=False),
++    sync('latest_m441_W4_zero04b_result',dict(status=final['status'],sha256=sha(ev),result=ev.relative_to(ROOT).as_posix(),board=False),
+         '## M441 W4 Zero04有限阶段闭合（2026-10-08）\n\nSHA '+sha(ev)+'；'+final['status']+'；原rc/进度/失败末态保留，0压力/OOC/整壳/板端/kill。完整输出证据逐项同步，不能解释成六组Random或板端提速；下一步按独立04协议核对本级结果。')
+     print(final['status'],sha(ev),flush=True)
+     if final['errors']:raise SystemExit(1)

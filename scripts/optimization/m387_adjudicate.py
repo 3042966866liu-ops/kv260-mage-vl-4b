@@ -1,0 +1,19 @@
+"""Only adjudicate original synchronized video bytes; no board execution."""
+import json
+from m351_workflow import ROOT,BASE,sha,atomic,encoded,sync
+def main():
+    b=json.loads((ROOT/'deployment/mage_vl4b/BOARD_GATE_RESULT.json').read_text(encoding='utf-8'));prior=b['latest_m387_ps_video_board'];path=ROOT/prior['result']
+    assert sha(path)==prior['sha256']
+    assert all(prior['sha256'] in (ROOT/n).read_text(encoding='utf-8') for n in ('CURRENT_STATE.md','docsMILESTONES.md'))
+    r=json.loads(path.read_text(encoding='utf-8'));passed=r['status']=='PASS_M387_PS_VIDEO_NUMERICAL';p=r.get('ps_session',{});c=p.get('component',{});checks=p.get('independent_memory_checks',[])
+    memory={};sampled=r.get('sampled_memory',{});ext=sampled.get('extrema',{})
+    if checks:
+        memory=dict(PS_checks_min_CmaFree_MiB=min(x['memory']['system_bytes']['CmaFree'] for x in checks)/(1<<20),PS_checks_min_MemAvailable_MiB=min(x['memory']['system_bytes']['MemAvailable'] for x in checks)/(1<<20),PS_checks_max_RSS_growth_MiB=max(x['decision']['observed_rss_growth_bytes'] for x in checks)/(1<<20),budget_growth_MiB=p['budget_growth_bytes']/(1<<20),PS_payload_MiB=c['ps_payload_bytes']/(1<<20))
+        if ext:memory.update(sampled_min_CmaFree_MiB=ext['min_cma']/(1<<20),sampled_min_MemAvailable_MiB=ext['min_available']/(1<<20),sampled_max_RSS_growth_MiB=max(0,ext['max_rss']-p['budget_baseline_rss'])/(1<<20))
+    value=dict(status='PASS_FIXED159_VIDEO_PS_PLAN_ONLY' if passed else 'STOP_EXPANSION_AT_PS_FIXED159_VIDEO',raw_sha256=prior['sha256'],build_id=r['build_id'],errors=r['errors'],physical_transactions=r['fpga_transactions'],logical_calls=r.get('logical_calls'),component=c,observed_memory=memory,sampled_memory=sampled,head_observer_proof=r.get('head_observer_proof'),slot_release=p.get('slot_release'),session_weakref_dead=r.get('session_weakref_dead'),safe_buffers_released=r.get('safe_buffers_released'),stable_overlay_restored=r.get('stable_overlay_reloaded'),performance_pass=False,formal_promotion_allowed=False,production_admission_changed=False,next_step='Prepare lightweight original-staging A / ordinary-PS-prefetch B with same parallel Build0x4D333537 and original single parser, frozen fixed159 input and ABBABAAB full-request timing. Hash/export after timers, discard historical request tensors and safely restore owner methods. No automatic promotion; no stable net benefit closes PS variant' if passed else 'Stop expansion at video failure. Diagnose only saved capacity/lifecycle/numerical issue; collector repair recovers original bytes without hardware rerun. No performance run')
+    out=BASE/'runs/M387-ps-video-closure-01';atomic(out/'RESULT.json',encoded(value),immutable=True);d=sha(out/'RESULT.json')
+    report='# M387 PS 权重预读固定159-token视频门禁\n\n'+value['status']+'，Build '+r['build_id']+'。\n\n原始SHA '+prior['sha256']+'；闭合SHA '+d+'。\n\n'+json.dumps(memory,ensure_ascii=False,indent=2)+'\n\n原最后帧两视图、分辨率、提示词、159-token及权重保持；视觉特征、154语言family、完整151936 logits、72份K/V和最终判断核对，原单parser与缩放重试保持。154语言＋8head连续预读窗口；普通PSslot26.5625MiB，0新增DMA。slot纳入原独立全视频1GiB RSS停止上限、64MiB普通可用余量。阶段/PS检查与20ms采样分别报告，不能称为精确瞬时native峰值。\n\n这是单次固定视频数值和生命周期结果，不是预读性能或生产准入晋级；原硬件40.81%收益结论保持。\n\n下一步：'+value['next_step']+'。\n'
+    atomic(out/'REPORT.md',report.encode('utf-8'))
+    sync('latest_m387_ps_video_closure',dict(status=value['status'],result=(out/'RESULT.json').relative_to(ROOT).as_posix(),sha256=d,raw_sha256=prior['sha256'],numerical_pass=passed,performance_pass=False),f'## M387 固定159视频PS预读闭合（2026-10-03）\n\n{value["status"]}；Build{r["build_id"]}，原SHA {prior["sha256"]}，闭合SHA {d}。实际内存{json.dumps(memory)}；完整原视觉/语言/logits/72KV/最终判断及162窗口、0新增DMA，slot/session/七DMA释放。阶段和采样区分、非精确瞬时峰值；无新性能/生产晋级。下一步 {value["next_step"]}。')
+    print(json.dumps(dict(status=value['status'],sha256=d,memory=memory,errors=r['errors'])))
+if __name__=='__main__':main()

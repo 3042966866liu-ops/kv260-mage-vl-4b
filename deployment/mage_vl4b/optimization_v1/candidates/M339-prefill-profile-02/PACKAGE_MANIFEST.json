@@ -1,0 +1,62 @@
+{
+  "schema": "tellme-m339-profile-v1",
+  "file_count": 9,
+  "total_bytes": 35455,
+  "files": [
+    {
+      "path": "board_safety.py",
+      "bytes": 880,
+      "sha256": "18393fcac1a99831c28901a2484477005cc8b667462bbaef68e693029a048645"
+    },
+    {
+      "path": "decode_io_trace.py",
+      "bytes": 1512,
+      "sha256": "216cd05478c263693b129f6b4bcefb9720e9b4eafceef117fa37c98cbdb2a321"
+    },
+    {
+      "path": "decode_trace.py",
+      "bytes": 4177,
+      "sha256": "05dbc3c8a2c4664475aabcba7256c920b4efab029d14fba4e9e9bfc8581b2bcf"
+    },
+    {
+      "path": "m339_diagnostic_gate.py",
+      "bytes": 2441,
+      "sha256": "f365a88548bed74935b8313a12ad33ae48fa3ef4dc310402ad3929034534a00c"
+    },
+    {
+      "path": "prefill_diagnostic.py",
+      "bytes": 5174,
+      "sha256": "dd573910253e171df21306f6addef4d098c00233e421578349ef6d916ed8ed7a"
+    },
+    {
+      "path": "run_fixed_video_profile.py",
+      "bytes": 17075,
+      "sha256": "b4578b016508f1f70d821397928034437516b132a47dfa1998344837b689512d"
+    },
+    {
+      "path": "run_m339_profile.sh",
+      "bytes": 1253,
+      "sha256": "061b4348330416a6d7abd67bbfdd6b41b48c0e21aeb918c79f87375148d0e98a"
+    },
+    {
+      "path": "transfer_trace.py",
+      "bytes": 2253,
+      "sha256": "319256f09211d3a9f66d80b1404611fd306831589613322964e51d7e954b1ffc"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 690,
+      "sha256": "ba1c51bc97b54527f471ca6282508e3fc53155e8b94801ca1a84bfa47c42d28f"
+    }
+  ],
+  "recovery_source_sha256": {
+    "CURRENT_STATE.md": "513e6731c92c26e83917d4f3c17fe2450a89dc557c8f7a519f60f98ada3baad7",
+    "docsMILESTONES.md": "5814050986583a2fd1340ece5658e4be45d4d0a2bfd9e512798f2c5cc23e89ac",
+    "DEPLOYMENT_OPERATION_MISTAKES_REVIEW.md": "8d35a99c42a9ca7216fb7ada0fa61bedacfd5329aa77f5cd4e202fa2021d2690",
+    "deployment/mage_vl4b/BOARD_GATE_RESULT.json": "49dda212e90502bb2efd934e7d9facc22b45f9a0d29c27ed253b807b4f48ebf0"
+  },
+  "hardware_changed": false,
+  "performance_pass": false,
+  "existing_build": "0x4D395832",
+  "closure": "Six local trace/wrapper dependencies; unchanged release closure checked by runner"
+}

@@ -1,0 +1,86 @@
+{
+  "file_count": 16,
+  "total_bytes": 516802,
+  "files": [
+    {
+      "path": "HARDWARE_CLOSURE.json",
+      "bytes": 3170,
+      "sha256": "a86b595540bc381c43ab14bac67907487a906a56bbc640ae9de4ec5cac81b081"
+    },
+    {
+      "path": "M348_SOURCE_IDENTITIES.json",
+      "bytes": 10405,
+      "sha256": "5785abdbe87d5b7b863d1f13f6253447842390e9b2387ff133c841439cf4bdf1"
+    },
+    {
+      "path": "M357_COMPARE_PREREQUISITE.json",
+      "bytes": 40020,
+      "sha256": "ca35750d1b7043b76a16c75b97341616823137a58d91545576de0361a6ba3bde"
+    },
+    {
+      "path": "m369_light_policy.py",
+      "bytes": 2272,
+      "sha256": "2297bb52d6d2e44fbbab449050a185037654b1a6a6b446445569855c6dbe230a"
+    },
+    {
+      "path": "m421_assemble.py",
+      "bytes": 1563,
+      "sha256": "3d0a313e0f9e47fa98be349e6fdf4ede527c99ce2bb0ceb6b6e920d4c261a83e"
+    },
+    {
+      "path": "m421_export.py",
+      "bytes": 873,
+      "sha256": "8deb026dcd20a2a0667d3bb07aee1dfd8192e8b4a8d2a31b8e8324988e401583"
+    },
+    {
+      "path": "m421_gate.py",
+      "bytes": 27589,
+      "sha256": "003ccd014222df54ca8bb6effd105f3799fe56d1d7f6488192f425d2626b9da4"
+    },
+    {
+      "path": "m421_saved_features.py",
+      "bytes": 3988,
+      "sha256": "ac37353d1ef8f5cd5c10c876196b859582dd8d87319dcff45ef3bc81fdecba25"
+    },
+    {
+      "path": "m421_trials.py",
+      "bytes": 6550,
+      "sha256": "57b586473f7a6675d7061993382367db05d5eab7aca6931fd5a3131f2b00d869"
+    },
+    {
+      "path": "PLAN.json",
+      "bytes": 5101,
+      "sha256": "a4c34b4e8dcf99bc3c608321cb701af965ceda1aa811d34ba334bae3394b0375"
+    },
+    {
+      "path": "run_m421.sh",
+      "bytes": 805,
+      "sha256": "921cd06928dac3606d8229c87e78869427ef34702f1ac340407fa7f8483b6921"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 1282,
+      "sha256": "e536c7dec7f9bf8cb9a3a5c8be316ed3236c30b88364f0d4ebc7561d6e5c9578"
+    },
+    {
+      "path": "SOURCE_CLOSURE.json",
+      "bytes": 16344,
+      "sha256": "c2f625f6c4b4097fb143f714ff8626fac160aaf02d251da623cb88d05768a457"
+    },
+    {
+      "path": "STAGE_PREREQUISITE.json",
+      "bytes": 2154,
+      "sha256": "ec450256bea9f4f8baf1f8b0df6c400108048ac338424a3f19e72d2adcff4b1b"
+    },
+    {
+      "path": "VIDEO_EXPECTED.json",
+      "bytes": 339151,
+      "sha256": "cc03faca51a3797fe69d7d7cc8cd1711b6df3234cc3b91a2a822f2d394d071cb"
+    },
+    {
+      "path": "VISUAL_EXPECTED.json",
+      "bytes": 55535,
+      "sha256": "b2d34d44317c2b23de531957d17c5f8a7a230d58d2ace30004fff147ee65e48c"
+    }
+  ]
+}

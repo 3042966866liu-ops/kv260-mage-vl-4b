@@ -1,0 +1,28 @@
+{
+  "default_off": true,
+  "not_executable_board_package": true,
+  "file_count": 4,
+  "total_bytes": 57556,
+  "files": [
+    {
+      "path": "CANDIDATE_PLAN.json",
+      "bytes": 2948,
+      "sha256": "1cceeac8b60171838155062ca522cc24af211e99a9447ba2401ad9b5d81da8d7"
+    },
+    {
+      "path": "m407_mlp_contract.py",
+      "bytes": 3219,
+      "sha256": "b9b2d23be042b3281543f08022c347cef8461149a53add2be29cd42ac7a4c513"
+    },
+    {
+      "path": "MLP_CHAINS.json",
+      "bytes": 50660,
+      "sha256": "ea6f7bbe8b8edfbddb292115437532d8f79edb1bf238bf2870824c91b692a082"
+    },
+    {
+      "path": "TRANSACTION_BUDGET.json",
+      "bytes": 729,
+      "sha256": "b094cf3779c79c7b8d00466790c9bab1efe3e8256ae38d119bf6012207b5fb54"
+    }
+  ]
+}

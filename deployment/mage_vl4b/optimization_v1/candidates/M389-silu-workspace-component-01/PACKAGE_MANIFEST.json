@@ -1,0 +1,32 @@
+{
+  "schema": "M389-offline-component-only-v1",
+  "files": [
+    {
+      "path": "m389_silu_workspace.py",
+      "bytes": 2217,
+      "sha256": "f028cf6e02475138f8ad4b2d62e973fed0354d830322553f2a25ef7e717715cf"
+    },
+    {
+      "path": "PLAN.md",
+      "bytes": 3393,
+      "sha256": "c022989fbc7da226eab4f30dedecdd6138c1cedddeeef41860042bda709d846b"
+    },
+    {
+      "path": "SOURCE_IDENTITY.json",
+      "bytes": 1219,
+      "sha256": "a2ad298aefa8a492f19bea90d53c560f194fb1651620ed68532bfeb8f43e9986"
+    },
+    {
+      "path": "test_m389_silu_workspace.py",
+      "bytes": 4155,
+      "sha256": "38bb4851a084729ceef60cce918900a1a71b092de763effdfad8dda3ce1ee5b5"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 344,
+      "sha256": "9df4712fb79991c9322971b0ce904f66ec7e5e9d2ad707d8da910417f3a0d630"
+    }
+  ],
+  "file_count": 5,
+  "total_bytes": 11328
+}

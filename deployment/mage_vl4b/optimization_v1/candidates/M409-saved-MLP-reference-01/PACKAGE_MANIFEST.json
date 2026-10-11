@@ -1,0 +1,116 @@
+{
+  "file_count": 22,
+  "total_bytes": 158882,
+  "files": [
+    {
+      "path": "EXPECTED.json",
+      "bytes": 1228,
+      "sha256": "7ec9fb64b5f9c0aee5e9accd722d80beebc099dbc40c29a2b76f4ede79b5c99f"
+    },
+    {
+      "path": "EXPECTED_TARGET.json",
+      "bytes": 918,
+      "sha256": "3cf013d46bd9c62ca4ecbfdebba7ddf505e2a51f73117ed8fbf88fb6fd429e76"
+    },
+    {
+      "path": "frozen_video_identity.py",
+      "bytes": 3762,
+      "sha256": "b89bc42e622a86169cb30a5ac8f91a2f40155988afa2830e2e38d0be50804ccc"
+    },
+    {
+      "path": "m120_group_reference.py",
+      "bytes": 2171,
+      "sha256": "b275a71b67be281eea96c62b356ecdae91c2079e0ae22903704e26e32b1597c5"
+    },
+    {
+      "path": "M348_SOURCE_IDENTITIES.json",
+      "bytes": 10405,
+      "sha256": "5785abdbe87d5b7b863d1f13f6253447842390e9b2387ff133c841439cf4bdf1"
+    },
+    {
+      "path": "m355_reference.py",
+      "bytes": 2925,
+      "sha256": "306c01edc303ae96afda4189199c39927a1445255d861a182c3cf6446ab4dab8"
+    },
+    {
+      "path": "m406_vision_observer.py",
+      "bytes": 13848,
+      "sha256": "8e3708a0888c707d53f1a1427e9c20722b61ac52a696918854f1f0c2c72fec6b"
+    },
+    {
+      "path": "m407_mlp_contract.py",
+      "bytes": 3219,
+      "sha256": "b9b2d23be042b3281543f08022c347cef8461149a53add2be29cd42ac7a4c513"
+    },
+    {
+      "path": "M408_CAPTURE_EXPECTED.json",
+      "bytes": 4944,
+      "sha256": "ba2023de413d288569cb905d408ece0598cfcaaa261372833b7eae5448d627aa"
+    },
+    {
+      "path": "m408_component04.py",
+      "bytes": 5311,
+      "sha256": "12c072c2977f09ae47465a07dcb2d73c291744168ccbabf46c733093425f6b6b"
+    },
+    {
+      "path": "m408_gate.py",
+      "bytes": 14707,
+      "sha256": "dd2fcedeca948a655436475dda3612681eef9729c4d6ba82e9f8fd67cc442a47"
+    },
+    {
+      "path": "m408_mlp_capture04.py",
+      "bytes": 6473,
+      "sha256": "d5f3d5533f1cbdc2f6ebdd9475c30a2d116a1e400f41b1f3d6efea5173868cb4"
+    },
+    {
+      "path": "m408_target03.py",
+      "bytes": 2140,
+      "sha256": "3c21b581b6b36959e1ffee5de8a983921fd66924b27ce9d7b8393a5f57d10276"
+    },
+    {
+      "path": "m408_target_component04.py",
+      "bytes": 5338,
+      "sha256": "52a8f5a2c4940142cb46e18086bed9d6d72a7da052734fef757960176b87b9bc"
+    },
+    {
+      "path": "m409_ftz_reference.py",
+      "bytes": 5412,
+      "sha256": "fc5fdb25a536cd0794feae00c9ee5d8e69275abe0c9cc1e886af285654c5198d"
+    },
+    {
+      "path": "m409_gate.py",
+      "bytes": 12408,
+      "sha256": "3140875b0f50b9a6238519bb195be42793819c1b3dc6f05dd21d6c5dc2e05c45"
+    },
+    {
+      "path": "m409_torch_component.py",
+      "bytes": 4055,
+      "sha256": "4ef556ad9c104351573e3635c2e4f3d1442a0ff8de194cf86517b87b2d729d40"
+    },
+    {
+      "path": "MLP_CHAINS.json",
+      "bytes": 50660,
+      "sha256": "ea6f7bbe8b8edfbddb292115437532d8f79edb1bf238bf2870824c91b692a082"
+    },
+    {
+      "path": "PREREQUISITE.json",
+      "bytes": 743,
+      "sha256": "b85b7d0c7bca5f5665d80c071964ccf5f4ee0ae2b9b6d1133c16008e615db8e3"
+    },
+    {
+      "path": "run_m409_reference.sh",
+      "bytes": 870,
+      "sha256": "69427afb23f9f6c0ea9c331b89b97d8646c7ec1f2cea82ff29021c7aee655a50"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 1829,
+      "sha256": "093905008598534dddc302d53b6bfb365cf19837090ecd0f9e7a362b1bace9c3"
+    },
+    {
+      "path": "test_m409_ftz_reference.py",
+      "bytes": 5516,
+      "sha256": "9b663e22d39d947de8624a8e3c147abdee48fb82daad903bffe72bec32fed823"
+    }
+  ]
+}

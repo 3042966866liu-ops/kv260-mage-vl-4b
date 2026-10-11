@@ -1,0 +1,3 @@
+open_checkpoint "tmp/decode_tristream_166_aggressive/vivado/qwen25_decode_tristream_166_aggressive_routed.dcp"
+report_utilization -hierarchical -hierarchical_depth 4 -file "tmp/decode_tristream_166_aggressive/vivado/utilization_hierarchical.rpt"
+exit

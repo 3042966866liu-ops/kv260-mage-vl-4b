@@ -1,0 +1,27 @@
+{
+  "schema": "m442-live-parser-specific-peer-bootstrap",
+  "files": [
+    {
+      "path": "m442_transfer01.py",
+      "bytes": 13497,
+      "sha256": "6bf902bc98c3d0f5356f3b395165a245ae7b85044ba81ad98a5843b1ac9e9b25"
+    },
+    {
+      "path": "run_m442_transfer.sh",
+      "bytes": 351,
+      "sha256": "7560261088c96c839dcbeefcf38eac877d2a167338ffb77c6d59051a9ba8296a"
+    },
+    {
+      "path": "TRANSPORT_MANIFEST.json",
+      "bytes": 4567,
+      "sha256": "4ef5f744725a86183a26be7ebb4c16dd548fe6dba74b1c2bdd62ef3fc136f9c7"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 262,
+      "sha256": "ff18c48e0d88cbb2db17c680d11c3173c5e48c42cd0a541b4be316c980b4f81d"
+    }
+  ],
+  "file_count": 4,
+  "total_bytes": 18677
+}

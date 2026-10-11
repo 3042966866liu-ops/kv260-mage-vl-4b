@@ -1,0 +1,337 @@
+{
+  "module_dirs": [
+    "runtime_site",
+    "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate",
+    "deployment/mage_vl4b/m254_dual_path_web_candidate",
+    "deployment/mage_vl4b/m243_web_prefill_board_candidate",
+    "deployment/mage_vl4b/m242_m241_fixed_text_board_candidate",
+    "deployment/mage_vl4b/m238_input_prefetch_board_candidate",
+    "deployment/mage_vl4b/m241_grouped_gqa_board_candidate",
+    "deployment/mage_vl4b/m231_parse_reuse_board_candidate",
+    "tmp/m227_runtime_base/m227_runtime_base_patch",
+    "tmp/m223_realtime/m223_realtime_delta",
+    "tmp/m218_dual_source/m218_dual_source_delta",
+    "deployment/mage_vl4b/m181_m120_video_board_candidate/text_runtime",
+    "deployment/mage_vl4b/m181_m120_video_board_candidate/ps_vision_payload",
+    "deployment/mage_vl4b/m181_m120_video_board_candidate",
+    "deployment/mage_vl4b/m175_m120_fixed_text_candidate/runtime",
+    "deployment/mage_vl4b/m175_m120_fixed_text_candidate/runtime/support"
+  ],
+  "modules": {
+    "reserved_ddr_pool": "deployment/mage_vl4b/m175_m120_fixed_text_candidate/runtime/support/reserved_ddr_pool.py",
+    "m277_fixed_window_gate": "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m277_fixed_window_gate.py",
+    "m276_prompt_contract": "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m276_prompt_contract.py",
+    "m273_latest_multiscale_contract": "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m273_latest_multiscale_contract.py",
+    "video_server": "tmp/m223_realtime/m223_realtime_delta/video_server.py",
+    "board_runtime": "deployment/mage_vl4b/m175_m120_fixed_text_candidate/runtime/board_runtime.py",
+    "contract_runtime": "deployment/mage_vl4b/m175_m120_fixed_text_candidate/runtime/contract_runtime.py",
+    "video_request": "deployment/mage_vl4b/m181_m120_video_board_candidate/video_request.py",
+    "board_preprocess": "deployment/mage_vl4b/m181_m120_video_board_candidate/board_preprocess.py",
+    "video_prompt": "deployment/mage_vl4b/m181_m120_video_board_candidate/video_prompt.py",
+    "video_language_runtime": "deployment/mage_vl4b/m181_m120_video_board_candidate/video_language_runtime.py",
+    "m207_ps_vision_runtime": "tmp/m223_realtime/m223_realtime_delta/m207_ps_vision_runtime.py",
+    "m206_ps_vision_runtime": "tmp/m223_realtime/m223_realtime_delta/m206_ps_vision_runtime.py",
+    "ps_vision_runtime": "tmp/m227_runtime_base/m227_runtime_base_patch/ps_vision_runtime.py",
+    "live_stream_core": "tmp/m223_realtime/m223_realtime_delta/live_stream_core.py",
+    "m276_video_runtime": "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m276_video_runtime.py",
+    "m273_latest_vision_runtime": "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m273_latest_vision_runtime.py",
+    "m261_budgeted_w4_runtime": "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m261_budgeted_w4_runtime.py",
+    "m260_cached_w4_runtime": "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m260_cached_w4_runtime.py",
+    "m259_variable_vision_runtime": "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m259_variable_vision_runtime.py",
+    "m258_vectorized_w4_runtime": "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m258_vectorized_w4_runtime.py",
+    "m222_vectorized_w4_runtime": "tmp/m223_realtime/m223_realtime_delta/m222_vectorized_w4_runtime.py",
+    "m246_knife_binary": "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m246_knife_binary.py",
+    "m259_video_runtime": "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m259_video_runtime.py",
+    "variable_video_contract": "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/variable_video_contract.py",
+    "keyframe_reducer": "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/keyframe_reducer.py",
+    "m243_video_server": "deployment/mage_vl4b/m243_web_prefill_board_candidate/m243_video_server.py",
+    "m241_video_language_runtime": "deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m241_video_language_runtime.py",
+    "m230_video_language_runtime": "deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m230_video_language_runtime.py",
+    "m238_prefill_runtime": "deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m238_prefill_runtime.py",
+    "m236_prefill_runtime": "deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m236_prefill_runtime.py",
+    "m231_prefill_runtime": "deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m231_prefill_runtime.py",
+    "m230_prefill_runtime": "deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m230_prefill_runtime.py",
+    "m222_video_server": "tmp/m223_realtime/m223_realtime_delta/m222_video_server.py",
+    "m222_live_stream_core": "tmp/m223_realtime/m223_realtime_delta/m222_live_stream_core.py",
+    "m276_m254_video_server": "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m276_m254_video_server.py",
+    "m254_video_server": "deployment/mage_vl4b/m254_dual_path_web_candidate/m254_video_server.py",
+    "m254_dual_path_core": "deployment/mage_vl4b/m254_dual_path_web_candidate/m254_dual_path_core.py",
+    "m253_board_latest_stream": "deployment/mage_vl4b/m254_dual_path_web_candidate/m253_board_latest_stream.py",
+    "latest_fast_stream": "deployment/mage_vl4b/m254_dual_path_web_candidate/latest_fast_stream.py",
+    "fast_frame_pipeline": "deployment/mage_vl4b/m254_dual_path_web_candidate/fast_frame_pipeline.py",
+    "temporal_action_adapter": "deployment/mage_vl4b/m254_dual_path_web_candidate/temporal_action_adapter.py",
+    "immediate_safety_monitor": "deployment/mage_vl4b/m254_dual_path_web_candidate/immediate_safety_monitor.py",
+    "fast_safety_monitor": "deployment/mage_vl4b/m254_dual_path_web_candidate/fast_safety_monitor.py",
+    "knife_alarm": "deployment/mage_vl4b/m254_dual_path_web_candidate/knife_alarm.py"
+  },
+  "files": [
+    {
+      "path": "deployment/mage_vl4b/m175_m120_fixed_text_candidate/runtime/support/reserved_ddr_pool.py",
+      "bytes": 5894,
+      "sha256": "e933f9818e888ed7c924b7597adadd42f7254b942f65c645b85f17fc40f33013"
+    },
+    {
+      "path": "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m277_fixed_window_gate.py",
+      "bytes": 9360,
+      "sha256": "dc2430b6e68fb54a6157d5ee317ac747e70b66156bf8307eedf58b9f65795b5d"
+    },
+    {
+      "path": "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m276_prompt_contract.py",
+      "bytes": 1314,
+      "sha256": "fc46f457e7eec1fb044dcb5f9bb6e416f74596ba44ee3f321038ecaf4674bc39"
+    },
+    {
+      "path": "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m273_latest_multiscale_contract.py",
+      "bytes": 4044,
+      "sha256": "c5826f77f95f4b3d6fbf1c406d9f341650316958ba5cfa1ba2467605eef3273a"
+    },
+    {
+      "path": "tmp/m223_realtime/m223_realtime_delta/video_server.py",
+      "bytes": 24781,
+      "sha256": "6b6655e29c13fee8f805a102d8f4ac9d89988067930e0ae187a9e2d860d88b74"
+    },
+    {
+      "path": "deployment/mage_vl4b/m175_m120_fixed_text_candidate/runtime/board_runtime.py",
+      "bytes": 23357,
+      "sha256": "5d53ea406e57de88f8c14d9bc4e1cb0c0049ff0b8f4bcf620e05745fcd82b201"
+    },
+    {
+      "path": "deployment/mage_vl4b/m175_m120_fixed_text_candidate/runtime/contract_runtime.py",
+      "bytes": 7223,
+      "sha256": "2912ab6040e1218775b397a184fd2d2487a83935fb9f7dfff7c97381c9cde75d"
+    },
+    {
+      "path": "deployment/mage_vl4b/m181_m120_video_board_candidate/video_request.py",
+      "bytes": 3021,
+      "sha256": "3041d1124d1db9b436f623bdcbe0d402a8f01a457e162859b20ded6baa51563b"
+    },
+    {
+      "path": "deployment/mage_vl4b/m181_m120_video_board_candidate/board_preprocess.py",
+      "bytes": 3212,
+      "sha256": "1fe75b3903e16f681303c41adaf6b2b4d3b6858093e32c5e92dd8cab6369b0ba"
+    },
+    {
+      "path": "deployment/mage_vl4b/m181_m120_video_board_candidate/video_prompt.py",
+      "bytes": 1191,
+      "sha256": "7e0e5dfa238859a84851bd4b51f655f312f959c6f99f8d09552c945d5c975e07"
+    },
+    {
+      "path": "deployment/mage_vl4b/m181_m120_video_board_candidate/video_language_runtime.py",
+      "bytes": 11762,
+      "sha256": "fae70964171580dc8329700e99aa0b25f27b752e9d4274c5bae72fa19f30cf61"
+    },
+    {
+      "path": "tmp/m223_realtime/m223_realtime_delta/m207_ps_vision_runtime.py",
+      "bytes": 3946,
+      "sha256": "cc58d6554c127d9fd111e05e9dbfadc7082e3bccfeda907cb67b2059f29a750c"
+    },
+    {
+      "path": "tmp/m223_realtime/m223_realtime_delta/m206_ps_vision_runtime.py",
+      "bytes": 5348,
+      "sha256": "1f67ba6fe8628096919bb8f150d7e67a168dbf675aa7715f68074bd6792c2582"
+    },
+    {
+      "path": "tmp/m227_runtime_base/m227_runtime_base_patch/ps_vision_runtime.py",
+      "bytes": 17545,
+      "sha256": "ecaa55370f8fbb222ebdcdb55252eb19a3ad31d05e6236ba9138eac3ed11ae53"
+    },
+    {
+      "path": "tmp/m223_realtime/m223_realtime_delta/live_stream_core.py",
+      "bytes": 9805,
+      "sha256": "947d8cb44ce623b1f907d8d771993a143464f4ddbd3b30c7a3a50d553c646535"
+    },
+    {
+      "path": "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m276_video_runtime.py",
+      "bytes": 5459,
+      "sha256": "7dc39257361179d8e2ddcf91380e4ce73e96c69fc2e23b411a337b47896f8386"
+    },
+    {
+      "path": "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m273_latest_vision_runtime.py",
+      "bytes": 2319,
+      "sha256": "a7ecdf6d60791c35cd33c2526f56696ee6d4ab32e79e9cc5ed391745263d492f"
+    },
+    {
+      "path": "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m261_budgeted_w4_runtime.py",
+      "bytes": 2690,
+      "sha256": "24be172d8366884bc1d4ca9917cf53382773e6b8f4b8a040991ccf18aecdae9a"
+    },
+    {
+      "path": "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m260_cached_w4_runtime.py",
+      "bytes": 6034,
+      "sha256": "065c5ce58ec52dac3ee327a06228e99ff08c9d0e98bec1a2d8cf171238f076d7"
+    },
+    {
+      "path": "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m259_variable_vision_runtime.py",
+      "bytes": 2536,
+      "sha256": "d5e3888479ecb19b99c4ca6c1055953a12845030d9477620dc2c863a9b677429"
+    },
+    {
+      "path": "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m258_vectorized_w4_runtime.py",
+      "bytes": 3670,
+      "sha256": "b8b973f5355504dfc7b3d1cb21c16a9756831947396dc536c5b8f99478004e8a"
+    },
+    {
+      "path": "tmp/m223_realtime/m223_realtime_delta/m222_vectorized_w4_runtime.py",
+      "bytes": 4959,
+      "sha256": "48f9144f14d58bf57202ed32b7aab34a84430906bbe857a568b4f4f00faacf7d"
+    },
+    {
+      "path": "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m246_knife_binary.py",
+      "bytes": 2136,
+      "sha256": "ddf55a13a29719cd57aecb99405a5f939f4439c38a4be72793644f2b6901da4d"
+    },
+    {
+      "path": "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m259_video_runtime.py",
+      "bytes": 6844,
+      "sha256": "d79c7b6d477bdfda2a56693d5d2d2757aef05410b11739d10f2e51cdea3a257b"
+    },
+    {
+      "path": "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/variable_video_contract.py",
+      "bytes": 3522,
+      "sha256": "7f0a366e282ddea204c62bc9131e13be366c459c1fd1aca9af6f12b92299a268"
+    },
+    {
+      "path": "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/keyframe_reducer.py",
+      "bytes": 3845,
+      "sha256": "f55b0798c775bd6312a4e35d3286790f842cb77e386f506c464d4c5aa2eaee92"
+    },
+    {
+      "path": "deployment/mage_vl4b/m243_web_prefill_board_candidate/m243_video_server.py",
+      "bytes": 4632,
+      "sha256": "9ee51793532e1fa3637259664948735df7816fbbdae8165d167cb6a05cb98474"
+    },
+    {
+      "path": "deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m241_video_language_runtime.py",
+      "bytes": 4412,
+      "sha256": "24f419ea8e0f130cefc8eb51f916dca3fb945b84f0dc8e73dec9f5376be3ad09"
+    },
+    {
+      "path": "deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m230_video_language_runtime.py",
+      "bytes": 655,
+      "sha256": "2401f60823133f3a5c0656686ff1f7823da8796a154a1e9a888ba16f80138b56"
+    },
+    {
+      "path": "deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m238_prefill_runtime.py",
+      "bytes": 8974,
+      "sha256": "daf30c982c276b90ac776178ad258e536925dce52de7ab26b06a9473ff9a9d9a"
+    },
+    {
+      "path": "deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m236_prefill_runtime.py",
+      "bytes": 14354,
+      "sha256": "d8061b561fe4d2a089523fde0d3860684244e76bca9646f255f03134fb50be56"
+    },
+    {
+      "path": "deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m231_prefill_runtime.py",
+      "bytes": 11534,
+      "sha256": "e7d6aa5a43919405168612b6a5695c14330735f75c87aa269b245e61542750ad"
+    },
+    {
+      "path": "deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m230_prefill_runtime.py",
+      "bytes": 9341,
+      "sha256": "defbcff1cc36300fff84481f2e9eba7a06174941b568e34b2faa7885efc14df4"
+    },
+    {
+      "path": "tmp/m223_realtime/m223_realtime_delta/m222_video_server.py",
+      "bytes": 1787,
+      "sha256": "8b9e34ec0445267591a283f76a2ae9dc46650adda1d00ad85c4947c13f3ec02a"
+    },
+    {
+      "path": "tmp/m223_realtime/m223_realtime_delta/m222_live_stream_core.py",
+      "bytes": 2352,
+      "sha256": "4b1c4d78ccdb7cdca49a7c45393ff465560fe84f7997e220ea4ad2061d610326"
+    },
+    {
+      "path": "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m276_m254_video_server.py",
+      "bytes": 276,
+      "sha256": "b0ffc2750fb28587b8d51909f59e2c0a367c6dfd0183c784743e945356f9346a"
+    },
+    {
+      "path": "deployment/mage_vl4b/m254_dual_path_web_candidate/m254_video_server.py",
+      "bytes": 5591,
+      "sha256": "86e2c79740af645449db5b2f8c64246000dab1896a30b4148e5c90f1e321fc6f"
+    },
+    {
+      "path": "deployment/mage_vl4b/m254_dual_path_web_candidate/m254_dual_path_core.py",
+      "bytes": 4157,
+      "sha256": "cd1a7af2cb0575f5a60a1a033af4424866ee4d329d3bbbacc798b873d507ffd3"
+    },
+    {
+      "path": "deployment/mage_vl4b/m254_dual_path_web_candidate/m253_board_latest_stream.py",
+      "bytes": 9671,
+      "sha256": "5e70cae45e854bf8cbda67612af956ab4d3fadd12f90525e715496aca3803b15"
+    },
+    {
+      "path": "deployment/mage_vl4b/m254_dual_path_web_candidate/latest_fast_stream.py",
+      "bytes": 7546,
+      "sha256": "f3904f7c82f3770704ff5457612a11aae61af6a3453a215c8efae79d0a0fefa0"
+    },
+    {
+      "path": "deployment/mage_vl4b/m254_dual_path_web_candidate/fast_frame_pipeline.py",
+      "bytes": 11491,
+      "sha256": "5e0158e067a43e225f52ac267223fe257b459a0fe5a9cad219fe83e6c035eb98"
+    },
+    {
+      "path": "deployment/mage_vl4b/m254_dual_path_web_candidate/temporal_action_adapter.py",
+      "bytes": 8461,
+      "sha256": "19699b51b22a9bee71f4055772d80439a348076ac111086fbf6b1801d9538597"
+    },
+    {
+      "path": "deployment/mage_vl4b/m254_dual_path_web_candidate/immediate_safety_monitor.py",
+      "bytes": 5262,
+      "sha256": "20e61b893eb2de73896c5246c2b04eaa08c0c8001b47c613240c759236086d00"
+    },
+    {
+      "path": "deployment/mage_vl4b/m254_dual_path_web_candidate/fast_safety_monitor.py",
+      "bytes": 8138,
+      "sha256": "7efbb9c8f4c792d8d6004ca859ce4b612d6f76e2bccc5c00bb8808d023134ca1"
+    },
+    {
+      "path": "deployment/mage_vl4b/m254_dual_path_web_candidate/knife_alarm.py",
+      "bytes": 5334,
+      "sha256": "dbfc11d4ddef18bf99c0493fd83b3f45ec5116c0e89c48439c293cb601fcb7db"
+    },
+    {
+      "path": "scripts/preflight.py",
+      "bytes": 13941,
+      "sha256": "6d269adf431e8e505684f4d51b23e65112a7f5a9069561b1bf7de0d013f376fd"
+    },
+    {
+      "path": "configs/deployment.example.json",
+      "bytes": 87,
+      "sha256": "bcef0e3feae8fb2e2178b25eec7afa2f1f3b0535639544eafe03a3914bdcbd3f"
+    }
+  ],
+  "recursive_missing_project": [],
+  "declared_external_imports": [
+    "__future__",
+    "argparse",
+    "asyncio",
+    "collections",
+    "concurrent",
+    "dataclasses",
+    "fcntl",
+    "hashlib",
+    "http",
+    "importlib",
+    "json",
+    "math",
+    "mmap",
+    "numpy",
+    "os",
+    "pathlib",
+    "platform",
+    "pynq",
+    "resource",
+    "struct",
+    "sys",
+    "threading",
+    "time",
+    "tokenizers",
+    "torch",
+    "torchvision",
+    "types",
+    "typing",
+    "urllib"
+  ],
+  "entry_import": "Actual board final-order import before model/overlay; Windows recursive source/AST only"
+}

@@ -1,0 +1,17 @@
+"""Read only synchronized saved fixed-text bytes; no board actions."""
+import json
+from m351_workflow import ROOT,BASE,sha,atomic,encoded,sync
+def main():
+    b=json.loads((ROOT/'deployment/mage_vl4b/BOARD_GATE_RESULT.json').read_text(encoding='utf-8'));prior=b['latest_m386_ps_text_board'];path=ROOT/prior['result']
+    assert sha(path)==prior['sha256']
+    assert all(prior['sha256'] in (ROOT/n).read_text(encoding='utf-8') for n in ('CURRENT_STATE.md','docsMILESTONES.md'))
+    r=json.loads(path.read_text(encoding='utf-8'));passed=r['status']=='PASS_M386_PS_TEXT_NUMERICAL';p=r.get('ps_session',{});c=p.get('component',{});checks=p.get('independent_memory_checks',[])
+    memory={}
+    if checks:memory=dict(min_CmaFree_MiB=min(x['memory']['system_bytes']['CmaFree'] for x in checks)/(1<<20),min_MemAvailable_MiB=min(x['memory']['system_bytes']['MemAvailable'] for x in checks)/(1<<20),max_observed_RSS_growth_MiB=max(x['decision']['observed_rss_growth_bytes'] for x in checks)/(1<<20),budget_growth_MiB=p['budget_growth_bytes']/(1<<20),PS_payload_MiB=c['ps_payload_bytes']/(1<<20))
+    value=dict(status='PASS_FIXED_TEXT_PS_PLAN_ONLY' if passed else 'STOP_EXPANSION_AT_PS_FIXED_TEXT',raw_sha256=prior['sha256'],build_id=r['build_id'],errors=r['errors'],physical_transactions=r['fpga_transactions'],logical_calls=r.get('logical_calls'),component=c,observed_memory=memory,sampled_memory=r.get('sampled_memory'),head_observer_proof=r.get('head_observer_proof'),slot_release=p.get('slot_release'),session_weakref_dead=r.get('session_weakref_dead'),safe_buffers_released=r.get('safe_buffers_released'),stable_overlay_restored=r.get('stable_overlay_reloaded'),performance_pass=False,formal_promotion_allowed=False,production_admission_changed=False,next_step='Independently freeze fixed159 video PS plan; original four-frame-source/last-frame-two-view contract, visual features/154 family/72KV/logits/final decision reference and actual head observation; reuse video1GiB total ordinary RSS ceiling including slot,64MiB available margin and sealed original7DMA. Actual video numeric/lifecycle PASS and triad required before lightweight balanced same-hardware request performance' if passed else 'Stop expansion at text failure. Diagnose only recorded capacity/lifecycle/numerical issue; collect saved bytes only if needed. No video/performance run')
+    out=BASE/'runs/M386-ps-text-closure-01';atomic(out/'RESULT.json',encoded(value),immutable=True);d=sha(out/'RESULT.json')
+    report='# M386 PS 权重预读固定文本门禁\n\n'+value['status']+'，Build '+r['build_id']+'。\n\n原始SHA '+prior['sha256']+'；闭合SHA '+d+'。\n\n'+json.dumps(memory,ensure_ascii=False,indent=2)+'\n\n原30-token固定文本、36层、完整151936 logits和72份KV，154语言＋8head连续读取窗口；原单parser、数学/打包/解析/缩放重试及head真实物理观察保持。额外普通slot26.5625MiB，0新增DMA；slot和推理都计入原独立256MiB RSS停止预算、64MiB普通可用余量。\n\n这是固定文本数值和生命周期结果，不是159视频容量、峰值、新净收益或生产晋级；原硬件40.81%收益结论保持。\n\n下一步：'+value['next_step']+'。\n'
+    atomic(out/'REPORT.md',report.encode('utf-8'))
+    sync('latest_m386_ps_text_closure',dict(status=value['status'],result=(out/'RESULT.json').relative_to(ROOT).as_posix(),sha256=d,raw_sha256=prior['sha256'],numerical_pass=passed,performance_pass=False),f'## M386 固定文本PS连续预读闭合（2026-10-03）\n\n{value["status"]}；Build{r["build_id"]}，原SHA {prior["sha256"]}，闭合SHA {d}。实际内存{json.dumps(memory)}；原完整30Token/36层/head/logits/72KV、162预读窗口，0新增DMA，slot/session及七DMA释放。仅文本数值和生命周期，无新性能/视频容量/生产晋级。下一步 {value["next_step"]}。')
+    print(json.dumps(dict(status=value['status'],sha256=d,memory=memory,errors=r['errors'])))
+if __name__=='__main__':main()

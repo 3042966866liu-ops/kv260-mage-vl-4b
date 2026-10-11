@@ -1,0 +1,18 @@
+{
+  "schema": "saved-byte-export-only-v1",
+  "files": [
+    {
+      "path": "export_saved.py",
+      "sha256": "34624cb0ab06e7a89ed31a97330aa9a9034ae059ca4daffcede418cc47f706fa",
+      "bytes": 2420
+    },
+    {
+      "path": "SHA256SUMS",
+      "sha256": "be38c3c69453306f10faf1187c40751e3bc66bb615ff76f8c0aab5e3204b84b9",
+      "bytes": 82
+    }
+  ],
+  "file_count": 2,
+  "total_bytes": 2502,
+  "hardware_rerun": false
+}

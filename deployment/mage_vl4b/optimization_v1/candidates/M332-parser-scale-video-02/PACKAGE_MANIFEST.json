@@ -1,0 +1,29 @@
+{
+  "package": "M332-parser-scale-video-02",
+  "purpose": "Rerun only M332 candidate after exact isolated module path preflight repair",
+  "path_whitelist": [
+    "m236_prefill_runtime.py",
+    "run_fixed_video_ab.py",
+    "run_m332_video_variant.sh",
+    "SHA256SUMS",
+    "PACKAGE_MANIFEST.json"
+  ],
+  "payload_file_count": 3,
+  "payload_byte_count": 32385,
+  "payload": {
+    "m236_prefill_runtime.py": {
+      "bytes": 14743,
+      "sha256": "7e36223f762cfc04c0fc74e3f468664e05d38b8f8024c8eb194e77cdc12944e8"
+    },
+    "run_fixed_video_ab.py": {
+      "bytes": 16371,
+      "sha256": "2d2d8a1ca64896abea0c6e939fb1447639980edae0f12483ee490628375de67b"
+    },
+    "run_m332_video_variant.sh": {
+      "bytes": 1271,
+      "sha256": "1afed6ff5af8878678980bc5d23b0a0ebaaef315e2d41a1c7edd041bed1a608f"
+    }
+  },
+  "parent_baseline_result_sha256": "61985522080a66444c3bd4a3f32d2215a3d2df24b0f341bafe109ce295291f21",
+  "stable_release_modified": false
+}

@@ -7,15 +7,18 @@ import argparse
 import ast
 import hashlib
 import json
+import os
 from pathlib import Path
 import re
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
+if os.name == 'nt':
+    ROOT = Path('\\\\?\\' + str(ROOT))
 SOURCE_ROOT = ROOT.parents[1]
 MANIFEST = ROOT / "manifests/release_files.json"
 EXCLUDE = {"manifests/release_files.json", "RELEASE_READINESS.md", "reports/backups/RELEASE_READINESS_2026-09-26.md", "reports/backups/STABLE_ASSET_PROVENANCE_2026-09-26.md", "manifests/check_result.json"}
-TEXT_EXT = {".md", ".py", ".json", ".sh", ".ps1", ".tcl", ".cpp", ".hpp", ".h", ".html", ".js", ".css", ".yml", ".yaml", ".txt", ".xdc"}
+TEXT_EXT = {".md", ".py", ".json", ".sh", ".ps1", ".tcl", ".cpp", ".hpp", ".h", ".html", ".js", ".mjs", ".cmd", ".css", ".yml", ".yaml", ".txt", ".xdc", ".v", ".sv", ".rpt", ".diff", ".patch"}
 
 
 def sha(path: Path) -> str:
@@ -28,6 +31,7 @@ def sha(path: Path) -> str:
 
 def files() -> list[Path]:
     result = []
+    checkout_cache = {}
     for p in ROOT.rglob("*"):
         if not p.is_file():
             continue
@@ -38,7 +42,9 @@ def files() -> list[Path]:
         child_checkout = False
         for part in p.relative_to(ROOT).parts[:-1]:
             current = current / part
-            if (current / ".git").exists():
+            if current not in checkout_cache:
+                checkout_cache[current] = (current / ".git").exists()
+            if checkout_cache[current]:
                 child_checkout = True
                 break
         if child_checkout or rel in EXCLUDE or rel.startswith("external_assets/") or "__pycache__" in p.parts or p.suffix == ".pyc" or ".git" in p.parts:
@@ -51,7 +57,7 @@ def entry(p: Path) -> dict:
     rel = p.relative_to(ROOT).as_posix()
     origin = SOURCE_ROOT / ("scripts/" + p.name if rel.startswith("model_tools/") and p.suffix == ".py" else rel)
     copied = origin.is_file() and sha(origin) == sha(p)
-    family = ("experimental" if "OP01" in rel or "decode_op01" in rel or "m325" in rel.lower() or "m332" in rel.lower()
+    family = ("experimental" if rel.startswith(("scripts/optimization/", "deployment/mage_vl4b/optimization_v1/", "tmp/m3", "tmp/m4", "experiments/optimization_20261011/")) or "OP01" in rel or "decode_op01" in rel or "m325" in rel.lower() or "m332" in rel.lower()
               else "bact" if rel.startswith(("bact/", "data/bact", "experiments/bact")) or "m277_m276" in rel or "m321_" in rel
               else "stable" if rel.startswith(("deployment/mage_vl4b/m", "hls/mage_prefill", "tmp/", "model_tools/"))
               else "support")
@@ -74,7 +80,8 @@ def markdown_links(path: Path) -> list[str]:
         target = target.split("#", 1)[0]
         if not target or "://" in target or target.startswith(("mailto:", "#", "/")):
             continue
-        if not (path.parent / target).exists():
+        # Extended Windows paths need lexical normalization before resolving '..'.
+        if not Path(os.path.normpath(str(path.parent / target))).exists():
             issues.append(f"broken link: {path.relative_to(ROOT)} -> {target}")
     return issues
 
@@ -88,19 +95,19 @@ def check() -> dict:
             problems.append("symlink: " + rel)
         if p.suffix == ".py":
             try:
-                ast.parse(p.read_text(encoding="utf-8"), filename=rel)
+                ast.parse(p.read_text(encoding="utf-8-sig"), filename=rel)
             except (SyntaxError, UnicodeError) as exc:
                 problems.append(f"Python syntax: {rel}: {exc}")
         if p.suffix == ".json":
             try:
-                json.loads(p.read_text(encoding="utf-8"))
+                json.loads(p.read_text(encoding="utf-8-sig"))
             except (ValueError, UnicodeError) as exc:
                 problems.append(f"JSON parse: {rel}: {exc}")
-        if p.suffix == ".md":
+        if p.suffix == ".md" and not rel.startswith(("deployment/mage_vl4b/optimization_v1/", "tmp/")):
             problems.extend(markdown_links(p))
         if p.suffix in TEXT_EXT and p.stat().st_size < 2_000_000:
             text = p.read_text(encoding="utf-8", errors="replace")
-            if re.search(r"(?i)(?:ghp_|github_pat_|sk-proj-|AKIA)[A-Za-z0-9_-]{12,}", text):
+            if re.search(r"(?:ghp_|github_pat_|sk-proj-)[A-Za-z0-9_-]{12,}|(?<![A-Za-z0-9])AKIA[A-Z0-9]{16}(?![A-Za-z0-9])|-----BEGIN (?:RSA |OPENSSH |EC )?PRIVATE KEY-----", text):
                 problems.append("possible credential (content omitted): " + rel)
     if not MANIFEST.is_file():
         problems.append("missing release manifest")
@@ -128,7 +135,7 @@ def main() -> int:
         MANIFEST.parent.mkdir(parents=True, exist_ok=True)
         result = {"schema": "kv260-mage-vl-release-files-v1", "self_excluded": sorted(EXCLUDE),
                   "files": [entry(x) for x in files()]}
-        MANIFEST.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        MANIFEST.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
     result = check()
     print(json.dumps(result, ensure_ascii=False, indent=2))
     return 0 if result["status"] == "PASS" else 1

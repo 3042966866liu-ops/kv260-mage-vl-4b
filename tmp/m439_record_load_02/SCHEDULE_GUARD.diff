@@ -1,0 +1,10 @@
+--- candidate01.cpp
++++ candidate02.cpp
+@@ -87,6 +87,7 @@
+         float scale0 = m89x_scale_float(tagged0 & 0x7fff);
+         float scale1 = m89x_scale_float(tagged1 & 0x7fff);
+         for (unsigned token_pair = 0; token_pair < 16; ++token_pair) {
++#pragma HLS LOOP_FLATTEN off
+ #pragma HLS PIPELINE II=1
+           unsigned token0 = 2 * token_pair, token1 = token0 + 1;
+           ap_int<24> dot00, dot01, dot10, dot11;

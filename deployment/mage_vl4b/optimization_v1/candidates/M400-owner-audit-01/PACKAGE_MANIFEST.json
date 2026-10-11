@@ -1,0 +1,32 @@
+{
+  "schema": "M400-owner-audit-readonly-v1",
+  "files": [
+    {
+      "path": "frozen_last_layer_02.py",
+      "bytes": 2161,
+      "sha256": "fc5543e48aecc49dad0c08eb5efefa82a12ed607088b30cbba1a9b792d06f40b"
+    },
+    {
+      "path": "m400_owner_readonly_probe.py",
+      "bytes": 7782,
+      "sha256": "7505dfbfec4390b7d043fe61127c45a25640741ded8ef66417bb1be25d7f41db"
+    },
+    {
+      "path": "m400_tail_source_02.py",
+      "bytes": 3549,
+      "sha256": "8ab9d741aa3e61fcc3d8ab88166ebf624cdcd8a08f37371305e13ce1e18f0fbf"
+    },
+    {
+      "path": "PIN.json",
+      "bytes": 1094,
+      "sha256": "16aefe5c90f6283ae248d9fb7a8046b2aa5399e7258ae3e79727aedc9e53d3c4"
+    },
+    {
+      "path": "run_m400_owner_audit.sh",
+      "bytes": 271,
+      "sha256": "8acb0bb9207cf724c78e7ca38d57a57060448c58f39641f7fed19500dddfe673"
+    }
+  ],
+  "file_count": 5,
+  "total_bytes": 14857
+}

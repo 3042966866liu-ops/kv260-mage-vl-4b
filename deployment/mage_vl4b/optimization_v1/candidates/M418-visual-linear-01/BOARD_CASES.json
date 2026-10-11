@@ -1,0 +1,184 @@
+{
+  "reference_directory": "/home/ubuntu/m417_layer13_reference_02",
+  "reference_result_bytes": 41235,
+  "reference_raw_sha256": "317c618d3df73e0c8aa4ba7ea1690a17ba7174538f2f588b2544f57610df27cb",
+  "cases": {
+    "Descriptor": {
+      "part": "fc2",
+      "chain": {
+        "chain_index": 27,
+        "layer": null,
+        "family": "vision_mlp",
+        "module": "model.visual.encoder.layers.13.mlp.fc2",
+        "groups": 64,
+        "bits": 4,
+        "descriptor_count": 1,
+        "descriptors": [
+          {
+            "module": "model.visual.encoder.layers.13.mlp.fc2",
+            "tile_index": 0,
+            "row_start": 0,
+            "valid_rows": 1024,
+            "rows_per_shard": 256,
+            "offset_words": 1427456,
+            "encoded_u64": "0x000011000015c800",
+            "output_bytes": 131072,
+            "weight_bytes_per_shard": 557056,
+            "shard_stream_words": 4096
+          }
+        ],
+        "input_bytes": 163856,
+        "output_bytes": 131072,
+        "config": "0x00010440",
+        "stage_base_words": 1427456,
+        "stage_bytes_per_shard": 557056,
+        "expected_macros": 134217728
+      },
+      "shift": 6,
+      "windows": [
+        {
+          "path": "weights0.bin",
+          "offset": 22839296,
+          "bytes": 557056,
+          "sha256": "2aed72152ffd725465a8da35975b6a458058189104daa64da7f404adec494c79",
+          "relative_file": "deployment/mage_vl4b/m181_m120_video_board_candidate/vision_layout/weights0.bin",
+          "file_bytes": 43728896
+        },
+        {
+          "path": "weights1.bin",
+          "offset": 22839296,
+          "bytes": 557056,
+          "sha256": "d2d160f2e3c106ea9443624e4ae65c64ad4bb9912c790158b057d20c0c22d1aa",
+          "relative_file": "deployment/mage_vl4b/m181_m120_video_board_candidate/vision_layout/weights1.bin",
+          "file_bytes": 43728896
+        },
+        {
+          "path": "weights2.bin",
+          "offset": 22839296,
+          "bytes": 557056,
+          "sha256": "f69a5dfef56b657726c98de1dfa8e6c2805c4d070a1ed5cdcae073b705f44d10",
+          "relative_file": "deployment/mage_vl4b/m181_m120_video_board_candidate/vision_layout/weights2.bin",
+          "file_bytes": 43728896
+        },
+        {
+          "path": "weights3.bin",
+          "offset": 22839296,
+          "bytes": 557056,
+          "sha256": "8762be6abe923b092ec74ac4d5f696a2f9422a852b84fefeb4fd3d4b2d588902",
+          "relative_file": "deployment/mage_vl4b/m181_m120_video_board_candidate/vision_layout/weights3.bin",
+          "file_bytes": 43728896
+        }
+      ],
+      "saved_batch": {
+        "input_bytes": 163856,
+        "output_bytes": 131072,
+        "packet_sha256": "e5610e8315a05d3dd98b5e000c4e3bf84ad73df86973b5c258c39cb4b1c86228",
+        "raw_sha256": "38f712618d43c3591e1f96045a7965ac57fb88eb05e8890f2ba1e1454c05287b"
+      }
+    },
+    "Chain": {
+      "part": "fc1",
+      "chain": {
+        "chain_index": 26,
+        "layer": null,
+        "family": "vision_mlp",
+        "module": "model.visual.encoder.layers.13.mlp.fc1",
+        "groups": 16,
+        "bits": 4,
+        "descriptor_count": 2,
+        "descriptors": [
+          {
+            "module": "model.visual.encoder.layers.13.mlp.fc1",
+            "tile_index": 0,
+            "row_start": 0,
+            "valid_rows": 2048,
+            "rows_per_shard": 512,
+            "offset_words": 1392640,
+            "encoded_u64": "0x0000120000154000",
+            "output_bytes": 262144,
+            "weight_bytes_per_shard": 278528,
+            "shard_stream_words": 8192
+          },
+          {
+            "module": "model.visual.encoder.layers.13.mlp.fc1",
+            "tile_index": 1,
+            "row_start": 2048,
+            "valid_rows": 2048,
+            "rows_per_shard": 512,
+            "offset_words": 1410048,
+            "encoded_u64": "0x0000120000158400",
+            "output_bytes": 262144,
+            "weight_bytes_per_shard": 278528,
+            "shard_stream_words": 8192
+          }
+        ],
+        "input_bytes": 40992,
+        "output_bytes": 524288,
+        "config": "0x00020410",
+        "stage_base_words": 1392640,
+        "stage_bytes_per_shard": 557056,
+        "expected_macros": 134217728
+      },
+      "shift": 6,
+      "windows": [
+        {
+          "path": "weights0.bin",
+          "offset": 22282240,
+          "bytes": 557056,
+          "sha256": "f190bb125e9f8cf3c6d01921eeffab5c4a8f1ceb5bee675e17d14714f0a401bc",
+          "relative_file": "deployment/mage_vl4b/m181_m120_video_board_candidate/vision_layout/weights0.bin",
+          "file_bytes": 43728896
+        },
+        {
+          "path": "weights1.bin",
+          "offset": 22282240,
+          "bytes": 557056,
+          "sha256": "0866801d12a22ff93ca68d94f76fb4842b0233418b7cd52958bc7d4522065b03",
+          "relative_file": "deployment/mage_vl4b/m181_m120_video_board_candidate/vision_layout/weights1.bin",
+          "file_bytes": 43728896
+        },
+        {
+          "path": "weights2.bin",
+          "offset": 22282240,
+          "bytes": 557056,
+          "sha256": "c8a44c0435cf393d62b3d5e464a137a6fa9cfef5ae2ec8af886f593acd3bbf2d",
+          "relative_file": "deployment/mage_vl4b/m181_m120_video_board_candidate/vision_layout/weights2.bin",
+          "file_bytes": 43728896
+        },
+        {
+          "path": "weights3.bin",
+          "offset": 22282240,
+          "bytes": 557056,
+          "sha256": "94cc283eb595b70a3ee317e0e7bacfe9547823250e32760e5ca0ecdb7ec9ef8a",
+          "relative_file": "deployment/mage_vl4b/m181_m120_video_board_candidate/vision_layout/weights3.bin",
+          "file_bytes": 43728896
+        }
+      ],
+      "saved_batch": {
+        "input_bytes": 40992,
+        "output_bytes": 524288,
+        "packet_sha256": "0bc62a0d553bf2acd876bdc5204c9d45952f36720db16fb0d80e01cbbb78a3fb",
+        "raw_sha256": "b95cab80ef0f87c6a827306b3eab801caddb39ce812b090bc3708a9ba4e169f4"
+      }
+    }
+  },
+  "hardware_directory": "/home/ubuntu/m357_candidate_01",
+  "hardware_manifest_sha256": "2e9cbd00d0d01edf05e171674f71f86a94ce389a0658ce6c5466cebb77220d18",
+  "stable_sources": [
+    {
+      "path": "deployment/mage_vl4b/m175_m120_fixed_text_candidate/runtime/board_runtime.py",
+      "sha256": "5d53ea406e57de88f8c14d9bc4e1cb0c0049ff0b8f4bcf620e05745fcd82b201"
+    },
+    {
+      "path": "deployment/mage_vl4b/m175_m120_fixed_text_candidate/runtime/contract_runtime.py",
+      "sha256": "2912ab6040e1218775b397a184fd2d2487a83935fb9f7dfff7c97381c9cde75d"
+    }
+  ],
+  "build_config": "0x00010201",
+  "build_bytes": {
+    "packet_sha256": "f1e2f2296e524cb165156af3b101c6ffecf7ccaf6c2cfc3339ace9c486320696",
+    "raw_sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+    "input_bytes": 2576,
+    "output_bytes": 4096
+  }
+}

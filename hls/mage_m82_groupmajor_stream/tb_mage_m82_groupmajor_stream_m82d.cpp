@@ -1,0 +1,4 @@
+#include "mage_m82_groupmajor_stream_m82d.hpp"
+#define M82A_BUILD_ID M82D_EXPECT_BUILD_ID
+#define mage_m82_groupmajor_stream mage_m82_groupmajor_stream_m82d
+#include "tb_mage_m82_groupmajor_stream.cpp"

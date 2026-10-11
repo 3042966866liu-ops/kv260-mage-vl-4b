@@ -1,0 +1,32 @@
+{
+  "schema": "m404-readonly-environment-v1",
+  "files": [
+    {
+      "path": "m404_environment_probe.py",
+      "bytes": 3171,
+      "sha256": "4e91bab808d4f3f81b652bd05a664231d42283f5dcce2f498a5d43ba7859fec9"
+    },
+    {
+      "path": "m404_warm_conditions.py",
+      "bytes": 9229,
+      "sha256": "b504decb087d3ae33acd0de8d80e1debcccce8d441c7a332b48f750bc4740030"
+    },
+    {
+      "path": "PROTOCOL_PREREQUISITE.json",
+      "bytes": 184,
+      "sha256": "e2dd0cc8f68b2de04649d4a452848986873bf382d9355534418298f391eb6a51"
+    },
+    {
+      "path": "run_m404_environment.sh",
+      "bytes": 623,
+      "sha256": "ad6281d03666713d70f23eb51efb5e81fb6ee02ede65921cb85533d094a34fdf"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 365,
+      "sha256": "92430211e64502aa06c37dce8370f60b017c174f51a80977d89403d126b2be32"
+    }
+  ],
+  "file_count": 5,
+  "total_bytes": 13572
+}

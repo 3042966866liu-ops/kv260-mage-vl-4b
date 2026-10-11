@@ -1,0 +1,46 @@
+{
+  "file_count": 8,
+  "total_bytes": 42075,
+  "files": [
+    {
+      "path": "m411_mlp_binding.py",
+      "bytes": 5681,
+      "sha256": "275e85583abc6c1ecfc2f14d59341207f2d2184a5a00bb4f838898f215ec29f5"
+    },
+    {
+      "path": "m412_export.py",
+      "bytes": 882,
+      "sha256": "bbee22f3220c932885a8cdef26dddb4d41dee318fdfd89f8a5382f8731603b0f"
+    },
+    {
+      "path": "m412_gate.py",
+      "bytes": 20196,
+      "sha256": "dca1711136cade0cbde84afa444d6db195250f6be7698e5b931fc065445a861f"
+    },
+    {
+      "path": "m412_policy.py",
+      "bytes": 4915,
+      "sha256": "1a09c3bd7e86554c07961c13a44db6a3f752c389d1964d75b29f14999a885fd5"
+    },
+    {
+      "path": "PLAN.json",
+      "bytes": 3200,
+      "sha256": "ce48e364156d751bdc261f7831e72544f63d198e32ddd60ed69742122e9f034e"
+    },
+    {
+      "path": "run_m412_mlp.sh",
+      "bytes": 937,
+      "sha256": "316cb50d1e822f98700ad2330d11d80cd83c8da1c090ffb8ef0931fecf728eac"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 572,
+      "sha256": "d4739dc1a2060b99ca1bd047f4dfc288db4fd931ab56eb6690a873c240b03267"
+    },
+    {
+      "path": "test_m411_binding.py",
+      "bytes": 5692,
+      "sha256": "59f38ae5f342bfd1c3af81795e810e6ed43c5adfd37a07b57e888d1fcebfcf1c"
+    }
+  ]
+}

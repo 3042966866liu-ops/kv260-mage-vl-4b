@@ -1,0 +1,89 @@
+{
+  "schema": "tellme-m342-ordered-prefetch-fixture-v1",
+  "files": [
+    {
+      "path": "board_safety.py",
+      "bytes": 880,
+      "sha256": "18393fcac1a99831c28901a2484477005cc8b667462bbaef68e693029a048645"
+    },
+    {
+      "path": "BUILD_ID_PREREQUISITE.json",
+      "bytes": 4445,
+      "sha256": "3145e1aa9cc34a96a394ca1fda000ceaeb281d0d6427707f5366c1d61b8bc342"
+    },
+    {
+      "path": "HARDWARE_CLOSURE.json",
+      "bytes": 20079,
+      "sha256": "a35769de132dbe60247b28640f8263d844603e72a712827d896c184eace6910f"
+    },
+    {
+      "path": "m120_board_common.py",
+      "bytes": 3619,
+      "sha256": "9e72e022a7f6e86992df575125545330405b79ded3c23185917a676c70a6ade3"
+    },
+    {
+      "path": "m120_board_env_preflight.py",
+      "bytes": 4582,
+      "sha256": "7cb209d0810af25b87e1caee5cbc34f8b7d50f6dea7a5d76c4fd5a32a348ed46"
+    },
+    {
+      "path": "m120_fixture.py",
+      "bytes": 6206,
+      "sha256": "6a7fb1f5377fd2ba09c8350ba557819a01348d8a96d44db7bd26e1dc1a3f871c"
+    },
+    {
+      "path": "M157_FTZ_POLICY.json",
+      "bytes": 1928,
+      "sha256": "3e005fb2be1751b4e190387b85c13ca4bedd566925e764271d29c2213e8d051c"
+    },
+    {
+      "path": "m341_build_id_gate.py",
+      "bytes": 11659,
+      "sha256": "34aef23eec105826c7e962175192c4c7620a13564f938337a7d3002642e4fd7d"
+    },
+    {
+      "path": "m342_prefetch_fixture_gate.py",
+      "bytes": 12805,
+      "sha256": "3af118c34d016cbdd881288d136f4b340f55a29907b80ef875d7448cfa7f5324"
+    },
+    {
+      "path": "measurement.py",
+      "bytes": 7152,
+      "sha256": "973d0354c1b019987b8f777f149ecb418db897e1b9f771b10c0c03b4bf49b23e"
+    },
+    {
+      "path": "run_m342_fixture.sh",
+      "bytes": 886,
+      "sha256": "1d53b50f4b21a215a522e134d34058099b2208c0157e1c032f4907d9d7ee98a6"
+    },
+    {
+      "path": "weight_prefetch.py",
+      "bytes": 8258,
+      "sha256": "5e02203e54358440e702f0828713e0baa6d50ee8923656d8dedf431f830cea1e"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 1049,
+      "sha256": "6af9afc7befbd1f023762d9db4f69314628fa8099978dadb4f0fc353ed2c1e38"
+    }
+  ],
+  "file_count": 13,
+  "total_bytes": 83548,
+  "hardware_changed": false,
+  "performance_pass": false,
+  "numerical_contract": "Existing exact M157 FP16-subnormal-to-signed-zero; no new tolerance",
+  "golden": [
+    {
+      "level": "single-descriptor",
+      "raw_sha256": "28bf653102885387d67be746eb1b417c999fe128d7c95af6bbc7635af0768350",
+      "canonical_sha256": "a8b15e89c3a7edc97368a481206ed1f2ac604ce959863a6cf5d99401db959a38",
+      "descriptor_count": 1
+    },
+    {
+      "level": "single-chain",
+      "raw_sha256": "c03f51cc7cd6d157e04bd0da674ee59652168b58473d6d3b2070f58fe30ec3a0",
+      "canonical_sha256": "7167dff9da96757a768b44254403d1a439615fffbca3139ee5bfd261fa3c7a2d",
+      "descriptor_count": 2
+    }
+  ]
+}

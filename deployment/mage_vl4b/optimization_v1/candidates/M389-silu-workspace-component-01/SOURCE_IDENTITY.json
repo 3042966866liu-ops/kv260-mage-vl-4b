@@ -1,0 +1,32 @@
+{
+  "sources": {
+    "m241_video_language_runtime": {
+      "path": "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m241_video_language_runtime.py",
+      "sha256": "24f419ea8e0f130cefc8eb51f916dca3fb945b84f0dc8e73dec9f5376be3ad09"
+    },
+    "video_language_runtime": {
+      "path": "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m181_m120_video_board_candidate/video_language_runtime.py",
+      "sha256": "fae70964171580dc8329700e99aa0b25f27b752e9d4274c5bae72fa19f30cf61"
+    }
+  },
+  "old_precedent": {
+    "path": "tmp/web3_runtime_audit/qwen_fpga_runtime.py",
+    "sha256": "e5328050cb9db992088cd4640713f24d1ff5284338ba232215d00a23c1792214",
+    "decode_and_prefill_scratch_fallback": true,
+    "clips_gate": true,
+    "evidence_of_Mage4B159_performance": false
+  },
+  "fixture_audit": {
+    "path": "deployment/mage_vl4b/artifacts/m143_m120_layer0_boundaries.npz",
+    "sha256": "9565ec2f7d1df162997456a6ccb01234c3b3e4802107ed318827553c3aa66eab",
+    "gate_up_shape": [
+      30,
+      2560
+    ],
+    "mlp_down_shape": [
+      30,
+      9728
+    ],
+    "suitable_as_real159_gate_up_pair": false
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "file_count": 3,
+  "total_bytes": 1402,
+  "files": [
+    {
+      "path": "collect_saved.sh",
+      "bytes": 297,
+      "sha256": "6d98b8cc0b842b7f7818f29252ec60a207948f2f571961c7bcefbc223f344b7a"
+    },
+    {
+      "path": "m427_export_saved02.py",
+      "bytes": 933,
+      "sha256": "4a033dca2c5eeb43eeb6b9d212a601d30ca04ca46b1c2f6a1fb3c44ee660a74d"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 172,
+      "sha256": "e36170ae1ee62f8da139066db2e359a18fffa45322439c0e7391d1fb39ff5176"
+    }
+  ]
+}

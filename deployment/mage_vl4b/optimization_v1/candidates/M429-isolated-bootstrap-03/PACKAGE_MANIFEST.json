@@ -1,0 +1,36 @@
+{
+  "file_count": 6,
+  "total_bytes": 19273,
+  "files": [
+    {
+      "path": "m429_bootstrap.py",
+      "bytes": 5568,
+      "sha256": "cba741caeff52ca803d4dca1af69687522cfb89d12a5ea6f70a53edefec04bfe"
+    },
+    {
+      "path": "m429_component_entry.py",
+      "bytes": 1349,
+      "sha256": "9ea737ddfcbd279f610aa9560e1f709e87ef4b1bb6e90159bc9ab713ae2d80f1"
+    },
+    {
+      "path": "PLAN.json",
+      "bytes": 1126,
+      "sha256": "4ab222aaa0e88cc73c1d5789647857a7d1baf9ff2d0e6ceb2f69a2ac5f11cab0"
+    },
+    {
+      "path": "run_bootstrap.sh",
+      "bytes": 403,
+      "sha256": "228dc3769172fd401a00309fbce8d5ee04c1afa933a31b95e16e99ddce929535"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 422,
+      "sha256": "94d778a91b294f6eba968585c68811e50c8557ebe8bba1d7f99f95e2aeeeef23"
+    },
+    {
+      "path": "SOURCE_IDENTITIES.json",
+      "bytes": 10405,
+      "sha256": "5785abdbe87d5b7b863d1f13f6253447842390e9b2387ff133c841439cf4bdf1"
+    }
+  ]
+}

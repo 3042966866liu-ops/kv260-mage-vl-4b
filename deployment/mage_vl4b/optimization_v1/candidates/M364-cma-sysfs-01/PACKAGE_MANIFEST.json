@@ -1,0 +1,27 @@
+{
+  "schema": "m364-existing-kernel-metadata-v1",
+  "files": [
+    {
+      "path": "m364_cma_metadata.py",
+      "bytes": 7421,
+      "sha256": "58a5dff7299a614715924ed3356cf0502b2d9a0b774fd2c086f0b6249a86245a"
+    },
+    {
+      "path": "m364_sysfs_metadata.py",
+      "bytes": 2214,
+      "sha256": "e794fdb5a2485a1e474a6ed2d0c955ffb3667ba8fd260611a81f2871c834fef1"
+    },
+    {
+      "path": "run_m364_metadata.sh",
+      "bytes": 944,
+      "sha256": "1ea852b6969772f778d8d3da36e97058c8eb12904b0be652447d016709276b5f"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 263,
+      "sha256": "3b276d06841a65788bd00d473e0ed82b2f3ebeb980fa30038f721d58f3a33e16"
+    }
+  ],
+  "file_count": 4,
+  "total_bytes": 10842
+}

@@ -1,0 +1,93 @@
+{
+  "module_dirs": [
+    "runtime_site",
+    "deployment/mage_vl4b/m242_m241_fixed_text_board_candidate",
+    "deployment/mage_vl4b/m181_m120_video_board_candidate",
+    "deployment/mage_vl4b/m175_m120_fixed_text_candidate/runtime",
+    "deployment/mage_vl4b/m175_m120_fixed_text_candidate/runtime/support"
+  ],
+  "modules": {
+    "reserved_ddr_pool": "deployment/mage_vl4b/m175_m120_fixed_text_candidate/runtime/support/reserved_ddr_pool.py",
+    "board_runtime": "deployment/mage_vl4b/m175_m120_fixed_text_candidate/runtime/board_runtime.py",
+    "contract_runtime": "deployment/mage_vl4b/m175_m120_fixed_text_candidate/runtime/contract_runtime.py",
+    "m241_video_language_runtime": "deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m241_video_language_runtime.py",
+    "video_language_runtime": "deployment/mage_vl4b/m181_m120_video_board_candidate/video_language_runtime.py",
+    "m230_video_language_runtime": "deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m230_video_language_runtime.py",
+    "m238_prefill_runtime": "deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m238_prefill_runtime.py",
+    "m236_prefill_runtime": "deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m236_prefill_runtime.py",
+    "m231_prefill_runtime": "deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m231_prefill_runtime.py",
+    "m230_prefill_runtime": "deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m230_prefill_runtime.py"
+  },
+  "files": [
+    {
+      "path": "deployment/mage_vl4b/m175_m120_fixed_text_candidate/auxiliary/M77_TEXT_AUX_MANIFEST.json",
+      "bytes": 25926,
+      "sha256": "122d2d9ba268802b86422d1d888855c5f2f30e4851adcc450cf3736a17669d2a"
+    },
+    {
+      "path": "deployment/mage_vl4b/m175_m120_fixed_text_candidate/auxiliary/m77_text_aux_fp16.npz",
+      "bytes": 315138,
+      "sha256": "7f2dfc14ae47cb537e148cafc9b1c6cc285e1fe546dec901275a4078a8458ffd"
+    },
+    {
+      "path": "deployment/mage_vl4b/m175_m120_fixed_text_candidate/contracts/M126_LANGUAGE_RUNTIME_CONTRACT_RESULT.json",
+      "bytes": 406213,
+      "sha256": "c8bab2c1d4c7ba1cf2075559498243ed2803d8db8de90a8d812c94ceebfc7e9f"
+    },
+    {
+      "path": "deployment/mage_vl4b/m175_m120_fixed_text_candidate/contracts/M126_LMHEAD_RUNTIME_CONTRACT_RESULT.json",
+      "bytes": 40001,
+      "sha256": "3304da81b7e679291bfa59bb11d4fd2d978c2dc3facb2fc2dbbd23739fe5be4e"
+    },
+    {
+      "path": "deployment/mage_vl4b/m175_m120_fixed_text_candidate/runtime/board_runtime.py",
+      "bytes": 23357,
+      "sha256": "5d53ea406e57de88f8c14d9bc4e1cb0c0049ff0b8f4bcf620e05745fcd82b201"
+    },
+    {
+      "path": "deployment/mage_vl4b/m175_m120_fixed_text_candidate/runtime/contract_runtime.py",
+      "bytes": 7223,
+      "sha256": "2912ab6040e1218775b397a184fd2d2487a83935fb9f7dfff7c97381c9cde75d"
+    },
+    {
+      "path": "deployment/mage_vl4b/m175_m120_fixed_text_candidate/runtime/support/reserved_ddr_pool.py",
+      "bytes": 5894,
+      "sha256": "e933f9818e888ed7c924b7597adadd42f7254b942f65c645b85f17fc40f33013"
+    },
+    {
+      "path": "deployment/mage_vl4b/m181_m120_video_board_candidate/video_language_runtime.py",
+      "bytes": 11762,
+      "sha256": "fae70964171580dc8329700e99aa0b25f27b752e9d4274c5bae72fa19f30cf61"
+    },
+    {
+      "path": "deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m230_prefill_runtime.py",
+      "bytes": 9341,
+      "sha256": "defbcff1cc36300fff84481f2e9eba7a06174941b568e34b2faa7885efc14df4"
+    },
+    {
+      "path": "deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m230_video_language_runtime.py",
+      "bytes": 655,
+      "sha256": "2401f60823133f3a5c0656686ff1f7823da8796a154a1e9a888ba16f80138b56"
+    },
+    {
+      "path": "deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m231_prefill_runtime.py",
+      "bytes": 11534,
+      "sha256": "e7d6aa5a43919405168612b6a5695c14330735f75c87aa269b245e61542750ad"
+    },
+    {
+      "path": "deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m236_prefill_runtime.py",
+      "bytes": 14354,
+      "sha256": "d8061b561fe4d2a089523fde0d3860684244e76bca9646f255f03134fb50be56"
+    },
+    {
+      "path": "deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m238_prefill_runtime.py",
+      "bytes": 8974,
+      "sha256": "daf30c982c276b90ac776178ad258e536925dce52de7ab26b06a9473ff9a9d9a"
+    },
+    {
+      "path": "deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m241_video_language_runtime.py",
+      "bytes": 4412,
+      "sha256": "24f419ea8e0f130cefc8eb51f916dca3fb945b84f0dc8e73dec9f5376be3ad09"
+    }
+  ]
+}

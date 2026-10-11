@@ -1,0 +1,137 @@
+{
+  "schema": "m379-two-parser-fixed-text-v1",
+  "files": [
+    {
+      "path": "board_safety.py",
+      "bytes": 880,
+      "sha256": "18393fcac1a99831c28901a2484477005cc8b667462bbaef68e693029a048645"
+    },
+    {
+      "path": "frozen_video_identity.py",
+      "bytes": 3762,
+      "sha256": "b89bc42e622a86169cb30a5ac8f91a2f40155988afa2830e2e38d0be50804ccc"
+    },
+    {
+      "path": "HARDWARE_CLOSURE.json",
+      "bytes": 3170,
+      "sha256": "a86b595540bc381c43ab14bac67907487a906a56bbc640ae9de4ec5cac81b081"
+    },
+    {
+      "path": "LAYER_EXPECTED.json",
+      "bytes": 185771,
+      "sha256": "5f4c193f7076033938314f528769b1c0cdde7a0585fe45519eb3b652239419be"
+    },
+    {
+      "path": "m120_board_common.py",
+      "bytes": 3619,
+      "sha256": "9e72e022a7f6e86992df575125545330405b79ded3c23185917a676c70a6ade3"
+    },
+    {
+      "path": "m120_board_env_preflight.py",
+      "bytes": 4582,
+      "sha256": "7cb209d0810af25b87e1caee5cbc34f8b7d50f6dea7a5d76c4fd5a32a348ed46"
+    },
+    {
+      "path": "m341_build_id_gate.py",
+      "bytes": 11659,
+      "sha256": "34aef23eec105826c7e962175192c4c7620a13564f938337a7d3002642e4fd7d"
+    },
+    {
+      "path": "M348_SOURCE_IDENTITIES.json",
+      "bytes": 10405,
+      "sha256": "5785abdbe87d5b7b863d1f13f6253447842390e9b2387ff133c841439cf4bdf1"
+    },
+    {
+      "path": "M357_COMPARE_PREREQUISITE.json",
+      "bytes": 40020,
+      "sha256": "ca35750d1b7043b76a16c75b97341616823137a58d91545576de0361a6ba3bde"
+    },
+    {
+      "path": "m363_observers.py",
+      "bytes": 3623,
+      "sha256": "cffce2bd4a2af04951782da2c1b56d9ed33a6933c6bcc7734d3b1740ef0c4af6"
+    },
+    {
+      "path": "m363_package_identity.py",
+      "bytes": 1508,
+      "sha256": "1b28d2465478ccfbc156d28d3562243b26d776e0f78d2973f666a52ef15ef59e"
+    },
+    {
+      "path": "m363_tokenizer_once.py",
+      "bytes": 1416,
+      "sha256": "c97f7687de214616201f723d857144626835cff934c89be8e2745bf721cb4393"
+    },
+    {
+      "path": "m366_head_observer.py",
+      "bytes": 4105,
+      "sha256": "7f969a2605532f17cd5b5aa885cb4d6cec9d002bd55f9fc1f46732231991b17d"
+    },
+    {
+      "path": "m366_stage_policy.py",
+      "bytes": 7661,
+      "sha256": "d1ff47189a737372b8b3fc046c7b560066e7d21533271a2a556b835a0213eb50"
+    },
+    {
+      "path": "m376_gate_up_workers.py",
+      "bytes": 5902,
+      "sha256": "d4ba0768a676085d361fc5dd086ac21a8c03088df51f746bb8827a9fe09af617"
+    },
+    {
+      "path": "m379_assemble.py",
+      "bytes": 1791,
+      "sha256": "2cb67d5916982b464ebc09fda77738e0365473cdac7029529ae2bce4007ae3a3"
+    },
+    {
+      "path": "m379_export_result.py",
+      "bytes": 903,
+      "sha256": "8c76b4d1253f0b22f326ae1de412d2b1b43b13d504a23f5a4d47579c909745ff"
+    },
+    {
+      "path": "m379_staged_text_gate.py",
+      "bytes": 29495,
+      "sha256": "e6df6b8fc2634607272bee8b39f6f5a09de5fe1d544caa43109894eb42018af4"
+    },
+    {
+      "path": "measurement.py",
+      "bytes": 7152,
+      "sha256": "973d0354c1b019987b8f777f149ecb418db897e1b9f771b10c0c03b4bf49b23e"
+    },
+    {
+      "path": "memory_lifecycle.py",
+      "bytes": 2049,
+      "sha256": "939fa2ca7cc1e438dd9b770b2aebab6424a69270c5ce605a72a27806ab125cc0"
+    },
+    {
+      "path": "owned_buffer_release.py",
+      "bytes": 1146,
+      "sha256": "e383c7657744d634b3661b988fe5f3e6f5c5fa027ec5cc6443e3b8b2851f3996"
+    },
+    {
+      "path": "ps_slot_capacity.py",
+      "bytes": 3293,
+      "sha256": "05f3835a761aab8b1f6f08dcccedae96d2b36e76844f3fa13a6ad8f5e25a0043"
+    },
+    {
+      "path": "run_m379_staged_text.sh",
+      "bytes": 901,
+      "sha256": "b9aa581a9db677acad2e2a80728c85dbb771d5279eba73f3b14a9472aad86408"
+    },
+    {
+      "path": "SOURCE_CLOSURE.json",
+      "bytes": 16344,
+      "sha256": "c2f625f6c4b4097fb143f714ff8626fac160aaf02d251da623cb88d05768a457"
+    },
+    {
+      "path": "STAGE_PREREQUISITE.json",
+      "bytes": 2414,
+      "sha256": "88f84b079ad45e472fcd662a317a36d8689c41b281e2f7f83e44679f125013fe"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 2207,
+      "sha256": "1bb0c23e5e0a65b6c9335ccc072a76691b35834e3ca16a1bf46617f8a6029304"
+    }
+  ],
+  "file_count": 26,
+  "total_bytes": 355778
+}

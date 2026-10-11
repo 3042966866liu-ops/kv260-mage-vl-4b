@@ -1,0 +1,15 @@
+--- frozen01.cpp
++++ independent03.cpp
+@@ -97,8 +97,10 @@
+       // No extra MAC lane, no cross-group reassociation, no early final output.
+       ap_int<5> weight0[4][64], weight1[4][64];
+       float scale0[4], scale1[4];
+-#pragma HLS ARRAY_PARTITION variable=weight0 complete dim=0
+-#pragma HLS ARRAY_PARTITION variable=weight1 complete dim=0
++#pragma HLS ARRAY_PARTITION variable=weight0 complete dim=2
++#pragma HLS ARRAY_PARTITION variable=weight1 complete dim=2
++#pragma HLS BIND_STORAGE variable=weight0 type=ram_2p impl=lutram
++#pragma HLS BIND_STORAGE variable=weight1 type=ram_2p impl=lutram
+ #pragma HLS ARRAY_PARTITION variable=scale0 complete
+ #pragma HLS ARRAY_PARTITION variable=scale1 complete
+       for (unsigned pair = 0; pair < 4; ++pair) {

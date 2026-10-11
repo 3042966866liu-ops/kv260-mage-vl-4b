@@ -1,0 +1,165 @@
+{
+  "schema": "m430-late11-complete-visual-warm-protocol-v1",
+  "build_id": "0x4D333537",
+  "stable_rollback_build_id": "0x4D395832",
+  "user_goal": "Only accepted late11 visual MLP range: precision and worthwhile net complete visual benefit before complete-request expansion.",
+  "prerequisites": {
+    "latest_m429_late11_visual_PL_board": {
+      "status": "PASS_M429_LATE11_COMPLETE_VISUAL_PL_NUMERICAL",
+      "result": "deployment/mage_vl4b/optimization_v1/runs/M429-late11-visual-PL-board-02/BOARD_RESULT.json",
+      "sha256": "aea5b14fef0237ed9c4a5d04cd2f4e38af36f68a97f53ad4796f10fcf89d4813",
+      "manifest_sha256": "d7774d63b8acc6adb86844353959237bcda5e3401e0f768e614a704c1b19fc04",
+      "hardware_visual_numerics_pass": true,
+      "hardware_visual_timing_unlocked": true,
+      "full_request_timing_unlocked": false,
+      "performance_pass": false
+    },
+    "latest_m429_late11_visual_numerical_closure": {
+      "status": "CLOSED_M429_LATE11_VISUAL_PL_NUMERICS_PASS",
+      "result": "deployment/mage_vl4b/optimization_v1/runs/M429-late11-visual-numerical-closure-02/RESULT.json",
+      "sha256": "a0cd5f5d401fad8f7d6b0325a6a8c13a48b4b8902d7b12598e8de2684518a8dd",
+      "raw_sha256": "aea5b14fef0237ed9c4a5d04cd2f4e38af36f68a97f53ad4796f10fcf89d4813",
+      "hardware_visual_numerics_pass": true,
+      "hardware_visual_timing_unlocked": true,
+      "full_request_timing_unlocked": false,
+      "performance_pass": false
+    },
+    "latest_m428_saved_language_closure": {
+      "status": "CLOSED_M428_LATE11_ONE_INPUT_DECISION_CONSISTENCY_PASS",
+      "result": "deployment/mage_vl4b/optimization_v1/runs/M428-saved-language-closure-01/RESULT.json",
+      "sha256": "59abe0d97ed2f40d26e9044d97e7327f52c9b6c6d1e1308677fdd87d1ac9899d",
+      "raw_sha256": "1132519865016da467a1748948165fc917e0a8a3c4f4bba7de1af75c3154b739",
+      "decision_consistency_pass": true,
+      "hardware_visual_numeric_gate_unlocked": true,
+      "hardware_visual_timing_unlocked": false,
+      "performance_pass": false,
+      "production_promoted": false
+    },
+    "latest_m425_warm_closure": {
+      "status": "NET_BENEFIT_NOT_RELIABLY_MEASURED_CLOSE_VARIANT",
+      "result": "deployment/mage_vl4b/optimization_v1/runs/M425-warm-performance-closure-01/RESULT.json",
+      "sha256": "46ea0d5639f2aa822645a9f15f8d0bde0c1dcac738a6c76b49124206a9ef4459",
+      "raw_sha256": "6cff2b444114c33b01220d403b1abc6813d40d1a2685f1f5ce0af35b23a888b4",
+      "build_id": "0x4D333537",
+      "performance_pass": false,
+      "temperature_measurement_enabled": false,
+      "production_promoted": false
+    }
+  },
+  "default_off": true,
+  "temperature_measurement_enabled": false,
+  "no_thermal_hwmon_IIO_cooling_reads": true,
+  "input": {
+    "last_frame_only": true,
+    "views": 2,
+    "resolution": 224,
+    "visual_rows": 392,
+    "feature_shape": [
+      98,
+      2560
+    ],
+    "source_raw_sha256": "ac0f689a34e0246529af136a0c86805c3167e09618f1d9f508a5b5779c489d41"
+  },
+  "A": "Original complete CPU visual path; all original24 layers, original exact bounded cache and thread policy.",
+  "B": "Same visual path; only13..23 MLP fc1/fc2 use unchanged PLMLPBinding and existing parallel kernel. No prefetch/dualparser/SiLU/tail/Attention/GELU/norm/input changes.",
+  "language_forward_calls": 0,
+  "real_model_visual_forward_calls": 12,
+  "warmup_order": "ABBA",
+  "formal_order": "ABBABAAB",
+  "combined_order": "ABBAABBABAAB",
+  "automatic_extra_samples_allowed": false,
+  "outlier_deletion_allowed": false,
+  "stop_on_first_failure": true,
+  "sequence_budget_seconds": 1800,
+  "individual_visual_budget_seconds": 180,
+  "primary_timing": "time.perf_counter_ns immediately before entering candidate instance/hook scope, through original full visual forward and scope cleanup. A measures its unchanged forward. B includes staging, copy/sync, input packing, PL waiting, output parsing, bias, remaining CPU operators and scope overhead.",
+  "excluded_from_primary_timing": [
+    "Common asset/source SHA preflight",
+    "One common PS visual constructor",
+    "Candidate legal minimal transaction and planned DMA allocation",
+    "post-request complete visual feature serialization/full SHA/metrics",
+    "ordinary memory/io/environment before/after samples",
+    "collection and stable restore"
+  ],
+  "no_per_batch_full_wire_hash_or_boundary_array_materialization_in_timer": true,
+  "no_tensor_or_wire_payload_history": true,
+  "correct_each_sample_after_timer": {
+    "A_complete_feature_sha256": "0b89ebb85d32835e1be2551c2b460ca4c2fcd28e72812b965996c1fda46eb3d1",
+    "B_complete_feature_sha256": "d201a1730674754fddb54b34d920259125fe29d68fe45e003a4815b150623257",
+    "same_saved_wire_and_all24_boundary_evidence_reused": "aea5b14fef0237ed9c4a5d04cd2f4e38af36f68a97f53ad4796f10fcf89d4813",
+    "no_language_recompute": true
+  },
+  "resource_policy": {
+    "main_DMA_sizes": [
+      557056,
+      557056,
+      557056,
+      557056,
+      163856,
+      524288,
+      524288
+    ],
+    "main_DMA_bytes": 3440656,
+    "main_DMA_sealed": true,
+    "zero_extra_DMA_during_sequence": true,
+    "original_owner_release_only": true,
+    "fixed_CMA_floor": null,
+    "ordinary_RSS_growth_limit_bytes": 805306368,
+    "ordinary_MemAvailable_reserve_bytes": 67108864,
+    "unsafe_DMA_retains_owner_process_buffers": true
+  },
+  "physical_calls": {
+    "per_A": 0,
+    "per_B": 286,
+    "expected_B_visual_calls": 6,
+    "expected_MLP_calls": 1716,
+    "legal_minimal_and_stable_restore": 2,
+    "expected_total": 1718
+  },
+  "warm_conditions": {
+    "first_A_populates_common_cache": true,
+    "cache_entries": 26,
+    "cache_bytes": 66699264,
+    "cache_misses": 26,
+    "cache_within_budget": true,
+    "after_all_samples_cache_complete": true,
+    "first_two_warmup_before_cache_may_be_empty": true,
+    "warmup3_4_and_all_formal_read_bytes_max": 1048576,
+    "warmup3_4_and_all_formal_major_faults": 0,
+    "paired_read_bytes_difference_max": 1048576,
+    "CPU_PL_clock_backend_config_matches": true,
+    "read_only_observation_no_eviction": true
+  },
+  "adjudication": {
+    "reused_statistic_source_sha256": "40284f02b61ebb03df037af2beb979390761b42b2427bc6c65ba94fb0142070b",
+    "formal_pairs": [
+      [
+        1,
+        2
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        6,
+        5
+      ],
+      [
+        7,
+        8
+      ]
+    ],
+    "both_ABBA_BAAB_gains_positive": true,
+    "paired_95percent_CI_lower_ms_above": 0,
+    "paired_df": 3,
+    "paired_t_critical": 3.182446305,
+    "worthwhile_complete_visual_gain_percent_minimum": 5.0,
+    "worthwhile_threshold_basis": "Same existing isolated visual MLP decision minimum_gain=.05 in m411_mlp_binding.py; now assessed on complete visual forward, frozen before any sample.",
+    "threshold_source_sha256": "275e85583abc6c1ecfc2f14d59341207f2d2184a5a00bb4f838898f215ec29f5",
+    "no_fitting_after_measurement": true
+  },
+  "successful_claim_scope": "Fixed-input controlled warm complete visual comparison only; fixed task consistency from M428, not labeled accuracy; no production promotion.",
+  "failure_branch": "Preserve all warm/formal samples and failure rc; close variant if no worthwhile reliable net gain. No extra sampling or thread/layer sweep.",
+  "next_after_worthwhile_pass": "Only then prepare unchanged-input complete-request correctness/latency comparison; no immediate service promotion."
+}

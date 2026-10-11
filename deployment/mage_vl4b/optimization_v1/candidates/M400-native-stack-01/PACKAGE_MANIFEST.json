@@ -1,0 +1,21 @@
+{
+  "files": [
+    {
+      "path": "m400_debugger_snapshot.py",
+      "bytes": 3282,
+      "sha256": "52e535e5cd88b3961d4a791fae71ad80e2791c846c9f45c27965ab9f87c82466"
+    },
+    {
+      "path": "m400_owner_readonly_probe.py",
+      "bytes": 7782,
+      "sha256": "7505dfbfec4390b7d043fe61127c45a25640741ded8ef66417bb1be25d7f41db"
+    },
+    {
+      "path": "run_m400_stack_snapshot.sh",
+      "bytes": 261,
+      "sha256": "73e5da31637a996f26516c7df5432a8409432bd53c410d4ff66699fc9ca7778e"
+    }
+  ],
+  "file_count": 3,
+  "total_bytes": 11325
+}

@@ -1,0 +1,2931 @@
+{
+  "families": [
+    {
+      "layer": 0,
+      "family": "q",
+      "chain_index": 0,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 0,
+      "family": "kv",
+      "chain_index": 1,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 0,
+      "family": "attention_out",
+      "chain_index": 2,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 0,
+      "family": "gate_up",
+      "chain_index": 3,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 0,
+      "family": "mlp_down",
+      "chain_index": 4,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 1,
+      "family": "q",
+      "chain_index": 5,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 1,
+      "family": "kv",
+      "chain_index": 6,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 1,
+      "family": "attention_out",
+      "chain_index": 7,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 1,
+      "family": "gate_up",
+      "chain_index": 8,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 1,
+      "family": "mlp_down",
+      "chain_index": 9,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 2,
+      "family": "q",
+      "chain_index": 10,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 2,
+      "family": "kv",
+      "chain_index": 11,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 2,
+      "family": "attention_out",
+      "chain_index": 12,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 2,
+      "family": "gate_up",
+      "chain_index": 13,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 2,
+      "family": "mlp_down",
+      "chain_index": 14,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 3,
+      "family": "q",
+      "chain_index": 15,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 3,
+      "family": "kv",
+      "chain_index": 16,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 3,
+      "family": "attention_out",
+      "chain_index": 17,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 3,
+      "family": "gate_up",
+      "chain_index": 18,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 3,
+      "family": "mlp_down",
+      "chain_index": 19,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 4,
+      "family": "q",
+      "chain_index": 20,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 4,
+      "family": "kv",
+      "chain_index": 21,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 4,
+      "family": "attention_out",
+      "chain_index": 22,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 4,
+      "family": "gate_up",
+      "chain_index": 23,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 4,
+      "family": "mlp_down",
+      "chain_index": 24,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 5,
+      "family": "q",
+      "chain_index": 25,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 5,
+      "family": "kv",
+      "chain_index": 26,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 5,
+      "family": "attention_out",
+      "chain_index": 27,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 5,
+      "family": "gate_up",
+      "chain_index": 28,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 5,
+      "family": "mlp_down",
+      "chain_index": 29,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 6,
+      "family": "q",
+      "chain_index": 30,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 6,
+      "family": "kv",
+      "chain_index": 31,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 6,
+      "family": "attention_out",
+      "chain_index": 32,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 6,
+      "family": "gate_up",
+      "chain_index": 33,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 6,
+      "family": "mlp_down",
+      "chain_index": 34,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 7,
+      "family": "q",
+      "chain_index": 35,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 7,
+      "family": "kv",
+      "chain_index": 36,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 7,
+      "family": "attention_out",
+      "chain_index": 37,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 7,
+      "family": "gate_up",
+      "chain_index": 38,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 7,
+      "family": "mlp_down",
+      "chain_index": 39,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 8,
+      "family": "q",
+      "chain_index": 40,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 8,
+      "family": "kv",
+      "chain_index": 41,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 8,
+      "family": "attention_out",
+      "chain_index": 42,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 8,
+      "family": "gate_up",
+      "chain_index": 43,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 8,
+      "family": "mlp_down",
+      "chain_index": 44,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 9,
+      "family": "q",
+      "chain_index": 45,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 9,
+      "family": "kv",
+      "chain_index": 46,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 9,
+      "family": "attention_out",
+      "chain_index": 47,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 9,
+      "family": "gate_up",
+      "chain_index": 48,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 9,
+      "family": "mlp_down",
+      "chain_index": 49,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 10,
+      "family": "qkv",
+      "chain_index": 50,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 10,
+      "family": "attention_out",
+      "chain_index": 51,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 10,
+      "family": "gate_up",
+      "chain_index": 52,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 10,
+      "family": "mlp_down",
+      "chain_index": 53,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 11,
+      "family": "qkv",
+      "chain_index": 54,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 11,
+      "family": "attention_out",
+      "chain_index": 55,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 11,
+      "family": "gate_up",
+      "chain_index": 56,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 11,
+      "family": "mlp_down",
+      "chain_index": 57,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 12,
+      "family": "qkv",
+      "chain_index": 58,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 12,
+      "family": "attention_out",
+      "chain_index": 59,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 12,
+      "family": "gate_up",
+      "chain_index": 60,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 12,
+      "family": "mlp_down",
+      "chain_index": 61,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 13,
+      "family": "qkv",
+      "chain_index": 62,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 13,
+      "family": "attention_out",
+      "chain_index": 63,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 13,
+      "family": "gate_up",
+      "chain_index": 64,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 13,
+      "family": "mlp_down",
+      "chain_index": 65,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 14,
+      "family": "qkv",
+      "chain_index": 66,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 14,
+      "family": "attention_out",
+      "chain_index": 67,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 14,
+      "family": "gate_up",
+      "chain_index": 68,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 14,
+      "family": "mlp_down",
+      "chain_index": 69,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 15,
+      "family": "qkv",
+      "chain_index": 70,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 15,
+      "family": "attention_out",
+      "chain_index": 71,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 15,
+      "family": "gate_up",
+      "chain_index": 72,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 15,
+      "family": "mlp_down",
+      "chain_index": 73,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 16,
+      "family": "qkv",
+      "chain_index": 74,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 16,
+      "family": "attention_out",
+      "chain_index": 75,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 16,
+      "family": "gate_up",
+      "chain_index": 76,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 16,
+      "family": "mlp_down",
+      "chain_index": 77,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 17,
+      "family": "qkv",
+      "chain_index": 78,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 17,
+      "family": "attention_out",
+      "chain_index": 79,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 17,
+      "family": "gate_up",
+      "chain_index": 80,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 17,
+      "family": "mlp_down",
+      "chain_index": 81,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 18,
+      "family": "qkv",
+      "chain_index": 82,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 18,
+      "family": "attention_out",
+      "chain_index": 83,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 18,
+      "family": "gate_up",
+      "chain_index": 84,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 18,
+      "family": "mlp_down",
+      "chain_index": 85,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 19,
+      "family": "qkv",
+      "chain_index": 86,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 19,
+      "family": "attention_out",
+      "chain_index": 87,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 19,
+      "family": "gate_up",
+      "chain_index": 88,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 19,
+      "family": "mlp_down",
+      "chain_index": 89,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 20,
+      "family": "qkv",
+      "chain_index": 90,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 20,
+      "family": "attention_out",
+      "chain_index": 91,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 20,
+      "family": "gate_up",
+      "chain_index": 92,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 20,
+      "family": "mlp_down",
+      "chain_index": 93,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 21,
+      "family": "qkv",
+      "chain_index": 94,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 21,
+      "family": "attention_out",
+      "chain_index": 95,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 21,
+      "family": "gate_up",
+      "chain_index": 96,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 21,
+      "family": "mlp_down",
+      "chain_index": 97,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 22,
+      "family": "qkv",
+      "chain_index": 98,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 22,
+      "family": "attention_out",
+      "chain_index": 99,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 22,
+      "family": "gate_up",
+      "chain_index": 100,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 22,
+      "family": "mlp_down",
+      "chain_index": 101,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 23,
+      "family": "qkv",
+      "chain_index": 102,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 23,
+      "family": "attention_out",
+      "chain_index": 103,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 23,
+      "family": "gate_up",
+      "chain_index": 104,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 23,
+      "family": "mlp_down",
+      "chain_index": 105,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 24,
+      "family": "qkv",
+      "chain_index": 106,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 24,
+      "family": "attention_out",
+      "chain_index": 107,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 24,
+      "family": "gate_up",
+      "chain_index": 108,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 24,
+      "family": "mlp_down",
+      "chain_index": 109,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 25,
+      "family": "qkv",
+      "chain_index": 110,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 25,
+      "family": "attention_out",
+      "chain_index": 111,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 25,
+      "family": "gate_up",
+      "chain_index": 112,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 25,
+      "family": "mlp_down",
+      "chain_index": 113,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 26,
+      "family": "qkv",
+      "chain_index": 114,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 26,
+      "family": "attention_out",
+      "chain_index": 115,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 26,
+      "family": "gate_up",
+      "chain_index": 116,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 26,
+      "family": "mlp_down",
+      "chain_index": 117,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 27,
+      "family": "qkv",
+      "chain_index": 118,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 27,
+      "family": "attention_out",
+      "chain_index": 119,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 27,
+      "family": "gate_up",
+      "chain_index": 120,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 27,
+      "family": "mlp_down",
+      "chain_index": 121,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 28,
+      "family": "qkv",
+      "chain_index": 122,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 28,
+      "family": "attention_out",
+      "chain_index": 123,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 28,
+      "family": "gate_up",
+      "chain_index": 124,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 28,
+      "family": "mlp_down",
+      "chain_index": 125,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 29,
+      "family": "qkv",
+      "chain_index": 126,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 29,
+      "family": "attention_out",
+      "chain_index": 127,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 29,
+      "family": "gate_up",
+      "chain_index": 128,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 29,
+      "family": "mlp_down",
+      "chain_index": 129,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 30,
+      "family": "qkv",
+      "chain_index": 130,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 30,
+      "family": "attention_out",
+      "chain_index": 131,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 30,
+      "family": "gate_up",
+      "chain_index": 132,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 30,
+      "family": "mlp_down",
+      "chain_index": 133,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 31,
+      "family": "qkv",
+      "chain_index": 134,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 31,
+      "family": "attention_out",
+      "chain_index": 135,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 31,
+      "family": "gate_up",
+      "chain_index": 136,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 31,
+      "family": "mlp_down",
+      "chain_index": 137,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 32,
+      "family": "qkv",
+      "chain_index": 138,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 32,
+      "family": "attention_out",
+      "chain_index": 139,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 32,
+      "family": "gate_up",
+      "chain_index": 140,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 32,
+      "family": "mlp_down",
+      "chain_index": 141,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 33,
+      "family": "qkv",
+      "chain_index": 142,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 33,
+      "family": "attention_out",
+      "chain_index": 143,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 33,
+      "family": "gate_up",
+      "chain_index": 144,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 33,
+      "family": "mlp_down",
+      "chain_index": 145,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 34,
+      "family": "qkv",
+      "chain_index": 146,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 34,
+      "family": "attention_out",
+      "chain_index": 147,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 34,
+      "family": "gate_up",
+      "chain_index": 148,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 34,
+      "family": "mlp_down",
+      "chain_index": 149,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 35,
+      "family": "qkv",
+      "chain_index": 150,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 35,
+      "family": "attention_out",
+      "chain_index": 151,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 35,
+      "family": "gate_up",
+      "chain_index": 152,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "layer": 35,
+      "family": "mlp_down",
+      "chain_index": 153,
+      "pack_token_order": [
+        0,
+        32,
+        64,
+        96,
+        128
+      ],
+      "parse_token_order": [
+        0,
+        32,
+        64,
+        128,
+        96
+      ]
+    }
+  ],
+  "plan_sha256": "2f91f6d21b5771b3faadedfdddd4b8f1f7f38ac3cb699b4a13caad7f46278250"
+}

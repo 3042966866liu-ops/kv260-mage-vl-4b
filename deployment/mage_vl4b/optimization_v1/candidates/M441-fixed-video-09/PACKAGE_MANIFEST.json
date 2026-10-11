@@ -1,0 +1,107 @@
+{
+  "schema": "m441-fixed-video-v09",
+  "files": [
+    {
+      "path": "DEPENDENCY_CLOSURE.json",
+      "bytes": 7241,
+      "sha256": "d1c6c75c8d61bea1a0ec29d4e9394e040d68ea680bf5ebb1c6080c8ca9ab9094"
+    },
+    {
+      "path": "HARDWARE_CLOSURE.json",
+      "bytes": 3204,
+      "sha256": "516b2fbfee84f6a909b5f41e7b69a93088b8c85f67cfed1ac8daaf372a61ee4b"
+    },
+    {
+      "path": "M348_SOURCE_IDENTITIES.json",
+      "bytes": 10405,
+      "sha256": "5785abdbe87d5b7b863d1f13f6253447842390e9b2387ff133c841439cf4bdf1"
+    },
+    {
+      "path": "m369_light_policy.py",
+      "bytes": 2272,
+      "sha256": "2297bb52d6d2e44fbbab449050a185037654b1a6a6b446445569855c6dbe230a"
+    },
+    {
+      "path": "m428_saved_features.py",
+      "bytes": 6999,
+      "sha256": "986e4a9208f5798ad7319553b1d13609794dbec256dcea2f16b21302f8d3b8fd"
+    },
+    {
+      "path": "m431_borrowed_visual.py",
+      "bytes": 5502,
+      "sha256": "9201a6d99daad3d8c27cd61fc8bdd79b45a4e9c491004b84cb67fd5c1549fa73"
+    },
+    {
+      "path": "m432_request_visual.py",
+      "bytes": 11912,
+      "sha256": "54d7b345feaf9b45aed0eefbd08e9a7d25ceac8a3b6820fb3dcf9e240bbef894"
+    },
+    {
+      "path": "m432_trials.py",
+      "bytes": 6453,
+      "sha256": "45ad6faa470bd2905bac9a7aa2376da97e9ff0a42e45b0cd6781f0e1bd58bd03"
+    },
+    {
+      "path": "M441_COMPARE_PREREQUISITE.json",
+      "bytes": 397972,
+      "sha256": "0b416a17669ae1a5690a62650237ce6ced33f922017625f685401ca806e2273d"
+    },
+    {
+      "path": "m441_video_assemble.py",
+      "bytes": 2722,
+      "sha256": "d383d458738fa7e40b9c431534404808384b34df48542057efafb47924594c9f"
+    },
+    {
+      "path": "m441_video_entry.py",
+      "bytes": 977,
+      "sha256": "c8e77fbad0970b86278854cb3a2290e310bc559245efdae44173e11cb9ecd9dc"
+    },
+    {
+      "path": "m441_video_export.py",
+      "bytes": 878,
+      "sha256": "63e6c41113716868cee75e3c95ac5e8835b56c4f1d2d73e43b10c927e46ccda9"
+    },
+    {
+      "path": "m441_video_gate.py",
+      "bytes": 28839,
+      "sha256": "dc4e07cf7bdac61592b1c8c82335724768ff7481bed2b7cf179b46dd863c9799"
+    },
+    {
+      "path": "PLAN.json",
+      "bytes": 55661,
+      "sha256": "1e06a452c4af3ab724f974d51e61ca780cd2e2e99d0739eb6c0040aeb6b14232"
+    },
+    {
+      "path": "run_m441_video.sh",
+      "bytes": 829,
+      "sha256": "9c36a8521d33eb17728740ac251c3cd089ada1db6a55b5c718c91c09df4f1df0"
+    },
+    {
+      "path": "SOURCE_CLOSURE.json",
+      "bytes": 16344,
+      "sha256": "c2f625f6c4b4097fb143f714ff8626fac160aaf02d251da623cb88d05768a457"
+    },
+    {
+      "path": "STAGE_PREREQUISITE.json",
+      "bytes": 1104777,
+      "sha256": "0562c15fd56f185a98f2ee8c169ab4bd2939abfb0ec482ec7126fbd5bf53abc7"
+    },
+    {
+      "path": "VIDEO_EXPECTED.json",
+      "bytes": 339151,
+      "sha256": "cc03faca51a3797fe69d7d7cc8cd1711b6df3234cc3b91a2a822f2d394d071cb"
+    },
+    {
+      "path": "VISUAL_EXPECTED.json",
+      "bytes": 55535,
+      "sha256": "b2d34d44317c2b23de531957d17c5f8a7a230d58d2ace30004fff147ee65e48c"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 1661,
+      "sha256": "b2dee30645374854203ddac758ae07f156f4d6df4b7e4168eeb443ae5745b761"
+    }
+  ],
+  "file_count": 20,
+  "total_bytes": 2059334
+}

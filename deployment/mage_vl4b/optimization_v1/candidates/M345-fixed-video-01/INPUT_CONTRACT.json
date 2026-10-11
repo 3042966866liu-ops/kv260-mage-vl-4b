@@ -1,0 +1,31 @@
+{
+  "files": {
+    "frame_00_0068_rgb448.npy": "efbd192266329db17ab9b233b854fa4086a16ccf8faf8aace75462c164844e8f",
+    "frame_01_0102_rgb448.npy": "e334ea6bdeb142a42a443afe27fa8af551895d568149ab8aca92a181fdc69243",
+    "frame_02_0137_rgb448.npy": "81ddb1f5358e44bf9263c71f1cd64c68e888c5233f0fe8ab017e6011277d9527",
+    "frame_03_0171_rgb448.npy": "7bf716a4f68defdb85066a0afeed955c61305628a2f43563b0b14ee539644b13"
+  },
+  "ordered_tensor_sha256": "5911485955780036ac4c8990bcaa248667f2e86bd1fd6f9b0783002553b4adff",
+  "shape": [
+    4,
+    448,
+    448,
+    3
+  ],
+  "dtype": "uint8",
+  "selected_frame_indices": [
+    3
+  ],
+  "source_frames_used": 1,
+  "views": 2,
+  "visual_tokens": 98,
+  "prompt_tokens": 159,
+  "decode_calls": 0,
+  "exact_outputs": [
+    "159x2560 video hidden",
+    "151936 logits",
+    "36 K and 36 V",
+    "all original family bytes and retry contracts"
+  ],
+  "performance_pass": false
+}

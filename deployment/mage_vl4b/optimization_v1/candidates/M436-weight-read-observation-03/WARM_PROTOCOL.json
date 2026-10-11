@@ -1,0 +1,172 @@
+{
+  "schema": "m433-late11-controlled-warm-complete-request-v1",
+  "prerequisites": {
+    "latest_m432_integrated_board": {
+      "status": "PASS_M432_INTEGRATED_VIDEO_NUMERICAL",
+      "result": "deployment/mage_vl4b/optimization_v1/runs/M432-integrated-video-board-01/BOARD_RESULT.json",
+      "sha256": "6e90366d95b252b5fa18c59949dfc0dbdcecc5983bc0f4d913e10f67b54d1c1a",
+      "manifest_sha256": "37579ee6572d076a547842ba868c04a3797dd2a0375724c2a6fce333a9b9a0ee",
+      "build_id": "0x4D333537",
+      "decision_consistency_pass": true,
+      "accuracy_proven": false,
+      "performance_pass": false
+    },
+    "latest_m432_integrated_closure": {
+      "status": "CLOSED_M432_LATE11_INTEGRATED_NUMERICAL_PASS",
+      "result": "deployment/mage_vl4b/optimization_v1/runs/M432-integrated-closure-01/RESULT.json",
+      "sha256": "35493c2bf818a539de0790bc9c12d31534e5c1884d8d6ba97ff6f39e2b29c450",
+      "raw_sha256": "6e90366d95b252b5fa18c59949dfc0dbdcecc5983bc0f4d913e10f67b54d1c1a",
+      "numerical_pass": true,
+      "full_request_performance_gate_preparation_unlocked": true,
+      "full_request_performance_proven": false
+    },
+    "latest_m430_complete_visual_closure": {
+      "status": "CLOSED_M430_WORTHWHILE_COMPLETE_VISUAL_GAIN",
+      "result": "deployment/mage_vl4b/optimization_v1/runs/M430-complete-visual-warm-closure-01/RESULT.json",
+      "sha256": "0e6ee39403e36bc1b6bc7220d72abe6e4ba986a90a7770405375baf717c83215",
+      "raw_sha256": "34de6b3d094c621933598eabba7dcdd9bf1e7fccad940381e8b74ffaede534ad",
+      "performance_pass": true,
+      "full_request_gate_preparation_unlocked": true,
+      "full_request_performance_proven": false
+    },
+    "latest_m428_saved_language_board": {
+      "status": "PASS_M428_SAVED_FEATURE_DECISION_CONSISTENCY",
+      "result": "deployment/mage_vl4b/optimization_v1/runs/M428-saved-language-board-01/BOARD_RESULT.json",
+      "sha256": "1132519865016da467a1748948165fc917e0a8a3c4f4bba7de1af75c3154b739",
+      "manifest_sha256": "dd0b9a54aa4cd60a90d071977dcc50095a870da8274f1364628bb3dee2be5dcb",
+      "build_id": "0x4D333537",
+      "decision_consistency_pass": true,
+      "accuracy_proven": false,
+      "performance_pass": false
+    }
+  },
+  "scope": "fixed159-two-view-original-versus-visual-MLP13-through23",
+  "build_id": "0x4D333537",
+  "stable_rollback_build": "0x4D395832",
+  "changed_layers": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "changed_parts": [
+    "mlp.fc1",
+    "mlp.fc2"
+  ],
+  "attention_GELU_norm_language_unchanged": true,
+  "parser_workers": 1,
+  "PS_prefetch": false,
+  "last_layer_tail": false,
+  "SiLU_workspace": false,
+  "original_seven_DMA_payload_bytes": 33484832,
+  "additional_DMA": 0,
+  "runtime_resident_through_all_requests": true,
+  "same_overlay_legal_minimal_before_first_request": true,
+  "warmup_order": "ABBA",
+  "formal_order": "ABBABAAB",
+  "maximum_requests": 12,
+  "no_additional_warmups_or_formal_samples": true,
+  "experiment_budget_s": 1800,
+  "request_budget_s": 180,
+  "measurement": {
+    "entry": "original M276ShortPromptBinaryRuntime.stream(request)",
+    "primary": "original complete.total_ms",
+    "secondary": [
+      "first_token_ms",
+      "preprocess_ms",
+      "vision_ms",
+      "prefill_ms",
+      "head_ms"
+    ],
+    "source_frames": 4,
+    "selected_frame_indices": [
+      3
+    ],
+    "views": 2,
+    "prompt_tokens": 159,
+    "generated_tokens": 1,
+    "decode_calls": 0,
+    "model_load_and_common_source_checks_outside_timer": true,
+    "B_binding_staging_pack_parse_cache_invalidation_close_inside_timer": true,
+    "no_full_tensor_packet_or_wire_hash_inside_timer": true,
+    "full_visual_logits_KV_hash_after_each_timer": true,
+    "per_request_language_expected_logical": 778,
+    "per_request_language_expected_physical": 781,
+    "candidate_visual_physical": 286,
+    "candidate_visual_stage_bytes": 49020928,
+    "language_and_visual_counters_separate": true
+  },
+  "warm_conditions": {
+    "established_before_formal_by_fixed_warmups_3_and_4": true,
+    "warmup_1_and_2_io_recorded_without_warm_limit": true,
+    "read_bytes_max_per_warm_request": 1048576,
+    "major_faults_max": 0,
+    "paired_read_bytes_difference_max": 1048576,
+    "original_visual_cache_entries": 26,
+    "original_visual_cache_bytes": 66699264,
+    "original_visual_cache_misses": 26,
+    "identical_source_asset_storage_threads_CPU_policy_PL_clocks": true,
+    "do_not_modify_cache_governor_clock_fan_or_kernel": true,
+    "temperature_measurement_enabled": false,
+    "no_thermal_hwmon_IIO_cooling_reads": true,
+    "first_two_warmup_before_cache_may_be_empty_within_fixed_budget": true,
+    "after_every_request_cache_must_match": true,
+    "CPU_observed_frequency_must_match": true
+  },
+  "numerical": {
+    "A": "bit exact saved original M428 and integrated M432",
+    "B": "bit exact saved late13..23 M428 and integrated M432",
+    "visual_source": "M429/M432",
+    "logits_words": 151936,
+    "KV_tensors": 72,
+    "per_request_count_retry_release_guard": true
+  },
+  "statistics": {
+    "pairs": [
+      [
+        1,
+        2
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        6,
+        5
+      ],
+      [
+        7,
+        8
+      ]
+    ],
+    "pair_definition": "A total_ms minus B total_ms",
+    "block_gains": [
+      "ABBA meanA minus meanB",
+      "BAAB meanA minus meanB"
+    ],
+    "report_all_warmup_and_formal_samples": true,
+    "report_read_bytes_major_faults_memory_environment_for_each": true,
+    "report_total_vision_language_ms_and_group_spread": true,
+    "report_mean_median_relative_gain_and_paired_deltas": true,
+    "confidence_interval": "two-sided 95% paired t interval on four deltas, df=3, critical=3.182446305",
+    "benefit_requires_both_blocks_positive_and_paired_lower_bound_positive": true,
+    "conditions_failure": "WARM_CONDITIONS_NOT_ESTABLISHED",
+    "insufficient_benefit": "NET_BENEFIT_NOT_RELIABLY_MEASURED_CLOSE_VARIANT",
+    "no_outlier_deletion_no_extra_runs_no_fitted_posthoc_threshold": true
+  },
+  "production_changed": false,
+  "expanded_24_layers": false,
+  "performance_pass": false,
+  "board_run": false,
+  "supersedes_protocol_sha256": "662f955121422ed35428e1a10dc720fe2c2cda9d545c6816656bb87847a5911e",
+  "user_instruction": "\u4ee5\u540e\u90fd\u4e0d\u9700\u8981\u518d\u6d4b\u91cf\u6e29\u5ea6\uff1b\u7ee7\u7eed\u4e0b\u4e00\u6b65\u3002",
+  "temperature_measurement_enabled": false
+}

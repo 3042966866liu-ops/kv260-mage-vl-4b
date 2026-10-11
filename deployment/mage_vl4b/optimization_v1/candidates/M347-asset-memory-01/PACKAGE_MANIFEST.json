@@ -1,0 +1,33 @@
+{
+  "schema": "m347-no-overlay-asset-memory-v1",
+  "files": [
+    {
+      "path": "ASSET_PLAN.json",
+      "bytes": 8270,
+      "sha256": "ed18579dd6db681622e1c3c22971b420eae477be4f7f3b95ba910e2a7f052d09"
+    },
+    {
+      "path": "m347_asset_memory_probe.py",
+      "bytes": 11545,
+      "sha256": "59b541365cfe045d0ac0d0e0f8f319856ca77ec6cff63711c20c9ec7dcd94eda"
+    },
+    {
+      "path": "memory_lifecycle.py",
+      "bytes": 2049,
+      "sha256": "939fa2ca7cc1e438dd9b770b2aebab6424a69270c5ce605a72a27806ab125cc0"
+    },
+    {
+      "path": "run_m347_asset_memory.sh",
+      "bytes": 492,
+      "sha256": "05bd6e4c3b6ac28babcf2e12e590096b7cde8c991ed88a2648af935e82e731c6"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 352,
+      "sha256": "bae6d68993ba236a7ae4e76f5ea4be714f7feb0267751740e2df9afb06d50920"
+    }
+  ],
+  "file_count": 5,
+  "total_bytes": 22708,
+  "hardware_changed": false
+}

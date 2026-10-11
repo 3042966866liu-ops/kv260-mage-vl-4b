@@ -1,0 +1,67 @@
+{
+  "schema": "m376-gate-up-two-worker-component-v1",
+  "files": [
+    {
+      "path": "GATE_UP_FIXTURE.json",
+      "bytes": 5245,
+      "sha256": "47f0c37cdeab94ffa9e379325507f64dbd7a6495cb257a163f831761449fc055"
+    },
+    {
+      "path": "m230_prefill_runtime.py",
+      "bytes": 9341,
+      "sha256": "defbcff1cc36300fff84481f2e9eba7a06174941b568e34b2faa7885efc14df4"
+    },
+    {
+      "path": "m231_prefill_runtime.py",
+      "bytes": 11534,
+      "sha256": "e7d6aa5a43919405168612b6a5695c14330735f75c87aa269b245e61542750ad"
+    },
+    {
+      "path": "m236_prefill_runtime.py",
+      "bytes": 14354,
+      "sha256": "d8061b561fe4d2a089523fde0d3860684244e76bca9646f255f03134fb50be56"
+    },
+    {
+      "path": "m238_prefill_runtime.py",
+      "bytes": 8974,
+      "sha256": "daf30c982c276b90ac776178ad258e536925dce52de7ab26b06a9473ff9a9d9a"
+    },
+    {
+      "path": "M376_AUDIT.json",
+      "bytes": 53554,
+      "sha256": "8ff1d4f94471584ec95ff60b8fa3c4c4a8840709f2c010ec356fd1a07fa05b56"
+    },
+    {
+      "path": "m376_component_gate.py",
+      "bytes": 4236,
+      "sha256": "21939171b34e8e328c9eb9ad2b1c715ac91440fdf13dac5cf94de6de1e91190d"
+    },
+    {
+      "path": "m376_export_result.py",
+      "bytes": 883,
+      "sha256": "a48041cc2b92aa0cd4b373c68017ee5ec564a76b62b81760f7aa599ad2a7a907"
+    },
+    {
+      "path": "m376_gate_up_workers.py",
+      "bytes": 5902,
+      "sha256": "d4ba0768a676085d361fc5dd086ac21a8c03088df51f746bb8827a9fe09af617"
+    },
+    {
+      "path": "run_m376_component.sh",
+      "bytes": 852,
+      "sha256": "af62e9b9f029bf111b59792e197400542dbf793853f16ffc7a8bd60810dcacf9"
+    },
+    {
+      "path": "test_m376_gate_up_workers.py",
+      "bytes": 13271,
+      "sha256": "5adffa4d45ccddb5b8a6cdd25fc2565dbff2abe00da6d967b86876590b4fb4ca"
+    },
+    {
+      "path": "SHA256SUMS",
+      "bytes": 979,
+      "sha256": "f0f9f741c9ebd5ad5ac52ffe545f94b891a7c90f6cb2e5ad67c39b905cfb2837"
+    }
+  ],
+  "file_count": 12,
+  "total_bytes": 129125
+}

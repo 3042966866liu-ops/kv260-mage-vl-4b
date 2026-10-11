@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "status": "PROVISIONAL",
+  "unchanged_arithmetic": "bit-exact integer and FP32 output if order unchanged",
+  "heterogeneous_tolerance": null,
+  "tolerance_policy": "Reuse only an explicitly applicable pre-existing frozen tolerance; no post-hoc widening",
+  "software_reference": "M120 reconstructed weights plus A8-G64; not an RTL/PL bit-exact oracle",
+  "official_quality_reference": "Unquantized official weights; CPU allowed, NF4 prohibited as unquantized reference",
+  "full_keep_software_evidence": "deployment/mage_vl4b/M320_M120_TOKEN_ADAPTER_RESULT.json",
+  "required_cases": ["real Gate/Up", "real Down", "QKV", "LM Head", "tiny scale", "zero", "legal maximum", "tail", "non-finite rejection", "protected retry"],
+  "generation_steps": [2, 8, 32, 128],
+  "board_candidate_numerical_pass": false,
+  "quality_pass": false
+}

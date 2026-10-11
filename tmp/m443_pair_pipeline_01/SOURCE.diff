@@ -1,0 +1,90 @@
+--- frozen-M441.cpp
++++ independent-M443.cpp
+@@ -58,7 +58,7 @@
+   }
+ }
+ 
+-static void m441_compute(hls::stream<ap_uint<128> > &records,
++static void m443_compute(hls::stream<ap_uint<128> > &records,
+                        const ap_uint<128> x[M89_MAX_GROUPS][32][4],
+                        const ap_uint<16> as[M89_MAX_GROUPS][32],
+                        hls::stream<m89s_pair_t> &out, unsigned groups,
+@@ -69,7 +69,7 @@
+   // activation scales make many valid dot*activation*weight terms subnormal.
+   // Converting the two (normal) stored scales to float before multiplication
+   // preserves those contributions and rounds only once at the AXIS FP16 edge.
+-  // M441 consumer: identical MAC order, a record owned until all four pairs finish.
++  // M443: one 64-work pipeline per record; original per-output group order.
+   ap_uint<128> record[17];
+ #pragma HLS BIND_STORAGE variable=record type=ram_2p impl=lutram
+   float acc0[32][4], acc1[32][4];
+@@ -93,30 +93,37 @@
+         record[i] = records.read();
+       }
+       ap_uint<128> tagged = record[0];
++      // Decode all four independent output pairs before one shared MAC loop.
++      // No extra MAC lane, no cross-group reassociation, no early final output.
++      ap_int<5> weight0[4][64], weight1[4][64];
++      float scale0[4], scale1[4];
++#pragma HLS ARRAY_PARTITION variable=weight0 complete dim=0
++#pragma HLS ARRAY_PARTITION variable=weight1 complete dim=0
++#pragma HLS ARRAY_PARTITION variable=scale0 complete
++#pragma HLS ARRAY_PARTITION variable=scale1 complete
+       for (unsigned pair = 0; pair < 4; ++pair) {
+         ap_uint<16> tagged0 = tagged.range(32 * pair + 15, 32 * pair);
+         ap_uint<16> tagged1 = tagged.range(32 * pair + 31, 32 * pair + 16);
+-        ap_int<5> weight0[64], weight1[64];
+-#pragma HLS ARRAY_PARTITION variable=weight0 complete
+-#pragma HLS ARRAY_PARTITION variable=weight1 complete
+         m89x_decode_pair(record, pair, bits, tagged0, tagged1,
+-                         weight0, weight1);
+-        float scale0 = m89x_scale_float(tagged0 & 0x7fff);
+-        float scale1 = m89x_scale_float(tagged1 & 0x7fff);
+-        for (unsigned token_pair = 0; token_pair < 16; ++token_pair) {
++                         weight0[pair], weight1[pair]);
++        scale0[pair] = m89x_scale_float(tagged0 & 0x7fff);
++        scale1[pair] = m89x_scale_float(tagged1 & 0x7fff);
++      }
++      for (unsigned work = 0; work < 64; ++work) {
+ #pragma HLS LOOP_FLATTEN off
+ #pragma HLS PIPELINE II=1
+-          unsigned token0 = 2 * token_pair, token1 = token0 + 1;
++        const unsigned pair = work >> 4;
++        const unsigned token_pair = work & 15;
++        unsigned token0 = 2 * token_pair, token1 = token0 + 1;
+           ap_int<24> dot00, dot01, dot10, dot11;
+-          m89o_dot(weight0, weight1, x[group][token0], dot00, dot01);
+-          m89o_dot(weight0, weight1, x[group][token1], dot10, dot11);
++          m89o_dot(weight0[pair], weight1[pair], x[group][token0], dot00, dot01);
++          m89o_dot(weight0[pair], weight1[pair], x[group][token1], dot10, dot11);
+           float activation0 = m89x_scale_float(as[group][token0]);
+           float activation1 = m89x_scale_float(as[group][token1]);
+-          acc0[token0][pair] += (float)dot00 * activation0 * scale0;
+-          acc1[token0][pair] += (float)dot01 * activation0 * scale1;
+-          acc0[token1][pair] += (float)dot10 * activation1 * scale0;
+-          acc1[token1][pair] += (float)dot11 * activation1 * scale1;
+-        }
++          acc0[token0][pair] += (float)dot00 * activation0 * scale0[pair];
++          acc1[token0][pair] += (float)dot01 * activation0 * scale1[pair];
++          acc0[token1][pair] += (float)dot10 * activation1 * scale0[pair];
++          acc1[token1][pair] += (float)dot11 * activation1 * scale1[pair];
+       }
+     }
+     for (unsigned token = 0; token < 32; ++token)
+@@ -142,7 +149,7 @@
+   // local 17-word record; AXI inflight responses retain the existing ABI.
+ #pragma HLS STREAM variable=records depth=34
+   m441_load_records(memory, records, groups, rows, bits);
+-  m441_compute(records, x, as, out, groups, rows, bits);
++  m443_compute(records, x, as, out, groups, rows, bits);
+ }
+ 
+ static void m89x_merge(hls::stream<m89s_pair_t> r[4],
+@@ -272,5 +279,5 @@
+   }
+   // M89-X2: FP32 scale/accumulation correction after the X1 non-unit-scale
+   // Layer-0 rejection.  Keep the identity distinct from both X and X1.
+-  return 0x4D343431U;
+-}
++  return 0x4D343433U;
++}

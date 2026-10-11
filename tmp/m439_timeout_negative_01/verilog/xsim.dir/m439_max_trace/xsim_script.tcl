@@ -1,0 +1,1 @@
+xsim {m439_max_trace} -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=m89x_runtime_kernel_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -testplusarg M438_ZERO_EXTRA_LATENCY -testplusarg M439_EXPECT_TIMEOUT -autoloadwcfg -tclbatch {timeout.tcl} -sv_seed 439
