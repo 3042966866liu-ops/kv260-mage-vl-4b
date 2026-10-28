@@ -1,0 +1,2727 @@
+{
+  "status": "COMPLETE_M536_V4_LOCAL_RECOVERY_NOT_FULL_QUALITY",
+  "primary_rc": 0,
+  "board_commands": 0,
+  "heldout_opened": false,
+  "prefix_captures": [
+    {
+      "id": "cal_00_t0",
+      "kind": "clean",
+      "source_group": "3fd2c968a97d82222ac5079dd796aa2e0f77b712ed4dae4263967cb2785cb2e0",
+      "file": "deployment/mage_vl4b/optimization_v1/runs/M536-V4-3584-recovery-fit-01/captures/cal_00_t0_clean.npz",
+      "sha256": "7995ef40f6057f9bac3441dc5254e9bc2ed5e2e7ae9c5e7c0d858b3277062bf8",
+      "input_sha256": "721a8acb6f5a06b155f5f106b921700a5b8bbad3d0e121c320e0da6eba0a60ff",
+      "teacher_output_sha256": "73135068ece7f7c83b259264960d4ead49417a4d4d3b97cc35579c66bc2098f2",
+      "complete_model": false,
+      "original_V4_teacher": true,
+      "student_prefix_uses_old_V2_V3_R1": true
+    },
+    {
+      "id": "cal_00_t0",
+      "kind": "hard",
+      "source_group": "3fd2c968a97d82222ac5079dd796aa2e0f77b712ed4dae4263967cb2785cb2e0",
+      "file": "deployment/mage_vl4b/optimization_v1/runs/M536-V4-3584-recovery-fit-01/captures/cal_00_t0_hard.npz",
+      "sha256": "d3a7246a3930900bccc5032f86586f60137f84e546634715f4228f5663769eae",
+      "input_sha256": "4d3b193d0e00c847a3fa559044bed582b65d428df565ad3dcd550afda27d938c",
+      "teacher_output_sha256": "0e091719e1f5f6b00b24f81b6cb773825f9eb1b52f01d2d2fea53442eb8054e2",
+      "complete_model": false,
+      "original_V4_teacher": true,
+      "student_prefix_uses_old_V2_V3_R1": true
+    },
+    {
+      "id": "cal_00_t1",
+      "kind": "clean",
+      "source_group": "3fd2c968a97d82222ac5079dd796aa2e0f77b712ed4dae4263967cb2785cb2e0",
+      "file": "deployment/mage_vl4b/optimization_v1/runs/M536-V4-3584-recovery-fit-01/captures/cal_00_t1_clean.npz",
+      "sha256": "ca544fd4366ba860a0e036ee347ac21e32fd64e0bc3a9ed041fc39d07c2bd981",
+      "input_sha256": "3f7f2239fe32fa6c773cc7b4cc676e95696da67fa614dea08193619230d830e1",
+      "teacher_output_sha256": "0115eca176144ad3f1091694878c814de7a304c641b4303da21e64bbdc10016c",
+      "complete_model": false,
+      "original_V4_teacher": true,
+      "student_prefix_uses_old_V2_V3_R1": true
+    },
+    {
+      "id": "cal_00_t1",
+      "kind": "hard",
+      "source_group": "3fd2c968a97d82222ac5079dd796aa2e0f77b712ed4dae4263967cb2785cb2e0",
+      "file": "deployment/mage_vl4b/optimization_v1/runs/M536-V4-3584-recovery-fit-01/captures/cal_00_t1_hard.npz",
+      "sha256": "ecac6df4fe8f1436b19583d0ccf2b5d7a5df85e1962852916803d396dce04f25",
+      "input_sha256": "40b1c72a965ad92d226c2b1b1d4c2a64e189da5e24907146ebd0939a0fb4416e",
+      "teacher_output_sha256": "e5c9483c3565c0fb1b5c7d3ba169514c71c9c0bbf9bee2c2be8198804accac2f",
+      "complete_model": false,
+      "original_V4_teacher": true,
+      "student_prefix_uses_old_V2_V3_R1": true
+    },
+    {
+      "id": "cal_01_t0",
+      "kind": "clean",
+      "source_group": "f0b10fe23df78a0beda94ff067162c5de0af35073edb0706363c5a83610c3902",
+      "file": "deployment/mage_vl4b/optimization_v1/runs/M536-V4-3584-recovery-fit-01/captures/cal_01_t0_clean.npz",
+      "sha256": "40751c4b05b18b7510b012d733758c31337e3c8bb9d9d75b7425641f31e8052e",
+      "input_sha256": "9e63ddc8fa09d47cc7c2ed69c57a12a96fc398435b5c43f620efb05cb3592380",
+      "teacher_output_sha256": "cdba8e1d15291617d37d16def990cb8339a3417dff2e43797d4241562cf9702c",
+      "complete_model": false,
+      "original_V4_teacher": true,
+      "student_prefix_uses_old_V2_V3_R1": true
+    },
+    {
+      "id": "cal_01_t1",
+      "kind": "clean",
+      "source_group": "f0b10fe23df78a0beda94ff067162c5de0af35073edb0706363c5a83610c3902",
+      "file": "deployment/mage_vl4b/optimization_v1/runs/M536-V4-3584-recovery-fit-01/captures/cal_01_t1_clean.npz",
+      "sha256": "94225fc3823f28d4f9c67fe7fb24bc8ab1f2eddf99b258a9afe02a7c3275bdfa",
+      "input_sha256": "633dfe76987d007ef33674253908371e93ef18160958c751816a2e2e2d6aff3e",
+      "teacher_output_sha256": "c40dde1152e03acc0c577e311d946cb9fd2a38a33a5562f1f20b40175a3b0103",
+      "complete_model": false,
+      "original_V4_teacher": true,
+      "student_prefix_uses_old_V2_V3_R1": true
+    },
+    {
+      "id": "cal_02_t0",
+      "kind": "clean",
+      "source_group": "364a316054d9be0c8550acc3ee0c1d227486ef23045f3b75cb72f9fd0913916f",
+      "file": "deployment/mage_vl4b/optimization_v1/runs/M536-V4-3584-recovery-fit-01/captures/cal_02_t0_clean.npz",
+      "sha256": "c59217448825077987ce3f482fe7ed126ba6f47f19a82f35153e797091bfcde1",
+      "input_sha256": "5e5de19147684de17d654da08e80833746f49d59168bd361de3c0b63b32425ab",
+      "teacher_output_sha256": "3891df47f07ce71b5e5e25f493c7600103369b4e39ca38bbdc1c1deb76a21bae",
+      "complete_model": false,
+      "original_V4_teacher": true,
+      "student_prefix_uses_old_V2_V3_R1": true
+    },
+    {
+      "id": "cal_02_t1",
+      "kind": "clean",
+      "source_group": "364a316054d9be0c8550acc3ee0c1d227486ef23045f3b75cb72f9fd0913916f",
+      "file": "deployment/mage_vl4b/optimization_v1/runs/M536-V4-3584-recovery-fit-01/captures/cal_02_t1_clean.npz",
+      "sha256": "6158e2f5a48cc4a74c422830f0eb49f3a8f62ac41f9791464b84010ea740e1f4",
+      "input_sha256": "f002d608f27509caf9e31be45e9b8834abc275692050232c899d6d88253088d4",
+      "teacher_output_sha256": "7fe3886ca7e1c48e7daf491964467f0a2196c78a63148d453e45b127c010e1f1",
+      "complete_model": false,
+      "original_V4_teacher": true,
+      "student_prefix_uses_old_V2_V3_R1": true
+    },
+    {
+      "id": "cal_04_t0",
+      "kind": "clean",
+      "source_group": "dfd917f8126de358e2d86bbab06ee918bb824320e7aa18350db88b64b6173a90",
+      "file": "deployment/mage_vl4b/optimization_v1/runs/M536-V4-3584-recovery-fit-01/captures/cal_04_t0_clean.npz",
+      "sha256": "307fc2e7324a2ecf7b370f4d3a07bd508fafee32f0ec1681098368eaa7492876",
+      "input_sha256": "3427396d4e8e5bd87dfffe53e92ee552a8b354befd74f91b323a7d0dd7dec7fa",
+      "teacher_output_sha256": "0706d4b8f3b97f88c6df0aab129d9bbf3ca855ba6918835f02acfba75fe0ae0d",
+      "complete_model": false,
+      "original_V4_teacher": true,
+      "student_prefix_uses_old_V2_V3_R1": true
+    },
+    {
+      "id": "cal_04_t0",
+      "kind": "hard",
+      "source_group": "dfd917f8126de358e2d86bbab06ee918bb824320e7aa18350db88b64b6173a90",
+      "file": "deployment/mage_vl4b/optimization_v1/runs/M536-V4-3584-recovery-fit-01/captures/cal_04_t0_hard.npz",
+      "sha256": "eed77c0f5fa415c85105710528fc6cf2803db7f8a4b40a17e6b09eb72e2a3fec",
+      "input_sha256": "2d78952245b5a9ad0441f6b922fe398aa7a9470c482f71393d4edb48991e6158",
+      "teacher_output_sha256": "2828e9d70b31121f60c87004aa10962810f9baae378f6e4edcbab3dc3175ac66",
+      "complete_model": false,
+      "original_V4_teacher": true,
+      "student_prefix_uses_old_V2_V3_R1": true
+    },
+    {
+      "id": "cal_04_t1",
+      "kind": "clean",
+      "source_group": "dfd917f8126de358e2d86bbab06ee918bb824320e7aa18350db88b64b6173a90",
+      "file": "deployment/mage_vl4b/optimization_v1/runs/M536-V4-3584-recovery-fit-01/captures/cal_04_t1_clean.npz",
+      "sha256": "d5613c36dfc66ea0b3e4e67e5ecb74854da3f128d2adb27b5e872cb080a9b6bf",
+      "input_sha256": "16c4addcd4a3ad24bba06e2ca65cfd0ed243139b6c046a617665cab7a226f40b",
+      "teacher_output_sha256": "70cf812d486afe4fc8e4df5a6f29fb7458f0542b290c6dcfb270e265e3ea58ed",
+      "complete_model": false,
+      "original_V4_teacher": true,
+      "student_prefix_uses_old_V2_V3_R1": true
+    },
+    {
+      "id": "cal_04_t1",
+      "kind": "hard",
+      "source_group": "dfd917f8126de358e2d86bbab06ee918bb824320e7aa18350db88b64b6173a90",
+      "file": "deployment/mage_vl4b/optimization_v1/runs/M536-V4-3584-recovery-fit-01/captures/cal_04_t1_hard.npz",
+      "sha256": "cf3a49f925ed72fdc6bcbe4b993a28bf8b4de7132ab7626efb280987b27b66db",
+      "input_sha256": "4e176f5298b55829d3d9fd96a0c55c326934f6186ff7c4230bff2352c1a2e0c5",
+      "teacher_output_sha256": "4b4e36e95248a00b2b3a00af59fa5440f664071898b2114071025d322db068af",
+      "complete_model": false,
+      "original_V4_teacher": true,
+      "student_prefix_uses_old_V2_V3_R1": true
+    }
+  ],
+  "full_model_forwards": 0,
+  "training_steps": 256,
+  "conditional_fc2_started": true,
+  "variants": [
+    {
+      "name": "contribution_R0",
+      "metrics": {
+        "clean_fit": [
+          {
+            "id": "cal_00_t0",
+            "relative_L2": 0.2688935197888457,
+            "cosine": 0.9640322852548951
+          },
+          {
+            "id": "cal_00_t1",
+            "relative_L2": 0.2678832097917262,
+            "cosine": 0.9643293131500902
+          },
+          {
+            "id": "cal_01_t0",
+            "relative_L2": 0.2740107736001854,
+            "cosine": 0.9625493188765658
+          },
+          {
+            "id": "cal_01_t1",
+            "relative_L2": 0.27167579076118104,
+            "cosine": 0.9632376536748025
+          },
+          {
+            "id": "cal_02_t0",
+            "relative_L2": 0.27409281723931345,
+            "cosine": 0.962512275764717
+          },
+          {
+            "id": "cal_02_t1",
+            "relative_L2": 0.27336137441103187,
+            "cosine": 0.9627446669952092
+          },
+          {
+            "id": "cal_04_t0",
+            "relative_L2": 0.26944973343485584,
+            "cosine": 0.963960951196728
+          },
+          {
+            "id": "cal_04_t1",
+            "relative_L2": 0.2708747996452056,
+            "cosine": 0.9635198137061873
+          }
+        ],
+        "aggregate": {
+          "relative_L2": 0.27125508687698224,
+          "cosine": 0.9633708209316102
+        },
+        "saved_A53_input": {
+          "relative_L2": 0.26944652079807285,
+          "cosine": 0.9639618694291517
+        },
+        "hard_student_clean_teacher": [
+          {
+            "id": "cal_00_t0",
+            "relative_L2": 0.3699561115565331,
+            "cosine": 0.9290757352179816
+          },
+          {
+            "id": "cal_00_t1",
+            "relative_L2": 0.30823655743917566,
+            "cosine": 0.9517932883004422
+          },
+          {
+            "id": "cal_04_t0",
+            "relative_L2": 0.2987760055858446,
+            "cosine": 0.9550350051579677
+          },
+          {
+            "id": "cal_04_t1",
+            "relative_L2": 0.29324296702746955,
+            "cosine": 0.9567627544527855
+          }
+        ],
+        "hard_mean_relativeL2": 0.31755291040225575,
+        "passed_local_gate": false
+      }
+    },
+    {
+      "name": "contribution_R1_fused",
+      "metrics": {
+        "clean_fit": [
+          {
+            "id": "cal_00_t0",
+            "relative_L2": 0.21381756193972903,
+            "cosine": 0.977484486778995
+          },
+          {
+            "id": "cal_00_t1",
+            "relative_L2": 0.21420394267385207,
+            "cosine": 0.9773911617904423
+          },
+          {
+            "id": "cal_01_t0",
+            "relative_L2": 0.22453238162841857,
+            "cosine": 0.9749931416266632
+          },
+          {
+            "id": "cal_01_t1",
+            "relative_L2": 0.22270844750794946,
+            "cosine": 0.9754293669398248
+          },
+          {
+            "id": "cal_02_t0",
+            "relative_L2": 0.2230450663454866,
+            "cosine": 0.975338069966001
+          },
+          {
+            "id": "cal_02_t1",
+            "relative_L2": 0.22214459393083835,
+            "cosine": 0.9755614036132795
+          },
+          {
+            "id": "cal_04_t0",
+            "relative_L2": 0.22150467717042452,
+            "cosine": 0.9757658160661838
+          },
+          {
+            "id": "cal_04_t1",
+            "relative_L2": 0.22153440690999782,
+            "cosine": 0.9757191870696335
+          }
+        ],
+        "aggregate": {
+          "relative_L2": 0.2204381286510802,
+          "cosine": 0.9759677564607373
+        },
+        "saved_A53_input": {
+          "relative_L2": 0.22150382144233405,
+          "cosine": 0.9757659878925038
+        },
+        "hard_student_clean_teacher": [
+          {
+            "id": "cal_00_t0",
+            "relative_L2": 0.3302847468940745,
+            "cosine": 0.943885402607015
+          },
+          {
+            "id": "cal_00_t1",
+            "relative_L2": 0.26247752511915196,
+            "cosine": 0.965235802944493
+          },
+          {
+            "id": "cal_04_t0",
+            "relative_L2": 0.2547542204211717,
+            "cosine": 0.9674571826561319
+          },
+          {
+            "id": "cal_04_t1",
+            "relative_L2": 0.24753822996782665,
+            "cosine": 0.9693197971432276
+          }
+        ],
+        "hard_mean_relativeL2": 0.27376368060055617,
+        "passed_local_gate": false
+      }
+    },
+    {
+      "name": "clean_control",
+      "metrics": {
+        "clean_fit": [
+          {
+            "id": "cal_00_t0",
+            "relative_L2": 0.12576085838308876,
+            "cosine": 0.9920838185334073
+          },
+          {
+            "id": "cal_00_t1",
+            "relative_L2": 0.12639664088690175,
+            "cosine": 0.9920035385658735
+          },
+          {
+            "id": "cal_01_t0",
+            "relative_L2": 0.1342591493204026,
+            "cosine": 0.9909701953995101
+          },
+          {
+            "id": "cal_01_t1",
+            "relative_L2": 0.13258817622526636,
+            "cosine": 0.9911944193387573
+          },
+          {
+            "id": "cal_02_t0",
+            "relative_L2": 0.12742358974638276,
+            "cosine": 0.9918673685608905
+          },
+          {
+            "id": "cal_02_t1",
+            "relative_L2": 0.12625218018571505,
+            "cosine": 0.9920185520343668
+          },
+          {
+            "id": "cal_04_t0",
+            "relative_L2": 0.1328300515299382,
+            "cosine": 0.9911670448340405
+          },
+          {
+            "id": "cal_04_t1",
+            "relative_L2": 0.13383849007173873,
+            "cosine": 0.9910246964498971
+          }
+        ],
+        "aggregate": {
+          "relative_L2": 0.12998218438666445,
+          "cosine": 0.9915391966435959
+        },
+        "saved_A53_input": {
+          "relative_L2": 0.13282475275762848,
+          "cosine": 0.9911677538047656
+        },
+        "hard_student_clean_teacher": [
+          {
+            "id": "cal_00_t0",
+            "relative_L2": 0.2872591210401856,
+            "cosine": 0.9581639183087984
+          },
+          {
+            "id": "cal_00_t1",
+            "relative_L2": 0.20001594578793602,
+            "cosine": 0.9797975836453516
+          },
+          {
+            "id": "cal_04_t0",
+            "relative_L2": 0.18542520112742708,
+            "cosine": 0.9826619961220877
+          },
+          {
+            "id": "cal_04_t1",
+            "relative_L2": 0.17512803417661946,
+            "cosine": 0.9845492890555674
+          }
+        ],
+        "hard_mean_relativeL2": 0.21195707553304205,
+        "passed_local_gate": true
+      },
+      "FP32_before_export": {
+        "clean_fit": [
+          {
+            "id": "cal_00_t0",
+            "relative_L2": 0.15883609775943766,
+            "cosine": 0.9873535072084264
+          },
+          {
+            "id": "cal_00_t1",
+            "relative_L2": 0.1586414340448599,
+            "cosine": 0.9873833651352575
+          },
+          {
+            "id": "cal_01_t0",
+            "relative_L2": 0.16425795407133278,
+            "cosine": 0.9864749923919287
+          },
+          {
+            "id": "cal_01_t1",
+            "relative_L2": 0.16320136503931656,
+            "cosine": 0.9866457544629603
+          },
+          {
+            "id": "cal_02_t0",
+            "relative_L2": 0.16002365459176124,
+            "cosine": 0.9871625024832347
+          },
+          {
+            "id": "cal_02_t1",
+            "relative_L2": 0.15928063544664386,
+            "cosine": 0.9872841674291859
+          },
+          {
+            "id": "cal_04_t0",
+            "relative_L2": 0.1624385920978396,
+            "cosine": 0.986779949452009
+          },
+          {
+            "id": "cal_04_t1",
+            "relative_L2": 0.16404261602433517,
+            "cosine": 0.9865091058455445
+          }
+        ],
+        "aggregate": {
+          "relative_L2": 0.16136083327000808,
+          "cosine": 0.9869483289589998
+        },
+        "saved_A53_input": {
+          "relative_L2": 0.1624344794702752,
+          "cosine": 0.9867806103681983
+        },
+        "hard_student_clean_teacher": [
+          {
+            "id": "cal_00_t0",
+            "relative_L2": 0.30253621407110487,
+            "cosine": 0.9533700440671855
+          },
+          {
+            "id": "cal_00_t1",
+            "relative_L2": 0.2222597015291862,
+            "cosine": 0.9749876517170939
+          },
+          {
+            "id": "cal_04_t0",
+            "relative_L2": 0.20808408928594802,
+            "cosine": 0.9781292707986947
+          },
+          {
+            "id": "cal_04_t1",
+            "relative_L2": 0.1994701396360205,
+            "cosine": 0.9799255676033094
+          }
+        ],
+        "hard_mean_relativeL2": 0.23308753613056488,
+        "passed_local_gate": true
+      },
+      "steps": 128,
+      "payload": "deployment/mage_vl4b/optimization_v1/runs/M536-V4-3584-recovery-fit-01/clean_control_W4.npz",
+      "sha256": "2f48721b0032d4c8031d2eb5db16b7a47b94fdf70fbe8e704f25aaf13264f046",
+      "trajectory": [
+        {
+          "step": 0,
+          "request_id": "cal_00_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.04571795091032982
+        },
+        {
+          "step": 1,
+          "request_id": "cal_00_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.050995826721191406
+        },
+        {
+          "step": 2,
+          "request_id": "cal_01_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.05119650065898895
+        },
+        {
+          "step": 3,
+          "request_id": "cal_01_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.047641728073358536
+        },
+        {
+          "step": 4,
+          "request_id": "cal_02_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.05075106769800186
+        },
+        {
+          "step": 5,
+          "request_id": "cal_02_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.047547876834869385
+        },
+        {
+          "step": 6,
+          "request_id": "cal_04_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.045553695410490036
+        },
+        {
+          "step": 7,
+          "request_id": "cal_04_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.0423213355243206
+        },
+        {
+          "step": 8,
+          "request_id": "cal_00_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.03490671515464783
+        },
+        {
+          "step": 9,
+          "request_id": "cal_00_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.03482336923480034
+        },
+        {
+          "step": 10,
+          "request_id": "cal_01_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.044836025685071945
+        },
+        {
+          "step": 11,
+          "request_id": "cal_01_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.041089367121458054
+        },
+        {
+          "step": 12,
+          "request_id": "cal_02_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.039873432368040085
+        },
+        {
+          "step": 13,
+          "request_id": "cal_02_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.03677965700626373
+        },
+        {
+          "step": 14,
+          "request_id": "cal_04_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.03795646131038666
+        },
+        {
+          "step": 15,
+          "request_id": "cal_04_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.03788534179329872
+        },
+        {
+          "step": 16,
+          "request_id": "cal_00_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.03539196401834488
+        },
+        {
+          "step": 17,
+          "request_id": "cal_00_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.03268757089972496
+        },
+        {
+          "step": 18,
+          "request_id": "cal_01_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.034767501056194305
+        },
+        {
+          "step": 19,
+          "request_id": "cal_01_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.03331325203180313
+        },
+        {
+          "step": 20,
+          "request_id": "cal_02_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.03434345871210098
+        },
+        {
+          "step": 21,
+          "request_id": "cal_02_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.03323817253112793
+        },
+        {
+          "step": 22,
+          "request_id": "cal_04_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.032331448048353195
+        },
+        {
+          "step": 23,
+          "request_id": "cal_04_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.031534064561128616
+        },
+        {
+          "step": 24,
+          "request_id": "cal_00_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.02705835923552513
+        },
+        {
+          "step": 25,
+          "request_id": "cal_00_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.027022555470466614
+        },
+        {
+          "step": 26,
+          "request_id": "cal_01_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.03054521605372429
+        },
+        {
+          "step": 27,
+          "request_id": "cal_01_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.028910446912050247
+        },
+        {
+          "step": 28,
+          "request_id": "cal_02_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.02794456109404564
+        },
+        {
+          "step": 29,
+          "request_id": "cal_02_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.027025235816836357
+        },
+        {
+          "step": 30,
+          "request_id": "cal_04_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.028085852041840553
+        },
+        {
+          "step": 31,
+          "request_id": "cal_04_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.027905991300940514
+        },
+        {
+          "step": 32,
+          "request_id": "cal_00_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.023985113948583603
+        },
+        {
+          "step": 33,
+          "request_id": "cal_00_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.023557303473353386
+        },
+        {
+          "step": 34,
+          "request_id": "cal_01_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.026775304228067398
+        },
+        {
+          "step": 35,
+          "request_id": "cal_01_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.025790411978960037
+        },
+        {
+          "step": 36,
+          "request_id": "cal_02_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.025254519656300545
+        },
+        {
+          "step": 37,
+          "request_id": "cal_02_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.024324452504515648
+        },
+        {
+          "step": 38,
+          "request_id": "cal_04_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.025003140792250633
+        },
+        {
+          "step": 39,
+          "request_id": "cal_04_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.024970555678009987
+        },
+        {
+          "step": 40,
+          "request_id": "cal_00_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.021749036386609077
+        },
+        {
+          "step": 41,
+          "request_id": "cal_00_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.021633783355355263
+        },
+        {
+          "step": 42,
+          "request_id": "cal_01_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.02434602938592434
+        },
+        {
+          "step": 43,
+          "request_id": "cal_01_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.0234010498970747
+        },
+        {
+          "step": 44,
+          "request_id": "cal_02_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.022690020501613617
+        },
+        {
+          "step": 45,
+          "request_id": "cal_02_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.02203097566962242
+        },
+        {
+          "step": 46,
+          "request_id": "cal_04_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.023091088980436325
+        },
+        {
+          "step": 47,
+          "request_id": "cal_04_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.023020215332508087
+        },
+        {
+          "step": 48,
+          "request_id": "cal_00_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.01980140060186386
+        },
+        {
+          "step": 49,
+          "request_id": "cal_00_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.01985793001949787
+        },
+        {
+          "step": 50,
+          "request_id": "cal_01_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.02262801304459572
+        },
+        {
+          "step": 51,
+          "request_id": "cal_01_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.021728191524744034
+        },
+        {
+          "step": 52,
+          "request_id": "cal_02_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.020839912816882133
+        },
+        {
+          "step": 53,
+          "request_id": "cal_02_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.020256729796528816
+        },
+        {
+          "step": 54,
+          "request_id": "cal_04_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.02157117985188961
+        },
+        {
+          "step": 55,
+          "request_id": "cal_04_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.021556315943598747
+        },
+        {
+          "step": 56,
+          "request_id": "cal_00_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.018474968150258064
+        },
+        {
+          "step": 57,
+          "request_id": "cal_00_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.01852089911699295
+        },
+        {
+          "step": 58,
+          "request_id": "cal_01_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.0212116539478302
+        },
+        {
+          "step": 59,
+          "request_id": "cal_01_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.020410506054759026
+        },
+        {
+          "step": 60,
+          "request_id": "cal_02_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.01948731765151024
+        },
+        {
+          "step": 61,
+          "request_id": "cal_02_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.01888299360871315
+        },
+        {
+          "step": 62,
+          "request_id": "cal_04_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.020315758883953094
+        },
+        {
+          "step": 63,
+          "request_id": "cal_04_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.02038654126226902
+        },
+        {
+          "step": 64,
+          "request_id": "cal_00_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.02655669115483761
+        },
+        {
+          "step": 65,
+          "request_id": "cal_00_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.025870418176054955
+        },
+        {
+          "step": 66,
+          "request_id": "cal_01_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.028156213462352753
+        },
+        {
+          "step": 67,
+          "request_id": "cal_01_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.026715822517871857
+        },
+        {
+          "step": 68,
+          "request_id": "cal_02_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.025777410715818405
+        },
+        {
+          "step": 69,
+          "request_id": "cal_02_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.025219833478331566
+        },
+        {
+          "step": 70,
+          "request_id": "cal_04_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.026385875418782234
+        },
+        {
+          "step": 71,
+          "request_id": "cal_04_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.0263116043061018
+        },
+        {
+          "step": 72,
+          "request_id": "cal_00_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.02326999418437481
+        },
+        {
+          "step": 73,
+          "request_id": "cal_00_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.02273637428879738
+        },
+        {
+          "step": 74,
+          "request_id": "cal_01_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.024942530319094658
+        },
+        {
+          "step": 75,
+          "request_id": "cal_01_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.023987455293536186
+        },
+        {
+          "step": 76,
+          "request_id": "cal_02_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.02311018668115139
+        },
+        {
+          "step": 77,
+          "request_id": "cal_02_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.022405212745070457
+        },
+        {
+          "step": 78,
+          "request_id": "cal_04_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.023488672450184822
+        },
+        {
+          "step": 79,
+          "request_id": "cal_04_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.02336098626255989
+        },
+        {
+          "step": 80,
+          "request_id": "cal_00_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.02049178071320057
+        },
+        {
+          "step": 81,
+          "request_id": "cal_00_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.020444044843316078
+        },
+        {
+          "step": 82,
+          "request_id": "cal_01_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.022822385653853416
+        },
+        {
+          "step": 83,
+          "request_id": "cal_01_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.021992173045873642
+        },
+        {
+          "step": 84,
+          "request_id": "cal_02_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.020955637097358704
+        },
+        {
+          "step": 85,
+          "request_id": "cal_02_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.020368732511997223
+        },
+        {
+          "step": 86,
+          "request_id": "cal_04_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.021864142268896103
+        },
+        {
+          "step": 87,
+          "request_id": "cal_04_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.021902957931160927
+        },
+        {
+          "step": 88,
+          "request_id": "cal_00_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.019264599308371544
+        },
+        {
+          "step": 89,
+          "request_id": "cal_00_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.01923024281859398
+        },
+        {
+          "step": 90,
+          "request_id": "cal_01_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.021456582471728325
+        },
+        {
+          "step": 91,
+          "request_id": "cal_01_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.020773503929376602
+        },
+        {
+          "step": 92,
+          "request_id": "cal_02_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.01979323849081993
+        },
+        {
+          "step": 93,
+          "request_id": "cal_02_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.019199583679437637
+        },
+        {
+          "step": 94,
+          "request_id": "cal_04_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.02071431092917919
+        },
+        {
+          "step": 95,
+          "request_id": "cal_04_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.02081587351858616
+        },
+        {
+          "step": 96,
+          "request_id": "cal_00_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.01825004816055298
+        },
+        {
+          "step": 97,
+          "request_id": "cal_00_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.01822604238986969
+        },
+        {
+          "step": 98,
+          "request_id": "cal_01_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.020444633439183235
+        },
+        {
+          "step": 99,
+          "request_id": "cal_01_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.019732007756829262
+        },
+        {
+          "step": 100,
+          "request_id": "cal_02_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.018834607675671577
+        },
+        {
+          "step": 101,
+          "request_id": "cal_02_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.018174557015299797
+        },
+        {
+          "step": 102,
+          "request_id": "cal_04_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.019845226779580116
+        },
+        {
+          "step": 103,
+          "request_id": "cal_04_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.019997544586658478
+        },
+        {
+          "step": 104,
+          "request_id": "cal_00_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.017439089715480804
+        },
+        {
+          "step": 105,
+          "request_id": "cal_00_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.017430882900953293
+        },
+        {
+          "step": 106,
+          "request_id": "cal_01_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.019651323556900024
+        },
+        {
+          "step": 107,
+          "request_id": "cal_01_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.018976382911205292
+        },
+        {
+          "step": 108,
+          "request_id": "cal_02_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.01802431233227253
+        },
+        {
+          "step": 109,
+          "request_id": "cal_02_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.017433440312743187
+        },
+        {
+          "step": 110,
+          "request_id": "cal_04_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.019245700910687447
+        },
+        {
+          "step": 111,
+          "request_id": "cal_04_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.019277825951576233
+        },
+        {
+          "step": 112,
+          "request_id": "cal_00_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.016827579587697983
+        },
+        {
+          "step": 113,
+          "request_id": "cal_00_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.016821125522255898
+        },
+        {
+          "step": 114,
+          "request_id": "cal_01_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.018959203734993935
+        },
+        {
+          "step": 115,
+          "request_id": "cal_01_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.018316172063350677
+        },
+        {
+          "step": 116,
+          "request_id": "cal_02_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.017334306612610817
+        },
+        {
+          "step": 117,
+          "request_id": "cal_02_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.016766522079706192
+        },
+        {
+          "step": 118,
+          "request_id": "cal_04_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.018713755533099174
+        },
+        {
+          "step": 119,
+          "request_id": "cal_04_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.018677929416298866
+        },
+        {
+          "step": 120,
+          "request_id": "cal_00_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.016275687143206596
+        },
+        {
+          "step": 121,
+          "request_id": "cal_00_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.0162536408752203
+        },
+        {
+          "step": 122,
+          "request_id": "cal_01_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.01860339194536209
+        },
+        {
+          "step": 123,
+          "request_id": "cal_01_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.017835283651947975
+        },
+        {
+          "step": 124,
+          "request_id": "cal_02_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.016788605600595474
+        },
+        {
+          "step": 125,
+          "request_id": "cal_02_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.01625882089138031
+        },
+        {
+          "step": 126,
+          "request_id": "cal_04_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.018310360610485077
+        },
+        {
+          "step": 127,
+          "request_id": "cal_04_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.01825881563127041
+        }
+      ],
+      "fc1_codes_scales_bias_unchanged": true,
+      "inference_has_no_extra_branch": true,
+      "export_W4_G64_FP16": true
+    },
+    {
+      "name": "paired_harder_student",
+      "metrics": {
+        "clean_fit": [
+          {
+            "id": "cal_00_t0",
+            "relative_L2": 0.13369465887279736,
+            "cosine": 0.9910271195483072
+          },
+          {
+            "id": "cal_00_t1",
+            "relative_L2": 0.13285520064127304,
+            "cosine": 0.9911477886688356
+          },
+          {
+            "id": "cal_01_t0",
+            "relative_L2": 0.1366942749198982,
+            "cosine": 0.9906609703144185
+          },
+          {
+            "id": "cal_01_t1",
+            "relative_L2": 0.1346957620755053,
+            "cosine": 0.9909322413838906
+          },
+          {
+            "id": "cal_02_t0",
+            "relative_L2": 0.12982468093167826,
+            "cosine": 0.9915706079746095
+          },
+          {
+            "id": "cal_02_t1",
+            "relative_L2": 0.1286068283858065,
+            "cosine": 0.9917314621936975
+          },
+          {
+            "id": "cal_04_t0",
+            "relative_L2": 0.13657360988115066,
+            "cosine": 0.9906542254679545
+          },
+          {
+            "id": "cal_04_t1",
+            "relative_L2": 0.1375310495005995,
+            "cosine": 0.9905169655669454
+          }
+        ],
+        "aggregate": {
+          "relative_L2": 0.1338767388086848,
+          "cosine": 0.991023345115815
+        },
+        "saved_A53_input": {
+          "relative_L2": 0.13656847268014452,
+          "cosine": 0.9906549281824516
+        },
+        "hard_student_clean_teacher": [
+          {
+            "id": "cal_00_t0",
+            "relative_L2": 0.26473996688021606,
+            "cosine": 0.9644397508651553
+          },
+          {
+            "id": "cal_00_t1",
+            "relative_L2": 0.19332011064204405,
+            "cosine": 0.9811361310114141
+          },
+          {
+            "id": "cal_04_t0",
+            "relative_L2": 0.17908903472434484,
+            "cosine": 0.9838459779992111
+          },
+          {
+            "id": "cal_04_t1",
+            "relative_L2": 0.17147190154009065,
+            "cosine": 0.9851988497750203
+          }
+        ],
+        "hard_mean_relativeL2": 0.20215525344667387,
+        "passed_local_gate": true
+      },
+      "FP32_before_export": {
+        "clean_fit": [
+          {
+            "id": "cal_00_t0",
+            "relative_L2": 0.16599861639638097,
+            "cosine": 0.9861262404615382
+          },
+          {
+            "id": "cal_00_t1",
+            "relative_L2": 0.16375146987548697,
+            "cosine": 0.9865069322653587
+          },
+          {
+            "id": "cal_01_t0",
+            "relative_L2": 0.16429732095945265,
+            "cosine": 0.9864631504759952
+          },
+          {
+            "id": "cal_01_t1",
+            "relative_L2": 0.1631976387072374,
+            "cosine": 0.9866397798989482
+          },
+          {
+            "id": "cal_02_t0",
+            "relative_L2": 0.1601798780480929,
+            "cosine": 0.9871224109434232
+          },
+          {
+            "id": "cal_02_t1",
+            "relative_L2": 0.15941348202320912,
+            "cosine": 0.9872479064703847
+          },
+          {
+            "id": "cal_04_t0",
+            "relative_L2": 0.16383520422912762,
+            "cosine": 0.9865092406113417
+          },
+          {
+            "id": "cal_04_t1",
+            "relative_L2": 0.1655525046725532,
+            "cosine": 0.986221700194205
+          }
+        ],
+        "aggregate": {
+          "relative_L2": 0.1633176940642154,
+          "cosine": 0.9865957782677021
+        },
+        "saved_A53_input": {
+          "relative_L2": 0.1638311552856323,
+          "cosine": 0.9865099037760269
+        },
+        "hard_student_clean_teacher": [
+          {
+            "id": "cal_00_t0",
+            "relative_L2": 0.27778574976832243,
+            "cosine": 0.9607567495885894
+          },
+          {
+            "id": "cal_00_t1",
+            "relative_L2": 0.214734024245085,
+            "cosine": 0.9766748890666027
+          },
+          {
+            "id": "cal_04_t0",
+            "relative_L2": 0.20011167430053695,
+            "cosine": 0.9797852871059184
+          },
+          {
+            "id": "cal_04_t1",
+            "relative_L2": 0.19452395208358284,
+            "cosine": 0.9809087854652019
+          }
+        ],
+        "hard_mean_relativeL2": 0.22178885009938182,
+        "passed_local_gate": true
+      },
+      "steps": 128,
+      "payload": "deployment/mage_vl4b/optimization_v1/runs/M536-V4-3584-recovery-fit-01/paired_harder_student_W4.npz",
+      "sha256": "98f58b7f06a23b178e167fe5de2cc053765ac4cf97cbd2dc711ee81a2b84073c",
+      "trajectory": [
+        {
+          "step": 0,
+          "request_id": "cal_00_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.04571795091032982
+        },
+        {
+          "step": 1,
+          "request_id": "cal_00_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.050995826721191406
+        },
+        {
+          "step": 2,
+          "request_id": "cal_01_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.05119650065898895
+        },
+        {
+          "step": 3,
+          "request_id": "cal_01_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.047641728073358536
+        },
+        {
+          "step": 4,
+          "request_id": "cal_02_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.05075106769800186
+        },
+        {
+          "step": 5,
+          "request_id": "cal_02_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.047547876834869385
+        },
+        {
+          "step": 6,
+          "request_id": "cal_04_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.045553695410490036
+        },
+        {
+          "step": 7,
+          "request_id": "cal_04_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.0423213355243206
+        },
+        {
+          "step": 8,
+          "request_id": "cal_00_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.03490671515464783
+        },
+        {
+          "step": 9,
+          "request_id": "cal_00_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.03482336923480034
+        },
+        {
+          "step": 10,
+          "request_id": "cal_01_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.044836025685071945
+        },
+        {
+          "step": 11,
+          "request_id": "cal_01_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.041089367121458054
+        },
+        {
+          "step": 12,
+          "request_id": "cal_02_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.039873432368040085
+        },
+        {
+          "step": 13,
+          "request_id": "cal_02_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.03677965700626373
+        },
+        {
+          "step": 14,
+          "request_id": "cal_04_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.03795646131038666
+        },
+        {
+          "step": 15,
+          "request_id": "cal_04_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.03788534179329872
+        },
+        {
+          "step": 16,
+          "request_id": "cal_00_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.03539196401834488
+        },
+        {
+          "step": 17,
+          "request_id": "cal_00_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.03268757089972496
+        },
+        {
+          "step": 18,
+          "request_id": "cal_01_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.034767501056194305
+        },
+        {
+          "step": 19,
+          "request_id": "cal_01_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.03331325203180313
+        },
+        {
+          "step": 20,
+          "request_id": "cal_02_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.03434345871210098
+        },
+        {
+          "step": 21,
+          "request_id": "cal_02_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.03323817253112793
+        },
+        {
+          "step": 22,
+          "request_id": "cal_04_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.032331448048353195
+        },
+        {
+          "step": 23,
+          "request_id": "cal_04_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.031534064561128616
+        },
+        {
+          "step": 24,
+          "request_id": "cal_00_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.02705835923552513
+        },
+        {
+          "step": 25,
+          "request_id": "cal_00_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.027022555470466614
+        },
+        {
+          "step": 26,
+          "request_id": "cal_01_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.03054521605372429
+        },
+        {
+          "step": 27,
+          "request_id": "cal_01_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.028910446912050247
+        },
+        {
+          "step": 28,
+          "request_id": "cal_02_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.02794456109404564
+        },
+        {
+          "step": 29,
+          "request_id": "cal_02_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.027025235816836357
+        },
+        {
+          "step": 30,
+          "request_id": "cal_04_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.028085852041840553
+        },
+        {
+          "step": 31,
+          "request_id": "cal_04_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.027905991300940514
+        },
+        {
+          "step": 32,
+          "request_id": "cal_00_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.023985113948583603
+        },
+        {
+          "step": 33,
+          "request_id": "cal_00_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.023557303473353386
+        },
+        {
+          "step": 34,
+          "request_id": "cal_01_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.026775304228067398
+        },
+        {
+          "step": 35,
+          "request_id": "cal_01_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.025790411978960037
+        },
+        {
+          "step": 36,
+          "request_id": "cal_02_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.025254519656300545
+        },
+        {
+          "step": 37,
+          "request_id": "cal_02_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.024324452504515648
+        },
+        {
+          "step": 38,
+          "request_id": "cal_04_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.025003140792250633
+        },
+        {
+          "step": 39,
+          "request_id": "cal_04_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.024970555678009987
+        },
+        {
+          "step": 40,
+          "request_id": "cal_00_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.021749036386609077
+        },
+        {
+          "step": 41,
+          "request_id": "cal_00_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.021633783355355263
+        },
+        {
+          "step": 42,
+          "request_id": "cal_01_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.02434602938592434
+        },
+        {
+          "step": 43,
+          "request_id": "cal_01_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.0234010498970747
+        },
+        {
+          "step": 44,
+          "request_id": "cal_02_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.022690020501613617
+        },
+        {
+          "step": 45,
+          "request_id": "cal_02_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.02203097566962242
+        },
+        {
+          "step": 46,
+          "request_id": "cal_04_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.023091088980436325
+        },
+        {
+          "step": 47,
+          "request_id": "cal_04_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.023020215332508087
+        },
+        {
+          "step": 48,
+          "request_id": "cal_00_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.01980140060186386
+        },
+        {
+          "step": 49,
+          "request_id": "cal_00_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.01985793001949787
+        },
+        {
+          "step": 50,
+          "request_id": "cal_01_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.02262801304459572
+        },
+        {
+          "step": 51,
+          "request_id": "cal_01_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.021728191524744034
+        },
+        {
+          "step": 52,
+          "request_id": "cal_02_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.020839912816882133
+        },
+        {
+          "step": 53,
+          "request_id": "cal_02_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.020256729796528816
+        },
+        {
+          "step": 54,
+          "request_id": "cal_04_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.02157117985188961
+        },
+        {
+          "step": 55,
+          "request_id": "cal_04_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.021556315943598747
+        },
+        {
+          "step": 56,
+          "request_id": "cal_00_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.018474968150258064
+        },
+        {
+          "step": 57,
+          "request_id": "cal_00_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.01852089911699295
+        },
+        {
+          "step": 58,
+          "request_id": "cal_01_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.0212116539478302
+        },
+        {
+          "step": 59,
+          "request_id": "cal_01_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.020410506054759026
+        },
+        {
+          "step": 60,
+          "request_id": "cal_02_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.01948731765151024
+        },
+        {
+          "step": 61,
+          "request_id": "cal_02_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.01888299360871315
+        },
+        {
+          "step": 62,
+          "request_id": "cal_04_t0",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.020315758883953094
+        },
+        {
+          "step": 63,
+          "request_id": "cal_04_t1",
+          "hard_student": false,
+          "quantized_forward": false,
+          "loss": 0.02038654126226902
+        },
+        {
+          "step": 64,
+          "request_id": "cal_00_t0",
+          "hard_student": true,
+          "quantized_forward": true,
+          "loss": 0.09213779866695404
+        },
+        {
+          "step": 65,
+          "request_id": "cal_00_t1",
+          "hard_student": true,
+          "quantized_forward": true,
+          "loss": 0.049655016511678696
+        },
+        {
+          "step": 66,
+          "request_id": "cal_01_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.028422581031918526
+        },
+        {
+          "step": 67,
+          "request_id": "cal_01_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.027109259739518166
+        },
+        {
+          "step": 68,
+          "request_id": "cal_02_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.02620093896985054
+        },
+        {
+          "step": 69,
+          "request_id": "cal_02_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.025519561022520065
+        },
+        {
+          "step": 70,
+          "request_id": "cal_04_t0",
+          "hard_student": true,
+          "quantized_forward": true,
+          "loss": 0.0427364856004715
+        },
+        {
+          "step": 71,
+          "request_id": "cal_04_t1",
+          "hard_student": true,
+          "quantized_forward": true,
+          "loss": 0.03891102597117424
+        },
+        {
+          "step": 72,
+          "request_id": "cal_00_t0",
+          "hard_student": true,
+          "quantized_forward": true,
+          "loss": 0.08706967532634735
+        },
+        {
+          "step": 73,
+          "request_id": "cal_00_t1",
+          "hard_student": true,
+          "quantized_forward": true,
+          "loss": 0.04610268771648407
+        },
+        {
+          "step": 74,
+          "request_id": "cal_01_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.025243686512112617
+        },
+        {
+          "step": 75,
+          "request_id": "cal_01_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.02428271807730198
+        },
+        {
+          "step": 76,
+          "request_id": "cal_02_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.02344161458313465
+        },
+        {
+          "step": 77,
+          "request_id": "cal_02_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.022720694541931152
+        },
+        {
+          "step": 78,
+          "request_id": "cal_04_t0",
+          "hard_student": true,
+          "quantized_forward": true,
+          "loss": 0.03972751274704933
+        },
+        {
+          "step": 79,
+          "request_id": "cal_04_t1",
+          "hard_student": true,
+          "quantized_forward": true,
+          "loss": 0.03596897050738335
+        },
+        {
+          "step": 80,
+          "request_id": "cal_00_t0",
+          "hard_student": true,
+          "quantized_forward": true,
+          "loss": 0.08186915516853333
+        },
+        {
+          "step": 81,
+          "request_id": "cal_00_t1",
+          "hard_student": true,
+          "quantized_forward": true,
+          "loss": 0.043534811586141586
+        },
+        {
+          "step": 82,
+          "request_id": "cal_01_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.02325575426220894
+        },
+        {
+          "step": 83,
+          "request_id": "cal_01_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.022521818056702614
+        },
+        {
+          "step": 84,
+          "request_id": "cal_02_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.02148888260126114
+        },
+        {
+          "step": 85,
+          "request_id": "cal_02_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.020830923691391945
+        },
+        {
+          "step": 86,
+          "request_id": "cal_04_t0",
+          "hard_student": true,
+          "quantized_forward": true,
+          "loss": 0.03769977390766144
+        },
+        {
+          "step": 87,
+          "request_id": "cal_04_t1",
+          "hard_student": true,
+          "quantized_forward": true,
+          "loss": 0.034270137548446655
+        },
+        {
+          "step": 88,
+          "request_id": "cal_00_t0",
+          "hard_student": true,
+          "quantized_forward": true,
+          "loss": 0.07881881296634674
+        },
+        {
+          "step": 89,
+          "request_id": "cal_00_t1",
+          "hard_student": true,
+          "quantized_forward": true,
+          "loss": 0.04202746972441673
+        },
+        {
+          "step": 90,
+          "request_id": "cal_01_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.021904388442635536
+        },
+        {
+          "step": 91,
+          "request_id": "cal_01_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.02127929963171482
+        },
+        {
+          "step": 92,
+          "request_id": "cal_02_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.020388208329677582
+        },
+        {
+          "step": 93,
+          "request_id": "cal_02_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.019709022715687752
+        },
+        {
+          "step": 94,
+          "request_id": "cal_04_t0",
+          "hard_student": true,
+          "quantized_forward": true,
+          "loss": 0.036246124655008316
+        },
+        {
+          "step": 95,
+          "request_id": "cal_04_t1",
+          "hard_student": true,
+          "quantized_forward": true,
+          "loss": 0.032994821667671204
+        },
+        {
+          "step": 96,
+          "request_id": "cal_00_t0",
+          "hard_student": true,
+          "quantized_forward": true,
+          "loss": 0.07640799134969711
+        },
+        {
+          "step": 97,
+          "request_id": "cal_00_t1",
+          "hard_student": true,
+          "quantized_forward": true,
+          "loss": 0.04088054597377777
+        },
+        {
+          "step": 98,
+          "request_id": "cal_01_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.020977329462766647
+        },
+        {
+          "step": 99,
+          "request_id": "cal_01_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.020356275141239166
+        },
+        {
+          "step": 100,
+          "request_id": "cal_02_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.01939033716917038
+        },
+        {
+          "step": 101,
+          "request_id": "cal_02_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.018733328208327293
+        },
+        {
+          "step": 102,
+          "request_id": "cal_04_t0",
+          "hard_student": true,
+          "quantized_forward": true,
+          "loss": 0.03521759808063507
+        },
+        {
+          "step": 103,
+          "request_id": "cal_04_t1",
+          "hard_student": true,
+          "quantized_forward": true,
+          "loss": 0.031960904598236084
+        },
+        {
+          "step": 104,
+          "request_id": "cal_00_t0",
+          "hard_student": true,
+          "quantized_forward": true,
+          "loss": 0.07453813403844833
+        },
+        {
+          "step": 105,
+          "request_id": "cal_00_t1",
+          "hard_student": true,
+          "quantized_forward": true,
+          "loss": 0.03983646631240845
+        },
+        {
+          "step": 106,
+          "request_id": "cal_01_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.020291732624173164
+        },
+        {
+          "step": 107,
+          "request_id": "cal_01_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.01966700330376625
+        },
+        {
+          "step": 108,
+          "request_id": "cal_02_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.01860623247921467
+        },
+        {
+          "step": 109,
+          "request_id": "cal_02_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.017971090972423553
+        },
+        {
+          "step": 110,
+          "request_id": "cal_04_t0",
+          "hard_student": true,
+          "quantized_forward": true,
+          "loss": 0.034323856234550476
+        },
+        {
+          "step": 111,
+          "request_id": "cal_04_t1",
+          "hard_student": true,
+          "quantized_forward": true,
+          "loss": 0.031172920018434525
+        },
+        {
+          "step": 112,
+          "request_id": "cal_00_t0",
+          "hard_student": true,
+          "quantized_forward": true,
+          "loss": 0.07273188978433609
+        },
+        {
+          "step": 113,
+          "request_id": "cal_00_t1",
+          "hard_student": true,
+          "quantized_forward": true,
+          "loss": 0.0389789454638958
+        },
+        {
+          "step": 114,
+          "request_id": "cal_01_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.019719421863555908
+        },
+        {
+          "step": 115,
+          "request_id": "cal_01_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.019081134349107742
+        },
+        {
+          "step": 116,
+          "request_id": "cal_02_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.018023386597633362
+        },
+        {
+          "step": 117,
+          "request_id": "cal_02_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.01740623638033867
+        },
+        {
+          "step": 118,
+          "request_id": "cal_04_t0",
+          "hard_student": true,
+          "quantized_forward": true,
+          "loss": 0.03357377648353577
+        },
+        {
+          "step": 119,
+          "request_id": "cal_04_t1",
+          "hard_student": true,
+          "quantized_forward": true,
+          "loss": 0.030429618433117867
+        },
+        {
+          "step": 120,
+          "request_id": "cal_00_t0",
+          "hard_student": true,
+          "quantized_forward": true,
+          "loss": 0.07129455357789993
+        },
+        {
+          "step": 121,
+          "request_id": "cal_00_t1",
+          "hard_student": true,
+          "quantized_forward": true,
+          "loss": 0.03830942139029503
+        },
+        {
+          "step": 122,
+          "request_id": "cal_01_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.019259918481111526
+        },
+        {
+          "step": 123,
+          "request_id": "cal_01_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.01866249181330204
+        },
+        {
+          "step": 124,
+          "request_id": "cal_02_t0",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.01751575618982315
+        },
+        {
+          "step": 125,
+          "request_id": "cal_02_t1",
+          "hard_student": false,
+          "quantized_forward": true,
+          "loss": 0.016873424872756004
+        },
+        {
+          "step": 126,
+          "request_id": "cal_04_t0",
+          "hard_student": true,
+          "quantized_forward": true,
+          "loss": 0.03296613320708275
+        },
+        {
+          "step": 127,
+          "request_id": "cal_04_t1",
+          "hard_student": true,
+          "quantized_forward": true,
+          "loss": 0.029843255877494812
+        }
+      ],
+      "fc1_codes_scales_bias_unchanged": true,
+      "inference_has_no_extra_branch": true,
+      "export_W4_G64_FP16": true
+    }
+  ],
+  "GPU": {
+    "name": "NVIDIA GeForce RTX 5070 Laptop GPU",
+    "free_bytes": 7338983424
+  },
+  "source_sections": [
+    {
+      "offset": 30859264,
+      "bytes": 2097152,
+      "sha256": "ef610bc8bdf9784b084056f00a81c0b077dda11d62749f9ae3ab22777e92fa29"
+    },
+    {
+      "offset": 32956416,
+      "bytes": 131072,
+      "sha256": "b52ce799dd802eec892c96d1371b13a6e80e06db74c29491b9013bc5d28f1ab9"
+    },
+    {
+      "offset": 33087488,
+      "bytes": 8192,
+      "sha256": "ec1927cfbe09e71b0b3919634000a02ac72f1532f3c5085e5484b9dda589f43e"
+    },
+    {
+      "offset": 33103872,
+      "bytes": 2097152,
+      "sha256": "bd7f2e6e373e3c796052c271d200d22446f64fd50006de40491cc2ea6dc6e7a9"
+    },
+    {
+      "offset": 35201024,
+      "bytes": 131072,
+      "sha256": "299c6cfc7059359ad42921d399fca5bab80c301549ffd7a574aa36e60af9167b"
+    },
+    {
+      "offset": 35332096,
+      "bytes": 8192,
+      "sha256": "2d5732d07d70ebffec11000614f4384100e47b7ccbfd179b206967df7b9c1cab"
+    },
+    {
+      "offset": 33095680,
+      "bytes": 8192,
+      "sha256": "b4f47bf21e4d88a3301b5574aeeeb0b5e17fa6bbb74affdaec0ee15ff4e35229"
+    },
+    {
+      "offset": 35340288,
+      "bytes": 2048,
+      "sha256": "6b24bd3692a176391f5bfb33e44c49c6cf07ed51928cb293843fac4ed4ec4830"
+    }
+  ],
+  "group_selection": {
+    "removed_original_groups": [
+      45,
+      31,
+      7,
+      48,
+      15,
+      11,
+      42,
+      55
+    ],
+    "kept_original_groups": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      43,
+      44,
+      46,
+      47,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63
+    ],
+    "steps": [
+      {
+        "removed_group": 45,
+        "incremental_SSE": 3635.849334716797,
+        "cumulative_SSE": 3635.849334716797
+      },
+      {
+        "removed_group": 31,
+        "incremental_SSE": 3661.161253929138,
+        "cumulative_SSE": 7297.010588645935
+      },
+      {
+        "removed_group": 7,
+        "incremental_SSE": 3662.0715293884277,
+        "cumulative_SSE": 10959.082118034363
+      },
+      {
+        "removed_group": 48,
+        "incremental_SSE": 3618.838036902249,
+        "cumulative_SSE": 14577.920154936612
+      },
+      {
+        "removed_group": 15,
+        "incremental_SSE": 3744.3498950004578,
+        "cumulative_SSE": 18322.27004993707
+      },
+      {
+        "removed_group": 11,
+        "incremental_SSE": 3794.767730295658,
+        "cumulative_SSE": 22117.037780232728
+      },
+      {
+        "removed_group": 42,
+        "incremental_SSE": 3858.311082839966,
+        "cumulative_SSE": 25975.348863072693
+      },
+      {
+        "removed_group": 55,
+        "incremental_SSE": 3959.8306859731674,
+        "cumulative_SSE": 29935.17954904586
+      }
+    ],
+    "post_GELU_contributions_include_cross_terms": true,
+    "fit_windows": 8,
+    "fit_source_groups": 4,
+    "selection_uses_no_answers": true
+  },
+  "old_energy3584_training_metrics": [
+    {
+      "relative_L2": 0.30084958135636786,
+      "cosine": 0.954113043540515
+    },
+    {
+      "relative_L2": 0.2971015346458939,
+      "cosine": 0.955339167455195
+    },
+    {
+      "relative_L2": 0.3005353053875152,
+      "cosine": 0.9541555162982548
+    },
+    {
+      "relative_L2": 0.2980003983411829,
+      "cosine": 0.9549958969079404
+    },
+    {
+      "relative_L2": 0.2966848659800685,
+      "cosine": 0.9553453694498676
+    },
+    {
+      "relative_L2": 0.29730224087410007,
+      "cosine": 0.9551718180950101
+    },
+    {
+      "relative_L2": 0.2951900570329653,
+      "cosine": 0.955931591320929
+    },
+    {
+      "relative_L2": 0.2947941486018827,
+      "cosine": 0.9560294079379733
+    }
+  ],
+  "R1_fp64_residual_mean_cast_once": true,
+  "R1_fused_bias_actual_forward_evaluated": true,
+  "selected_local_method": "paired_harder_student",
+  "candidate": {
+    "package": "deployment/mage_vl4b/optimization_v1/candidates/M536-V4-3584-recovery-01",
+    "manifest_sha256": "73b4b7a826e8292007d8a54ad8f679a6715db921fc327655a739d5068a59dfd6"
+  },
+  "old_body_not_updated": true,
+  "full_quality_pass": false,
+  "board_TTFT_pass": false,
+  "elapsed_s": 21.628185768999998,
+  "files": [
+    {
+      "path": "deployment/mage_vl4b/optimization_v1/runs/M536-V4-3584-recovery-fit-01/R1_fused.npz",
+      "bytes": 10477,
+      "sha256": "3ecbf599dc737dc25f05f940341cc62661bf75de2d6ee6971899ce0b2a7cb284"
+    },
+    {
+      "path": "deployment/mage_vl4b/optimization_v1/runs/M536-V4-3584-recovery-fit-01/captures/cal_00_t0_clean.npz",
+      "bytes": 8852030,
+      "sha256": "7995ef40f6057f9bac3441dc5254e9bc2ed5e2e7ae9c5e7c0d858b3277062bf8"
+    },
+    {
+      "path": "deployment/mage_vl4b/optimization_v1/runs/M536-V4-3584-recovery-fit-01/captures/cal_00_t0_hard.npz",
+      "bytes": 8852445,
+      "sha256": "d3a7246a3930900bccc5032f86586f60137f84e546634715f4228f5663769eae"
+    },
+    {
+      "path": "deployment/mage_vl4b/optimization_v1/runs/M536-V4-3584-recovery-fit-01/captures/cal_00_t1_clean.npz",
+      "bytes": 8854343,
+      "sha256": "ca544fd4366ba860a0e036ee347ac21e32fd64e0bc3a9ed041fc39d07c2bd981"
+    },
+    {
+      "path": "deployment/mage_vl4b/optimization_v1/runs/M536-V4-3584-recovery-fit-01/captures/cal_00_t1_hard.npz",
+      "bytes": 8854646,
+      "sha256": "ecac6df4fe8f1436b19583d0ccf2b5d7a5df85e1962852916803d396dce04f25"
+    },
+    {
+      "path": "deployment/mage_vl4b/optimization_v1/runs/M536-V4-3584-recovery-fit-01/captures/cal_01_t0_clean.npz",
+      "bytes": 8858974,
+      "sha256": "40751c4b05b18b7510b012d733758c31337e3c8bb9d9d75b7425641f31e8052e"
+    },
+    {
+      "path": "deployment/mage_vl4b/optimization_v1/runs/M536-V4-3584-recovery-fit-01/captures/cal_01_t1_clean.npz",
+      "bytes": 8860272,
+      "sha256": "94225fc3823f28d4f9c67fe7fb24bc8ab1f2eddf99b258a9afe02a7c3275bdfa"
+    },
+    {
+      "path": "deployment/mage_vl4b/optimization_v1/runs/M536-V4-3584-recovery-fit-01/captures/cal_02_t0_clean.npz",
+      "bytes": 8861115,
+      "sha256": "c59217448825077987ce3f482fe7ed126ba6f47f19a82f35153e797091bfcde1"
+    },
+    {
+      "path": "deployment/mage_vl4b/optimization_v1/runs/M536-V4-3584-recovery-fit-01/captures/cal_02_t1_clean.npz",
+      "bytes": 8860452,
+      "sha256": "6158e2f5a48cc4a74c422830f0eb49f3a8f62ac41f9791464b84010ea740e1f4"
+    },
+    {
+      "path": "deployment/mage_vl4b/optimization_v1/runs/M536-V4-3584-recovery-fit-01/captures/cal_04_t0_clean.npz",
+      "bytes": 8863448,
+      "sha256": "307fc2e7324a2ecf7b370f4d3a07bd508fafee32f0ec1681098368eaa7492876"
+    },
+    {
+      "path": "deployment/mage_vl4b/optimization_v1/runs/M536-V4-3584-recovery-fit-01/captures/cal_04_t0_hard.npz",
+      "bytes": 8863097,
+      "sha256": "eed77c0f5fa415c85105710528fc6cf2803db7f8a4b40a17e6b09eb72e2a3fec"
+    },
+    {
+      "path": "deployment/mage_vl4b/optimization_v1/runs/M536-V4-3584-recovery-fit-01/captures/cal_04_t1_clean.npz",
+      "bytes": 8861802,
+      "sha256": "d5613c36dfc66ea0b3e4e67e5ecb74854da3f128d2adb27b5e872cb080a9b6bf"
+    },
+    {
+      "path": "deployment/mage_vl4b/optimization_v1/runs/M536-V4-3584-recovery-fit-01/captures/cal_04_t1_hard.npz",
+      "bytes": 8861693,
+      "sha256": "cf3a49f925ed72fdc6bcbe4b993a28bf8b4de7132ab7626efb280987b27b66db"
+    },
+    {
+      "path": "deployment/mage_vl4b/optimization_v1/runs/M536-V4-3584-recovery-fit-01/clean_control_W4.npz",
+      "bytes": 3957048,
+      "sha256": "2f48721b0032d4c8031d2eb5db16b7a47b94fdf70fbe8e704f25aaf13264f046"
+    },
+    {
+      "path": "deployment/mage_vl4b/optimization_v1/runs/M536-V4-3584-recovery-fit-01/contribution_gram.npz",
+      "bytes": 16060,
+      "sha256": "471315dbf15ea1e4189bbf5e4ff24359adc83498eed57339b8e24d179b0992d5"
+    },
+    {
+      "path": "deployment/mage_vl4b/optimization_v1/runs/M536-V4-3584-recovery-fit-01/paired_harder_student_W4.npz",
+      "bytes": 3957048,
+      "sha256": "98f58b7f06a23b178e167fe5de2cc053765ac4cf97cbd2dc711ee81a2b84073c"
+    },
+    {
+      "path": "deployment/mage_vl4b/optimization_v1/runs/M536-V4-3584-recovery-fit-01/selection.npz",
+      "bytes": 16630,
+      "sha256": "496bdb727511ef320aad2f403e23ee96e10ec5893d2a2bbb2245d50094906d87"
+    }
+  ]
+}

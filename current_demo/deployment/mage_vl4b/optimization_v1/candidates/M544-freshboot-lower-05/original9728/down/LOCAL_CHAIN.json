@@ -1,0 +1,45 @@
+{
+  "groups": 152,
+  "bits": 4,
+  "descriptor_count": 2,
+  "config_u32": "0x20498",
+  "descriptors": [
+    {
+      "descriptor_index": 0,
+      "module": "down",
+      "row_start": 0,
+      "valid_rows": 2048,
+      "rows_per_shard": 512,
+      "bits": 4,
+      "offset_words": 0,
+      "encoded_u64": "0x120000000000",
+      "record_bytes_per_shard": 2646016,
+      "output_bytes": 131072,
+      "tile_index": 0
+    },
+    {
+      "descriptor_index": 1,
+      "module": "down",
+      "row_start": 2048,
+      "valid_rows": 512,
+      "rows_per_shard": 128,
+      "bits": 4,
+      "offset_words": 165376,
+      "encoded_u64": "0x108000028600",
+      "record_bytes_per_shard": 661504,
+      "output_bytes": 32768,
+      "tile_index": 1
+    }
+  ],
+  "input_bytes": 389152,
+  "output_bytes": 163840,
+  "output_abi": "m455-dense-fp16-block-token-shard-pair-v1",
+  "expected_build_id": 1295267125,
+  "output_words64": 20480,
+  "chain_index": 3001,
+  "layer": 2,
+  "family": "mlp_down",
+  "expected_macros": 796917760,
+  "stage_base_words": 0,
+  "stage_bytes_per_shard": 3307520
+}

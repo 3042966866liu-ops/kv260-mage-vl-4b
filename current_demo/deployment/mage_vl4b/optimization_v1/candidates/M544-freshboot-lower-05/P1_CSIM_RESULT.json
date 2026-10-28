@@ -1,0 +1,47 @@
+{
+  "status": "PASS_M455_ADAPTIVE_FOUR_VECTOR_CSIM_ONLY",
+  "original_rc": 0,
+  "cases": [
+    [
+      "0",
+      "155648"
+    ],
+    [
+      "1",
+      "20480"
+    ],
+    [
+      "2",
+      "147456"
+    ],
+    [
+      "3",
+      "20480"
+    ]
+  ],
+  "expected": [
+    [
+      "0",
+      "155648"
+    ],
+    [
+      "1",
+      "20480"
+    ],
+    [
+      "2",
+      "147456"
+    ],
+    [
+      "3",
+      "20480"
+    ]
+  ],
+  "preparation_sha256": "c0616f9a34087ca6c2ceae9626bca744bb69b96dcd4fcece0d2ac2cd45bff2eb",
+  "log_sha256": "5e5b5b5eba6beafd630176f2f149b74cd2f5b85c45ea0d2d0ef8b27a67d88fab",
+  "vector_result_sha256": "3676b2883736861567ec85e52fb5301039c0de4a88c1c527c497f52096d1b901",
+  "board": false,
+  "full_models": 0,
+  "speedup": false,
+  "task_quality": false
+}

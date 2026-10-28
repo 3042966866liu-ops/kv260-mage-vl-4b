@@ -1,0 +1,3245 @@
+{
+  "source_sha256": "70209a6088874ba15eba208c60bf24333b1cbaf56e612b799ad6163925c559ce",
+  "windows": [
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 737280,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 737280,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 737280,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 737280,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 1433600,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 1433600,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 1433600,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 1433600,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 2170880,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 2170880,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 2170880,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 2170880,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 8790016,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 8790016,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 8790016,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 8790016,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 12099584,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 12099584,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 12099584,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 12099584,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 12836864,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 12836864,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 12836864,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 12836864,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 13533184,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 13533184,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 13533184,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 13533184,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_01/gate_up/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_01/gate_up/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_01/gate_up/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_01/gate_up/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_01/mlp_down/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_01/mlp_down/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_01/mlp_down/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_01/mlp_down/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 24199168,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 24199168,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 24199168,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 24199168,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 24936448,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 24936448,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 24936448,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 24936448,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 25632768,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 25632768,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 25632768,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 25632768,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_02/gate_up/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_02/gate_up/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_02/gate_up/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_02/gate_up/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_02/mlp_down/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_02/mlp_down/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_02/mlp_down/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_02/mlp_down/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 36298752,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 36298752,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 36298752,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 36298752,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 37036032,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 37036032,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 37036032,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 37036032,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 37732352,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 37732352,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 37732352,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 37732352,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 38469632,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 38469632,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 38469632,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 38469632,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 45088768,
+      "effective_bytes": 1751040
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 45088768,
+      "effective_bytes": 1751040
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 45088768,
+      "effective_bytes": 1751040
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 45088768,
+      "effective_bytes": 1751040
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 46841856,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 46841856,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 46841856,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 46841856,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 47579136,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 47579136,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 47579136,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 47579136,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 48275456,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 48275456,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 48275456,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 48275456,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_04/gate_up/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_04/gate_up/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_04/gate_up/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_04/gate_up/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_04/mlp_down/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_04/mlp_down/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_04/mlp_down/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_04/mlp_down/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 58941440,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 58941440,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 58941440,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 58941440,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 59678720,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 59678720,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 59678720,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 59678720,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 60375040,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 60375040,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 60375040,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 60375040,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 61112320,
+      "effective_bytes": 3504128
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 61112320,
+      "effective_bytes": 3504128
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 61112320,
+      "effective_bytes": 3504128
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 61112320,
+      "effective_bytes": 3504128
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 64618496,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 64618496,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 64618496,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 64618496,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 67928064,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 67928064,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 67928064,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 67928064,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 68665344,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 68665344,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 68665344,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 68665344,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 69361664,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 69361664,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 69361664,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 69361664,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 70098944,
+      "effective_bytes": 3504128
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 70098944,
+      "effective_bytes": 3504128
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 70098944,
+      "effective_bytes": 3504128
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 70098944,
+      "effective_bytes": 3504128
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 73605120,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 73605120,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 73605120,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 73605120,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 76914688,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 76914688,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 76914688,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 76914688,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 77651968,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 77651968,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 77651968,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 77651968,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 78348288,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 78348288,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 78348288,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 78348288,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 79085568,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 79085568,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 79085568,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 79085568,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 85704704,
+      "effective_bytes": 1751040
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 85704704,
+      "effective_bytes": 1751040
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 85704704,
+      "effective_bytes": 1751040
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 85704704,
+      "effective_bytes": 1751040
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 87457792,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 87457792,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 87457792,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 87457792,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 88195072,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 88195072,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 88195072,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 88195072,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 88891392,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 88891392,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 88891392,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 88891392,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 89628672,
+      "effective_bytes": 3504128
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 89628672,
+      "effective_bytes": 3504128
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 89628672,
+      "effective_bytes": 3504128
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 89628672,
+      "effective_bytes": 3504128
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 93134848,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 93134848,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 93134848,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 93134848,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 96444416,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 96444416,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 96444416,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 96444416,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 97181696,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 97181696,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 97181696,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 97181696,
+      "effective_bytes": 696320
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 97878016,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 97878016,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 97878016,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 97878016,
+      "effective_bytes": 737280
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 98615296,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 98615296,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 98615296,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 98615296,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 105234432,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 105234432,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 105234432,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 105234432,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 108544000,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 108544000,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 108544000,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 108544000,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 110632960,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 110632960,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 110632960,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 110632960,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 112025600,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 112025600,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 112025600,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 112025600,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 118644736,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 118644736,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 118644736,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 118644736,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 121954304,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 121954304,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 121954304,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 121954304,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 124043264,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 124043264,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 124043264,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 124043264,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 125435904,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 125435904,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 125435904,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 125435904,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 132055040,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 132055040,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 132055040,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 132055040,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 135364608,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 135364608,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 135364608,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 135364608,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 137453568,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 137453568,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 137453568,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 137453568,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_12/gate_up/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_12/gate_up/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_12/gate_up/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_12/gate_up/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_12/mlp_down/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_12/mlp_down/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_12/mlp_down/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_12/mlp_down/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 148774912,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 148774912,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 148774912,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 148774912,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 150863872,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 150863872,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 150863872,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 150863872,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 152256512,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 152256512,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 152256512,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 152256512,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 158875648,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 158875648,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 158875648,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 158875648,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 162185216,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 162185216,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 162185216,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 162185216,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 164274176,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 164274176,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 164274176,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 164274176,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_14/gate_up/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_14/gate_up/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_14/gate_up/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_14/gate_up/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_14/mlp_down/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_14/mlp_down/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_14/mlp_down/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_14/mlp_down/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 175595520,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 175595520,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 175595520,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 175595520,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 177684480,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 177684480,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 177684480,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 177684480,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_15/gate_up/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_15/gate_up/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_15/gate_up/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_15/gate_up/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_15/mlp_down/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_15/mlp_down/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_15/mlp_down/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_15/mlp_down/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 189005824,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 189005824,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 189005824,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 189005824,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 191094784,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 191094784,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 191094784,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 191094784,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_16/gate_up/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_16/gate_up/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_16/gate_up/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_16/gate_up/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_16/mlp_down/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_16/mlp_down/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_16/mlp_down/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_16/mlp_down/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 202416128,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 202416128,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 202416128,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 202416128,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 204505088,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 204505088,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 204505088,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 204505088,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 205897728,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 205897728,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 205897728,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 205897728,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 212516864,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 212516864,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 212516864,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 212516864,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 215826432,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 215826432,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 215826432,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 215826432,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 217915392,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 217915392,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 217915392,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 217915392,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 219308032,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 219308032,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 219308032,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 219308032,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 225927168,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 225927168,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 225927168,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 225927168,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 229236736,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 229236736,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 229236736,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 229236736,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 231325696,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 231325696,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 231325696,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 231325696,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 232718336,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 232718336,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 232718336,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 232718336,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 239337472,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 239337472,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 239337472,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 239337472,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 242647040,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 242647040,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 242647040,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 242647040,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 244736000,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 244736000,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 244736000,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 244736000,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_20/gate_up/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_20/gate_up/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_20/gate_up/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_20/gate_up/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_20/mlp_down/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_20/mlp_down/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_20/mlp_down/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_20/mlp_down/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 256057344,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 256057344,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 256057344,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 256057344,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 258146304,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 258146304,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 258146304,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 258146304,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_21/gate_up/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_21/gate_up/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_21/gate_up/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_21/gate_up/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_21/mlp_down/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_21/mlp_down/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_21/mlp_down/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_21/mlp_down/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 269467648,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 269467648,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 269467648,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 269467648,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 271556608,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 271556608,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 271556608,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 271556608,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_22/gate_up/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_22/gate_up/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_22/gate_up/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_22/gate_up/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_22/mlp_down/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_22/mlp_down/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_22/mlp_down/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_22/mlp_down/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 282877952,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 282877952,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 282877952,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 282877952,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 284966912,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 284966912,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 284966912,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 284966912,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_23/gate_up/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_23/gate_up/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_23/gate_up/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_23/gate_up/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_23/mlp_down/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_23/mlp_down/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_23/mlp_down/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_23/mlp_down/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 296288256,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 296288256,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 296288256,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 296288256,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 298377216,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 298377216,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 298377216,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 298377216,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_24/gate_up/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_24/gate_up/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_24/gate_up/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_24/gate_up/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_24/mlp_down/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_24/mlp_down/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_24/mlp_down/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_24/mlp_down/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 309698560,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 309698560,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 309698560,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 309698560,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 311787520,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 311787520,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 311787520,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 311787520,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 313180160,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 313180160,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 313180160,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 313180160,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 319799296,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 319799296,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 319799296,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 319799296,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 323108864,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 323108864,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 323108864,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 323108864,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 325197824,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 325197824,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 325197824,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 325197824,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_26/gate_up/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_26/gate_up/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_26/gate_up/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_26/gate_up/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_26/mlp_down/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_26/mlp_down/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_26/mlp_down/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_26/mlp_down/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 336519168,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 336519168,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 336519168,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 336519168,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 338608128,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 338608128,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 338608128,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 338608128,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_27/gate_up/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_27/gate_up/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_27/gate_up/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_27/gate_up/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_27/mlp_down/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_27/mlp_down/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_27/mlp_down/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_27/mlp_down/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 349929472,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 349929472,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 349929472,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 349929472,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 352018432,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 352018432,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 352018432,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 352018432,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_28/gate_up/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_28/gate_up/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_28/gate_up/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_28/gate_up/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_28/mlp_down/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_28/mlp_down/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_28/mlp_down/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_28/mlp_down/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 363339776,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 363339776,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 363339776,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 363339776,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 365428736,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 365428736,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 365428736,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 365428736,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_29/gate_up/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_29/gate_up/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_29/gate_up/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_29/gate_up/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_29/mlp_down/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_29/mlp_down/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_29/mlp_down/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_29/mlp_down/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 376750080,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 376750080,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 376750080,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 376750080,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 378839040,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 378839040,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 378839040,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 378839040,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 380231680,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 380231680,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 380231680,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 380231680,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 386850816,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 386850816,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 386850816,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 386850816,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 390160384,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 390160384,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 390160384,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 390160384,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 392249344,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 392249344,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 392249344,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 392249344,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_31/gate_up/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_31/gate_up/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_31/gate_up/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_31/gate_up/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_31/mlp_down/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_31/mlp_down/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_31/mlp_down/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_31/mlp_down/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 403570688,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 403570688,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 403570688,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 403570688,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 405659648,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 405659648,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 405659648,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 405659648,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_32/gate_up/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_32/gate_up/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_32/gate_up/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_32/gate_up/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_32/mlp_down/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_32/mlp_down/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_32/mlp_down/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_32/mlp_down/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 416980992,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 416980992,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 416980992,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 416980992,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 419069952,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 419069952,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 419069952,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 419069952,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 420462592,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 420462592,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 420462592,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 420462592,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 427081728,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 427081728,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 427081728,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 427081728,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 430391296,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 430391296,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 430391296,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 430391296,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 432480256,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 432480256,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 432480256,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 432480256,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_34/gate_up/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_34/gate_up/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_34/gate_up/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_34/gate_up/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 6266880
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_34/mlp_down/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_34/mlp_down/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_34/mlp_down/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/dev/shm/m523_M455_twentytwo_local_package322/crop/language_34/mlp_down/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 3133440
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 443801600,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 443801600,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 443801600,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 443801600,
+      "effective_bytes": 2088960
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 445890560,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 445890560,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 445890560,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 445890560,
+      "effective_bytes": 1392640
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 447283200,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 447283200,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 447283200,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 447283200,
+      "effective_bytes": 6617088
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights0.bin",
+      "offset": 453902336,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights1.bin",
+      "offset": 453902336,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights2.bin",
+      "offset": 453902336,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/language_fourport/weights3.bin",
+      "offset": 453902336,
+      "effective_bytes": 3307520
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/lmhead_fourport/weights0.bin",
+      "offset": 0,
+      "effective_bytes": 6963200
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/lmhead_fourport/weights1.bin",
+      "offset": 0,
+      "effective_bytes": 6963200
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/lmhead_fourport/weights2.bin",
+      "offset": 0,
+      "effective_bytes": 6963200
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/lmhead_fourport/weights3.bin",
+      "offset": 0,
+      "effective_bytes": 6963200
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/lmhead_fourport/weights0.bin",
+      "offset": 6963200,
+      "effective_bytes": 6963200
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/lmhead_fourport/weights1.bin",
+      "offset": 6963200,
+      "effective_bytes": 6963200
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/lmhead_fourport/weights2.bin",
+      "offset": 6963200,
+      "effective_bytes": 6963200
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/lmhead_fourport/weights3.bin",
+      "offset": 6963200,
+      "effective_bytes": 6963200
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/lmhead_fourport/weights0.bin",
+      "offset": 13926400,
+      "effective_bytes": 6963200
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/lmhead_fourport/weights1.bin",
+      "offset": 13926400,
+      "effective_bytes": 6963200
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/lmhead_fourport/weights2.bin",
+      "offset": 13926400,
+      "effective_bytes": 6963200
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/lmhead_fourport/weights3.bin",
+      "offset": 13926400,
+      "effective_bytes": 6963200
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/lmhead_fourport/weights0.bin",
+      "offset": 20889600,
+      "effective_bytes": 6963200
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/lmhead_fourport/weights1.bin",
+      "offset": 20889600,
+      "effective_bytes": 6963200
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/lmhead_fourport/weights2.bin",
+      "offset": 20889600,
+      "effective_bytes": 6963200
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/lmhead_fourport/weights3.bin",
+      "offset": 20889600,
+      "effective_bytes": 6963200
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/lmhead_fourport/weights0.bin",
+      "offset": 27852800,
+      "effective_bytes": 6963200
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/lmhead_fourport/weights1.bin",
+      "offset": 27852800,
+      "effective_bytes": 6963200
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/lmhead_fourport/weights2.bin",
+      "offset": 27852800,
+      "effective_bytes": 6963200
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/lmhead_fourport/weights3.bin",
+      "offset": 27852800,
+      "effective_bytes": 6963200
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/lmhead_fourport/weights0.bin",
+      "offset": 34816000,
+      "effective_bytes": 6963200
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/lmhead_fourport/weights1.bin",
+      "offset": 34816000,
+      "effective_bytes": 6963200
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/lmhead_fourport/weights2.bin",
+      "offset": 34816000,
+      "effective_bytes": 6963200
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/lmhead_fourport/weights3.bin",
+      "offset": 34816000,
+      "effective_bytes": 6963200
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/lmhead_fourport/weights0.bin",
+      "offset": 41779200,
+      "effective_bytes": 6963200
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/lmhead_fourport/weights1.bin",
+      "offset": 41779200,
+      "effective_bytes": 6963200
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/lmhead_fourport/weights2.bin",
+      "offset": 41779200,
+      "effective_bytes": 6963200
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/lmhead_fourport/weights3.bin",
+      "offset": 41779200,
+      "effective_bytes": 6963200
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/lmhead_fourport/weights0.bin",
+      "offset": 48742400,
+      "effective_bytes": 2915840
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/lmhead_fourport/weights1.bin",
+      "offset": 48742400,
+      "effective_bytes": 2915840
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/lmhead_fourport/weights2.bin",
+      "offset": 48742400,
+      "effective_bytes": 2915840
+    },
+    {
+      "path": "/home/ubuntu/tellme_release_install_20260926/external_assets/weights/lmhead_fourport/weights3.bin",
+      "offset": 48742400,
+      "effective_bytes": 2915840
+    }
+  ]
+}

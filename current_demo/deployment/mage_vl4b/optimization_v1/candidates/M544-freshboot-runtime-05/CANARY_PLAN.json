@@ -1,0 +1,12 @@
+{
+  "name": "candidate_build_only",
+  "packet": "build_packet.bin",
+  "golden": "build_golden.bin",
+  "config": "0x10201",
+  "weights": [
+    "zero_weights.bin",
+    "zero_weights.bin",
+    "zero_weights.bin",
+    "zero_weights.bin"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "scale": 1.0,
+  "rank": 8,
+  "full_vocab": 151936,
+  "arm": "harder_student",
+  "inference_extra_MACs": 1235968,
+  "body_unmodified": true,
+  "no_token_specific_bias": true,
+  "source_sha256": "ddf1b029db4fab6c03061c7eb600a071732a9792d0dd23d89afb80f71f2ac750",
+  "protocol_sha256": "bb288ce1b20431b2cd0e62f69e6d8122f102dee1e0c566a26d6d39fb81b1bd32",
+  "capture_sha256": "7608355b660db1476c1de61c8f02f503ea518a54c636f98d3524e8019ec3ba05",
+  "steps": 400,
+  "training_scope": "Demonstration-domain head counterexample replay. No source identity is available to inference.",
+  "A": {
+    "path": "A.npy",
+    "sha256": "0c3590f540addc1be8eab42d743957a230b18365437708bf4525962e33cd9083",
+    "bytes": 82048
+  },
+  "B": {
+    "path": "B.npy",
+    "sha256": "8431a91e54ed02a5f8e43f1e131d29d2369fa7652eaefd6350b126981646010e",
+    "bytes": 4862080
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "status": "PASS_M455_OFFLINE_NUMERICAL_AND_HLS_ADMISSION",
+  "checks": {
+    "original_rc": true,
+    "full_real_and_max_cases": true,
+    "boundary_cases": true,
+    "numeric_marker": true,
+    "csim_completion": true,
+    "no_numerical_error": true,
+    "same_clock": true,
+    "resources_fit": true,
+    "same_four_MAC_lanes_II1": true
+  },
+  "original_rc": 0,
+  "resources": {
+    "BRAM_18K": 188,
+    "DSP": 1184,
+    "FF": 92094,
+    "LUT": 111232,
+    "URAM": 64
+  },
+  "capacity": {
+    "BRAM_18K": 288,
+    "DSP": 1248,
+    "FF": 234240,
+    "LUT": 117120,
+    "URAM": 64
+  },
+  "actual_MAC_loops": [
+    {
+      "path": "D:\\CodexHome\\visualizations\\2026\\10\\11\\01a12a98-44b4-7503-9ea1-46a7b5bcdc3f\\native_hls\\M455-dense_output-02\\hls\\syn\\report\\m443_compute_1_Pipeline_VITIS_LOOP_114_7_csynth.xml",
+      "sha256": "0631952b56ef8345a73e33544dce5ebbb445304b851497ac08de8b53fb784f07",
+      "trip": 64,
+      "II": 1,
+      "depth": 34,
+      "DSP": 288
+    },
+    {
+      "path": "D:\\CodexHome\\visualizations\\2026\\10\\11\\01a12a98-44b4-7503-9ea1-46a7b5bcdc3f\\native_hls\\M455-dense_output-02\\hls\\syn\\report\\m443_compute_2_Pipeline_VITIS_LOOP_114_7_csynth.xml",
+      "sha256": "447b575c251949d2813d4b358f7ec2e1c2ff7acfbd8c9efaf6c25b1a25765a10",
+      "trip": 64,
+      "II": 1,
+      "depth": 34,
+      "DSP": 288
+    },
+    {
+      "path": "D:\\CodexHome\\visualizations\\2026\\10\\11\\01a12a98-44b4-7503-9ea1-46a7b5bcdc3f\\native_hls\\M455-dense_output-02\\hls\\syn\\report\\m443_compute_3_Pipeline_VITIS_LOOP_114_7_csynth.xml",
+      "sha256": "a466948b0eaef993d38e713d3acf53a05593a3a743549919c75de473423f7079",
+      "trip": 64,
+      "II": 1,
+      "depth": 34,
+      "DSP": 288
+    },
+    {
+      "path": "D:\\CodexHome\\visualizations\\2026\\10\\11\\01a12a98-44b4-7503-9ea1-46a7b5bcdc3f\\native_hls\\M455-dense_output-02\\hls\\syn\\report\\m443_compute_Pipeline_VITIS_LOOP_114_7_csynth.xml",
+      "sha256": "3242d2780b936a74fd6d89f36c5a57b99248a5c254b4400cdf606b3a0b9919cf",
+      "trip": 64,
+      "II": 1,
+      "depth": 34,
+      "DSP": 288
+    }
+  ],
+  "cases": [
+    [
+      "0",
+      "155648"
+    ],
+    [
+      "1",
+      "20480"
+    ],
+    [
+      "2",
+      "20480"
+    ],
+    [
+      "3",
+      "163840"
+    ],
+    [
+      "4",
+      "163840"
+    ]
+  ],
+  "expected_cases": [
+    [
+      "0",
+      "155648"
+    ],
+    [
+      "1",
+      "20480"
+    ],
+    [
+      "2",
+      "20480"
+    ],
+    [
+      "3",
+      "163840"
+    ],
+    [
+      "4",
+      "163840"
+    ]
+  ],
+  "output_words": 524288,
+  "console_sha256": "2799c7a96370a14c98c7b0fb79ec4b8e03b0a42308d0b6eb0a81704ba0ee5ab6",
+  "CSim_log_sha256": "0f9ee0a831025d787b167ee67e48c59f4a0c3b98902cf6b31656fe27887f8c8f",
+  "top_report_sha256": "9d424002f7d318949ef91cbd43a448465fdaedeaf08e3f910b977b58415bc83c",
+  "elapsed_s": 1000.5939999999991,
+  "finite_CSim_queues": false,
+  "RTL": false,
+  "routed": false,
+  "board": false,
+  "performance": false,
+  "next_step": "Prepare bounded RTL max occupancy/backpressure/TLAST/done/return/timeout gates; no shell or board yet."
+}

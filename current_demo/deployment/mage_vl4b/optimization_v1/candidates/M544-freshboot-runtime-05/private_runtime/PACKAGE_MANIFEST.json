@@ -1,0 +1,142 @@
+{
+  "schema": "m455-private-runtime-recursive-component-v1",
+  "files": [
+    {
+      "path": "board_runtime.py",
+      "source": "deployment/mage_vl4b/optimization_v1/candidates/M455-runtime-host-02/board_runtime.py",
+      "sha256": "43ca63e6d3906495f2b7e2d2f80418f4acf5c34c052ed8aea5639008aa4b4e2f",
+      "bytes": 22874
+    },
+    {
+      "path": "contract_runtime.py",
+      "source": "deployment/mage_vl4b/optimization_v1/candidates/M455-runtime-host-02/contract_runtime.py",
+      "sha256": "4728cfaa34f4efb2111a34a3107a1f87db1774e491c3bd874c5453aff5ae42c1",
+      "bytes": 5717
+    },
+    {
+      "path": "m230_prefill_runtime.py",
+      "source": "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m230_prefill_runtime.py",
+      "sha256": "defbcff1cc36300fff84481f2e9eba7a06174941b568e34b2faa7885efc14df4",
+      "bytes": 9341
+    },
+    {
+      "path": "m231_prefill_runtime.py",
+      "source": "deployment/mage_vl4b/optimization_v1/candidates/M455-runtime-host-02/m231_prefill_runtime.py",
+      "sha256": "73cd883604066d34aa8349a8618ed94893d4be6659c3f8fe752788e9d6ca5c21",
+      "bytes": 9906
+    },
+    {
+      "path": "m236_prefill_runtime.py",
+      "source": "deployment/mage_vl4b/optimization_v1/candidates/M455-runtime-host-02/m236_prefill_runtime.py",
+      "sha256": "c5256f64a227c145466ccd86ff90aa3e593fd00fb995c50b00026acef8437961",
+      "bytes": 12312
+    },
+    {
+      "path": "m238_prefill_runtime.py",
+      "source": "deployment/mage_vl4b/optimization_v1/candidates/M455-runtime-host-02/m238_prefill_runtime.py",
+      "sha256": "daf30c982c276b90ac776178ad258e536925dce52de7ab26b06a9473ff9a9d9a",
+      "bytes": 8974
+    },
+    {
+      "path": "m455_dense_output.py",
+      "source": "deployment/mage_vl4b/optimization_v1/candidates/M455-runtime-host-02/m455_dense_output.py",
+      "sha256": "a2428d9106decc88187d1060b6383f7c75cc8296e4e142f2f4c30db355d74e55",
+      "bytes": 3468
+    },
+    {
+      "path": "m455_output_parser02.py",
+      "source": "deployment/mage_vl4b/optimization_v1/candidates/M455-runtime-host-02/m455_output_parser02.py",
+      "sha256": "ceb2ba1fe6419d9a2a25d6bc80c506c87cdf11205c5722ecec021e2b0a2688bc",
+      "bytes": 5690
+    },
+    {
+      "path": "m455_runtime_abi01.py",
+      "source": "deployment/mage_vl4b/optimization_v1/candidates/M455-runtime-host-02/m455_runtime_abi01.py",
+      "sha256": "9ae4832a7ed63472897cf551815a6b47bb1fa8db73450b842e439929dd3b432c",
+      "bytes": 1612
+    },
+    {
+      "path": "reserved_ddr_pool.py",
+      "source": "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m175_m120_fixed_text_candidate/runtime/support/reserved_ddr_pool.py",
+      "sha256": "e933f9818e888ed7c924b7597adadd42f7254b942f65c645b85f17fc40f33013",
+      "bytes": 5894
+    }
+  ],
+  "file_count": 10,
+  "total_bytes": 85788,
+  "recursive_edges": [
+    {
+      "source": "m455_runtime_abi01",
+      "dependency": "m455_dense_output"
+    },
+    {
+      "source": "m238_prefill_runtime",
+      "dependency": "board_runtime"
+    },
+    {
+      "source": "m238_prefill_runtime",
+      "dependency": "m231_prefill_runtime"
+    },
+    {
+      "source": "m238_prefill_runtime",
+      "dependency": "m236_prefill_runtime"
+    },
+    {
+      "source": "m236_prefill_runtime",
+      "dependency": "board_runtime"
+    },
+    {
+      "source": "m236_prefill_runtime",
+      "dependency": "m231_prefill_runtime"
+    },
+    {
+      "source": "m236_prefill_runtime",
+      "dependency": "m455_output_parser02"
+    },
+    {
+      "source": "m231_prefill_runtime",
+      "dependency": "board_runtime"
+    },
+    {
+      "source": "m231_prefill_runtime",
+      "dependency": "m230_prefill_runtime"
+    },
+    {
+      "source": "m231_prefill_runtime",
+      "dependency": "m455_output_parser02"
+    },
+    {
+      "source": "m230_prefill_runtime",
+      "dependency": "board_runtime"
+    },
+    {
+      "source": "board_runtime",
+      "dependency": "contract_runtime"
+    },
+    {
+      "source": "board_runtime",
+      "dependency": "reserved_ddr_pool"
+    },
+    {
+      "source": "contract_runtime",
+      "dependency": "m455_dense_output"
+    },
+    {
+      "source": "contract_runtime",
+      "dependency": "m455_runtime_abi01"
+    }
+  ],
+  "missing": 0,
+  "allowed_external_modules": [
+    "numpy",
+    "pynq"
+  ],
+  "python_syntax_target": "3.10",
+  "build_id": "0x4D343535",
+  "abi": "m455-dense-fp16-block-token-shard-pair-v1",
+  "runtime_component_only": true,
+  "complete_board_package": false,
+  "board": false,
+  "integration_result_sha256": "90692a3c059d88360851598eb7ec5924ba7f3dc4accd091964b9b464fd2c26de",
+  "original_closure_sha256": "c2f625f6c4b4097fb143f714ff8626fac160aaf02d251da623cb88d05768a457"
+}

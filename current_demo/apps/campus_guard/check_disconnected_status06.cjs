@@ -1,0 +1,10 @@
+// Execute actual render function with inert DOM nodes; no browser, board or predictions.
+const fs=require('fs'),vm=require('vm'),assert=require('assert'),path=require('path');
+const s=fs.readFileSync(path.join(__dirname,'static/playback_live.js'),'utf8');const start=s.indexOf('function render(){'),end=s.indexOf('\nfunction samples()',start);assert(start>0&&end>start);
+function run(worker,phase,prepared=false,positive=null){const nodes={};const el=()=>({hidden:false,textContent:'',innerHTML:'',className:'',classList:{toggle(){}},querySelector(){return this.child||(this.child={textContent:''})}});const c={state:{worker},phase,upload:{id:'video',board_prepared:prepared},positive,uploading:false,scanning:false,scanStarted:false,inputNotice:el(),html:x=>String(x),$:id=>nodes[id]||(nodes[id]=el())};c.ready=()=>!!worker?.ready&&prepared;c.status=(t,k)=>{c.statusText=t};vm.createContext(c);vm.runInContext(s.slice(start,end)+'\nrender()',c);return{c,nodes};}
+for(const phase of ['preparing','waiting']){const {c,nodes}=run(null,phase);assert(c.inputNotice.textContent.includes('未连接'));assert(!/正在将|自动播放|初始化/.test(c.statusText));assert.equal(nodes['start-button'].textContent,'等待板卡连接');assert(nodes['start-button'].disabled);}
+{const{c}=run({warm:false,ready:false},'preparing');assert(c.statusText.includes('初始化'));assert(c.statusText.includes('尚未传输'));}
+{const{c}=run({warm:true,ready:false},'preparing');assert.equal(c.statusText,'正在将画面准备到板端');}
+{const{nodes}=run({warm:true,ready:true},'ready',true);assert(!nodes['start-button'].disabled);assert.equal(nodes['start-button'].textContent,'播放视频');}
+{const{nodes}=run({warm:true,ready:true},'clear',true);assert(nodes['recognition-status'].hidden);assert(nodes['knife-warning'].hidden);assert(nodes['alarm-history'].hidden);}
+const result={status:'PASS_ACTUAL_RENDER_DISCONNECTED_AND_LOADING_STATES',checks:6,FPGA_runs:0,mocked_DOM_only:true,no_answer_or_alarm_timer:true};fs.writeFileSync(path.join(__dirname,'../../deployment/mage_vl4b/optimization_v1/runs/M544-disconnected-status-UI-06/RESULT.json'),JSON.stringify(result,null,2));console.log(result);

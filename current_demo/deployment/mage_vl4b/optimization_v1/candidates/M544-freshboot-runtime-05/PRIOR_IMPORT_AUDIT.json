@@ -1,0 +1,159 @@
+{
+  "status": "PASS_M523_B0_INSTALLED_READ_ONLY_IMPORT_INPUT_AUDIT",
+  "original_rc": 0,
+  "manifest_sha256": "6a3df4b99daee9110b90b4a6d548c178c05d89f40c2f9488bc74de4c970890a2",
+  "errors": [],
+  "Overlay": 0,
+  "DMA": 0,
+  "model_constructions": 0,
+  "model_forwards": 0,
+  "fpga_transactions": 0,
+  "source_checks": [
+    "deployment/mage_vl4b/m175_m120_fixed_text_candidate/runtime/support/reserved_ddr_pool.py",
+    "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m277_fixed_window_gate.py",
+    "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m276_prompt_contract.py",
+    "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m273_latest_multiscale_contract.py",
+    "tmp/m223_realtime/m223_realtime_delta/video_server.py",
+    "deployment/mage_vl4b/m175_m120_fixed_text_candidate/runtime/board_runtime.py",
+    "deployment/mage_vl4b/m175_m120_fixed_text_candidate/runtime/contract_runtime.py",
+    "deployment/mage_vl4b/m181_m120_video_board_candidate/video_request.py",
+    "deployment/mage_vl4b/m181_m120_video_board_candidate/board_preprocess.py",
+    "deployment/mage_vl4b/m181_m120_video_board_candidate/video_prompt.py",
+    "deployment/mage_vl4b/m181_m120_video_board_candidate/video_language_runtime.py",
+    "tmp/m223_realtime/m223_realtime_delta/m207_ps_vision_runtime.py",
+    "tmp/m223_realtime/m223_realtime_delta/m206_ps_vision_runtime.py",
+    "tmp/m227_runtime_base/m227_runtime_base_patch/ps_vision_runtime.py",
+    "tmp/m223_realtime/m223_realtime_delta/live_stream_core.py",
+    "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m276_video_runtime.py",
+    "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m273_latest_vision_runtime.py",
+    "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m261_budgeted_w4_runtime.py",
+    "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m260_cached_w4_runtime.py",
+    "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m259_variable_vision_runtime.py",
+    "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m258_vectorized_w4_runtime.py",
+    "tmp/m223_realtime/m223_realtime_delta/m222_vectorized_w4_runtime.py",
+    "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m246_knife_binary.py",
+    "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m259_video_runtime.py",
+    "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/variable_video_contract.py",
+    "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/keyframe_reducer.py",
+    "deployment/mage_vl4b/m243_web_prefill_board_candidate/m243_video_server.py",
+    "deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m241_video_language_runtime.py",
+    "deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m230_video_language_runtime.py",
+    "deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m238_prefill_runtime.py",
+    "deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m236_prefill_runtime.py",
+    "deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m231_prefill_runtime.py",
+    "deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m230_prefill_runtime.py",
+    "tmp/m223_realtime/m223_realtime_delta/m222_video_server.py",
+    "tmp/m223_realtime/m223_realtime_delta/m222_live_stream_core.py",
+    "deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m276_m254_video_server.py",
+    "deployment/mage_vl4b/m254_dual_path_web_candidate/m254_video_server.py",
+    "deployment/mage_vl4b/m254_dual_path_web_candidate/m254_dual_path_core.py",
+    "deployment/mage_vl4b/m254_dual_path_web_candidate/m253_board_latest_stream.py",
+    "deployment/mage_vl4b/m254_dual_path_web_candidate/latest_fast_stream.py",
+    "deployment/mage_vl4b/m254_dual_path_web_candidate/fast_frame_pipeline.py",
+    "deployment/mage_vl4b/m254_dual_path_web_candidate/temporal_action_adapter.py",
+    "deployment/mage_vl4b/m254_dual_path_web_candidate/immediate_safety_monitor.py",
+    "deployment/mage_vl4b/m254_dual_path_web_candidate/fast_safety_monitor.py",
+    "deployment/mage_vl4b/m254_dual_path_web_candidate/knife_alarm.py",
+    "scripts/preflight.py",
+    "configs/deployment.example.json",
+    "deployment/mage_vl4b/m175_m120_fixed_text_candidate/PACKAGE_MANIFEST.json",
+    "deployment/mage_vl4b/m175_m120_fixed_text_candidate/SOURCE_MANIFEST.json",
+    "deployment/mage_vl4b/m175_m120_fixed_text_candidate/auxiliary/M77_TEXT_AUX_MANIFEST.json",
+    "deployment/mage_vl4b/m175_m120_fixed_text_candidate/contracts/M126_LANGUAGE_RUNTIME_CONTRACT_RESULT.json",
+    "deployment/mage_vl4b/m175_m120_fixed_text_candidate/contracts/M126_LMHEAD_RUNTIME_CONTRACT_RESULT.json",
+    "deployment/mage_vl4b/m181_m120_video_board_candidate/PACKAGE_MANIFEST.json",
+    "deployment/mage_vl4b/m181_m120_video_board_candidate/auxiliary/M90_VISION_RAW_AUX_MANIFEST.json",
+    "deployment/mage_vl4b/m181_m120_video_board_candidate/ps_vision_payload/PAYLOAD_MANIFEST.json",
+    "deployment/mage_vl4b/m181_m120_video_board_candidate/ps_vision_payload/config.json",
+    "deployment/mage_vl4b/m181_m120_video_board_candidate/ps_vision_payload/configuration_mage_vl.py",
+    "deployment/mage_vl4b/m181_m120_video_board_candidate/ps_vision_payload/modeling_mage_vl.py",
+    "deployment/mage_vl4b/m181_m120_video_board_candidate/ps_vision_payload/vision_bf16.safetensors",
+    "deployment/mage_vl4b/m181_m120_video_board_candidate/text_auxiliary/M151_M120_TEXT_AUX_MANIFEST.json",
+    "deployment/mage_vl4b/m181_m120_video_board_candidate/text_auxiliary/tokenizer/tokenizer.json",
+    "deployment/mage_vl4b/m181_m120_video_board_candidate/text_runtime/M181_TEXT_RUNTIME_SLICE_MANIFEST.json",
+    "deployment/mage_vl4b/m181_m120_video_board_candidate/vision_layout/SIXPORT_LAYOUT_MANIFEST.json",
+    "external_assets/weights/language_fourport/SIXPORT_LAYOUT_MANIFEST.json",
+    "external_assets/weights/lmhead_fourport/SIXPORT_LAYOUT_MANIFEST.json"
+  ],
+  "imports": {
+    "numpy": {
+      "path": "/usr/local/share/pynq-venv/lib/python3.10/site-packages/numpy/__init__.py",
+      "version": "1.26.4"
+    },
+    "pynq": {
+      "path": "/usr/local/share/pynq-venv/lib/python3.10/site-packages/pynq/__init__.py",
+      "version": "3.0.1"
+    },
+    "torch": {
+      "path": "/home/ubuntu/tellme_release_install_20260926/runtime_site/torch/__init__.py",
+      "version": "2.12.1+cpu",
+      "init_sha256": "d9dfff4b75d46e4c75572200a3466b70231d05b0318e38ac1bd121789165fb49"
+    },
+    "transformers": {
+      "path": "/home/ubuntu/tellme_release_install_20260926/runtime_site/transformers/__init__.py",
+      "version": "5.7.0",
+      "init_sha256": "f9540fe5a11e5c8d8c23d932de6fbb78273b993f356c0223b6f544588b8f9788"
+    },
+    "tokenizers": {
+      "path": "/home/ubuntu/tellme_release_install_20260926/runtime_site/tokenizers/__init__.py",
+      "version": "0.22.1",
+      "init_sha256": "644e596a052fa1b05272b1c141d1286e1c78c2a3346ecabd17d68b62404d8d84"
+    }
+  },
+  "hardware_methods_called": false,
+  "external_modules_imported_only": true,
+  "performance_pass": false,
+  "pid": 10680,
+  "boot_sha256_before": "7319e263ee10d7914e1769d635c204611d5627f72ef5193d7530c65882c11b7d",
+  "cmdline_before": " root=LABEL=writable rootwait earlycon console=ttyPS1,115200 console=tty1 clk_ignore_unused uio_pdrv_genirq.of_id=generic-uio xilinx_tsn_ep.st_pcp=4 cma=800M \n",
+  "SiglipMLP": {
+    "path": "/home/ubuntu/tellme_release_install_20260926/runtime_site/transformers/models/siglip/modeling_siglip.py",
+    "file_sha256": "047ee2c313c8fc7b6b8b2bd171efd26ee4d1cf3c073ab6ed0cc199b494fc0020",
+    "forward_source": "    def forward(self, hidden_states: torch.Tensor) -> torch.Tensor:\n        hidden_states = self.fc1(hidden_states)\n        hidden_states = self.activation_fn(hidden_states)\n        hidden_states = self.fc2(hidden_states)\n        return hidden_states\n"
+  },
+  "runtime_classes": {
+    "video": "M276ShortPromptBinaryRuntime",
+    "vision": "M273LatestPSVisionRuntime",
+    "language": "M241VideoLanguageModel",
+    "scheduler": "M238PrefillRuntime"
+  },
+  "input_preprocess": {
+    "pixel_values": {
+      "shape": [
+        392,
+        768
+      ],
+      "dtype": "float32",
+      "npy_sha256": "af8eea5b13bfbb9bcebd24778a1fd53e57eebc5e3d50f38089455b2f0bc776d7"
+    },
+    "image_grid_thw": {
+      "shape": [
+        2,
+        3
+      ],
+      "dtype": "int64",
+      "npy_sha256": "d021868a0c97d3d07507ad1a57e571261d53504234c73aaff849d4ff88804c44"
+    },
+    "patch_positions": {
+      "shape": [
+        392,
+        3
+      ],
+      "dtype": "int64",
+      "npy_sha256": "a60592a5f29d9002c23486cfae4dc7ad3e829ff7d97ac2409b90277270e02e5c"
+    },
+    "merged_visual_tokens": {
+      "shape": [],
+      "dtype": "int64",
+      "npy_sha256": "cda58ec974fd2b9d6a747ccc45a194a37354bc8583edfaf8a3f0e919f58f6a60"
+    },
+    "view_count": {
+      "shape": [],
+      "dtype": "int64",
+      "npy_sha256": "a01d9bb28d8cad54c27175caca6d3fe244274ee13430c828148cef8f32b22766"
+    }
+  },
+  "boot_sha256_after": "7319e263ee10d7914e1769d635c204611d5627f72ef5193d7530c65882c11b7d",
+  "cmdline_after": " root=LABEL=writable rootwait earlycon console=ttyPS1,115200 console=tty1 clk_ignore_unused uio_pdrv_genirq.of_id=generic-uio xilinx_tsn_ep.st_pcp=4 cma=800M \n",
+  "protected_unchanged": true
+}

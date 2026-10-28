@@ -1,0 +1,22 @@
+{
+  "build": "M455 / M542修复头 · 10V18L · M544",
+  "package_manifest_sha256": "251160c48069770fdfb649a59ac5826b186e30e5f1405ec3eb9a2bb51f4e01d9",
+  "model_reference_manifest_sha256": "bcd19065ba90c06965961547c568d387d7e70bae1ed5e5385207e658d68faa89",
+  "parent_audit": "deployment/mage_vl4b/optimization_v1/runs/M543-repaired-campus-board-audit-02/RESULT.json",
+  "parent_audit_sha256": "6f84f3d6ae356cb081e6ad98d04c88a4c03fcbfb97eeda61b1797c3ef42ef022",
+  "canonical_inputs": {
+    "cc9598b288f4f4a0d0edb0d91364dffdbcb05d7a3b715fc4c18de69e6f28b3d8": {
+      "frame": "deployment/mage_vl4b/optimization_v1/candidates/M543-repaired-campus-fixed-board-02/demo/campus03_f00048.npy",
+      "frame_sha256": "b1d57044c52660c5cb1b0df69f15250cc4d4a57673c55e9085ee0dd86650f0aa",
+      "timestamp_ms": 2000.0
+    },
+    "ddad7e6ef47dff36a340b74fe269ea792731acbfaca738bee494d97d143d8f87": {
+      "frame": "deployment/mage_vl4b/optimization_v1/candidates/M543-repaired-campus-fixed-board-02/demo/campus12_f00000.npy",
+      "frame_sha256": "d685c43454f4ec20a7737678517ed96e9a1e28cd9600822e80fd852992145636",
+      "timestamp_ms": 0.0
+    }
+  },
+  "worker_preparation": "deployment/mage_vl4b/optimization_v1/runs/M544-campus-live-worker-preparation-07/RESULT.json",
+  "worker_import_result": "deployment/mage_vl4b/optimization_v1/runs/M544-campus-live-worker-board-07/Import/BOARD_RESULT.json",
+  "worker_expected_boot": "f425c270-dc5e-4a1d-98de-025c85938620"
+}

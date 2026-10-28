@@ -1,0 +1,580 @@
+{
+  "allocations": [
+    {
+      "address": 1310720000,
+      "bytes": 6963200,
+      "index": 0
+    },
+    {
+      "address": 1318060032,
+      "bytes": 6963200,
+      "index": 1
+    },
+    {
+      "address": 1325400064,
+      "bytes": 6963200,
+      "index": 2
+    },
+    {
+      "address": 1332740096,
+      "bytes": 6963200,
+      "index": 3
+    },
+    {
+      "address": 1310195712,
+      "bytes": 389152,
+      "index": 4
+    },
+    {
+      "address": 1340080128,
+      "bytes": 2621440,
+      "index": 5
+    },
+    {
+      "address": 1343225856,
+      "bytes": 2621440,
+      "index": 6
+    }
+  ],
+  "build_id": "0x4D343535",
+  "cache_admission": {
+    "after": {
+      "process_bytes": {
+        "RssAnon": 103870464,
+        "RssFile": 21028864,
+        "RssShmem": 0,
+        "VmHWM": 124899328,
+        "VmRSS": 124899328,
+        "VmSwap": 0
+      },
+      "system_bytes": {
+        "Cached": 674459648,
+        "CmaFree": 827396096,
+        "MemAvailable": 3320422400,
+        "MemFree": 2800230400,
+        "SReclaimable": 59117568,
+        "SwapFree": 0
+      }
+    },
+    "before": {
+      "process_bytes": {
+        "RssAnon": 103870464,
+        "RssFile": 21028864,
+        "RssShmem": 0,
+        "VmHWM": 124899328,
+        "VmRSS": 124899328,
+        "VmSwap": 0
+      },
+      "system_bytes": {
+        "Cached": 674459648,
+        "CmaFree": 827396096,
+        "MemAvailable": 3320680448,
+        "MemFree": 2800488448,
+        "SReclaimable": 59117568,
+        "SwapFree": 0
+      }
+    },
+    "floor": 100597760,
+    "reclaim_calls": 0
+  },
+  "clock_final": {
+    "mhz": {
+      "0": 99.999,
+      "1": 99.999,
+      "2": 9.374906,
+      "3": 9.374906
+    },
+    "pll_raw": [
+      88576,
+      82176,
+      81920,
+      86016
+    ],
+    "raw": [
+      16846592,
+      16846592,
+      17113088,
+      17113088
+    ]
+  },
+  "clock_initial": {
+    "mhz": {
+      "0": 99.999,
+      "1": 99.999,
+      "2": 9.374906,
+      "3": 9.374906
+    },
+    "pll_raw": [
+      88576,
+      82176,
+      81920,
+      86016
+    ],
+    "raw": [
+      16846592,
+      16846592,
+      17113088,
+      17113088
+    ]
+  },
+  "configuration_record": {
+    "after": {
+      "reserved:alloc_pages_fail": 0,
+      "reserved:alloc_pages_success": 3177
+    },
+    "application_sha256": "6e919ac8945c930dd72aeaa9af6cfae744c0145c6e3e361d3c3cdf10860b8f6b",
+    "before": {
+      "reserved:alloc_pages_fail": 0,
+      "reserved:alloc_pages_success": 1273
+    },
+    "bit_bytes": 7797914,
+    "bit_sha256": "e1b5b9e6cb84325820e1150528d1e4117d30e924e777246576a35acb5332e4b8",
+    "configuration_credits_granted": 0,
+    "kernel": "5.15.0-1027-xilinx-zynqmp",
+    "manifest_sha256": "366bca419461ba41867b4f7008dedf908e825d38f08a4757f9decd258c3cac09",
+    "observation_kind": "same-process-kernel-CMA-trace",
+    "overlay_returned": true,
+    "page_size": 4096,
+    "pages": 1904,
+    "pid": 2754,
+    "shell_closure_sha256": "a61392fbef5f37448bad776a4434ba164906fbb9965269a19bdc8981f691e0cb",
+    "trace": {
+      "elapsed_trace_s": 1.9765143380000154,
+      "event_formats": {
+        "cma_alloc_busy_retry": "name: cma_alloc_busy_retry\nID: 568\nformat:\n\tfield:unsigned short common_type;\toffset:0;\tsize:2;\tsigned:0;\n\tfield:unsigned char common_flags;\toffset:2;\tsize:1;\tsigned:0;\n\tfield:unsigned char common_preempt_count;\toffset:3;\tsize:1;\tsigned:0;\n\tfield:int common_pid;\toffset:4;\tsize:4;\tsigned:1;\n\n\tfield:__data_loc char[] name;\toffset:8;\tsize:4;\tsigned:0;\n\tfield:unsigned long pfn;\toffset:16;\tsize:8;\tsigned:0;\n\tfield:const struct page * page;\toffset:24;\tsize:8;\tsigned:0;\n\tfield:unsigned long count;\toffset:32;\tsize:8;\tsigned:0;\n\tfield:unsigned int align;\toffset:40;\tsize:4;\tsigned:0;\n\nprint fmt: \"name=%s pfn=0x%lx page=%p count=%lu align=%u\", __get_str(name), REC->pfn, REC->page, REC->count, REC->align\n",
+        "cma_alloc_finish": "name: cma_alloc_finish\nID: 569\nformat:\n\tfield:unsigned short common_type;\toffset:0;\tsize:2;\tsigned:0;\n\tfield:unsigned char common_flags;\toffset:2;\tsize:1;\tsigned:0;\n\tfield:unsigned char common_preempt_count;\toffset:3;\tsize:1;\tsigned:0;\n\tfield:int common_pid;\toffset:4;\tsize:4;\tsigned:1;\n\n\tfield:__data_loc char[] name;\toffset:8;\tsize:4;\tsigned:0;\n\tfield:unsigned long pfn;\toffset:16;\tsize:8;\tsigned:0;\n\tfield:const struct page * page;\toffset:24;\tsize:8;\tsigned:0;\n\tfield:unsigned long count;\toffset:32;\tsize:8;\tsigned:0;\n\tfield:unsigned int align;\toffset:40;\tsize:4;\tsigned:0;\n\nprint fmt: \"name=%s pfn=0x%lx page=%p count=%lu align=%u\", __get_str(name), REC->pfn, REC->page, REC->count, REC->align\n",
+        "cma_alloc_start": "name: cma_alloc_start\nID: 570\nformat:\n\tfield:unsigned short common_type;\toffset:0;\tsize:2;\tsigned:0;\n\tfield:unsigned char common_flags;\toffset:2;\tsize:1;\tsigned:0;\n\tfield:unsigned char common_preempt_count;\toffset:3;\tsize:1;\tsigned:0;\n\tfield:int common_pid;\toffset:4;\tsize:4;\tsigned:1;\n\n\tfield:__data_loc char[] name;\toffset:8;\tsize:4;\tsigned:0;\n\tfield:unsigned long count;\toffset:16;\tsize:8;\tsigned:0;\n\tfield:unsigned int align;\toffset:24;\tsize:4;\tsigned:0;\n\nprint fmt: \"name=%s count=%lu align=%u\", __get_str(name), REC->count, REC->align\n",
+        "cma_release": "name: cma_release\nID: 571\nformat:\n\tfield:unsigned short common_type;\toffset:0;\tsize:2;\tsigned:0;\n\tfield:unsigned char common_flags;\toffset:2;\tsize:1;\tsigned:0;\n\tfield:unsigned char common_preempt_count;\toffset:3;\tsize:1;\tsigned:0;\n\tfield:int common_pid;\toffset:4;\tsize:4;\tsigned:1;\n\n\tfield:__data_loc char[] name;\toffset:8;\tsize:4;\tsigned:0;\n\tfield:unsigned long pfn;\toffset:16;\tsize:8;\tsigned:0;\n\tfield:const struct page * page;\toffset:24;\tsize:8;\tsigned:0;\n\tfield:unsigned long count;\toffset:32;\tsize:8;\tsigned:0;\n\nprint fmt: \"name=%s pfn=0x%lx page=%p count=%lu\", __get_str(name), REC->pfn, REC->page, REC->count\n"
+      },
+      "instance": "/sys/kernel/tracing/instances/m455_configuration01",
+      "observer_errors": [],
+      "own_instance_removed": true,
+      "owned_instance_only": true,
+      "pid": 2754,
+      "shared_root_configuration_changed": false,
+      "stats": {
+        "cpu0": "entries: 6\noverrun: 0\ncommit overrun: 0\nbytes: 784\noldest event ts:   884.884159\nnow ts:   885.045731\ndropped events: 0\nread events: 0\n",
+        "cpu1": "entries: 0\noverrun: 0\ncommit overrun: 0\nbytes: 0\noldest event ts:     0.000000\nnow ts:   885.045902\ndropped events: 0\nread events: 0\n",
+        "cpu2": "entries: 0\noverrun: 0\ncommit overrun: 0\nbytes: 0\noldest event ts:     0.000000\nnow ts:   885.046055\ndropped events: 0\nread events: 0\n",
+        "cpu3": "entries: 2\noverrun: 0\ncommit overrun: 0\nbytes: 112\noldest event ts:   883.070758\nnow ts:   885.046205\ndropped events: 0\nread events: 0\n"
+      },
+      "trace_sha256": "cbc7bb3d3a1ef7e52415eb257e360d5f9f437a1a785bcc713b94b64da1fd8c5a",
+      "trace_text": "# tracer: nop\n#\n# entries-in-buffer/entries-written: 8/8   #P:4\n#\n#                                _-----=> irqs-off\n#                               / _----=> need-resched\n#                              | / _---=> hardirq/softirq\n#                              || / _--=> preempt-depth\n#                              ||| / _-=> migrate-disable\n#                              |||| /     delay\n#           TASK-PID     CPU#  |||||  TIMESTAMP  FUNCTION\n#              | |         |   |||||     |         |\n          python-2754    [003] .....   883.070758: tracing_mark_write: M455_CONFIGURATION01_BEGIN\n          python-2754    [000] .....   884.884159: cma_alloc_start: name=reserved count=1904 align=8\n          python-2754    [000] .....   884.884169: <stack trace>\n => cma_alloc\n => cma_alloc_aligned\n => dma_alloc_contiguous\n => __dma_direct_alloc_pages.constprop.0\n => dma_direct_alloc\n => dma_alloc_attrs\n => zynqmp_fpga_ops_write\n => fpga_mgr_buf_load\n => fpga_mgr_firmware_load\n => firmware_store\n => dev_attr_store\n => sysfs_kf_write\n => kernfs_fop_write_iter\n => new_sync_write\n => vfs_write\n => ksys_write\n => __arm64_sys_write\n => invoke_syscall\n => el0_svc_common.constprop.0\n => do_el0_svc\n => el0_svc\n => el0t_64_sync_handler\n => el0t_64_sync\n          python-2754    [000] .....   884.886099: cma_alloc_finish: name=reserved pfn=0x4e200 page=000000009ffbcdb8 count=1904 align=8\n          python-2754    [000] .....   884.886103: <stack trace>\n => cma_alloc\n => cma_alloc_aligned\n => dma_alloc_contiguous\n => __dma_direct_alloc_pages.constprop.0\n => dma_direct_alloc\n => dma_alloc_attrs\n => zynqmp_fpga_ops_write\n => fpga_mgr_buf_load\n => fpga_mgr_firmware_load\n => firmware_store\n => dev_attr_store\n => sysfs_kf_write\n => kernfs_fop_write_iter\n => new_sync_write\n => vfs_write\n => ksys_write\n => __arm64_sys_write\n => invoke_syscall\n => el0_svc_common.constprop.0\n => do_el0_svc\n => el0_svc\n => el0t_64_sync_handler\n => el0t_64_sync\n          python-2754    [000] .....   885.009954: cma_release: name=reserved pfn=0x4e200 page=000000009ffbcdb8 count=1904\n          python-2754    [000] .....   885.009962: <stack trace>\n => cma_release\n => dma_free_contiguous\n => dma_direct_free\n => dma_free_attrs\n => zynqmp_fpga_ops_write\n => fpga_mgr_buf_load\n => fpga_mgr_firmware_load\n => firmware_store\n => dev_attr_store\n => sysfs_kf_write\n => kernfs_fop_write_iter\n => new_sync_write\n => vfs_write\n => ksys_write\n => __arm64_sys_write\n => invoke_syscall\n => el0_svc_common.constprop.0\n => do_el0_svc\n => el0_svc\n => el0t_64_sync_handler\n => el0t_64_sync\n          python-2754    [003] .....   885.020406: tracing_mark_write: M455_CONFIGURATION01_END\n"
+    }
+  },
+  "errors": [],
+  "final_service": {
+    "accelerator_owners": [],
+    "excluded_display_owners": [
+      {
+        "device": "/dev/dri/card0",
+        "driver": "zynqmp-display",
+        "pid": 1
+      },
+      {
+        "device": "/dev/dri/card0",
+        "driver": "zynqmp-display",
+        "pid": 900
+      },
+      {
+        "device": "/dev/dri/card0",
+        "driver": "zynqmp-display",
+        "pid": 1413
+      },
+      {
+        "device": "/dev/dri/card0",
+        "driver": "zynqmp-display",
+        "pid": 1413
+      },
+      {
+        "device": "/dev/dri/card0",
+        "driver": "zynqmp-display",
+        "pid": 1550
+      }
+    ],
+    "port8001_listening": false
+  },
+  "final_snapshot": {
+    "ap_ctrl": 4,
+    "ap_return": 0,
+    "dma_read_error": "",
+    "kernel_read_error": "",
+    "mm2s_dmasr": 0,
+    "mm2s_error": false,
+    "mm2s_idle": false,
+    "return_read_error": "",
+    "s2mm_dmasr": 0,
+    "s2mm_error": false,
+    "s2mm_idle": false
+  },
+  "full_model": false,
+  "initial_service": {
+    "accelerator_owners": [],
+    "excluded_display_owners": [
+      {
+        "device": "/dev/dri/card0",
+        "driver": "zynqmp-display",
+        "pid": 1
+      },
+      {
+        "device": "/dev/dri/card0",
+        "driver": "zynqmp-display",
+        "pid": 900
+      },
+      {
+        "device": "/dev/dri/card0",
+        "driver": "zynqmp-display",
+        "pid": 1413
+      },
+      {
+        "device": "/dev/dri/card0",
+        "driver": "zynqmp-display",
+        "pid": 1413
+      },
+      {
+        "device": "/dev/dri/card0",
+        "driver": "zynqmp-display",
+        "pid": 1550
+      }
+    ],
+    "port8001_listening": false
+  },
+  "manifest_sha256": "366bca419461ba41867b4f7008dedf908e825d38f08a4757f9decd258c3cac09",
+  "memory": [
+    {
+      "index": 0,
+      "required_bytes": 6963200,
+      "snapshot": {
+        "process_bytes": {
+          "RssAnon": 103870464,
+          "RssFile": 21028864,
+          "RssShmem": 0,
+          "VmHWM": 124899328,
+          "VmRSS": 124899328,
+          "VmSwap": 0
+        },
+        "system_bytes": {
+          "Cached": 674459648,
+          "CmaFree": 827396096,
+          "MemAvailable": 3320422400,
+          "MemFree": 2800230400,
+          "SReclaimable": 59117568,
+          "SwapFree": 0
+        }
+      }
+    },
+    {
+      "index": 1,
+      "required_bytes": 6963200,
+      "snapshot": {
+        "process_bytes": {
+          "RssAnon": 103870464,
+          "RssFile": 21028864,
+          "RssShmem": 0,
+          "VmHWM": 124899328,
+          "VmRSS": 124899328,
+          "VmSwap": 0
+        },
+        "system_bytes": {
+          "Cached": 674459648,
+          "CmaFree": 826683392,
+          "MemAvailable": 3319746560,
+          "MemFree": 2799529984,
+          "SReclaimable": 59117568,
+          "SwapFree": 0
+        }
+      }
+    },
+    {
+      "index": 2,
+      "required_bytes": 6963200,
+      "snapshot": {
+        "process_bytes": {
+          "RssAnon": 103870464,
+          "RssFile": 21028864,
+          "RssShmem": 0,
+          "VmHWM": 124899328,
+          "VmRSS": 124899328,
+          "VmSwap": 0
+        },
+        "system_bytes": {
+          "Cached": 674459648,
+          "CmaFree": 819720192,
+          "MemAvailable": 3312783360,
+          "MemFree": 2792566784,
+          "SReclaimable": 59117568,
+          "SwapFree": 0
+        }
+      }
+    },
+    {
+      "index": 3,
+      "required_bytes": 6963200,
+      "snapshot": {
+        "process_bytes": {
+          "RssAnon": 103870464,
+          "RssFile": 21028864,
+          "RssShmem": 0,
+          "VmHWM": 124899328,
+          "VmRSS": 124899328,
+          "VmSwap": 0
+        },
+        "system_bytes": {
+          "Cached": 674459648,
+          "CmaFree": 812756992,
+          "MemAvailable": 3305820160,
+          "MemFree": 2785603584,
+          "SReclaimable": 59117568,
+          "SwapFree": 0
+        }
+      }
+    },
+    {
+      "index": 4,
+      "required_bytes": 393216,
+      "snapshot": {
+        "process_bytes": {
+          "RssAnon": 103870464,
+          "RssFile": 21028864,
+          "RssShmem": 0,
+          "VmHWM": 124899328,
+          "VmRSS": 124899328,
+          "VmSwap": 0
+        },
+        "system_bytes": {
+          "Cached": 674459648,
+          "CmaFree": 805793792,
+          "MemAvailable": 3298856960,
+          "MemFree": 2778640384,
+          "SReclaimable": 59117568,
+          "SwapFree": 0
+        }
+      }
+    },
+    {
+      "index": 5,
+      "required_bytes": 2621440,
+      "snapshot": {
+        "process_bytes": {
+          "RssAnon": 103870464,
+          "RssFile": 21028864,
+          "RssShmem": 0,
+          "VmHWM": 124899328,
+          "VmRSS": 124899328,
+          "VmSwap": 0
+        },
+        "system_bytes": {
+          "Cached": 674459648,
+          "CmaFree": 805400576,
+          "MemAvailable": 3298463744,
+          "MemFree": 2778247168,
+          "SReclaimable": 59117568,
+          "SwapFree": 0
+        }
+      }
+    },
+    {
+      "index": 6,
+      "required_bytes": 2621440,
+      "snapshot": {
+        "process_bytes": {
+          "RssAnon": 103870464,
+          "RssFile": 21028864,
+          "RssShmem": 0,
+          "VmHWM": 124899328,
+          "VmRSS": 124899328,
+          "VmSwap": 0
+        },
+        "system_bytes": {
+          "Cached": 674459648,
+          "CmaFree": 802779136,
+          "MemAvailable": 3295842304,
+          "MemFree": 2775625728,
+          "SReclaimable": 59117568,
+          "SwapFree": 0
+        }
+      }
+    }
+  ],
+  "metadata_reference_preflight": {
+    "global_state_absent": true
+  },
+  "mode": "BuildID",
+  "model_forwards": 0,
+  "models": 0,
+  "performance_pass": false,
+  "primary_rc": 0,
+  "protected_initial": {
+    "boot": "7319e263ee10d7914e1769d635c204611d5627f72ef5193d7530c65882c11b7d",
+    "cmdline": " root=LABEL=writable rootwait earlycon console=ttyPS1,115200 console=tty1 clk_ignore_unused uio_pdrv_genirq.of_id=generic-uio xilinx_tsn_ep.st_pcp=4 cma=800M \n",
+    "stable_bit": "1cbf7bbb86cfe64c2349418d5a15890d735bea3fa4c999060c8a9da9ac3206ac"
+  },
+  "releases": [
+    {
+      "address": 1343225856,
+      "bytes": 2621440,
+      "index": 6
+    },
+    {
+      "address": 1340080128,
+      "bytes": 2621440,
+      "index": 5
+    },
+    {
+      "address": 1310195712,
+      "bytes": 389152,
+      "index": 4
+    },
+    {
+      "address": 1332740096,
+      "bytes": 6963200,
+      "index": 3
+    },
+    {
+      "address": 1325400064,
+      "bytes": 6963200,
+      "index": 2
+    },
+    {
+      "address": 1318060032,
+      "bytes": 6963200,
+      "index": 1
+    },
+    {
+      "address": 1310720000,
+      "bytes": 6963200,
+      "index": 0
+    }
+  ],
+  "safe_cleanup_complete": true,
+  "seven_owner_sizes": [
+    6963200,
+    6963200,
+    6963200,
+    6963200,
+    389152,
+    2621440,
+    2621440
+  ],
+  "stable_configuration_record": {
+    "after": {
+      "reserved:alloc_pages_fail": 0,
+      "reserved:alloc_pages_success": 13257
+    },
+    "application_sha256": "d55e10db0e657c73af50c74b23967ca5f78d28764e2e8f0320e9ae7ea19b221f",
+    "before": {
+      "reserved:alloc_pages_fail": 0,
+      "reserved:alloc_pages_success": 11353
+    },
+    "bit_bytes": 7797914,
+    "bit_sha256": "1cbf7bbb86cfe64c2349418d5a15890d735bea3fa4c999060c8a9da9ac3206ac",
+    "configuration_credits_granted": 0,
+    "kernel": "5.15.0-1027-xilinx-zynqmp",
+    "manifest_sha256": "406dcca340e4604baeb761445795391c43ec26bd99fa06ffae893d597b17414f",
+    "observation_kind": "same-process-kernel-CMA-trace",
+    "overlay_returned": true,
+    "page_size": 4096,
+    "pages": 1904,
+    "pid": 2754,
+    "shell_closure_sha256": "6140f030a338d2f9691d9c3a3b8045cd5b6a12dd42ecfbb0736fa98c0a0f7a94",
+    "trace": {
+      "elapsed_trace_s": 1.7840672739999945,
+      "event_formats": {
+        "cma_alloc_busy_retry": "name: cma_alloc_busy_retry\nID: 568\nformat:\n\tfield:unsigned short common_type;\toffset:0;\tsize:2;\tsigned:0;\n\tfield:unsigned char common_flags;\toffset:2;\tsize:1;\tsigned:0;\n\tfield:unsigned char common_preempt_count;\toffset:3;\tsize:1;\tsigned:0;\n\tfield:int common_pid;\toffset:4;\tsize:4;\tsigned:1;\n\n\tfield:__data_loc char[] name;\toffset:8;\tsize:4;\tsigned:0;\n\tfield:unsigned long pfn;\toffset:16;\tsize:8;\tsigned:0;\n\tfield:const struct page * page;\toffset:24;\tsize:8;\tsigned:0;\n\tfield:unsigned long count;\toffset:32;\tsize:8;\tsigned:0;\n\tfield:unsigned int align;\toffset:40;\tsize:4;\tsigned:0;\n\nprint fmt: \"name=%s pfn=0x%lx page=%p count=%lu align=%u\", __get_str(name), REC->pfn, REC->page, REC->count, REC->align\n",
+        "cma_alloc_finish": "name: cma_alloc_finish\nID: 569\nformat:\n\tfield:unsigned short common_type;\toffset:0;\tsize:2;\tsigned:0;\n\tfield:unsigned char common_flags;\toffset:2;\tsize:1;\tsigned:0;\n\tfield:unsigned char common_preempt_count;\toffset:3;\tsize:1;\tsigned:0;\n\tfield:int common_pid;\toffset:4;\tsize:4;\tsigned:1;\n\n\tfield:__data_loc char[] name;\toffset:8;\tsize:4;\tsigned:0;\n\tfield:unsigned long pfn;\toffset:16;\tsize:8;\tsigned:0;\n\tfield:const struct page * page;\toffset:24;\tsize:8;\tsigned:0;\n\tfield:unsigned long count;\toffset:32;\tsize:8;\tsigned:0;\n\tfield:unsigned int align;\toffset:40;\tsize:4;\tsigned:0;\n\nprint fmt: \"name=%s pfn=0x%lx page=%p count=%lu align=%u\", __get_str(name), REC->pfn, REC->page, REC->count, REC->align\n",
+        "cma_alloc_start": "name: cma_alloc_start\nID: 570\nformat:\n\tfield:unsigned short common_type;\toffset:0;\tsize:2;\tsigned:0;\n\tfield:unsigned char common_flags;\toffset:2;\tsize:1;\tsigned:0;\n\tfield:unsigned char common_preempt_count;\toffset:3;\tsize:1;\tsigned:0;\n\tfield:int common_pid;\toffset:4;\tsize:4;\tsigned:1;\n\n\tfield:__data_loc char[] name;\toffset:8;\tsize:4;\tsigned:0;\n\tfield:unsigned long count;\toffset:16;\tsize:8;\tsigned:0;\n\tfield:unsigned int align;\toffset:24;\tsize:4;\tsigned:0;\n\nprint fmt: \"name=%s count=%lu align=%u\", __get_str(name), REC->count, REC->align\n",
+        "cma_release": "name: cma_release\nID: 571\nformat:\n\tfield:unsigned short common_type;\toffset:0;\tsize:2;\tsigned:0;\n\tfield:unsigned char common_flags;\toffset:2;\tsize:1;\tsigned:0;\n\tfield:unsigned char common_preempt_count;\toffset:3;\tsize:1;\tsigned:0;\n\tfield:int common_pid;\toffset:4;\tsize:4;\tsigned:1;\n\n\tfield:__data_loc char[] name;\toffset:8;\tsize:4;\tsigned:0;\n\tfield:unsigned long pfn;\toffset:16;\tsize:8;\tsigned:0;\n\tfield:const struct page * page;\toffset:24;\tsize:8;\tsigned:0;\n\tfield:unsigned long count;\toffset:32;\tsize:8;\tsigned:0;\n\nprint fmt: \"name=%s pfn=0x%lx page=%p count=%lu\", __get_str(name), REC->pfn, REC->page, REC->count\n"
+      },
+      "instance": "/sys/kernel/tracing/instances/m523_b0_configuration01",
+      "observer_errors": [],
+      "own_instance_removed": true,
+      "owned_instance_only": true,
+      "pid": 2754,
+      "shared_root_configuration_changed": false,
+      "stats": {
+        "cpu0": "entries: 7\noverrun: 0\ncommit overrun: 0\nbytes: 832\noldest event ts:   891.407508\nnow ts:   891.565179\ndropped events: 0\nread events: 0\n",
+        "cpu1": "entries: 1\noverrun: 0\ncommit overrun: 0\nbytes: 56\noldest event ts:   889.782640\nnow ts:   891.565353\ndropped events: 0\nread events: 0\n",
+        "cpu2": "entries: 0\noverrun: 0\ncommit overrun: 0\nbytes: 0\noldest event ts:     0.000000\nnow ts:   891.565505\ndropped events: 0\nread events: 0\n",
+        "cpu3": "entries: 0\noverrun: 0\ncommit overrun: 0\nbytes: 0\noldest event ts:     0.000000\nnow ts:   891.565656\ndropped events: 0\nread events: 0\n"
+      },
+      "trace_sha256": "a8d20fe1867fb3b61a5df604bd363ab5c65c0ba5320be5d30c604c8d8a2104bc",
+      "trace_text": "# tracer: nop\n#\n# entries-in-buffer/entries-written: 8/8   #P:4\n#\n#                                _-----=> irqs-off\n#                               / _----=> need-resched\n#                              | / _---=> hardirq/softirq\n#                              || / _--=> preempt-depth\n#                              ||| / _-=> migrate-disable\n#                              |||| /     delay\n#           TASK-PID     CPU#  |||||  TIMESTAMP  FUNCTION\n#              | |         |   |||||     |         |\n          python-2754    [001] .....   889.782640: tracing_mark_write: M455_CONFIGURATION01_BEGIN\n          python-2754    [000] .....   891.407508: cma_alloc_start: name=reserved count=1904 align=8\n          python-2754    [000] .....   891.407517: <stack trace>\n => cma_alloc\n => cma_alloc_aligned\n => dma_alloc_contiguous\n => __dma_direct_alloc_pages.constprop.0\n => dma_direct_alloc\n => dma_alloc_attrs\n => zynqmp_fpga_ops_write\n => fpga_mgr_buf_load\n => fpga_mgr_firmware_load\n => firmware_store\n => dev_attr_store\n => sysfs_kf_write\n => kernfs_fop_write_iter\n => new_sync_write\n => vfs_write\n => ksys_write\n => __arm64_sys_write\n => invoke_syscall\n => el0_svc_common.constprop.0\n => do_el0_svc\n => el0_svc\n => el0t_64_sync_handler\n => el0t_64_sync\n          python-2754    [000] .....   891.409613: cma_alloc_finish: name=reserved pfn=0x4e200 page=000000009ffbcdb8 count=1904 align=8\n          python-2754    [000] .....   891.409617: <stack trace>\n => cma_alloc\n => cma_alloc_aligned\n => dma_alloc_contiguous\n => __dma_direct_alloc_pages.constprop.0\n => dma_direct_alloc\n => dma_alloc_attrs\n => zynqmp_fpga_ops_write\n => fpga_mgr_buf_load\n => fpga_mgr_firmware_load\n => firmware_store\n => dev_attr_store\n => sysfs_kf_write\n => kernfs_fop_write_iter\n => new_sync_write\n => vfs_write\n => ksys_write\n => __arm64_sys_write\n => invoke_syscall\n => el0_svc_common.constprop.0\n => do_el0_svc\n => el0_svc\n => el0t_64_sync_handler\n => el0t_64_sync\n          python-2754    [000] .....   891.534170: cma_release: name=reserved pfn=0x4e200 page=000000009ffbcdb8 count=1904\n          python-2754    [000] .....   891.534178: <stack trace>\n => cma_release\n => dma_free_contiguous\n => dma_direct_free\n => dma_free_attrs\n => zynqmp_fpga_ops_write\n => fpga_mgr_buf_load\n => fpga_mgr_firmware_load\n => firmware_store\n => dev_attr_store\n => sysfs_kf_write\n => kernfs_fop_write_iter\n => new_sync_write\n => vfs_write\n => ksys_write\n => __arm64_sys_write\n => invoke_syscall\n => el0_svc_common.constprop.0\n => do_el0_svc\n => el0_svc\n => el0t_64_sync_handler\n => el0t_64_sync\n          python-2754    [000] .....   891.542326: tracing_mark_write: M455_CONFIGURATION01_END\n"
+    }
+  },
+  "stable_restored_snapshot": {
+    "ap_ctrl": 4,
+    "ap_return": 0,
+    "dma_read_error": "",
+    "kernel_read_error": "",
+    "mm2s_dmasr": 0,
+    "mm2s_error": false,
+    "mm2s_idle": false,
+    "return_read_error": "",
+    "s2mm_dmasr": 0,
+    "s2mm_error": false,
+    "s2mm_idle": false
+  },
+  "status": "PASS_M455_P1_SAVED_BUILDID",
+  "task_quality": false,
+  "transactions": [
+    {
+      "config": "0x10201",
+      "full_output_equal": true,
+      "golden_sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad",
+      "input_bytes": 2576,
+      "name": "candidate_build_only",
+      "observation": {
+        "completed_ns": 885216945736,
+        "completion_proven": true,
+        "dma_timing_unresolved": [
+          "mm2s",
+          "s2mm"
+        ],
+        "events": {
+          "ap_done": {
+            "clear_on_read_latched": true,
+            "lower_ns": 885216605042,
+            "observed_ns": 885216945736,
+            "upper_ns": 885216945736
+          }
+        },
+        "last_snapshot": {
+          "ap_ctrl": 14,
+          "ap_return": 1295267125,
+          "dma_read_error": "",
+          "kernel_read_error": "",
+          "mm2s_dmasr": 4098,
+          "mm2s_error": false,
+          "mm2s_idle": true,
+          "return_read_error": "",
+          "s2mm_dmasr": 4098,
+          "s2mm_error": false,
+          "s2mm_idle": true
+        },
+        "max_poll_gap_ns": 340694,
+        "polls": 1,
+        "pure_compute_time_proven": false,
+        "submitted_ns": 885216605042,
+        "wait_ns": 340694
+      },
+      "output_bytes": 2048,
+      "output_sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad",
+      "packet_sha256": "f1e2f2296e524cb165156af3b101c6ffecf7ccaf6c2cfc3339ace9c486320696",
+      "snapshot": {
+        "ap_ctrl": 14,
+        "ap_return": 1295267125,
+        "dma_read_error": "",
+        "kernel_read_error": "",
+        "mm2s_dmasr": 4098,
+        "mm2s_error": false,
+        "mm2s_idle": true,
+        "return_read_error": "",
+        "s2mm_dmasr": 4098,
+        "s2mm_error": false,
+        "s2mm_idle": true
+      },
+      "staging_ns": 2440964
+    }
+  ],
+  "unsafe_retained": false
+}

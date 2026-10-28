@@ -1,0 +1,30 @@
+const {chromium}=require('C:/Users/30429/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const fs=require('fs'),path=require('path'),assert=require('assert');
+const out=path.join(__dirname,'qa');fs.mkdirSync(out,{recursive:true});
+(async()=>{const browser=await chromium.launch({headless:true,executablePath:process.env.CAMPUS_BROWSER_EXE||chromium.executablePath()});const page=await browser.newPage({viewport:{width:1440,height:1100},deviceScaleFactor:1});const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ try{
+  await page.goto('http://127.0.0.1:8765/',{waitUntil:'networkidle'});await page.locator('#event-rows tr').nth(3).waitFor();
+  assert.equal(await page.locator('#event-rows tr').count(),4);assert(await page.locator('#verify-button').isDisabled());
+  assert((await page.locator('#hot-time').innerText()).includes('29.17'));
+  assert((await page.locator('#mode-banner').innerText()).includes('实板记录查看模式'));
+  assert.equal(await page.locator('.notice-icon').innerText(),'i');
+  await page.screenshot({path:path.join(out,'desktop.png'),fullPage:true});
+  await page.locator('[data-camera="workshop"]').click();assert.equal(await page.locator('#camera-title').innerText(),'实训工坊');
+  await page.locator('#window-select').selectOption('cal_00_t1');assert((await page.locator('#capture-preview').getAttribute('src')).includes('cal_00_t1'));
+  assert.equal(await page.locator('#result-decision').innerText(),'未见刀具');
+  await page.locator('#details-button').click();assert(await page.locator('#detail-dialog').isVisible());assert((await page.locator('#detail-content').innerText()).includes('历史板端验收'));
+  await page.locator('#detail-dialog .icon-button').click();
+  await page.locator('#review-button').click();assert(await page.locator('#review-dialog').isVisible());assert(await page.locator('#review-note').isVisible());
+  await page.locator('#review-dialog .icon-button').click();
+  await page.locator('[data-page="report"]').click();assert(await page.locator('#report-page').isVisible());assert((await page.locator('#timing-bars').innerText()).includes('49.88'));
+  await page.screenshot({path:path.join(out,'report.png'),fullPage:true});
+  await page.locator('[data-page="events"]').click();await page.locator('[data-filter="closed"]').click();assert((await page.locator('#event-rows').innerText()).includes('没有符合条件'));
+  await page.locator('[data-filter="all"]').click();
+  const downloaded=page.waitForEvent('download');await page.locator('#export-button').click();const download=await downloaded;await download.saveAs(path.join(out,'events_export.json'));
+  const exported=JSON.parse(fs.readFileSync(path.join(out,'events_export.json')));assert.equal(exported.state.events.length,4);assert.equal(exported.state.worker,null);
+  await page.locator('[data-page="desk"]').click();await page.setViewportSize({width:390,height:844});await page.screenshot({path:path.join(out,'mobile.png'),fullPage:true});
+  assert(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));assert.deepEqual(errors,[]);
+  fs.writeFileSync(path.join(out,'browser_result.json'),JSON.stringify({status:'PASS_BROWSER_UI_WORKFLOW_NO_HARDWARE',checks:15,desktop:[1440,1100],mobile:[390,844],page_errors:errors,actual_board_runs:0,recorded_evidence_not_live:true},null,2));
+  console.log('PASS_BROWSER_UI_WORKFLOW_NO_HARDWARE');
+ }finally{await browser.close()}
+})().catch(e=>{console.error(e);process.exitCode=1});

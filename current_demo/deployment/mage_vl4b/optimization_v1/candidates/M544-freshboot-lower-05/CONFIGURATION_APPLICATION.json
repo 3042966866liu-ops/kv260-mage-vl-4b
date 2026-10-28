@@ -1,0 +1,25 @@
+{
+  "status": "PROPOSED_M455_CONFIGURATION_APPLICATION_NOT_BOARD_VERIFIED",
+  "build_id": "0x4D343535",
+  "bit_sha256": "e1b5b9e6cb84325820e1150528d1e4117d30e924e777246576a35acb5332e4b8",
+  "bit_bytes": 7797914,
+  "pages": 1904,
+  "page_size": 4096,
+  "kernel": "5.15.0-1027-xilinx-zynqmp",
+  "same_PID": true,
+  "same_PFN_release_required": true,
+  "exact_counter_delta": {
+    "reserved:alloc_pages_success": 1904,
+    "reserved:alloc_pages_fail": 0
+  },
+  "trace_limit_bytes": 1048576,
+  "trace_budget_s": 30,
+  "unknown_or_failed_allocations_rejected": true,
+  "original_baseline_reset_allowed": false,
+  "seven_owner_policy_unchanged": true,
+  "PS_budget_unchanged": true,
+  "old_CMA15_whitelist_modified": false,
+  "actual_configuration_proof_required_before_credit": true,
+  "credits_granted": 0,
+  "board": false
+}

@@ -1,0 +1,29 @@
+{
+  "status": "DRAFT_BOUNDED_EXPERIMENT_AWAITING_NEW_DEMO_MEDIA",
+  "objective": "验证同一画面改变语言问题后，判断是否正确改变；不预设大模型优于小模型",
+  "user_deadline": "2026-10-28前，展示版按10月27日冻结安排",
+  "tasks": [
+    {"id": "knife_visible", "question": "Is a knife visible in these views?", "UI_name": "是否可见刀具"},
+    {"id": "hand_holding_knife", "question": "Is anyone holding a knife?", "UI_name": "是否有人手持刀具", "UI_enabled_before_validation": false}
+  ],
+  "required_scenes": [
+    {"id": "knife_on_table", "description": "刀放桌上，无人接触，刀清楚可见", "media_path": null, "conditional_expected": {"knife_visible": "Yes", "hand_holding_knife": "No"}},
+    {"id": "knife_in_hand", "description": "人手里持刀，手和刀的接触关系清楚可见", "media_path": null, "conditional_expected": {"knife_visible": "Yes", "hand_holding_knife": "Yes"}},
+    {"id": "ruler_in_hand", "description": "人手持金属尺，画面内没有刀具", "media_path": null, "conditional_expected": {"knife_visible": "No", "hand_holding_knife": "No"}}
+  ],
+  "asset_admission": "须先取得用户新演示视频或本机绝对路径，保存原视频SHA、采样位置与真实448输入；实际画面人工核对满足描述后，条件期望才可成为该帧标注",
+  "input_budget": "沿用实际最新帧双视图/98视觉槽；每个问题单独冻结原始文本、实际token IDs与长度，目标不超过128/4T32，不伪称两问题token完全相同",
+  "execution_order": [
+    "原始教师GPU：三画面各两问题，共6条首词判断；记录原词而非仅二元结果",
+    "10V18L未加学习头：同6输入，保存全词表logits与判断",
+    "同10V18L加现有M525输出补偿：同6输入，检查是否丢失条件区分能力",
+    "软件结果可用后，单独冻结候选在KV260验收；不能继承旧刀具问题的板测正确率或时延"
+  ],
+  "budgets": {"teacher_new_requests": 6, "uncompensated_student_requests": 6, "existing_head_student_requests": 6, "automatic_new_training": false, "automatic_prompt_search": false},
+  "success_condition": "同一刀在桌上画面的两个问题分别得到Yes/No，且其他两画面正确；保留全部错误和Invalid。任何关系任务未通过则网页该条件保持禁用",
+  "limitations": "6判断仅为功能与能力保留演示，不作泛化或大模型优于检测器的统计结论。轻量检测器/规则公平对照另记录，不预填优胜结果",
+  "UI_contract": "不显示TTFT或耗时；只有当前视频当前已验收条件的真实板端Yes触发巨大刀具警示；No不弹窗不响铃，Unknown不冒充No",
+  "heldout_opened": false,
+  "model_runs_started": 0,
+  "board_actions_started": 0
+}

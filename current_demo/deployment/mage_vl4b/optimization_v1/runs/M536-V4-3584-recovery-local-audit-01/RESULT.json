@@ -1,0 +1,69 @@
+{
+  "status": "PASS_M536_ACTUAL_SLICED_PS_MLP_AND_BIAS_EXPORT_AUDIT",
+  "primary_rc": 0,
+  "board_commands": 0,
+  "training_steps": 0,
+  "complete_model_forwards": 0,
+  "fit_result_sha256": "d9dfd0af278d588819ad6cc4d7a09c939e4a92974a0e0a06d48b4cec70ad27a5",
+  "candidate_manifest_sha256": "73b4b7a826e8292007d8a54ad8f679a6715db921fc327655a739d5068a59dfd6",
+  "rows": [
+    {
+      "id": "cal_00_t0",
+      "relative_L2": 0.13369465887240578,
+      "cosine": 0.9910271195482577,
+      "actual_sliced_M207_fc1_GELU_fc2": true
+    },
+    {
+      "id": "cal_00_t1",
+      "relative_L2": 0.1328552006405547,
+      "cosine": 0.991147788668963,
+      "actual_sliced_M207_fc1_GELU_fc2": true
+    },
+    {
+      "id": "cal_01_t0",
+      "relative_L2": 0.13669427492062314,
+      "cosine": 0.9906609703141452,
+      "actual_sliced_M207_fc1_GELU_fc2": true
+    },
+    {
+      "id": "cal_01_t1",
+      "relative_L2": 0.13469576207223824,
+      "cosine": 0.9909322413844882,
+      "actual_sliced_M207_fc1_GELU_fc2": true
+    },
+    {
+      "id": "cal_02_t0",
+      "relative_L2": 0.12982468091508725,
+      "cosine": 0.9915706079765225,
+      "actual_sliced_M207_fc1_GELU_fc2": true
+    },
+    {
+      "id": "cal_02_t1",
+      "relative_L2": 0.1286068284717321,
+      "cosine": 0.9917314621827619,
+      "actual_sliced_M207_fc1_GELU_fc2": true
+    },
+    {
+      "id": "cal_04_t0",
+      "relative_L2": 0.13657360991311893,
+      "cosine": 0.9906542254640696,
+      "actual_sliced_M207_fc1_GELU_fc2": true
+    },
+    {
+      "id": "cal_04_t1",
+      "relative_L2": 0.13753104952978656,
+      "cosine": 0.9905169655627014,
+      "actual_sliced_M207_fc1_GELU_fc2": true
+    }
+  ],
+  "saved_A53_input": {
+    "relative_L2": 0.13656847262276547,
+    "cosine": 0.9906549281900957
+  },
+  "R1_independent_FP64_mean_bitwise_equal": true,
+  "group_Gram_prediction_relative_difference": 2.445763154808923e-07,
+  "actual_module_not_only_sliced_cached_hidden_tested": true,
+  "original_GELU_and_modules_restored": true,
+  "full_answer_quality_proven": false,
+  "board_TTFT_proven": false
+}

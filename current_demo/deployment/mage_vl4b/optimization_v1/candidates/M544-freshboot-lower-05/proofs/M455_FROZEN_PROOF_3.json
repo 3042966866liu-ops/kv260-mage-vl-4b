@@ -1,0 +1,64 @@
+{
+  "status": "PASS_M455_DENSE_FULL_RTL_SUITE04",
+  "build_id": "0x4D343535",
+  "results": [
+    {
+      "case": "minimum_SAR",
+      "status": "PASS_M455_DENSE_PAIR_PIPELINE_W2_W4_RTL",
+      "path": "deployment/mage_vl4b/optimization_v1/runs/M455-dense-output-RTL-03/minimum_SAR_RESULT.json",
+      "sha256": "b29b1232c5a24b51deaf4090067cc2c0e3eacd5eaf191a049de32b26ad722722",
+      "bytes": 47900
+    },
+    {
+      "case": "W2_max",
+      "status": "PASS_M455_DENSE_PAIR_PIPELINE_W2_W4_RTL",
+      "path": "deployment/mage_vl4b/optimization_v1/runs/M455-dense-output-RTL-03/W2_max_RESULT.json",
+      "sha256": "cc3b492189876587eb6246267a78edee7b68687d31606769d93cdc7f4b25def6",
+      "bytes": 47913
+    },
+    {
+      "case": "timeout",
+      "status": "PASS_M455_DENSE_PAIR_PIPELINE_W2_TIMEOUT",
+      "path": "deployment/mage_vl4b/optimization_v1/runs/M455-dense-output-RTL-03/timeout_RESULT.json",
+      "sha256": "7e1967f4c00900e84648c5930a9550f94f681c15a84397dc9a189e7e3086e710",
+      "bytes": 1096
+    },
+    {
+      "case": "W4_max",
+      "status": "PASS_M455_DENSE_PAIR_PIPELINE_W2_W4_RTL",
+      "path": "deployment/mage_vl4b/optimization_v1/runs/M455-dense-output-RTL-03/W4_max_RESULT.json",
+      "sha256": "58c9e51dc9244d74884faba7e90565fa163f6ac17dcb1ff5689678d03c277d74",
+      "bytes": 48241
+    },
+    {
+      "case": "q",
+      "status": "PASS_M455_DENSE_PAIR_PIPELINE_W2_W4_RTL",
+      "path": "deployment/mage_vl4b/optimization_v1/runs/M455-dense-output-RTL-03/q_RESULT.json",
+      "sha256": "715cea12766aa9bfc7d54db8b8a6cc64efcdbe8070eb3b92762cc99773cec5ad",
+      "bytes": 48204
+    },
+    {
+      "case": "gate_up",
+      "status": "PASS_M455_SAVED_RTL_STRICT_RECOVERY04",
+      "path": "deployment/mage_vl4b/optimization_v1/runs/M455-dense-output-RTL-recovery-04/gate_up_RESULT.json",
+      "sha256": "12eeeb5cdac020da7c3aa225575b27814577ef425e2be9f419c3c7a46a2101f8",
+      "bytes": 52920
+    },
+    {
+      "case": "mlp_down",
+      "status": "PASS_M455_SAVED_RTL_STRICT_RECOVERY04",
+      "path": "deployment/mage_vl4b/optimization_v1/runs/M455-dense-output-RTL-recovery-04/mlp_down_RESULT.json",
+      "sha256": "e70202367cc87179354915c99123163063aaf9f5fb72dfa5f5b0eff7a3fde5f9",
+      "bytes": 52032
+    }
+  ],
+  "original_preparation_sha256": "b1257e2dfa1e0fe9b3516f2865fda8eeab2014e1deb5d785debc27dca6440f8c",
+  "recovery_preparation_sha256": "cbcf2a7d6f7b12f79151a28ed333b55b9b31c2a7470f27f42f7a04c1cedb0542",
+  "original_STOP_sha256": "e3352736efdb44937cfb089d07f16ff360bdd9ce04c09748b0e22d8b1efe7c20",
+  "original_STOP_preserved": true,
+  "board": false,
+  "performance": false,
+  "promoted": false,
+  "stable_rollback_changed": false,
+  "next_step": "Same-constraint core and full-shell routed resource/timing/DRC and bit/HWH proof before board Build-ID-only gate."
+}

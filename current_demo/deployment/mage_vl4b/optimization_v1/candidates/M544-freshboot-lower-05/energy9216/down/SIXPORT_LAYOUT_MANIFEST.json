@@ -1,0 +1,65 @@
+{
+  "format": "tellme-mage-vl-fourport-group-major-v1",
+  "module_count": 1,
+  "status": "M523_EXPLICIT_SINGLE_LANGUAGE_LAYER_EXPERIMENT_NOT_ORIGINAL_CONTRACT_PASS",
+  "scope": "single-language-layer-2-not-global-constructor-contract",
+  "modules": [
+    {
+      "module": "down",
+      "shape": [
+        2560,
+        9216
+      ],
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "shard_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "record_bytes_per_shard": 2506752
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 512,
+          "rows_per_shard": 128,
+          "shard_offsets": [
+            2506752,
+            2506752,
+            2506752,
+            2506752
+          ],
+          "record_bytes_per_shard": 626688
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "weights0.bin",
+      "bytes": 3133440,
+      "sha256": "83403511853fac64bcec2923856f16998c9be940a3df80d05a16739803c5e016"
+    },
+    {
+      "path": "weights1.bin",
+      "bytes": 3133440,
+      "sha256": "b590169bfbae87e9c77afc50c6545719a0ab30bbab242460cd186a38bdfed6ba"
+    },
+    {
+      "path": "weights2.bin",
+      "bytes": 3133440,
+      "sha256": "1c882d88209ee9d46dd3c6129c8985c23b56697e45d9af15f888445aa84ec42c"
+    },
+    {
+      "path": "weights3.bin",
+      "bytes": 3133440,
+      "sha256": "c91995fac5a6db7c618faedb385f865f667fbda2ab055741328353d24e666fc9"
+    }
+  ]
+}

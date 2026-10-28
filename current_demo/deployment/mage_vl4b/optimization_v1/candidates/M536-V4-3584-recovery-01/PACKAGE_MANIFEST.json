@@ -1,0 +1,21 @@
+{
+  "files": [
+    {
+      "path": "V4_3584_weights.npz",
+      "bytes": 3957048,
+      "sha256": "98f58b7f06a23b178e167fe5de2cc053765ac4cf97cbd2dc711ee81a2b84073c"
+    },
+    {
+      "path": "V4_PLAN.json",
+      "bytes": 1015,
+      "sha256": "53c51aa7e17d2a51cf8c0961d85fb956519d95b7aa22e12f415e3b6770794e6c"
+    },
+    {
+      "path": "v4_recovery_native.py",
+      "bytes": 2160,
+      "sha256": "2f7a4d357fcd577902dead3a8493f63318152668013b689f382c8624e4de9609"
+    }
+  ],
+  "file_count": 3,
+  "total_bytes": 3960223
+}

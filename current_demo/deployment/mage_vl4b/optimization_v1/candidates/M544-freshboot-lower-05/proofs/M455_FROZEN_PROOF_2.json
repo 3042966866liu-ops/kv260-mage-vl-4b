@@ -1,0 +1,140 @@
+{
+  "status": "PASS_M455_SAME_CONSTRAINT_CORE_ROUTED_TIMING01",
+  "build_id": "0x4D343535",
+  "original_rc": 0,
+  "checks": {
+    "original_rc": true,
+    "mapping_restored": true,
+    "actual_reports": true,
+    "same_clock_XDC": true,
+    "target_period": true,
+    "XML_timing_met": true,
+    "same_capacity": true,
+    "resources_fit": true,
+    "setup_hold_pulse": true,
+    "route_clean": true,
+    "immutable_source_RTL": true,
+    "no_native_error": true,
+    "export_package_exists": true
+  },
+  "resources": {
+    "BRAM": 156,
+    "CLB": 9517,
+    "DSP": 1184,
+    "FF": 52073,
+    "LATCH": 0,
+    "LUT": 44306,
+    "SRL": 1040,
+    "URAM": 64
+  },
+  "capacity": {
+    "BRAM": 288,
+    "CLB": 14640,
+    "DSP": 1248,
+    "FF": 234240,
+    "LUT": 117120,
+    "URAM": 64
+  },
+  "timing": {
+    "TargetClockPeriod": "4.800",
+    "AchievedClockPeriod": "4.710",
+    "CLOCK_NAME": "ap_clk",
+    "CP_FINAL": "4.710",
+    "CP_ROUTE": "4.710",
+    "CP_SYNTH": "3.303",
+    "CP_TARGET": "4.800",
+    "SLACK_FINAL": "0.090",
+    "SLACK_ROUTE": "0.090",
+    "SLACK_SYNTH": "1.497",
+    "TIMING_MET": "TRUE",
+    "TNS_FINAL": "0.000",
+    "TNS_ROUTE": "0.000",
+    "TNS_SYNTH": "0.000",
+    "WNS_FINAL": "0.090",
+    "WNS_ROUTE": "0.090",
+    "WNS_SYNTH": "1.497"
+  },
+  "timing_summary": {
+    "WNS_ns": 0.09,
+    "TNS_ns": 0.0,
+    "setup_failing": 0,
+    "setup_endpoints": 207103,
+    "WHS_ns": 0.026,
+    "THS_ns": 0.0,
+    "hold_failing": 0,
+    "hold_endpoints": 207103,
+    "WPWS_ns": 1.6,
+    "TPWS_ns": 0.0,
+    "pulse_failing": 0,
+    "pulse_endpoints": 66100
+  },
+  "preparation_sha256": "ec645ffba3d8222b3f61ff10cfb5c5ea46fab270913edc2724ba6028ef9d4e45",
+  "evidence": [
+    {
+      "path": "tmp/m455_core_ooc_01/EXIT.json",
+      "sha256": "eb7a2d407d00cde43261b3ce54d95659950978417165cf24f4dd5fed9b600966",
+      "bytes": 265
+    },
+    {
+      "path": "tmp/m455_core_ooc_01/CONSOLE.log",
+      "sha256": "86784670ce114cb512d26692a4b62ed00f03316553dcd2a4c612670d578803e1",
+      "bytes": 172767
+    },
+    {
+      "path": "tmp/m455_core_ooc_01/MAPPING.json",
+      "sha256": "dbb6058896f6716455ea9c1d5812b6c3f6146c0b689cd1c329bde45dbae63486",
+      "bytes": 179
+    },
+    {
+      "path": "D:/CodexHome/visualizations/2026/10/11/01a12a98-44b4-7503-9ea1-46a7b5bcdc3f/native_hls/M455-dense_output-02/hls/impl/verilog/report/vivado_impl.xml",
+      "sha256": "ee67e3cc2a6532b95b47e5cac2b50c269eba00797377978ff65937c481f28e49",
+      "bytes": 428663
+    },
+    {
+      "path": "D:/CodexHome/visualizations/2026/10/11/01a12a98-44b4-7503-9ea1-46a7b5bcdc3f/native_hls/M455-dense_output-02/hls/impl/verilog/m89x_runtime_kernel.xdc",
+      "sha256": "63ea420c7cd5b85ab6b683b1f04e1509facc1a68929ecc2c9896eeb8b79288b4",
+      "bytes": 179
+    },
+    {
+      "path": "D:/CodexHome/visualizations/2026/10/11/01a12a98-44b4-7503-9ea1-46a7b5bcdc3f/native_hls/M455-dense_output-02/hls/impl/verilog/report/m89x_runtime_kernel_timing_routed.rpt",
+      "sha256": "5633a27097af715bb58dbdc78229ab6dd7cab68ac66c754e58dccdf9bd4ccc46",
+      "bytes": 18775
+    },
+    {
+      "path": "D:/CodexHome/visualizations/2026/10/11/01a12a98-44b4-7503-9ea1-46a7b5bcdc3f/native_hls/M455-dense_output-02/hls/impl/verilog/report/m89x_runtime_kernel_status_routed.rpt",
+      "sha256": "029acc3d205b0ad8a3ae3850c28aa89bbef66dc1e31fed589fe68021de81ede6",
+      "bytes": 714
+    },
+    {
+      "path": "D:/CodexHome/visualizations/2026/10/11/01a12a98-44b4-7503-9ea1-46a7b5bcdc3f/native_hls/M455-dense_output-02/hls/impl/verilog/report/m89x_runtime_kernel_utilization_routed.rpt",
+      "sha256": "c3e0f2d5a0d0ccde3a0381ad46c9603c0e8644f4befb24f2052181e4be77da4e",
+      "bytes": 12488
+    },
+    {
+      "path": "D:/CodexHome/visualizations/2026/10/11/01a12a98-44b4-7503-9ea1-46a7b5bcdc3f/native_hls/M455-dense_output-02/hls/impl/export.zip",
+      "sha256": "52a1e4085b6e85ce018ba952b1f3bc2893783b24fcde3261c286afac86cc92a2",
+      "bytes": 2002970
+    },
+    {
+      "path": "D:/CodexHome/visualizations/2026/10/11/01a12a98-44b4-7503-9ea1-46a7b5bcdc3f/native_hls/M455-dense_output-02/hls/impl/ip/component.xml",
+      "sha256": "84de64ae4203a0b308803f5ea5eaff5d00d3bf6b1c43cffa8ee63653513a3d66",
+      "bytes": 422062
+    }
+  ],
+  "resource_delta": {
+    "BRAM": 0,
+    "CLB": -37,
+    "DSP": 0,
+    "FF": 246,
+    "LATCH": 0,
+    "LUT": 214,
+    "SRL": 0,
+    "URAM": 0
+  },
+  "core_only": true,
+  "full_shell": false,
+  "board": false,
+  "performance": false,
+  "promoted": false,
+  "next_step": "Freeze clean unchanged-topology 200/100MHz shell inputs and implement once."
+}

@@ -1,0 +1,461 @@
+{
+  "layers": [
+    {
+      "key": "language_01",
+      "module": "model.language_model.layers.1.mlp",
+      "width": 9216,
+      "role": "frozen_prior_nineteen",
+      "codes": {
+        "path": "codes/language_01.npz",
+        "bytes": 72993948,
+        "sha256": "5b5a3f1e0d39dbcc827f0fc3dccad22d1d8fa46ff80b4724256ad45462aecd16"
+      },
+      "R1": {
+        "path": "R1/language_01_FP32.bin",
+        "sha256": "1a5b3ddf03cd913fa7e3f89c4fcdee823927a0b3ee2bf3f022dcf9a2f851504e",
+        "bytes": 10240
+      },
+      "original_codes_and_scale_bits_exact": true,
+      "new_quantization": false,
+      "original_bias_preserved": true,
+      "new_R1_pending": false
+    },
+    {
+      "key": "language_02",
+      "module": "model.language_model.layers.2.mlp",
+      "width": 9216,
+      "role": "frozen_prior_nineteen",
+      "codes": {
+        "path": "codes/language_02.npz",
+        "bytes": 72993948,
+        "sha256": "03db0f206342bbb4d3029c171d8b7b1fc5f3c5d661af68911ded2bb97f304d85"
+      },
+      "R1": {
+        "path": "R1/language_02_FP32.bin",
+        "sha256": "ee2a292749da52257e88174f06daf00f30797b698cc76be5fa1e4b5dc40e497e",
+        "bytes": 10240
+      },
+      "original_codes_and_scale_bits_exact": true,
+      "new_quantization": false,
+      "original_bias_preserved": true,
+      "new_R1_pending": false
+    },
+    {
+      "key": "vision_14",
+      "module": "model.visual.encoder.layers.14.mlp",
+      "width": 3584,
+      "role": "frozen_prior_nineteen",
+      "codes": {
+        "path": "codes/vision_14.npz",
+        "bytes": 7590340,
+        "sha256": "254bfd68f2cea78660aec65cf88c2dea4a49f3d0ae1468f1ea761dcf63da9e7a"
+      },
+      "R1": {
+        "path": "R1/vision_14_FP32.bin",
+        "sha256": "99888accbce8b36bdd93d8e8f157d92e85b413d780498be24e5b616c75b5d28d",
+        "bytes": 4096
+      },
+      "original_codes_and_scale_bits_exact": true,
+      "new_quantization": false,
+      "original_bias_preserved": true,
+      "new_R1_pending": false
+    },
+    {
+      "key": "language_04",
+      "module": "model.language_model.layers.4.mlp",
+      "width": 9216,
+      "role": "frozen_prior_nineteen",
+      "codes": {
+        "path": "codes/language_04.npz",
+        "bytes": 72993948,
+        "sha256": "6fab0ab948612be42bf12da31c2b7ad0f409dbe91f17fbf02068477dcd4ded38"
+      },
+      "R1": {
+        "path": "R1/language_04_FP32.bin",
+        "sha256": "56518985f10aa8d47a9f4ced520e448d1333c1f29d874321b33dd012a46bf952",
+        "bytes": 10240
+      },
+      "original_codes_and_scale_bits_exact": true,
+      "new_quantization": false,
+      "original_bias_preserved": true,
+      "new_R1_pending": false
+    },
+    {
+      "key": "language_34",
+      "module": "model.language_model.layers.34.mlp",
+      "width": 9216,
+      "role": "frozen_prior_nineteen",
+      "codes": {
+        "path": "codes/language_34.npz",
+        "bytes": 72993948,
+        "sha256": "90e5af11a2de26d2a8ab865529c3aaa8061544acbcc9b715fce8381e96b67130"
+      },
+      "R1": {
+        "path": "R1/language_34_FP32.bin",
+        "sha256": "5992e390e29a4705456649c9b08ceb1e331ed20cf3c8eee3475c0b034656b170",
+        "bytes": 10240
+      },
+      "original_codes_and_scale_bits_exact": true,
+      "new_quantization": false,
+      "original_bias_preserved": true,
+      "new_R1_pending": false
+    },
+    {
+      "key": "vision_15",
+      "module": "model.visual.encoder.layers.15.mlp",
+      "width": 3584,
+      "role": "frozen_prior_nineteen",
+      "codes": {
+        "path": "codes/vision_15.npz",
+        "bytes": 7590340,
+        "sha256": "bdcb2d7799059d8e02e8d6735862a89baeb8d676321c7a16af061dc443b06827"
+      },
+      "R1": {
+        "path": "R1/vision_15_FP32.bin",
+        "sha256": "081335d798ef1b94ff3dc28238645e71d425cf0a33affbe168f5fb49155d0688",
+        "bytes": 4096
+      },
+      "original_codes_and_scale_bits_exact": true,
+      "new_quantization": false,
+      "original_bias_preserved": true,
+      "new_R1_pending": false
+    },
+    {
+      "key": "language_16",
+      "module": "model.language_model.layers.16.mlp",
+      "width": 9216,
+      "role": "frozen_prior_nineteen",
+      "codes": {
+        "path": "codes/language_16.npz",
+        "bytes": 72993948,
+        "sha256": "9abf7f664750dc45ce4d659d867375a2c976cb5e33925cdcd7251537434d9c75"
+      },
+      "R1": {
+        "path": "R1/language_16_FP32.bin",
+        "sha256": "f61ba559c28e26883a300d4fb58732fce246f9021bbdb212262d27b4407ab64f",
+        "bytes": 10240
+      },
+      "original_codes_and_scale_bits_exact": true,
+      "new_quantization": false,
+      "original_bias_preserved": true,
+      "new_R1_pending": false
+    },
+    {
+      "key": "language_22",
+      "module": "model.language_model.layers.22.mlp",
+      "width": 9216,
+      "role": "frozen_prior_nineteen",
+      "codes": {
+        "path": "codes/language_22.npz",
+        "bytes": 72993948,
+        "sha256": "2260d4e67cc1488788ab22f41c441d583935aa3b769c8231f406fd664f1f47cd"
+      },
+      "R1": {
+        "path": "R1/language_22_FP32.bin",
+        "sha256": "914c890af6a712493053966fd77a4c5908eaa6807ae9ff325bb005a6a4276667",
+        "bytes": 10240
+      },
+      "original_codes_and_scale_bits_exact": true,
+      "new_quantization": false,
+      "original_bias_preserved": true,
+      "new_R1_pending": false
+    },
+    {
+      "key": "language_14",
+      "module": "model.language_model.layers.14.mlp",
+      "width": 9216,
+      "role": "frozen_prior_nineteen",
+      "codes": {
+        "path": "codes/language_14.npz",
+        "bytes": 72993948,
+        "sha256": "c971ed750776c3ed64d84c56e11467ab7a9d8bfddb568d785c9b1d413591d8ae"
+      },
+      "R1": {
+        "path": "R1/language_14_FP32.bin",
+        "sha256": "668194c302280ce1c1e81c9ea7a6f348747d00d0b5339d4f19bb008334190e9d",
+        "bytes": 10240
+      },
+      "original_codes_and_scale_bits_exact": true,
+      "new_quantization": false,
+      "original_bias_preserved": true,
+      "new_R1_pending": false
+    },
+    {
+      "key": "language_32",
+      "module": "model.language_model.layers.32.mlp",
+      "width": 9216,
+      "role": "frozen_prior_nineteen",
+      "codes": {
+        "path": "codes/language_32.npz",
+        "bytes": 72993948,
+        "sha256": "472a143aba1324184b93fa929bf9ccf2168fc65f5cddc0780d1e3b1e32d8fd42"
+      },
+      "R1": {
+        "path": "R1/language_32_FP32.bin",
+        "sha256": "77d0b76b09212bfad11db8e12cf8b86c6b48befdfd913ea1f3a55914c948c091",
+        "bytes": 10240
+      },
+      "original_codes_and_scale_bits_exact": true,
+      "new_quantization": false,
+      "original_bias_preserved": true,
+      "new_R1_pending": false
+    },
+    {
+      "key": "vision_21",
+      "module": "model.visual.encoder.layers.21.mlp",
+      "width": 3584,
+      "role": "frozen_prior_nineteen",
+      "codes": {
+        "path": "codes/vision_21.npz",
+        "bytes": 7590340,
+        "sha256": "29c9d41e727397e90ac55674ddf9cf12cd37bd4a2bb0e76c1c808ffd97af691a"
+      },
+      "R1": {
+        "path": "R1/vision_21_FP32.bin",
+        "sha256": "1998810c574fc06dec2f4e1a91802a49a10bd3ba352e68efecc0b5732bbeb426",
+        "bytes": 4096
+      },
+      "original_codes_and_scale_bits_exact": true,
+      "new_quantization": false,
+      "original_bias_preserved": true,
+      "new_R1_pending": false
+    },
+    {
+      "key": "language_12",
+      "module": "model.language_model.layers.12.mlp",
+      "width": 9216,
+      "role": "frozen_prior_nineteen",
+      "codes": {
+        "path": "codes/language_12.npz",
+        "bytes": 72993948,
+        "sha256": "b48de19fa00b29835e46b0f596f905169839fd1278ac219a55151034e00ffe98"
+      },
+      "R1": {
+        "path": "R1/language_12_FP32.bin",
+        "sha256": "f13a07ba922ef58a12833a01784cc7c42a2b17552997b3955c153264535462af",
+        "bytes": 10240
+      },
+      "original_codes_and_scale_bits_exact": true,
+      "new_quantization": false,
+      "original_bias_preserved": true,
+      "new_R1_pending": false
+    },
+    {
+      "key": "language_28",
+      "module": "model.language_model.layers.28.mlp",
+      "width": 9216,
+      "role": "frozen_prior_nineteen",
+      "codes": {
+        "path": "codes/language_28.npz",
+        "bytes": 72993948,
+        "sha256": "b13cd236e8c85579126a83c94b395423042c6c44e60f1825c89a163540478064"
+      },
+      "R1": {
+        "path": "R1/language_28_FP32.bin",
+        "sha256": "12d8f31d1e3e68746c5659988d285adcfed8c5eb7ddb207f4bfc9025e9655bdb",
+        "bytes": 10240
+      },
+      "original_codes_and_scale_bits_exact": true,
+      "new_quantization": false,
+      "original_bias_preserved": true,
+      "new_R1_pending": false
+    },
+    {
+      "key": "language_24",
+      "module": "model.language_model.layers.24.mlp",
+      "width": 9216,
+      "role": "frozen_prior_nineteen",
+      "codes": {
+        "path": "codes/language_24.npz",
+        "bytes": 72993948,
+        "sha256": "423a08503f7208f17eca64da30b548684c817658e2d46a586f29221683802ce5"
+      },
+      "R1": {
+        "path": "R1/language_24_FP32.bin",
+        "sha256": "b88fa32a207fb5747ea872466856dbc88b23a52423625713a26072d4319bd09c",
+        "bytes": 10240
+      },
+      "original_codes_and_scale_bits_exact": true,
+      "new_quantization": false,
+      "original_bias_preserved": true,
+      "new_R1_pending": false
+    },
+    {
+      "key": "language_27",
+      "module": "model.language_model.layers.27.mlp",
+      "width": 9216,
+      "role": "frozen_prior_nineteen",
+      "codes": {
+        "path": "codes/language_27.npz",
+        "bytes": 72993948,
+        "sha256": "449aef34c24d19c18fb243d2e9d5a695b8436bfd4ff52d314f6c2202d89bc1fd"
+      },
+      "R1": {
+        "path": "R1/language_27_FP32.bin",
+        "sha256": "5e3ba8b440544fdd65d28982b274ae4b3e71b7af4994b4029d0d571e788c3bb2",
+        "bytes": 10240
+      },
+      "original_codes_and_scale_bits_exact": true,
+      "new_quantization": false,
+      "original_bias_preserved": true,
+      "new_R1_pending": false
+    },
+    {
+      "key": "language_31",
+      "module": "model.language_model.layers.31.mlp",
+      "width": 9216,
+      "role": "frozen_prior_nineteen",
+      "codes": {
+        "path": "codes/language_31.npz",
+        "bytes": 72993948,
+        "sha256": "284b850d582963619d34dcfed8e3cab0a505bfc5f1140bdaf09c948610e76955"
+      },
+      "R1": {
+        "path": "R1/language_31_FP32.bin",
+        "sha256": "75867d9045f242722d6b2ce5a659be63e06ea38ce69e48c5d24ffac8c7b8fd34",
+        "bytes": 10240
+      },
+      "original_codes_and_scale_bits_exact": true,
+      "new_quantization": false,
+      "original_bias_preserved": true,
+      "new_R1_pending": false
+    },
+    {
+      "key": "language_15",
+      "module": "model.language_model.layers.15.mlp",
+      "width": 9216,
+      "role": "frozen_prior_nineteen",
+      "codes": {
+        "path": "codes/language_15.npz",
+        "bytes": 72993948,
+        "sha256": "601c8f1cff6b6f3b2a9952c4d10132c8c4e85dfa11c0e97dec1474bdafb6b4a9"
+      },
+      "R1": {
+        "path": "R1/language_15_FP32.bin",
+        "sha256": "9a2b38ee3d3de3e75dbd7c477762a6bb7a76e4e43ea19dc38bf1496ba1c45c0e",
+        "bytes": 10240
+      },
+      "original_codes_and_scale_bits_exact": true,
+      "new_quantization": false,
+      "original_bias_preserved": true,
+      "new_R1_pending": false
+    },
+    {
+      "key": "language_21",
+      "module": "model.language_model.layers.21.mlp",
+      "width": 9216,
+      "role": "frozen_prior_nineteen",
+      "codes": {
+        "path": "codes/language_21.npz",
+        "bytes": 72993948,
+        "sha256": "59985ed641cf0a901654d160eea71dbf345168ce708aaa526d07b6a803d3e763"
+      },
+      "R1": {
+        "path": "R1/language_21_FP32.bin",
+        "sha256": "ac3142fadf75e246656ce916004e21af7465b24274c60dcbadb76f07124270c8",
+        "bytes": 10240
+      },
+      "original_codes_and_scale_bits_exact": true,
+      "new_quantization": false,
+      "original_bias_preserved": true,
+      "new_R1_pending": false
+    },
+    {
+      "key": "language_23",
+      "module": "model.language_model.layers.23.mlp",
+      "width": 9216,
+      "role": "frozen_prior_nineteen",
+      "codes": {
+        "path": "codes/language_23.npz",
+        "bytes": 72993948,
+        "sha256": "df72a22b57561c65fe68effdfb4b9b4e8549b1b941776d55416f1cc2d1f8801f"
+      },
+      "R1": {
+        "path": "R1/language_23_FP32.bin",
+        "sha256": "0ef23633379dc4fddfbe5497e79c3aab982f0923f1cba9fb082f6e47d92f7769",
+        "bytes": 10240
+      },
+      "original_codes_and_scale_bits_exact": true,
+      "new_quantization": false,
+      "original_bias_preserved": true,
+      "new_R1_pending": false
+    },
+    {
+      "key": "language_20",
+      "module": "model.language_model.layers.20.mlp",
+      "width": 9216,
+      "role": "new_batch",
+      "codes": {
+        "path": "codes/language_20.npz",
+        "bytes": 72993948,
+        "sha256": "1c0dbe654197a24a491d97ff2b9458fb373787e9be07d8a2c164caa4e074eeb4"
+      },
+      "R1": {
+        "path": "R1/language_20_FP32.bin",
+        "bytes": 10240,
+        "sha256": "965fd64a38c7709cef4f36e5acda782a307f7cc4203b9765fd7563323dc54782"
+      },
+      "original_codes_and_scale_bits_exact": true,
+      "new_quantization": false,
+      "original_bias_preserved": true,
+      "new_R1_pending": false
+    },
+    {
+      "key": "language_26",
+      "module": "model.language_model.layers.26.mlp",
+      "width": 9216,
+      "role": "new_batch",
+      "codes": {
+        "path": "codes/language_26.npz",
+        "bytes": 72993948,
+        "sha256": "146faa9242c0088da9d69558e2539139338747b754cb140f4b4a0c40cee3f200"
+      },
+      "R1": {
+        "path": "R1/language_26_FP32.bin",
+        "bytes": 10240,
+        "sha256": "dc8cb51c6cb30fd34dbf3d0b23de8a351a0e3889387bcb345b7ce100f38a6098"
+      },
+      "original_codes_and_scale_bits_exact": true,
+      "new_quantization": false,
+      "original_bias_preserved": true,
+      "new_R1_pending": false
+    },
+    {
+      "key": "language_29",
+      "module": "model.language_model.layers.29.mlp",
+      "width": 9216,
+      "role": "new_batch",
+      "codes": {
+        "path": "codes/language_29.npz",
+        "bytes": 72993948,
+        "sha256": "5f94d4e5d363cd9d5cf74425e9a4923477e4948786f85024735da054192dc016"
+      },
+      "R1": {
+        "path": "R1/language_29_FP32.bin",
+        "bytes": 10240,
+        "sha256": "7bc192d2348a70f7c58256537df0b6b3105877d3deb8a9d3c333ac5ad1f68064"
+      },
+      "original_codes_and_scale_bits_exact": true,
+      "new_quantization": false,
+      "original_bias_preserved": true,
+      "new_R1_pending": false
+    }
+  ],
+  "source_plan_sha256": "707345e383af479274176ac55597174c3ade2ca35b5cd87771cc869028c23c65",
+  "new_R1_calibration_sha256": "4440c8b9ca78df8b963d46775bcb8e426d9e42e2679ab7b160e0b04373b95b65",
+  "baseline_manifest_sha256": "69d9cd0b70a1f482659fb2fdad61ac74b9845d97912bc45301487901c3a4f238",
+  "V13_V20_original_width": true,
+  "visual_branch_unchanged": true,
+  "research_only": true,
+  "quality_pending": false,
+  "board_layout_pending": true,
+  "relative_calibration_nonregression_pass": true,
+  "research_checkpoint_only": true,
+  "release_quality_pass": false,
+  "quality_audit_sha256": "ed145a498775180986af2aa46d34222d0ed4d855acd71e67b20f3c86d3ba1f95",
+  "margin_audit_sha256": "03c69980962ee85443b983efb396c5c951cd55c0ceb49e21cad014b39d845206",
+  "zero_margin_warning_cases": [],
+  "shared_explanation_defect_retained": true,
+  "performance_pass": false,
+  "deployed": false
+}

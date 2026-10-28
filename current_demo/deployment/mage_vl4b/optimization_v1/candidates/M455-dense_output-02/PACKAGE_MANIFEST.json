@@ -1,0 +1,129 @@
+{
+  "schema": "m455456-offline-candidate-v1",
+  "number": "455",
+  "files": [
+    {
+      "path": "boundary_fixture.bin",
+      "sha256": "f384f45eea4bc14110a7add49dd0944f0a025403aecc3360369ec999e28257d9",
+      "bytes": 2753984
+    },
+    {
+      "path": "boundary_tb.cpp",
+      "sha256": "d0ca048856cae8a1ca4b0ad9ea1cc3c40b87f7972ab6573112797bb5e0087572",
+      "bytes": 8007
+    },
+    {
+      "path": "case0.bin",
+      "sha256": "ff90af846569e936afa93e985b643719c558625caff2e96dedb7eec57811043b",
+      "bytes": 29053116
+    },
+    {
+      "path": "case1.bin",
+      "sha256": "f2cf4f2a576a05c80af3a64ae3374245ba5c806140b44a6b634a8e294b755a21",
+      "bytes": 13946940
+    },
+    {
+      "path": "case2.bin",
+      "sha256": "3e4607f31da49973d2ad57bc5d6688e3291c0c536451080ae70779487d45a825",
+      "bytes": 13857340
+    },
+    {
+      "path": "case3.bin",
+      "sha256": "2597af04d8be86db3a712c5e154d9b4fbe0db5fc44cf6663c167c7ba35c46df7",
+      "bytes": 2992828
+    },
+    {
+      "path": "case4.bin",
+      "sha256": "5e8b0a91cd8aa4757a460cd78f7e6f47b01d8b9bdc82e735e9a3e6d19b8f96a0",
+      "bytes": 3320508
+    },
+    {
+      "path": "full_tb.cpp",
+      "sha256": "4687542a98912a5aba36231d1961091e54200c4d97655a79eee7b270dcfbc579",
+      "bytes": 3702
+    },
+    {
+      "path": "hls/mage_prefill_m89_t32_reuse/mage_prefill_m89_t32_reuse.hpp",
+      "sha256": "6e9cd57142729c4b9fbee5c135f03710ce10dbc21f7bb98aa6d492b43ab9186e",
+      "bytes": 1304
+    },
+    {
+      "path": "hls/mage_prefill_m89d_t32_microtile/mage_prefill_m89d_t32_microtile.cpp",
+      "sha256": "801426d41679b763dea435bb2bc55b5c7cf8f03e76a909a252da3fc85120a413",
+      "bytes": 9889
+    },
+    {
+      "path": "hls/mage_prefill_m89d_t32_microtile/mage_prefill_m89d_t32_microtile.hpp",
+      "sha256": "2bfff1025492994f2cf16c1cdfaba76470c0a949d2cd975a5fe7d48cf9ac6f7f",
+      "bytes": 796
+    },
+    {
+      "path": "hls/mage_prefill_m89e_t32_packedaccum/mage_prefill_m89e_t32_packedaccum.cpp",
+      "sha256": "077ba9e5be6edec57e99170f8a4c340c8c9ef816340e36895907a656855f0c37",
+      "bytes": 8807
+    },
+    {
+      "path": "hls/mage_prefill_m89h_t32_chunkedpacked/mage_prefill_m89h_t32_chunkedpacked.cpp",
+      "sha256": "1be6e89eb650d61ead70b8c5a6090cd9cf5bb227ec199712a53528b533d7e5d6",
+      "bytes": 8615
+    },
+    {
+      "path": "hls/mage_prefill_m89n_t32_w2w4/mage_prefill_m89n_t32_w2w4.cpp",
+      "sha256": "e6d7d3a585c199ef5ecd92e014edf475dc165d38bcc2b89c25b535e5aca10ea3",
+      "bytes": 10872
+    },
+    {
+      "path": "hls/mage_prefill_m89o_shared15/mage_prefill_m89o_shared15.cpp",
+      "sha256": "ab3374cf385d81b082d8405f3abfc84dbc4d886534956a024e3e12cec9aa604b",
+      "bytes": 4628
+    },
+    {
+      "path": "hls/mage_prefill_m89s_scaleaware/mage_prefill_m89s_scaleaware.cpp",
+      "sha256": "21766fe0479fecce8848c7336947540b70f73c40cb0365489320bc7aeeca8f6e",
+      "bytes": 6576
+    },
+    {
+      "path": "hls/mage_prefill_m89x_runtime/mage_prefill_m89x_runtime.cpp",
+      "sha256": "85cfe6e60c283c6ccabc28e31e073409a35d3cd72930f2e335d4ab08f70c8167",
+      "bytes": 13500
+    },
+    {
+      "path": "hls/mage_prefill_m89x_runtime/mage_prefill_m89x_runtime.hpp",
+      "sha256": "51ad6e0eea0257b841f20eac2c50c48df865a9c5b25a547d7798b20a459e2eba",
+      "bytes": 488
+    },
+    {
+      "path": "hls/mage_prefill_t6_runtime_wrapper_m75b/mage_prefill_t6_arith.cpp",
+      "sha256": "cf85823b46920dfa8997665e0e65e1e7d4032ac56834b45405de88a6222808fa",
+      "bytes": 24942
+    },
+    {
+      "path": "hls/mage_prefill_t6_runtime_wrapper_m75b/mage_prefill_t6_arith.hpp",
+      "sha256": "589a58f7c7cc31cf396238d15ed909672bddf17e17dcc85c7eb3a086232d4b67",
+      "bytes": 1378
+    },
+    {
+      "path": "HOST_COMPONENT_RESULT.json",
+      "sha256": "1b2a5772769b4f3cd232e2389f17479bb05a2415df3ba3a4caaf0b116477f4e5",
+      "bytes": 1167
+    },
+    {
+      "path": "m455_dense_output.py",
+      "sha256": "a2428d9106decc88187d1060b6383f7c75cc8296e4e142f2f4c30db355d74e55",
+      "bytes": 3468
+    },
+    {
+      "path": "run_hls.tcl",
+      "sha256": "00ad50db627e85cdeb1fb3ddf6da88b4b63570a2d69c526f2febeeb7130be93a",
+      "bytes": 981
+    },
+    {
+      "path": "SOURCE.diff",
+      "sha256": "d75f411acf79903b383c3e0a633067d0ff79bd450d4e68b4cd5a60da781d4214",
+      "bytes": 1620
+    }
+  ],
+  "file_count": 24,
+  "total_bytes": 66035456,
+  "missing_headers": 0
+}

@@ -1,0 +1,1034 @@
+{
+  "scope": "M455_P1_SAVED_FIXTURE_LOWER_ONLY",
+  "CSim_sha256": "8b899857829a36c2be0a3fd4a8344f76c0fff527b734e07184e210c9ab6e87db",
+  "hardware_evidence": [
+    {
+      "path": "proofs/M455_FROZEN_PROOF_0.json",
+      "sha256": "3af9c7501a41f5dfa295f89ed3b31bc9b636d87ac8173f51f82f697626abb7b0"
+    },
+    {
+      "path": "proofs/M455_FROZEN_PROOF_1.json",
+      "sha256": "5ed578b05c6c4b88b66c631f59abb430a4110e49c9610d39d1ee31c69f7c9838"
+    },
+    {
+      "path": "proofs/M455_FROZEN_PROOF_2.json",
+      "sha256": "fe08b9de20be7305f764201d493c795795c99fc708a2cc8aa0c44043324d985a"
+    },
+    {
+      "path": "proofs/M455_FROZEN_PROOF_3.json",
+      "sha256": "45896c9a22ad933c57c38ce3bb421d9abaa73abf566ede2852b855a839947474"
+    },
+    {
+      "path": "proofs/M455_FROZEN_PROOF_4.json",
+      "sha256": "8bdb01f37f6d02e95478c64ef91277ec182b5cd29611d1c9c17189c18a83543c"
+    },
+    {
+      "path": "proofs/M455_FROZEN_PROOF_5.json",
+      "sha256": "3ea1037670db79366953eca4d0bcaac78817421c05135db61eb7d48149b63ad3"
+    },
+    {
+      "path": "proofs/M455_FROZEN_PROOF_6.json",
+      "sha256": "6cc656d3ce957feb0948a36f116c3859c2c240aac87fa9cb05f4287ad2276490"
+    },
+    {
+      "path": "proofs/M455_FROZEN_PROOF_7.json",
+      "sha256": "a61392fbef5f37448bad776a4434ba164906fbb9965269a19bdc8981f691e0cb"
+    },
+    {
+      "path": "proofs/M455_FROZEN_PROOF_8.json",
+      "sha256": "aed791ea72e609a158394053bc88ff3292b1ed8894b5b32c501be639615179fe"
+    }
+  ],
+  "cases": {
+    "BuildID": [
+      {
+        "name": "candidate_build_only",
+        "packet": "build_packet.bin",
+        "golden": "build_golden.bin",
+        "config": "0x10201",
+        "weights": [
+          "zero_weights.bin",
+          "zero_weights.bin",
+          "zero_weights.bin",
+          "zero_weights.bin"
+        ]
+      }
+    ],
+    "Descriptor": [
+      {
+        "name": "L2_energy_first_descriptor",
+        "packet": "descriptor_packet.bin",
+        "golden": "descriptor_golden.bin",
+        "config": "0x10428",
+        "weights": [
+          "energy9216/gate_up/weights0.bin",
+          "energy9216/gate_up/weights1.bin",
+          "energy9216/gate_up/weights2.bin",
+          "energy9216/gate_up/weights3.bin"
+        ],
+        "same_parent_CSim_output_prefix": true
+      }
+    ],
+    "Chain": [
+      {
+        "name": "original9728_gate_up",
+        "packet": "original9728/gate_up/packet.bin",
+        "golden": "original9728/gate_up/compact_expected.bin",
+        "config": "0xa0428",
+        "weights": [
+          "original9728/gate_up/weights0.bin",
+          "original9728/gate_up/weights1.bin",
+          "original9728/gate_up/weights2.bin",
+          "original9728/gate_up/weights3.bin"
+        ]
+      },
+      {
+        "name": "original9728_down",
+        "packet": "original9728/down/packet.bin",
+        "golden": "original9728/down/compact_expected.bin",
+        "config": "0x20498",
+        "weights": [
+          "original9728/down/weights0.bin",
+          "original9728/down/weights1.bin",
+          "original9728/down/weights2.bin",
+          "original9728/down/weights3.bin"
+        ]
+      },
+      {
+        "name": "energy9216_gate_up",
+        "packet": "energy9216/gate_up/packet.bin",
+        "golden": "energy9216/gate_up/compact_expected.bin",
+        "config": "0xa0428",
+        "weights": [
+          "energy9216/gate_up/weights0.bin",
+          "energy9216/gate_up/weights1.bin",
+          "energy9216/gate_up/weights2.bin",
+          "energy9216/gate_up/weights3.bin"
+        ]
+      },
+      {
+        "name": "energy9216_down",
+        "packet": "energy9216/down/packet.bin",
+        "golden": "energy9216/down/compact_expected.bin",
+        "config": "0x20490",
+        "weights": [
+          "energy9216/down/weights0.bin",
+          "energy9216/down/weights1.bin",
+          "energy9216/down/weights2.bin",
+          "energy9216/down/weights3.bin"
+        ]
+      }
+    ]
+  },
+  "seven_owner_shapes": [
+    6963200,
+    6963200,
+    6963200,
+    6963200,
+    389152,
+    2621440,
+    2621440
+  ],
+  "models": 0,
+  "full_MLP": false,
+  "performance_or_quality": false,
+  "original_M455_bit_sha256": "e1b5b9e6cb84325820e1150528d1e4117d30e924e777246576a35acb5332e4b8",
+  "private_runtime_byte_copy_only": true,
+  "layer": 2,
+  "experimental_width": 9216,
+  "original_width": 9728,
+  "selector": "energy fixed prior to this experiment",
+  "source_forecast_sha256": "a70f1a1d0ac1c21daa4e895d6ef0d4c731ec2198bb762f972dfd269c7de8b383",
+  "source_vector_sha256": "3676b2883736861567ec85e52fb5301039c0de4a88c1c527c497f52096d1b901",
+  "variants": [
+    {
+      "name": "original9728",
+      "gate_up": {
+        "groups": 40,
+        "bits": 4,
+        "descriptor_count": 10,
+        "config_u32": "0xa0428",
+        "descriptors": [
+          {
+            "descriptor_index": 0,
+            "module": "gate",
+            "row_start": 0,
+            "valid_rows": 2048,
+            "rows_per_shard": 512,
+            "bits": 4,
+            "offset_words": 0,
+            "encoded_u64": "0x120000000000",
+            "record_bytes_per_shard": 696320,
+            "output_bytes": 131072,
+            "tile_index": 0
+          },
+          {
+            "descriptor_index": 1,
+            "module": "gate",
+            "row_start": 2048,
+            "valid_rows": 2048,
+            "rows_per_shard": 512,
+            "bits": 4,
+            "offset_words": 43520,
+            "encoded_u64": "0x12000000aa00",
+            "record_bytes_per_shard": 696320,
+            "output_bytes": 131072,
+            "tile_index": 1
+          },
+          {
+            "descriptor_index": 2,
+            "module": "gate",
+            "row_start": 4096,
+            "valid_rows": 2048,
+            "rows_per_shard": 512,
+            "bits": 4,
+            "offset_words": 87040,
+            "encoded_u64": "0x120000015400",
+            "record_bytes_per_shard": 696320,
+            "output_bytes": 131072,
+            "tile_index": 2
+          },
+          {
+            "descriptor_index": 3,
+            "module": "gate",
+            "row_start": 6144,
+            "valid_rows": 2048,
+            "rows_per_shard": 512,
+            "bits": 4,
+            "offset_words": 130560,
+            "encoded_u64": "0x12000001fe00",
+            "record_bytes_per_shard": 696320,
+            "output_bytes": 131072,
+            "tile_index": 3
+          },
+          {
+            "descriptor_index": 4,
+            "module": "gate",
+            "row_start": 8192,
+            "valid_rows": 1536,
+            "rows_per_shard": 384,
+            "bits": 4,
+            "offset_words": 174080,
+            "encoded_u64": "0x11800002a800",
+            "record_bytes_per_shard": 522240,
+            "output_bytes": 98304,
+            "tile_index": 4
+          },
+          {
+            "descriptor_index": 5,
+            "module": "up",
+            "row_start": 0,
+            "valid_rows": 2048,
+            "rows_per_shard": 512,
+            "bits": 4,
+            "offset_words": 206720,
+            "encoded_u64": "0x120000032780",
+            "record_bytes_per_shard": 696320,
+            "output_bytes": 131072,
+            "tile_index": 0
+          },
+          {
+            "descriptor_index": 6,
+            "module": "up",
+            "row_start": 2048,
+            "valid_rows": 2048,
+            "rows_per_shard": 512,
+            "bits": 4,
+            "offset_words": 250240,
+            "encoded_u64": "0x12000003d180",
+            "record_bytes_per_shard": 696320,
+            "output_bytes": 131072,
+            "tile_index": 1
+          },
+          {
+            "descriptor_index": 7,
+            "module": "up",
+            "row_start": 4096,
+            "valid_rows": 2048,
+            "rows_per_shard": 512,
+            "bits": 4,
+            "offset_words": 293760,
+            "encoded_u64": "0x120000047b80",
+            "record_bytes_per_shard": 696320,
+            "output_bytes": 131072,
+            "tile_index": 2
+          },
+          {
+            "descriptor_index": 8,
+            "module": "up",
+            "row_start": 6144,
+            "valid_rows": 2048,
+            "rows_per_shard": 512,
+            "bits": 4,
+            "offset_words": 337280,
+            "encoded_u64": "0x120000052580",
+            "record_bytes_per_shard": 696320,
+            "output_bytes": 131072,
+            "tile_index": 3
+          },
+          {
+            "descriptor_index": 9,
+            "module": "up",
+            "row_start": 8192,
+            "valid_rows": 1536,
+            "rows_per_shard": 384,
+            "bits": 4,
+            "offset_words": 380800,
+            "encoded_u64": "0x11800005cf80",
+            "record_bytes_per_shard": 522240,
+            "output_bytes": 98304,
+            "tile_index": 4
+          }
+        ],
+        "input_bytes": 102560,
+        "output_bytes": 1245184,
+        "output_abi": "m455-dense-fp16-block-token-shard-pair-v1",
+        "expected_build_id": 1295267125,
+        "output_words64": 155648,
+        "chain_index": 3000,
+        "layer": 2,
+        "family": "gate_up",
+        "expected_macros": 1593835520,
+        "stage_base_words": 0,
+        "stage_bytes_per_shard": 6615040
+      },
+      "down": {
+        "groups": 152,
+        "bits": 4,
+        "descriptor_count": 2,
+        "config_u32": "0x20498",
+        "descriptors": [
+          {
+            "descriptor_index": 0,
+            "module": "down",
+            "row_start": 0,
+            "valid_rows": 2048,
+            "rows_per_shard": 512,
+            "bits": 4,
+            "offset_words": 0,
+            "encoded_u64": "0x120000000000",
+            "record_bytes_per_shard": 2646016,
+            "output_bytes": 131072,
+            "tile_index": 0
+          },
+          {
+            "descriptor_index": 1,
+            "module": "down",
+            "row_start": 2048,
+            "valid_rows": 512,
+            "rows_per_shard": 128,
+            "bits": 4,
+            "offset_words": 165376,
+            "encoded_u64": "0x108000028600",
+            "record_bytes_per_shard": 661504,
+            "output_bytes": 32768,
+            "tile_index": 1
+          }
+        ],
+        "input_bytes": 389152,
+        "output_bytes": 163840,
+        "output_abi": "m455-dense-fp16-block-token-shard-pair-v1",
+        "expected_build_id": 1295267125,
+        "output_words64": 20480,
+        "chain_index": 3001,
+        "layer": 2,
+        "family": "mlp_down",
+        "expected_macros": 796917760,
+        "stage_base_words": 0,
+        "stage_bytes_per_shard": 3307520
+      },
+      "gate_up_packet_sha256": "3127c3c263cb5205c0ad99df4aff8a6b935d824359b73b6b8bb4a8e105074cfd",
+      "down_packet_sha256": "8e7672687bb6e857fd534d87b3e1b5f90df4a6db8a7bdee129a0b1ee1a551346"
+    },
+    {
+      "name": "energy9216",
+      "gate_up": {
+        "groups": 40,
+        "bits": 4,
+        "descriptor_count": 10,
+        "config_u32": "0xa0428",
+        "descriptors": [
+          {
+            "descriptor_index": 0,
+            "module": "gate",
+            "row_start": 0,
+            "valid_rows": 2048,
+            "rows_per_shard": 512,
+            "bits": 4,
+            "offset_words": 0,
+            "encoded_u64": "0x120000000000",
+            "record_bytes_per_shard": 696320,
+            "output_bytes": 131072,
+            "tile_index": 0
+          },
+          {
+            "descriptor_index": 1,
+            "module": "gate",
+            "row_start": 2048,
+            "valid_rows": 2048,
+            "rows_per_shard": 512,
+            "bits": 4,
+            "offset_words": 43520,
+            "encoded_u64": "0x12000000aa00",
+            "record_bytes_per_shard": 696320,
+            "output_bytes": 131072,
+            "tile_index": 1
+          },
+          {
+            "descriptor_index": 2,
+            "module": "gate",
+            "row_start": 4096,
+            "valid_rows": 2048,
+            "rows_per_shard": 512,
+            "bits": 4,
+            "offset_words": 87040,
+            "encoded_u64": "0x120000015400",
+            "record_bytes_per_shard": 696320,
+            "output_bytes": 131072,
+            "tile_index": 2
+          },
+          {
+            "descriptor_index": 3,
+            "module": "gate",
+            "row_start": 6144,
+            "valid_rows": 2048,
+            "rows_per_shard": 512,
+            "bits": 4,
+            "offset_words": 130560,
+            "encoded_u64": "0x12000001fe00",
+            "record_bytes_per_shard": 696320,
+            "output_bytes": 131072,
+            "tile_index": 3
+          },
+          {
+            "descriptor_index": 4,
+            "module": "gate",
+            "row_start": 8192,
+            "valid_rows": 1024,
+            "rows_per_shard": 256,
+            "bits": 4,
+            "offset_words": 174080,
+            "encoded_u64": "0x11000002a800",
+            "record_bytes_per_shard": 348160,
+            "output_bytes": 65536,
+            "tile_index": 4
+          },
+          {
+            "descriptor_index": 5,
+            "module": "up",
+            "row_start": 0,
+            "valid_rows": 2048,
+            "rows_per_shard": 512,
+            "bits": 4,
+            "offset_words": 195840,
+            "encoded_u64": "0x12000002fd00",
+            "record_bytes_per_shard": 696320,
+            "output_bytes": 131072,
+            "tile_index": 0
+          },
+          {
+            "descriptor_index": 6,
+            "module": "up",
+            "row_start": 2048,
+            "valid_rows": 2048,
+            "rows_per_shard": 512,
+            "bits": 4,
+            "offset_words": 239360,
+            "encoded_u64": "0x12000003a700",
+            "record_bytes_per_shard": 696320,
+            "output_bytes": 131072,
+            "tile_index": 1
+          },
+          {
+            "descriptor_index": 7,
+            "module": "up",
+            "row_start": 4096,
+            "valid_rows": 2048,
+            "rows_per_shard": 512,
+            "bits": 4,
+            "offset_words": 282880,
+            "encoded_u64": "0x120000045100",
+            "record_bytes_per_shard": 696320,
+            "output_bytes": 131072,
+            "tile_index": 2
+          },
+          {
+            "descriptor_index": 8,
+            "module": "up",
+            "row_start": 6144,
+            "valid_rows": 2048,
+            "rows_per_shard": 512,
+            "bits": 4,
+            "offset_words": 326400,
+            "encoded_u64": "0x12000004fb00",
+            "record_bytes_per_shard": 696320,
+            "output_bytes": 131072,
+            "tile_index": 3
+          },
+          {
+            "descriptor_index": 9,
+            "module": "up",
+            "row_start": 8192,
+            "valid_rows": 1024,
+            "rows_per_shard": 256,
+            "bits": 4,
+            "offset_words": 369920,
+            "encoded_u64": "0x11000005a500",
+            "record_bytes_per_shard": 348160,
+            "output_bytes": 65536,
+            "tile_index": 4
+          }
+        ],
+        "input_bytes": 102560,
+        "output_bytes": 1179648,
+        "output_abi": "m455-dense-fp16-block-token-shard-pair-v1",
+        "expected_build_id": 1295267125,
+        "output_words64": 147456,
+        "chain_index": 3002,
+        "layer": 2,
+        "family": "gate_up",
+        "expected_macros": 1509949440,
+        "stage_base_words": 0,
+        "stage_bytes_per_shard": 6266880
+      },
+      "down": {
+        "groups": 144,
+        "bits": 4,
+        "descriptor_count": 2,
+        "config_u32": "0x20490",
+        "descriptors": [
+          {
+            "descriptor_index": 0,
+            "module": "down",
+            "row_start": 0,
+            "valid_rows": 2048,
+            "rows_per_shard": 512,
+            "bits": 4,
+            "offset_words": 0,
+            "encoded_u64": "0x120000000000",
+            "record_bytes_per_shard": 2506752,
+            "output_bytes": 131072,
+            "tile_index": 0
+          },
+          {
+            "descriptor_index": 1,
+            "module": "down",
+            "row_start": 2048,
+            "valid_rows": 512,
+            "rows_per_shard": 128,
+            "bits": 4,
+            "offset_words": 156672,
+            "encoded_u64": "0x108000026400",
+            "record_bytes_per_shard": 626688,
+            "output_bytes": 32768,
+            "tile_index": 1
+          }
+        ],
+        "input_bytes": 368672,
+        "output_bytes": 163840,
+        "output_abi": "m455-dense-fp16-block-token-shard-pair-v1",
+        "expected_build_id": 1295267125,
+        "output_words64": 20480,
+        "chain_index": 3003,
+        "layer": 2,
+        "family": "mlp_down",
+        "expected_macros": 754974720,
+        "stage_base_words": 0,
+        "stage_bytes_per_shard": 3133440
+      },
+      "gate_up_packet_sha256": "1d7056fb1ffc731fe327ffafda93e84ec73272ac81e20a35f4c859e240ea91be",
+      "down_packet_sha256": "abe425924e4cfdfa162b72a1f6812caf5c08c64ac90a24e2a3a47283bc1a1288"
+    }
+  ],
+  "local_cases": [
+    {
+      "label": "original9728_gate_up_shift6",
+      "chain": {
+        "groups": 40,
+        "bits": 4,
+        "descriptor_count": 10,
+        "config_u32": "0xa0428",
+        "descriptors": [
+          {
+            "descriptor_index": 0,
+            "module": "gate",
+            "row_start": 0,
+            "valid_rows": 2048,
+            "rows_per_shard": 512,
+            "bits": 4,
+            "offset_words": 0,
+            "encoded_u64": "0x120000000000",
+            "record_bytes_per_shard": 696320,
+            "output_bytes": 131072,
+            "tile_index": 0
+          },
+          {
+            "descriptor_index": 1,
+            "module": "gate",
+            "row_start": 2048,
+            "valid_rows": 2048,
+            "rows_per_shard": 512,
+            "bits": 4,
+            "offset_words": 43520,
+            "encoded_u64": "0x12000000aa00",
+            "record_bytes_per_shard": 696320,
+            "output_bytes": 131072,
+            "tile_index": 1
+          },
+          {
+            "descriptor_index": 2,
+            "module": "gate",
+            "row_start": 4096,
+            "valid_rows": 2048,
+            "rows_per_shard": 512,
+            "bits": 4,
+            "offset_words": 87040,
+            "encoded_u64": "0x120000015400",
+            "record_bytes_per_shard": 696320,
+            "output_bytes": 131072,
+            "tile_index": 2
+          },
+          {
+            "descriptor_index": 3,
+            "module": "gate",
+            "row_start": 6144,
+            "valid_rows": 2048,
+            "rows_per_shard": 512,
+            "bits": 4,
+            "offset_words": 130560,
+            "encoded_u64": "0x12000001fe00",
+            "record_bytes_per_shard": 696320,
+            "output_bytes": 131072,
+            "tile_index": 3
+          },
+          {
+            "descriptor_index": 4,
+            "module": "gate",
+            "row_start": 8192,
+            "valid_rows": 1536,
+            "rows_per_shard": 384,
+            "bits": 4,
+            "offset_words": 174080,
+            "encoded_u64": "0x11800002a800",
+            "record_bytes_per_shard": 522240,
+            "output_bytes": 98304,
+            "tile_index": 4
+          },
+          {
+            "descriptor_index": 5,
+            "module": "up",
+            "row_start": 0,
+            "valid_rows": 2048,
+            "rows_per_shard": 512,
+            "bits": 4,
+            "offset_words": 206720,
+            "encoded_u64": "0x120000032780",
+            "record_bytes_per_shard": 696320,
+            "output_bytes": 131072,
+            "tile_index": 0
+          },
+          {
+            "descriptor_index": 6,
+            "module": "up",
+            "row_start": 2048,
+            "valid_rows": 2048,
+            "rows_per_shard": 512,
+            "bits": 4,
+            "offset_words": 250240,
+            "encoded_u64": "0x12000003d180",
+            "record_bytes_per_shard": 696320,
+            "output_bytes": 131072,
+            "tile_index": 1
+          },
+          {
+            "descriptor_index": 7,
+            "module": "up",
+            "row_start": 4096,
+            "valid_rows": 2048,
+            "rows_per_shard": 512,
+            "bits": 4,
+            "offset_words": 293760,
+            "encoded_u64": "0x120000047b80",
+            "record_bytes_per_shard": 696320,
+            "output_bytes": 131072,
+            "tile_index": 2
+          },
+          {
+            "descriptor_index": 8,
+            "module": "up",
+            "row_start": 6144,
+            "valid_rows": 2048,
+            "rows_per_shard": 512,
+            "bits": 4,
+            "offset_words": 337280,
+            "encoded_u64": "0x120000052580",
+            "record_bytes_per_shard": 696320,
+            "output_bytes": 131072,
+            "tile_index": 3
+          },
+          {
+            "descriptor_index": 9,
+            "module": "up",
+            "row_start": 8192,
+            "valid_rows": 1536,
+            "rows_per_shard": 384,
+            "bits": 4,
+            "offset_words": 380800,
+            "encoded_u64": "0x11800005cf80",
+            "record_bytes_per_shard": 522240,
+            "output_bytes": 98304,
+            "tile_index": 4
+          }
+        ],
+        "input_bytes": 102560,
+        "output_bytes": 1245184,
+        "output_abi": "m455-dense-fp16-block-token-shard-pair-v1",
+        "expected_build_id": 1295267125,
+        "output_words64": 155648,
+        "chain_index": 3000,
+        "layer": 2,
+        "family": "gate_up",
+        "expected_macros": 1593835520,
+        "stage_base_words": 0,
+        "stage_bytes_per_shard": 6615040
+      },
+      "layout": "original9728/gate_up",
+      "layout_sha256": "b454737b19a3365cb248cc7426110565aace018a42a0ed02ed8471f942984bb4",
+      "packet_sha256": "3127c3c263cb5205c0ad99df4aff8a6b935d824359b73b6b8bb4a8e105074cfd",
+      "golden_sha256": "47a8c7bc9c9a884a8683f4cb2ab6051b1c648a2faa3654271b6f8118ca623daf",
+      "expected_outputs": {
+        "gate": "4add8a05997e14994f780311c32ed1d50bff3eb2d63fe8a3ba468a702e07fd46",
+        "up": "514546f515df2403912aed1dc2adabdb7617991cc0c1dea8f60dd1407fc77096"
+      },
+      "variant": "original9728",
+      "directory": "/dev/shm/m544_freshboot_lower05/original9728/gate_up"
+    },
+    {
+      "label": "original9728_down_shift6",
+      "chain": {
+        "groups": 152,
+        "bits": 4,
+        "descriptor_count": 2,
+        "config_u32": "0x20498",
+        "descriptors": [
+          {
+            "descriptor_index": 0,
+            "module": "down",
+            "row_start": 0,
+            "valid_rows": 2048,
+            "rows_per_shard": 512,
+            "bits": 4,
+            "offset_words": 0,
+            "encoded_u64": "0x120000000000",
+            "record_bytes_per_shard": 2646016,
+            "output_bytes": 131072,
+            "tile_index": 0
+          },
+          {
+            "descriptor_index": 1,
+            "module": "down",
+            "row_start": 2048,
+            "valid_rows": 512,
+            "rows_per_shard": 128,
+            "bits": 4,
+            "offset_words": 165376,
+            "encoded_u64": "0x108000028600",
+            "record_bytes_per_shard": 661504,
+            "output_bytes": 32768,
+            "tile_index": 1
+          }
+        ],
+        "input_bytes": 389152,
+        "output_bytes": 163840,
+        "output_abi": "m455-dense-fp16-block-token-shard-pair-v1",
+        "expected_build_id": 1295267125,
+        "output_words64": 20480,
+        "chain_index": 3001,
+        "layer": 2,
+        "family": "mlp_down",
+        "expected_macros": 796917760,
+        "stage_base_words": 0,
+        "stage_bytes_per_shard": 3307520
+      },
+      "layout": "original9728/down",
+      "layout_sha256": "caf7c09165fd89063e2e1d62c391593e8d52f89d45a020540c7e2ab1f92ce263",
+      "packet_sha256": "8e7672687bb6e857fd534d87b3e1b5f90df4a6db8a7bdee129a0b1ee1a551346",
+      "golden_sha256": "a2e1bdd0cd7586a8883a554cf6676be1b57ffd8c9e4a01d6b4118bff943c4ea9",
+      "expected_outputs": {
+        "down": "4bb1e5dc39426fe80fd91416eefa26ae6df9f1cc7ab4629394a68329bb309e4f"
+      },
+      "variant": "original9728",
+      "directory": "/dev/shm/m544_freshboot_lower05/original9728/down"
+    },
+    {
+      "label": "energy9216_gate_up_shift6",
+      "chain": {
+        "groups": 40,
+        "bits": 4,
+        "descriptor_count": 10,
+        "config_u32": "0xa0428",
+        "descriptors": [
+          {
+            "descriptor_index": 0,
+            "module": "gate",
+            "row_start": 0,
+            "valid_rows": 2048,
+            "rows_per_shard": 512,
+            "bits": 4,
+            "offset_words": 0,
+            "encoded_u64": "0x120000000000",
+            "record_bytes_per_shard": 696320,
+            "output_bytes": 131072,
+            "tile_index": 0
+          },
+          {
+            "descriptor_index": 1,
+            "module": "gate",
+            "row_start": 2048,
+            "valid_rows": 2048,
+            "rows_per_shard": 512,
+            "bits": 4,
+            "offset_words": 43520,
+            "encoded_u64": "0x12000000aa00",
+            "record_bytes_per_shard": 696320,
+            "output_bytes": 131072,
+            "tile_index": 1
+          },
+          {
+            "descriptor_index": 2,
+            "module": "gate",
+            "row_start": 4096,
+            "valid_rows": 2048,
+            "rows_per_shard": 512,
+            "bits": 4,
+            "offset_words": 87040,
+            "encoded_u64": "0x120000015400",
+            "record_bytes_per_shard": 696320,
+            "output_bytes": 131072,
+            "tile_index": 2
+          },
+          {
+            "descriptor_index": 3,
+            "module": "gate",
+            "row_start": 6144,
+            "valid_rows": 2048,
+            "rows_per_shard": 512,
+            "bits": 4,
+            "offset_words": 130560,
+            "encoded_u64": "0x12000001fe00",
+            "record_bytes_per_shard": 696320,
+            "output_bytes": 131072,
+            "tile_index": 3
+          },
+          {
+            "descriptor_index": 4,
+            "module": "gate",
+            "row_start": 8192,
+            "valid_rows": 1024,
+            "rows_per_shard": 256,
+            "bits": 4,
+            "offset_words": 174080,
+            "encoded_u64": "0x11000002a800",
+            "record_bytes_per_shard": 348160,
+            "output_bytes": 65536,
+            "tile_index": 4
+          },
+          {
+            "descriptor_index": 5,
+            "module": "up",
+            "row_start": 0,
+            "valid_rows": 2048,
+            "rows_per_shard": 512,
+            "bits": 4,
+            "offset_words": 195840,
+            "encoded_u64": "0x12000002fd00",
+            "record_bytes_per_shard": 696320,
+            "output_bytes": 131072,
+            "tile_index": 0
+          },
+          {
+            "descriptor_index": 6,
+            "module": "up",
+            "row_start": 2048,
+            "valid_rows": 2048,
+            "rows_per_shard": 512,
+            "bits": 4,
+            "offset_words": 239360,
+            "encoded_u64": "0x12000003a700",
+            "record_bytes_per_shard": 696320,
+            "output_bytes": 131072,
+            "tile_index": 1
+          },
+          {
+            "descriptor_index": 7,
+            "module": "up",
+            "row_start": 4096,
+            "valid_rows": 2048,
+            "rows_per_shard": 512,
+            "bits": 4,
+            "offset_words": 282880,
+            "encoded_u64": "0x120000045100",
+            "record_bytes_per_shard": 696320,
+            "output_bytes": 131072,
+            "tile_index": 2
+          },
+          {
+            "descriptor_index": 8,
+            "module": "up",
+            "row_start": 6144,
+            "valid_rows": 2048,
+            "rows_per_shard": 512,
+            "bits": 4,
+            "offset_words": 326400,
+            "encoded_u64": "0x12000004fb00",
+            "record_bytes_per_shard": 696320,
+            "output_bytes": 131072,
+            "tile_index": 3
+          },
+          {
+            "descriptor_index": 9,
+            "module": "up",
+            "row_start": 8192,
+            "valid_rows": 1024,
+            "rows_per_shard": 256,
+            "bits": 4,
+            "offset_words": 369920,
+            "encoded_u64": "0x11000005a500",
+            "record_bytes_per_shard": 348160,
+            "output_bytes": 65536,
+            "tile_index": 4
+          }
+        ],
+        "input_bytes": 102560,
+        "output_bytes": 1179648,
+        "output_abi": "m455-dense-fp16-block-token-shard-pair-v1",
+        "expected_build_id": 1295267125,
+        "output_words64": 147456,
+        "chain_index": 3002,
+        "layer": 2,
+        "family": "gate_up",
+        "expected_macros": 1509949440,
+        "stage_base_words": 0,
+        "stage_bytes_per_shard": 6266880
+      },
+      "layout": "energy9216/gate_up",
+      "layout_sha256": "0d0f1ad95a3910958fc5255e4dec8710eac5c8ee6cf4dc89b25c7576496efd93",
+      "packet_sha256": "1d7056fb1ffc731fe327ffafda93e84ec73272ac81e20a35f4c859e240ea91be",
+      "golden_sha256": "01be2645792e416f6affccb2d7b3f791737bc45bbb338e4609011b6feb43f9b1",
+      "expected_outputs": {
+        "gate": "51235a0305e30cc9af807a0da010c7e32ef63057fc64fd12cc94371de55ea6f2",
+        "up": "30be15da8041288ef8df7c1bdfbc0b2fc6959e9589131ddd74a208fd5e9955c0"
+      },
+      "variant": "energy9216",
+      "directory": "/dev/shm/m544_freshboot_lower05/energy9216/gate_up"
+    },
+    {
+      "label": "energy9216_down_shift6",
+      "chain": {
+        "groups": 144,
+        "bits": 4,
+        "descriptor_count": 2,
+        "config_u32": "0x20490",
+        "descriptors": [
+          {
+            "descriptor_index": 0,
+            "module": "down",
+            "row_start": 0,
+            "valid_rows": 2048,
+            "rows_per_shard": 512,
+            "bits": 4,
+            "offset_words": 0,
+            "encoded_u64": "0x120000000000",
+            "record_bytes_per_shard": 2506752,
+            "output_bytes": 131072,
+            "tile_index": 0
+          },
+          {
+            "descriptor_index": 1,
+            "module": "down",
+            "row_start": 2048,
+            "valid_rows": 512,
+            "rows_per_shard": 128,
+            "bits": 4,
+            "offset_words": 156672,
+            "encoded_u64": "0x108000026400",
+            "record_bytes_per_shard": 626688,
+            "output_bytes": 32768,
+            "tile_index": 1
+          }
+        ],
+        "input_bytes": 368672,
+        "output_bytes": 163840,
+        "output_abi": "m455-dense-fp16-block-token-shard-pair-v1",
+        "expected_build_id": 1295267125,
+        "output_words64": 20480,
+        "chain_index": 3003,
+        "layer": 2,
+        "family": "mlp_down",
+        "expected_macros": 754974720,
+        "stage_base_words": 0,
+        "stage_bytes_per_shard": 3133440
+      },
+      "layout": "energy9216/down",
+      "layout_sha256": "952f7314d517d59f46b7b0c7c274fd6de3095fba683517bc29e81df83cf2bb4a",
+      "packet_sha256": "abe425924e4cfdfa162b72a1f6812caf5c08c64ac90a24e2a3a47283bc1a1288",
+      "golden_sha256": "ceefe12308639324f5918b318bd0a5f8d79aec1b7ff8f2805dc7e1d113b339a5",
+      "expected_outputs": {
+        "down": "3d5997b193fcb4c471fae62b7f173aee43aca4906dc3dc88d9fce54df4f405d5"
+      },
+      "variant": "energy9216",
+      "directory": "/dev/shm/m544_freshboot_lower05/energy9216/down"
+    }
+  ],
+  "private_manifest_sha256": "892cf962d8cf67b6450b1e047e13ee840c876309495523bc1beefbabd735c9a6",
+  "SiLU_source_sha256": "fae70964171580dc8329700e99aa0b25f27b752e9d4274c5bae72fa19f30cf61",
+  "fresh_boot_id": "f425c270-dc5e-4a1d-98de-025c85938620",
+  "checkpoint22_manifest_sha256": "47a425db63d36af8c1f665dd3b19972bd0965ecfed730aa21e3defece0b42ab1",
+  "current22_weight_bindings": [
+    {
+      "family": "gate_up",
+      "port": 0,
+      "sha256": "13ce0fa8a0fa777f4480a47cc21d45eddbb06a55a6472eac5e53152daf382e40"
+    },
+    {
+      "family": "gate_up",
+      "port": 1,
+      "sha256": "603c3ff60138482cbf163cbcee3f3e43fc61d6548c98b3235f628447a5b08409"
+    },
+    {
+      "family": "gate_up",
+      "port": 2,
+      "sha256": "3e7106b22994cf7efe3b827190d272fdddaedf7337c8c8901bae85d1c65f4016"
+    },
+    {
+      "family": "gate_up",
+      "port": 3,
+      "sha256": "26aa67403a8572f8dff019cc109bc59f0b9b3d913d7758999ba3c749c37c85c6"
+    },
+    {
+      "family": "mlp_down",
+      "port": 0,
+      "sha256": "83403511853fac64bcec2923856f16998c9be940a3df80d05a16739803c5e016"
+    },
+    {
+      "family": "mlp_down",
+      "port": 1,
+      "sha256": "b590169bfbae87e9c77afc50c6545719a0ab30bbab242460cd186a38bdfed6ba"
+    },
+    {
+      "family": "mlp_down",
+      "port": 2,
+      "sha256": "1c882d88209ee9d46dd3c6129c8985c23b56697e45d9af15f888445aa84ec42c"
+    },
+    {
+      "family": "mlp_down",
+      "port": 3,
+      "sha256": "c91995fac5a6db7c618faedb385f865f667fbda2ab055741328353d24e666fc9"
+    }
+  ],
+  "full22_quality_or_speed_pass": false,
+  "experiment_description": "FRESH_BOOT_IDENTICAL_L2_SUBPATH_OF_TWENTYTWO_NOT_FULL_CANDIDATE_TEST",
+  "prior_pre_admission_failure_sha256": "2234162ed4789cd3220869e386799bf2db0cc5d73bf9e2c37477ce7d1fc69a58",
+  "preparse_recovery_sha256": "c060184e724e87aaa37c0dac43752cf32b11e27be15844b58bda301684d9b99e",
+  "historical_reference_manifest_sha256": "d7fc8c3fecf8829f4a0b359f502b6ab2dab8929adb28fa6330bf67f17616aacd"
+}

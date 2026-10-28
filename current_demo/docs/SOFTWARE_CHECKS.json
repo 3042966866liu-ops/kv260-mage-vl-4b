@@ -1,0 +1,13 @@
+{
+  "scope": "Software-only checks of exported source in isolated staging;not new FPGA evidence",
+  "backend_tests": 12,
+  "backend_tests_passed": true,
+  "actual_render_VM_checks": 6,
+  "actual_render_VM_checks_passed": true,
+  "source_original_files": 589,
+  "Python_sources_compile": 442,
+  "board_commands": 0,
+  "model_forwards": 0,
+  "isolated_from_live_server": true,
+  "initial_render_result_write_missing_directory": "Created only the isolated output directory and reran the software checker;no runtime/UI source change"
+}

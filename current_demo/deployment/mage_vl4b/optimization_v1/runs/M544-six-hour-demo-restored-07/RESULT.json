@@ -1,0 +1,33 @@
+{
+  "status": "PASS_REAL_VIDEO07_ALARM_WITH_BOUNDED_SIX_HOUR_DEMO_SESSION",
+  "primary_rc": 0,
+  "session": "3a5b6c71e8c6454ea2ca3688ebebdb66",
+  "job": "4b9149c944764a09bb776cef8dc27c27",
+  "boot_id": "f425c270-dc5e-4a1d-98de-025c85938620",
+  "TTFT_s": 28.007204576,
+  "decision": "Yes",
+  "proof_path": "deployment/mage_vl4b/optimization_v1/runs/M544-live-board-results/3a5b6c71e8c6454ea2ca3688ebebdb66/4b9149c944764a09bb776cef8dc27c27/RESULT.json",
+  "proof_sha256": "148fd615507ea5b72215be816f4688f67827dd178a0908a09601b00e2601e3f5",
+  "fixed_warmup_sha256": "bb9c2916184b301427be1d8b6b1bd5d5d5cc0dd4b18641712872bcf7d0eabab7",
+  "screenshot_sha256": "e9fd8a378c4ec3a68aeebb80ea42b9536254fa57af2c4b20b1aa5f8f696b5df9",
+  "idle_seconds": 21600,
+  "absolute_acceptance_window_seconds": 21600,
+  "host_timeout_seconds": 22800,
+  "max_live_jobs": 12,
+  "full_six_hour_soak_not_performed": true,
+  "CPU_lifetime_sha256": "959de5f69fbee79b54cde38a150ed4208c46f4f7d8f1ebb27eecb19bbe8d5c49",
+  "A53_Import_sha256": "c1f907f728e45c1c43fa3c6635ba36269ccb30466372388ad64fcb131f29ca05",
+  "disconnected_render_sha256": "8f58f3ed1964662b3dfa736ad80f9508953f99fe49f8fdbdff81afe6721284e6",
+  "model_math_and_weights_unchanged": true,
+  "model_runs_in_audit": 0,
+  "worker_still_live": true,
+  "seven_owners_intentionally_live": true,
+  "stable_restoration_not_claimed": true,
+  "only_selected_frame_not_whole_video": true,
+  "source": {
+    "static/playback_live.js": "25d282d4a79dde8cae08bccf86d88f8f76cb7dc68fc2e55dcba0645b6f336983",
+    "live_uart07.ps1": "8431ee6153128504e6aecbd2b83d1019d597d06e73db5f6f6ab13cc41176032f",
+    "run_live_worker07.py": "02557ed20e15c3aa01356f8613232740fbdd453c4acdf10ac9a5ab92279ff74b",
+    "start_demo.ps1": "72dc2bfc53ec5fb0350ef0c6dba6e6f1889060de13e832d6efedb01a32168876"
+  }
+}

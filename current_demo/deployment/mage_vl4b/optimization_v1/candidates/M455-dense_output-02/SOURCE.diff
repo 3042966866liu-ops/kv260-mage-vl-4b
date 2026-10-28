@@ -1,0 +1,46 @@
+--- frozen-M443.cpp
++++ independent-M455.cpp
+@@ -162,19 +162,26 @@
+   for (unsigned block = 0; block < rows / 8; ++block)
+     for (unsigned token = 0; token < 32; ++token)
+       for (unsigned shard = 0; shard < 4; ++shard)
++      {
++        ap_uint<32> held = 0;
+         for (unsigned pair = 0; pair < 4; ++pair) {
+ #pragma HLS PIPELINE II=1
+-          m89_axis64_t item;
++          // One pair read per cycle; emit one dense beat per two pair reads.
+           ap_uint<32> value = r[shard].read().data;
+-          item.data = 0;
+-          item.data.range(15, 0) = value.range(15, 0);
+-          item.data.range(47, 32) = value.range(31, 16);
+-          item.keep = -1;
+-          item.strb = -1;
+-          item.last = final_descriptor && block + 1 == rows / 8 &&
+-                      token == 31 && shard == 3 && pair == 3;
+-          rx.write(item);
++          if ((pair & 1) == 0) {
++            held = value;
++          } else {
++            m89_axis64_t item;
++            item.data.range(31, 0) = held;
++            item.data.range(63, 32) = value;
++            item.keep = -1;
++            item.strb = -1;
++            item.last = final_descriptor && block + 1 == rows / 8 &&
++                        token == 31 && shard == 3 && pair == 3;
++            rx.write(item);
++          }
+         }
++      }
+ }
+ 
+ static void m89x_four(const ap_uint<128> *s0, const ap_uint<128> *s1,
+@@ -281,5 +288,5 @@
+   }
+   // M89-X2: FP32 scale/accumulation correction after the X1 non-unit-scale
+   // Layer-0 rejection.  Keep the identity distinct from both X and X1.
+-  return 0x4D343433U;
+-}
++  return 0x4D343535U;
++}

@@ -1,0 +1,178 @@
+{
+  "format": "tellme-mage-vl-fourport-group-major-v1",
+  "module_count": 2,
+  "status": "M523_EXPLICIT_SINGLE_LANGUAGE_LAYER_EXPERIMENT_NOT_ORIGINAL_CONTRACT_PASS",
+  "scope": "single-language-layer-2-not-global-constructor-contract",
+  "modules": [
+    {
+      "module": "gate",
+      "shape": [
+        9216,
+        2560
+      ],
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "shard_offsets": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "record_bytes_per_shard": 696320
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "shard_offsets": [
+            696320,
+            696320,
+            696320,
+            696320
+          ],
+          "record_bytes_per_shard": 696320
+        },
+        {
+          "tile_index": 2,
+          "row_start": 4096,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "shard_offsets": [
+            1392640,
+            1392640,
+            1392640,
+            1392640
+          ],
+          "record_bytes_per_shard": 696320
+        },
+        {
+          "tile_index": 3,
+          "row_start": 6144,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "shard_offsets": [
+            2088960,
+            2088960,
+            2088960,
+            2088960
+          ],
+          "record_bytes_per_shard": 696320
+        },
+        {
+          "tile_index": 4,
+          "row_start": 8192,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "shard_offsets": [
+            2785280,
+            2785280,
+            2785280,
+            2785280
+          ],
+          "record_bytes_per_shard": 348160
+        }
+      ]
+    },
+    {
+      "module": "up",
+      "shape": [
+        9216,
+        2560
+      ],
+      "tiles": [
+        {
+          "tile_index": 0,
+          "row_start": 0,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "shard_offsets": [
+            3133440,
+            3133440,
+            3133440,
+            3133440
+          ],
+          "record_bytes_per_shard": 696320
+        },
+        {
+          "tile_index": 1,
+          "row_start": 2048,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "shard_offsets": [
+            3829760,
+            3829760,
+            3829760,
+            3829760
+          ],
+          "record_bytes_per_shard": 696320
+        },
+        {
+          "tile_index": 2,
+          "row_start": 4096,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "shard_offsets": [
+            4526080,
+            4526080,
+            4526080,
+            4526080
+          ],
+          "record_bytes_per_shard": 696320
+        },
+        {
+          "tile_index": 3,
+          "row_start": 6144,
+          "valid_rows": 2048,
+          "rows_per_shard": 512,
+          "shard_offsets": [
+            5222400,
+            5222400,
+            5222400,
+            5222400
+          ],
+          "record_bytes_per_shard": 696320
+        },
+        {
+          "tile_index": 4,
+          "row_start": 8192,
+          "valid_rows": 1024,
+          "rows_per_shard": 256,
+          "shard_offsets": [
+            5918720,
+            5918720,
+            5918720,
+            5918720
+          ],
+          "record_bytes_per_shard": 348160
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "weights0.bin",
+      "bytes": 6266880,
+      "sha256": "13ce0fa8a0fa777f4480a47cc21d45eddbb06a55a6472eac5e53152daf382e40"
+    },
+    {
+      "path": "weights1.bin",
+      "bytes": 6266880,
+      "sha256": "603c3ff60138482cbf163cbcee3f3e43fc61d6548c98b3235f628447a5b08409"
+    },
+    {
+      "path": "weights2.bin",
+      "bytes": 6266880,
+      "sha256": "3e7106b22994cf7efe3b827190d272fdddaedf7337c8c8901bae85d1c65f4016"
+    },
+    {
+      "path": "weights3.bin",
+      "bytes": 6266880,
+      "sha256": "26aa67403a8572f8dff019cc109bc59f0b9b3d913d7758999ba3c749c37c85c6"
+    }
+  ]
+}

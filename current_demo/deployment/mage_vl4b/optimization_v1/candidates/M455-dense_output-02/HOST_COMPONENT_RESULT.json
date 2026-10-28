@@ -1,0 +1,58 @@
+{
+  "status": "PASS_DENSE_HOST_COMPONENTS",
+  "real_family_cases": [
+    {
+      "variant": "A",
+      "family": "gate_up",
+      "original_bytes": 2490368,
+      "dense_bytes": 1245184,
+      "original_contract_unchanged": true,
+      "shifts": [
+        0,
+        1,
+        10
+      ]
+    },
+    {
+      "variant": "A",
+      "family": "down",
+      "original_bytes": 327680,
+      "dense_bytes": 163840,
+      "original_contract_unchanged": true,
+      "shifts": [
+        0,
+        1,
+        10
+      ]
+    },
+    {
+      "variant": "B",
+      "family": "gate_up",
+      "original_bytes": 2473984,
+      "dense_bytes": 1236992,
+      "original_contract_unchanged": true,
+      "shifts": [
+        0,
+        1,
+        10
+      ]
+    },
+    {
+      "variant": "B",
+      "family": "down",
+      "original_bytes": 327680,
+      "dense_bytes": 163840,
+      "original_contract_unchanged": true,
+      "shifts": [
+        0,
+        1,
+        10
+      ]
+    }
+  ],
+  "bit_patterns_preserved": 65536,
+  "wrong_size_rejections": 12,
+  "board": false,
+  "performance": false,
+  "module_sha256": "a2428d9106decc88187d1060b6383f7c75cc8296e4e142f2f4c30db355d74e55"
+}

@@ -1,0 +1,206 @@
+{
+  "files": [
+    {
+      "path": "A.npy",
+      "bytes": 82048,
+      "sha256": "0c3590f540addc1be8eab42d743957a230b18365437708bf4525962e33cd9083"
+    },
+    {
+      "path": "B.npy",
+      "bytes": 4862080,
+      "sha256": "8431a91e54ed02a5f8e43f1e131d29d2369fa7652eaefd6350b126981646010e"
+    },
+    {
+      "path": "board_component.py",
+      "bytes": 11644,
+      "sha256": "51f6303be3a2131f2c400e414d32f331dccce24d0783065babd89c9f9662d35e"
+    },
+    {
+      "path": "board_demo_trial.py",
+      "bytes": 16750,
+      "sha256": "ad82be5a0afb6f6dbb6047cda158d96b5f8f65e58683c44d7a2b60e41719a3e4"
+    },
+    {
+      "path": "board_helpers.py",
+      "bytes": 3145,
+      "sha256": "1750a853a49e4be2329ca03a17318c302e58aa3d1be747c5095ad4b6e41ab33a"
+    },
+    {
+      "path": "board_subset.py",
+      "bytes": 6449,
+      "sha256": "774ce5213aaeaefda948145772a18c9c4750d00fcfd25de6cdfb23956d7f0e84"
+    },
+    {
+      "path": "board_visual_subset.py",
+      "bytes": 5895,
+      "sha256": "379b9b209b8bbba68293560f886e86aafdc01ac3be8315c6376509ec01751abb"
+    },
+    {
+      "path": "bounded_log_output03.py",
+      "bytes": 1194,
+      "sha256": "aaaa6fea2c5f919b69a2e1c91fce8a996a2b808538da45eab9276d308330e6a0"
+    },
+    {
+      "path": "check_language_parser.py",
+      "bytes": 4174,
+      "sha256": "913a29fc40c6097b4988993cfd795d773a76ae402fc4ab15145e4ca5dc2188f6"
+    },
+    {
+      "path": "check_runtime.py",
+      "bytes": 8548,
+      "sha256": "6c30e09f4af8ae5b7b0d2187dad7abde777adeabd859ef2a5d103b0e66d5cb19"
+    },
+    {
+      "path": "check_vision_profiler.py",
+      "bytes": 4189,
+      "sha256": "4a822bb53c92023e8d70e985f06d2efaafac039a1a598f29086ab54cea52b58b"
+    },
+    {
+      "path": "check_visual_cache.py",
+      "bytes": 4865,
+      "sha256": "2d22c9350b4b4bf3d214d6358089b56c926c5b4a18a43a0712778967aec114de"
+    },
+    {
+      "path": "compact_log_output.py",
+      "bytes": 2950,
+      "sha256": "42afc08a5b4b7f4c44b6eeecded4ecce4bceb702577ce04f89697adb8a6e264b"
+    },
+    {
+      "path": "demo/campus03_f00000.npy",
+      "bytes": 602240,
+      "sha256": "0846101af0ccfe3005acbee20cac4d315b81bf2967a27a5251a9423390f5f46c"
+    },
+    {
+      "path": "demo/campus03_f00048.npy",
+      "bytes": 602240,
+      "sha256": "b1d57044c52660c5cb1b0df69f15250cc4d4a57673c55e9085ee0dd86650f0aa"
+    },
+    {
+      "path": "demo/campus03_f00080.npy",
+      "bytes": 602240,
+      "sha256": "9f31677c02552af60b7abaf2042fdbc77d8b931c5f9a0959b718efc884471ef6"
+    },
+    {
+      "path": "demo/campus03_f00192.npy",
+      "bytes": 602240,
+      "sha256": "e258924cd13cfd301ce94cd3edc8e12f967a95fbbe646f58ce7cad0f14047be1"
+    },
+    {
+      "path": "demo/campus12_f00000.npy",
+      "bytes": 602240,
+      "sha256": "d685c43454f4ec20a7737678517ed96e9a1e28cd9600822e80fd852992145636"
+    },
+    {
+      "path": "demo/campus12_f00488.npy",
+      "bytes": 602240,
+      "sha256": "2393ab907405fd22aa42d355168e4a0f65ed2a6c1acfe9684f3c56f7fe59465c"
+    },
+    {
+      "path": "DEMO_BOARD_PLAN.json",
+      "bytes": 8768,
+      "sha256": "f153eceeecf3ab0ae8bd2269b1046ce934d97a93ca7671adda91b03b0c0f7553"
+    },
+    {
+      "path": "fixture/V4_input.npz",
+      "bytes": 1492371,
+      "sha256": "1fc4808881185201e78d56683ac3308f9c4d6d320b81f150d577a6a780654c87"
+    },
+    {
+      "path": "gate_up_native.c",
+      "bytes": 4213,
+      "sha256": "a7dee270f3114cf610b324335ca1ecaedfa108a878d44380c291ada761a915fb"
+    },
+    {
+      "path": "gate_up_native.py",
+      "bytes": 4559,
+      "sha256": "c057446ae180048e33a5a9af2ee30534731e4e2e845260c7ca8c0cc86ceb8974"
+    },
+    {
+      "path": "head_component.py",
+      "bytes": 1828,
+      "sha256": "cc55b0302e82846578ca8608e5774a897fe8620cdc7887ec0c0a785bdacdcc62"
+    },
+    {
+      "path": "head_fixture_negative.npz",
+      "bytes": 288873,
+      "sha256": "88941d628e2c1b26c5b4da41cc1549915ebbd9aba1b14ff3423825432050bf36"
+    },
+    {
+      "path": "head_fixture_positive.npz",
+      "bytes": 287519,
+      "sha256": "74d5eb0b3017f12bdf0c51554d22d7f7b7048cf7c3848af87ea25673ddbe1788"
+    },
+    {
+      "path": "HEAD_MANIFEST.json",
+      "bytes": 851,
+      "sha256": "e42ddc4290d4d3acbd769e7d6f1cf7e3b29b832356dbcfb8523b03bfd6b3ea2a"
+    },
+    {
+      "path": "language_parser_profiler.py",
+      "bytes": 11319,
+      "sha256": "a878177bed821a1baff74409d150d31750ee80b0fab830df4059e8bb60dcacf5"
+    },
+    {
+      "path": "launcher.py",
+      "bytes": 1544,
+      "sha256": "b9cee0b4cf27cd5b7279a2b7834b15dd42484af759a2ec0808ec61be9fe21ba4"
+    },
+    {
+      "path": "learned_head.py",
+      "bytes": 2126,
+      "sha256": "ddf1b029db4fab6c03061c7eb600a071732a9792d0dd23d89afb80f71f2ac750"
+    },
+    {
+      "path": "live_protocol.py",
+      "bytes": 10340,
+      "sha256": "24c7fc19e1f58392b058d1f56589fe594eeb6439799cc01eb89f451e115a09ae"
+    },
+    {
+      "path": "m532_parser_kernel.so",
+      "bytes": 7904,
+      "sha256": "ebcef8bc9b9895087900e5bd0992af1d41b15b70acbd6488e58efa68582c665a"
+    },
+    {
+      "path": "native.py",
+      "bytes": 22960,
+      "sha256": "4e36f8691cb0c68f57de7e3df872597cac48e193dce1c7f1ed574d1ce0196968"
+    },
+    {
+      "path": "PS_crop_native.py",
+      "bytes": 5908,
+      "sha256": "f65ad584e392ffe8f495aa85a7b18a29f38413139974baec0befae5f7b5edd2e"
+    },
+    {
+      "path": "run.sh",
+      "bytes": 399,
+      "sha256": "78f5d897708bab5442f9b608413b18a965a339759191f1b333b383dd13653b23"
+    },
+    {
+      "path": "V4_3584_weights.npz",
+      "bytes": 3957048,
+      "sha256": "98f58b7f06a23b178e167fe5de2cc053765ac4cf97cbd2dc711ee81a2b84073c"
+    },
+    {
+      "path": "V4_PLAN.json",
+      "bytes": 1015,
+      "sha256": "53c51aa7e17d2a51cf8c0961d85fb956519d95b7aa22e12f415e3b6770794e6c"
+    },
+    {
+      "path": "v4_recovery_native.py",
+      "bytes": 2160,
+      "sha256": "2f7a4d357fcd577902dead3a8493f63318152668013b689f382c8624e4de9609"
+    },
+    {
+      "path": "vision_layer_profiler.py",
+      "bytes": 11007,
+      "sha256": "25440f080676d58c35311276068061184b38688f9a2e84a24bf705328d1847b3"
+    },
+    {
+      "path": "visual_cache_profiler.py",
+      "bytes": 2946,
+      "sha256": "51bab742b025d26b829e341793e97d3e686d53a287460f7e4f9f8b1ed76fdcfe"
+    }
+  ],
+  "file_count": 40,
+  "total_bytes": 14753029
+}

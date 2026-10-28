@@ -1,0 +1,648 @@
+{
+  "status": "PASS_M455_BUILDID",
+  "gate_level": "BuildID",
+  "build_id": "0x4D343535",
+  "manifest_sha256": "d547998dd5aca6b0891a7bbdf07d9e5df504d8c779181f43354ac2b7172f1ab8",
+  "package_verified": true,
+  "errors": [],
+  "transactions": [
+    {
+      "label": "candidate-build-id",
+      "variant": "B",
+      "input_bytes": 2576,
+      "output_bytes": 2048,
+      "config": "0x10201",
+      "packet_sha256": "f1e2f2296e524cb165156af3b101c6ffecf7ccaf6c2cfc3339ace9c486320696",
+      "expected_sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad",
+      "weight_addresses": [
+        42741760,
+        42233856,
+        42729472,
+        42487808
+      ],
+      "observation": {
+        "submitted_ns": 1153094955194,
+        "polls": 1,
+        "max_poll_gap_ns": 345584,
+        "events": {
+          "ap_done": {
+            "lower_ns": 1153094955194,
+            "upper_ns": 1153095300778,
+            "observed_ns": 1153095300778,
+            "clear_on_read_latched": true
+          }
+        },
+        "dma_timing_unresolved": [
+          "mm2s",
+          "s2mm"
+        ],
+        "pure_compute_time_proven": false,
+        "last_snapshot": {
+          "ap_ctrl": 14,
+          "ap_return": 1295267125,
+          "mm2s_dmasr": 4098,
+          "s2mm_dmasr": 4098,
+          "mm2s_idle": true,
+          "mm2s_error": false,
+          "s2mm_idle": true,
+          "s2mm_error": false,
+          "kernel_read_error": "",
+          "return_read_error": "",
+          "dma_read_error": ""
+        },
+        "completion_proven": true,
+        "completed_ns": 1153095300778,
+        "wait_ns": 345584
+      },
+      "wait_ns": 345584,
+      "full_output_exact": true,
+      "output_sha256": "e5a00aa9991ac8a5ee3109844d84a55583bd20572ad3ffcd42792f3c36b183ad",
+      "completed_snapshot": {
+        "ap_ctrl": 14,
+        "ap_return": 1295267125,
+        "mm2s_dmasr": 4098,
+        "s2mm_dmasr": 4098,
+        "mm2s_idle": true,
+        "mm2s_error": false,
+        "s2mm_idle": true,
+        "s2mm_error": false,
+        "kernel_read_error": "",
+        "return_read_error": "",
+        "dma_read_error": ""
+      }
+    },
+    {
+      "label": "stable-restored-build-id",
+      "variant": "R",
+      "input_bytes": 2576,
+      "output_bytes": 4096,
+      "config": "0x10201",
+      "packet_sha256": "f1e2f2296e524cb165156af3b101c6ffecf7ccaf6c2cfc3339ace9c486320696",
+      "expected_sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+      "weight_addresses": [
+        42741760,
+        42233856,
+        42729472,
+        42487808
+      ],
+      "observation": {
+        "submitted_ns": 1159059236566,
+        "polls": 1,
+        "max_poll_gap_ns": 342224,
+        "events": {
+          "ap_done": {
+            "lower_ns": 1159059236566,
+            "upper_ns": 1159059578790,
+            "observed_ns": 1159059578790,
+            "clear_on_read_latched": true
+          }
+        },
+        "dma_timing_unresolved": [
+          "mm2s",
+          "s2mm"
+        ],
+        "pure_compute_time_proven": false,
+        "last_snapshot": {
+          "ap_ctrl": 14,
+          "ap_return": 1295603762,
+          "mm2s_dmasr": 4098,
+          "s2mm_dmasr": 4098,
+          "mm2s_idle": true,
+          "mm2s_error": false,
+          "s2mm_idle": true,
+          "s2mm_error": false,
+          "kernel_read_error": "",
+          "return_read_error": "",
+          "dma_read_error": ""
+        },
+        "completion_proven": true,
+        "completed_ns": 1159059578790,
+        "wait_ns": 342224
+      },
+      "wait_ns": 342224,
+      "full_output_exact": true,
+      "output_sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+      "completed_snapshot": {
+        "ap_ctrl": 14,
+        "ap_return": 1295603762,
+        "mm2s_dmasr": 4098,
+        "s2mm_dmasr": 4098,
+        "mm2s_idle": true,
+        "mm2s_error": false,
+        "s2mm_idle": true,
+        "s2mm_error": false,
+        "kernel_read_error": "",
+        "return_read_error": "",
+        "dma_read_error": ""
+      }
+    }
+  ],
+  "memory": [
+    {
+      "label": "allocated:candidate-build-id",
+      "MemAvailable": 3417149440,
+      "Cached": 666320896,
+      "CmaFree": 826880000,
+      "fixed_cma_reserve_enforced": false
+    },
+    {
+      "label": "before-submit:candidate-build-id",
+      "MemAvailable": 3417149440,
+      "Cached": 666320896,
+      "CmaFree": 826880000,
+      "fixed_cma_reserve_enforced": false
+    },
+    {
+      "label": "allocated:stable-restored-build-id",
+      "MemAvailable": 3396493312,
+      "Cached": 666333184,
+      "CmaFree": 826863616,
+      "fixed_cma_reserve_enforced": false
+    },
+    {
+      "label": "before-submit:stable-restored-build-id",
+      "MemAvailable": 3396493312,
+      "Cached": 666333184,
+      "CmaFree": 826863616,
+      "fixed_cma_reserve_enforced": false
+    }
+  ],
+  "allocations": [
+    {
+      "label": "candidate-build-id",
+      "bytes": 144,
+      "address": 42741760
+    },
+    {
+      "label": "candidate-build-id",
+      "bytes": 144,
+      "address": 42233856
+    },
+    {
+      "label": "candidate-build-id",
+      "bytes": 144,
+      "address": 42729472
+    },
+    {
+      "label": "candidate-build-id",
+      "bytes": 144,
+      "address": 42487808
+    },
+    {
+      "label": "candidate-build-id",
+      "bytes": 2576,
+      "address": 42467328
+    },
+    {
+      "label": "candidate-build-id",
+      "bytes": 2048,
+      "address": 42471424
+    },
+    {
+      "label": "stable-restored-build-id",
+      "bytes": 144,
+      "address": 42741760
+    },
+    {
+      "label": "stable-restored-build-id",
+      "bytes": 144,
+      "address": 42233856
+    },
+    {
+      "label": "stable-restored-build-id",
+      "bytes": 144,
+      "address": 42729472
+    },
+    {
+      "label": "stable-restored-build-id",
+      "bytes": 144,
+      "address": 42487808
+    },
+    {
+      "label": "stable-restored-build-id",
+      "bytes": 2576,
+      "address": 42467328
+    },
+    {
+      "label": "stable-restored-build-id",
+      "bytes": 4096,
+      "address": 42471424
+    }
+  ],
+  "releases": [
+    {
+      "label": "candidate-build-id",
+      "bytes": 2048,
+      "address": 42471424
+    },
+    {
+      "label": "candidate-build-id",
+      "bytes": 2576,
+      "address": 42467328
+    },
+    {
+      "label": "candidate-build-id",
+      "bytes": 144,
+      "address": 42487808
+    },
+    {
+      "label": "candidate-build-id",
+      "bytes": 144,
+      "address": 42729472
+    },
+    {
+      "label": "candidate-build-id",
+      "bytes": 144,
+      "address": 42233856
+    },
+    {
+      "label": "candidate-build-id",
+      "bytes": 144,
+      "address": 42741760
+    },
+    {
+      "label": "stable-restored-build-id",
+      "bytes": 4096,
+      "address": 42471424
+    },
+    {
+      "label": "stable-restored-build-id",
+      "bytes": 2576,
+      "address": 42467328
+    },
+    {
+      "label": "stable-restored-build-id",
+      "bytes": 144,
+      "address": 42487808
+    },
+    {
+      "label": "stable-restored-build-id",
+      "bytes": 144,
+      "address": 42729472
+    },
+    {
+      "label": "stable-restored-build-id",
+      "bytes": 144,
+      "address": 42233856
+    },
+    {
+      "label": "stable-restored-build-id",
+      "bytes": 144,
+      "address": 42741760
+    }
+  ],
+  "overlay_loads": [
+    {
+      "variant": "B",
+      "label": "candidate-build-id",
+      "bit_sha256": "e1b5b9e6cb84325820e1150528d1e4117d30e924e777246576a35acb5332e4b8",
+      "clocks_mhz": {
+        "0": 187.498125,
+        "1": 99.999,
+        "2": 99.999,
+        "3": 99.999
+      }
+    },
+    {
+      "variant": "R",
+      "label": "stable-restored-build-id",
+      "bit_sha256": "1cbf7bbb86cfe64c2349418d5a15890d735bea3fa4c999060c8a9da9ac3206ac",
+      "clocks_mhz": {
+        "0": 187.498125,
+        "1": 99.999,
+        "2": 99.999,
+        "3": 99.999
+      }
+    }
+  ],
+  "numerical_pass": false,
+  "chain_performance_pass": false,
+  "full_model": false,
+  "video": false,
+  "promoted": false,
+  "gate_return_code": 0,
+  "physical_transactions_started": 2,
+  "initial_service": {
+    "port8001_listening": false,
+    "accelerator_owners": [],
+    "excluded_display_owners": [
+      {
+        "pid": 1,
+        "device": "/dev/dri/card0",
+        "driver": "zynqmp-display"
+      },
+      {
+        "pid": 902,
+        "device": "/dev/dri/card0",
+        "driver": "zynqmp-display"
+      },
+      {
+        "pid": 1435,
+        "device": "/dev/dri/card0",
+        "driver": "zynqmp-display"
+      },
+      {
+        "pid": 1435,
+        "device": "/dev/dri/card0",
+        "driver": "zynqmp-display"
+      },
+      {
+        "pid": 1566,
+        "device": "/dev/dri/card0",
+        "driver": "zynqmp-display"
+      }
+    ]
+  },
+  "clock_initial": {
+    "raw": [
+      16844032,
+      16845312,
+      16846592,
+      16846592
+    ],
+    "mhz": {
+      "0": 299.997,
+      "1": 149.9985,
+      "2": 99.999,
+      "3": 99.999
+    },
+    "pll_raw": [
+      88576,
+      82176,
+      81920,
+      86016
+    ]
+  },
+  "configuration_record": {
+    "bit_sha256": "e1b5b9e6cb84325820e1150528d1e4117d30e924e777246576a35acb5332e4b8",
+    "bit_bytes": 7797914,
+    "pages": 1904,
+    "kernel": "5.15.0-1027-xilinx-zynqmp",
+    "page_size": 4096,
+    "pid": 3052,
+    "application_sha256": "6e919ac8945c930dd72aeaa9af6cfae744c0145c6e3e361d3c3cdf10860b8f6b",
+    "manifest_sha256": "d547998dd5aca6b0891a7bbdf07d9e5df504d8c779181f43354ac2b7172f1ab8",
+    "shell_closure_sha256": "a61392fbef5f37448bad776a4434ba164906fbb9965269a19bdc8981f691e0cb",
+    "observation_kind": "same-process-kernel-CMA-trace",
+    "configuration_credits_granted": 0,
+    "overlay_returned": true,
+    "before": {
+      "reserved:alloc_pages_success": 5081,
+      "reserved:alloc_pages_fail": 0
+    },
+    "trace": {
+      "instance": "/sys/kernel/tracing/instances/m455_configuration01",
+      "pid": 3052,
+      "owned_instance_only": true,
+      "shared_root_configuration_changed": false,
+      "event_formats": {
+        "cma_alloc_start": "name: cma_alloc_start\nID: 570\nformat:\n\tfield:unsigned short common_type;\toffset:0;\tsize:2;\tsigned:0;\n\tfield:unsigned char common_flags;\toffset:2;\tsize:1;\tsigned:0;\n\tfield:unsigned char common_preempt_count;\toffset:3;\tsize:1;\tsigned:0;\n\tfield:int common_pid;\toffset:4;\tsize:4;\tsigned:1;\n\n\tfield:__data_loc char[] name;\toffset:8;\tsize:4;\tsigned:0;\n\tfield:unsigned long count;\toffset:16;\tsize:8;\tsigned:0;\n\tfield:unsigned int align;\toffset:24;\tsize:4;\tsigned:0;\n\nprint fmt: \"name=%s count=%lu align=%u\", __get_str(name), REC->count, REC->align\n",
+        "cma_alloc_finish": "name: cma_alloc_finish\nID: 569\nformat:\n\tfield:unsigned short common_type;\toffset:0;\tsize:2;\tsigned:0;\n\tfield:unsigned char common_flags;\toffset:2;\tsize:1;\tsigned:0;\n\tfield:unsigned char common_preempt_count;\toffset:3;\tsize:1;\tsigned:0;\n\tfield:int common_pid;\toffset:4;\tsize:4;\tsigned:1;\n\n\tfield:__data_loc char[] name;\toffset:8;\tsize:4;\tsigned:0;\n\tfield:unsigned long pfn;\toffset:16;\tsize:8;\tsigned:0;\n\tfield:const struct page * page;\toffset:24;\tsize:8;\tsigned:0;\n\tfield:unsigned long count;\toffset:32;\tsize:8;\tsigned:0;\n\tfield:unsigned int align;\toffset:40;\tsize:4;\tsigned:0;\n\nprint fmt: \"name=%s pfn=0x%lx page=%p count=%lu align=%u\", __get_str(name), REC->pfn, REC->page, REC->count, REC->align\n",
+        "cma_alloc_busy_retry": "name: cma_alloc_busy_retry\nID: 568\nformat:\n\tfield:unsigned short common_type;\toffset:0;\tsize:2;\tsigned:0;\n\tfield:unsigned char common_flags;\toffset:2;\tsize:1;\tsigned:0;\n\tfield:unsigned char common_preempt_count;\toffset:3;\tsize:1;\tsigned:0;\n\tfield:int common_pid;\toffset:4;\tsize:4;\tsigned:1;\n\n\tfield:__data_loc char[] name;\toffset:8;\tsize:4;\tsigned:0;\n\tfield:unsigned long pfn;\toffset:16;\tsize:8;\tsigned:0;\n\tfield:const struct page * page;\toffset:24;\tsize:8;\tsigned:0;\n\tfield:unsigned long count;\toffset:32;\tsize:8;\tsigned:0;\n\tfield:unsigned int align;\toffset:40;\tsize:4;\tsigned:0;\n\nprint fmt: \"name=%s pfn=0x%lx page=%p count=%lu align=%u\", __get_str(name), REC->pfn, REC->page, REC->count, REC->align\n",
+        "cma_release": "name: cma_release\nID: 571\nformat:\n\tfield:unsigned short common_type;\toffset:0;\tsize:2;\tsigned:0;\n\tfield:unsigned char common_flags;\toffset:2;\tsize:1;\tsigned:0;\n\tfield:unsigned char common_preempt_count;\toffset:3;\tsize:1;\tsigned:0;\n\tfield:int common_pid;\toffset:4;\tsize:4;\tsigned:1;\n\n\tfield:__data_loc char[] name;\toffset:8;\tsize:4;\tsigned:0;\n\tfield:unsigned long pfn;\toffset:16;\tsize:8;\tsigned:0;\n\tfield:const struct page * page;\toffset:24;\tsize:8;\tsigned:0;\n\tfield:unsigned long count;\toffset:32;\tsize:8;\tsigned:0;\n\nprint fmt: \"name=%s pfn=0x%lx page=%p count=%lu\", __get_str(name), REC->pfn, REC->page, REC->count\n"
+      },
+      "trace_text": "# tracer: nop\n#\n# entries-in-buffer/entries-written: 8/8   #P:4\n#\n#                                _-----=> irqs-off\n#                               / _----=> need-resched\n#                              | / _---=> hardirq/softirq\n#                              || / _--=> preempt-depth\n#                              ||| / _-=> migrate-disable\n#                              |||| /     delay\n#           TASK-PID     CPU#  |||||  TIMESTAMP  FUNCTION\n#              | |         |   |||||     |         |\n          python-3052    [003] .....  1151.074452: tracing_mark_write: M455_CONFIGURATION01_BEGIN\n          python-3052    [002] .....  1152.776117: cma_alloc_start: name=reserved count=1904 align=8\n          python-3052    [002] .....  1152.776127: <stack trace>\n => cma_alloc\n => cma_alloc_aligned\n => dma_alloc_contiguous\n => __dma_direct_alloc_pages.constprop.0\n => dma_direct_alloc\n => dma_alloc_attrs\n => zynqmp_fpga_ops_write\n => fpga_mgr_buf_load\n => fpga_mgr_firmware_load\n => firmware_store\n => dev_attr_store\n => sysfs_kf_write\n => kernfs_fop_write_iter\n => new_sync_write\n => vfs_write\n => ksys_write\n => __arm64_sys_write\n => invoke_syscall\n => el0_svc_common.constprop.0\n => do_el0_svc\n => el0_svc\n => el0t_64_sync_handler\n => el0t_64_sync\n          python-3052    [002] .....  1152.778272: cma_alloc_finish: name=reserved pfn=0x4e200 page=000000002a368849 count=1904 align=8\n          python-3052    [002] .....  1152.778276: <stack trace>\n => cma_alloc\n => cma_alloc_aligned\n => dma_alloc_contiguous\n => __dma_direct_alloc_pages.constprop.0\n => dma_direct_alloc\n => dma_alloc_attrs\n => zynqmp_fpga_ops_write\n => fpga_mgr_buf_load\n => fpga_mgr_firmware_load\n => firmware_store\n => dev_attr_store\n => sysfs_kf_write\n => kernfs_fop_write_iter\n => new_sync_write\n => vfs_write\n => ksys_write\n => __arm64_sys_write\n => invoke_syscall\n => el0_svc_common.constprop.0\n => do_el0_svc\n => el0_svc\n => el0t_64_sync_handler\n => el0t_64_sync\n          python-3052    [001] .....  1152.901634: cma_release: name=reserved pfn=0x4e200 page=000000002a368849 count=1904\n          python-3052    [001] .....  1152.901643: <stack trace>\n => cma_release\n => dma_free_contiguous\n => dma_direct_free\n => dma_free_attrs\n => zynqmp_fpga_ops_write\n => fpga_mgr_buf_load\n => fpga_mgr_firmware_load\n => firmware_store\n => dev_attr_store\n => sysfs_kf_write\n => kernfs_fop_write_iter\n => new_sync_write\n => vfs_write\n => ksys_write\n => __arm64_sys_write\n => invoke_syscall\n => el0_svc_common.constprop.0\n => do_el0_svc\n => el0_svc\n => el0t_64_sync_handler\n => el0t_64_sync\n          python-3052    [001] .....  1152.910560: tracing_mark_write: M455_CONFIGURATION01_END\n",
+      "trace_sha256": "dd922a52cb9efe082f43f83345d86b8083736b80d759ae87f38ac3a26ff3d048",
+      "stats": {
+        "cpu0": "entries: 0\noverrun: 0\ncommit overrun: 0\nbytes: 0\noldest event ts:     0.000000\nnow ts:  1152.937518\ndropped events: 0\nread events: 0\n",
+        "cpu1": "entries: 3\noverrun: 0\ncommit overrun: 0\nbytes: 304\noldest event ts:  1152.901634\nnow ts:  1152.937693\ndropped events: 0\nread events: 0\n",
+        "cpu2": "entries: 4\noverrun: 0\ncommit overrun: 0\nbytes: 536\noldest event ts:  1152.776117\nnow ts:  1152.937849\ndropped events: 0\nread events: 0\n",
+        "cpu3": "entries: 1\noverrun: 0\ncommit overrun: 0\nbytes: 56\noldest event ts:  1151.074452\nnow ts:  1152.938003\ndropped events: 0\nread events: 0\n"
+      },
+      "elapsed_trace_s": 1.8646369289999711,
+      "own_instance_removed": true,
+      "observer_errors": []
+    },
+    "after": {
+      "reserved:alloc_pages_success": 6985,
+      "reserved:alloc_pages_fail": 0
+    }
+  },
+  "unknown_configuration_ownership": false,
+  "configuration_application_accepted": true,
+  "active_transaction": {
+    "label": "stable-restored-build-id",
+    "variant": "R",
+    "input_bytes": 2576,
+    "output_bytes": 4096,
+    "config": "0x10201",
+    "packet_sha256": "f1e2f2296e524cb165156af3b101c6ffecf7ccaf6c2cfc3339ace9c486320696",
+    "expected_sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+    "weight_addresses": [
+      42741760,
+      42233856,
+      42729472,
+      42487808
+    ],
+    "observation": {
+      "submitted_ns": 1159059236566,
+      "polls": 1,
+      "max_poll_gap_ns": 342224,
+      "events": {
+        "ap_done": {
+          "lower_ns": 1159059236566,
+          "upper_ns": 1159059578790,
+          "observed_ns": 1159059578790,
+          "clear_on_read_latched": true
+        }
+      },
+      "dma_timing_unresolved": [
+        "mm2s",
+        "s2mm"
+      ],
+      "pure_compute_time_proven": false,
+      "last_snapshot": {
+        "ap_ctrl": 14,
+        "ap_return": 1295603762,
+        "mm2s_dmasr": 4098,
+        "s2mm_dmasr": 4098,
+        "mm2s_idle": true,
+        "mm2s_error": false,
+        "s2mm_idle": true,
+        "s2mm_error": false,
+        "kernel_read_error": "",
+        "return_read_error": "",
+        "dma_read_error": ""
+      },
+      "completion_proven": true,
+      "completed_ns": 1159059578790,
+      "wait_ns": 342224
+    },
+    "wait_ns": 342224,
+    "full_output_exact": true,
+    "output_sha256": "ad7facb2586fc6e966c004d7d1d16b024f5805ff7cb47c7a85dabd8b48892ca7",
+    "completed_snapshot": {
+      "ap_ctrl": 14,
+      "ap_return": 1295603762,
+      "mm2s_dmasr": 4098,
+      "s2mm_dmasr": 4098,
+      "mm2s_idle": true,
+      "mm2s_error": false,
+      "s2mm_idle": true,
+      "s2mm_error": false,
+      "kernel_read_error": "",
+      "return_read_error": "",
+      "dma_read_error": ""
+    }
+  },
+  "stable_restored": true,
+  "final_service": {
+    "port8001_listening": false,
+    "accelerator_owners": [],
+    "excluded_display_owners": [
+      {
+        "pid": 1,
+        "device": "/dev/dri/card0",
+        "driver": "zynqmp-display"
+      },
+      {
+        "pid": 902,
+        "device": "/dev/dri/card0",
+        "driver": "zynqmp-display"
+      },
+      {
+        "pid": 1435,
+        "device": "/dev/dri/card0",
+        "driver": "zynqmp-display"
+      },
+      {
+        "pid": 1435,
+        "device": "/dev/dri/card0",
+        "driver": "zynqmp-display"
+      },
+      {
+        "pid": 1566,
+        "device": "/dev/dri/card0",
+        "driver": "zynqmp-display"
+      }
+    ]
+  },
+  "boot_unchanged": true,
+  "cmdline_unchanged": true,
+  "final_snapshot": {
+    "ap_ctrl": 4,
+    "ap_return": 1295603762,
+    "mm2s_dmasr": 4098,
+    "s2mm_dmasr": 4098,
+    "mm2s_idle": true,
+    "mm2s_error": false,
+    "s2mm_idle": true,
+    "s2mm_error": false,
+    "kernel_read_error": "",
+    "return_read_error": "",
+    "dma_read_error": ""
+  },
+  "clock_normalizations": [
+    {
+      "before": {
+        "raw": [
+          16844032,
+          16845312,
+          16846592,
+          16846592
+        ],
+        "mhz": {
+          "0": 299.997,
+          "1": 149.9985,
+          "2": 99.999,
+          "3": 99.999
+        },
+        "pll_raw": [
+          88576,
+          82176,
+          81920,
+          86016
+        ]
+      },
+      "after": {
+        "raw": [
+          16844800,
+          16846592,
+          16846592,
+          16846592
+        ],
+        "mhz": {
+          "0": 187.498125,
+          "1": 99.999,
+          "2": 99.999,
+          "3": 99.999
+        },
+        "pll_raw": [
+          88576,
+          82176,
+          81920,
+          86016
+        ]
+      }
+    },
+    {
+      "before": {
+        "raw": [
+          16844032,
+          16845312,
+          16846592,
+          16846592
+        ],
+        "mhz": {
+          "0": 299.997,
+          "1": 149.9985,
+          "2": 99.999,
+          "3": 99.999
+        },
+        "pll_raw": [
+          88576,
+          82176,
+          81920,
+          86016
+        ]
+      },
+      "after": {
+        "raw": [
+          16844800,
+          16846592,
+          16846592,
+          16846592
+        ],
+        "mhz": {
+          "0": 187.498125,
+          "1": 99.999,
+          "2": 99.999,
+          "3": 99.999
+        },
+        "pll_raw": [
+          88576,
+          82176,
+          81920,
+          86016
+        ]
+      }
+    }
+  ],
+  "clock_operating_target_mhz": [
+    187.5,
+    100.0
+  ],
+  "clock_restored": {
+    "raw": [
+      16844032,
+      16845312,
+      16846592,
+      16846592
+    ],
+    "mhz": {
+      "0": 299.997,
+      "1": 149.9985,
+      "2": 99.999,
+      "3": 99.999
+    },
+    "pll_raw": [
+      88576,
+      82176,
+      81920,
+      86016
+    ]
+  },
+  "original_clocks_restored": true,
+  "unsafe_dma_buffers_retained": false,
+  "safe_buffers_released": true
+}

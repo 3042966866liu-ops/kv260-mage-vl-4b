@@ -1,0 +1,51 @@
+'use strict';
+const $=id=>document.getElementById(id),html=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let state=null,upload=null,phase='idle',jobId=null,uploading=false,scanning=false,scanStarted=false,positive=null,autoPlay=false;
+const inputNotice=document.createElement('div');inputNotice.id='input-preparation-notice';inputNotice.className='input-preparation-notice';inputNotice.setAttribute('role','status');inputNotice.style.cssText='padding:15px 21px;background:#edf4ff;color:#426caa;border-bottom:1px solid #dbe7f8;font-size:13px;line-height:1.8';inputNotice.hidden=true;$('player-area').prepend(inputNotice);
+async function api(path,body){const r=await fetch(path,body===undefined?{cache:'no-store'}:{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});const d=await r.json();if(!r.ok)throw Error(d.error||'服务连接失败');return d}
+function toast(text){$('toast').textContent=text;$('toast').hidden=false;clearTimeout(toast.timer);toast.timer=setTimeout(()=>$('toast').hidden=true,5000)}
+function ready(){return !!state?.worker?.ready&&!!upload?.board_prepared}
+function status(text,kind=''){$('status-text').textContent=text;$('recognition-status').className='recognition-status '+kind}
+function render(){
+ const w=state?.worker,preparing=!!upload&&!upload.board_prepared&&['preparing','waiting'].includes(phase);$('connection').classList.toggle('connected',!!w?.warm);$('connection').querySelector('span').textContent=w?(preparing&&w.warm?'正在准备视频画面':w.ready?'板卡已就绪':w.warm?'板卡处理中':'模型初始化中'):'等待板卡连接';$('side-device').textContent=w?.warm?'已连接 · 本地边缘识别':'等待板卡连接';
+ inputNotice.hidden=!preparing;inputNotice.textContent=!w?'板端工作器未连接，当前尚未开始识别。':w.warm?'正在准备识别画面，准备完成后才能开始播放与推理。':'正在等待模型初始化，完成后继续准备视频画面。';
+ $('knife-warning').hidden=!positive;$('video-alert-edge').hidden=!positive;$('start-button').disabled=uploading||scanning||!ready();$('start-button').textContent=uploading?'正在导入':scanning?'正在识别':upload&&!w?'等待板卡连接':preparing?'画面准备中':upload&&!w?.ready?(w?.warm?'等待当前任务':'等待板卡'):scanStarted?'重新演示':'播放视频';$('replace-video').disabled=uploading||scanning;
+ $('recognition-status').hidden=phase==='clear'||phase==='positive';
+ const labels={idle:'请选择一段视频',uploading:'正在导入视频',sampling:'正在准备识别画面',preparing:!w?'等待板卡连接，当前尚未开始识别':!w.warm?'模型初始化中，尚未传输画面':'正在将画面准备到板端',waiting:!w?'等待板卡连接，当前尚未开始识别':!w.warm?'模型初始化中，尚未传输画面':preparing?'正在将画面准备到板端，完成后自动播放':'等待当前板端任务完成',ready:'播放视频时自动开始识别',recognizing:'正在识别视频画面',unknown:'识别未完成，请检查板卡连接',error:'视频准备失败，请重新选择视频',clear:'',positive:''};
+ status(labels[phase]||'',phase==='unknown'||phase==='error'?'problem':['uploading','sampling','preparing','waiting','recognizing'].includes(phase)?'processing':'');
+ const alarms=positive&&positive.upload_id===upload?.id?[positive]:[];$('alarm-history').hidden=!alarms.length;$('alarm-count').textContent=alarms.length+' 条';
+ $('alarm-rows').innerHTML=alarms.map(e=>`<div class="alarm-row"><img src="${html(e.frame_path)}" alt="本次报警画面"><div><b>检测到刀具</b><small>当前视频 · 板端实际判断</small></div><span class="chip">刀具警示</span></div>`).join('');
+}
+function samples(){const c=upload?.cases?.[0];$('sampling-row').hidden=!c;$('sampling-frames').innerHTML=c?`<div class="sample-frame"><img src="${html(c.frame_path)}" alt="实际送入模型的画面"><span>${(c.timestamp_ms/1000).toFixed(1)} 秒画面</span></div>`:'';$('sampling-note').textContent='报警对应右侧这张真实画面'}
+function metadata(v){return new Promise((resolve,reject)=>{if(v.readyState>=1&&Number.isFinite(v.duration))return resolve();const t=setTimeout(()=>done(Error('视频读取超时')),15000);function done(e){clearTimeout(t);v.removeEventListener('loadedmetadata',ok);v.removeEventListener('error',bad);e?reject(e):resolve()}function ok(){done()}function bad(){done(Error('无法播放该视频，请使用MP4/H.264或WebM'))}v.addEventListener('loadedmetadata',ok);v.addEventListener('error',bad)})}
+function seek(v,t){return new Promise((resolve,reject)=>{if(Math.abs(v.currentTime-t)<.003&&v.readyState>=2)return resolve();const timer=setTimeout(()=>{v.removeEventListener('seeked',done);reject(Error('无法读取采样画面'))},10000);function done(){clearTimeout(timer);resolve()}v.addEventListener('seeked',done,{once:true});v.currentTime=t})}
+async function sample(v){await metadata(v);if(!(v.duration>0)||!v.videoWidth||!v.videoHeight)throw Error('视频没有有效画面');const t=Math.min(v.duration-.05,Math.max(.01,v.duration*.25));await seek(v,t);const c=document.createElement('canvas');c.width=c.height=448;const edge=Math.min(v.videoWidth,v.videoHeight);c.getContext('2d').drawImage(v,(v.videoWidth-edge)/2,(v.videoHeight-edge)/2,edge,edge,0,0,448,448);return [{timestamp_ms:Math.round(t*1000),png_base64:c.toDataURL('image/png').split(',')[1]}]}
+function sendFile(file){return new Promise((resolve,reject)=>{const x=new XMLHttpRequest();x.open('POST','/api/uploads');x.setRequestHeader('Content-Type','application/octet-stream');x.setRequestHeader('X-File-Name',encodeURIComponent(file.name));x.upload.onprogress=e=>{if(e.lengthComputable)$('upload-progress-fill').style.width=e.loaded/e.total*100+'%'};x.onerror=()=>reject(Error('视频导入中断'));x.onload=()=>{try{const d=JSON.parse(x.responseText);x.status===201?resolve(d):reject(Error(d.error||'导入失败'))}catch(e){reject(e)}};x.send(file)})}
+async function onVideo(file){
+ if(!file||uploading)return;if(scanning)return toast('当前识别尚未结束，请稍候');if(file.size>100*1024*1024)return toast('请选择不超过100 MiB的视频');
+ if(upload&&file.size===upload.bytes&&upload.board_prepared&&crypto.subtle){try{const bytes=await file.arrayBuffer(),digest=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes)),b=>b.toString(16).padStart(2,'0')).join('');if(digest===upload.sha256){const existing=await api('/api/uploads/'+upload.id);if(existing.board_prepared)return resumeUpload(existing.id)}}catch(e){/* Input reuse is optional; a normal upload remains available. */}}
+ upload=null;positive=null;jobId=null;scanStarted=false;scanning=false;autoPlay=false;uploading=true;phase='uploading';$('video-player').pause();$('video-file').disabled=true;$('upload-meter').hidden=false;$('upload-progress-fill').style.width='0';render();
+ try{upload=await sendFile(file);$('upload-drop').hidden=true;$('player-area').hidden=false;$('video-name').textContent=file.name;const v=$('video-player');v.src=upload.video_url;v.load();await metadata(v);if(!upload.frames_ready){phase='sampling';render();upload=await api('/api/uploads/'+upload.id+'/frames',{frames:await sample(v)})}await api('/api/input/select',{upload_id:upload.id});v.pause();await seek(v,0);samples();phase='preparing';autoPlay=true}
+ catch(e){phase='error';toast(e.message)}finally{uploading=false;$('video-file').disabled=false;$('upload-meter').hidden=true;render()}
+}
+async function resumeUpload(id,playWhenReady=true){
+ if(uploading||scanning||!/^[0-9a-f]{32}$/.test(id))return;
+ uploading=true;scanStarted=false;scanning=false;positive=null;jobId=null;autoPlay=false;phase='preparing';$('video-player').pause();render();
+ try{upload=await api('/api/uploads/'+id);if(!upload.frames_ready)throw Error('该视频画面尚未准备，请重新选择视频');$('upload-drop').hidden=true;$('player-area').hidden=false;$('video-name').textContent=upload.name;const v=$('video-player');v.src=upload.video_url;v.load();await metadata(v);v.pause();await seek(v,0);samples();await api('/api/input/select',{upload_id:upload.id});autoPlay=playWhenReady}
+ catch(e){phase='error';toast(e.message)}finally{uploading=false;render()}
+}
+async function startFromPlayback(){
+ if(uploading||!upload?.frames_ready){$('video-player').pause();return}if(scanStarted||$('video-player').paused)return;if(!ready()){$('video-player').pause();autoPlay=true;phase='waiting';return render()}
+ scanStarted=true;scanning=true;phase='recognizing';$('video-player').loop=true;render();
+ try{const j=await api('/api/verify',{case_id:upload.cases[0].id,upload_id:upload.id,task_id:'knife_visible'});jobId=j.id}catch(e){scanning=false;phase='unknown';toast(e.message)}finally{render()}
+}
+async function refresh(){
+ try{state=await api('/api/state');if(upload&&!uploading&&!scanStarted){upload=await api('/api/uploads/'+upload.id);if(ready()){phase='ready';if(autoPlay){autoPlay=false;$('video-player').play().catch(()=>toast('画面已准备好，请点击播放视频'))}}}
+  if(jobId){const e=state.events.find(e=>e.id===jobId&&e.kind==='live'&&e.upload_id===upload?.id);if(e&&e.decision==='Yes'){positive=e;jobId=null;scanning=false;phase='positive';const v=$('video-player');v.pause();v.loop=false;/* Alarm preserves playback position; evidence stays in the sample panel. */}else if(e&&e.decision==='No'){jobId=null;scanning=false;phase='clear';$('video-player').loop=false}else if(e&&['unknown','closed'].includes(e.status)){jobId=null;scanning=false;phase='unknown';$('video-player').loop=false}}
+  render();
+ }catch(e){$('connection').classList.remove('connected');$('connection').querySelector('span').textContent='服务连接中断';$('start-button').disabled=true}
+}
+$('video-player').addEventListener('play',startFromPlayback);$('start-button').onclick=async()=>{if(scanStarted&&!scanning){$('video-player').pause();scanStarted=false;positive=null;phase='ready';await seek($('video-player'),0)}$('video-player').play().catch(()=>toast('请点击播放器播放按钮'))};$('acknowledge-warning').onclick=()=>{positive=null;render()};
+function chooseFile(){$('video-file').value='';$('video-file').click()}$('choose-video').onclick=e=>{e.stopPropagation();chooseFile()};$('replace-video').onclick=chooseFile;$('upload-drop').onclick=chooseFile;$('upload-drop').onkeydown=e=>{if(['Enter',' '].includes(e.key)){e.preventDefault();chooseFile()}};$('video-file').onchange=()=>onVideo($('video-file').files[0]);
+for(const event of ['dragenter','dragover'])$('upload-drop').addEventListener(event,e=>{e.preventDefault();$('upload-drop').classList.add('dragover')});for(const event of ['dragleave','drop'])$('upload-drop').addEventListener(event,e=>{e.preventDefault();$('upload-drop').classList.remove('dragover');if(event==='drop')onVideo(e.dataTransfer.files[0])});
+async function poll(){await refresh();setTimeout(poll,scanning||phase==='preparing'||phase==='waiting'?250:1000)}render();const resumeParams=new URLSearchParams(location.search),resumeId=resumeParams.get('upload');if(resumeId)resumeUpload(resumeId,resumeParams.get('autoplay')!=='0');poll();

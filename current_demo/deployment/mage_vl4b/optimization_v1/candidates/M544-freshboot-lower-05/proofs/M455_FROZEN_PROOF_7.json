@@ -1,0 +1,753 @@
+{
+  "status": "PASS_M455_FULL_SHELL_ROUTED_TIMING04",
+  "build_id": "0x4D343535",
+  "checks": {
+    "original_rc": true,
+    "mapping_restored": true,
+    "unique_generated_top": true,
+    "all_generated_RTL_exact": true,
+    "native_completion": true,
+    "actual_run_logs": true,
+    "no_unclassified_current_native_errors": true,
+    "route_receipt": true,
+    "route_status": true,
+    "same_200_100MHz_setup_hold_pulse_constraints": true,
+    "resources_fit_no_latch": true,
+    "DRC_no_error_critical": true,
+    "whole_HWH_ABI_topology": true,
+    "separate_bit_XSA": true,
+    "XSA_HWH_exact": true
+  },
+  "errors": [],
+  "resources": {
+    "CLB LUTs": {
+      "used": 51803.0,
+      "available": 117120.0
+    },
+    "CLB Registers": {
+      "used": 63843.0,
+      "available": 234240.0
+    },
+    "Block RAM Tile": {
+      "used": 82.0,
+      "available": 144.0
+    },
+    "URAM": {
+      "used": 64.0,
+      "available": 64.0
+    },
+    "DSPs": {
+      "used": 1184.0,
+      "available": 1248.0
+    },
+    "Register as Latch": {
+      "used": 0.0,
+      "available": 234240.0
+    }
+  },
+  "artifacts": [
+    {
+      "path": "tmp/m455_shell_01/out/m455_t32.bit",
+      "sha256": "e1b5b9e6cb84325820e1150528d1e4117d30e924e777246576a35acb5332e4b8",
+      "bytes": 7797914
+    },
+    {
+      "path": "tmp/m455_shell_01/out/m455_t32.xsa",
+      "sha256": "3728fe65996c48aa8775d10947a8cd8e44bf97845a18125e81681bb7585cb058",
+      "bytes": 1223754
+    },
+    {
+      "path": "tmp/m455_shell_01/out/candidate_routed.dcp",
+      "sha256": "aadc97008660feef8711a7a46d0fbc67b641edc01e9e6eba680f9a08c31f86dc",
+      "bytes": 99439398
+    }
+  ],
+  "original_host_rc": 0,
+  "preparation_sha256": "573351e2b998586f392d0d351d092ef57b7892cd06f8f236108c79f21b9c79da",
+  "board": false,
+  "performance": false,
+  "promoted": false,
+  "original_vivado_rc": 0,
+  "generated_ip_RTL": [
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel.v",
+      "sha256": "925596c1ddfd233b3e20d9b145138a2f5c1774dd4ce5af142049338190d586ab",
+      "bytes": 163310
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_activation_RAM_2P_URAM_2R1W.v",
+      "sha256": "233303a72634ce2cb9a76660eb7734e2a1045b7517fcdf5a89f786aa86b2eceb",
+      "bytes": 1679
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_activation_scale_RAM_2P_BRAM_2R1W.v",
+      "sha256": "fe7eb5ce6cf7f727e9af99ea2a8e1671d412d6b1ff245f2210099fab2fd27075",
+      "bytes": 1589
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_control_s_axi.v",
+      "sha256": "cee3e3d333a252dae8599c9cb7d99c0427bf8b4baad9043caf79ce539c6b41e9",
+      "bytes": 17366
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_fadd_32ns_32ns_32_8_full_dsp_1.v",
+      "sha256": "b9b57ae04e451f7396e1257164ef145a2caddb04be8000ba8ef5442570102edb",
+      "bytes": 2320
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_fifo_w128_d34_A.v",
+      "sha256": "06f3f7e85e663fae93b05377dd0441beae9ab362c4f2bec797dcdefac5f8d19c",
+      "bytes": 6697
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_fifo_w128_d34_A_x.v",
+      "sha256": "54234674204c4b6e8873b3ac89a91731a305312c296402ad3b2005ab4787da3e",
+      "bytes": 6705
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_fifo_w128_d34_A_x0.v",
+      "sha256": "e9f9bb0f95487b24cb2bfec6b88fd12897c9d7e2e1e01984aaf9156eaf7d09a3",
+      "bytes": 6709
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_fifo_w128_d34_A_x1.v",
+      "sha256": "0101e24d2289c2e557542c22d1ca6f5663ca84cf94c1c70b85faabd4103f642d",
+      "bytes": 6709
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_fifo_w32_d8192_A.v",
+      "sha256": "843cb700c1194479bf50c7fc616a5b56e6495563e4ebfcb27c5df9d1388bb7e2",
+      "bytes": 6705
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_flow_control_loop_pipe.v",
+      "sha256": "4e6490b45b246658ab48c5dde44d74d259699ded6bf42c7713f047501970b3df",
+      "bytes": 1942
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_flow_control_loop_pipe_sequential_init.v",
+      "sha256": "00434b4c7d7ea7acdb3986b49da3faa0bfc1ced454e400f92b7c3251db5c6426",
+      "bytes": 2937
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_fmul_32ns_32ns_32_5_max_dsp_1.v",
+      "sha256": "c07ccf53da53f7914f78f1a5b520f9629525dabb3d1cdd344331216160742975",
+      "bytes": 2317
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_hls_deadlock_detection_unit.v",
+      "sha256": "7a6ddb73174db2b16bd710517a2b87d9d4df6bdc5dec47a09ccf9d149dfc6711",
+      "bytes": 3268
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_hls_deadlock_detector.vh",
+      "sha256": "02bbafa33c0466ce09bdb346568ff9b536c0a69da129944933a5e6a4b324cccb",
+      "bytes": 65613
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_hls_deadlock_idx0_monitor.v",
+      "sha256": "e3944af3dd7a0b7aecf84c6c9ec016eab6d11615c07429ebfe4f3fe9e3dcda89",
+      "bytes": 1335
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_hls_deadlock_kernel_monitor_top.vh",
+      "sha256": "a5d1bcfaa49c9a1f7adce6b98de2f8307b80fd45284afa304c5b940031459eff",
+      "bytes": 5538
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_hls_deadlock_report_unit.vh",
+      "sha256": "2a156cb8703111c402cc9821ec77cd6e4777e95f943157769309d447efe956f0",
+      "bytes": 84559
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_hptosp_16ns_32_2_no_dsp_1.v",
+      "sha256": "b959e55e541d897a6a04cff95f2d898f7bf64a4e21c51d411339eb454f9cd688",
+      "bytes": 1815
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m441_load_records.v",
+      "sha256": "9fc95c2aff9610a42e0d2f5b6ad77585dcefacce7975ff31f5ba12e92dfaf63f",
+      "bytes": 31860
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m441_load_records_7.v",
+      "sha256": "84c771d17e6c39d5386e1347bbb60211e4a984168a6615201124e3fb91e37055",
+      "bytes": 32074
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m441_load_records_7_Pipeline_VITIS_LOOP_51_3.v",
+      "sha256": "572061b19d8e188184647b3ef1db7d36718cc749063b78bee2a12bc868b82a12",
+      "bytes": 12847
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m441_load_records_8.v",
+      "sha256": "eb06ab6b9d4fae2c775ddb2f7ad694b77b72b1d3246a99ba2512e2544f26436a",
+      "bytes": 32071
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m441_load_records_8_Pipeline_VITIS_LOOP_51_3.v",
+      "sha256": "6eaffd2e0d43ec524ede7063013f95f9b51c2981346bbb4144772facc0f2540d",
+      "bytes": 12847
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m441_load_records_9.v",
+      "sha256": "2e5aaacb7d0d12e189941cf76faf0f8b3ebbdf575de7f246274f730236c44938",
+      "bytes": 32052
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m441_load_records_9_Pipeline_VITIS_LOOP_51_3.v",
+      "sha256": "ca1ea3b317e99a201edd056470e5acba3b40bb62ab3b2b2bd5119b1503a9a86a",
+      "bytes": 12847
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m441_load_records_Pipeline_VITIS_LOOP_51_3.v",
+      "sha256": "7f1510a2adca9b78808d9e3c782c1e006ccdf86c5239c81e139c149d8a240584",
+      "bytes": 12843
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m443_compute.v",
+      "sha256": "55d7a401ffafc9fbf7f6f6ae26f8bdca75e6d2ea2dd80711b4d4f5e0678d70aa",
+      "bytes": 614393
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m443_compute_1.v",
+      "sha256": "3df872fbc23a433387c30b594177205e52ef8be8662ba8d86383fb32bde3c66d",
+      "bytes": 618647
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m443_compute_1_Pipeline_VITIS_LOOP_114_7.v",
+      "sha256": "2ce6364b5784939795b88569a96d68f59633104da15fbd03f5b43c7b00237f40",
+      "bytes": 547906
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m443_compute_1_Pipeline_VITIS_LOOP_131_8_VITIS_LOOP_132_9.v",
+      "sha256": "b13fa6b1ad2e05c516370a718b1cfcaabc344ca3ae4360e87c2686059025e39a",
+      "bytes": 33175
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m443_compute_1_Pipeline_VITIS_LOOP_83_2_VITIS_LOOP_84_3.v",
+      "sha256": "6dca9d47f0f7ba4127a192eb7e9b6de5bb27bb538fbd25b5d06338ba336dba00",
+      "bytes": 36217
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m443_compute_1_Pipeline_VITIS_LOOP_90_5.v",
+      "sha256": "544543a9ed24e16616a1209e2df897f768fe877abe154b2b19cb3af3f66cdd3b",
+      "bytes": 8296
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m443_compute_2.v",
+      "sha256": "aaab0f0068a6e3856d05daeab4f18aa203ae40fe728bcb8a067570492d70f612",
+      "bytes": 618638
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m443_compute_2_Pipeline_VITIS_LOOP_114_7.v",
+      "sha256": "fb1156effac9edf774faaa67500ea0f8abc5c12e6c7920057bdd92ee90d2b21b",
+      "bytes": 547597
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m443_compute_2_Pipeline_VITIS_LOOP_131_8_VITIS_LOOP_132_9.v",
+      "sha256": "e8512ebb645ba45ef6e79f3a02ed5ab082026a26e6f0de4c05f635326a455904",
+      "bytes": 33179
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m443_compute_2_Pipeline_VITIS_LOOP_83_2_VITIS_LOOP_84_3.v",
+      "sha256": "fcbee12b9342c8754a7e8b903b13371a225b1323e680c53a808c4ad49b23d8b7",
+      "bytes": 36217
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m443_compute_2_Pipeline_VITIS_LOOP_90_5.v",
+      "sha256": "2719892ebdd79e6442dce9763de832bd4672babfddbf68d1595a51062c670042",
+      "bytes": 8296
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m443_compute_3.v",
+      "sha256": "a94213f99be71fde72374e73d13173613b39b30ae79d599bfdd9ec0db03e4c83",
+      "bytes": 618445
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m443_compute_3_Pipeline_VITIS_LOOP_114_7.v",
+      "sha256": "bccc50751104d0185d7c61b250af86754ab851730ac8dd12f259241aefe4172b",
+      "bytes": 546279
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m443_compute_3_Pipeline_VITIS_LOOP_131_8_VITIS_LOOP_132_9.v",
+      "sha256": "be21adaf6db287c1f39c5e7a8615ac18dd6bed5d1ef51bd6b483a64e3246e12d",
+      "bytes": 33194
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m443_compute_3_Pipeline_VITIS_LOOP_83_2_VITIS_LOOP_84_3.v",
+      "sha256": "e5c7f346a99352f04457071b82913c4c655b9a64af2d1b6e2d4c438928efd9b8",
+      "bytes": 36214
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m443_compute_3_Pipeline_VITIS_LOOP_90_5.v",
+      "sha256": "33c6822a755e9d110eea6fcac76ebff7bbb42f32cf0672a85462ae0fa4af4315",
+      "bytes": 8296
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m443_compute_acc0_RAM_2P_LUTRAM_1R1W.v",
+      "sha256": "90169e9c51fba84166b356fdc51fc18833a9a9b18ec575c730b42a47818c84f1",
+      "bytes": 1118
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m443_compute_Pipeline_VITIS_LOOP_114_7.v",
+      "sha256": "59c5bcd482b0328ed360eaf5e974bd60e01d76f6397836c0d243c4f17d57d089",
+      "bytes": 544802
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m443_compute_Pipeline_VITIS_LOOP_131_8_VITIS_LOOP_132_9.v",
+      "sha256": "3150e7c5e2ec80e4c7742f08b4172abd445df0dea993c67a512c6d2d9dd5527c",
+      "bytes": 33162
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m443_compute_Pipeline_VITIS_LOOP_83_2_VITIS_LOOP_84_3.v",
+      "sha256": "6af58baf59e19acc0be0e150572468b45f3847a0a88e9ff8bc50d0f8dad520ce",
+      "bytes": 36210
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m443_compute_Pipeline_VITIS_LOOP_90_5.v",
+      "sha256": "10e0066e90fe36dbdba9415280ef3d7c25158352df50d543b22cf8f0ba009976",
+      "bytes": 8292
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m443_compute_record_RAM_2P_LUTRAM_1R1W.v",
+      "sha256": "3ac469524116f3a6a1936a5e4ed9fd2abc9cd2bc9e299086c759223db55cbadb",
+      "bytes": 1208
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m443_compute_weight0_RAM_2P_LUTRAM_1R1W.v",
+      "sha256": "4bdfbba7e29410b3aeb0727967c6563a795ee6d4d7e7a1e5114932b1363da322",
+      "bytes": 1120
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m89s_load.v",
+      "sha256": "6506d6a6ba4b907375053a1c0a13ec785bc8ce12495e535c2410861918d608a1",
+      "bytes": 14705
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m89s_load_Pipeline_VITIS_LOOP_23_1_VITIS_LOOP_23_2_VITIS_LOOP_23_3.v",
+      "sha256": "318fd7d786aa8de838986a9c224830c86c1356ce5315ec04914d1bef8038d43b",
+      "bytes": 19180
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m89x_four.v",
+      "sha256": "e6a70b14318c7a06c1b3bf411255060cb8de2a146655a4a8f1153d5a62cfe90f",
+      "bytes": 78985
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m89x_merge.v",
+      "sha256": "6e6a3b58e7c4a240c5d8028ef93a8f5a3679b177afed2097974078e596b85baa",
+      "bytes": 24518
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m89x_runtime_kernel_Pipeline_VITIS_LOOP_242_1.v",
+      "sha256": "2c7b5fbbae0ad28e42173264e501a59e0f52bb58491b7aab2e03959860cb0f9e",
+      "bytes": 10566
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m89x_runtime_kernel_Pipeline_VITIS_LOOP_267_2_VITIS_LOOP_268_3_VITIS_LOOP_269_4.v",
+      "sha256": "c407a78b3668c65d1d0964c58dde85aaafc776ff6cf09ddd75da8172bb437c20",
+      "bytes": 32258
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m89x_shard.v",
+      "sha256": "385bec48f92bbe3284435e8dd517ebd6a4abee5a2968630789cd5aa12c445a77",
+      "bytes": 21137
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m89x_shard_4.v",
+      "sha256": "cc774617a59742eae311e5a096ea19b8fbcffef71f89279c437048d3fc867209",
+      "bytes": 20352
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m89x_shard_5.v",
+      "sha256": "c180085d3555b2e94a360dd45ac4b5513f7f26216221df44263db4b25b672d07",
+      "bytes": 20353
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_m89x_shard_6.v",
+      "sha256": "b0902f861015ba810cbe186fdd2b8037d2722d1ccd7ffea0cba7e7e8abda093b",
+      "bytes": 20353
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_mac_muladd_15ns_5ns_32ns_33_4_1.v",
+      "sha256": "e8f4205c4033e129fd9767fc98fa21e5d123d5762c83ef81e54ca15aca7195b0",
+      "bytes": 2023
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_mac_muladd_8ns_7ns_7ns_15_4_1.v",
+      "sha256": "8fa7319dd46d12fb7fc306d2dc35f0986188f2ace39278fa8906ed945574acdd",
+      "bytes": 2013
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_mul_32s_8s_40_1_1.v",
+      "sha256": "f3598554125ad30908b2b9ca0235112f4d74e0a1f773aa8f63b868e1d57e5d28",
+      "bytes": 712
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_mul_3ns_2ns_4_1_1.v",
+      "sha256": "a047e34e55c144707aad5c62b64105617d4db38e6c861aef8c0b5dd197ceb843",
+      "bytes": 710
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_partselect_16ns_128ns_7ns_16_1_1.v",
+      "sha256": "bb1328e41be164fc9e95d6239c567f40b71caadf921307dca4375b7c3799dc8b",
+      "bytes": 731
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_regslice_both.v",
+      "sha256": "7a75c336d261e14798f1c18cbee1f1d22726755490fb6d71a7c4ab9e8b41c67a",
+      "bytes": 3370
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_sitofp_32s_32_6_no_dsp_1.v",
+      "sha256": "0c7168821ae6b954054718713437bb63fdd8b023a00a8dde1f2a91649d3ef17f",
+      "bytes": 1997
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_sparsemux_17_3_32_1_1.v",
+      "sha256": "ae747f494e2caa656df59012d33bb180a16b63fed0e18f3021d7698754718ee7",
+      "bytes": 1983
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_sparsemux_33_4_32_1_1.v",
+      "sha256": "50c6bd3047eb3e352ab662fc6334d128d6a3aaf17877879e25a7e2bc281ac4cf",
+      "bytes": 3161
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_sparsemux_9_2_128_1_1.v",
+      "sha256": "506aef9cd7b9365b2dc69a269692f961b8df72e599b94edc7f013590d5f0210e",
+      "bytes": 1415
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_sparsemux_9_2_32_1_1.v",
+      "sha256": "ffdf662a1c39ba077446f8c06e7e712ccee1325fa81c7987afec74985d64d186",
+      "bytes": 1414
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_sptohp_32ns_16_2_no_dsp_1.v",
+      "sha256": "01e477c24f2c807f100f774b3a0523bae5498b25693b852cad6a2b6c3797f03a",
+      "bytes": 1815
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_start_for_m443_compute_1_U0.v",
+      "sha256": "8140be74d56d14159aafc35a71b9ce6a95be02aeadd532708cb0a568c9786e8d",
+      "bytes": 4178
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_start_for_m443_compute_2_U0.v",
+      "sha256": "3e1f4da33343ad184512b62b3f1c6d81677add6f7bc79b0309cafa211858c2ce",
+      "bytes": 4178
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_start_for_m443_compute_3_U0.v",
+      "sha256": "b893011b42500dcdf675fc9b71c623032dd59a89ee4a5510c3876ead49d8527d",
+      "bytes": 4178
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_start_for_m443_compute_U0.v",
+      "sha256": "303518cc11fd10cbaf80e67b738b92816d53fde59bdbf50de5fe3a241a9bf175",
+      "bytes": 4170
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_start_for_m89x_merge_U0.v",
+      "sha256": "d2a46fde5aa1408e79b17a833b2ea912cf7b6ae111b11dd9cc90c99901e7294d",
+      "bytes": 4162
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_table_RAM_1P_LUTRAM_1R1W.v",
+      "sha256": "6b493e61f1179a4c6e16ef7ccae469a367e828543520dec658b8efe2c0046d5c",
+      "bytes": 983
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_uitofp_32ns_32_6_no_dsp_1.v",
+      "sha256": "2fe513a6c712649dbf1e9ad34f683e23e77e56049b6c155e5cd5d9767dac842f",
+      "bytes": 2000
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_w0_m_axi.v",
+      "sha256": "2f85a479885310b1d87956b8ed0b79b90bf57533d90e5427b319626c033024ad",
+      "bytes": 93385
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_w1_m_axi.v",
+      "sha256": "9509475c72be69990c8ee00b3882613edd94b46e9e03c2d115312971584ed6d4",
+      "bytes": 93385
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_w2_m_axi.v",
+      "sha256": "37df31a5febc7e6f9b1f3fb94f8d77e510fcd3bc47e27f776094c269de93a9b8",
+      "bytes": 93385
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/ipshared/b6a9/hdl/verilog/m89x_runtime_kernel_w3_m_axi.v",
+      "sha256": "22fb3b3ad6a54a3bd5fd0198defc27dc67c15cdd32c863621555b404fa389195",
+      "bytes": 93385
+    }
+  ],
+  "retained_exact_native_path_errors": [
+    {
+      "ip": "qwen25_mixed_gs_axi_dma_prefill_0",
+      "log": "tmp/m455_shell_01/mage_m120_m89x2_highddr.runs/qwen25_mixed_gs_axi_dma_prefill_0_synth_1/runme.log",
+      "log_sha256": "daddc0839f9e16e292fa6673e43150123cf615f7979bab186bae0563b2c076ad",
+      "checkpoint": "tmp/m455_shell_01/mage_m120_m89x2_highddr.runs/qwen25_mixed_gs_axi_dma_prefill_0_synth_1/qwen25_mixed_gs_axi_dma_prefill_0.dcp",
+      "checkpoint_sha256": "0e53eff942bd706f5e6e15808ac61f975ef0edb03b51779af80135e5123fe4db",
+      "messages": [
+        "ERROR: [Common 17-354] Could not open 'C' for writing."
+      ],
+      "observed_phase": "before_design_source_path_write",
+      "root_cause_proven": false,
+      "independent_netlist_proof_sha256": "550cf63d2d9d3938fe782372558f66d089a8bf9f2499dcae312856b11a9c1f5d"
+    },
+    {
+      "ip": "qwen25_mixed_gs_mage_m120_m89x2_0_0",
+      "log": "tmp/m455_shell_01/mage_m120_m89x2_highddr.runs/qwen25_mixed_gs_mage_m120_m89x2_0_0_synth_1/runme.log",
+      "log_sha256": "eb99be8361afea4856ead0f8ccd2ea27f62a07441628ef2acf831efbb774a563",
+      "checkpoint": "tmp/m455_shell_01/mage_m120_m89x2_highddr.runs/qwen25_mixed_gs_mage_m120_m89x2_0_0_synth_1/qwen25_mixed_gs_mage_m120_m89x2_0_0.dcp",
+      "checkpoint_sha256": "4e2950ec3f2eaa1160392f6913abb1cc79dc4fe213eafc33c918c3c836987bac",
+      "messages": [
+        "ERROR: [Common 17-1257] Failed to create directory 'C'."
+      ],
+      "observed_phase": "after_XDC_processing_directory_error_not_startup",
+      "root_cause_proven": false,
+      "independent_netlist_proof_sha256": "550cf63d2d9d3938fe782372558f66d089a8bf9f2499dcae312856b11a9c1f5d"
+    },
+    {
+      "ip": "qwen25_mixed_gs_sc_control_0",
+      "log": "tmp/m455_shell_01/mage_m120_m89x2_highddr.runs/qwen25_mixed_gs_sc_control_0_synth_1/runme.log",
+      "log_sha256": "8a861613b3a4b5fb6ce129f2dfb26fd8e1be1eccf0d569d5b0d5be6ff1f4e612",
+      "checkpoint": "tmp/m455_shell_01/mage_m120_m89x2_highddr.runs/qwen25_mixed_gs_sc_control_0_synth_1/qwen25_mixed_gs_sc_control_0.dcp",
+      "checkpoint_sha256": "0814a684c8abbabe681c1316aea50af69a607e00cea17e58bb2ed2c8abeef43f",
+      "messages": [
+        "ERROR: [Common 17-354] Could not open 'C' for writing."
+      ],
+      "observed_phase": "before_design_source_path_write",
+      "root_cause_proven": false,
+      "independent_netlist_proof_sha256": "550cf63d2d9d3938fe782372558f66d089a8bf9f2499dcae312856b11a9c1f5d"
+    }
+  ],
+  "independent_netlist_proof_sha256": "550cf63d2d9d3938fe782372558f66d089a8bf9f2499dcae312856b11a9c1f5d",
+  "wns_ns": 0.03908517956733704,
+  "whs_ns": 0.00952393747866154,
+  "unrouted_nets": 0,
+  "timing_summary": {
+    "WNS_ns": 0.039,
+    "TNS_ns": 0.0,
+    "setup_failing_endpoints": 0,
+    "setup_endpoints": 254962,
+    "WHS_ns": 0.01,
+    "THS_ns": 0.0,
+    "hold_failing_endpoints": 0,
+    "hold_endpoints": 254962,
+    "WPWS_ns": 1.0,
+    "TPWS_ns": 0.0,
+    "pulse_failing_endpoints": 0,
+    "pulse_endpoints": 80195
+  },
+  "HWH": {
+    "candidate_path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/hw_handoff/qwen25_mixed_gs.hwh",
+    "candidate_hwh_sha256": "1c23405fe23cbe264c5b4af60e28bd60bb01659658e4baf164d8692d27c1e846",
+    "stable_hwh_sha256": "9bd6100bcc274486ddd51133e4dc2247f35c030d49e53cc709438f2a74ee3520",
+    "component_sha256": "84de64ae4203a0b308803f5ea5eaff5d00d3bf6b1c43cffa8ee63653513a3d66",
+    "permitted_metadata_deltas": [
+      {
+        "field": "kernel.COREREVISION",
+        "original": "2114766272",
+        "candidate": "2114825913"
+      },
+      {
+        "field": "kernel.VLNV",
+        "original": "tellme.local:hls:m89x_runtime_kernel:1.0",
+        "candidate": "xilinx.com:hls:m89x_runtime_kernel:1.0"
+      },
+      {
+        "field": "kernel.PARAMETER.II",
+        "original": "2 ~ 463850043",
+        "candidate": "2 ~ 57085239"
+      },
+      {
+        "field": "kernel.DOCUMENTS",
+        "original": "<DOCUMENTS />\n      ",
+        "candidate": "<DOCUMENTS>\n        <DOCUMENT SOURCE=\"https://support.amd.com/documentation/ipcores/m89x_runtime_kernel/1_0\" />\n      </DOCUMENTS>\n      "
+      }
+    ],
+    "module_count": 7
+  },
+  "evidence": [
+    {
+      "path": "deployment/mage_vl4b/optimization_v1/runs/M455-checkpoint-netlist-closure-02/RESULT.json",
+      "sha256": "550cf63d2d9d3938fe782372558f66d089a8bf9f2499dcae312856b11a9c1f5d",
+      "bytes": 5951
+    },
+    {
+      "path": "deployment/mage_vl4b/optimization_v1/runs/M455-exact-native-error-policy-01/PREPARATION.json",
+      "sha256": "91939ca5cd412491dc1d6ee172139fe583aab46e0ae0490ed0166093d8532a07",
+      "bytes": 5470
+    },
+    {
+      "path": "deployment/mage_vl4b/optimization_v1/runs/M455-full-shell-02/CONTROLLER.log",
+      "sha256": "ab1ab65cd086ce2bb9b618eb1ad9d343f948356a08b82918a3e253b9427b5989",
+      "bytes": 1347
+    },
+    {
+      "path": "deployment/mage_vl4b/optimization_v1/runs/M455-full-shell-02/EXIT.json",
+      "sha256": "856b7e4c227d28c52c835d3d483dba6a8d3d62bcaecdc1d04cc80e8f9d1a2960",
+      "bytes": 173
+    },
+    {
+      "path": "deployment/mage_vl4b/optimization_v1/runs/M455-full-shell-02/START.json",
+      "sha256": "bfad72904103d4b73d768517cde1f87f5dc83b82d5fe0fb84ea10e695812f698",
+      "bytes": 735
+    },
+    {
+      "path": "deployment/mage_vl4b/optimization_v1/runs/M455-saved-shell-preparation-04/PREPARATION.json",
+      "sha256": "573351e2b998586f392d0d351d092ef57b7892cd06f8f236108c79f21b9c79da",
+      "bytes": 2643
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.gen/sources_1/bd/qwen25_mixed_gs/hw_handoff/qwen25_mixed_gs.hwh",
+      "sha256": "1c23405fe23cbe264c5b4af60e28bd60bb01659658e4baf164d8692d27c1e846",
+      "bytes": 493484
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.runs/impl_1/runme.log",
+      "sha256": "e80dd127a097e6672c63ad83fecde2a693adefc69b041ad2c1dd8e810b3ea655",
+      "bytes": 71893
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.runs/qwen25_mixed_gs_axi_dma_prefill_0_synth_1/qwen25_mixed_gs_axi_dma_prefill_0.dcp",
+      "sha256": "0e53eff942bd706f5e6e15808ac61f975ef0edb03b51779af80135e5123fe4db",
+      "bytes": 1072252
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.runs/qwen25_mixed_gs_axi_dma_prefill_0_synth_1/runme.log",
+      "sha256": "daddc0839f9e16e292fa6673e43150123cf615f7979bab186bae0563b2c076ad",
+      "bytes": 123063
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.runs/qwen25_mixed_gs_mage_m120_m89x2_0_0_synth_1/qwen25_mixed_gs_mage_m120_m89x2_0_0.dcp",
+      "sha256": "4e2950ec3f2eaa1160392f6913abb1cc79dc4fe213eafc33c918c3c836987bac",
+      "bytes": 18674477
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.runs/qwen25_mixed_gs_mage_m120_m89x2_0_0_synth_1/runme.log",
+      "sha256": "eb99be8361afea4856ead0f8ccd2ea27f62a07441628ef2acf831efbb774a563",
+      "bytes": 868506
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.runs/qwen25_mixed_gs_reset_sync_0_synth_1/runme.log",
+      "sha256": "7887b527fa5b6614d0b76723700c0ebbcfc37a35abada179e5d92dababfcb7d9",
+      "bytes": 25239
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.runs/qwen25_mixed_gs_sc_control_0_synth_1/qwen25_mixed_gs_sc_control_0.dcp",
+      "sha256": "0814a684c8abbabe681c1316aea50af69a607e00cea17e58bb2ed2c8abeef43f",
+      "bytes": 308210
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.runs/qwen25_mixed_gs_sc_control_0_synth_1/runme.log",
+      "sha256": "8a861613b3a4b5fb6ce129f2dfb26fd8e1be1eccf0d569d5b0d5be6ff1f4e612",
+      "bytes": 37321
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.runs/qwen25_mixed_gs_sc_mm2s_0_synth_1/runme.log",
+      "sha256": "dc1010a0c46e2114f7c7f0e663092d3a5b7c0aa3534640578276d36166ae4fa1",
+      "bytes": 76201
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.runs/qwen25_mixed_gs_sc_s2mm_0_synth_1/runme.log",
+      "sha256": "9274ff47513b17551933805963cd35509317a18ef3c0af29f97e8f321dbc1eb3",
+      "bytes": 82695
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.runs/qwen25_mixed_gs_zynq_ultra_ps_e_0_0_synth_1/runme.log",
+      "sha256": "cb8e13efa6a523c81f89bd6b5da9b82931c3cfa523495bd0bbbd7e7fd87a9e17",
+      "bytes": 53001
+    },
+    {
+      "path": "tmp/m455_shell_01/mage_m120_m89x2_highddr.runs/synth_1/runme.log",
+      "sha256": "5d1560e42d613bf18fd285e40eb28f452989141fed171902fb67c5e1a6a3ce9a",
+      "bytes": 50092
+    },
+    {
+      "path": "tmp/m455_shell_01/out/candidate_ip_definition.rpt",
+      "sha256": "ce114295cc464200256c8946d1a6f652e780155988361128fbe4c717f01356b7",
+      "bytes": 2131
+    },
+    {
+      "path": "tmp/m455_shell_01/out/candidate_routed.dcp",
+      "sha256": "aadc97008660feef8711a7a46d0fbc67b641edc01e9e6eba680f9a08c31f86dc",
+      "bytes": 99439398
+    },
+    {
+      "path": "tmp/m455_shell_01/out/impl_drc.rpt",
+      "sha256": "a41d621ced45646999d54cf00a1773bc7e7fa53f5279667713257dfdb20fa366",
+      "bytes": 2075207
+    },
+    {
+      "path": "tmp/m455_shell_01/out/impl_timing.rpt",
+      "sha256": "0ce86481761a670508a94bb62da4be904896f3073adea22b9a9265839f31f44a",
+      "bytes": 680129
+    },
+    {
+      "path": "tmp/m455_shell_01/out/impl_utilization.rpt",
+      "sha256": "7cfb0624e77f8826c1544d4c37b22a640c5af0b1423606928aec1c2e845e79d0",
+      "bytes": 13016
+    },
+    {
+      "path": "tmp/m455_shell_01/out/ip_status.rpt",
+      "sha256": "e7309ed2d2342acb96371e5f0358ece4f0d55aa6a16179fcb2d81e6e9b55d425",
+      "bytes": 56790
+    },
+    {
+      "path": "tmp/m455_shell_01/out/m455_t32.bit",
+      "sha256": "e1b5b9e6cb84325820e1150528d1e4117d30e924e777246576a35acb5332e4b8",
+      "bytes": 7797914
+    },
+    {
+      "path": "tmp/m455_shell_01/out/m455_t32.xsa",
+      "sha256": "3728fe65996c48aa8775d10947a8cd8e44bf97845a18125e81681bb7585cb058",
+      "bytes": 1223754
+    },
+    {
+      "path": "tmp/m455_shell_01/out/route_status.rpt",
+      "sha256": "1ce87e86104ccc9fbda84803f376c33d2808efa78d570ac8a83cc3edb9f60d2c",
+      "bytes": 651
+    },
+    {
+      "path": "tmp/m455_shell_01/out/shell_route_receipt.txt",
+      "sha256": "49157bd2ec9fec094b8c1b2fa6a70908edfc25853db7e78cd8c4f25cc382775f",
+      "bytes": 73
+    },
+    {
+      "path": "tmp/m455_shell_01/out/synth_timing.rpt",
+      "sha256": "0e14c319da92b37ac87895f9ac90ebd587d5009271b38b7b8751eeabb4847976",
+      "bytes": 50454
+    },
+    {
+      "path": "tmp/m455_shell_01/out/synth_utilization.rpt",
+      "sha256": "1f67d6bcaa2695bca6fd8c1cacf938e54f86d7db4d8e34710ae1586515d5d5c2",
+      "bytes": 10771
+    },
+    {
+      "path": "tmp/m455_shell_console.log",
+      "sha256": "d82b14693274955e236975f98b97c23e4dfb5a4319dd7f55553715dd54412189",
+      "bytes": 168347
+    },
+    {
+      "path": "tmp/m455_shell_exit.json",
+      "sha256": "f52b551ce42192b394ee6f7a849e8a5f449591e316e43fe053b20768821c8ba2",
+      "bytes": 15
+    },
+    {
+      "path": "tmp/m455_shell_mapping.json",
+      "sha256": "45780ce1d5999e0bc2612c4c4794d956debd37d1e3127846cad00e2106b52fe1",
+      "bytes": 99
+    }
+  ],
+  "next_step": "Freeze isolated dense-ABI runtime/bit/HWH clean package and COM3 preflight, then Build-ID-only gate.",
+  "prior_strict_failure_sha256": "e304e3f02283f6577402503cc83a9daba6042e3c17f1245c2dea5aaf64674e8c",
+  "exact_error_policy_sha256": "91939ca5cd412491dc1d6ee172139fe583aab46e0ae0490ed0166093d8532a07",
+  "root_cause_proven": false,
+  "implementation_reexecuted": false
+}

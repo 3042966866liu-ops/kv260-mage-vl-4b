@@ -1,0 +1,95 @@
+{
+  "status": "VERIFIED_M542_DEMONSTRATION_REPAIR_SOFTWARE25_NOT_BOARD",
+  "primary_rc": 0,
+  "protocol_sha256": "bb288ce1b20431b2cd0e62f69e6d8122f102dee1e0c566a26d6d39fb81b1bd32",
+  "fit_sha256": "ae9451575265153601926d8f025a0370aca5f979dce2a8c37c65fd0570f8e8ae",
+  "reload_sha256": "87581ea2723e1cac95bc2cc89ab116c2e2e8b3b1201a3367facab9f7b3ec19e2",
+  "original_0of3_failure_sha256": "eaeeb28713eaa937f1bb30ef677e6bc5a5622658a083cd683e3b41c98fb35bd9",
+  "unaccepted_M541_fit_sha256": "f2e90febb7a289b63e3195ac101f9de73506d172560319c45be4de7bed68ce44",
+  "unaccepted_M541_scores": {
+    "clean": 18,
+    "harder": 19,
+    "n": 21
+  },
+  "selected_arm": "harder_student",
+  "head_package": "deployment/mage_vl4b/optimization_v1/candidates/M542-demo-head-harder_student-01",
+  "head_manifest_sha256": "839290d8cc15bc796413ac5e2c4fb329ee97f5edcb5df8f2480a9dc41274b2f8",
+  "unchanged_body_package": "deployment/mage_vl4b/optimization_v1/candidates/M536-V4-3584-recovery-01",
+  "unchanged_body_manifest_sha256": "73b4b7a826e8292007d8a54ad8f679a6715db921fc327655a739d5068a59dfd6",
+  "matched_final_arms": {
+    "clean_control": {
+      "steps": 400,
+      "fit_correct": 37,
+      "fit_n": 37,
+      "minimum_fit_target_gap": 4.194282531738281
+    },
+    "harder_student": {
+      "steps": 400,
+      "fit_correct": 37,
+      "fit_n": 37,
+      "minimum_fit_target_gap": 6.46666145324707
+    }
+  },
+  "tests": {
+    "known_knife3": {
+      "n": 3,
+      "correct": 3
+    },
+    "phone4": {
+      "n": 4,
+      "correct": 4
+    },
+    "same_video_no2": {
+      "n": 2,
+      "correct": 2
+    },
+    "old_fit4": {
+      "n": 4,
+      "correct": 4
+    },
+    "new_clean6": {
+      "n": 6,
+      "correct": 6
+    },
+    "new_hard6": {
+      "n": 6,
+      "correct": 6
+    }
+  },
+  "full_reload_count": 25,
+  "new_temporal_clean_hard_checks": 12,
+  "all_actual_full_vocab_argmax_correct": true,
+  "minimum_reload_target_gap": 3.294950485229492,
+  "same_body_hidden_base_exact_on13_references": true,
+  "training_scope": "Only original rank8 full-vocabulary residual head. Full-batch all37 prior demonstration cases explicitly become fit;clean/hard matched400 final checkpoints,clean64 prefix same. Clean teacher8 reused for matching16rows;legacy4 KD;other17labelCE.",
+  "original_reserved_test_not_in_training": true,
+  "new_checks_not_in_training_or_selection": true,
+  "inference": {
+    "visual_blocks": 10,
+    "language_blocks": 18,
+    "V4_width": 3584,
+    "head_rank": 8,
+    "head_extra_MACs": 1235968,
+    "views": 2,
+    "visual_slots": 98,
+    "tokens": 128,
+    "T32_batches": 4,
+    "extra_network": false
+  },
+  "limitations": [
+    "Demonstration-domain adaptation,not independent-source generalization. Same AI-generated videos and labels from assistant visual review.",
+    "Original M540 failed frames now fit regression,not heldout. New12 timestamps/perturbations remain same source groups.",
+    "Both M542 heads fit37/37;this doesnot prove augmentation universally better. Preferharder selected by training gate before new12evaluation.",
+    "M541two final checkpoints failed18/21 and19/21;all original rejected captures/sources preserved. M542is a new declared objective,counterexamples and full-batch replay,not revised old scores.",
+    "No new board/Web acceptance or TTFT;structure/head size unchanged doesnot prove latency preserved. M536 formal gateFAIL/rc1unchanged."
+  ],
+  "host_results": {
+    "deployment/mage_vl4b/optimization_v1/runs/M542-demo-counterexample-fit-host-01/RESULT.json": "693c420299a08f930ac767a32a8e9ff8866fb113730aba7d4fcc0888de92f584",
+    "deployment/mage_vl4b/optimization_v1/runs/M542-demo-counterexample-reload-host-01/RESULT.json": "d390adf2e971ac155f61232fbb998b14e39f4b655b26ac3d313eed2a96aeb316"
+  },
+  "board_accepted": false,
+  "web_accepted": false,
+  "new_TTFT": false,
+  "production_promoted": false,
+  "next_step": "A53 exact head padded interface admission and fixed-frame physical board validation,then exact browser RGB/current-frame event matching. Never alarm from filename or prerecorded labels."
+}

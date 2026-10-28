@@ -1,0 +1,45 @@
+{
+  "CSim_sha256": "9ad582a004922e75e00864d8c41d68b345ac1e958b64253e7ad78cc07e030c0a",
+  "private_manifest_sha256": "892cf962d8cf67b6450b1e047e13ee840c876309495523bc1beefbabd735c9a6",
+  "asset_metadata": [
+    {
+      "path": "deployment/mage_vl4b/m175_m120_fixed_text_candidate/runtime/support/reserved_ddr_pool.py",
+      "bytes": 5894,
+      "sha256": "e933f9818e888ed7c924b7597adadd42f7254b942f65c645b85f17fc40f33013"
+    },
+    {
+      "path": "deployment/mage_vl4b/m175_m120_fixed_text_candidate/contracts/M126_LANGUAGE_RUNTIME_CONTRACT_RESULT.json",
+      "bytes": 406213,
+      "sha256": "c8bab2c1d4c7ba1cf2075559498243ed2803d8db8de90a8d812c94ceebfc7e9f"
+    },
+    {
+      "path": "deployment/mage_vl4b/m175_m120_fixed_text_candidate/contracts/M126_LMHEAD_RUNTIME_CONTRACT_RESULT.json",
+      "bytes": 40001,
+      "sha256": "3304da81b7e679291bfa59bb11d4fd2d978c2dc3facb2fc2dbbd23739fe5be4e"
+    },
+    {
+      "path": "external_assets/weights/language_fourport/SIXPORT_LAYOUT_MANIFEST.json",
+      "bytes": 302125,
+      "sha256": "12ea4b8cc58639d0aab6da4ef3a3f12bbbb1254f88865f76512a5f0d00d4ae5d"
+    },
+    {
+      "path": "external_assets/weights/lmhead_fourport/SIXPORT_LAYOUT_MANIFEST.json",
+      "bytes": 27905,
+      "sha256": "a1a555700e3daec8049627564c73e5783affe3827ab5437665249786d5c079ef"
+    }
+  ],
+  "real_assets_CPU_sha256": "d7694ba577a2329fa8a999d171451aac630530f4dfcf7ab01fda3489525e754e",
+  "owned_adapter_CPU_sha256": "413b78055a502c430265ac0464d7ee30964a950a6d260c121252c5d88ddc242a",
+  "physical_budget": 0,
+  "model_budget": 0,
+  "unchanged_safety_AST": [
+    "Lifecycle",
+    "safe",
+    "must_retain",
+    "environment",
+    "persist",
+    "emit",
+    "retain"
+  ],
+  "eligible_AST_equal_after_actual_constructor_owner_reference_normalization": true
+}

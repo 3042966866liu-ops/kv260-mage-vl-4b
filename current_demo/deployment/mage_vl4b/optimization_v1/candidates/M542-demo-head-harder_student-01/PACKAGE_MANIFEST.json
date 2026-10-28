@@ -1,0 +1,26 @@
+{
+  "files": [
+    {
+      "path": "A.npy",
+      "bytes": 82048,
+      "sha256": "0c3590f540addc1be8eab42d743957a230b18365437708bf4525962e33cd9083"
+    },
+    {
+      "path": "B.npy",
+      "bytes": 4862080,
+      "sha256": "8431a91e54ed02a5f8e43f1e131d29d2369fa7652eaefd6350b126981646010e"
+    },
+    {
+      "path": "HEAD_MANIFEST.json",
+      "bytes": 851,
+      "sha256": "e42ddc4290d4d3acbd769e7d6f1cf7e3b29b832356dbcfb8523b03bfd6b3ea2a"
+    },
+    {
+      "path": "learned_head.py",
+      "bytes": 2126,
+      "sha256": "ddf1b029db4fab6c03061c7eb600a071732a9792d0dd23d89afb80f71f2ac750"
+    }
+  ],
+  "file_count": 4,
+  "total_bytes": 4947105
+}

@@ -1,3 +1,13 @@
+## Current demonstration source update — 2026-10-28
+
+The current campus knife demonstration is archived under **[current_demo/](current_demo/README.md)**: browser/video events and fresh board-backed alerts, the COM3 bridge, M455/A53 runtime, prefetch/C parsing, frozen HLS kernel sources, structured pruning, and clean-teacher/harder-student recovery training.
+
+The adopted model retains **10 vision and 18 language blocks**, two views and 128 input tokens (four T32 batches). Saved fixed-frame board observations average 27.61 s hot TTFT; a fresh video-7 sampled-frame web request returned Yes in 28.01 s. These are demonstration-specific observations, not arbitrary-video accuracy or a long-duration stability claim. Each play infers one explicitly sampled frame, not every frame. The UI shows no TTFT and no alarm for an actual No.
+
+See the [source guide](current_demo/README.md), [method notes](current_demo/docs/PRUNING_DISTILLATION.md) and [per-file SHA manifest](current_demo/SOURCE_MANIFEST.json). Weights, media, frames, databases, UART logs and credentials are excluded. The original stable-install instructions and historical results below are preserved and refer to their own versions.
+
+---
+
 # 在 KV260 上部署 Mage-VL 4B
 
 [项目主入口](README.md)。本页保留原文件名以兼容已有链接，说明正文统一为中文。

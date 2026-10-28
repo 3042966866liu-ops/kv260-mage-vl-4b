@@ -1,0 +1,2730 @@
+{
+  "status": "FROZEN_BALANCED_MINIBATCH_CLEAN_VS_HARDER_FULL_STUDENT",
+  "user_authorization": "2026-10-25 user explicitly requests actual harder-student-view training while retaining answer quality",
+  "runtime_protocol": {
+    "status": "FROZEN_JOINT_WHOLE_LAYER_TRAINING_SEARCH",
+    "original_rc": 0,
+    "old_protocol": {
+      "status": "FROZEN_PS_V2_V3_V6_3072_ON_CURRENT22_RESEARCH",
+      "original_rc": 0,
+      "selected": [
+        {
+          "index": 2,
+          "key": "vision_02",
+          "module": "model.visual.encoder.layers.2.mlp",
+          "width": 3072,
+          "original_width": 4096,
+          "removed_original_G64_groups": [
+            8,
+            15,
+            16,
+            18,
+            22,
+            23,
+            24,
+            33,
+            39,
+            40,
+            42,
+            46,
+            47,
+            52,
+            55,
+            62
+          ],
+          "kept_original_G64_groups": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            17,
+            19,
+            20,
+            21,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            34,
+            35,
+            36,
+            37,
+            38,
+            41,
+            43,
+            44,
+            45,
+            48,
+            49,
+            50,
+            51,
+            53,
+            54,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            63
+          ],
+          "proxy": {
+            "width": 3072,
+            "score_method": "energy",
+            "removed_G64_groups": 16,
+            "removed_original_groups": [
+              8,
+              15,
+              16,
+              18,
+              22,
+              23,
+              24,
+              33,
+              39,
+              40,
+              42,
+              46,
+              47,
+              52,
+              55,
+              62
+            ],
+            "removed_energy_score_fraction": 0.2058296998412954,
+            "removed_fluct_score_fraction": 0.19513023916910568,
+            "removed_mean_diagonal_fraction_of_total_energy": 0.1266503540046128,
+            "recipe_group_jaccard": 0.6842105263157895,
+            "leave_training_video_out_group_jaccards": [
+              0.8823529411764706,
+              0.8823529411764706,
+              1.0,
+              1.0
+            ],
+            "leave_training_video_out_min_jaccard": 0.8823529411764706,
+            "excluded_training_video_energy_tail_fractions": [
+              0.20652719108438258,
+              0.20594479254377623,
+              0.2038351771678146,
+              0.2089889909690682
+            ],
+            "excluded_training_video_max_energy_tail_fraction": 0.2089889909690682,
+            "estimates_task_loss": false,
+            "estimates_actual_R0_R1_error": false,
+            "deployable_R1_bias_fitted": false
+          },
+          "proxy_limit": "Pre-A8 post-GELU BF16/A8 teacher features as PS-path proxy; not exact B0 PS activations"
+        },
+        {
+          "index": 3,
+          "key": "vision_03",
+          "module": "model.visual.encoder.layers.3.mlp",
+          "width": 3072,
+          "original_width": 4096,
+          "removed_original_G64_groups": [
+            11,
+            17,
+            20,
+            22,
+            27,
+            36,
+            38,
+            39,
+            46,
+            48,
+            51,
+            53,
+            57,
+            59,
+            60,
+            63
+          ],
+          "kept_original_G64_groups": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            12,
+            13,
+            14,
+            15,
+            16,
+            18,
+            19,
+            21,
+            23,
+            24,
+            25,
+            26,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            37,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            47,
+            49,
+            50,
+            52,
+            54,
+            55,
+            56,
+            58,
+            61,
+            62
+          ],
+          "proxy": {
+            "width": 3072,
+            "score_method": "energy",
+            "removed_G64_groups": 16,
+            "removed_original_groups": [
+              11,
+              17,
+              20,
+              22,
+              27,
+              36,
+              38,
+              39,
+              46,
+              48,
+              51,
+              53,
+              57,
+              59,
+              60,
+              63
+            ],
+            "removed_energy_score_fraction": 0.21922232011160991,
+            "removed_fluct_score_fraction": 0.20882920691668172,
+            "removed_mean_diagonal_fraction_of_total_energy": 0.11383463287196019,
+            "recipe_group_jaccard": 0.5238095238095238,
+            "leave_training_video_out_group_jaccards": [
+              1.0,
+              0.8823529411764706,
+              1.0,
+              1.0
+            ],
+            "leave_training_video_out_min_jaccard": 0.8823529411764706,
+            "excluded_training_video_energy_tail_fractions": [
+              0.21794366021195352,
+              0.22060183314823667,
+              0.21927071376151927,
+              0.21935406533213905
+            ],
+            "excluded_training_video_max_energy_tail_fraction": 0.22060183314823667,
+            "estimates_task_loss": false,
+            "estimates_actual_R0_R1_error": false,
+            "deployable_R1_bias_fitted": false
+          },
+          "proxy_limit": "Pre-A8 post-GELU BF16/A8 teacher features as PS-path proxy; not exact B0 PS activations"
+        },
+        {
+          "index": 6,
+          "key": "vision_06",
+          "module": "model.visual.encoder.layers.6.mlp",
+          "width": 3072,
+          "original_width": 4096,
+          "removed_original_G64_groups": [
+            0,
+            1,
+            5,
+            9,
+            10,
+            11,
+            15,
+            19,
+            23,
+            31,
+            40,
+            44,
+            49,
+            56,
+            57,
+            59
+          ],
+          "kept_original_G64_groups": [
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            12,
+            13,
+            14,
+            16,
+            17,
+            18,
+            20,
+            21,
+            22,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            41,
+            42,
+            43,
+            45,
+            46,
+            47,
+            48,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            58,
+            60,
+            61,
+            62,
+            63
+          ],
+          "proxy": {
+            "width": 3072,
+            "score_method": "energy",
+            "removed_G64_groups": 16,
+            "removed_original_groups": [
+              0,
+              1,
+              5,
+              9,
+              10,
+              11,
+              15,
+              19,
+              23,
+              31,
+              40,
+              44,
+              49,
+              56,
+              57,
+              59
+            ],
+            "removed_energy_score_fraction": 0.22572668919444722,
+            "removed_fluct_score_fraction": 0.21340799000853733,
+            "removed_mean_diagonal_fraction_of_total_energy": 0.08543823829160965,
+            "recipe_group_jaccard": 0.7777777777777778,
+            "leave_training_video_out_group_jaccards": [
+              1.0,
+              0.8823529411764706,
+              1.0,
+              0.8823529411764706
+            ],
+            "leave_training_video_out_min_jaccard": 0.8823529411764706,
+            "excluded_training_video_energy_tail_fractions": [
+              0.2260318095198349,
+              0.22450417450169052,
+              0.2284007812499317,
+              0.22562013442990786
+            ],
+            "excluded_training_video_max_energy_tail_fraction": 0.2284007812499317,
+            "estimates_task_loss": false,
+            "estimates_actual_R0_R1_error": false,
+            "deployable_R1_bias_fitted": false
+          },
+          "proxy_limit": "Pre-A8 post-GELU BF16/A8 teacher features as PS-path proxy; not exact B0 PS activations"
+        }
+      ],
+      "parent_package": "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240",
+      "parent_manifest_sha256": "47a425db63d36af8c1f665dd3b19972bd0965ecfed730aa21e3defece0b42ab1",
+      "unchanged_prior_layers": 22,
+      "prior_R1_unchanged": true,
+      "V12_remains_PS": true,
+      "V13_V20_original_width": true,
+      "quantization": "Preserve signed integer codes, original FP16 scales, group orientation and BF16-origin biases; exact slicing only.",
+      "PS_math": "Actual M273/M261/M207 source; FP32 fc1/bias, original GELU, FP32 fc2/bias; R1 FP32 post-MLP before original BF16 boundary. WSL CPU, not native A53 bit-exact.",
+      "R1": "For each of three layers separately at parent22-propagated training inputs: FP64 mean of (original full PS MLP - cropped PS MLP), cast once to FP32 1024-vector; 8 training requests/4 groups only.",
+      "full_features": "Both arms use same actual PS runtime; late13..23 reproduce frozen M455 A8/orderedFP32/compact-half adaptive oracle, same three late vision crops/R1; no PL migration.",
+      "feature_gate": {
+        "max_relative_L2": 0.02,
+        "min_global_cosine": 0.999,
+        "min_token_cosine": 0.995
+      },
+      "natural_answers": "Original V2 160 tokens/5T32, cap32/naturalEOS151645; same software BF16+A8 language and19 frozen language crops/R1; relative no-new-errors/misses/explanation-loss/contradictions/truncation.",
+      "margin": "Signed correct direction on previously correct cases; zero/tie is warning, not retroactive quality FAIL; save raw full logits.",
+      "shared_explanation_defect": true,
+      "full_release_quality_pass": false,
+      "board_performance_pass": false,
+      "heldout_opened": 0,
+      "training_steps": 0,
+      "new_quantization": false,
+      "solver": false,
+      "board_commands": 0,
+      "retained_board": "PID42676 stopped; no commands/signals/exit/free/reset/GDB permitted by this experiment.",
+      "on_failure": "Preserve failed batch; no automatic further layers, restoration runs, prompt/cap/group search. Report concrete evidence.",
+      "future_batches_not_authorized": [
+        "V4/V5/V8",
+        "2048",
+        "branch/layer deletion"
+      ],
+      "budgets": {
+        "fit_seconds": 1200,
+        "feature_seconds": 2400,
+        "quality_seconds": 1800,
+        "feature_forward_max": 24,
+        "natural_answer_max": 24,
+        "total_cap_tokens": 768
+      },
+      "AI_generated_pilot": true,
+      "source_group_independence_limited": true,
+      "frozen": {
+        "experiments/visual_ps_prune_20261024/common.py": "246f5625e26dda761c4b333dd7668252dc5cfc4bbed12fed8dbe477e5154eb02",
+        "experiments/visual_ps_prune_20261024/features.py": "0e0632f73a934d1e4bd57a15e7013ff41525a653d59893df49a84709c6be5c4b",
+        "experiments/visual_ps_prune_20261024/fit.py": "1492e89ddc58f9406e16b580ee62f09b6b298fae70cee2694c39830957807cd6",
+        "experiments/visual_ps_prune_20261024/host.py": "59453b5a7fe65fa9286733338090ed44a4dc6c5bb407cd0ea65fcd5001180399",
+        "experiments/visual_ps_prune_20261024/late_oracle.py": "f7316e16c1e13f8b09ee4192540893173fefff129e1ba6877f31aebc144877a1",
+        "experiments/visual_ps_prune_20261024/prepare.py": "aea95de1f8348aeffb4d6e2f04f47211c733c9d1d0c79ed1c93c09895f5ecf6b",
+        "experiments/visual_ps_prune_20261024/quality.py": "7e563162c2d64e67698a9b22beb17b25cca4a35f82283d4914fc8f350bca1485",
+        "experiments/visual_ps_prune_20261024/render_quality.py": "db2bcc75bda8d7a848c5fbbe34ed372c0e944f6982f035bf75c55830631f7261",
+        "deployment/mage_vl4b/optimization_v1/runs/M523-layer-proxy-refinement-01/RESULT.json": "0f970f638293a86fd790a3137431dabd41f6d1643e03dc6dd1e5fe762b8086b1",
+        "deployment/mage_vl4b/optimization_v1/candidates/J1-request-native-reference-03/SOURCE_CLOSURE.json": "c2f625f6c4b4097fb143f714ff8626fac160aaf02d251da623cb88d05768a457",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/PACKAGE_MANIFEST.json": "47a425db63d36af8c1f665dd3b19972bd0965ecfed730aa21e3defece0b42ab1",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/TWENTYTWO_LAYER_PLAN.json": "7592278784e3f3d5f71e0e2777d6ec252357c44e47215c14b69036bb717a9398",
+        "deployment/mage_vl4b/optimization_v1/contracts/config.json": "bba91df39fbdfbfc0fe660756469b707560dc3d9bf77d13f306971ecaa058a01",
+        "deployment/mage_vl4b/optimization_v1/contracts/M455_COMMON_COMPLETE_REQUEST_FIVE_BLOCK_20261022_V2.json": "4354a9c7ca63ea31ead6ed7072fcd47fff40e25638fee761b604ef917fc77ea8",
+        "deployment/mage_vl4b/optimization_v1/contracts/M455_RESEARCH_RELATIVE_NONREGRESSION_20261023_V1.json": "2ed2155b835fbcd040d934ca7ad66e2d4cba90e1ff3bb0a0e8d694df997ca074",
+        "deployment/mage_vl4b/optimization_v1/runs/M454-model-interface-preflight-01/RESULT.json": "cd571a2b32fd7c8d50c0f3aa8dab0582f6e04963d02746577c2fad4760e39ed6",
+        "deployment/mage_vl4b/optimization_v1/runs/M522-training-capture-protocol-03/RESULT.json": "8b9ec4327f38829b402e35887c29dca40c8b471559f87f10e7e43d25160c1662",
+        "deployment/mage_vl4b/optimization_v1/runs/M523-V12-native-feature-language-protocol-01/RESULT.json": "1d927ae3b193161195c157474e2e324b1c684b6b5794518566e75e0879b33ba9",
+        "experiments/pruning_plan_20261020/M455_L1_vectors52302.py": "3512ec92e22b31c0cb4dc204c01e0ec3e7cb503aacee619c76f1c55a39609e48",
+        "experiments/adaptive_exec_error/adaptive/language_mlp_probe.py": "6839952f75489af39b9633860ffda12beea502737acaa5848a1856b5b5b3b8a5",
+        "experiments/adaptive_exec_error/adaptive/language_mlp_kernel_fp1602.py": "93a4c2b37793bc0bcdfb56cfe3027f8dc56901a3551cddce2d90de1c1ec0c360",
+        "experiments/speed_target_30s_20261020/generate_flap522.py": "60b0fb180b4b8f9366cd88a6927ff5e3a1d7e4072671763f5a5e2ab9d84554b0",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/language_01.npz": "5b5a3f1e0d39dbcc827f0fc3dccad22d1d8fa46ff80b4724256ad45462aecd16",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/language_02.npz": "03db0f206342bbb4d3029c171d8b7b1fc5f3c5d661af68911ded2bb97f304d85",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/language_04.npz": "6fab0ab948612be42bf12da31c2b7ad0f409dbe91f17fbf02068477dcd4ded38",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/language_12.npz": "b48de19fa00b29835e46b0f596f905169839fd1278ac219a55151034e00ffe98",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/language_14.npz": "c971ed750776c3ed64d84c56e11467ab7a9d8bfddb568d785c9b1d413591d8ae",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/language_15.npz": "601c8f1cff6b6f3b2a9952c4d10132c8c4e85dfa11c0e97dec1474bdafb6b4a9",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/language_16.npz": "9abf7f664750dc45ce4d659d867375a2c976cb5e33925cdcd7251537434d9c75",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/language_20.npz": "1c0dbe654197a24a491d97ff2b9458fb373787e9be07d8a2c164caa4e074eeb4",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/language_21.npz": "59985ed641cf0a901654d160eea71dbf345168ce708aaa526d07b6a803d3e763",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/language_22.npz": "2260d4e67cc1488788ab22f41c441d583935aa3b769c8231f406fd664f1f47cd",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/language_23.npz": "df72a22b57561c65fe68effdfb4b9b4e8549b1b941776d55416f1cc2d1f8801f",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/language_24.npz": "423a08503f7208f17eca64da30b548684c817658e2d46a586f29221683802ce5",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/language_26.npz": "146faa9242c0088da9d69558e2539139338747b754cb140f4b4a0c40cee3f200",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/language_27.npz": "449aef34c24d19c18fb243d2e9d5a695b8436bfd4ff52d314f6c2202d89bc1fd",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/language_28.npz": "b13cd236e8c85579126a83c94b395423042c6c44e60f1825c89a163540478064",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/language_29.npz": "5f94d4e5d363cd9d5cf74425e9a4923477e4948786f85024735da054192dc016",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/language_31.npz": "284b850d582963619d34dcfed8e3cab0a505bfc5f1140bdaf09c948610e76955",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/language_32.npz": "472a143aba1324184b93fa929bf9ccf2168fc65f5cddc0780d1e3b1e32d8fd42",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/language_34.npz": "90e5af11a2de26d2a8ab865529c3aaa8061544acbcc9b715fce8381e96b67130",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/vision_14.npz": "254bfd68f2cea78660aec65cf88c2dea4a49f3d0ae1468f1ea761dcf63da9e7a",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/vision_15.npz": "bdcb2d7799059d8e02e8d6735862a89baeb8d676321c7a16af061dc443b06827",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/vision_21.npz": "29c9d41e727397e90ac55674ddf9cf12cd37bd4a2bb0e76c1c808ffd97af691a",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/language_01_FP32.bin": "1a5b3ddf03cd913fa7e3f89c4fcdee823927a0b3ee2bf3f022dcf9a2f851504e",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/language_02_FP32.bin": "ee2a292749da52257e88174f06daf00f30797b698cc76be5fa1e4b5dc40e497e",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/language_04_FP32.bin": "56518985f10aa8d47a9f4ced520e448d1333c1f29d874321b33dd012a46bf952",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/language_12_FP32.bin": "f13a07ba922ef58a12833a01784cc7c42a2b17552997b3955c153264535462af",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/language_14_FP32.bin": "668194c302280ce1c1e81c9ea7a6f348747d00d0b5339d4f19bb008334190e9d",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/language_15_FP32.bin": "9a2b38ee3d3de3e75dbd7c477762a6bb7a76e4e43ea19dc38bf1496ba1c45c0e",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/language_16_FP32.bin": "f61ba559c28e26883a300d4fb58732fce246f9021bbdb212262d27b4407ab64f",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/language_20_FP32.bin": "965fd64a38c7709cef4f36e5acda782a307f7cc4203b9765fd7563323dc54782",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/language_21_FP32.bin": "ac3142fadf75e246656ce916004e21af7465b24274c60dcbadb76f07124270c8",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/language_22_FP32.bin": "914c890af6a712493053966fd77a4c5908eaa6807ae9ff325bb005a6a4276667",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/language_23_FP32.bin": "0ef23633379dc4fddfbe5497e79c3aab982f0923f1cba9fb082f6e47d92f7769",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/language_24_FP32.bin": "b88fa32a207fb5747ea872466856dbc88b23a52423625713a26072d4319bd09c",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/language_26_FP32.bin": "dc8cb51c6cb30fd34dbf3d0b23de8a351a0e3889387bcb345b7ce100f38a6098",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/language_27_FP32.bin": "5e3ba8b440544fdd65d28982b274ae4b3e71b7af4994b4029d0d571e788c3bb2",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/language_28_FP32.bin": "12d8f31d1e3e68746c5659988d285adcfed8c5eb7ddb207f4bfc9025e9655bdb",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/language_29_FP32.bin": "7bc192d2348a70f7c58256537df0b6b3105877d3deb8a9d3c333ac5ad1f68064",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/language_31_FP32.bin": "75867d9045f242722d6b2ce5a659be63e06ea38ce69e48c5d24ffac8c7b8fd34",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/language_32_FP32.bin": "77d0b76b09212bfad11db8e12cf8b86c6b48befdfd913ea1f3a55914c948c091",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/language_34_FP32.bin": "5992e390e29a4705456649c9b08ceb1e331ed20cf3c8eee3475c0b034656b170",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/vision_14_FP32.bin": "99888accbce8b36bdd93d8e8f157d92e85b413d780498be24e5b616c75b5d28d",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/vision_15_FP32.bin": "081335d798ef1b94ff3dc28238645e71d425cf0a33affbe168f5fb49155d0688",
+        "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/vision_21_FP32.bin": "1998810c574fc06dec2f4e1a91802a49a10bd3ba352e68efecc0b5732bbeb426",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m175_m120_fixed_text_candidate/runtime/support/reserved_ddr_pool.py": "e933f9818e888ed7c924b7597adadd42f7254b942f65c645b85f17fc40f33013",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m277_fixed_window_gate.py": "dc2430b6e68fb54a6157d5ee317ac747e70b66156bf8307eedf58b9f65795b5d",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m276_prompt_contract.py": "fc46f457e7eec1fb044dcb5f9bb6e416f74596ba44ee3f321038ecaf4674bc39",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m273_latest_multiscale_contract.py": "c5826f77f95f4b3d6fbf1c406d9f341650316958ba5cfa1ba2467605eef3273a",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/tmp/m223_realtime/m223_realtime_delta/video_server.py": "6b6655e29c13fee8f805a102d8f4ac9d89988067930e0ae187a9e2d860d88b74",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m175_m120_fixed_text_candidate/runtime/board_runtime.py": "5d53ea406e57de88f8c14d9bc4e1cb0c0049ff0b8f4bcf620e05745fcd82b201",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m175_m120_fixed_text_candidate/runtime/contract_runtime.py": "2912ab6040e1218775b397a184fd2d2487a83935fb9f7dfff7c97381c9cde75d",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m181_m120_video_board_candidate/video_request.py": "3041d1124d1db9b436f623bdcbe0d402a8f01a457e162859b20ded6baa51563b",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m181_m120_video_board_candidate/board_preprocess.py": "1fe75b3903e16f681303c41adaf6b2b4d3b6858093e32c5e92dd8cab6369b0ba",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m181_m120_video_board_candidate/video_prompt.py": "7e0e5dfa238859a84851bd4b51f655f312f959c6f99f8d09552c945d5c975e07",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m181_m120_video_board_candidate/video_language_runtime.py": "fae70964171580dc8329700e99aa0b25f27b752e9d4274c5bae72fa19f30cf61",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/tmp/m223_realtime/m223_realtime_delta/m207_ps_vision_runtime.py": "cc58d6554c127d9fd111e05e9dbfadc7082e3bccfeda907cb67b2059f29a750c",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/tmp/m223_realtime/m223_realtime_delta/m206_ps_vision_runtime.py": "1f67ba6fe8628096919bb8f150d7e67a168dbf675aa7715f68074bd6792c2582",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/tmp/m227_runtime_base/m227_runtime_base_patch/ps_vision_runtime.py": "ecaa55370f8fbb222ebdcdb55252eb19a3ad31d05e6236ba9138eac3ed11ae53",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/tmp/m223_realtime/m223_realtime_delta/live_stream_core.py": "947d8cb44ce623b1f907d8d771993a143464f4ddbd3b30c7a3a50d553c646535",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m276_video_runtime.py": "7dc39257361179d8e2ddcf91380e4ce73e96c69fc2e23b411a337b47896f8386",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m273_latest_vision_runtime.py": "a7ecdf6d60791c35cd33c2526f56696ee6d4ab32e79e9cc5ed391745263d492f",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m261_budgeted_w4_runtime.py": "24be172d8366884bc1d4ca9917cf53382773e6b8f4b8a040991ccf18aecdae9a",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m260_cached_w4_runtime.py": "065c5ce58ec52dac3ee327a06228e99ff08c9d0e98bec1a2d8cf171238f076d7",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m259_variable_vision_runtime.py": "d5e3888479ecb19b99c4ca6c1055953a12845030d9477620dc2c863a9b677429",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m258_vectorized_w4_runtime.py": "b8b973f5355504dfc7b3d1cb21c16a9756831947396dc536c5b8f99478004e8a",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/tmp/m223_realtime/m223_realtime_delta/m222_vectorized_w4_runtime.py": "48f9144f14d58bf57202ed32b7aab34a84430906bbe857a568b4f4f00faacf7d",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m246_knife_binary.py": "ddf55a13a29719cd57aecb99405a5f939f4439c38a4be72793644f2b6901da4d",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m259_video_runtime.py": "d79c7b6d477bdfda2a56693d5d2d2757aef05410b11739d10f2e51cdea3a257b",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/variable_video_contract.py": "7f0a366e282ddea204c62bc9131e13be366c459c1fd1aca9af6f12b92299a268",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/keyframe_reducer.py": "f55b0798c775bd6312a4e35d3286790f842cb77e386f506c464d4c5aa2eaee92",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m243_web_prefill_board_candidate/m243_video_server.py": "9ee51793532e1fa3637259664948735df7816fbbdae8165d167cb6a05cb98474",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m241_video_language_runtime.py": "24f419ea8e0f130cefc8eb51f916dca3fb945b84f0dc8e73dec9f5376be3ad09",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m230_video_language_runtime.py": "2401f60823133f3a5c0656686ff1f7823da8796a154a1e9a888ba16f80138b56",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m238_prefill_runtime.py": "daf30c982c276b90ac776178ad258e536925dce52de7ab26b06a9473ff9a9d9a",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m236_prefill_runtime.py": "d8061b561fe4d2a089523fde0d3860684244e76bca9646f255f03134fb50be56",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m231_prefill_runtime.py": "e7d6aa5a43919405168612b6a5695c14330735f75c87aa269b245e61542750ad",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m230_prefill_runtime.py": "defbcff1cc36300fff84481f2e9eba7a06174941b568e34b2faa7885efc14df4",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/tmp/m223_realtime/m223_realtime_delta/m222_video_server.py": "8b9e34ec0445267591a283f76a2ae9dc46650adda1d00ad85c4947c13f3ec02a",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/tmp/m223_realtime/m223_realtime_delta/m222_live_stream_core.py": "4b1c4d78ccdb7cdca49a7c45393ff465560fe84f7997e220ea4ad2061d610326",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m276_m254_video_server.py": "b0ffc2750fb28587b8d51909f59e2c0a367c6dfd0183c784743e945356f9346a",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m254_dual_path_web_candidate/m254_video_server.py": "86e2c79740af645449db5b2f8c64246000dab1896a30b4148e5c90f1e321fc6f",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m254_dual_path_web_candidate/m254_dual_path_core.py": "cd1a7af2cb0575f5a60a1a033af4424866ee4d329d3bbbacc798b873d507ffd3",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m254_dual_path_web_candidate/m253_board_latest_stream.py": "5e70cae45e854bf8cbda67612af956ab4d3fadd12f90525e715496aca3803b15",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m254_dual_path_web_candidate/latest_fast_stream.py": "f3904f7c82f3770704ff5457612a11aae61af6a3453a215c8efae79d0a0fefa0",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m254_dual_path_web_candidate/fast_frame_pipeline.py": "5e0158e067a43e225f52ac267223fe257b459a0fe5a9cad219fe83e6c035eb98",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m254_dual_path_web_candidate/temporal_action_adapter.py": "19699b51b22a9bee71f4055772d80439a348076ac111086fbf6b1801d9538597",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m254_dual_path_web_candidate/immediate_safety_monitor.py": "20e61b893eb2de73896c5246c2b04eaa08c0c8001b47c613240c759236086d00",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m254_dual_path_web_candidate/fast_safety_monitor.py": "7efbb9c8f4c792d8d6004ca859ce4b612d6f76e2bccc5c00bb8808d023134ca1",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m254_dual_path_web_candidate/knife_alarm.py": "dbfc11d4ddef18bf99c0493fd83b3f45ec5116c0e89c48439c293cb601fcb7db",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/scripts/preflight.py": "6d269adf431e8e505684f4d51b23e65112a7f5a9069561b1bf7de0d013f376fd",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/configs/deployment.example.json": "bcef0e3feae8fb2e2178b25eec7afa2f1f3b0535639544eafe03a3914bdcbd3f",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m181_m120_video_board_candidate/vision_layout/SIXPORT_LAYOUT_MANIFEST.json": "2d9bea77b8868d24fa7775886feb1b9c88b8e768d51b2e192802a439060b03c1",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m181_m120_video_board_candidate/vision_layout/weights0.bin": "2e902f5f4ddec7165da4a873c713045fbb74bf0551d9dbda5fb0ce036776718e",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m181_m120_video_board_candidate/vision_layout/weights1.bin": "ed7618c3337da91fcf52d1d3a1b153d828b7ef19ded48c4f149647cfa474b3fd",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m181_m120_video_board_candidate/vision_layout/weights2.bin": "98c518e426d8bca035220d6a59bee13879d23f5f70eb4b6a3080921457588346",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m181_m120_video_board_candidate/vision_layout/weights3.bin": "5b9ce87baab34a7b43df4ed436e09200635866d71a154a6e598b26a44ac08b2a",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m181_m120_video_board_candidate/auxiliary/M90_VISION_RAW_AUX_MANIFEST.json": "8e584de4fd8e7a0310a07fbe0724c1207c836c9d7181a3b627564c57d79ff66a",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m181_m120_video_board_candidate/auxiliary/m90_vision_raw_bf16.bin": "ae4353135414bf1691ce663f5973b67ab390f500b1b71789481d919c9d8a6eb2",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m181_m120_video_board_candidate/ps_vision_payload/modeling_mage_vl.py": "3fe8bb1e40fa38db4ae08da097ee1238aa4258c4d454e66fe93a44d08ab641ec",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m181_m120_video_board_candidate/ps_vision_payload/configuration_mage_vl.py": "7e3da0c90726ef33da4f0362b3c71dc28650003f1cc11e061d3e99404a8bfed8",
+        "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m181_m120_video_board_candidate/ps_vision_payload/config.json": "fd4621212569e893ce2caa110431fde73f3cc1a1d92e1b8320bb4e0cfbcad34a",
+        "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_00/source_frames_rgb448.npy": "68f7ae555f746d73c6fced91e81ad77b9384c9df39d76d4a734ba0e0c13099f9",
+        "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_00_t0_A/features_FP32.npy": "b6aef7ae950b23ff1afb58eacafc28ce42b7e2eb8ef4f6655d455413232b971b",
+        "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_00_t1_A/features_FP32.npy": "ae45aa992da5764788bb1462a0f35ec1e5feb27b804df291d2fd9f012e0489d2",
+        "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_01/source_frames_rgb448.npy": "a6bbe59c2309d8813e4f1e3b68317b24b58df7c2e13125db7e52211214bc18e0",
+        "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_01_t0_A/features_FP32.npy": "7f5a026166b7fe4c2dea32a3eeb2af11ec104c6247b869bd9d849b43fb239c06",
+        "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_01_t1_A/features_FP32.npy": "2bc01866f6ef88db6402f890b9dd20e6428a4763cbeb303f98d373b8e6b59a34",
+        "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_02/source_frames_rgb448.npy": "013851e81ed877f845e78134f7a94c77c96621b48fcf590160d32cc54ba83049",
+        "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_02_t0_A/features_FP32.npy": "b7a998505b25335cbf5d8a559b9a3a46fa5743f3bbe9072e862a645fcde89b9f",
+        "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_02_t1_A/features_FP32.npy": "2552cd0af30aa24f379f74d4b27faccec622aa5dcdbb00ff355526d434d104ab",
+        "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_03/source_frames_rgb448.npy": "3669ef8b8563b95b8c5c8ee34a07e6d8fa049f907576c5fdb8dc76deecca1190",
+        "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_03_t0_A/features_FP32.npy": "72d74514efd1949615f4200cd5f0c5d82dd41a40f771e916b648635ebe83b76e",
+        "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_03_t1_A/features_FP32.npy": "c270c55aaa47732d4addc21a72098ad652caddaeeaed815db6de8a93a6aadf25",
+        "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_04/source_frames_rgb448.npy": "4fbe6d5d632876ddb82a61e1be25f1469474a1f2203e3af36ea8895873d0ca28",
+        "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_04_t0_A/features_FP32.npy": "78ad3d5583196da38aac71b407fc533b35d60b9d365f9cb95b99fd6b52441392",
+        "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_04_t1_A/features_FP32.npy": "ca74849564189a376fd567c5246f43d336b349b02f81cfd97dfb6367d2f33521",
+        "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_05/source_frames_rgb448.npy": "fdc1c405e34027de8119819c7047315841ca6dc8ac6be96c02066aa5df3b12ce",
+        "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_05_t0_A/features_FP32.npy": "dd2dbf32b20432eb0328b6b13e410752319482b0271d781660b968bf4e994695",
+        "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_05_t1_A/features_FP32.npy": "e9542053b5cc455ac41d4378fc0fe14684e3cb93a9b2e5257a3fd023fd1887e7",
+        "deployment/mage_vl4b/optimization_v1/candidates/M455-original94-layout-performance-05/m455_private_runtime_loader01.py": "fe865e7e26c496cf933121dfa7f065187159180dfb1d70184be92dea3fb9afc6",
+        "deployment/mage_vl4b/optimization_v1/candidates/M455-original94-layout-performance-05/private_runtime/PACKAGE_MANIFEST.json": "892cf962d8cf67b6450b1e047e13ee840c876309495523bc1beefbabd735c9a6",
+        "deployment/mage_vl4b/optimization_v1/candidates/M455-original94-layout-performance-05/private_runtime/board_runtime.py": "43ca63e6d3906495f2b7e2d2f80418f4acf5c34c052ed8aea5639008aa4b4e2f",
+        "deployment/mage_vl4b/optimization_v1/candidates/M455-original94-layout-performance-05/private_runtime/contract_runtime.py": "4728cfaa34f4efb2111a34a3107a1f87db1774e491c3bd874c5453aff5ae42c1",
+        "deployment/mage_vl4b/optimization_v1/candidates/M455-original94-layout-performance-05/private_runtime/m230_prefill_runtime.py": "defbcff1cc36300fff84481f2e9eba7a06174941b568e34b2faa7885efc14df4",
+        "deployment/mage_vl4b/optimization_v1/candidates/M455-original94-layout-performance-05/private_runtime/m231_prefill_runtime.py": "73cd883604066d34aa8349a8618ed94893d4be6659c3f8fe752788e9d6ca5c21",
+        "deployment/mage_vl4b/optimization_v1/candidates/M455-original94-layout-performance-05/private_runtime/m236_prefill_runtime.py": "c5256f64a227c145466ccd86ff90aa3e593fd00fb995c50b00026acef8437961",
+        "deployment/mage_vl4b/optimization_v1/candidates/M455-original94-layout-performance-05/private_runtime/m238_prefill_runtime.py": "daf30c982c276b90ac776178ad258e536925dce52de7ab26b06a9473ff9a9d9a",
+        "deployment/mage_vl4b/optimization_v1/candidates/M455-original94-layout-performance-05/private_runtime/m455_dense_output.py": "a2428d9106decc88187d1060b6383f7c75cc8296e4e142f2f4c30db355d74e55",
+        "deployment/mage_vl4b/optimization_v1/candidates/M455-original94-layout-performance-05/private_runtime/m455_output_parser02.py": "ceb2ba1fe6419d9a2a25d6bc80c506c87cdf11205c5722ecec021e2b0a2688bc",
+        "deployment/mage_vl4b/optimization_v1/candidates/M455-original94-layout-performance-05/private_runtime/m455_runtime_abi01.py": "9ae4832a7ed63472897cf551815a6b47bb1fa8db73450b842e439929dd3b432c",
+        "deployment/mage_vl4b/optimization_v1/candidates/M455-original94-layout-performance-05/private_runtime/reserved_ddr_pool.py": "e933f9818e888ed7c924b7597adadd42f7254b942f65c645b85f17fc40f33013",
+        "experiments/visual_ps_prune_20261024/prepare02.py": "8084243cda55cbe647f91c26f6cbe4e7ecc4d5d0cb39efbe2a121b54b5648e95",
+        "experiments/visual_ps_prune_20261024/fit02.py": "7e8eae9208d6dd86344e80b7f16e77402859da79bf19ca12aba44676bb4c83be",
+        "experiments/visual_ps_prune_20261024/features02.py": "31ab423f2b79cb73577458e7b8b4950cccacb900e7c66b176361ef3d409c39b3",
+        "experiments/visual_ps_prune_20261024/quality02.py": "e52fe0031d037f0e71e44966b28df754a1fc6f951eee61312ce974d57434a45a",
+        "experiments/visual_ps_prune_20261024/host03.py": "9cc2aa63eae1b35a73e8993c8f02aae60f1e950d169da5d4925c48895b6cb03b",
+        "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-protocol-01/RESULT.json": "3c2b90188c04c0b89aa1743a0b589dae394c179cb121082a862c2819ccfb5329",
+        "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-01/RESULT.json": "911915d6bf802d38294e27c65403b23164b3824f47b46e6394f099c1a7757873",
+        "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-host-01/RESULT.json": "590e191ac07ad66fc3d85d510fe3ac023061a3fe806632461138024138e3f461",
+        "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-host-02/RESULT.json": "be871c63b117fe2d7520ab1b78c76352fe68879df4cbfc5465d64a7e34753b68"
+      },
+      "recovery_full_read": {
+        "CURRENT_STATE.md": {
+          "bytes": 2197854,
+          "sha256": "e8a67baa10a28f4077b805c674189b96fbce0e79e33d8dfc39b7a130a962d001"
+        },
+        "docsMILESTONES.md": {
+          "bytes": 2205101,
+          "sha256": "8a24e40b953ff21163178708864f836993cd8e68b7d40346acc0d720b33842cc"
+        },
+        "DEPLOYMENT_OPERATION_MISTAKES_REVIEW.md": {
+          "bytes": 157172,
+          "sha256": "6e4639a81cf031e648062e6d7d6ebf0394dc54483500ceb8bbe47affc39ac3a9"
+        },
+        "deployment/mage_vl4b/BOARD_GATE_RESULT.json": {
+          "bytes": 1371613,
+          "sha256": "7e11e87cc4247575695f833876d7859d0a9a010039a069803f5df694e140077a"
+        }
+      },
+      "requests": [
+        {
+          "id": "cal_00_t0",
+          "clip_id": "calibration-cal-falling-no-knife-01-3fd2c968",
+          "source_group": "3fd2c968a97d82222ac5079dd796aa2e0f77b712ed4dae4263967cb2785cb2e0",
+          "knife_present": false,
+          "phase": "fit_group_seen",
+          "timestamp_index": 0,
+          "frames": "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_00/source_frames_rgb448.npy",
+          "frames_sha256": "68f7ae555f746d73c6fced91e81ad77b9384c9df39d76d4a734ba0e0c13099f9",
+          "features": {
+            "A": {
+              "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_00_t0_A/features_FP32.npy",
+              "sha256": "b6aef7ae950b23ff1afb58eacafc28ce42b7e2eb8ef4f6655d455413232b971b"
+            },
+            "B": {
+              "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_00_t0_B/features_FP32.npy",
+              "sha256": "ea55921add13476c38ecc1f82d6e179a20b7a7f83ccd759f2f5a5138de25f744"
+            }
+          }
+        },
+        {
+          "id": "cal_00_t1",
+          "clip_id": "calibration-cal-falling-no-knife-01-3fd2c968",
+          "source_group": "3fd2c968a97d82222ac5079dd796aa2e0f77b712ed4dae4263967cb2785cb2e0",
+          "knife_present": false,
+          "phase": "fit_group_seen",
+          "timestamp_index": 1,
+          "frames": "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_00/source_frames_rgb448.npy",
+          "frames_sha256": "68f7ae555f746d73c6fced91e81ad77b9384c9df39d76d4a734ba0e0c13099f9",
+          "features": {
+            "A": {
+              "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_00_t1_A/features_FP32.npy",
+              "sha256": "ae45aa992da5764788bb1462a0f35ec1e5feb27b804df291d2fd9f012e0489d2"
+            },
+            "B": {
+              "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_00_t1_B/features_FP32.npy",
+              "sha256": "8c60d9f9e10369c18b4479811d04f1720402c15021fa53d7774d8487f9c00461"
+            }
+          }
+        },
+        {
+          "id": "cal_01_t0",
+          "clip_id": "calibration-cal-fighting-no-knife-01-f0b10fe2",
+          "source_group": "f0b10fe23df78a0beda94ff067162c5de0af35073edb0706363c5a83610c3902",
+          "knife_present": false,
+          "phase": "fit_group_seen",
+          "timestamp_index": 0,
+          "frames": "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_01/source_frames_rgb448.npy",
+          "frames_sha256": "a6bbe59c2309d8813e4f1e3b68317b24b58df7c2e13125db7e52211214bc18e0",
+          "features": {
+            "A": {
+              "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_01_t0_A/features_FP32.npy",
+              "sha256": "7f5a026166b7fe4c2dea32a3eeb2af11ec104c6247b869bd9d849b43fb239c06"
+            },
+            "B": {
+              "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_01_t0_B/features_FP32.npy",
+              "sha256": "9061c5302cebd012a6f5a4cabc7b0072cbe3a1a9b536fa8d5e8cd8262995ac9c"
+            }
+          }
+        },
+        {
+          "id": "cal_01_t1",
+          "clip_id": "calibration-cal-fighting-no-knife-01-f0b10fe2",
+          "source_group": "f0b10fe23df78a0beda94ff067162c5de0af35073edb0706363c5a83610c3902",
+          "knife_present": false,
+          "phase": "fit_group_seen",
+          "timestamp_index": 1,
+          "frames": "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_01/source_frames_rgb448.npy",
+          "frames_sha256": "a6bbe59c2309d8813e4f1e3b68317b24b58df7c2e13125db7e52211214bc18e0",
+          "features": {
+            "A": {
+              "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_01_t1_A/features_FP32.npy",
+              "sha256": "2bc01866f6ef88db6402f890b9dd20e6428a4763cbeb303f98d373b8e6b59a34"
+            },
+            "B": {
+              "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_01_t1_B/features_FP32.npy",
+              "sha256": "f7252a3a576ae0bd088dd26ea4164231a9f9f8f561b90fcff579f68ed624ee6a"
+            }
+          }
+        },
+        {
+          "id": "cal_02_t0",
+          "clip_id": "calibration-cal-idle-knife-01-364a3160",
+          "source_group": "364a316054d9be0c8550acc3ee0c1d227486ef23045f3b75cb72f9fd0913916f",
+          "knife_present": true,
+          "phase": "fit_group_seen",
+          "timestamp_index": 0,
+          "frames": "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_02/source_frames_rgb448.npy",
+          "frames_sha256": "013851e81ed877f845e78134f7a94c77c96621b48fcf590160d32cc54ba83049",
+          "features": {
+            "A": {
+              "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_02_t0_A/features_FP32.npy",
+              "sha256": "b7a998505b25335cbf5d8a559b9a3a46fa5743f3bbe9072e862a645fcde89b9f"
+            },
+            "B": {
+              "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_02_t0_B/features_FP32.npy",
+              "sha256": "c80b3626f7c46bedbfba6732c001ef6374c1cc70b11bb69583ba7ef03182905f"
+            }
+          }
+        },
+        {
+          "id": "cal_02_t1",
+          "clip_id": "calibration-cal-idle-knife-01-364a3160",
+          "source_group": "364a316054d9be0c8550acc3ee0c1d227486ef23045f3b75cb72f9fd0913916f",
+          "knife_present": true,
+          "phase": "fit_group_seen",
+          "timestamp_index": 1,
+          "frames": "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_02/source_frames_rgb448.npy",
+          "frames_sha256": "013851e81ed877f845e78134f7a94c77c96621b48fcf590160d32cc54ba83049",
+          "features": {
+            "A": {
+              "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_02_t1_A/features_FP32.npy",
+              "sha256": "2552cd0af30aa24f379f74d4b27faccec622aa5dcdbb00ff355526d434d104ab"
+            },
+            "B": {
+              "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_02_t1_B/features_FP32.npy",
+              "sha256": "655f1a95fbae8dd09571300d4231c1f7112fb34f9fdc3f594277ba070b83f176"
+            }
+          }
+        },
+        {
+          "id": "cal_03_t0",
+          "clip_id": "calibration-cal-walking-knife-01-43fb67c6",
+          "source_group": "43fb67c6411938bd88c2698ca9233f58f6fb6987ae9d2f7b24a2b38e170be56b",
+          "knife_present": true,
+          "phase": "reserved_calibration_group",
+          "timestamp_index": 0,
+          "frames": "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_03/source_frames_rgb448.npy",
+          "frames_sha256": "3669ef8b8563b95b8c5c8ee34a07e6d8fa049f907576c5fdb8dc76deecca1190",
+          "features": {
+            "A": {
+              "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_03_t0_A/features_FP32.npy",
+              "sha256": "72d74514efd1949615f4200cd5f0c5d82dd41a40f771e916b648635ebe83b76e"
+            },
+            "B": {
+              "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_03_t0_B/features_FP32.npy",
+              "sha256": "d5322d37f3f437f318949bfd009ff76dfb8494503d9debeb6b9cee80153c4cec"
+            }
+          }
+        },
+        {
+          "id": "cal_03_t1",
+          "clip_id": "calibration-cal-walking-knife-01-43fb67c6",
+          "source_group": "43fb67c6411938bd88c2698ca9233f58f6fb6987ae9d2f7b24a2b38e170be56b",
+          "knife_present": true,
+          "phase": "reserved_calibration_group",
+          "timestamp_index": 1,
+          "frames": "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_03/source_frames_rgb448.npy",
+          "frames_sha256": "3669ef8b8563b95b8c5c8ee34a07e6d8fa049f907576c5fdb8dc76deecca1190",
+          "features": {
+            "A": {
+              "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_03_t1_A/features_FP32.npy",
+              "sha256": "c270c55aaa47732d4addc21a72098ad652caddaeeaed815db6de8a93a6aadf25"
+            },
+            "B": {
+              "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_03_t1_B/features_FP32.npy",
+              "sha256": "5556e29ad4f9dd0e02a944db24130428f8825febabe8e327fbc66ea32c132cdf"
+            }
+          }
+        },
+        {
+          "id": "cal_04_t0",
+          "clip_id": "calibration-cal-working-knife-02-dfd917f8",
+          "source_group": "dfd917f8126de358e2d86bbab06ee918bb824320e7aa18350db88b64b6173a90",
+          "knife_present": true,
+          "phase": "fit_group_seen",
+          "timestamp_index": 0,
+          "frames": "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_04/source_frames_rgb448.npy",
+          "frames_sha256": "4fbe6d5d632876ddb82a61e1be25f1469474a1f2203e3af36ea8895873d0ca28",
+          "features": {
+            "A": {
+              "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_04_t0_A/features_FP32.npy",
+              "sha256": "78ad3d5583196da38aac71b407fc533b35d60b9d365f9cb95b99fd6b52441392"
+            },
+            "B": {
+              "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_04_t0_B/features_FP32.npy",
+              "sha256": "efa5a10c12bc3f4ccde61f20ffcd80c41c9f2f8d2dd7e4d931d35d78a78e93c6"
+            }
+          }
+        },
+        {
+          "id": "cal_04_t1",
+          "clip_id": "calibration-cal-working-knife-02-dfd917f8",
+          "source_group": "dfd917f8126de358e2d86bbab06ee918bb824320e7aa18350db88b64b6173a90",
+          "knife_present": true,
+          "phase": "fit_group_seen",
+          "timestamp_index": 1,
+          "frames": "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_04/source_frames_rgb448.npy",
+          "frames_sha256": "4fbe6d5d632876ddb82a61e1be25f1469474a1f2203e3af36ea8895873d0ca28",
+          "features": {
+            "A": {
+              "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_04_t1_A/features_FP32.npy",
+              "sha256": "ca74849564189a376fd567c5246f43d336b349b02f81cfd97dfb6367d2f33521"
+            },
+            "B": {
+              "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_04_t1_B/features_FP32.npy",
+              "sha256": "b3a32852f897d462017891ca2e6dfa0a502994fff08cfd23257ff43b316199ec"
+            }
+          }
+        },
+        {
+          "id": "cal_05_t0",
+          "clip_id": "calibration-cal-working-no-knife-01-340a3274",
+          "source_group": "340a3274e80ce22bb95fbfd8c16dec2f4f3907b97434cbc8787f5479a53a5970",
+          "knife_present": false,
+          "phase": "reserved_calibration_group",
+          "timestamp_index": 0,
+          "frames": "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_05/source_frames_rgb448.npy",
+          "frames_sha256": "fdc1c405e34027de8119819c7047315841ca6dc8ac6be96c02066aa5df3b12ce",
+          "features": {
+            "A": {
+              "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_05_t0_A/features_FP32.npy",
+              "sha256": "dd2dbf32b20432eb0328b6b13e410752319482b0271d781660b968bf4e994695"
+            },
+            "B": {
+              "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_05_t0_B/features_FP32.npy",
+              "sha256": "fa3d1816bc1fe14647c4dddeeb374a4c03c2c9fa198b5dadd589ab6b6be568f5"
+            }
+          }
+        },
+        {
+          "id": "cal_05_t1",
+          "clip_id": "calibration-cal-working-no-knife-01-340a3274",
+          "source_group": "340a3274e80ce22bb95fbfd8c16dec2f4f3907b97434cbc8787f5479a53a5970",
+          "knife_present": false,
+          "phase": "reserved_calibration_group",
+          "timestamp_index": 1,
+          "frames": "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_05/source_frames_rgb448.npy",
+          "frames_sha256": "fdc1c405e34027de8119819c7047315841ca6dc8ac6be96c02066aa5df3b12ce",
+          "features": {
+            "A": {
+              "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_05_t1_A/features_FP32.npy",
+              "sha256": "e9542053b5cc455ac41d4378fc0fe14684e3cb93a9b2e5257a3fd023fd1887e7"
+            },
+            "B": {
+              "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_05_t1_B/features_FP32.npy",
+              "sha256": "ea3dd462fe2b39a230f62e8a3696f1689ae1d3568ccea163bbd3a7f48f3c9f39"
+            }
+          }
+        }
+      ],
+      "training_ids": [
+        "cal_00_t0",
+        "cal_00_t1",
+        "cal_01_t0",
+        "cal_01_t1",
+        "cal_02_t0",
+        "cal_02_t1",
+        "cal_04_t0",
+        "cal_04_t1"
+      ],
+      "token_ids": [
+        151644,
+        8948,
+        198,
+        2610,
+        525,
+        264,
+        10950,
+        17847,
+        13,
+        151645,
+        198,
+        151644,
+        872,
+        198,
+        27,
+        18,
+        13,
+        15,
+        6486,
+        29,
+        151652,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151653,
+        27,
+        18,
+        13,
+        15,
+        6486,
+        29,
+        151652,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151655,
+        151653,
+        3872,
+        264,
+        21430,
+        9434,
+        304,
+        1493,
+        6194,
+        30,
+        5145,
+        448,
+        7414,
+        11,
+        2308,
+        11,
+        476,
+        28779,
+        1547,
+        13,
+        5005,
+        10339,
+        279,
+        9434,
+        5904,
+        304,
+        825,
+        11652,
+        13,
+        151645,
+        198,
+        151644,
+        77091,
+        198
+      ],
+      "eos_id": 151645,
+      "package": "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240",
+      "private_manifest_sha256": "892cf962d8cf67b6450b1e047e13ee840c876309495523bc1beefbabd735c9a6",
+      "private_manifest_path": "deployment/mage_vl4b/optimization_v1/candidates/M455-original94-layout-performance-05/private_runtime/PACKAGE_MANIFEST.json",
+      "contract_sha256": "3dd31b80e43a6f5c56ecf1e7c24f3354581b51b1db9e923b26252ea38560ff02",
+      "budget_seconds": 1800,
+      "source_sha256": "8084243cda55cbe647f91c26f6cbe4e7ecc4d5d0cb39efbe2a121b54b5648e95",
+      "interface_fix": "Explicit original three arguments, preprocess metadata not forwarded; actual original NumPy result retained.",
+      "rejected_fit_sha256": "911915d6bf802d38294e27c65403b23164b3824f47b46e6394f099c1a7757873",
+      "original_contract_sha256": "3dd31b80e43a6f5c56ecf1e7c24f3354581b51b1db9e923b26252ea38560ff02",
+      "correction_before_first_prefix_forward": true,
+      "no_completed_model_answer_rerun": true
+    },
+    "token_ids": [
+      151644,
+      8948,
+      198,
+      2610,
+      525,
+      264,
+      10950,
+      17847,
+      13,
+      151645,
+      198,
+      151644,
+      872,
+      198,
+      151652,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151653,
+      151652,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151655,
+      151653,
+      3872,
+      264,
+      21430,
+      9434,
+      304,
+      1493,
+      6194,
+      151645,
+      198,
+      151644,
+      77091,
+      198
+    ],
+    "eos_id": 151645,
+    "cap": 32,
+    "requests": [
+      {
+        "id": "cal_00_t0",
+        "clip_id": "calibration-cal-falling-no-knife-01-3fd2c968",
+        "source_group": "3fd2c968a97d82222ac5079dd796aa2e0f77b712ed4dae4263967cb2785cb2e0",
+        "knife_present": false,
+        "phase": "fit_group_seen",
+        "timestamp_index": 0,
+        "frames": "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_00/source_frames_rgb448.npy",
+        "frames_sha256": "68f7ae555f746d73c6fced91e81ad77b9384c9df39d76d4a734ba0e0c13099f9",
+        "features": {
+          "A": {
+            "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_00_t0_A/features_FP32.npy",
+            "sha256": "b6aef7ae950b23ff1afb58eacafc28ce42b7e2eb8ef4f6655d455413232b971b"
+          },
+          "B": {
+            "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_00_t0_B/features_FP32.npy",
+            "sha256": "ea55921add13476c38ecc1f82d6e179a20b7a7f83ccd759f2f5a5138de25f744"
+          }
+        }
+      },
+      {
+        "id": "cal_00_t1",
+        "clip_id": "calibration-cal-falling-no-knife-01-3fd2c968",
+        "source_group": "3fd2c968a97d82222ac5079dd796aa2e0f77b712ed4dae4263967cb2785cb2e0",
+        "knife_present": false,
+        "phase": "fit_group_seen",
+        "timestamp_index": 1,
+        "frames": "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_00/source_frames_rgb448.npy",
+        "frames_sha256": "68f7ae555f746d73c6fced91e81ad77b9384c9df39d76d4a734ba0e0c13099f9",
+        "features": {
+          "A": {
+            "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_00_t1_A/features_FP32.npy",
+            "sha256": "ae45aa992da5764788bb1462a0f35ec1e5feb27b804df291d2fd9f012e0489d2"
+          },
+          "B": {
+            "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_00_t1_B/features_FP32.npy",
+            "sha256": "8c60d9f9e10369c18b4479811d04f1720402c15021fa53d7774d8487f9c00461"
+          }
+        }
+      },
+      {
+        "id": "cal_01_t0",
+        "clip_id": "calibration-cal-fighting-no-knife-01-f0b10fe2",
+        "source_group": "f0b10fe23df78a0beda94ff067162c5de0af35073edb0706363c5a83610c3902",
+        "knife_present": false,
+        "phase": "fit_group_seen",
+        "timestamp_index": 0,
+        "frames": "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_01/source_frames_rgb448.npy",
+        "frames_sha256": "a6bbe59c2309d8813e4f1e3b68317b24b58df7c2e13125db7e52211214bc18e0",
+        "features": {
+          "A": {
+            "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_01_t0_A/features_FP32.npy",
+            "sha256": "7f5a026166b7fe4c2dea32a3eeb2af11ec104c6247b869bd9d849b43fb239c06"
+          },
+          "B": {
+            "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_01_t0_B/features_FP32.npy",
+            "sha256": "9061c5302cebd012a6f5a4cabc7b0072cbe3a1a9b536fa8d5e8cd8262995ac9c"
+          }
+        }
+      },
+      {
+        "id": "cal_01_t1",
+        "clip_id": "calibration-cal-fighting-no-knife-01-f0b10fe2",
+        "source_group": "f0b10fe23df78a0beda94ff067162c5de0af35073edb0706363c5a83610c3902",
+        "knife_present": false,
+        "phase": "fit_group_seen",
+        "timestamp_index": 1,
+        "frames": "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_01/source_frames_rgb448.npy",
+        "frames_sha256": "a6bbe59c2309d8813e4f1e3b68317b24b58df7c2e13125db7e52211214bc18e0",
+        "features": {
+          "A": {
+            "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_01_t1_A/features_FP32.npy",
+            "sha256": "2bc01866f6ef88db6402f890b9dd20e6428a4763cbeb303f98d373b8e6b59a34"
+          },
+          "B": {
+            "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_01_t1_B/features_FP32.npy",
+            "sha256": "f7252a3a576ae0bd088dd26ea4164231a9f9f8f561b90fcff579f68ed624ee6a"
+          }
+        }
+      },
+      {
+        "id": "cal_02_t0",
+        "clip_id": "calibration-cal-idle-knife-01-364a3160",
+        "source_group": "364a316054d9be0c8550acc3ee0c1d227486ef23045f3b75cb72f9fd0913916f",
+        "knife_present": true,
+        "phase": "fit_group_seen",
+        "timestamp_index": 0,
+        "frames": "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_02/source_frames_rgb448.npy",
+        "frames_sha256": "013851e81ed877f845e78134f7a94c77c96621b48fcf590160d32cc54ba83049",
+        "features": {
+          "A": {
+            "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_02_t0_A/features_FP32.npy",
+            "sha256": "b7a998505b25335cbf5d8a559b9a3a46fa5743f3bbe9072e862a645fcde89b9f"
+          },
+          "B": {
+            "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_02_t0_B/features_FP32.npy",
+            "sha256": "c80b3626f7c46bedbfba6732c001ef6374c1cc70b11bb69583ba7ef03182905f"
+          }
+        }
+      },
+      {
+        "id": "cal_02_t1",
+        "clip_id": "calibration-cal-idle-knife-01-364a3160",
+        "source_group": "364a316054d9be0c8550acc3ee0c1d227486ef23045f3b75cb72f9fd0913916f",
+        "knife_present": true,
+        "phase": "fit_group_seen",
+        "timestamp_index": 1,
+        "frames": "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_02/source_frames_rgb448.npy",
+        "frames_sha256": "013851e81ed877f845e78134f7a94c77c96621b48fcf590160d32cc54ba83049",
+        "features": {
+          "A": {
+            "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_02_t1_A/features_FP32.npy",
+            "sha256": "2552cd0af30aa24f379f74d4b27faccec622aa5dcdbb00ff355526d434d104ab"
+          },
+          "B": {
+            "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_02_t1_B/features_FP32.npy",
+            "sha256": "655f1a95fbae8dd09571300d4231c1f7112fb34f9fdc3f594277ba070b83f176"
+          }
+        }
+      },
+      {
+        "id": "cal_03_t0",
+        "clip_id": "calibration-cal-walking-knife-01-43fb67c6",
+        "source_group": "43fb67c6411938bd88c2698ca9233f58f6fb6987ae9d2f7b24a2b38e170be56b",
+        "knife_present": true,
+        "phase": "reserved_calibration_group",
+        "timestamp_index": 0,
+        "frames": "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_03/source_frames_rgb448.npy",
+        "frames_sha256": "3669ef8b8563b95b8c5c8ee34a07e6d8fa049f907576c5fdb8dc76deecca1190",
+        "features": {
+          "A": {
+            "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_03_t0_A/features_FP32.npy",
+            "sha256": "72d74514efd1949615f4200cd5f0c5d82dd41a40f771e916b648635ebe83b76e"
+          },
+          "B": {
+            "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_03_t0_B/features_FP32.npy",
+            "sha256": "d5322d37f3f437f318949bfd009ff76dfb8494503d9debeb6b9cee80153c4cec"
+          }
+        }
+      },
+      {
+        "id": "cal_03_t1",
+        "clip_id": "calibration-cal-walking-knife-01-43fb67c6",
+        "source_group": "43fb67c6411938bd88c2698ca9233f58f6fb6987ae9d2f7b24a2b38e170be56b",
+        "knife_present": true,
+        "phase": "reserved_calibration_group",
+        "timestamp_index": 1,
+        "frames": "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_03/source_frames_rgb448.npy",
+        "frames_sha256": "3669ef8b8563b95b8c5c8ee34a07e6d8fa049f907576c5fdb8dc76deecca1190",
+        "features": {
+          "A": {
+            "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_03_t1_A/features_FP32.npy",
+            "sha256": "c270c55aaa47732d4addc21a72098ad652caddaeeaed815db6de8a93a6aadf25"
+          },
+          "B": {
+            "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_03_t1_B/features_FP32.npy",
+            "sha256": "5556e29ad4f9dd0e02a944db24130428f8825febabe8e327fbc66ea32c132cdf"
+          }
+        }
+      },
+      {
+        "id": "cal_04_t0",
+        "clip_id": "calibration-cal-working-knife-02-dfd917f8",
+        "source_group": "dfd917f8126de358e2d86bbab06ee918bb824320e7aa18350db88b64b6173a90",
+        "knife_present": true,
+        "phase": "fit_group_seen",
+        "timestamp_index": 0,
+        "frames": "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_04/source_frames_rgb448.npy",
+        "frames_sha256": "4fbe6d5d632876ddb82a61e1be25f1469474a1f2203e3af36ea8895873d0ca28",
+        "features": {
+          "A": {
+            "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_04_t0_A/features_FP32.npy",
+            "sha256": "78ad3d5583196da38aac71b407fc533b35d60b9d365f9cb95b99fd6b52441392"
+          },
+          "B": {
+            "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_04_t0_B/features_FP32.npy",
+            "sha256": "efa5a10c12bc3f4ccde61f20ffcd80c41c9f2f8d2dd7e4d931d35d78a78e93c6"
+          }
+        }
+      },
+      {
+        "id": "cal_04_t1",
+        "clip_id": "calibration-cal-working-knife-02-dfd917f8",
+        "source_group": "dfd917f8126de358e2d86bbab06ee918bb824320e7aa18350db88b64b6173a90",
+        "knife_present": true,
+        "phase": "fit_group_seen",
+        "timestamp_index": 1,
+        "frames": "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_04/source_frames_rgb448.npy",
+        "frames_sha256": "4fbe6d5d632876ddb82a61e1be25f1469474a1f2203e3af36ea8895873d0ca28",
+        "features": {
+          "A": {
+            "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_04_t1_A/features_FP32.npy",
+            "sha256": "ca74849564189a376fd567c5246f43d336b349b02f81cfd97dfb6367d2f33521"
+          },
+          "B": {
+            "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_04_t1_B/features_FP32.npy",
+            "sha256": "b3a32852f897d462017891ca2e6dfa0a502994fff08cfd23257ff43b316199ec"
+          }
+        }
+      },
+      {
+        "id": "cal_05_t0",
+        "clip_id": "calibration-cal-working-no-knife-01-340a3274",
+        "source_group": "340a3274e80ce22bb95fbfd8c16dec2f4f3907b97434cbc8787f5479a53a5970",
+        "knife_present": false,
+        "phase": "reserved_calibration_group",
+        "timestamp_index": 0,
+        "frames": "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_05/source_frames_rgb448.npy",
+        "frames_sha256": "fdc1c405e34027de8119819c7047315841ca6dc8ac6be96c02066aa5df3b12ce",
+        "features": {
+          "A": {
+            "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_05_t0_A/features_FP32.npy",
+            "sha256": "dd2dbf32b20432eb0328b6b13e410752319482b0271d781660b968bf4e994695"
+          },
+          "B": {
+            "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_05_t0_B/features_FP32.npy",
+            "sha256": "fa3d1816bc1fe14647c4dddeeb374a4c03c2c9fa198b5dadd589ab6b6be568f5"
+          }
+        }
+      },
+      {
+        "id": "cal_05_t1",
+        "clip_id": "calibration-cal-working-no-knife-01-340a3274",
+        "source_group": "340a3274e80ce22bb95fbfd8c16dec2f4f3907b97434cbc8787f5479a53a5970",
+        "knife_present": false,
+        "phase": "reserved_calibration_group",
+        "timestamp_index": 1,
+        "frames": "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_05/source_frames_rgb448.npy",
+        "frames_sha256": "fdc1c405e34027de8119819c7047315841ca6dc8ac6be96c02066aa5df3b12ce",
+        "features": {
+          "A": {
+            "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_05_t1_A/features_FP32.npy",
+            "sha256": "e9542053b5cc455ac41d4378fc0fe14684e3cb93a9b2e5257a3fd023fd1887e7"
+          },
+          "B": {
+            "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_05_t1_B/features_FP32.npy",
+            "sha256": "ea3dd462fe2b39a230f62e8a3696f1689ae1d3568ccea163bbd3a7f48f3c9f39"
+          }
+        }
+      }
+    ],
+    "training_ids": [
+      "cal_00_t0",
+      "cal_00_t1",
+      "cal_01_t0",
+      "cal_01_t1",
+      "cal_02_t0",
+      "cal_02_t1",
+      "cal_04_t0",
+      "cal_04_t1"
+    ],
+    "frozen": {
+      "experiments/visual_ps_prune_20261024/common.py": "246f5625e26dda761c4b333dd7668252dc5cfc4bbed12fed8dbe477e5154eb02",
+      "experiments/visual_ps_prune_20261024/features.py": "0e0632f73a934d1e4bd57a15e7013ff41525a653d59893df49a84709c6be5c4b",
+      "experiments/visual_ps_prune_20261024/fit.py": "1492e89ddc58f9406e16b580ee62f09b6b298fae70cee2694c39830957807cd6",
+      "experiments/visual_ps_prune_20261024/host.py": "59453b5a7fe65fa9286733338090ed44a4dc6c5bb407cd0ea65fcd5001180399",
+      "experiments/visual_ps_prune_20261024/late_oracle.py": "f7316e16c1e13f8b09ee4192540893173fefff129e1ba6877f31aebc144877a1",
+      "experiments/visual_ps_prune_20261024/prepare.py": "aea95de1f8348aeffb4d6e2f04f47211c733c9d1d0c79ed1c93c09895f5ecf6b",
+      "experiments/visual_ps_prune_20261024/quality.py": "7e563162c2d64e67698a9b22beb17b25cca4a35f82283d4914fc8f350bca1485",
+      "experiments/visual_ps_prune_20261024/render_quality.py": "db2bcc75bda8d7a848c5fbbe34ed372c0e944f6982f035bf75c55830631f7261",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-layer-proxy-refinement-01/RESULT.json": "0f970f638293a86fd790a3137431dabd41f6d1643e03dc6dd1e5fe762b8086b1",
+      "deployment/mage_vl4b/optimization_v1/candidates/J1-request-native-reference-03/SOURCE_CLOSURE.json": "c2f625f6c4b4097fb143f714ff8626fac160aaf02d251da623cb88d05768a457",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/PACKAGE_MANIFEST.json": "47a425db63d36af8c1f665dd3b19972bd0965ecfed730aa21e3defece0b42ab1",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/TWENTYTWO_LAYER_PLAN.json": "7592278784e3f3d5f71e0e2777d6ec252357c44e47215c14b69036bb717a9398",
+      "deployment/mage_vl4b/optimization_v1/contracts/config.json": "bba91df39fbdfbfc0fe660756469b707560dc3d9bf77d13f306971ecaa058a01",
+      "deployment/mage_vl4b/optimization_v1/contracts/M455_COMMON_COMPLETE_REQUEST_FIVE_BLOCK_20261022_V2.json": "4354a9c7ca63ea31ead6ed7072fcd47fff40e25638fee761b604ef917fc77ea8",
+      "deployment/mage_vl4b/optimization_v1/contracts/M455_RESEARCH_RELATIVE_NONREGRESSION_20261023_V1.json": "2ed2155b835fbcd040d934ca7ad66e2d4cba90e1ff3bb0a0e8d694df997ca074",
+      "deployment/mage_vl4b/optimization_v1/runs/M454-model-interface-preflight-01/RESULT.json": "cd571a2b32fd7c8d50c0f3aa8dab0582f6e04963d02746577c2fad4760e39ed6",
+      "deployment/mage_vl4b/optimization_v1/runs/M522-training-capture-protocol-03/RESULT.json": "8b9ec4327f38829b402e35887c29dca40c8b471559f87f10e7e43d25160c1662",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-V12-native-feature-language-protocol-01/RESULT.json": "1d927ae3b193161195c157474e2e324b1c684b6b5794518566e75e0879b33ba9",
+      "experiments/pruning_plan_20261020/M455_L1_vectors52302.py": "3512ec92e22b31c0cb4dc204c01e0ec3e7cb503aacee619c76f1c55a39609e48",
+      "experiments/adaptive_exec_error/adaptive/language_mlp_probe.py": "6839952f75489af39b9633860ffda12beea502737acaa5848a1856b5b5b3b8a5",
+      "experiments/adaptive_exec_error/adaptive/language_mlp_kernel_fp1602.py": "93a4c2b37793bc0bcdfb56cfe3027f8dc56901a3551cddce2d90de1c1ec0c360",
+      "experiments/speed_target_30s_20261020/generate_flap522.py": "60b0fb180b4b8f9366cd88a6927ff5e3a1d7e4072671763f5a5e2ab9d84554b0",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/language_01.npz": "5b5a3f1e0d39dbcc827f0fc3dccad22d1d8fa46ff80b4724256ad45462aecd16",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/language_02.npz": "03db0f206342bbb4d3029c171d8b7b1fc5f3c5d661af68911ded2bb97f304d85",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/language_04.npz": "6fab0ab948612be42bf12da31c2b7ad0f409dbe91f17fbf02068477dcd4ded38",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/language_12.npz": "b48de19fa00b29835e46b0f596f905169839fd1278ac219a55151034e00ffe98",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/language_14.npz": "c971ed750776c3ed64d84c56e11467ab7a9d8bfddb568d785c9b1d413591d8ae",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/language_15.npz": "601c8f1cff6b6f3b2a9952c4d10132c8c4e85dfa11c0e97dec1474bdafb6b4a9",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/language_16.npz": "9abf7f664750dc45ce4d659d867375a2c976cb5e33925cdcd7251537434d9c75",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/language_20.npz": "1c0dbe654197a24a491d97ff2b9458fb373787e9be07d8a2c164caa4e074eeb4",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/language_21.npz": "59985ed641cf0a901654d160eea71dbf345168ce708aaa526d07b6a803d3e763",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/language_22.npz": "2260d4e67cc1488788ab22f41c441d583935aa3b769c8231f406fd664f1f47cd",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/language_23.npz": "df72a22b57561c65fe68effdfb4b9b4e8549b1b941776d55416f1cc2d1f8801f",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/language_24.npz": "423a08503f7208f17eca64da30b548684c817658e2d46a586f29221683802ce5",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/language_26.npz": "146faa9242c0088da9d69558e2539139338747b754cb140f4b4a0c40cee3f200",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/language_27.npz": "449aef34c24d19c18fb243d2e9d5a695b8436bfd4ff52d314f6c2202d89bc1fd",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/language_28.npz": "b13cd236e8c85579126a83c94b395423042c6c44e60f1825c89a163540478064",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/language_29.npz": "5f94d4e5d363cd9d5cf74425e9a4923477e4948786f85024735da054192dc016",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/language_31.npz": "284b850d582963619d34dcfed8e3cab0a505bfc5f1140bdaf09c948610e76955",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/language_32.npz": "472a143aba1324184b93fa929bf9ccf2168fc65f5cddc0780d1e3b1e32d8fd42",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/language_34.npz": "90e5af11a2de26d2a8ab865529c3aaa8061544acbcc9b715fce8381e96b67130",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/vision_14.npz": "254bfd68f2cea78660aec65cf88c2dea4a49f3d0ae1468f1ea761dcf63da9e7a",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/vision_15.npz": "bdcb2d7799059d8e02e8d6735862a89baeb8d676321c7a16af061dc443b06827",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/codes/vision_21.npz": "29c9d41e727397e90ac55674ddf9cf12cd37bd4a2bb0e76c1c808ffd97af691a",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/language_01_FP32.bin": "1a5b3ddf03cd913fa7e3f89c4fcdee823927a0b3ee2bf3f022dcf9a2f851504e",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/language_02_FP32.bin": "ee2a292749da52257e88174f06daf00f30797b698cc76be5fa1e4b5dc40e497e",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/language_04_FP32.bin": "56518985f10aa8d47a9f4ced520e448d1333c1f29d874321b33dd012a46bf952",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/language_12_FP32.bin": "f13a07ba922ef58a12833a01784cc7c42a2b17552997b3955c153264535462af",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/language_14_FP32.bin": "668194c302280ce1c1e81c9ea7a6f348747d00d0b5339d4f19bb008334190e9d",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/language_15_FP32.bin": "9a2b38ee3d3de3e75dbd7c477762a6bb7a76e4e43ea19dc38bf1496ba1c45c0e",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/language_16_FP32.bin": "f61ba559c28e26883a300d4fb58732fce246f9021bbdb212262d27b4407ab64f",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/language_20_FP32.bin": "965fd64a38c7709cef4f36e5acda782a307f7cc4203b9765fd7563323dc54782",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/language_21_FP32.bin": "ac3142fadf75e246656ce916004e21af7465b24274c60dcbadb76f07124270c8",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/language_22_FP32.bin": "914c890af6a712493053966fd77a4c5908eaa6807ae9ff325bb005a6a4276667",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/language_23_FP32.bin": "0ef23633379dc4fddfbe5497e79c3aab982f0923f1cba9fb082f6e47d92f7769",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/language_24_FP32.bin": "b88fa32a207fb5747ea872466856dbc88b23a52423625713a26072d4319bd09c",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/language_26_FP32.bin": "dc8cb51c6cb30fd34dbf3d0b23de8a351a0e3889387bcb345b7ce100f38a6098",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/language_27_FP32.bin": "5e3ba8b440544fdd65d28982b274ae4b3e71b7af4994b4029d0d571e788c3bb2",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/language_28_FP32.bin": "12d8f31d1e3e68746c5659988d285adcfed8c5eb7ddb207f4bfc9025e9655bdb",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/language_29_FP32.bin": "7bc192d2348a70f7c58256537df0b6b3105877d3deb8a9d3c333ac5ad1f68064",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/language_31_FP32.bin": "75867d9045f242722d6b2ce5a659be63e06ea38ce69e48c5d24ffac8c7b8fd34",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/language_32_FP32.bin": "77d0b76b09212bfad11db8e12cf8b86c6b48befdfd913ea1f3a55914c948c091",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/language_34_FP32.bin": "5992e390e29a4705456649c9b08ceb1e331ed20cf3c8eee3475c0b034656b170",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/vision_14_FP32.bin": "99888accbce8b36bdd93d8e8f157d92e85b413d780498be24e5b616c75b5d28d",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/vision_15_FP32.bin": "081335d798ef1b94ff3dc28238645e71d425cf0a33affbe168f5fb49155d0688",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-M455-twentytwo-layer-R1-research-240/R1/vision_21_FP32.bin": "1998810c574fc06dec2f4e1a91802a49a10bd3ba352e68efecc0b5732bbeb426",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m175_m120_fixed_text_candidate/runtime/support/reserved_ddr_pool.py": "e933f9818e888ed7c924b7597adadd42f7254b942f65c645b85f17fc40f33013",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m277_fixed_window_gate.py": "dc2430b6e68fb54a6157d5ee317ac747e70b66156bf8307eedf58b9f65795b5d",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m276_prompt_contract.py": "fc46f457e7eec1fb044dcb5f9bb6e416f74596ba44ee3f321038ecaf4674bc39",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m273_latest_multiscale_contract.py": "c5826f77f95f4b3d6fbf1c406d9f341650316958ba5cfa1ba2467605eef3273a",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/tmp/m223_realtime/m223_realtime_delta/video_server.py": "6b6655e29c13fee8f805a102d8f4ac9d89988067930e0ae187a9e2d860d88b74",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m175_m120_fixed_text_candidate/runtime/board_runtime.py": "5d53ea406e57de88f8c14d9bc4e1cb0c0049ff0b8f4bcf620e05745fcd82b201",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m175_m120_fixed_text_candidate/runtime/contract_runtime.py": "2912ab6040e1218775b397a184fd2d2487a83935fb9f7dfff7c97381c9cde75d",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m181_m120_video_board_candidate/video_request.py": "3041d1124d1db9b436f623bdcbe0d402a8f01a457e162859b20ded6baa51563b",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m181_m120_video_board_candidate/board_preprocess.py": "1fe75b3903e16f681303c41adaf6b2b4d3b6858093e32c5e92dd8cab6369b0ba",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m181_m120_video_board_candidate/video_prompt.py": "7e0e5dfa238859a84851bd4b51f655f312f959c6f99f8d09552c945d5c975e07",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m181_m120_video_board_candidate/video_language_runtime.py": "fae70964171580dc8329700e99aa0b25f27b752e9d4274c5bae72fa19f30cf61",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/tmp/m223_realtime/m223_realtime_delta/m207_ps_vision_runtime.py": "cc58d6554c127d9fd111e05e9dbfadc7082e3bccfeda907cb67b2059f29a750c",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/tmp/m223_realtime/m223_realtime_delta/m206_ps_vision_runtime.py": "1f67ba6fe8628096919bb8f150d7e67a168dbf675aa7715f68074bd6792c2582",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/tmp/m227_runtime_base/m227_runtime_base_patch/ps_vision_runtime.py": "ecaa55370f8fbb222ebdcdb55252eb19a3ad31d05e6236ba9138eac3ed11ae53",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/tmp/m223_realtime/m223_realtime_delta/live_stream_core.py": "947d8cb44ce623b1f907d8d771993a143464f4ddbd3b30c7a3a50d553c646535",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m276_video_runtime.py": "7dc39257361179d8e2ddcf91380e4ce73e96c69fc2e23b411a337b47896f8386",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m273_latest_vision_runtime.py": "a7ecdf6d60791c35cd33c2526f56696ee6d4ab32e79e9cc5ed391745263d492f",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m261_budgeted_w4_runtime.py": "24be172d8366884bc1d4ca9917cf53382773e6b8f4b8a040991ccf18aecdae9a",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m260_cached_w4_runtime.py": "065c5ce58ec52dac3ee327a06228e99ff08c9d0e98bec1a2d8cf171238f076d7",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m259_variable_vision_runtime.py": "d5e3888479ecb19b99c4ca6c1055953a12845030d9477620dc2c863a9b677429",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m258_vectorized_w4_runtime.py": "b8b973f5355504dfc7b3d1cb21c16a9756831947396dc536c5b8f99478004e8a",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/tmp/m223_realtime/m223_realtime_delta/m222_vectorized_w4_runtime.py": "48f9144f14d58bf57202ed32b7aab34a84430906bbe857a568b4f4f00faacf7d",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m246_knife_binary.py": "ddf55a13a29719cd57aecb99405a5f939f4439c38a4be72793644f2b6901da4d",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m259_video_runtime.py": "d79c7b6d477bdfda2a56693d5d2d2757aef05410b11739d10f2e51cdea3a257b",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/variable_video_contract.py": "7f0a366e282ddea204c62bc9131e13be366c459c1fd1aca9af6f12b92299a268",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/keyframe_reducer.py": "f55b0798c775bd6312a4e35d3286790f842cb77e386f506c464d4c5aa2eaee92",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m243_web_prefill_board_candidate/m243_video_server.py": "9ee51793532e1fa3637259664948735df7816fbbdae8165d167cb6a05cb98474",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m241_video_language_runtime.py": "24f419ea8e0f130cefc8eb51f916dca3fb945b84f0dc8e73dec9f5376be3ad09",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m230_video_language_runtime.py": "2401f60823133f3a5c0656686ff1f7823da8796a154a1e9a888ba16f80138b56",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m238_prefill_runtime.py": "daf30c982c276b90ac776178ad258e536925dce52de7ab26b06a9473ff9a9d9a",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m236_prefill_runtime.py": "d8061b561fe4d2a089523fde0d3860684244e76bca9646f255f03134fb50be56",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m231_prefill_runtime.py": "e7d6aa5a43919405168612b6a5695c14330735f75c87aa269b245e61542750ad",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m242_m241_fixed_text_board_candidate/m230_prefill_runtime.py": "defbcff1cc36300fff84481f2e9eba7a06174941b568e34b2faa7885efc14df4",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/tmp/m223_realtime/m223_realtime_delta/m222_video_server.py": "8b9e34ec0445267591a283f76a2ae9dc46650adda1d00ad85c4947c13f3ec02a",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/tmp/m223_realtime/m223_realtime_delta/m222_live_stream_core.py": "4b1c4d78ccdb7cdca49a7c45393ff465560fe84f7997e220ea4ad2061d610326",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m277_m276_fixed_window_board_candidate/m276_m254_video_server.py": "b0ffc2750fb28587b8d51909f59e2c0a367c6dfd0183c784743e945356f9346a",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m254_dual_path_web_candidate/m254_video_server.py": "86e2c79740af645449db5b2f8c64246000dab1896a30b4148e5c90f1e321fc6f",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m254_dual_path_web_candidate/m254_dual_path_core.py": "cd1a7af2cb0575f5a60a1a033af4424866ee4d329d3bbbacc798b873d507ffd3",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m254_dual_path_web_candidate/m253_board_latest_stream.py": "5e70cae45e854bf8cbda67612af956ab4d3fadd12f90525e715496aca3803b15",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m254_dual_path_web_candidate/latest_fast_stream.py": "f3904f7c82f3770704ff5457612a11aae61af6a3453a215c8efae79d0a0fefa0",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m254_dual_path_web_candidate/fast_frame_pipeline.py": "5e0158e067a43e225f52ac267223fe257b459a0fe5a9cad219fe83e6c035eb98",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m254_dual_path_web_candidate/temporal_action_adapter.py": "19699b51b22a9bee71f4055772d80439a348076ac111086fbf6b1801d9538597",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m254_dual_path_web_candidate/immediate_safety_monitor.py": "20e61b893eb2de73896c5246c2b04eaa08c0c8001b47c613240c759236086d00",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m254_dual_path_web_candidate/fast_safety_monitor.py": "7efbb9c8f4c792d8d6004ca859ce4b612d6f76e2bccc5c00bb8808d023134ca1",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m254_dual_path_web_candidate/knife_alarm.py": "dbfc11d4ddef18bf99c0493fd83b3f45ec5116c0e89c48439c293cb601fcb7db",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/scripts/preflight.py": "6d269adf431e8e505684f4d51b23e65112a7f5a9069561b1bf7de0d013f376fd",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/configs/deployment.example.json": "bcef0e3feae8fb2e2178b25eec7afa2f1f3b0535639544eafe03a3914bdcbd3f",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m181_m120_video_board_candidate/vision_layout/SIXPORT_LAYOUT_MANIFEST.json": "2d9bea77b8868d24fa7775886feb1b9c88b8e768d51b2e192802a439060b03c1",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m181_m120_video_board_candidate/vision_layout/weights0.bin": "2e902f5f4ddec7165da4a873c713045fbb74bf0551d9dbda5fb0ce036776718e",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m181_m120_video_board_candidate/vision_layout/weights1.bin": "ed7618c3337da91fcf52d1d3a1b153d828b7ef19ded48c4f149647cfa474b3fd",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m181_m120_video_board_candidate/vision_layout/weights2.bin": "98c518e426d8bca035220d6a59bee13879d23f5f70eb4b6a3080921457588346",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m181_m120_video_board_candidate/vision_layout/weights3.bin": "5b9ce87baab34a7b43df4ed436e09200635866d71a154a6e598b26a44ac08b2a",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m181_m120_video_board_candidate/auxiliary/M90_VISION_RAW_AUX_MANIFEST.json": "8e584de4fd8e7a0310a07fbe0724c1207c836c9d7181a3b627564c57d79ff66a",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m181_m120_video_board_candidate/auxiliary/m90_vision_raw_bf16.bin": "ae4353135414bf1691ce663f5973b67ab390f500b1b71789481d919c9d8a6eb2",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m181_m120_video_board_candidate/ps_vision_payload/modeling_mage_vl.py": "3fe8bb1e40fa38db4ae08da097ee1238aa4258c4d454e66fe93a44d08ab641ec",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m181_m120_video_board_candidate/ps_vision_payload/configuration_mage_vl.py": "7e3da0c90726ef33da4f0362b3c71dc28650003f1cc11e061d3e99404a8bfed8",
+      "release_staging/kv260-mage-vl-4b-prebuilt-install-20260926-v7/deployment/mage_vl4b/m181_m120_video_board_candidate/ps_vision_payload/config.json": "fd4621212569e893ce2caa110431fde73f3cc1a1d92e1b8320bb4e0cfbcad34a",
+      "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_00/source_frames_rgb448.npy": "68f7ae555f746d73c6fced91e81ad77b9384c9df39d76d4a734ba0e0c13099f9",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_00_t0_A/features_FP32.npy": "b6aef7ae950b23ff1afb58eacafc28ce42b7e2eb8ef4f6655d455413232b971b",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_00_t1_A/features_FP32.npy": "ae45aa992da5764788bb1462a0f35ec1e5feb27b804df291d2fd9f012e0489d2",
+      "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_01/source_frames_rgb448.npy": "a6bbe59c2309d8813e4f1e3b68317b24b58df7c2e13125db7e52211214bc18e0",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_01_t0_A/features_FP32.npy": "7f5a026166b7fe4c2dea32a3eeb2af11ec104c6247b869bd9d849b43fb239c06",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_01_t1_A/features_FP32.npy": "2bc01866f6ef88db6402f890b9dd20e6428a4763cbeb303f98d373b8e6b59a34",
+      "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_02/source_frames_rgb448.npy": "013851e81ed877f845e78134f7a94c77c96621b48fcf590160d32cc54ba83049",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_02_t0_A/features_FP32.npy": "b7a998505b25335cbf5d8a559b9a3a46fa5743f3bbe9072e862a645fcde89b9f",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_02_t1_A/features_FP32.npy": "2552cd0af30aa24f379f74d4b27faccec622aa5dcdbb00ff355526d434d104ab",
+      "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_03/source_frames_rgb448.npy": "3669ef8b8563b95b8c5c8ee34a07e6d8fa049f907576c5fdb8dc76deecca1190",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_03_t0_A/features_FP32.npy": "72d74514efd1949615f4200cd5f0c5d82dd41a40f771e916b648635ebe83b76e",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_03_t1_A/features_FP32.npy": "c270c55aaa47732d4addc21a72098ad652caddaeeaed815db6de8a93a6aadf25",
+      "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_04/source_frames_rgb448.npy": "4fbe6d5d632876ddb82a61e1be25f1469474a1f2203e3af36ea8895873d0ca28",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_04_t0_A/features_FP32.npy": "78ad3d5583196da38aac71b407fc533b35d60b9d365f9cb95b99fd6b52441392",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_04_t1_A/features_FP32.npy": "ca74849564189a376fd567c5246f43d336b349b02f81cfd97dfb6367d2f33521",
+      "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_05/source_frames_rgb448.npy": "fdc1c405e34027de8119819c7047315841ca6dc8ac6be96c02066aa5df3b12ce",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_05_t0_A/features_FP32.npy": "dd2dbf32b20432eb0328b6b13e410752319482b0271d781660b968bf4e994695",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_05_t1_A/features_FP32.npy": "e9542053b5cc455ac41d4378fc0fe14684e3cb93a9b2e5257a3fd023fd1887e7",
+      "deployment/mage_vl4b/optimization_v1/candidates/M455-original94-layout-performance-05/m455_private_runtime_loader01.py": "fe865e7e26c496cf933121dfa7f065187159180dfb1d70184be92dea3fb9afc6",
+      "deployment/mage_vl4b/optimization_v1/candidates/M455-original94-layout-performance-05/private_runtime/PACKAGE_MANIFEST.json": "892cf962d8cf67b6450b1e047e13ee840c876309495523bc1beefbabd735c9a6",
+      "deployment/mage_vl4b/optimization_v1/candidates/M455-original94-layout-performance-05/private_runtime/board_runtime.py": "43ca63e6d3906495f2b7e2d2f80418f4acf5c34c052ed8aea5639008aa4b4e2f",
+      "deployment/mage_vl4b/optimization_v1/candidates/M455-original94-layout-performance-05/private_runtime/contract_runtime.py": "4728cfaa34f4efb2111a34a3107a1f87db1774e491c3bd874c5453aff5ae42c1",
+      "deployment/mage_vl4b/optimization_v1/candidates/M455-original94-layout-performance-05/private_runtime/m230_prefill_runtime.py": "defbcff1cc36300fff84481f2e9eba7a06174941b568e34b2faa7885efc14df4",
+      "deployment/mage_vl4b/optimization_v1/candidates/M455-original94-layout-performance-05/private_runtime/m231_prefill_runtime.py": "73cd883604066d34aa8349a8618ed94893d4be6659c3f8fe752788e9d6ca5c21",
+      "deployment/mage_vl4b/optimization_v1/candidates/M455-original94-layout-performance-05/private_runtime/m236_prefill_runtime.py": "c5256f64a227c145466ccd86ff90aa3e593fd00fb995c50b00026acef8437961",
+      "deployment/mage_vl4b/optimization_v1/candidates/M455-original94-layout-performance-05/private_runtime/m238_prefill_runtime.py": "daf30c982c276b90ac776178ad258e536925dce52de7ab26b06a9473ff9a9d9a",
+      "deployment/mage_vl4b/optimization_v1/candidates/M455-original94-layout-performance-05/private_runtime/m455_dense_output.py": "a2428d9106decc88187d1060b6383f7c75cc8296e4e142f2f4c30db355d74e55",
+      "deployment/mage_vl4b/optimization_v1/candidates/M455-original94-layout-performance-05/private_runtime/m455_output_parser02.py": "ceb2ba1fe6419d9a2a25d6bc80c506c87cdf11205c5722ecec021e2b0a2688bc",
+      "deployment/mage_vl4b/optimization_v1/candidates/M455-original94-layout-performance-05/private_runtime/m455_runtime_abi01.py": "9ae4832a7ed63472897cf551815a6b47bb1fa8db73450b842e439929dd3b432c",
+      "deployment/mage_vl4b/optimization_v1/candidates/M455-original94-layout-performance-05/private_runtime/reserved_ddr_pool.py": "e933f9818e888ed7c924b7597adadd42f7254b942f65c645b85f17fc40f33013",
+      "experiments/visual_ps_prune_20261024/prepare02.py": "8084243cda55cbe647f91c26f6cbe4e7ecc4d5d0cb39efbe2a121b54b5648e95",
+      "experiments/visual_ps_prune_20261024/fit02.py": "7e8eae9208d6dd86344e80b7f16e77402859da79bf19ca12aba44676bb4c83be",
+      "experiments/visual_ps_prune_20261024/features02.py": "31ab423f2b79cb73577458e7b8b4950cccacb900e7c66b176361ef3d409c39b3",
+      "experiments/visual_ps_prune_20261024/quality02.py": "e52fe0031d037f0e71e44966b28df754a1fc6f951eee61312ce974d57434a45a",
+      "experiments/visual_ps_prune_20261024/host03.py": "9cc2aa63eae1b35a73e8993c8f02aae60f1e950d169da5d4925c48895b6cb03b",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-protocol-01/RESULT.json": "3c2b90188c04c0b89aa1743a0b589dae394c179cb121082a862c2819ccfb5329",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-01/RESULT.json": "911915d6bf802d38294e27c65403b23164b3824f47b46e6394f099c1a7757873",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-host-01/RESULT.json": "590e191ac07ad66fc3d85d510fe3ac023061a3fe806632461138024138e3f461",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-host-02/RESULT.json": "be871c63b117fe2d7520ab1b78c76352fe68879df4cbfc5465d64a7e34753b68",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-protocol-02/RESULT.json": "d2c61547cf8150a55a033724df6a70b828124abf8ab60c2ff4a9692d246d7880",
+      "experiments/whole_layer_20261025/common.py": "8a75641e578e79a68ade863a8e000fe8412906d5f5031b7529ec9b6d1a3a350c",
+      "experiments/whole_layer_20261025/host.py": "eeac98d8c952ade527c969e3ccf80993e6c3e25864c01109c0bf218240391903",
+      "experiments/whole_layer_20261025/prepare.py": "a8a115f65aa634ea16b9663cbd035d2d47aecb0c07c6bf1592d444eb740f1e0a",
+      "experiments/whole_layer_20261025/quality.py": "b68f8017bf08307c5454a636f7cf9c1beb566523029c3fc53f8b828fa90da2b8",
+      "experiments/whole_layer_20261025/runtime.py": "e35a4686adb041ad7ac234b39dae0b0e13a2387c4f05beb40a1486ddda6eb7ba",
+      "experiments/whole_layer_20261025/search.py": "d627386131b4f6ef98eaee7351170e1ed73bde93634d993928e952a08bd9371b",
+      "experiments/visual_ps_prune_20261024/quality03.py": "dc98c70b489742a27af1c373c83abb800ee9384e92b004e14e91fd1974b4a9ed",
+      "deployment/mage_vl4b/optimization_v1/candidates/M523-PS3072-ttft01/TASK_CONTRACT.json": "c41d103a1078d9495715fa13f3b613d5a5490341bfe25e6bca78df3e2afd11ca",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/R1/vision_02_FP32.bin": "470c69cf338702f59fdba999da0444228128c36d490c9c58b4a683339d4c9a69",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/R1/vision_03_FP32.bin": "f6fcc1769ded99709226e954f2f8515e2637ce072280245b28c3fa47ee533ab2",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/R1/vision_06_FP32.bin": "e76a0fb856fbf9edd4f06da4215690426e11460424765dda3df3b249651f1a3b",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_00_t0/vision_02/cropped_PS_FP32.npy": "24ea40c74c90f728dd82694cf4ee8f59f646f7d5e45f45cbd23db80ef352d65b",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_00_t0/vision_02/input_FP32.npy": "349931a0ff7964bd2d9e03e1938fe5232be05a9d2c944d647c0b5639a0c81aa3",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_00_t0/vision_02/original_PS_FP32.npy": "da133681db12d5071d192c6d6b13b07ad609b508ebe32e95f5137f611c7f5b18",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_00_t0/vision_03/cropped_PS_FP32.npy": "c0901f4d22d53cb059338341db85c42367892f4eb0a6de68a802e55320e47c0d",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_00_t0/vision_03/input_FP32.npy": "6d84c7111e395d87d298da784d7affd1d9aa7d20b238a359ac7d072a6c61097b",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_00_t0/vision_03/original_PS_FP32.npy": "779902446224c72026e6c9590ab3aa54c9779c5afab2911c03447ef3de9fcf6a",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_00_t0/vision_06/cropped_PS_FP32.npy": "b3c1bca63da806533e32b0d9122636edbc0acdbae83a76aa9325943f53955646",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_00_t0/vision_06/input_FP32.npy": "38dddcd29cd485453b52d4d5012512fe7ce3226d16eb32a511c313e5dde4ac3b",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_00_t0/vision_06/original_PS_FP32.npy": "eb4f2ed9573e55d3316174f8a4563fef55381d8e44e159ba41aa6ce0b8f73348",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_00_t1/vision_02/cropped_PS_FP32.npy": "944409f759000c52a1450df88adecc4e35a0fd9f494bade57bc8964e8358bfc0",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_00_t1/vision_02/input_FP32.npy": "fab771ba4de49e9092440b47e0e719942f4998a18e9eaca940c844c3d8eb88af",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_00_t1/vision_02/original_PS_FP32.npy": "b8b2dfbaeec98e0cd766489d55dac2cffaec1c230d362a77a8ce21c45d340760",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_00_t1/vision_03/cropped_PS_FP32.npy": "372e668be0ac9774ccf223603246128cc79d518307f04ea6abfecdf0716cc026",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_00_t1/vision_03/input_FP32.npy": "eba38f9c2a7ced16b251a70de9eaf6b60d6518fcc0245639a0719e3b650bcb14",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_00_t1/vision_03/original_PS_FP32.npy": "56d482cf76903ede9945b30d534b41d83f3449d58f155f19662894bf378f15ae",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_00_t1/vision_06/cropped_PS_FP32.npy": "0da1844ca21d885b3aa2b62e525da197d20f22b313085254ffb957e4a259b65f",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_00_t1/vision_06/input_FP32.npy": "c26963d3dbebe6038ede1abbf028d5f612daee5c26b74294c3c8809368b69964",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_00_t1/vision_06/original_PS_FP32.npy": "021cf0075bbef6d51cc683fc73c6a77321cae2769565692159cfafa055d06af7",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_01_t0/vision_02/cropped_PS_FP32.npy": "2385b3f78a855cbac2e0f8840c38784d1fc1507df51b3f3e68b1a48bbcf4c7ba",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_01_t0/vision_02/input_FP32.npy": "855532d9abccb035870cf04fde251aac165ec0e8d7d2a4d8181b4f79db290268",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_01_t0/vision_02/original_PS_FP32.npy": "66d72f7dc429c39728655bdc6e84e2e9f526c8d5f1cb7faf59f28c7ae5ae2fb4",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_01_t0/vision_03/cropped_PS_FP32.npy": "86518fcd14b380383364b0c9f357e6c081cdfc40ed45f19bf6a0e5bb4810c79d",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_01_t0/vision_03/input_FP32.npy": "4650739971c71daea1a73565e61f8e4347309aa6417e6295ab96923c6a0dc2f5",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_01_t0/vision_03/original_PS_FP32.npy": "65aa68eb9ad5a764d73e7412174451d6ca5d72669a0d79448426623ce5814e2f",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_01_t0/vision_06/cropped_PS_FP32.npy": "b780540960ce90b8b8eaeeb5f86e5c093f695c9127bfe4a7f4a0dc9013bef0ff",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_01_t0/vision_06/input_FP32.npy": "175a9d791f4c37d75faeec37d60dfaaf2b39aa61136e8056a460694724b31d48",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_01_t0/vision_06/original_PS_FP32.npy": "bea9672678892ecbba1e043d1dcbf4009e093c5084fc9fc2d710c7ae01498d4f",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_01_t1/vision_02/cropped_PS_FP32.npy": "4ed5cfc27f4be6d2f4921bb44ecad8bd1a21abcc045633f6f2c0b4f9b4e08588",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_01_t1/vision_02/input_FP32.npy": "c3dcb2a2a3eec70fe9bfc6748b992115e397ddc9045ddbac84e229c01e6155c6",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_01_t1/vision_02/original_PS_FP32.npy": "1c09352ae347fe834bdd88178fa3a9dbaad8440d31f09daa81c7143ccfe50490",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_01_t1/vision_03/cropped_PS_FP32.npy": "88cfc6b79d78ea11a0fcc99944dd87f2dea1c6d3896bb13b0b784af7ad4c0653",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_01_t1/vision_03/input_FP32.npy": "b20679c651830218eb924104ada76f122fa856e2eb61b158de8f91491773e128",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_01_t1/vision_03/original_PS_FP32.npy": "fca54bd9d8143b65d85c3c539912bef6c5169fa58d3a72c71c6ff3977c2f7da8",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_01_t1/vision_06/cropped_PS_FP32.npy": "7da4c43989855941521e8e31321b2d917937dd94f0433d00e147225cc927961b",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_01_t1/vision_06/input_FP32.npy": "51f48813db272c101477dd7818041e2b313dcdb31388d49cdf1ea9689f86d194",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_01_t1/vision_06/original_PS_FP32.npy": "57e207c0686ff8e428dc1dce966742d9554b809b2222fd2f115b5e1819c10338",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_02_t0/vision_02/cropped_PS_FP32.npy": "b0a098cda1a67cfad6e74123c1c8bcb95dbce351b63553cb2a3e1fa23f408cbb",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_02_t0/vision_02/input_FP32.npy": "890902d1121fb96ba83db8f46f51b1ef9f9e59088d5a56eab643028c4ccdeb6d",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_02_t0/vision_02/original_PS_FP32.npy": "d7d7f8a0fb991d4c90a615fed1c927794a12b6926f300faa3374f0561c0c933b",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_02_t0/vision_03/cropped_PS_FP32.npy": "689d0ae05f4ce18d809dd773c52dfed59630eb1ebe71c4031873710c1a3cfd5c",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_02_t0/vision_03/input_FP32.npy": "0da8f8241629403011fb0efd075e7825ff3eebcfbe0ee250c957970e0bbb60d2",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_02_t0/vision_03/original_PS_FP32.npy": "046e9a22658f8064a3d9eca0d8756c6012bddadc2e01f608f7d1724c081484df",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_02_t0/vision_06/cropped_PS_FP32.npy": "882f019ed05376a74819e752bbc982c592ded32639f7a6bc60f976630df63f16",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_02_t0/vision_06/input_FP32.npy": "c7dbd05e17432496aab8b5f75a68c9d98dd27fee6a3818d4548375723567185d",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_02_t0/vision_06/original_PS_FP32.npy": "fb8bee1cf695b50c9ed1daa6c91881b488e7444bce53170a9a1aa969f2a8834c",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_02_t1/vision_02/cropped_PS_FP32.npy": "f673c99e14eabcd63e320acafab380f86e979b8592dc17e6b14cc3f4c65a2265",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_02_t1/vision_02/input_FP32.npy": "2c1b125e9efba1427ab95402938addef8ced82dca47374f13f35b504ba4a6eb7",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_02_t1/vision_02/original_PS_FP32.npy": "d55d1892ae2627666ee530c3839fd3fc03e3b89a9030706dce9b404f5cbc90bd",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_02_t1/vision_03/cropped_PS_FP32.npy": "4379ba4d527b3564f8094883aae7f2aac671ea1c5c42778e74c2f63330df8062",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_02_t1/vision_03/input_FP32.npy": "44ebfe845ecad4b0bd827f3922be9f6feddb829665af74625094b5fd499c8b39",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_02_t1/vision_03/original_PS_FP32.npy": "be61500e8e8cf8fa81ef4f6dd811e4d9fdb7e1972ebe9a021e46a947d9517e18",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_02_t1/vision_06/cropped_PS_FP32.npy": "f3ae5f63de5f16a2e52c2b7bfc8398589e3774a999f7d89cb0a91c8aa3632c52",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_02_t1/vision_06/input_FP32.npy": "f1a1f8ec129b3c59a04384655d48679ef7b3cb0404bdc8ee9aec735f0b910fbf",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_02_t1/vision_06/original_PS_FP32.npy": "747f1f0e3928961a8cbdf4cc1d3815f9696d358d3af9bd81b87b327d5726436b",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_04_t0/vision_02/cropped_PS_FP32.npy": "8267cc2e5d9ba3ab016fd5275852a75b7fe05ed73b0b6b9e8150e3977d1d262b",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_04_t0/vision_02/input_FP32.npy": "4e6a306f51beda735e8396cd3bbbe9b02efd16a69d758352eed6802f1e350f1a",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_04_t0/vision_02/original_PS_FP32.npy": "1f2a56b9c768dd9188778362c823977c8298d2daaec463e9aa8453b37995a149",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_04_t0/vision_03/cropped_PS_FP32.npy": "07457e7ddf74494e84d1440428b41020d1fd97ae7b23e96f057edf2112909ca2",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_04_t0/vision_03/input_FP32.npy": "00680673de93d7b8e58d600b99b17d119cb5e885cc2a5358220ad486a8611595",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_04_t0/vision_03/original_PS_FP32.npy": "c90e38cea14c558f6f370f3f2c0bfa23fb4e3510297ec2ffea3adce1503c3dd6",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_04_t0/vision_06/cropped_PS_FP32.npy": "5286cb2cd440efcd84c493edfad3debd1e545970b10f5ada7704aede7cfe5a0d",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_04_t0/vision_06/input_FP32.npy": "9567de422c67d82f6840bb26fe3f414963583fb1b9db803d7b62f2ecf4176d7c",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_04_t0/vision_06/original_PS_FP32.npy": "06844eed22c0be027f2429695aa3a4e2892a40416d46f4a57104655a86c96046",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_04_t1/vision_02/cropped_PS_FP32.npy": "619f9ffa7934e2239ba961a60b21c7267dbad9e2f648f26477c8033eaae1d702",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_04_t1/vision_02/input_FP32.npy": "38ab4e074ca91c267c26d4d410d7bdf8bff051507cbec18c295edaf33f687e1f",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_04_t1/vision_02/original_PS_FP32.npy": "9ca9bd9e81f203aa3c5f8089e88acfcef1fb823db78dbce52f15098b38efc27a",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_04_t1/vision_03/cropped_PS_FP32.npy": "e7688c53b2493bcfd4defa36726027d7b050fd7d6e58883a20583174534c8761",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_04_t1/vision_03/input_FP32.npy": "6964fe19ea875d6f63cb31161b0ed6559391a93ec0abfff80af5a91287b0c96e",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_04_t1/vision_03/original_PS_FP32.npy": "0e6c051436f90fc0de6445539240d394bafdf147067e1a94498a060ba8c4d7ee",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_04_t1/vision_06/cropped_PS_FP32.npy": "aac1649684414ddeb9389e9465463268869ec7fe9db3316d6f91a56abf232e23",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_04_t1/vision_06/input_FP32.npy": "00f95fbb454c53580bb55a811f325eb4d38a4e6eaead835fd113474fd69a2052",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/cal_04_t1/vision_06/original_PS_FP32.npy": "0297074bc42e91a826290d8d79f484d6eaefa28b85155ee9d6ac66abc8aa8c6d",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/codes/vision_02.npz": "c892a00842ddcd02786f3e08182a543d74e4d7bf6ae35e31c3bf850c37e98660",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/codes/vision_03.npz": "39f0847d6fefe5dd7f4d8c92859e727c0f72f8433f47de4375ecd968258ad8d5",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-fit-02/codes/vision_06.npz": "564f8e4cb817b0caa715d5016dda54a2b8a6d26100a01b70ecb2d0867929a31e",
+      "tmp/m523_PS3072_RAM_log_trial03/Run.log": "d567cdef7fa67c6213a5e00a6b6836912e98dac228f44e674e71f5c2acbfbb8b",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-wait-records-01/raw/HOT_B1/PHYSICAL_TRANSACTIONS.json": "5d7f5334931fdd209f4fcae97c722e44bec9c965dae17ed76dd4df6a020039ed",
+      "deployment/mage_vl4b/optimization_v1/runs/M523-PS-V2-V3-V6-3072-wait-records-01/raw/HOT_B2/PHYSICAL_TRANSACTIONS.json": "0484e56ac0b1a83f3a0770fd143937c9d1e7f7d52669b82dc42ddd61f29e6045"
+    },
+    "recovery_full_read": {
+      "CURRENT_STATE.md": "56c6f8a72c3082371da4a4a93af7ac5882444b631101476ec1adcca464cddb10",
+      "docsMILESTONES.md": "8121cfc189767a76bd4d48e60371700927733f6778942b5ddc6432e6e257a3aa",
+      "DEPLOYMENT_OPERATION_MISTAKES_REVIEW.md": "5b339eb81c7caf89b79c3fc2cca0803d03d72c7a0c59b4856585b460fe8ed2c1",
+      "deployment/mage_vl4b/BOARD_GATE_RESULT.json": "1c3fd0e964affe1d502016bd536b7d19c905678c514f6f55dd7fdae5c9aecdd8"
+    },
+    "costs": {
+      "vision_00": {
+        "rank_cost_s": 1.7384445,
+        "source": "59.67s parent hotB original whole-vision-layer wall interval; includes CPU work and host overhead",
+        "samples_s": [
+          1.741913,
+          1.734976
+        ]
+      },
+      "vision_01": {
+        "rank_cost_s": 1.7177449999999999,
+        "source": "59.67s parent hotB original whole-vision-layer wall interval; includes CPU work and host overhead",
+        "samples_s": [
+          1.7167270000000001,
+          1.7187629999999998
+        ]
+      },
+      "vision_02": {
+        "rank_cost_s": 1.116049,
+        "source": "59.67s parent hotB original whole-vision-layer wall interval; includes CPU work and host overhead",
+        "samples_s": [
+          1.1195920000000001,
+          1.112506
+        ]
+      },
+      "vision_03": {
+        "rank_cost_s": 1.1133899999999999,
+        "source": "59.67s parent hotB original whole-vision-layer wall interval; includes CPU work and host overhead",
+        "samples_s": [
+          1.097219,
+          1.1295609999999998
+        ]
+      },
+      "vision_04": {
+        "rank_cost_s": 1.513748,
+        "source": "59.67s parent hotB original whole-vision-layer wall interval; includes CPU work and host overhead",
+        "samples_s": [
+          1.492852,
+          1.534644
+        ]
+      },
+      "vision_05": {
+        "rank_cost_s": 1.5233919999999999,
+        "source": "59.67s parent hotB original whole-vision-layer wall interval; includes CPU work and host overhead",
+        "samples_s": [
+          1.518559,
+          1.528225
+        ]
+      },
+      "vision_06": {
+        "rank_cost_s": 1.14886,
+        "source": "59.67s parent hotB original whole-vision-layer wall interval; includes CPU work and host overhead",
+        "samples_s": [
+          1.128756,
+          1.168964
+        ]
+      },
+      "vision_07": {
+        "rank_cost_s": 1.5278490000000002,
+        "source": "59.67s parent hotB original whole-vision-layer wall interval; includes CPU work and host overhead",
+        "samples_s": [
+          1.5372860000000002,
+          1.518412
+        ]
+      },
+      "vision_08": {
+        "rank_cost_s": 1.539187,
+        "source": "59.67s parent hotB original whole-vision-layer wall interval; includes CPU work and host overhead",
+        "samples_s": [
+          1.5493050000000002,
+          1.529069
+        ]
+      },
+      "vision_09": {
+        "rank_cost_s": 1.576875,
+        "source": "59.67s parent hotB original whole-vision-layer wall interval; includes CPU work and host overhead",
+        "samples_s": [
+          1.5847090000000001,
+          1.569041
+        ]
+      },
+      "vision_10": {
+        "rank_cost_s": 1.498331,
+        "source": "59.67s parent hotB original whole-vision-layer wall interval; includes CPU work and host overhead",
+        "samples_s": [
+          1.4997470000000002,
+          1.496915
+        ]
+      },
+      "vision_11": {
+        "rank_cost_s": 1.5650020000000002,
+        "source": "59.67s parent hotB original whole-vision-layer wall interval; includes CPU work and host overhead",
+        "samples_s": [
+          1.5854380000000001,
+          1.544566
+        ]
+      },
+      "vision_12": {
+        "rank_cost_s": 1.548557,
+        "source": "59.67s parent hotB original whole-vision-layer wall interval; includes CPU work and host overhead",
+        "samples_s": [
+          1.5857809999999999,
+          1.511333
+        ]
+      },
+      "vision_13": {
+        "rank_cost_s": 1.020516,
+        "source": "59.67s parent hotB original whole-vision-layer wall interval; includes CPU work and host overhead",
+        "samples_s": [
+          1.02778,
+          1.013252
+        ]
+      },
+      "vision_14": {
+        "rank_cost_s": 0.9877400000000001,
+        "source": "59.67s parent hotB original whole-vision-layer wall interval; includes CPU work and host overhead",
+        "samples_s": [
+          0.98966,
+          0.98582
+        ]
+      },
+      "vision_15": {
+        "rank_cost_s": 0.9846195,
+        "source": "59.67s parent hotB original whole-vision-layer wall interval; includes CPU work and host overhead",
+        "samples_s": [
+          0.984121,
+          0.985118
+        ]
+      },
+      "vision_16": {
+        "rank_cost_s": 1.0154524999999999,
+        "source": "59.67s parent hotB original whole-vision-layer wall interval; includes CPU work and host overhead",
+        "samples_s": [
+          1.030212,
+          1.000693
+        ]
+      },
+      "vision_17": {
+        "rank_cost_s": 1.0231374999999998,
+        "source": "59.67s parent hotB original whole-vision-layer wall interval; includes CPU work and host overhead",
+        "samples_s": [
+          1.04059,
+          1.005685
+        ]
+      },
+      "vision_18": {
+        "rank_cost_s": 1.017202,
+        "source": "59.67s parent hotB original whole-vision-layer wall interval; includes CPU work and host overhead",
+        "samples_s": [
+          1.027559,
+          1.006845
+        ]
+      },
+      "vision_19": {
+        "rank_cost_s": 1.01152,
+        "source": "59.67s parent hotB original whole-vision-layer wall interval; includes CPU work and host overhead",
+        "samples_s": [
+          1.038983,
+          0.9840570000000001
+        ]
+      },
+      "vision_20": {
+        "rank_cost_s": 1.0164475,
+        "source": "59.67s parent hotB original whole-vision-layer wall interval; includes CPU work and host overhead",
+        "samples_s": [
+          1.0344200000000001,
+          0.998475
+        ]
+      },
+      "vision_21": {
+        "rank_cost_s": 1.001441,
+        "source": "59.67s parent hotB original whole-vision-layer wall interval; includes CPU work and host overhead",
+        "samples_s": [
+          1.009158,
+          0.993724
+        ]
+      },
+      "vision_22": {
+        "rank_cost_s": 1.0417130000000001,
+        "source": "59.67s parent hotB original whole-vision-layer wall interval; includes CPU work and host overhead",
+        "samples_s": [
+          1.054391,
+          1.0290350000000001
+        ]
+      },
+      "vision_23": {
+        "rank_cost_s": 1.0562179999999999,
+        "source": "59.67s parent hotB original whole-vision-layer wall interval; includes CPU work and host overhead",
+        "samples_s": [
+          1.06806,
+          1.044376
+        ]
+      },
+      "language_00": {
+        "rank_cost_s": 0.204759107,
+        "source": "Saved same128/T32 workload submit-to-complete interval sum; excludes staging/parser gaps; not whole-layer latency or pure FPGA compute",
+        "samples_s": [
+          0.203078869,
+          0.206439345
+        ]
+      },
+      "language_01": {
+        "rank_cost_s": 0.19790996249999998,
+        "source": "Saved same128/T32 workload submit-to-complete interval sum; excludes staging/parser gaps; not whole-layer latency or pure FPGA compute",
+        "samples_s": [
+          0.197649373,
+          0.198170552
+        ]
+      },
+      "language_02": {
+        "rank_cost_s": 0.19808811199999998,
+        "source": "Saved same128/T32 workload submit-to-complete interval sum; excludes staging/parser gaps; not whole-layer latency or pure FPGA compute",
+        "samples_s": [
+          0.198188131,
+          0.197988093
+        ]
+      },
+      "language_03": {
+        "rank_cost_s": 0.205489694,
+        "source": "Saved same128/T32 workload submit-to-complete interval sum; excludes staging/parser gaps; not whole-layer latency or pure FPGA compute",
+        "samples_s": [
+          0.20511936,
+          0.205860028
+        ]
+      },
+      "language_04": {
+        "rank_cost_s": 0.19787389649999998,
+        "source": "Saved same128/T32 workload submit-to-complete interval sum; excludes staging/parser gaps; not whole-layer latency or pure FPGA compute",
+        "samples_s": [
+          0.198763911,
+          0.196983882
+        ]
+      },
+      "language_05": {
+        "rank_cost_s": 0.2031709925,
+        "source": "Saved same128/T32 workload submit-to-complete interval sum; excludes staging/parser gaps; not whole-layer latency or pure FPGA compute",
+        "samples_s": [
+          0.20378119,
+          0.20256079500000002
+        ]
+      },
+      "language_06": {
+        "rank_cost_s": 0.213357391,
+        "source": "Saved same128/T32 workload submit-to-complete interval sum; excludes staging/parser gaps; not whole-layer latency or pure FPGA compute",
+        "samples_s": [
+          0.21535348199999998,
+          0.2113613
+        ]
+      },
+      "language_07": {
+        "rank_cost_s": 0.2041704595,
+        "source": "Saved same128/T32 workload submit-to-complete interval sum; excludes staging/parser gaps; not whole-layer latency or pure FPGA compute",
+        "samples_s": [
+          0.202841681,
+          0.205499238
+        ]
+      },
+      "language_08": {
+        "rank_cost_s": 0.20229430850000002,
+        "source": "Saved same128/T32 workload submit-to-complete interval sum; excludes staging/parser gaps; not whole-layer latency or pure FPGA compute",
+        "samples_s": [
+          0.201355955,
+          0.203232662
+        ]
+      },
+      "language_09": {
+        "rank_cost_s": 0.20770524299999998,
+        "source": "Saved same128/T32 workload submit-to-complete interval sum; excludes staging/parser gaps; not whole-layer latency or pure FPGA compute",
+        "samples_s": [
+          0.209596267,
+          0.205814219
+        ]
+      },
+      "language_10": {
+        "rank_cost_s": 0.2018464985,
+        "source": "Saved same128/T32 workload submit-to-complete interval sum; excludes staging/parser gaps; not whole-layer latency or pure FPGA compute",
+        "samples_s": [
+          0.201811899,
+          0.201881098
+        ]
+      },
+      "language_11": {
+        "rank_cost_s": 0.201937078,
+        "source": "Saved same128/T32 workload submit-to-complete interval sum; excludes staging/parser gaps; not whole-layer latency or pure FPGA compute",
+        "samples_s": [
+          0.202201489,
+          0.201672667
+        ]
+      },
+      "language_12": {
+        "rank_cost_s": 0.1936860775,
+        "source": "Saved same128/T32 workload submit-to-complete interval sum; excludes staging/parser gaps; not whole-layer latency or pure FPGA compute",
+        "samples_s": [
+          0.194511115,
+          0.19286104
+        ]
+      },
+      "language_13": {
+        "rank_cost_s": 0.203688779,
+        "source": "Saved same128/T32 workload submit-to-complete interval sum; excludes staging/parser gaps; not whole-layer latency or pure FPGA compute",
+        "samples_s": [
+          0.20273868,
+          0.204638878
+        ]
+      },
+      "language_14": {
+        "rank_cost_s": 0.1944505335,
+        "source": "Saved same128/T32 workload submit-to-complete interval sum; excludes staging/parser gaps; not whole-layer latency or pure FPGA compute",
+        "samples_s": [
+          0.194749327,
+          0.19415174
+        ]
+      },
+      "language_15": {
+        "rank_cost_s": 0.1947707885,
+        "source": "Saved same128/T32 workload submit-to-complete interval sum; excludes staging/parser gaps; not whole-layer latency or pure FPGA compute",
+        "samples_s": [
+          0.194712768,
+          0.194828809
+        ]
+      },
+      "language_16": {
+        "rank_cost_s": 0.19600263099999998,
+        "source": "Saved same128/T32 workload submit-to-complete interval sum; excludes staging/parser gaps; not whole-layer latency or pure FPGA compute",
+        "samples_s": [
+          0.194727618,
+          0.197277644
+        ]
+      },
+      "language_17": {
+        "rank_cost_s": 0.203754013,
+        "source": "Saved same128/T32 workload submit-to-complete interval sum; excludes staging/parser gaps; not whole-layer latency or pure FPGA compute",
+        "samples_s": [
+          0.200945648,
+          0.206562378
+        ]
+      },
+      "language_18": {
+        "rank_cost_s": 0.202108568,
+        "source": "Saved same128/T32 workload submit-to-complete interval sum; excludes staging/parser gaps; not whole-layer latency or pure FPGA compute",
+        "samples_s": [
+          0.201885697,
+          0.202331439
+        ]
+      },
+      "language_19": {
+        "rank_cost_s": 0.205758734,
+        "source": "Saved same128/T32 workload submit-to-complete interval sum; excludes staging/parser gaps; not whole-layer latency or pure FPGA compute",
+        "samples_s": [
+          0.206668568,
+          0.2048489
+        ]
+      },
+      "language_20": {
+        "rank_cost_s": 0.19376818899999998,
+        "source": "Saved same128/T32 workload submit-to-complete interval sum; excludes staging/parser gaps; not whole-layer latency or pure FPGA compute",
+        "samples_s": [
+          0.193710148,
+          0.19382623
+        ]
+      },
+      "language_21": {
+        "rank_cost_s": 0.19444506550000001,
+        "source": "Saved same128/T32 workload submit-to-complete interval sum; excludes staging/parser gaps; not whole-layer latency or pure FPGA compute",
+        "samples_s": [
+          0.194585585,
+          0.194304546
+        ]
+      },
+      "language_22": {
+        "rank_cost_s": 0.194766127,
+        "source": "Saved same128/T32 workload submit-to-complete interval sum; excludes staging/parser gaps; not whole-layer latency or pure FPGA compute",
+        "samples_s": [
+          0.194879628,
+          0.194652626
+        ]
+      },
+      "language_23": {
+        "rank_cost_s": 0.195132348,
+        "source": "Saved same128/T32 workload submit-to-complete interval sum; excludes staging/parser gaps; not whole-layer latency or pure FPGA compute",
+        "samples_s": [
+          0.195299215,
+          0.194965481
+        ]
+      },
+      "language_24": {
+        "rank_cost_s": 0.1948384425,
+        "source": "Saved same128/T32 workload submit-to-complete interval sum; excludes staging/parser gaps; not whole-layer latency or pure FPGA compute",
+        "samples_s": [
+          0.19423229,
+          0.195444595
+        ]
+      },
+      "language_25": {
+        "rank_cost_s": 0.20438403900000002,
+        "source": "Saved same128/T32 workload submit-to-complete interval sum; excludes staging/parser gaps; not whole-layer latency or pure FPGA compute",
+        "samples_s": [
+          0.204116333,
+          0.204651745
+        ]
+      },
+      "language_26": {
+        "rank_cost_s": 0.1948895645,
+        "source": "Saved same128/T32 workload submit-to-complete interval sum; excludes staging/parser gaps; not whole-layer latency or pure FPGA compute",
+        "samples_s": [
+          0.194881907,
+          0.194897222
+        ]
+      },
+      "language_27": {
+        "rank_cost_s": 0.199613025,
+        "source": "Saved same128/T32 workload submit-to-complete interval sum; excludes staging/parser gaps; not whole-layer latency or pure FPGA compute",
+        "samples_s": [
+          0.204337062,
+          0.194888988
+        ]
+      },
+      "language_28": {
+        "rank_cost_s": 0.19568595700000002,
+        "source": "Saved same128/T32 workload submit-to-complete interval sum; excludes staging/parser gaps; not whole-layer latency or pure FPGA compute",
+        "samples_s": [
+          0.196673496,
+          0.194698418
+        ]
+      },
+      "language_29": {
+        "rank_cost_s": 0.19601799949999998,
+        "source": "Saved same128/T32 workload submit-to-complete interval sum; excludes staging/parser gaps; not whole-layer latency or pure FPGA compute",
+        "samples_s": [
+          0.196669407,
+          0.195366592
+        ]
+      },
+      "language_30": {
+        "rank_cost_s": 0.20239434350000002,
+        "source": "Saved same128/T32 workload submit-to-complete interval sum; excludes staging/parser gaps; not whole-layer latency or pure FPGA compute",
+        "samples_s": [
+          0.202717116,
+          0.202071571
+        ]
+      },
+      "language_31": {
+        "rank_cost_s": 0.1990882685,
+        "source": "Saved same128/T32 workload submit-to-complete interval sum; excludes staging/parser gaps; not whole-layer latency or pure FPGA compute",
+        "samples_s": [
+          0.198253146,
+          0.199923391
+        ]
+      },
+      "language_32": {
+        "rank_cost_s": 0.1972472085,
+        "source": "Saved same128/T32 workload submit-to-complete interval sum; excludes staging/parser gaps; not whole-layer latency or pure FPGA compute",
+        "samples_s": [
+          0.199381945,
+          0.195112472
+        ]
+      },
+      "language_33": {
+        "rank_cost_s": 0.20371789750000002,
+        "source": "Saved same128/T32 workload submit-to-complete interval sum; excludes staging/parser gaps; not whole-layer latency or pure FPGA compute",
+        "samples_s": [
+          0.202504705,
+          0.20493109
+        ]
+      },
+      "language_34": {
+        "rank_cost_s": 0.19428716399999998,
+        "source": "Saved same128/T32 workload submit-to-complete interval sum; excludes staging/parser gaps; not whole-layer latency or pure FPGA compute",
+        "samples_s": [
+          0.19431532399999998,
+          0.19425900399999999
+        ]
+      },
+      "language_35": {
+        "rank_cost_s": 0.226105866,
+        "source": "Saved same128/T32 workload submit-to-complete interval sum; excludes staging/parser gaps; not whole-layer latency or pure FPGA compute",
+        "samples_s": [
+          0.226058009,
+          0.226153723
+        ]
+      }
+    },
+    "parent": "PS3072 demo research on frozen22: hot59.6703845925s, parent feature gate FAIL retained",
+    "target": {
+      "vision_retained": 12,
+      "language_retained": 16
+    },
+    "protected": {
+      "vision": [
+        0,
+        1,
+        23
+      ],
+      "language": [
+        0,
+        35
+      ]
+    },
+    "schedule": [
+      {
+        "remove_vision": 3,
+        "remove_language": 5
+      },
+      {
+        "remove_vision": 3,
+        "remove_language": 5
+      },
+      {
+        "remove_vision": 3,
+        "remove_language": 5
+      },
+      {
+        "remove_vision": 3,
+        "remove_language": 5
+      }
+    ],
+    "screening": "Training8 only: every active block residual norm/output norm divided by saved execution-cost proxy. Initial top2 per branch additionally measured by actual single-block deletion first-token forwards (32). Unmeasured individual task effects remain explicitly unmeasured.",
+    "selection": "Each of4 rounds reranks under selected preceding combination. Compare2 joint batches: top3V/top5L versus swapping their last-ranked member for next. Rank by new training errors vs original parent, new Other tokens, then mean signed correct-direction margin, then proxy damage; deterministic tie by arm index. No reserved-cal selection.",
+    "search_budget": {
+      "first_token_sequences": 104,
+      "full_vision_forwards": 88,
+      "wall_seconds": 14400
+    },
+    "final_quality": "Parent and one frozen target candidate:12cal each, exact128 IDs, full151936FP32 logits,32cap,naturalEOS; new errors/misses/nondecision/contradictions/truncation independently reviewed. No prompt or factor search. Failed aggressive target preserved; no automatic training, board run, or further search.",
+    "task_change": "Exact existing128 board question replaces old160 explanation instruction for both arms. Do not import old10/12 as new quality evidence; common explanation defect and PS3072 feature FAIL retained.",
+    "physical_removal": "Contract actual ModuleLists in original order, remap attention.layer_idx to compact order, config.num_hidden_layers/layer_types and DynamicCache depth match; execution hooks prove removed blocks0 calls and cache entries only retained blocks. Offline only: board scheduler/deployment not modified.",
+    "no_weight_updates": true,
+    "new_R1": false,
+    "new_quantization": false,
+    "heldout_opened": 0,
+    "board_commands": 0,
+    "AI_generated_pilot": true,
+    "source_group_independence_limited": true,
+    "full_release_quality_pass": false,
+    "TTFT_under30_pass": false
+  },
+  "token_ids": [
+    151644,
+    8948,
+    198,
+    2610,
+    525,
+    264,
+    10950,
+    17847,
+    13,
+    151645,
+    198,
+    151644,
+    872,
+    198,
+    151652,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151653,
+    151652,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151655,
+    151653,
+    3872,
+    264,
+    21430,
+    9434,
+    304,
+    1493,
+    6194,
+    151645,
+    198,
+    151644,
+    77091,
+    198
+  ],
+  "vision": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    10,
+    13,
+    14,
+    15,
+    23
+  ],
+  "language": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    16,
+    22,
+    23,
+    24,
+    25,
+    26,
+    28,
+    29,
+    33,
+    34,
+    35
+  ],
+  "teacher_capture_result": "deployment/mage_vl4b/optimization_v1/runs/M524-demo-layer-distillation-128-teacher-capture-01/RESULT.json",
+  "teacher_capture_sha256": "0fb4e6cc9e25ec3b381261c1c6466fab52d886dfbdf8ebe34dfb274b1758b269",
+  "augmentation_preview": "deployment/mage_vl4b/optimization_v1/runs/M524-demo-layer-distillation-128-augmentation-preview-01/RESULT.json",
+  "augmentation_preview_sha256": "cdcfc3b83c9d366903f7d0d24d1611d90485b83102651225f00984b2ed2dd0f7",
+  "train_requests": [
+    {
+      "id": "cal_00_t0",
+      "clip_id": "calibration-cal-falling-no-knife-01-3fd2c968",
+      "source_group": "3fd2c968a97d82222ac5079dd796aa2e0f77b712ed4dae4263967cb2785cb2e0",
+      "knife_present": false,
+      "phase": "fit_group_seen",
+      "timestamp_index": 0,
+      "frames": "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_00/source_frames_rgb448.npy",
+      "frames_sha256": "68f7ae555f746d73c6fced91e81ad77b9384c9df39d76d4a734ba0e0c13099f9",
+      "features": {
+        "A": {
+          "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_00_t0_A/features_FP32.npy",
+          "sha256": "b6aef7ae950b23ff1afb58eacafc28ce42b7e2eb8ef4f6655d455413232b971b"
+        },
+        "B": {
+          "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_00_t0_B/features_FP32.npy",
+          "sha256": "ea55921add13476c38ecc1f82d6e179a20b7a7f83ccd759f2f5a5138de25f744"
+        }
+      }
+    },
+    {
+      "id": "cal_00_t1",
+      "clip_id": "calibration-cal-falling-no-knife-01-3fd2c968",
+      "source_group": "3fd2c968a97d82222ac5079dd796aa2e0f77b712ed4dae4263967cb2785cb2e0",
+      "knife_present": false,
+      "phase": "fit_group_seen",
+      "timestamp_index": 1,
+      "frames": "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_00/source_frames_rgb448.npy",
+      "frames_sha256": "68f7ae555f746d73c6fced91e81ad77b9384c9df39d76d4a734ba0e0c13099f9",
+      "features": {
+        "A": {
+          "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_00_t1_A/features_FP32.npy",
+          "sha256": "ae45aa992da5764788bb1462a0f35ec1e5feb27b804df291d2fd9f012e0489d2"
+        },
+        "B": {
+          "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_00_t1_B/features_FP32.npy",
+          "sha256": "8c60d9f9e10369c18b4479811d04f1720402c15021fa53d7774d8487f9c00461"
+        }
+      }
+    },
+    {
+      "id": "cal_01_t0",
+      "clip_id": "calibration-cal-fighting-no-knife-01-f0b10fe2",
+      "source_group": "f0b10fe23df78a0beda94ff067162c5de0af35073edb0706363c5a83610c3902",
+      "knife_present": false,
+      "phase": "fit_group_seen",
+      "timestamp_index": 0,
+      "frames": "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_01/source_frames_rgb448.npy",
+      "frames_sha256": "a6bbe59c2309d8813e4f1e3b68317b24b58df7c2e13125db7e52211214bc18e0",
+      "features": {
+        "A": {
+          "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_01_t0_A/features_FP32.npy",
+          "sha256": "7f5a026166b7fe4c2dea32a3eeb2af11ec104c6247b869bd9d849b43fb239c06"
+        },
+        "B": {
+          "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_01_t0_B/features_FP32.npy",
+          "sha256": "9061c5302cebd012a6f5a4cabc7b0072cbe3a1a9b536fa8d5e8cd8262995ac9c"
+        }
+      }
+    },
+    {
+      "id": "cal_01_t1",
+      "clip_id": "calibration-cal-fighting-no-knife-01-f0b10fe2",
+      "source_group": "f0b10fe23df78a0beda94ff067162c5de0af35073edb0706363c5a83610c3902",
+      "knife_present": false,
+      "phase": "fit_group_seen",
+      "timestamp_index": 1,
+      "frames": "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_01/source_frames_rgb448.npy",
+      "frames_sha256": "a6bbe59c2309d8813e4f1e3b68317b24b58df7c2e13125db7e52211214bc18e0",
+      "features": {
+        "A": {
+          "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_01_t1_A/features_FP32.npy",
+          "sha256": "2bc01866f6ef88db6402f890b9dd20e6428a4763cbeb303f98d373b8e6b59a34"
+        },
+        "B": {
+          "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_01_t1_B/features_FP32.npy",
+          "sha256": "f7252a3a576ae0bd088dd26ea4164231a9f9f8f561b90fcff579f68ed624ee6a"
+        }
+      }
+    },
+    {
+      "id": "cal_02_t0",
+      "clip_id": "calibration-cal-idle-knife-01-364a3160",
+      "source_group": "364a316054d9be0c8550acc3ee0c1d227486ef23045f3b75cb72f9fd0913916f",
+      "knife_present": true,
+      "phase": "fit_group_seen",
+      "timestamp_index": 0,
+      "frames": "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_02/source_frames_rgb448.npy",
+      "frames_sha256": "013851e81ed877f845e78134f7a94c77c96621b48fcf590160d32cc54ba83049",
+      "features": {
+        "A": {
+          "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_02_t0_A/features_FP32.npy",
+          "sha256": "b7a998505b25335cbf5d8a559b9a3a46fa5743f3bbe9072e862a645fcde89b9f"
+        },
+        "B": {
+          "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_02_t0_B/features_FP32.npy",
+          "sha256": "c80b3626f7c46bedbfba6732c001ef6374c1cc70b11bb69583ba7ef03182905f"
+        }
+      }
+    },
+    {
+      "id": "cal_02_t1",
+      "clip_id": "calibration-cal-idle-knife-01-364a3160",
+      "source_group": "364a316054d9be0c8550acc3ee0c1d227486ef23045f3b75cb72f9fd0913916f",
+      "knife_present": true,
+      "phase": "fit_group_seen",
+      "timestamp_index": 1,
+      "frames": "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_02/source_frames_rgb448.npy",
+      "frames_sha256": "013851e81ed877f845e78134f7a94c77c96621b48fcf590160d32cc54ba83049",
+      "features": {
+        "A": {
+          "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_02_t1_A/features_FP32.npy",
+          "sha256": "2552cd0af30aa24f379f74d4b27faccec622aa5dcdbb00ff355526d434d104ab"
+        },
+        "B": {
+          "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_02_t1_B/features_FP32.npy",
+          "sha256": "655f1a95fbae8dd09571300d4231c1f7112fb34f9fdc3f594277ba070b83f176"
+        }
+      }
+    },
+    {
+      "id": "cal_04_t0",
+      "clip_id": "calibration-cal-working-knife-02-dfd917f8",
+      "source_group": "dfd917f8126de358e2d86bbab06ee918bb824320e7aa18350db88b64b6173a90",
+      "knife_present": true,
+      "phase": "fit_group_seen",
+      "timestamp_index": 0,
+      "frames": "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_04/source_frames_rgb448.npy",
+      "frames_sha256": "4fbe6d5d632876ddb82a61e1be25f1469474a1f2203e3af36ea8895873d0ca28",
+      "features": {
+        "A": {
+          "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_04_t0_A/features_FP32.npy",
+          "sha256": "78ad3d5583196da38aac71b407fc533b35d60b9d365f9cb95b99fd6b52441392"
+        },
+        "B": {
+          "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_04_t0_B/features_FP32.npy",
+          "sha256": "efa5a10c12bc3f4ccde61f20ffcd80c41c9f2f8d2dd7e4d931d35d78a78e93c6"
+        }
+      }
+    },
+    {
+      "id": "cal_04_t1",
+      "clip_id": "calibration-cal-working-knife-02-dfd917f8",
+      "source_group": "dfd917f8126de358e2d86bbab06ee918bb824320e7aa18350db88b64b6173a90",
+      "knife_present": true,
+      "phase": "fit_group_seen",
+      "timestamp_index": 1,
+      "frames": "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_04/source_frames_rgb448.npy",
+      "frames_sha256": "4fbe6d5d632876ddb82a61e1be25f1469474a1f2203e3af36ea8895873d0ca28",
+      "features": {
+        "A": {
+          "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_04_t1_A/features_FP32.npy",
+          "sha256": "ca74849564189a376fd567c5246f43d336b349b02f81cfd97dfb6367d2f33521"
+        },
+        "B": {
+          "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_04_t1_B/features_FP32.npy",
+          "sha256": "b3a32852f897d462017891ca2e6dfa0a502994fff08cfd23257ff43b316199ec"
+        }
+      }
+    }
+  ],
+  "development_requests": [
+    {
+      "id": "cal_03_t0",
+      "clip_id": "calibration-cal-walking-knife-01-43fb67c6",
+      "source_group": "43fb67c6411938bd88c2698ca9233f58f6fb6987ae9d2f7b24a2b38e170be56b",
+      "knife_present": true,
+      "phase": "reserved_calibration_group",
+      "timestamp_index": 0,
+      "frames": "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_03/source_frames_rgb448.npy",
+      "frames_sha256": "3669ef8b8563b95b8c5c8ee34a07e6d8fa049f907576c5fdb8dc76deecca1190",
+      "features": {
+        "A": {
+          "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_03_t0_A/features_FP32.npy",
+          "sha256": "72d74514efd1949615f4200cd5f0c5d82dd41a40f771e916b648635ebe83b76e"
+        },
+        "B": {
+          "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_03_t0_B/features_FP32.npy",
+          "sha256": "d5322d37f3f437f318949bfd009ff76dfb8494503d9debeb6b9cee80153c4cec"
+        }
+      }
+    },
+    {
+      "id": "cal_03_t1",
+      "clip_id": "calibration-cal-walking-knife-01-43fb67c6",
+      "source_group": "43fb67c6411938bd88c2698ca9233f58f6fb6987ae9d2f7b24a2b38e170be56b",
+      "knife_present": true,
+      "phase": "reserved_calibration_group",
+      "timestamp_index": 1,
+      "frames": "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_03/source_frames_rgb448.npy",
+      "frames_sha256": "3669ef8b8563b95b8c5c8ee34a07e6d8fa049f907576c5fdb8dc76deecca1190",
+      "features": {
+        "A": {
+          "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_03_t1_A/features_FP32.npy",
+          "sha256": "c270c55aaa47732d4addc21a72098ad652caddaeeaed815db6de8a93a6aadf25"
+        },
+        "B": {
+          "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_03_t1_B/features_FP32.npy",
+          "sha256": "5556e29ad4f9dd0e02a944db24130428f8825febabe8e327fbc66ea32c132cdf"
+        }
+      }
+    },
+    {
+      "id": "cal_05_t0",
+      "clip_id": "calibration-cal-working-no-knife-01-340a3274",
+      "source_group": "340a3274e80ce22bb95fbfd8c16dec2f4f3907b97434cbc8787f5479a53a5970",
+      "knife_present": false,
+      "phase": "reserved_calibration_group",
+      "timestamp_index": 0,
+      "frames": "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_05/source_frames_rgb448.npy",
+      "frames_sha256": "fdc1c405e34027de8119819c7047315841ca6dc8ac6be96c02066aa5df3b12ce",
+      "features": {
+        "A": {
+          "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_05_t0_A/features_FP32.npy",
+          "sha256": "dd2dbf32b20432eb0328b6b13e410752319482b0271d781660b968bf4e994695"
+        },
+        "B": {
+          "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_05_t0_B/features_FP32.npy",
+          "sha256": "fa3d1816bc1fe14647c4dddeeb374a4c03c2c9fa198b5dadd589ab6b6be568f5"
+        }
+      }
+    },
+    {
+      "id": "cal_05_t1",
+      "clip_id": "calibration-cal-working-no-knife-01-340a3274",
+      "source_group": "340a3274e80ce22bb95fbfd8c16dec2f4f3907b97434cbc8787f5479a53a5970",
+      "knife_present": false,
+      "phase": "reserved_calibration_group",
+      "timestamp_index": 1,
+      "frames": "deployment/mage_vl4b/optimization_v1/runs/M464-video-calibration-capture-01/clip_05/source_frames_rgb448.npy",
+      "frames_sha256": "fdc1c405e34027de8119819c7047315841ca6dc8ac6be96c02066aa5df3b12ce",
+      "features": {
+        "A": {
+          "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_05_t1_A/features_FP32.npy",
+          "sha256": "e9542053b5cc455ac41d4378fc0fe14684e3cb93a9b2e5257a3fd023fd1887e7"
+        },
+        "B": {
+          "path": "deployment/mage_vl4b/optimization_v1/runs/M523-V12-features-saved-board-01/captured/cal_05_t1_B/features_FP32.npy",
+          "sha256": "ea3dd462fe2b39a230f62e8a3696f1689ae1d3568ccea163bbd3a7f48f3c9f39"
+        }
+      }
+    }
+  ],
+  "safe_augmentation_ids": [
+    "cal_00_t0",
+    "cal_00_t1",
+    "cal_04_t0",
+    "cal_04_t1"
+  ],
+  "augmentation_curriculum": [
+    {
+      "stage": 0,
+      "name": "clean",
+      "gamma": [
+        1,
+        1
+      ],
+      "brightness": [
+        1,
+        1
+      ],
+      "JPEG_quality": [
+        100,
+        100
+      ],
+      "gaussian_noise_std_RGB255": [
+        0,
+        0
+      ]
+    },
+    {
+      "stage": 1,
+      "name": "weak",
+      "gamma": [
+        0.95,
+        1.05
+      ],
+      "brightness": [
+        0.95,
+        1.05
+      ],
+      "JPEG_quality": [
+        92,
+        96
+      ],
+      "gaussian_noise_std_RGB255": [
+        0,
+        0.5
+      ]
+    },
+    {
+      "stage": 2,
+      "name": "moderate",
+      "gamma": [
+        0.9,
+        1.1
+      ],
+      "brightness": [
+        0.9,
+        1.05
+      ],
+      "JPEG_quality": [
+        85,
+        92
+      ],
+      "gaussian_noise_std_RGB255": [
+        0.5,
+        1.5
+      ]
+    }
+  ],
+  "ambiguous_positive_CE_mask_ids": [
+    "cal_02_t1"
+  ],
+  "ambiguity_policy": "Original cal02t1 whole-clip label remains unchanged in evaluation; acknowledged edge/visibility ambiguity, do not apply positive CE or augmentation to this training window. Still distill its feature targets. No label relabeling or evaluation omission.",
+  "seed": 525,
+  "rank": 8,
+  "alpha": 8,
+  "learning_rate": 0.0002,
+  "steps_per_arm": 32,
+  "wall_seconds": 7200,
+  "arms": [
+    "clean_control",
+    "progressive_augmented"
+  ],
+  "same_initialization_optimizer_and_steps": true,
+  "loss_weights": {
+    "teacher_KL": 0.1,
+    "visual_features": 0.05,
+    "mapped_hidden": 0.01
+  },
+  "teacher_KL_policy": "Only teacher first argmax matching original target receives KL; incorrect/ambiguous teacher is not blindly copied. True label CE otherwise primary.",
+  "execution": "Differentiable full visual->embedding->all retained language->151936 head. CPU frozen weight streaming, nonreentrant activation checkpointing, LoRA GPU params. New FP32/BF16 surrogate, not exact M455 A8/FP16.",
+  "quality_gate": "Keep all4 fixed demo clean correct, compare original reserved-cal against parent/control and report every error. Export and board must be checked independently before any deployment quality claim. Six test stay closed until candidate frozen.",
+  "budgets": {
+    "optimizer_updates": 64,
+    "real_CE_gradient_probe": 1,
+    "training_prefills": 136,
+    "evaluation_prefills": 32,
+    "reused_untrained_baseline_prefills": 16,
+    "board_actions": 0
+  },
+  "no_inference_extra_branch_after_merge": true,
+  "heldout_opened": false,
+  "frozen": {
+    "experiments/augmented_student_20261025/common_joint.py": "3cc8939524967b65116428a42205f1d3aad296978afac1548dbe6625ae2e0ecd",
+    "experiments/augmented_student_20261025/joint_runtime02.py": "4758e89a7806ae9541329fc3674605398fc838e8fcca819e61084f7b3881b5d4",
+    "experiments/augmented_student_20261025/train_joint02.py": "fc1280934105f31ee4338f1507a8aab721fe5fdfb8db032b780346b18f7fe624",
+    "experiments/augmented_student_20261025/entry02.py": "bff73641892b16eef92ac1180401ad5e20cedb0a52d0dff9f8e052d5d3fe9891",
+    "experiments/augmented_student_20261025/host02.py": "969e43cfec5a3d06ce3ebbe56a5cdf60aa5e1e5c92d1d9265792e215d3f093cd"
+  },
+  "previous_result_sha256": "91259882b27fb554d7a165f0f3effb3dd2fd75da580520ee7cd793c8c3b864c4",
+  "source_baseline": "deployment/mage_vl4b/optimization_v1/runs/M525-joint-augmented-student-128-training-01/RESULT.json",
+  "head_rank": 8,
+  "head_learning_rate": 0.005,
+  "pair_batch_size": 2,
+  "ambiguous_feature_replay_every": 8,
+  "change_reason": "Both original arms2/4 fixed demo; clean collapsesNo and augmented collapsesYes. Control class-bias with positive/negative paired gradients and a mergeable rank8 output-head adapter; keep augmentation matched, no claim unique cause.",
+  "baseline_reuse": "Original full151936 logits for first clean window must be bit-identical before optimizer changes. Reuse completed untrained16 results; new headB=0 has no forced answer.",
+  "inference": "Head adapter merges into same151936x2560 head weight, no extra inference branch or vocabulary mask; export/board gates remain pending."
+}

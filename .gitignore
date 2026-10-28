@@ -31,3 +31,18 @@ dist/
 *.cache/
 *.gen/
 manifests/check_result.json
+
+# Current demonstration: generated/private/binary assets are never published
+current_demo/apps/campus_guard/var/
+current_demo/**/__pycache__/
+current_demo/**/*.pyc
+current_demo/**/*.sqlite*
+current_demo/**/*.db
+current_demo/**/*.npy
+current_demo/**/*.npz
+current_demo/**/*.bin
+current_demo/**/*.so
+current_demo/**/*.bit
+current_demo/**/*.hwh
+current_demo/**/worker_token
+current_demo/**/.env*

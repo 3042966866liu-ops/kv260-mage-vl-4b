@@ -1,0 +1,84 @@
+{
+  "status": "PASS_EXACT42676_CONTROLLED_FAILURE_EXIT_AND_LOCK_RELEASE",
+  "primary_rc": 0,
+  "signals": [
+    {
+      "pid": 42676,
+      "signal": "CONT"
+    },
+    {
+      "pid": 42674,
+      "start": 3897916,
+      "signal": "CONT_exact_sudo_parent_once"
+    }
+  ],
+  "additional_free_calls": 0,
+  "MMIO": 0,
+  "models": 0,
+  "ready_sha256": "eb4239f78be92c1b3935eb8cf7b2aaf4da1f3e307053a8bae53986527ecd9229",
+  "source_sha256": "c8c97de8ca3d51ca624201e628bb40cba39f82b036000dffb452fcc1a1387dd5",
+  "plan_sha256": "e31e652c26c157d727c50d6ecf10f6a5937d4a6646fb25c0ab7eb874359112e1",
+  "additional_exit_signals": 0,
+  "final_exit_proof": {
+    "clock": {
+      "mhz": {
+        "0": 299.997,
+        "1": 149.9985,
+        "2": 99.999,
+        "3": 99.999
+      },
+      "pll_raw": [
+        88576,
+        82176,
+        81920,
+        86016
+      ],
+      "raw": [
+        16844032,
+        16845312,
+        16846592,
+        16846592
+      ]
+    },
+    "original_failure_sha256": "abb10d747d80b6fe96f0959cabb28a5e61d40ca60e119f8e6b9c81622b1c45a3",
+    "original_flags": {
+      "active": true,
+      "completed": false,
+      "ever": true,
+      "initialized": true,
+      "latched": true,
+      "programmed": true,
+      "programming": false,
+      "restoring": false
+    },
+    "request_completed": false,
+    "seven_original_BOs_invalid": true,
+    "stable_snapshot": {
+      "ap_ctrl": 4,
+      "ap_return": 0,
+      "dma_read_error": "",
+      "kernel_read_error": "",
+      "mm2s_dmasr": 0,
+      "mm2s_error": false,
+      "mm2s_idle": false,
+      "return_read_error": "",
+      "s2mm_dmasr": 0,
+      "s2mm_error": false,
+      "s2mm_idle": false
+    }
+  },
+  "exit_intent": {
+    "exit_code": 1,
+    "ready_live_sha256": "6cf644952655ab64370a3707ce9882eb646ec79397c5a17615c5c50088120e5b",
+    "request_completed": false
+  },
+  "native_exit": null,
+  "processes_after": {
+    "42676": null,
+    "42675": null,
+    "42674": null
+  },
+  "execution_lock_available": true,
+  "stable_and_clock_proof_preserved": true,
+  "original_failure_still_1": true
+}
